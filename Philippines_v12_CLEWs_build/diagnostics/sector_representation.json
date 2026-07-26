@@ -1,0 +1,91 @@
+{
+  "technology_count": 172,
+  "commodity_count": 92,
+  "inherited_v10_technology_count": 130,
+  "fisheries": {
+    "version": "v2.3",
+    "technology_count": 7,
+    "technologies": [
+      "PHL_FSH_AQC_ELE",
+      "PHL_FSH_AQC_LIQ",
+      "PHL_FSH_MOT_ELE",
+      "PHL_FSH_MOT_LIQ",
+      "PHL_FSH_PRO_ELE",
+      "PHL_FSH_PRO_LIQ",
+      "PHL_POW_TD_FSH"
+    ],
+    "import_audit": "diagnostics/fisheries_v23_import_audit.json"
+  },
+  "new_nexus": {
+    "technology_count": 42,
+    "crop_option_technologies": 24,
+    "spatial_cluster_technologies": 8,
+    "land_cover_technologies": 6,
+    "irrigation_technologies": 2,
+    "land_and_precipitation_endowments": 2,
+    "crop_outputs": [
+      "CRPCON",
+      "CRPMZE",
+      "CRPOTH",
+      "CRPRCP",
+      "CRPSGC",
+      "CRPTOM"
+    ],
+    "cluster_area_km2": 295813.1
+  },
+  "integrated_runs": {
+    "Base_v12": {
+      "status": "Optimal",
+      "objective": 375930821.3405416,
+      "max_crop_balance_relative_error": 0.00024269653369002117,
+      "fisheries_2020": {
+        "activity_PJ_useful": {
+          "PHL_POW_TD_FSH": 1.2401,
+          "PHL_FSH_MOT_LIQ": 1.4562,
+          "PHL_FSH_MOT_ELE": 0.0,
+          "PHL_FSH_AQC_LIQ": 3.9143,
+          "PHL_FSH_AQC_ELE": 1.0783,
+          "PHL_FSH_PRO_LIQ": 1.5631,
+          "PHL_FSH_PRO_ELE": 0.0
+        },
+        "new_capacity_GW_useful": {
+          "PHL_FSH_MOT_LIQ": 0.0,
+          "PHL_FSH_MOT_ELE": 0.0,
+          "PHL_FSH_AQC_LIQ": 0.1128,
+          "PHL_FSH_AQC_ELE": 0.0,
+          "PHL_FSH_PRO_LIQ": 0.0,
+          "PHL_FSH_PRO_ELE": 0.0,
+          "PHL_POW_TD_FSH": 999999.0
+        },
+        "delivered_electricity_PJ": 1.24
+      }
+    },
+    "PEP_v12": {
+      "status": "Optimal",
+      "objective": 375953763.45952713,
+      "max_crop_balance_relative_error": 0.00024269653369002117,
+      "fisheries_2020": {
+        "activity_PJ_useful": {
+          "PHL_POW_TD_FSH": 1.2401,
+          "PHL_FSH_MOT_LIQ": 1.4562,
+          "PHL_FSH_MOT_ELE": 0.0,
+          "PHL_FSH_AQC_LIQ": 3.9143,
+          "PHL_FSH_AQC_ELE": 1.0783,
+          "PHL_FSH_PRO_LIQ": 1.5631,
+          "PHL_FSH_PRO_ELE": 0.0
+        },
+        "new_capacity_GW_useful": {
+          "PHL_FSH_MOT_LIQ": 0.0,
+          "PHL_FSH_MOT_ELE": 0.0,
+          "PHL_FSH_AQC_LIQ": 0.1128,
+          "PHL_FSH_AQC_ELE": 0.0,
+          "PHL_FSH_PRO_LIQ": 0.0,
+          "PHL_FSH_PRO_ELE": 0.0,
+          "PHL_POW_TD_FSH": 999999.0
+        },
+        "delivered_electricity_PJ": 1.2398999999999998
+      }
+    }
+  },
+  "crop_balance_status": "PASS"
+}

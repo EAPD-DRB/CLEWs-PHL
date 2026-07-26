@@ -1,0 +1,61 @@
+{
+    "status": "IMPORTED",
+    "source": "/Users/sato/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v10",
+    "target": "/Users/sato/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v12",
+    "fisheries_version": "v2.3",
+    "fish_technology_ids": [
+        "TEC_fsh01",
+        "TEC_fsh02",
+        "TEC_fsh03",
+        "TEC_fsh04",
+        "TEC_fsh05",
+        "TEC_fsh06",
+        "TEC_fsh07"
+    ],
+    "fish_commodity_ids": [
+        "COM_fsh01",
+        "COM_fsh02",
+        "COM_fsh03",
+        "COM_fsh04"
+    ],
+    "industry_boundary_commodity_id": "COM_8qscb",
+    "changed_json_files": {
+        "RYC.json": {
+            "records_replaced": 1,
+            "records_added": 0,
+            "records_removed": 0,
+            "scalar_values_replaced": 0,
+            "v12_dimension_rows_retained": 0
+        },
+        "RYT.json": {
+            "records_replaced": 11,
+            "records_added": 0,
+            "records_removed": 0,
+            "scalar_values_replaced": 0,
+            "v12_dimension_rows_retained": 0
+        }
+    },
+    "non_fisheries_preservation": {
+        "status": "PASS",
+        "changed_files": []
+    },
+    "import_date": "2026-07-25",
+    "source_documentation": {
+        "status": "PASS",
+        "files": {
+            "FSH_CALIBRATION.md": "905fddaf147af4349be343d29c95d332ae5815c3b85fd1fe44b0dfa223f217b5",
+            "FSH_GLOBAL_PARITY.md": "792f267893a7cf5dd969f38faa06b09ac15589f44ef3a8bf6e18f91956754307",
+            "FSH_calibration_data.csv": "0ff2699f10c651f2222d1a933d8f0e10567938f4e37ef04607658501c232f931",
+            "FSH_industry_carveout.csv": "3cc11eace44378afb60c823b5774e4a83da5d85db15075a8e2e5b57caaff9f62"
+        },
+        "package_location": "/Users/sato/GitHub/MUIOGO/Philippines_v12_CLEWs_build/data_sources"
+    },
+    "fisheries_parameter_parity": {
+        "status": "PASS",
+        "checked_dimensioned_records_and_definitions": 2115,
+        "checked_scalar_values": 140,
+        "mismatch_count": 0,
+        "mismatches": []
+    },
+    "overall_status": "PASS"
+}

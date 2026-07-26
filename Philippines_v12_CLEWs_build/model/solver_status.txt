@@ -1,0 +1,13 @@
+Scenario: PhilippinesV12Raw
+Status: Optimal
+Objective: 197214.48967963
+Solver: CBC 2.10.12
+Iterations: 11962
+Primal infeasibility: 0
+Dual infeasibility: 0
+Historical forcing added: No
+Policy targets added: No
+Calibration status: Uncalibrated raw country build
+Model horizon: 2020-2053
+Spatial clusters: 8
+Generated: 2026-07-25

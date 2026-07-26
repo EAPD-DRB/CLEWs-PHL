@@ -1,0 +1,11 @@
+category,check,status,finding,evidence
+solver,Authoritative upstream raw solve is optimal,PASS,Optimal - objective value 197214.48967963,model/data.sol
+structure,Horizon is continuous from 2020 through 2053,PASS,2020-2053 (34 years),model/inputs/clewsy/YEAR.csv
+integrity,Sparse OSeMOSYS indices are unique,PASS,0 duplicates across 68601 rows,68 CSV input files
+integrity,All numeric input values are finite,PASS,0 non-finite or invalid values,model/inputs/clewsy
+geospatial,Eight clusters retain the complete national land-cell area,PASS,"8 clusters; 295,813.1 km2",geospatial/summary_stats/PHL_LandCover_byCluster_summary.csv
+agriculture,Six explicit crop-output demands are represented,PASS,"CRPCON, CRPMZE, CRPOTH, CRPRCP, CRPSGC, CRPTOM",model/inputs/clewsy/AccumulatedAnnualDemand.csv
+no-forcing,Raw nexus has no positive lower-equals-upper locks,PASS,0 equality locks,four activity/capacity lower-upper parameter pairs
+preservation,Hybrid preservation/connectivity audit passes,PASS,PASS,diagnostics/v12_hybrid_audit.json
+solver,Integrated MUIO Base_v12 solve is optimal,PASS,Optimal - objective value 375930821.34054160,WebAPP/DataStorage/Philippines_v12/res/Base_v12/results.txt
+solver,Integrated MUIO PEP_v12 solve is optimal,PASS,Optimal - objective value 375953763.45952713,WebAPP/DataStorage/Philippines_v12/res/PEP_v12/results.txt

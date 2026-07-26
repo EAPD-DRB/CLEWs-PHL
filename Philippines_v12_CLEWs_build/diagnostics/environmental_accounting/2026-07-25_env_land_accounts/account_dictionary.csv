@@ -1,0 +1,13 @@
+domain,reporter,mode,account,unit,source,interpretation
+WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,PHL_WTR_EVT,Evapotranspiration returned to the atmosphere
+WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,PHL_WTR_GWT,Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,PHL_WTR_SUR,Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,LNDFORTOT,Model-defined forest land state
+LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,LNDGRSTOT,Model-defined grassland state
+LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,LNDOTHTOT,Model-defined other land; no forest suitability is implied
+LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,LNDBARTOT,Model-defined barren or savannah land state
+LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,LNDBLTTOT,Model-defined built-up land state
+LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,LNDWATTOT,Land-cover area classified as water bodies
+LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,LNDRCPHITOT + LNDRCPHRTOT + LNDRCPLITOT + LNDRCPLRTOT + LNDCONHITOT + LNDCONHRTOT + LNDCONLITOT + LNDCONLRTOT + LNDMZEHITOT + LNDMZEHRTOT + LNDMZELITOT + LNDMZELRTOT + LNDTOMHITOT + LNDTOMHRTOT + LNDTOMLITOT + LNDTOMLRTOT + LNDSGCHITOT + LNDSGCHRTOT + LNDSGCLITOT + LNDSGCLRTOT + LNDOTHHITOT + LNDOTHHRTOT + LNDOTHLITOT + LNDOTHLRTOT,Sum of the 24 modeled crop-land production options
+LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,PHL_LND,Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,ENV_WATER modes 2 + 3,Derived liquid-water total; excludes mode 1 water vapor

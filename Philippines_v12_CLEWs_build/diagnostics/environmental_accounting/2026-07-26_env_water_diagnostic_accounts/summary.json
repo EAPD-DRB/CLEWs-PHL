@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "model": "Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC",
+  "architecture": "exact in-model ENV_LAND plus unforced diagnostic ENV_WATER and authoritative reporting reference",
+  "runs": [
+    "Base_v12",
+    "PEP_v12"
+  ],
+  "account_rows": 816,
+  "native_emission_rows": 136,
+  "water_terminal_reconciliation_rows": 204,
+  "water_terminal_reconciliation_status_counts": {
+    "FULL": 3,
+    "PARTIAL": 7,
+    "ZERO": 194
+  },
+  "maximum_water_coefficient_spread": 0.44700000000000006,
+  "source_hashes_unchanged": true
+}

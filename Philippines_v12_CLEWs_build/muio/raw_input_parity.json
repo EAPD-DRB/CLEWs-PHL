@@ -1,0 +1,1645 @@
+{
+  "source_rows": 68601,
+  "matching_rows": 67683,
+  "match_fraction": 0.986618270870687,
+  "files_exact": 65,
+  "files_mismatch": 3,
+  "files_not_generated": 0,
+  "files": [
+    {
+      "file": "AccumulatedAnnualDemand.csv",
+      "source_rows": 204,
+      "matching_rows": 204,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "FUEL",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "FUEL",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "AnnualEmissionLimit.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "EMISSION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "EMISSION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "AnnualExogenousEmission.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "EMISSION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "EMISSION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "AvailabilityFactor.csv",
+      "source_rows": 578,
+      "matching_rows": 578,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "CapacityFactor.csv",
+      "source_rows": 680,
+      "matching_rows": 680,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "TIMESLICE",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "TIMESLICE",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "CapacityOfOneTechnologyUnit.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "CapacityToActivityUnit.csv",
+      "source_rows": 23,
+      "matching_rows": 23,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 117,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "CapitalCost.csv",
+      "source_rows": 1530,
+      "matching_rows": 1530,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "CapitalCostStorage.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "STORAGE",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "STORAGE",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "Conversionld.csv",
+      "source_rows": 4,
+      "matching_rows": 4,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "TIMESLICE",
+        "DAYTYPE",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "TIMESLICE",
+        "DAYTYPE",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "Conversionlh.csv",
+      "source_rows": 8,
+      "matching_rows": 8,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "TIMESLICE",
+        "DAILYTIMEBRACKET",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "TIMESLICE",
+        "DAILYTIMEBRACKET",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "Conversionls.csv",
+      "source_rows": 8,
+      "matching_rows": 8,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "TIMESLICE",
+        "SEASON",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "TIMESLICE",
+        "SEASON",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "DAILYTIMEBRACKET.csv",
+      "source_rows": 2,
+      "matching_rows": 2,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "VALUE"
+      ]
+    },
+    {
+      "file": "DAYTYPE.csv",
+      "source_rows": 1,
+      "matching_rows": 1,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "VALUE"
+      ]
+    },
+    {
+      "file": "DaySplit.csv",
+      "source_rows": 68,
+      "matching_rows": 68,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "DAILYTIMEBRACKET",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "DAILYTIMEBRACKET",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "DaysInDayType.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "SEASON",
+        "DAYTYPE",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "SEASON",
+        "DAYTYPE",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "DepreciationMethod.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "DiscountRate.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "DiscountRateStorage.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "STORAGE",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "STORAGE",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "EMISSION.csv",
+      "source_rows": 1,
+      "matching_rows": 1,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "VALUE"
+      ]
+    },
+    {
+      "file": "EmissionActivityRatio.csv",
+      "source_rows": 714,
+      "matching_rows": 714,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "EMISSION",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "EMISSION",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "EmissionsPenalty.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "EMISSION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "EMISSION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "FUEL.csv",
+      "source_rows": 112,
+      "matching_rows": 112,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "VALUE"
+      ]
+    },
+    {
+      "file": "FixedCost.csv",
+      "source_rows": 714,
+      "matching_rows": 714,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "InputActivityRatio.csv",
+      "source_rows": 24667,
+      "matching_rows": 24667,
+      "implicit_default_rows": 1649,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "FUEL",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "FUEL",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "MODE_OF_OPERATION.csv",
+      "source_rows": 30,
+      "matching_rows": 30,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "VALUE"
+      ]
+    },
+    {
+      "file": "MinStorageCharge.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "STORAGE",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "STORAGE",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "ModelPeriodEmissionLimit.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "EMISSION",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "EMISSION",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "ModelPeriodExogenousEmission.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "EMISSION",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "EMISSION",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "OperationalLife.csv",
+      "source_rows": 44,
+      "matching_rows": 44,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 96,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "OperationalLifeStorage.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "STORAGE",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "STORAGE",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "OutputActivityRatio.csv",
+      "source_rows": 35632,
+      "matching_rows": 35632,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "FUEL",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "FUEL",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "REGION.csv",
+      "source_rows": 1,
+      "matching_rows": 1,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "VALUE"
+      ]
+    },
+    {
+      "file": "REMinProductionTarget.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "RETagFuel.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "FUEL",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "FUEL",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "RETagTechnology.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "ReserveMargin.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "ReserveMarginTagFuel.csv",
+      "source_rows": 34,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 34,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "mismatch",
+      "missing_examples": [
+        [
+          "<REGION>",
+          "ELCPHLXX01",
+          "2020"
+        ],
+        [
+          "<REGION>",
+          "ELCPHLXX01",
+          "2021"
+        ],
+        [
+          "<REGION>",
+          "ELCPHLXX01",
+          "2022"
+        ],
+        [
+          "<REGION>",
+          "ELCPHLXX01",
+          "2023"
+        ],
+        [
+          "<REGION>",
+          "ELCPHLXX01",
+          "2024"
+        ]
+      ],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "FUEL",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "FUEL",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "ReserveMarginTagTechnology.csv",
+      "source_rows": 680,
+      "matching_rows": 68,
+      "implicit_default_rows": 68,
+      "missing_rows": 612,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "mismatch",
+      "missing_examples": [
+        [
+          "<REGION>",
+          "PWRBIOPHLXX01",
+          "2020"
+        ],
+        [
+          "<REGION>",
+          "PWRBIOPHLXX01",
+          "2021"
+        ],
+        [
+          "<REGION>",
+          "PWRBIOPHLXX01",
+          "2022"
+        ],
+        [
+          "<REGION>",
+          "PWRBIOPHLXX01",
+          "2023"
+        ],
+        [
+          "<REGION>",
+          "PWRBIOPHLXX01",
+          "2024"
+        ]
+      ],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "ResidualCapacity.csv",
+      "source_rows": 306,
+      "matching_rows": 306,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "ResidualStorageCapacity.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "STORAGE",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "STORAGE",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "SEASON.csv",
+      "source_rows": 2,
+      "matching_rows": 2,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "VALUE"
+      ]
+    },
+    {
+      "file": "STORAGE.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "VALUE"
+      ]
+    },
+    {
+      "file": "SpecifiedAnnualDemand.csv",
+      "source_rows": 34,
+      "matching_rows": 34,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "FUEL",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "FUEL",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "SpecifiedDemandProfile.csv",
+      "source_rows": 136,
+      "matching_rows": 136,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "FUEL",
+        "TIMESLICE",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "FUEL",
+        "TIMESLICE",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "StorageLevelStart.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "STORAGE",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "STORAGE",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "StorageMaxChargeRate.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "STORAGE",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "STORAGE",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "StorageMaxDischargeRate.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "STORAGE",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "STORAGE",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TECHNOLOGY.csv",
+      "source_rows": 140,
+      "matching_rows": 140,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TIMESLICE.csv",
+      "source_rows": 4,
+      "matching_rows": 4,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TechnologyActivityByModeLowerLimit.csv",
+      "source_rows": 544,
+      "matching_rows": 272,
+      "implicit_default_rows": 272,
+      "missing_rows": 272,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "mismatch",
+      "missing_examples": [
+        [
+          "<REGION>",
+          "LNDAGRPHLC02",
+          "30",
+          "2020"
+        ],
+        [
+          "<REGION>",
+          "LNDAGRPHLC02",
+          "30",
+          "2021"
+        ],
+        [
+          "<REGION>",
+          "LNDAGRPHLC02",
+          "30",
+          "2022"
+        ],
+        [
+          "<REGION>",
+          "LNDAGRPHLC02",
+          "30",
+          "2023"
+        ],
+        [
+          "<REGION>",
+          "LNDAGRPHLC02",
+          "30",
+          "2024"
+        ]
+      ],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TechnologyActivityByModeUpperLimit.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TechnologyActivityDecreaseByModeLimit.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TechnologyActivityIncreaseByModeLimit.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TechnologyFromStorage.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "STORAGE",
+        "MODE_OF_OPERATION",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "STORAGE",
+        "MODE_OF_OPERATION",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TechnologyToStorage.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "STORAGE",
+        "MODE_OF_OPERATION",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "STORAGE",
+        "MODE_OF_OPERATION",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TotalAnnualMaxCapacity.csv",
+      "source_rows": 170,
+      "matching_rows": 170,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 4590,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TotalAnnualMaxCapacityInvestment.csv",
+      "source_rows": 68,
+      "matching_rows": 68,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 4692,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TotalAnnualMinCapacity.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TotalAnnualMinCapacityInvestment.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TotalTechnologyAnnualActivityLowerLimit.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TotalTechnologyAnnualActivityUpperLimit.csv",
+      "source_rows": 510,
+      "matching_rows": 510,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 4250,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TotalTechnologyModelPeriodActivityLowerLimit.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TotalTechnologyModelPeriodActivityUpperLimit.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "TradeRoute.csv",
+      "source_rows": 0,
+      "matching_rows": 0,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "FUEL",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "FUEL",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "VariableCost.csv",
+      "source_rows": 782,
+      "matching_rows": 782,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 142018,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "REGION",
+        "TECHNOLOGY",
+        "MODE_OF_OPERATION",
+        "YEAR",
+        "VALUE"
+      ]
+    },
+    {
+      "file": "YEAR.csv",
+      "source_rows": 34,
+      "matching_rows": 34,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "VALUE"
+      ]
+    },
+    {
+      "file": "YearSplit.csv",
+      "source_rows": 136,
+      "matching_rows": 136,
+      "implicit_default_rows": 0,
+      "missing_rows": 0,
+      "differing_rows": 0,
+      "extra_generated_rows": 0,
+      "status": "exact",
+      "missing_examples": [],
+      "difference_examples": [],
+      "source_fields": [
+        "TIMESLICE",
+        "YEAR",
+        "VALUE"
+      ],
+      "roundtrip_fields": [
+        "TIMESLICE",
+        "YEAR",
+        "VALUE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "status": "PASS",
+  "failed_checks": [],
+  "generated_at": "2026-07-26T11:22:57-04:00",
+  "model": "Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC",
+  "architecture": "exact in-model ENV_LAND plus unforced diagnostic ENV_WATER and authoritative reporting reference",
+  "runs": [
+    "Base_v12",
+    "PEP_v12"
+  ],
+  "checks": [
+    {
+      "name": "environmental_commodity_graph",
+      "status": "PASS",
+      "detail": "Water and total-land producers and consumers match the declared boundary."
+    },
+    {
+      "name": "scenario_inheritance",
+      "status": "PASS",
+      "detail": "Connected environmental ratios inherit unchanged from SC_0 in policy scenarios."
+    },
+    {
+      "name": "water_diagnostic_architecture",
+      "status": "PASS",
+      "detail": "Mode-dependent source coefficients remain; ENV_WATER is present only as an explicitly unforced diagnostic terminal."
+    },
+    {
+      "name": "solver_status",
+      "status": "PASS",
+      "detail": "All 2 saved runs begin with explicit Optimal status."
+    },
+    {
+      "name": "account_closure",
+      "status": "PASS",
+      "detail": "Water residuals are nonnegative within 0.002; land closes within 0.005 in result-CSV units."
+    },
+    {
+      "name": "native_emissions",
+      "status": "PASS",
+      "detail": "Existing CO2e and PM2_5 rows were aggregated without new factors."
+    },
+    {
+      "name": "water_terminal_reconciliation",
+      "status": "PASS",
+      "detail": {
+        "row_count": 204,
+        "status_counts": {
+          "FULL": 3,
+          "PARTIAL": 7,
+          "ZERO": 194
+        },
+        "authoritative_reference": "production minus use by all technologies except ENV_WATER",
+        "terminal_value": "TotalAnnualTechnologyActivityByMode for ENV_WATER"
+      }
+    },
+    {
+      "name": "source_non_interference",
+      "status": "PASS",
+      "detail": "39 selected source/result hashes are unchanged."
+    }
+  ],
+  "run_validation": [
+    {
+      "run": "Base_v12",
+      "regions": [
+        "RE1"
+      ],
+      "years": [
+        "2020",
+        "2053"
+      ],
+      "solver": {
+        "status": "Optimal",
+        "objective": 375930821.34054404
+      },
+      "maximum_result_ratio_reconciliation_error": 0.0013799999999974943,
+      "maximum_land_closure_error": 0.001100000000064938,
+      "minimum_unallocated_land_residual": 0.0,
+      "minimum_water_residual": 9.151199999999974,
+      "water_terminal_reconciliation_status_counts": {
+        "PARTIAL": 4,
+        "ZERO": 98
+      },
+      "water_terminal_minimum_coverage_percent": 0.0,
+      "water_terminal_maximum_unaccounted_gap": 404.9373000000003
+    },
+    {
+      "run": "PEP_v12",
+      "regions": [
+        "RE1"
+      ],
+      "years": [
+        "2020",
+        "2053"
+      ],
+      "solver": {
+        "status": "Optimal",
+        "objective": 375953763.4595294
+      },
+      "maximum_result_ratio_reconciliation_error": 0.0013799999999974943,
+      "maximum_land_closure_error": 0.0012000000000966793,
+      "minimum_unallocated_land_residual": 0.0,
+      "minimum_water_residual": 0.0009000000000014552,
+      "water_terminal_reconciliation_status_counts": {
+        "FULL": 3,
+        "PARTIAL": 3,
+        "ZERO": 96
+      },
+      "water_terminal_minimum_coverage_percent": 0.0,
+      "water_terminal_maximum_unaccounted_gap": 404.93710000000016
+    }
+  ],
+  "water_terminal_diagnostic": {
+    "json_multimode_terminal_safe": false,
+    "installed_udc_granularity": "technology-year",
+    "required_granularity": "technology-mode-year",
+    "mode_dependent_technologies": [
+      {
+        "technology": "LNDAGRPHLC05",
+        "minimum_net_coefficient": 1.958,
+        "maximum_net_coefficient": 2.258,
+        "spread": 0.30000000000000004
+      },
+      {
+        "technology": "LNDAGRPHLC03",
+        "minimum_net_coefficient": 2.156,
+        "maximum_net_coefficient": 2.3089999999999997,
+        "spread": 0.15299999999999958
+      },
+      {
+        "technology": "LNDAGRPHLC07",
+        "minimum_net_coefficient": 2.358,
+        "maximum_net_coefficient": 2.805,
+        "spread": 0.44700000000000006
+      },
+      {
+        "technology": "LNDAGRPHLC02",
+        "minimum_net_coefficient": 2.45,
+        "maximum_net_coefficient": 2.574,
+        "spread": 0.12399999999999967
+      },
+      {
+        "technology": "LNDAGRPHLC04",
+        "minimum_net_coefficient": 2.45,
+        "maximum_net_coefficient": 2.5740000000000003,
+        "spread": 0.12400000000000011
+      },
+      {
+        "technology": "LNDAGRPHLC01",
+        "minimum_net_coefficient": 2.3590000000000004,
+        "maximum_net_coefficient": 2.52,
+        "spread": 0.1609999999999996
+      },
+      {
+        "technology": "LNDAGRPHLC06",
+        "minimum_net_coefficient": 1.671,
+        "maximum_net_coefficient": 1.828,
+        "spread": 0.15700000000000003
+      },
+      {
+        "technology": "LNDAGRPHLC08",
+        "minimum_net_coefficient": 3.16,
+        "maximum_net_coefficient": 3.2500000000000004,
+        "spread": 0.0900000000000003
+      }
+    ],
+    "maximum_spread": 0.44700000000000006
+  },
+  "backstop_or_deficit_technology_names": [],
+  "account_count": 816,
+  "emission_account_count": 136,
+  "water_terminal_reconciliation_count": 204,
+  "tolerances": {
+    "result_ratio_reconciliation": 0.002,
+    "land_closure": 0.005,
+    "reason": "MUIO result CSV values are rounded to four decimal places, and annual accounts aggregate many technology/mode/timeslice rows."
+  },
+  "data_gaps_not_filled": [
+    "Groundwater irrigation technology DEMAGRGWTPHL has no PHL_WTR_GWT input link.",
+    "No wastewater return fractions or destinations are encoded.",
+    "No desalination feedwater, recovery, or brine coefficients are encoded.",
+    "No ecological reserve, accessibility, quality, or sustainable-yield rule is encoded.",
+    "PHL_POW_PP_SPV_T1 lists PHL_LND in metadata but all land-input coefficients are zero, so no solar-PV land occupation is reported.",
+    "Inherited energy-source traceability remains incomplete."
+  ],
+  "unchanged_control_comparison": null,
+  "source_manifest_sha256": {
+    "R.json": "741adb0ce8eae3075e46c3c18120deab5d674928ed85494dbd5478106cacb86a",
+    "RE.json": "6d0dbb61b0fe99a0973acaac1e45351aa318143406c977254911c33ca65fb903",
+    "RS.json": "de28a99a4585298174c810bab9bad0e0bda2a5ea37dd58875ed2f91539c34b87",
+    "RT.json": "493cb52858a7853b9939efb4066b4d5ff1ceba25bf0fb0628a41fe586b851a0f",
+    "RTSM.json": "bc90a6ec7e9517188e2891fe35a4b6d168587a7ab9d4d04e813e3a956e15ffe0",
+    "RYC.json": "4b74b8d82db8c0dd96b5c780a8a07e94fee2f1304a44575103f1bec40ccb8f3d",
+    "RYCTs.json": "82f96dbfef03f0b93a50e0c888893d57517e6b6b292a2f8a7c51b219682b84f3",
+    "RYCn.json": "e372a8c85639f035c9b6095e9c34ea3bc1ea31364be83f71843675bf8898979d",
+    "RYDtb.json": "9dda8758603e2cb9da1d99eb835cbb07e68bbaa44165965ad542aeb0303bb097",
+    "RYE.json": "d7b4bd797f76c294927724e6637e7c891f5ab51c059be1867b0616660e911e51",
+    "RYS.json": "a9a7708f39a9894e306883e6d03a12e4806723cd45151e76204ba81956351dd9",
+    "RYSeDt.json": "adfe9b796252dab541ca3727890da9b81b2277654db153298aeb00f7b3c49851",
+    "RYT.json": "cd08dbe67a157d0c7522b432ce1d442940c8dcd459d9c75428bae06e7866a615",
+    "RYTC.json": "557e5c8ab583cafdce04d3061e70e5ce6d9d8091ff4138af51ff603002056f55",
+    "RYTCM.json": "01aa65dae9b6d44e0e3743f1f9b12dd9576c9240c40d2fb2213237984c08bb7f",
+    "RYTCn.json": "c6b16ec4a244c93c5d41acca2627924d6348c344c363b22dd03c258929fd816e",
+    "RYTEM.json": "b93afc51a0f13dd7ac85be3f901f1bb6d01cacdf308a436226b66b79e6494f7d",
+    "RYTM.json": "d09bcebec3d572ed31b585ccb311f27e3a72b5079a72b2008271774d131634e6",
+    "RYTTs.json": "f500cdcae804971314bc6637d78ad46655bb6604e4f5cc184675de1904acc258",
+    "RYTs.json": "0cf13bcef933357b648085baf12ec0c80fa1e0cca18d48ad3b9920bc40c37d00",
+    "genData.json": "5773504c0f66abe54483f8997cc09efbc8fdbd58513c0b908b5078250be49567",
+    "res/Base_v12/csv/AnnualTechnologyEmission.csv": "d6e591207b31c3e7ec620dfd0879287c745df53471f4a17e7e49fc140d912078",
+    "res/Base_v12/csv/ObjectiveValue.csv": "cfb42d9e5631cecdc78f6bea23a1f0042811d0ffa9c3bb6e092eef3c1c0dad42",
+    "res/Base_v12/csv/ProductionByTechnologyByMode.csv": "a29d277093b9f2ebd38f47d6cf52f6fcebb7eb2c6b3eb65e257c1485f5ab0965",
+    "res/Base_v12/csv/TotalAnnualTechnologyActivityByMode.csv": "e94375f1626686977971287e85de181f336516d1b306612f4d0506b2bb139de6",
+    "res/Base_v12/csv/UseByTechnologyByMode.csv": "70eccecdcbd4ba561efa8dbf43939fb91e5e6d2d1adbb8744dd1786ec3fc2107",
+    "res/Base_v12/data.txt": "dd5152ae79eeaaccf8140ae7cdee1ce98984d46eefc1718ee9a728e9bec925be",
+    "res/Base_v12/data_processed.txt": "509550419b9d8589820e1c43dca086f166eac8e3d8799c90b2e59ebd32f484d7",
+    "res/Base_v12/results.txt": "ce72e42d746a5549f2718aa3e4576aa9b3af9014db09be3b6ef0e365e1b11845",
+    "res/PEP_v12/csv/AnnualTechnologyEmission.csv": "1e2cf0878935a21e8752238ae680de9977e3e6348923f12a345058aa24507885",
+    "res/PEP_v12/csv/ObjectiveValue.csv": "c9ed580b4fcf9feabfbe92e15063838e8fdf9db105667208212a3eb7078be420",
+    "res/PEP_v12/csv/ProductionByTechnologyByMode.csv": "2eeed2add5dfdd33f146962c6a1542055fdb232d714a53543815f6044a71a8be",
+    "res/PEP_v12/csv/TotalAnnualTechnologyActivityByMode.csv": "7b7052c300ad55196850be3f42179164583983996958838edb158c1a9fb3fd0a",
+    "res/PEP_v12/csv/UseByTechnologyByMode.csv": "f0cb982450c3d8c7ccc028683c5c899c880530606bf9d919785cfee18e25cea8",
+    "res/PEP_v12/data.txt": "c13bcec45029d8e91e92f69f77ec0b0f957e1aacba927a7282d7d71d7dd720cb",
+    "res/PEP_v12/data_processed.txt": "8a492ab9e0f7b0bb5de8b1e68fb47b761986e8a4af569c7dbaf40655f2afc7ba",
+    "res/PEP_v12/results.txt": "47dca133fea995e8247269b04af954f8ebc61fb7a64eaa2a0ab4e1d508ce17df",
+    "view/resData.json": "4f089aed0137521ad25d06e843787644253e7e7be7923d8f7fc7d4893c5736bd",
+    "view/viewDefinitions.json": "5d68d8b507fca7ce60af57f2c4972c9841f734886e0f6b9e440cca52496c6249"
+  }
+}

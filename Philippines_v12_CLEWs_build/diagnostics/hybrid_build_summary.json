@@ -1,0 +1,41 @@
+{
+    "case": "Philippines_v12",
+    "source_case": "Philippines_v10",
+    "raw_nexus_source": "PhilippinesV12Raw",
+    "retired_technologies": [
+        "PHL_LND",
+        "PHL_LND_BLT",
+        "PHL_LND_CRP",
+        "PHL_LND_FOR",
+        "PHL_LND_GRS",
+        "PHL_LND_OTH",
+        "PHL_LND_WAT",
+        "PHL_MIN_PRC"
+    ],
+    "retired_commodities": [
+        "PHL_LND_LBLT",
+        "PHL_LND_LCRP",
+        "PHL_LND_LFOR",
+        "PHL_LND_LGRS",
+        "PHL_LND_LOTH",
+        "PHL_LND_LWAT"
+    ],
+    "added_technology_count": 42,
+    "added_commodity_count": 37,
+    "final_technology_count": 172,
+    "final_commodity_count": 92,
+    "modes": 30,
+    "years": [
+        2020,
+        2053
+    ],
+    "timeslices": 30,
+    "commodity_connections": {
+        "AGRELCPHLXX02": "PHL_AGR_ELE",
+        "LTOT": "PHL_LND",
+        "WTREVTPHL": "PHL_WTR_EVT",
+        "WTRGRCPHL": "PHL_WTR_GWT",
+        "WTRPRCPHL": "PHL_WTR_PRC",
+        "WTRSURPHL": "PHL_WTR_SUR"
+    }
+}

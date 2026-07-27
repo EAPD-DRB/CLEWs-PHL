@@ -4,18 +4,23 @@ This repository contains the Philippines CLEWs country model for MUIO/MUIOGO,
 including the model documentation, change history, source register,
 assumptions, calculations, diagnostics, and portable MUIO cases.
 
-## Current model release
+## Current model package
 
-The current release is **Philippines v12.0.0**:
+The current model lineage is **Philippines v12.0.0**. The `main` branch
+provides three portable cases:
 
 - `Philippines_v12`: the integrated source case;
 - `Philippines_v12_ENV_LAND`: the derived case with in-model land
-  environmental accounting.
+  environmental accounting; and
+- `Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC`: the most complete analysis
+  case, with exact in-model land accounting, an unforced water terminal in
+  the Dynamic Graph, and authoritative postprocessed water values in Results
+  Pivot.
 
-The release is available from
+The original two-case tagged release is available from
 [v12.0.0](https://github.com/EAPD-DRB/CLEWs-PHL/releases/tag/v12.0.0).
-The same portable archives are tracked under
-`Philippines_v12_CLEWs_build/muio/`.
+All three current portable archives are tracked under
+`Philippines_v12_CLEWs_build/muio/` on `main`.
 
 The historical Philippines v10 energy system and Fisheries v2.3 are retained
 in v12. The new CLEWs Global-derived land, agriculture, and water block is
@@ -35,6 +40,13 @@ the model.
 The archives contain the editable MUIO parameter JSON and view files. Solver
 outputs are intentionally excluded and are regenerated when the model is
 solved.
+
+For the diagnostic case, the included Pivot initially contains the validated
+authoritative `ENV_WATER` publication. Every new solve regenerates the solver
+views, so rerun
+`Philippines_v12_CLEWs_build/scripts/publish_environmental_water_pivot.py`
+with the installed model path and a unique evidence label before interpreting
+`ENV_WATER`. Raw solver CSVs remain unchanged.
 
 ## Repository structure
 

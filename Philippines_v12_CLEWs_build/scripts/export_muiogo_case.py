@@ -12,6 +12,11 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("case_folder", type=Path)
     parser.add_argument("output", type=Path)
+    parser.add_argument(
+        "--include-results",
+        action="store_true",
+        help="Include the generated res/ solver workspace (excluded by default)",
+    )
     args = parser.parse_args()
 
     case_folder = args.case_folder.resolve()
@@ -20,9 +25,14 @@ def main() -> None:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(args.output, "w", compression=ZIP_DEFLATED) as archive:
         for path in sorted(case_folder.rglob("*")):
-            if not path.is_file() or path.name == "lp.lp":
+            relative = path.relative_to(case_folder)
+            if (
+                not path.is_file()
+                or path.name == "lp.lp"
+                or (not args.include_results and relative.parts[0] == "res")
+            ):
                 continue
-            arcname = PurePosixPath(case_folder.name) / path.relative_to(case_folder)
+            arcname = PurePosixPath(case_folder.name) / relative
             archive.write(path, str(arcname))
     print(f"Portable MUIO case backup: {args.output} ({args.output.stat().st_size} bytes)")
 

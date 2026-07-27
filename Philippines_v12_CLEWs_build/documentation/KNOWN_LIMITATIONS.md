@@ -43,10 +43,18 @@ using results in advice or presentations.
 
 - The unchanged source case has reporting-only accounts. The derived
   `Philippines_v12_ENV_LAND` case contains the exact land terminal, while
-  water remains reporting-only.
+  water remains authoritative reporting-only accounting.
 - An exact in-model water terminal is not possible with the installed
   technology-level user-defined constraint because each spatial cluster has
   mode-dependent water coefficients.
+- The separate diagnostic case contains an unforced `ENV_WATER` sink. Its raw
+  solver activity is usually zero or partial and is not the water account.
+- The current diagnostic-case Pivot deliberately displays authoritative
+  postprocessed `ENV_WATER` values instead of the unforced solver variable.
+  Raw result CSVs remain unchanged for optimizer provenance.
+- Re-solving regenerates the solver views. Run
+  `scripts/publish_environmental_water_pivot.py` after every solve before
+  interpreting `ENV_WATER` in Pivot.
 - Adding the zero-cost land terminal and equality can select a different
   cost-identical solver basis. Fresh-control comparisons preserve the exact
   route-level differences; demand, emissions, costs, objectives and land-state

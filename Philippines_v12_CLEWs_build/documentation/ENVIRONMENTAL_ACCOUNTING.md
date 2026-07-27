@@ -4,9 +4,12 @@ Philippines v12 uses a **hybrid environmental-accounting architecture**:
 
 - land is represented in-model by the exact eight-mode `ENV_LAND` terminal in
   the derived `Philippines_v12_ENV_LAND` case;
-- water remains reporting-only because an exact `ENV_WATER` terminal cannot be
-  expressed by the installed technology-level user-defined constraint (UDC);
-  and
+- water remains authoritative reporting-only accounting because an exact
+  `ENV_WATER` terminal cannot be expressed by the installed technology-level
+  user-defined constraint (UDC);
+- a separate diagnostic case retains unforced `ENV_WATER` in the Dynamic Graph
+  and publishes the authoritative reporting reference into its linked Results
+  Pivot variables after optimization; and
 - `CO2e` and `PM2_5` remain in the native emissions mechanism.
 
 The source `WebAPP/DataStorage/Philippines_v12` case is unchanged. The
@@ -19,8 +22,25 @@ WebAPP/DataStorage/Philippines_v12_ENV_LAND
 It contains 173 technologies, 99 commodities and four UDCs, compared with
 172, 92 and three in the source case.
 
+The separate diagnostic case is:
+
+```text
+WebAPP/DataStorage/Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC
+```
+
+It contains 174 technologies, 99 commodities and the same four UDCs. Its
+`ENV_WATER` technology has no forcing UDC. The current Pivot values are
+postprocessed reporting results; raw optimizer results remain in the saved
+CSVs.
+
 ## Current evidence
 
+- Authoritative `ENV_WATER` Pivot publication and solver-view backup:
+  `diagnostics/environmental_accounting/2026-07-26_env_water_pivot_published/`
+- Raw diagnostic-terminal validation:
+  `diagnostics/environmental_accounting/2026-07-26_env_water_diagnostic_validation/`
+- Diagnostic-case account ledger and raw terminal reconciliation:
+  `diagnostics/environmental_accounting/2026-07-26_env_water_diagnostic_accounts/`
 - Land-terminal validation:
   `diagnostics/environmental_accounting/2026-07-25_env_land_final/`
 - Derived-case account ledger and native emissions:
@@ -30,6 +50,9 @@ It contains 173 technologies, 99 commodities and four UDCs, compared with
 
 The land validation contains 25 passing checks, the eight-mode account ledger,
 fresh-control manifests and full per-variable Base/PEP regression reports.
+The diagnostic validation contains 18 passing checks. The Pivot publication
+contains raw-result and view manifests, a detailed timeslice reference,
+linked-variable validation and a backup of the solver-generated views.
 
 ## Rebuild, solve and validate
 
@@ -82,8 +105,32 @@ python Philippines_v12_CLEWs_build/scripts/report_environmental_accounting.py \
   --label <unique-label>
 ```
 
-Never hand-edit generated `data.txt`, solver output, result CSV files or Pivot
-files.
+Generate or audit the separate diagnostic case with:
+
+```bash
+PYTHONHASHSEED=0 python \
+  Philippines_v12_CLEWs_build/scripts/generate_environmental_water_diagnostic_case.py \
+  --dry-run
+```
+
+After solving its Base and PEP cases, generate the ledger and publish the
+authoritative reporting reference into Pivot:
+
+```bash
+python Philippines_v12_CLEWs_build/scripts/report_environmental_accounting.py \
+  --model \
+  WebAPP/DataStorage/Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC \
+  --label <unique-label>
+
+PYTHONHASHSEED=0 python \
+  Philippines_v12_CLEWs_build/scripts/publish_environmental_water_pivot.py \
+  --label <unique-label>
+```
+
+Use `--dry-run` on the publisher to validate without changing view files. Do
+not hand-edit generated `data.txt`, solver output, result CSV files or Pivot
+files. The publisher is the only documented Pivot transformation; it
+preserves the raw CSVs and backs up the original generated views.
 
 ## Why land can be in-model but water cannot
 
@@ -152,9 +199,34 @@ It cannot reproduce:
 sum[m] beta[t,m,y] × TotalAnnualTechnologyActivityByMode[t,m,y]
 ```
 
-An in-model `ENV_WATER` would therefore be plausible-looking but inexact.
-Water must remain reporting-only until MUIO supports a reviewed
-technology-mode-year constraint multiplier or equivalent formulation.
+An exact in-model `ENV_WATER` would therefore be plausible-looking but
+inexact. Water must remain authoritative reporting-only accounting until MUIO
+supports a reviewed technology-mode-year constraint multiplier or equivalent
+formulation.
+
+### Diagnostic terminal and Pivot publication
+
+The diagnostic case adds `ENV_WATER` without claiming an exact solver
+identity:
+
+- mode 1 consumes `PHL_WTR_EVT` at IAR 1;
+- mode 2 consumes `PHL_WTR_GWT` at IAR 1;
+- mode 3 consumes `PHL_WTR_SUR` at IAR 1; and
+- it has no output, demand, water-balance UDC or cost.
+
+The ordinary commodity-balance inequality permits unused production, so the
+raw optimizer terminal is usually zero or partial. The reporter instead
+calculates:
+
+```text
+authoritative reference
+  = production by all technologies
+  - use by every technology except ENV_WATER
+```
+
+Excluding `ENV_WATER` prevents double subtraction. The Pivot publisher repeats
+this calculation by timeslice and updates only the terminal's generated view
+rows. It leaves the optimization model and raw result CSVs untouched.
 
 ## Account dictionary
 
@@ -183,7 +255,7 @@ condition or protection status.
 `PHL_POW_PP_SPV_T1` lists `PHL_LND` in metadata but has zero land IARs. No
 solar photovoltaic land footprint was invented.
 
-### Water: reporting-only `ENV_WATER`
+### Water: authoritative reporting account
 
 Every water row uses `10^9 m3`.
 
@@ -193,6 +265,10 @@ Every water row uses `10^9 m3`.
 | 2 | Modeled raw groundwater remaining | Production of `PHL_WTR_GWT` less modeled use |
 | 3 | Modeled raw surface water remaining | Production of `PHL_WTR_SUR` less modeled use |
 | — | Modeled raw liquid water remaining | Mode 2 plus mode 3 |
+
+In the diagnostic case, these authoritative values appear under the existing
+`ENV_WATER` name in Pivot after publication. This is a reporting-layer result,
+not the raw solver activity of the unforced terminal.
 
 Mode 1 is evapotranspiration returned to the atmosphere, not useful liquid
 water. Modes 2 and 3 are residuals in modeled raw resource pools. They are not
@@ -218,8 +294,9 @@ additional parallel output to an `ENV_LND_*` commodity, which connects to the
 corresponding `ENV_LAND` mode. Mode 8 consumes residual `PHL_LND`. Original
 crop and land-cover service links remain present.
 
-`ENV_WATER` does not appear because it is a reporting dimension, not a
-technology.
+Open `Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC` to see `ENV_WATER`. Its three
+water inputs remain visible because the Dynamic Graph reads `genData.json`,
+which the publisher does not change.
 
 ### MUIO Pivot
 
@@ -227,9 +304,19 @@ Select **Total Annual Technology Activity By Mode**, filter `Tech` to
 `ENV_LAND`, and include `Mo Id`. The generated Pivot data are stored under
 `TATABM` in `view/RYTM.json`; Base and PEP each expose modes 1–8.
 
-For water and native emissions, open
-`2026-07-25_env_land_accounts/accounts.csv` and
-`native_emissions.csv`, or regenerate a uniquely labelled report.
+In the diagnostic case, filter `Tech` to `ENV_WATER`:
+
+- **Total Technology Model Period Activity** shows published `TTMPA`;
+- **Total Annual Technology Activity By Mode** shows published `TATABM`;
+- **Rate Of Activity** shows published `ROA`;
+- **Rate Of Use By Technology By Mode** shows published `ROUBT`; and
+- **Use By Technology By Mode** shows published `UBT`.
+
+`Production By Technology By Mode` and its rate remain zero because
+`ENV_WATER` has no output. The raw solver-selected terminal behavior remains
+available in
+`2026-07-26_env_water_diagnostic_accounts/water_terminal_reconciliation.csv`
+and the solver-view backup.
 
 ## Validation results
 
@@ -272,6 +359,35 @@ capacity equations for the new technology and seven commodities:
 Single-run wall times were about 263/449 seconds for the controls and 354/536
 seconds for the candidates. These are retained as observations, not a formal
 performance benchmark.
+
+### ENV_WATER diagnostic and published Pivot
+
+Both diagnostic runs solved optimally. The raw unforced terminal was zero in
+194 of 204 mode-year comparisons, partial in seven and complete within result
+precision in three. This raw behavior remains preserved rather than being
+described as exact accounting.
+
+The authoritative Pivot publication passed:
+
+- maximum annual Pivot-to-reporter difference:
+  `0.00000000000104`;
+- annual activity-to-published-use difference: exactly `0`;
+- timeslice activity-rate to water-use-rate difference: exactly `0`;
+- model-period reconciliation difference: exactly `0`;
+- maximum annual difference reconstructed from rounded rates:
+  `0.00001935234`;
+- all non-`ENV_WATER` Pivot values unchanged; and
+- Dynamic Graph source and terminal connections unchanged.
+
+Example published 2020 values in `10^9 m3`:
+
+| Run | Vapor | Groundwater | Surface water |
+|---|---:|---:|---:|
+| Base | 404.9373 | 20.2706 | 257.4726 |
+| PEP | 404.9371 | 20.2706 | 257.4725 |
+
+The model-period totals are 22,439.5632 for Base and 21,168.5896 for PEP. The
+publication took 13.5 seconds for both runs and required no additional solve.
 
 ## Reproducing the fresh unchanged control
 

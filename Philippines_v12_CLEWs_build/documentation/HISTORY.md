@@ -16,6 +16,8 @@ show where files were at the time; use the links below to find them now.
 | 25 July 2026 | Scenario display fix | Replaced leaked internal IDs in the Base and PEP case display metadata with `BASE`, `COAL_PHASEOUT`, `RE` and `EV`; internal scenario IDs and parameter values were unchanged | Active `genData.json` and `view/resData.json` |
 | 25 July 2026 | Environmental accounting | Added validated reporting-only water, land and native-emissions accounts; an in-model terminal was rejected because the installed technology-level UDC cannot exactly represent mode-dependent cluster water coefficients | `ENVIRONMENTAL_ACCOUNTING.md` and `history/environmental_accounting/IMPLEMENTATION_2026-07-25.md` |
 | 25 July 2026 | Independent land-domain accounting | Reassessed land separately from water and added the exact derived-case `ENV_LAND` terminal; water remains reporting-only | `ENVIRONMENTAL_ACCOUNTING.md` and `history/environmental_accounting/ENV_LAND_IMPLEMENTATION_2026-07-25.md` |
+| 26 July 2026 | Unforced water-terminal experiment | Added a separate diagnostic case containing unforced `ENV_WATER` and reconciled its activity against the reporting reference | `ENVIRONMENTAL_ACCOUNTING.md` and `history/environmental_accounting/ENV_WATER_DIAGNOSTIC_2026-07-26.md` |
+| 26 July 2026 | Authoritative water Pivot publication | Kept `ENV_WATER` in the Dynamic Graph and published the reporting residual into its linked Results Pivot variables while preserving raw solver CSVs and backed-up solver views | `ENVIRONMENTAL_ACCOUNTING.md` and `history/environmental_accounting/ENV_WATER_PIVOT_PUBLICATION_2026-07-26.md` |
 
 ## Current versus historical
 
@@ -30,5 +32,7 @@ retired historical record and must not be used to describe v12.
 
 The current environmental-accounting architecture is hybrid. `ENV_LAND` is an
 exact terminal in the derived `Philippines_v12_ENV_LAND` case. `ENV_WATER`
-remains reporting-only until a mode-aware formulation is implemented and
-revalidated.
+remains authoritative reporting-only accounting until a mode-aware
+formulation is implemented and revalidated. The diagnostic case retains the
+terminal in its model topology and publishes the reporting result into Pivot
+after optimization.

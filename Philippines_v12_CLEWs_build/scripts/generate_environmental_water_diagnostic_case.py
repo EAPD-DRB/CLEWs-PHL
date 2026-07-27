@@ -105,10 +105,26 @@ production-minus-ordinary-use ledger in:
   `../../../Philippines_v12_CLEWs_build/scripts/report_environmental_accounting.py`
 - Validator:
   `../../../Philippines_v12_CLEWs_build/scripts/validate_environmental_water_diagnostic_case.py`
+- Pivot publisher:
+  `../../../Philippines_v12_CLEWs_build/scripts/publish_environmental_water_pivot.py`
 - Local documentation index: `documentation/README.md`
 
-Do not use `ENV_WATER` activity without its reconciliation report. Do not edit
-generated solver inputs, outputs, CSV files, or Pivot files by hand.
+After each solve, the Pivot publisher can place the authoritative reference
+under the existing `ENV_WATER` name in all linked Results Pivot variables.
+It leaves raw solver CSVs and this model topology unchanged and backs up the
+solver-generated views. Do not edit generated solver inputs, outputs, CSV
+files, or Pivot files by hand.
+
+When this case is installed from the `CLEWs-PHL` portable archive into a
+separate MUIOGO checkout, run the publisher from the `CLEWs-PHL` repository
+and pass the installed case explicitly:
+
+```bash
+PYTHONHASHSEED=0 python \\
+  Philippines_v12_CLEWs_build/scripts/publish_environmental_water_pivot.py \\
+  --model /path/to/MUIOGO/WebAPP/DataStorage/Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC \\
+  --label <unique-label>
+```
 """
 
 DERIVED_DOCUMENTATION_README = """# ENV_WATER diagnostic case documentation
@@ -127,6 +143,11 @@ This case contains:
 
 The reporting ledger excludes `ENV_WATER` consumption when calculating the
 reference residual, then compares that reference with terminal activity.
+
+The current Results Pivot may contain the authoritative postprocessed
+reference rather than the unforced solver terminal values. Check
+`environmental_water_pivot_publication.json` and the canonical evidence
+directory. Raw solver CSVs remain unchanged.
 """
 
 

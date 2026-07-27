@@ -23,6 +23,13 @@ and adds one eight-mode `ENV_LAND` technology, seven parallel land-stock
 commodities and one exact land-balance equality, for totals of 173
 technologies, 99 commodities and four constraints.
 
+The separate diagnostic case is
+`WebAPP/DataStorage/Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC`. It adds an
+unforced three-mode `ENV_WATER` technology to the exact-land case, for totals
+of 174 technologies, 99 commodities and four constraints. Its current Results
+Pivot publishes the authoritative water residual under `ENV_WATER`, while the
+original solver CSVs remain unchanged.
+
 Its scenario display names are `BASE`, `COAL_PHASEOUT`, `RE`, and `EV`.
 Internal `SC_*` identifiers remain in the parameter files as stable keys.
 
@@ -43,13 +50,17 @@ The current delivery uses an exact in-model `ENV_LAND` terminal for Base and
 PEP in the derived case. Its modes report forest, grassland, other land,
 barren/savannah, built-up land, inland water bodies, cropland and unallocated
 modeled land. Water vapor and raw groundwater/surface-water residuals remain
-reporting-only, and native emissions use the existing mechanism.
+authoritative reporting-only accounts, and native emissions use the existing
+mechanism.
 
 The full account dictionary, equations, validation and interpretation limits
-are in `ENVIRONMENTAL_ACCOUNTING.md`. The water accounts are not in-model
-terminal technologies because the installed user-defined constraint cannot
-represent the cluster technologies' mode-dependent water coefficients
-exactly.
+are in `ENVIRONMENTAL_ACCOUNTING.md`. The water accounts cannot be enforced
+exactly by an in-model terminal because the installed user-defined constraint
+cannot represent the cluster technologies' mode-dependent water coefficients.
+The diagnostic case nevertheless keeps an unforced `ENV_WATER` terminal in
+the Dynamic Graph and uses a reversible, timeslice-aware postprocessor to
+place the authoritative reporting values into its linked Pivot variables
+after each solve.
 
 ## Where to answer questions
 
@@ -73,4 +84,6 @@ history of Philippine land use, yields, irrigation withdrawals or water
 balances. Model results must be described with that distinction intact.
 
 Environmental residual-water results are solution-specific diagnostics. They
-must not be described as sustainable yield or unique water availability.
+must not be described as sustainable yield or unique water availability. The
+current diagnostic-case Pivot is a postprocessed reporting publication, not
+the optimizer's unforced terminal result.

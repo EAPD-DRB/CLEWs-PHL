@@ -27,10 +27,15 @@ for the current formulation.
   `muio/Philippines_v12_v12.0.0_MUIO.zip`
 - Portable environmental-land MUIO case:
   `muio/Philippines_v12_ENV_LAND_v12.0.0_MUIO.zip`
+- Portable diagnostic-case archive:
+  `muio/Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC_v12.0.0_MUIO.zip`
 - Environmental-land generator:
   `scripts/generate_environmental_land_case.py`
 - Environmental-land validator:
   `scripts/validate_environmental_land_case.py`
+- Environmental-water diagnostic generator and validator:
+  `scripts/generate_environmental_water_diagnostic_case.py` and
+  `scripts/validate_environmental_water_diagnostic_case.py`
 - Rebuild script: `scripts/build_v12_hybrid.py`
 - Full dated build record:
   `documentation/history/v12_build/BUILD_REPORT_2026-07-25.md`
@@ -46,8 +51,16 @@ for the current formulation.
   `diagnostics/environmental_accounting/2026-07-25_env_land_final/`
 - Current derived-case water, land and emissions accounts:
   `diagnostics/environmental_accounting/2026-07-25_env_land_accounts/`
+- Current diagnostic water accounts and terminal reconciliation:
+  `diagnostics/environmental_accounting/2026-07-26_env_water_diagnostic_accounts/`
+- Current diagnostic-case validation:
+  `diagnostics/environmental_accounting/2026-07-26_env_water_diagnostic_validation/`
+- Current authoritative `ENV_WATER` Pivot publication and solver-view backup:
+  `diagnostics/environmental_accounting/2026-07-26_env_water_pivot_published/`
 - Environmental-accounting reporter:
   `scripts/report_environmental_accounting.py`
+- Environmental-water Pivot publisher:
+  `scripts/publish_environmental_water_pivot.py`
 - Pinned upstream versions: `config/upstream_versions.json`
 - Local upstream changes: `patches/`
 
@@ -56,15 +69,20 @@ for the current formulation.
 The unchanged source case contains 172 technologies, 92 commodities and three
 constraints over 2020–2053 with the inherited v10 30-timeslice structure. The
 derived environmental-land case contains 173 technologies, 99 commodities and
-four constraints.
+four constraints. The separate environmental-water diagnostic case contains
+174 technologies, 99 commodities and four constraints.
 
 Environmental accounting is hybrid. The derived case adds an exact eight-mode
 `ENV_LAND` terminal, seven parallel land-stock commodities and the
 `BAL_ENV_LAND` equality. Water vapor and modeled raw groundwater/surface-water
 residuals remain reporting-only because the cluster technologies have
 mode-dependent water coefficients that the installed technology-level MUIO
-user-defined constraint cannot represent exactly. Native emissions remain in
-the existing mechanism.
+user-defined constraint cannot represent exactly. The separate diagnostic
+case retains a three-mode, unforced `ENV_WATER` sink in the Dynamic Graph. A
+reversible postprocessor publishes the authoritative
+production-minus-ordinary-use reference under that existing name in the
+linked Results Pivot variables without changing raw solver CSVs. Native
+emissions remain in the existing mechanism.
 
 The 42 new nexus technologies comprise:
 
@@ -110,6 +128,16 @@ The new nexus is connected to v10 through:
   optimally; maximum terminal/source land difference is 0.0003 and maximum
   aggregate closure difference is 0.0001 `10^3 km2`; the land UDC reports
   exactly zero in every year.
+- Diagnostic `ENV_WATER` case: **Pass, 18/18 checks**. Base and PEP solve
+  optimally. Of 204 raw solver mode-year comparisons, the unforced terminal
+  is zero in 194, partial in seven and complete within result precision in
+  three.
+- Authoritative `ENV_WATER` Pivot publication: **Pass**. Annual Pivot values
+  agree with the reporter within 0.0000000000011; annual activity equals
+  published water use exactly, timeslice activity equals timeslice water-use
+  rate exactly, and model-period totals reconcile exactly. All
+  non-`ENV_WATER` Pivot values and the Dynamic Graph source are unchanged.
+  The Base-plus-PEP publication took 13.5 seconds.
 
 ## Interpretation
 
@@ -131,3 +159,6 @@ change the groundwater/surface-water split and, in PEP, the combined liquid
 residual. See `documentation/ENVIRONMENTAL_ACCOUNTING.md` before interpreting
 these accounts. The in-model land modes reproduce the source land states but
 do not imply ecological condition, protection status or forest suitability.
+In the diagnostic case, current Pivot values for `ENV_WATER` are authoritative
+postprocessed reporting results. The original unforced optimizer values remain
+in the raw result CSVs and the preserved solver-view backup.

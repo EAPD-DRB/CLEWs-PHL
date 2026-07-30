@@ -18,6 +18,7 @@ show where files were at the time; use the links below to find them now.
 | 25 July 2026 | Independent land-domain accounting | Reassessed land separately from water and added the exact derived-case `ENV_LAND` terminal; water remains reporting-only | `ENVIRONMENTAL_ACCOUNTING.md` and `history/environmental_accounting/ENV_LAND_IMPLEMENTATION_2026-07-25.md` |
 | 26 July 2026 | Unforced water-terminal experiment | Added a separate diagnostic case containing unforced `ENV_WATER` and reconciled its activity against the reporting reference | `ENVIRONMENTAL_ACCOUNTING.md` and `history/environmental_accounting/ENV_WATER_DIAGNOSTIC_2026-07-26.md` |
 | 26 July 2026 | Authoritative water Pivot publication | Kept `ENV_WATER` in the Dynamic Graph and published the reporting residual into its linked Results Pivot variables while preserving raw solver CSVs and backed-up solver views | `ENVIRONMENTAL_ACCOUNTING.md` and `history/environmental_accounting/ENV_WATER_PIVOT_PUBLICATION_2026-07-26.md` |
+| 30 July 2026 | Canonical provenance reconstruction | Replaced the active legacy ledgers with the six-table schema, mapped every populated in-scope raw-input row to an exact CSV line and unit, and recorded unrecoverable lineage as gaps; model and configuration inputs were unchanged | `../data_sources/calculation_notes/PROVENANCE_RECONSTRUCTION_2026-07-30.md` and `../diagnostics/provenance_validation_2026-07-30.json` |
 
 ## Current versus historical
 

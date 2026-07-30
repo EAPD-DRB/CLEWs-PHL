@@ -10,6 +10,11 @@ using results in advice or presentations.
   preserved, but some original publications, calculations and analyst choices
   still need to be reconstructed. The consolidated register labels this gap
   explicitly instead of inventing citations.
+- `MODEL_MAP.csv` now locates every populated in-scope raw-input row by file
+  and CSV line and carries the best recoverable unit. That immediate lineage
+  does not replace missing original publications, raw download manifests or a
+  complete technology-specific unit dictionary; those items remain explicit
+  in `GAPS.csv`.
 - Several Fisheries engineering inputs retain legacy symbols (`S4`, `S6`–
   `S10`, `S12`, `S16`–`S17`) whose intended meaning is known but whose
   original publication identity is not. The v2.3 source register explains

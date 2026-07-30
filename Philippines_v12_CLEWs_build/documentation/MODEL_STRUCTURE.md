@@ -14,8 +14,8 @@ changes.
 The new nexus connects to the inherited system through the MUIO commodities
 `PHL_AGR_ELE`, `PHL_WTR_SUR`, `PHL_WTR_GWT`, `PHL_WTR_PRC`,
 `PHL_WTR_EVT`, and `PHL_LND`. The upstream raw names are retained in the
-build inputs where applicable; `MODEL_DATA_MAP.csv` records important
-name mappings.
+build inputs where applicable; `MODEL_MAP.csv` records exact raw-input lines
+and important name mappings.
 
 ## Crop representation
 

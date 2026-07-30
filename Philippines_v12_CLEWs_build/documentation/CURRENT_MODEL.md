@@ -64,11 +64,14 @@ after each solve.
 
 ## Where to answer questions
 
-- Start with `../data_sources/DATA_SOURCES.md` for the source register.
+- Start with `../data_sources/SOURCES.csv` for the canonical source register
+  and `../data_sources/DATA_SOURCES.md` for its narrative guide.
 - Use `../data_sources/ASSUMPTIONS.csv` for analyst choices.
 - Use `../data_sources/CALCULATIONS.csv` for formulas and transformations.
-- Use `../data_sources/MODEL_DATA_MAP.csv` to connect a model name or
-  parameter to its source, assumption and calculation.
+- Use `../data_sources/MODEL_MAP.csv` to connect each raw-input CSV line or
+  documented model object to its evidence and model unit.
+- Use `../data_sources/GAPS.csv` for missing evidence and
+  `../data_sources/CHANGES.csv` for provenance revisions.
 - Use `../data_sources/calculation_notes/` for detailed records of calculations
   that the model actually uses.
 - Use `HISTORY.md` to understand when and why the formulation changed.

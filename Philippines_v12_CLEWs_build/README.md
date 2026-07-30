@@ -10,10 +10,14 @@ Global land–agriculture–water system.
 - Current model description: `documentation/CURRENT_MODEL.md`
 - Model structure: `documentation/MODEL_STRUCTURE.md`
 - Environmental accounting: `documentation/ENVIRONMENTAL_ACCOUNTING.md`
-- Data sources: `data_sources/DATA_SOURCES.md`
+- Human-readable source guide: `data_sources/DATA_SOURCES.md`
+- Canonical source register: `data_sources/SOURCES.csv`
 - Assumptions: `data_sources/ASSUMPTIONS.csv`
 - Calculations used by the model: `data_sources/CALCULATIONS.csv`
-- Model-to-source map: `data_sources/MODEL_DATA_MAP.csv`
+- Row-level model-to-evidence map: `data_sources/MODEL_MAP.csv`
+- Unresolved provenance: `data_sources/GAPS.csv`
+- Provenance changes: `data_sources/CHANGES.csv`
+- Provenance validator: `scripts/provenance.py`
 - Known limitations: `documentation/KNOWN_LIMITATIONS.md`
 - Chronological history: `documentation/HISTORY.md`
 

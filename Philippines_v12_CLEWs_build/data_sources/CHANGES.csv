@@ -1,0 +1,2 @@
+change_id,date,class,description,model_objects,evidence_path,map_rows_affected,resolve_status,author,commit
+CHG_PROVENANCE_RECON_20260730,2026-07-30,A,"Reconstructed canonical energy, land, water and environmental-accounting provenance ledgers without changing model or configuration inputs.",SOURCES.csv;CALCULATIONS.csv;ASSUMPTIONS.csv;MODEL_MAP.csv;GAPS.csv;CHANGES.csv,calculation_notes/PROVENANCE_RECONSTRUCTION_2026-07-30.md,,objective_unchanged,Codex,4690597ac3511f402990b03ecfc4182f70b3850b

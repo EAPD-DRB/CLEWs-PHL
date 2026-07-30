@@ -7,12 +7,15 @@ source publication is never confused with a modelling choice.
 
 ## How to use this register
 
-1. Find the model entity in `MODEL_DATA_MAP.csv`.
-2. Follow its `source_ids`, `assumption_ids` and `calculation_ids`.
-3. Use this file for the source identity, `ASSUMPTIONS.csv` for choices, and
-   `CALCULATIONS.csv` or `calculation_notes/` for transformations.
-4. If an entry says “documentation gap,” do not claim a more precise origin
-   until supporting evidence is recovered.
+1. Find the model row or configuration item in `MODEL_MAP.csv`.
+2. Follow its `evidence_ids` into `SOURCES.csv`, `ASSUMPTIONS.csv` and
+   `CALCULATIONS.csv`.
+3. Use `GAPS.csv` before making a completeness claim and `CHANGES.csv` to
+   identify ledger revisions.
+4. Use this file for a narrative overview and `calculation_notes/` for
+   transformations that need more explanation.
+5. Do not claim a more precise origin than the exact locator actually
+   retained in the canonical ledgers.
 
 ## Historical energy system
 
@@ -24,6 +27,7 @@ source publication is never confused with a modelling choice.
 The absence of a complete v10 bibliography is a known documentation gap. The
 current model must not be described as fully source-traceable for every
 inherited energy parameter until that register is reconstructed.
+`GAPS.csv` records the precise missing evidence and a proposed recovery path.
 
 ## Land, agriculture and water
 
@@ -81,6 +85,9 @@ change some route-level and water rows; those differences are quantified in
 the environmental-accounting validation rather than hidden.
 
 ## Known source gaps
+
+The authoritative machine-readable list is `GAPS.csv`. It distinguishes
+recoverable missing records from information that was not retained.
 
 - Original publications behind Fisheries legacy symbols `S4`, `S6`–`S10`,
   `S12`, and `S16`–`S17` were not recoverable. Their meanings are documented,

@@ -27,7 +27,8 @@ using results in advice or presentations.
 
 - The land–agriculture–water block has not been calibrated to observed
   historical land allocation, yields, irrigation withdrawals or water
-  balances.
+  balances. `LAND_WATER_CALIBRATION_FINDINGS.md` measures this gap against a
+  solved run and proposes corrections for the yield and irrigation parts.
 - Vegetable production uses the GAEZ tomato proxy. The “other crops” group is
   an aggregation.
 - Crop-output demand grows with an SSP2 population series; this is a scenario

@@ -1,0 +1,40 @@
+{
+  "derived_evidence_types": {
+    "MAP_PHL_CLIMATE_RYTCM": "derived",
+    "MAP_PHL_GROUNDWATER_CAM": "derived",
+    "MAP_PHL_GROUNDWATER_UCC": "derived",
+    "MAP_PHL_GWT_CONSTRAINT_STRUCTURE": "derived",
+    "MAP_PHL_GWT_IRRIGATION_IAR": "derived",
+    "MAP_PHL_GWT_IRRIGATION_STRUCTURE": "derived",
+    "MAP_PHL_SURFACE_CAM": "derived",
+    "MAP_PHL_SURFACE_CONSTRAINT_STRUCTURE": "derived",
+    "MAP_PHL_SURFACE_UCC": "derived",
+    "MAP_PHL_V15_LINEAGE": "direct",
+    "MAP_PHL_WATER_LEDGER": "derived",
+    "MAP_PHL_WATER_MANIFEST": "derived",
+    "MAP_PHL_WATER_SOURCE_SNAPSHOT": "direct",
+    "MAP_PHL_WATER_VALIDATION": "derived"
+  },
+  "failure_count": 0,
+  "failures": [],
+  "ledger_dir": "docs/philippines_v15/data_sources",
+  "row_counts": {
+    "ASSUMPTIONS.csv": 12,
+    "CALCULATIONS.csv": 13,
+    "CHANGES.csv": 5,
+    "GAPS.csv": 9,
+    "MODEL_MAP.csv": 14,
+    "SOURCES.csv": 21
+  },
+  "stage": "build",
+  "status": "pass",
+  "verified_digests": 6,
+  "warning_count": 5,
+  "warnings": [
+    "CHANGES.csv:2 CHG_PHL_V15_GWT_LINK: commit is blank",
+    "CHANGES.csv:3 CHG_PHL_V15_CLIMATE: commit is blank",
+    "CHANGES.csv:4 CHG_PHL_V15_WATER_CAPS: commit is blank",
+    "CHANGES.csv:5 CHG_PHL_V15_IDENTITY: commit is blank",
+    "CHANGES.csv:6 CHG_PHL_V15_SCHEMA_LEDGER: commit is blank"
+  ]
+}

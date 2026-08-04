@@ -1,0 +1,3171 @@
+{
+  "generated_at_utc": "2026-08-04T21:51:46.259209+00:00",
+  "candidate": {
+    "case": "Philippines_v15",
+    "run": "BASE_V15",
+    "status": "optimal",
+    "solver_status": "Optimal - objective value 369630979.62464261",
+    "objective": 369630979.6246426,
+    "objective_delta_vs_baseline": 0.12164062261581421,
+    "objective_percent_change_vs_baseline": 3.290866549642825e-08,
+    "expected_precipitation_source_cost_delta": 0.12164083915217289,
+    "objective_delta_minus_expected_precipitation_cost": -2.1653635867702192e-07,
+    "maximum_precipitation_path_absolute_error_km3": 4.978179163117602e-06
+  },
+  "baseline": {
+    "case": "Philippines_v14_STOCK_TURNOVER",
+    "run": "BASE_V14",
+    "status": "Optimal - objective value 369630979.50300199",
+    "objective": 369630979.503002,
+    "matrix": {
+      "rows": 791041,
+      "columns": 884956,
+      "nonzeros": 12530519
+    },
+    "artifacts": {
+      "data_processed.txt": {
+        "path": "WebAPP/DataStorage/Philippines_v14_STOCK_TURNOVER/res/BASE_V14/data_processed.txt",
+        "modified_utc": "2026-07-28T21:24:50.940108+00:00",
+        "size_bytes": 841797,
+        "sha256": "cc243560830500f5d9590b410e6c35f997340d62cb864db96e3d390a743903db"
+      },
+      "lp.lp": {
+        "path": "WebAPP/DataStorage/Philippines_v14_STOCK_TURNOVER/res/BASE_V14/lp.lp",
+        "modified_utc": "2026-07-28T21:25:23.111079+00:00",
+        "size_bytes": 736734467,
+        "sha256": "3a9b4fc42c10060ff0b7cc73225cf69ebb5de818bd43e0cb8f2f87b06555a6f2"
+      },
+      "results.txt": {
+        "path": "WebAPP/DataStorage/Philippines_v14_STOCK_TURNOVER/res/BASE_V14/results.txt",
+        "modified_utc": "2026-07-28T21:27:36.350870+00:00",
+        "size_bytes": 216203529,
+        "sha256": "70f574073aa6da1b5cdc262187f651201c2b471720ea2d7c775ee9ad3a411cba"
+      }
+    }
+  },
+  "validation_chain": {
+    "source_generation": "passed",
+    "deterministic_design_checks": "passed",
+    "generate_datafile": "passed_prior_full_validation_artifact_rechecked",
+    "preprocess_data": "passed_prior_full_validation_artifact_rechecked",
+    "glpsol_check": "passed_original_export_and_independent_lp_recheck",
+    "bounded_cbc_diagnostic": "passed_prior_full_validation",
+    "cbc": "passed_optimal_prior_full_validation",
+    "cbc_time_budget_seconds": 280,
+    "result_exports": "passed",
+    "baseline_comparison": "passed",
+    "matrix": {
+      "rows": 791109,
+      "columns": 884956,
+      "nonzeros": 12533783
+    },
+    "matrix_delta_vs_baseline": {
+      "rows": 68,
+      "columns": 0,
+      "nonzeros": 3264
+    },
+    "timings_seconds": {
+      "cbc_solve": 219.6812985419965,
+      "cbc_solve_upper_bound_seconds": 256.008263,
+      "interpretation": "CBC was not rerun during this identity-only postprocess. The exact timer is carried forward from the prior full live validation; LP-to-result timestamps independently and conservatively upper-bound the original diagnostic-plus-solve interval."
+    },
+    "glpsol": {
+      "returncode": 0,
+      "stdout_tail": [
+        "GLPSOL--GLPK LP/MIP Solver 5.0",
+        "Parameter(s) specified in the command line:",
+        " --lp /Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v15/res/BASE_V15/lp.lp",
+        " --check",
+        "Reading problem data from '/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v15/res/BASE_V15/lp.lp'...",
+        "791108 rows, 884956 columns, 12111563 non-zeros",
+        "13322658 lines were read",
+        "--- Problem Characteristics ---",
+        "Number of rows               =   791108",
+        "Number of columns            =   884956",
+        "Number of non-zeros (matrix) = 12111563",
+        "Number of non-zeros (objrow) =   422220"
+      ],
+      "stderr_tail": []
+    },
+    "bounded_cbc": {
+      "seconds": 30,
+      "returncode": 0,
+      "stdout_tail": [
+        "Prior full validation bounded diagnostic passed; CBC was not rerun for the identity-only recheck."
+      ],
+      "stderr_tail": []
+    },
+    "cbc_solver": {
+      "returncode": 0,
+      "stdout_tail": [
+        "Preserved optimal results.txt was rechecked; CBC was not rerun for the identity-only rename."
+      ],
+      "stderr_tail": []
+    },
+    "existing_result_recheck": {
+      "reason": "Identity-only rename from Philippines v14 to Philippines v15",
+      "solver_rerun": false,
+      "checks": "source identity, generated data, independent LP matrix, full-precision ledger, and v14 baseline comparison"
+    }
+  },
+  "case_identity": {
+    "directory": "Philippines_v15",
+    "gen_data_case": "Philippines_v15",
+    "run_metadata_case": "BASE_V15",
+    "active_scenarios": [
+      "BASE"
+    ],
+    "case_matches_directory": true,
+    "run_matches_requested": true,
+    "base_only": true
+  },
+  "source_checks": {
+    "manifest": {
+      "path": "WebAPP/DataStorage/Philippines_v15/documentation/national_water_manifest.json",
+      "modified_utc": "2026-08-04T21:51:15.068916+00:00",
+      "size_bytes": 16980,
+      "sha256": "f789dee578666de59b07f30547fab100717f10ef5a0ef52f102a4c7f8fdf6e5e"
+    },
+    "source_data_sha256_matches": true,
+    "candidate_fingerprints_match": true,
+    "baseline_fingerprints_match_generation_source": true,
+    "technology_count_unchanged": 174,
+    "commodity_count_unchanged": 97,
+    "constraint_count_before": 4,
+    "constraint_count_after": 6,
+    "scenario_count_unchanged": 4,
+    "median_only_installed": true,
+    "p10_p90_model_scenarios_added": false,
+    "irrigation_coefficients_unchanged": true,
+    "exact_withdrawal_proof_repeated": true,
+    "policy_inheritance_repeated": true
+  },
+  "generated_data_checks": {
+    "required_tokens_present": [
+      "WATER_SUR_AVAIL",
+      "WATER_GWT_POTENTIAL",
+      "PHL_WTR_GWT",
+      "DEMAGRGWTPHL"
+    ],
+    "DEMAGRGWTPHL_MODEperTECHNOLOGY": [
+      1
+    ],
+    "DEMAGRGWTPHL_in_groundwater_input_set": true,
+    "generated_data_sha256": "f46c7b19ee159137d5ba6cc873707a3c96e53ade701459789568f712b4c89da4",
+    "processed_data_sha256": "84b06a09520e16c63738ca292f3a50a4edaa99743af6e698767e15205c0f2647"
+  },
+  "baseline_result_comparison": {
+    "activity": {
+      "baseline_rows": 14110,
+      "candidate_rows": 14110,
+      "changed_rows_with_missing_treated_as_zero": 140,
+      "maximum_absolute_delta": 99.11519999999996,
+      "top_changes": [
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2053"
+          },
+          "baseline": 724.9654,
+          "candidate": 824.0806,
+          "delta": 99.11519999999996,
+          "absolute_delta": 99.11519999999996
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2052"
+          },
+          "baseline": 724.9654,
+          "candidate": 822.7843,
+          "delta": 97.81889999999999,
+          "absolute_delta": 97.81889999999999
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2051"
+          },
+          "baseline": 724.9654,
+          "candidate": 821.4881,
+          "delta": 96.52269999999999,
+          "absolute_delta": 96.52269999999999
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2050"
+          },
+          "baseline": 724.9654,
+          "candidate": 820.1918,
+          "delta": 95.2263999999999,
+          "absolute_delta": 95.2263999999999
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2049"
+          },
+          "baseline": 724.9654,
+          "candidate": 818.8955,
+          "delta": 93.93009999999992,
+          "absolute_delta": 93.93009999999992
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2048"
+          },
+          "baseline": 724.9654,
+          "candidate": 817.5992,
+          "delta": 92.63379999999995,
+          "absolute_delta": 92.63379999999995
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2047"
+          },
+          "baseline": 724.9654,
+          "candidate": 816.303,
+          "delta": 91.33759999999995,
+          "absolute_delta": 91.33759999999995
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2046"
+          },
+          "baseline": 724.9654,
+          "candidate": 815.0067,
+          "delta": 90.04129999999998,
+          "absolute_delta": 90.04129999999998
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2045"
+          },
+          "baseline": 724.9654,
+          "candidate": 813.7104,
+          "delta": 88.745,
+          "absolute_delta": 88.745
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2044"
+          },
+          "baseline": 724.9654,
+          "candidate": 812.4141,
+          "delta": 87.44869999999992,
+          "absolute_delta": 87.44869999999992
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2043"
+          },
+          "baseline": 724.9654,
+          "candidate": 811.1178,
+          "delta": 86.15239999999994,
+          "absolute_delta": 86.15239999999994
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2042"
+          },
+          "baseline": 724.9654,
+          "candidate": 809.8216,
+          "delta": 84.85619999999994,
+          "absolute_delta": 84.85619999999994
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2041"
+          },
+          "baseline": 724.9654,
+          "candidate": 808.5253,
+          "delta": 83.55989999999997,
+          "absolute_delta": 83.55989999999997
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2040"
+          },
+          "baseline": 724.9654,
+          "candidate": 807.229,
+          "delta": 82.2636,
+          "absolute_delta": 82.2636
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2039"
+          },
+          "baseline": 724.9654,
+          "candidate": 805.9327,
+          "delta": 80.96729999999991,
+          "absolute_delta": 80.96729999999991
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2038"
+          },
+          "baseline": 724.9654,
+          "candidate": 804.6364,
+          "delta": 79.67099999999994,
+          "absolute_delta": 79.67099999999994
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2037"
+          },
+          "baseline": 724.9654,
+          "candidate": 803.3402,
+          "delta": 78.37479999999994,
+          "absolute_delta": 78.37479999999994
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2036"
+          },
+          "baseline": 724.9654,
+          "candidate": 802.0439,
+          "delta": 77.07849999999996,
+          "absolute_delta": 77.07849999999996
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2035"
+          },
+          "baseline": 724.9654,
+          "candidate": 800.7476,
+          "delta": 75.78219999999999,
+          "absolute_delta": 75.78219999999999
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2034"
+          },
+          "baseline": 724.9654,
+          "candidate": 799.4513,
+          "delta": 74.4858999999999,
+          "absolute_delta": 74.4858999999999
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2033"
+          },
+          "baseline": 724.9654,
+          "candidate": 798.1551,
+          "delta": 73.1896999999999,
+          "absolute_delta": 73.1896999999999
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2032"
+          },
+          "baseline": 724.9654,
+          "candidate": 796.8588,
+          "delta": 71.89339999999993,
+          "absolute_delta": 71.89339999999993
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2031"
+          },
+          "baseline": 724.9654,
+          "candidate": 795.5625,
+          "delta": 70.59709999999995,
+          "absolute_delta": 70.59709999999995
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2030"
+          },
+          "baseline": 724.9654,
+          "candidate": 794.2662,
+          "delta": 69.30079999999998,
+          "absolute_delta": 69.30079999999998
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2029"
+          },
+          "baseline": 724.9654,
+          "candidate": 793.4703,
+          "delta": 68.5048999999999,
+          "absolute_delta": 68.5048999999999
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2028"
+          },
+          "baseline": 724.9654,
+          "candidate": 792.6743,
+          "delta": 67.70889999999997,
+          "absolute_delta": 67.70889999999997
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2027"
+          },
+          "baseline": 724.9654,
+          "candidate": 791.8784,
+          "delta": 66.91300000000001,
+          "absolute_delta": 66.91300000000001
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2026"
+          },
+          "baseline": 724.9654,
+          "candidate": 791.0824,
+          "delta": 66.11699999999996,
+          "absolute_delta": 66.11699999999996
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2025"
+          },
+          "baseline": 724.9654,
+          "candidate": 790.2865,
+          "delta": 65.3211,
+          "absolute_delta": 65.3211
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2024"
+          },
+          "baseline": 724.9654,
+          "candidate": 789.4905,
+          "delta": 64.52509999999995,
+          "absolute_delta": 64.52509999999995
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2023"
+          },
+          "baseline": 724.9654,
+          "candidate": 788.6946,
+          "delta": 63.72919999999999,
+          "absolute_delta": 63.72919999999999
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2022"
+          },
+          "baseline": 724.9654,
+          "candidate": 787.8986,
+          "delta": 62.93319999999994,
+          "absolute_delta": 62.93319999999994
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2021"
+          },
+          "baseline": 724.9654,
+          "candidate": 787.1027,
+          "delta": 62.13729999999998,
+          "absolute_delta": 62.13729999999998
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "MINPRCPHL",
+            "m": "1",
+            "y": "2020"
+          },
+          "baseline": 724.9654,
+          "candidate": 786.3067,
+          "delta": 61.34129999999993,
+          "absolute_delta": 61.34129999999993
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "ENV_WATER",
+            "m": "3",
+            "y": "2049"
+          },
+          "baseline": 0.0,
+          "candidate": 26.2774,
+          "delta": 26.2774,
+          "absolute_delta": 26.2774
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_POW_GEO_OLD",
+            "m": "1",
+            "y": "2046"
+          },
+          "baseline": 115.1618,
+          "candidate": 126.0,
+          "delta": 10.8382,
+          "absolute_delta": 10.8382
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_POW_PP_SPV_T1",
+            "m": "1",
+            "y": "2046"
+          },
+          "baseline": 315.9885,
+          "candidate": 305.1503,
+          "delta": -10.838199999999972,
+          "absolute_delta": 10.838199999999972
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_POW_GEO_OLD",
+            "m": "1",
+            "y": "2052"
+          },
+          "baseline": 113.9913,
+          "candidate": 120.0677,
+          "delta": 6.076400000000007,
+          "absolute_delta": 6.076400000000007
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_POW_PP_SPV_T1",
+            "m": "1",
+            "y": "2052"
+          },
+          "baseline": 439.3836,
+          "candidate": 433.3073,
+          "delta": -6.076300000000003,
+          "absolute_delta": 6.076300000000003
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_DEM_PUB_SUR_WAT",
+            "m": "1",
+            "y": "2033"
+          },
+          "baseline": 31.917,
+          "candidate": 26.1506,
+          "delta": -5.766400000000001,
+          "absolute_delta": 5.766400000000001
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_DEM_PUB_GWT_WAT",
+            "m": "1",
+            "y": "2033"
+          },
+          "baseline": 0.0,
+          "candidate": 5.7664,
+          "delta": 5.7664,
+          "absolute_delta": 5.7664
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_DEM_PUB_GWT_WAT",
+            "m": "1",
+            "y": "2053"
+          },
+          "baseline": 0.0,
+          "candidate": 4.3958,
+          "delta": 4.3958,
+          "absolute_delta": 4.3958
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_DEM_PUB_SUR_WAT",
+            "m": "1",
+            "y": "2053"
+          },
+          "baseline": 66.359,
+          "candidate": 61.9632,
+          "delta": -4.395799999999994,
+          "absolute_delta": 4.395799999999994
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_DEM_PUB_GWT_WAT",
+            "m": "1",
+            "y": "2050"
+          },
+          "baseline": 0.0,
+          "candidate": 3.3862,
+          "delta": 3.3862,
+          "absolute_delta": 3.3862
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_DEM_PUB_SUR_WAT",
+            "m": "1",
+            "y": "2050"
+          },
+          "baseline": 59.592,
+          "candidate": 56.2058,
+          "delta": -3.386199999999995,
+          "absolute_delta": 3.386199999999995
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_DEM_PWR_GWT_WAT",
+            "m": "1",
+            "y": "2045"
+          },
+          "baseline": 2.8953,
+          "candidate": 5.4092,
+          "delta": 2.5139,
+          "absolute_delta": 2.5139
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_DEM_PWR_SUR_WAT",
+            "m": "1",
+            "y": "2045"
+          },
+          "baseline": 27.9694,
+          "candidate": 25.4555,
+          "delta": -2.5138999999999996,
+          "absolute_delta": 2.5138999999999996
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_POW_PP_HY_LA",
+            "m": "1",
+            "y": "2053"
+          },
+          "baseline": 17.576,
+          "candidate": 19.451,
+          "delta": 1.875,
+          "absolute_delta": 1.875
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_POW_PP_SPV_T1",
+            "m": "1",
+            "y": "2053"
+          },
+          "baseline": 451.1024,
+          "candidate": 449.2274,
+          "delta": -1.875,
+          "absolute_delta": 1.875
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_AGR_HEAT_NG",
+            "m": "1",
+            "y": "2044"
+          },
+          "baseline": 8.609,
+          "candidate": 7.0302,
+          "delta": -1.5788000000000002,
+          "absolute_delta": 1.5788000000000002
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_AGR_HEAT_OIL",
+            "m": "1",
+            "y": "2044"
+          },
+          "baseline": 1.157,
+          "candidate": 2.7358,
+          "delta": 1.5787999999999998,
+          "absolute_delta": 1.5787999999999998
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "ENV_WATER",
+            "m": "2",
+            "y": "2052"
+          },
+          "baseline": 0.0,
+          "candidate": 1.3214,
+          "delta": 1.3214,
+          "absolute_delta": 1.3214
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_POW_PP_HY_LA",
+            "m": "1",
+            "y": "2047"
+          },
+          "baseline": 19.451,
+          "candidate": 18.5135,
+          "delta": -0.9375,
+          "absolute_delta": 0.9375
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_POW_PP_HY_LA",
+            "m": "1",
+            "y": "2049"
+          },
+          "baseline": 19.451,
+          "candidate": 18.5135,
+          "delta": -0.9375,
+          "absolute_delta": 0.9375
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_POW_PP_SPV_T1",
+            "m": "1",
+            "y": "2049"
+          },
+          "baseline": 322.1958,
+          "candidate": 323.1333,
+          "delta": 0.9375,
+          "absolute_delta": 0.9375
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_POW_PP_HY_LA",
+            "m": "1",
+            "y": "2048"
+          },
+          "baseline": 18.5135,
+          "candidate": 19.451,
+          "delta": 0.9375,
+          "absolute_delta": 0.9375
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_POW_PP_SPV_T1",
+            "m": "1",
+            "y": "2048"
+          },
+          "baseline": 320.3018,
+          "candidate": 319.3643,
+          "delta": -0.9375,
+          "absolute_delta": 0.9375
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_DEM_PWR_GWT_WAT",
+            "m": "1",
+            "y": "2033"
+          },
+          "baseline": 0.0,
+          "candidate": 0.8676,
+          "delta": 0.8676,
+          "absolute_delta": 0.8676
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_DEM_PWR_SUR_WAT",
+            "m": "1",
+            "y": "2033"
+          },
+          "baseline": 21.4997,
+          "candidate": 20.6321,
+          "delta": -0.8675999999999995,
+          "absolute_delta": 0.8675999999999995
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_POW_GEO_OLD",
+            "m": "1",
+            "y": "2047"
+          },
+          "baseline": 120.0677,
+          "candidate": 120.8841,
+          "delta": 0.8164000000000016,
+          "absolute_delta": 0.8164000000000016
+        }
+      ]
+    },
+    "capacity": {
+      "baseline_rows": 5916,
+      "candidate_rows": 5916,
+      "changed_rows_with_missing_treated_as_zero": 25,
+      "maximum_absolute_delta": 320.4356,
+      "top_changes": [
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2039"
+          },
+          "baseline": 644.3546,
+          "candidate": 323.919,
+          "delta": -320.4356,
+          "absolute_delta": 320.4356
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2040"
+          },
+          "baseline": 644.3546,
+          "candidate": 323.919,
+          "delta": -320.4356,
+          "absolute_delta": 320.4356
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2041"
+          },
+          "baseline": 644.3546,
+          "candidate": 323.919,
+          "delta": -320.4356,
+          "absolute_delta": 320.4356
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2038"
+          },
+          "baseline": 644.3546,
+          "candidate": 323.919,
+          "delta": -320.4356,
+          "absolute_delta": 320.4356
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2047"
+          },
+          "baseline": 400.507,
+          "candidate": 445.1943,
+          "delta": 44.68729999999999,
+          "absolute_delta": 44.68729999999999
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2050"
+          },
+          "baseline": 400.507,
+          "candidate": 445.1943,
+          "delta": 44.68729999999999,
+          "absolute_delta": 44.68729999999999
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2048"
+          },
+          "baseline": 400.507,
+          "candidate": 445.1943,
+          "delta": 44.68729999999999,
+          "absolute_delta": 44.68729999999999
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2049"
+          },
+          "baseline": 400.507,
+          "candidate": 445.1943,
+          "delta": 44.68729999999999,
+          "absolute_delta": 44.68729999999999
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2043"
+          },
+          "baseline": 644.3546,
+          "candidate": 674.0839,
+          "delta": 29.729299999999967,
+          "absolute_delta": 29.729299999999967
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2042"
+          },
+          "baseline": 644.3546,
+          "candidate": 674.0839,
+          "delta": 29.729299999999967,
+          "absolute_delta": 29.729299999999967
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2044"
+          },
+          "baseline": 644.3546,
+          "candidate": 674.0839,
+          "delta": 29.729299999999967,
+          "absolute_delta": 29.729299999999967
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2037"
+          },
+          "baseline": 295.7297,
+          "candidate": 323.919,
+          "delta": 28.189300000000003,
+          "absolute_delta": 28.189300000000003
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2020"
+          },
+          "baseline": 210.5188,
+          "candidate": 228.8896,
+          "delta": 18.370800000000003,
+          "absolute_delta": 18.370800000000003
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2021"
+          },
+          "baseline": 210.5188,
+          "candidate": 228.8896,
+          "delta": 18.370800000000003,
+          "absolute_delta": 18.370800000000003
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2029"
+          },
+          "baseline": 265.1704,
+          "candidate": 248.8337,
+          "delta": -16.33669999999998,
+          "absolute_delta": 16.33669999999998
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2024"
+          },
+          "baseline": 243.8477,
+          "candidate": 228.8896,
+          "delta": -14.958100000000002,
+          "absolute_delta": 14.958100000000002
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2025"
+          },
+          "baseline": 243.8477,
+          "candidate": 228.8896,
+          "delta": -14.958100000000002,
+          "absolute_delta": 14.958100000000002
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2022"
+          },
+          "baseline": 243.8477,
+          "candidate": 228.8896,
+          "delta": -14.958100000000002,
+          "absolute_delta": 14.958100000000002
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2023"
+          },
+          "baseline": 243.8477,
+          "candidate": 228.8896,
+          "delta": -14.958100000000002,
+          "absolute_delta": 14.958100000000002
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2045"
+          },
+          "baseline": 433.8358,
+          "candidate": 445.1943,
+          "delta": 11.358499999999992,
+          "absolute_delta": 11.358499999999992
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2046"
+          },
+          "baseline": 433.8358,
+          "candidate": 445.1943,
+          "delta": 11.358499999999992,
+          "absolute_delta": 11.358499999999992
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2036"
+          },
+          "baseline": 295.7297,
+          "candidate": 288.963,
+          "delta": -6.7666999999999575,
+          "absolute_delta": 6.7666999999999575
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2035"
+          },
+          "baseline": 295.7297,
+          "candidate": 288.963,
+          "delta": -6.7666999999999575,
+          "absolute_delta": 6.7666999999999575
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2033"
+          },
+          "baseline": 295.7297,
+          "candidate": 288.963,
+          "delta": -6.7666999999999575,
+          "absolute_delta": 6.7666999999999575
+        },
+        {
+          "key": {
+            "r": "RE1",
+            "t": "PHL_INDU_PLANT_OTH",
+            "y": "2034"
+          },
+          "baseline": 295.7297,
+          "candidate": 288.963,
+          "delta": -6.7666999999999575,
+          "absolute_delta": 6.7666999999999575
+        }
+      ]
+    },
+    "emissions": {
+      "baseline_rows": 11832,
+      "candidate_rows": 11832,
+      "changed_rows_with_missing_treated_as_zero": 0,
+      "maximum_absolute_delta": 0.0,
+      "top_changes": []
+    },
+    "demand": {
+      "baseline_rows": 98940,
+      "candidate_rows": 98940,
+      "changed_rows_with_missing_treated_as_zero": 0,
+      "maximum_absolute_delta": 0.0,
+      "top_changes": []
+    },
+    "production": {
+      "baseline_rows": 103680,
+      "candidate_rows": 103716,
+      "changed_rows_with_missing_treated_as_zero": 32574,
+      "maximum_absolute_delta": 462.2715,
+      "top_changes": [
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2026",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "7",
+            "r": "RE1"
+          },
+          "baseline": 9.2991,
+          "candidate": 471.5706,
+          "delta": 462.2715,
+          "absolute_delta": 462.2715
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2032",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "5",
+            "r": "RE1"
+          },
+          "baseline": 10.3541,
+          "candidate": 435.9487,
+          "delta": 425.59459999999996,
+          "absolute_delta": 425.59459999999996
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2048",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "19",
+            "r": "RE1"
+          },
+          "baseline": 16.9867,
+          "candidate": 420.0513,
+          "delta": 403.06460000000004,
+          "absolute_delta": 403.06460000000004
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2027",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "4",
+            "r": "RE1"
+          },
+          "baseline": 406.587,
+          "candidate": 10.6386,
+          "delta": -395.9484,
+          "absolute_delta": 395.9484
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2024",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "2",
+            "r": "RE1"
+          },
+          "baseline": 435.1671,
+          "candidate": 41.7773,
+          "delta": -393.38980000000004,
+          "absolute_delta": 393.38980000000004
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2049",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "22",
+            "r": "RE1"
+          },
+          "baseline": 367.5662,
+          "candidate": 19.1042,
+          "delta": -348.462,
+          "absolute_delta": 348.462
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2052",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "12",
+            "r": "RE1"
+          },
+          "baseline": 13.5961,
+          "candidate": 286.0634,
+          "delta": 272.4673,
+          "absolute_delta": 272.4673
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2046",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "15",
+            "r": "RE1"
+          },
+          "baseline": 18.6527,
+          "candidate": 288.3177,
+          "delta": 269.665,
+          "absolute_delta": 269.665
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2025",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "19",
+            "r": "RE1"
+          },
+          "baseline": 12.8828,
+          "candidate": 280.1052,
+          "delta": 267.22240000000005,
+          "absolute_delta": 267.22240000000005
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2030",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "6",
+            "r": "RE1"
+          },
+          "baseline": 10.1196,
+          "candidate": 273.9011,
+          "delta": 263.7815,
+          "absolute_delta": 263.7815
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2020",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "13",
+            "r": "RE1"
+          },
+          "baseline": 12.4584,
+          "candidate": 276.1372,
+          "delta": 263.6788,
+          "absolute_delta": 263.6788
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2040",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "21",
+            "r": "RE1"
+          },
+          "baseline": 22.0216,
+          "candidate": 284.1901,
+          "delta": 262.1685,
+          "absolute_delta": 262.1685
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2023",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "19",
+            "r": "RE1"
+          },
+          "baseline": 12.3046,
+          "candidate": 272.2622,
+          "delta": 259.9576,
+          "absolute_delta": 259.9576
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2030",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "16",
+            "r": "RE1"
+          },
+          "baseline": 273.1376,
+          "candidate": 15.408,
+          "delta": -257.7296,
+          "absolute_delta": 257.7296
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2050",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "20",
+            "r": "RE1"
+          },
+          "baseline": 16.7128,
+          "candidate": 269.0174,
+          "delta": 252.3046,
+          "absolute_delta": 252.3046
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2045",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "17",
+            "r": "RE1"
+          },
+          "baseline": 16.1461,
+          "candidate": 266.9616,
+          "delta": 250.8155,
+          "absolute_delta": 250.8155
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2051",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "16",
+            "r": "RE1"
+          },
+          "baseline": 17.1229,
+          "candidate": 267.2128,
+          "delta": 250.0899,
+          "absolute_delta": 250.0899
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2053",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "15",
+            "r": "RE1"
+          },
+          "baseline": 16.7128,
+          "candidate": 266.6471,
+          "delta": 249.9343,
+          "absolute_delta": 249.9343
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2049",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "13",
+            "r": "RE1"
+          },
+          "baseline": 16.5984,
+          "candidate": 264.8402,
+          "delta": 248.24179999999998,
+          "absolute_delta": 248.24179999999998
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2044",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "24",
+            "r": "RE1"
+          },
+          "baseline": 16.8456,
+          "candidate": 263.3598,
+          "delta": 246.51420000000002,
+          "absolute_delta": 246.51420000000002
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2043",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "5",
+            "r": "RE1"
+          },
+          "baseline": 11.5197,
+          "candidate": 256.6425,
+          "delta": 245.12279999999998,
+          "absolute_delta": 245.12279999999998
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2042",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "17",
+            "r": "RE1"
+          },
+          "baseline": 17.2847,
+          "candidate": 261.4611,
+          "delta": 244.1764,
+          "absolute_delta": 244.1764
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2039",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "23",
+            "r": "RE1"
+          },
+          "baseline": 15.3517,
+          "candidate": 259.2619,
+          "delta": 243.91020000000003,
+          "absolute_delta": 243.91020000000003
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2035",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "21",
+            "r": "RE1"
+          },
+          "baseline": 14.218,
+          "candidate": 257.796,
+          "delta": 243.578,
+          "absolute_delta": 243.578
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2034",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "19",
+            "r": "RE1"
+          },
+          "baseline": 14.3616,
+          "candidate": 256.731,
+          "delta": 242.36939999999998,
+          "absolute_delta": 242.36939999999998
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2033",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "11",
+            "r": "RE1"
+          },
+          "baseline": 10.1171,
+          "candidate": 251.5333,
+          "delta": 241.4162,
+          "absolute_delta": 241.4162
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2029",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "10",
+            "r": "RE1"
+          },
+          "baseline": 10.2385,
+          "candidate": 251.4993,
+          "delta": 241.26080000000002,
+          "absolute_delta": 241.26080000000002
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2031",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "18",
+            "r": "RE1"
+          },
+          "baseline": 14.2159,
+          "candidate": 254.9518,
+          "delta": 240.7359,
+          "absolute_delta": 240.7359
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2024",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "6",
+            "r": "RE1"
+          },
+          "baseline": 9.0498,
+          "candidate": 248.5462,
+          "delta": 239.4964,
+          "absolute_delta": 239.4964
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2021",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "16",
+            "r": "RE1"
+          },
+          "baseline": 252.2336,
+          "candidate": 13.5091,
+          "delta": -238.7245,
+          "absolute_delta": 238.7245
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2023",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "5",
+            "r": "RE1"
+          },
+          "baseline": 8.9225,
+          "candidate": 246.7222,
+          "delta": 237.79969999999997,
+          "absolute_delta": 237.79969999999997
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2022",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "12",
+            "r": "RE1"
+          },
+          "baseline": 8.7953,
+          "candidate": 246.4119,
+          "delta": 237.6166,
+          "absolute_delta": 237.6166
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2021",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "5",
+            "r": "RE1"
+          },
+          "baseline": 8.951,
+          "candidate": 246.2552,
+          "delta": 237.3042,
+          "absolute_delta": 237.3042
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2047",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "24",
+            "r": "RE1"
+          },
+          "baseline": 38.6403,
+          "candidate": 264.9317,
+          "delta": 226.29139999999998,
+          "absolute_delta": 226.29139999999998
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2021",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "13",
+            "r": "RE1"
+          },
+          "baseline": 235.8102,
+          "candidate": 13.4018,
+          "delta": -222.4084,
+          "absolute_delta": 222.4084
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2037",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "23",
+            "r": "RE1"
+          },
+          "baseline": 36.8579,
+          "candidate": 258.3305,
+          "delta": 221.47259999999997,
+          "absolute_delta": 221.47259999999997
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2027",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "14",
+            "r": "RE1"
+          },
+          "baseline": 13.4314,
+          "candidate": 234.4933,
+          "delta": 221.0619,
+          "absolute_delta": 221.0619
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2045",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "5",
+            "r": "RE1"
+          },
+          "baseline": 232.0527,
+          "candidate": 12.641,
+          "delta": -219.4117,
+          "absolute_delta": 219.4117
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2022",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "5",
+            "r": "RE1"
+          },
+          "baseline": 228.8117,
+          "candidate": 9.9909,
+          "delta": -218.8208,
+          "absolute_delta": 218.8208
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2051",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "15",
+            "r": "RE1"
+          },
+          "baseline": 237.5424,
+          "candidate": 18.938,
+          "delta": -218.6044,
+          "absolute_delta": 218.6044
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2034",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "2",
+            "r": "RE1"
+          },
+          "baseline": 229.5419,
+          "candidate": 11.859,
+          "delta": -217.6829,
+          "absolute_delta": 217.6829
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2053",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "17",
+            "r": "RE1"
+          },
+          "baseline": 235.8723,
+          "candidate": 18.9977,
+          "delta": -216.8746,
+          "absolute_delta": 216.8746
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2023",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "8",
+            "r": "RE1"
+          },
+          "baseline": 227.0819,
+          "candidate": 10.2751,
+          "delta": -216.80679999999998,
+          "absolute_delta": 216.80679999999998
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2020",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "15",
+            "r": "RE1"
+          },
+          "baseline": 230.2261,
+          "candidate": 13.5125,
+          "delta": -216.7136,
+          "absolute_delta": 216.7136
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2050",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "17",
+            "r": "RE1"
+          },
+          "baseline": 236.0609,
+          "candidate": 19.372,
+          "delta": -216.6889,
+          "absolute_delta": 216.6889
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2033",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "2",
+            "r": "RE1"
+          },
+          "baseline": 228.4822,
+          "candidate": 11.8118,
+          "delta": -216.6704,
+          "absolute_delta": 216.6704
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2026",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "13",
+            "r": "RE1"
+          },
+          "baseline": 231.1208,
+          "candidate": 14.4661,
+          "delta": -216.6547,
+          "absolute_delta": 216.6547
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2038",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "17",
+            "r": "RE1"
+          },
+          "baseline": 233.8991,
+          "candidate": 17.2916,
+          "delta": -216.60750000000002,
+          "absolute_delta": 216.60750000000002
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2046",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "9",
+            "r": "RE1"
+          },
+          "baseline": 229.8566,
+          "candidate": 13.2536,
+          "delta": -216.60299999999998,
+          "absolute_delta": 216.60299999999998
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2025",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "21",
+            "r": "RE1"
+          },
+          "baseline": 230.7248,
+          "candidate": 14.2566,
+          "delta": -216.4682,
+          "absolute_delta": 216.4682
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2048",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "21",
+            "r": "RE1"
+          },
+          "baseline": 234.3389,
+          "candidate": 17.8795,
+          "delta": -216.4594,
+          "absolute_delta": 216.4594
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2037",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "19",
+            "r": "RE1"
+          },
+          "baseline": 233.4727,
+          "candidate": 17.0983,
+          "delta": -216.3744,
+          "absolute_delta": 216.3744
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2039",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "11",
+            "r": "RE1"
+          },
+          "baseline": 228.9958,
+          "candidate": 12.6793,
+          "delta": -216.3165,
+          "absolute_delta": 216.3165
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2047",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "18",
+            "r": "RE1"
+          },
+          "baseline": 234.6364,
+          "candidate": 18.4334,
+          "delta": -216.203,
+          "absolute_delta": 216.203
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2043",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "10",
+            "r": "RE1"
+          },
+          "baseline": 229.3834,
+          "candidate": 13.2051,
+          "delta": -216.1783,
+          "absolute_delta": 216.1783
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2041",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "12",
+            "r": "RE1"
+          },
+          "baseline": 229.0789,
+          "candidate": 12.9407,
+          "delta": -216.1382,
+          "absolute_delta": 216.1382
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2052",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "3",
+            "r": "RE1"
+          },
+          "baseline": 229.9828,
+          "candidate": 14.0777,
+          "delta": -215.9051,
+          "absolute_delta": 215.9051
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2029",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "11",
+            "r": "RE1"
+          },
+          "baseline": 227.8565,
+          "candidate": 12.0517,
+          "delta": -215.8048,
+          "absolute_delta": 215.8048
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2036",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "2",
+            "r": "RE1"
+          },
+          "baseline": 228.6484,
+          "candidate": 12.8827,
+          "delta": -215.7657,
+          "absolute_delta": 215.7657
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "MINPRCPHL",
+            "y": "2041",
+            "m": "1",
+            "r_y": "RE1",
+            "l": "20",
+            "r": "RE1"
+          },
+          "baseline": 17.5564,
+          "candidate": 233.2501,
+          "delta": 215.6937,
+          "absolute_delta": 215.6937
+        }
+      ]
+    },
+    "use": {
+      "baseline_rows": 79472,
+      "candidate_rows": 79507,
+      "changed_rows_with_missing_treated_as_zero": 15341,
+      "maximum_absolute_delta": 247.6494,
+      "top_changes": [
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2053",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "15",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 247.6494,
+          "delta": 247.6494,
+          "absolute_delta": 247.6494
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2052",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "12",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 247.2598,
+          "delta": 247.2598,
+          "absolute_delta": 247.2598
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2051",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "16",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 246.8703,
+          "delta": 246.8703,
+          "absolute_delta": 246.8703
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2050",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "20",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 246.4807,
+          "delta": 246.4807,
+          "absolute_delta": 246.4807
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2049",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "13",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 246.0912,
+          "delta": 246.0912,
+          "absolute_delta": 246.0912
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2048",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "19",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 245.7016,
+          "delta": 245.7016,
+          "absolute_delta": 245.7016
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2047",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "24",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 245.3121,
+          "delta": 245.3121,
+          "absolute_delta": 245.3121
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2046",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "15",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 244.9225,
+          "delta": 244.9225,
+          "absolute_delta": 244.9225
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2045",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "17",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 244.533,
+          "delta": 244.533,
+          "absolute_delta": 244.533
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2044",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "24",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 244.1434,
+          "delta": 244.1434,
+          "absolute_delta": 244.1434
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2043",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "5",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 243.7539,
+          "delta": 243.7539,
+          "absolute_delta": 243.7539
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2042",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "17",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 243.3643,
+          "delta": 243.3643,
+          "absolute_delta": 243.3643
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2040",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "21",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 242.5852,
+          "delta": 242.5852,
+          "absolute_delta": 242.5852
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2039",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "23",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 242.1957,
+          "delta": 242.1957,
+          "absolute_delta": 242.1957
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2038",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "14",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 241.8061,
+          "delta": 241.8061,
+          "absolute_delta": 241.8061
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2037",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "23",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 241.4166,
+          "delta": 241.4166,
+          "absolute_delta": 241.4166
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2036",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "19",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 241.027,
+          "delta": 241.027,
+          "absolute_delta": 241.027
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2035",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "21",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 240.6375,
+          "delta": 240.6375,
+          "absolute_delta": 240.6375
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2034",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "19",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 240.2479,
+          "delta": 240.2479,
+          "absolute_delta": 240.2479
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2033",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "11",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 239.8584,
+          "delta": 239.8584,
+          "absolute_delta": 239.8584
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2032",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "5",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 239.4688,
+          "delta": 239.4688,
+          "absolute_delta": 239.4688
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2031",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "18",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 239.0792,
+          "delta": 239.0792,
+          "absolute_delta": 239.0792
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2030",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "6",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 238.6897,
+          "delta": 238.6897,
+          "absolute_delta": 238.6897
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2029",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "10",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 238.4505,
+          "delta": 238.4505,
+          "absolute_delta": 238.4505
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2028",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "9",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 238.2113,
+          "delta": 238.2113,
+          "absolute_delta": 238.2113
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2026",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "7",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 237.7329,
+          "delta": 237.7329,
+          "absolute_delta": 237.7329
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2025",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "19",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 237.4937,
+          "delta": 237.4937,
+          "absolute_delta": 237.4937
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2024",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "6",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 237.2545,
+          "delta": 237.2545,
+          "absolute_delta": 237.2545
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2023",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "5",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 237.0153,
+          "delta": 237.0153,
+          "absolute_delta": 237.0153
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2022",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "12",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 236.7761,
+          "delta": 236.7761,
+          "absolute_delta": 236.7761
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2021",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "5",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 236.5369,
+          "delta": 236.5369,
+          "absolute_delta": 236.5369
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2020",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "13",
+            "r": "RE1"
+          },
+          "baseline": 0.0,
+          "candidate": 236.2977,
+          "delta": 236.2977,
+          "absolute_delta": 236.2977
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2031",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "21",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2026",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "13",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2053",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "17",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2035",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "4",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2039",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "11",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2033",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "2",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2044",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "10",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2023",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "8",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2051",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "15",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2040",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "1",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2043",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "10",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2032",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "23",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2048",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "21",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2029",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "11",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2021",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "16",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2028",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "7",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2038",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "17",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2024",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "2",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2046",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "9",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2042",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "18",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2034",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "2",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2047",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "18",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2022",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "5",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2045",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "5",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2020",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "15",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2036",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "2",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2049",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "22",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        },
+        {
+          "key": {
+            "r_x": "RE1",
+            "f": "PHL_WTR_PRC",
+            "t": "LNDAGRPHLC08",
+            "y": "2030",
+            "m": "27",
+            "r_y": "RE1",
+            "l": "16",
+            "r": "RE1"
+          },
+          "baseline": 217.8637,
+          "candidate": 0.0,
+          "delta": -217.8637,
+          "absolute_delta": 217.8637
+        }
+      ]
+    }
+  },
+  "water_ledger_summary": {
+    "maximum_UDC_exactness_residual_km3": 3.900000010048643e-06,
+    "minimum_raw_commodity_balance_surplus_km3": -3.8517124e-13,
+    "maximum_unforced_ENV_WATER_activity_km3": 26.283414
+  },
+  "artifacts": {
+    "data.txt": {
+      "path": "WebAPP/DataStorage/Philippines_v15/res/BASE_V15/data.txt",
+      "modified_utc": "2026-08-04T21:31:12.462976+00:00",
+      "size_bytes": 1255881,
+      "sha256": "f46c7b19ee159137d5ba6cc873707a3c96e53ade701459789568f712b4c89da4"
+    },
+    "data_processed.txt": {
+      "path": "WebAPP/DataStorage/Philippines_v15/res/BASE_V15/data_processed.txt",
+      "modified_utc": "2026-08-04T21:31:12.470844+00:00",
+      "size_bytes": 1317036,
+      "sha256": "84b06a09520e16c63738ca292f3a50a4edaa99743af6e698767e15205c0f2647"
+    },
+    "lp.lp": {
+      "path": "WebAPP/DataStorage/Philippines_v15/res/BASE_V15/lp.lp",
+      "modified_utc": "2026-08-04T21:31:44.742013+00:00",
+      "size_bytes": 764607489,
+      "sha256": "56469f5d590aa13bb402079f94a9eb0d2b24a2f03dc08223cc11d2d1db638b80"
+    },
+    "results.txt": {
+      "path": "WebAPP/DataStorage/Philippines_v15/res/BASE_V15/results.txt",
+      "modified_utc": "2026-08-04T21:36:00.750276+00:00",
+      "size_bytes": 216212301,
+      "sha256": "8605b16ea5e14a775ac09b322dc686c2ea37eb304bc578d640350d597f5caae5"
+    },
+    "objective_csv": {
+      "path": "WebAPP/DataStorage/Philippines_v15/res/BASE_V15/csv/ObjectiveValue.csv",
+      "modified_utc": "2026-08-04T21:36:02.101150+00:00",
+      "size_bytes": 39,
+      "sha256": "589f1130279d2563e88b4ea513f8d50ee50308c885a7ede7eeaf857ec338fb6c"
+    }
+  },
+  "result_timestamp_check": {
+    "lp_modified_utc": "2026-08-04T21:31:44.742013+00:00",
+    "results_modified_utc": "2026-08-04T21:36:00.750276+00:00",
+    "lp_to_result_upper_bound_seconds": 256.008263,
+    "passed": true
+  },
+  "source_parameter_hashes_unchanged_during_validation": true,
+  "known_limitations": [
+    "national potential is not dependable yield or environmental-flow-adjusted availability",
+    "20.2 km3/year is groundwater potential flow, not aquifer stock or safe yield",
+    "public and power groundwater pumping electricity is not calibrated",
+    "irrigation and public-water demand are not recalibrated",
+    "the model has no basin, aquifer, transfer, head or groundwater-storage state"
+  ]
+}

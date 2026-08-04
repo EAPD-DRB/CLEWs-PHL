@@ -6,8 +6,19 @@ assumptions, calculations, diagnostics, and portable MUIO cases.
 
 ## Current model package
 
-The current model lineage is **Philippines v12.0.0**. The `main` branch
-provides three portable cases:
+The current model is **Philippines v15.0.0**. The `main` branch provides the
+validated portable case at:
+
+- `Philippines_v15_CLEWs_build/muio/Philippines_v15_v15.0.0_MUIO.zip`.
+
+Version 15 retains the v14 stock-turnover model and adds an ERA5-rebased,
+SSP2-4.5 median national precipitation pathway, a missing irrigation
+groundwater input, and exact annual gross-withdrawal ceilings for national
+surface-water and groundwater potential. It remains a whole-country model;
+the ceilings are sensitivities rather than basin or aquifer safe-yield limits.
+
+The earlier **Philippines v12.0.0** package remains available on `main` with
+three portable lineage cases:
 
 - `Philippines_v12`: the integrated source case;
 - `Philippines_v12_ENV_LAND`: the derived case with in-model land
@@ -17,41 +28,47 @@ provides three portable cases:
   the Dynamic Graph, and authoritative postprocessed water values in Results
   Pivot.
 
-The original two-case tagged release is available from
+The original v12 two-case tagged release is available from
 [v12.0.0](https://github.com/EAPD-DRB/CLEWs-PHL/releases/tag/v12.0.0).
-All three current portable archives are tracked under
+All three v12 portable archives are tracked under
 `Philippines_v12_CLEWs_build/muio/` on `main`.
 
-The historical Philippines v10 energy system and Fisheries v2.3 are retained
-in v12. The new CLEWs Global-derived land, agriculture, and water block is
-structurally integrated but not historically calibrated. Read
-`Philippines_v12_CLEWs_build/documentation/CURRENT_MODEL.md` and
-`Philippines_v12_CLEWs_build/documentation/KNOWN_LIMITATIONS.md` before using
-the model.
+The historical Philippines v10 energy system, Fisheries v2.3, and the v12
+CLEWs Global-derived land, agriculture, and water block remain inherited in
+v15. Read `Philippines_v15_CLEWs_build/README.md` and its canonical schema
+ledger before using the model.
 
 ## Use with MUIOGO
 
 1. Install or clone [MUIOGO](https://github.com/EAPD-DRB/MUIOGO).
-2. Extract the required archive from
-   `Philippines_v12_CLEWs_build/muio/`.
+2. Extract `Philippines_v15_CLEWs_build/muio/Philippines_v15_v15.0.0_MUIO.zip`.
 3. Place the extracted case folder under `MUIOGO/WebAPP/DataStorage/`.
 4. Start MUIOGO and open the case.
 
-The archives contain the editable MUIO parameter JSON and view files. Solver
+The archive contains the editable MUIO parameter JSON and view files. Solver
 outputs are intentionally excluded and are regenerated when the model is
 solved.
 
-For the diagnostic case, the included Pivot initially contains the validated
-authoritative `ENV_WATER` publication. Every new solve regenerates the solver
-views, so rerun
+For the inherited v12 diagnostic case, the included Pivot initially contains
+the validated authoritative `ENV_WATER` publication. Every new solve
+regenerates the solver views, so rerun
 `Philippines_v12_CLEWs_build/scripts/publish_environmental_water_pivot.py`
 with the installed model path and a unique evidence label before interpreting
 `ENV_WATER`. Raw solver CSVs remain unchanged.
 
 ## Repository structure
 
-The `Philippines_v12_CLEWs_build/` folder preserves the structure of the
-working model package:
+The current package is under `Philippines_v15_CLEWs_build/`:
+
+- `data_sources/`: six canonical source-trace ledgers, retained evidence and
+  the review workbook;
+- `documentation/`: equation-first model-change audit;
+- `diagnostics/`: generation, solve, ledger and provenance validation;
+- `muio/`: portable v15 MUIO case and checksum; and
+- `scripts/`: retained generator, validators and normalized research input.
+
+The `Philippines_v12_CLEWs_build/` folder preserves the inherited build and
+reproduction package:
 
 - `config/`: pinned upstream versions and workflow configuration;
 - `data_sources/`: sources, assumptions, calculations, and model-data map;

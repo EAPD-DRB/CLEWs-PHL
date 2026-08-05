@@ -11,3 +11,6 @@ __pycache__/
 # Historical v14 local snapshot is preserved as GitHub Release assets.
 /Philippines_v14_STOCK_TURNOVER/
 /Philippines_v14_STOCK_TURNOVER.zip
+
+# Live MUIOGO case: local working tree populated from the tracked ZIP.
+/case/

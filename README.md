@@ -44,13 +44,17 @@ ledger before using the model.
 ## Use with MUIOGO
 
 1. Install or clone [MUIOGO](https://github.com/EAPD-DRB/MUIOGO).
-2. Extract `Philippines_v16_CLEWs_build/muio/Philippines_v16_v16.0.0_MUIO.zip`.
-3. Place the extracted case folder under `MUIOGO/WebAPP/DataStorage/`.
+2. Extract the current archive into this repository as
+   `case/Philippines_v16`.
+3. Create a relative symlink from
+   `MUIOGO/WebAPP/DataStorage/Philippines_v16` to
+   `CLEWs-PHL/case/Philippines_v16`.
 4. Start MUIOGO and open the case.
 
-The archive contains the editable MUIO parameter JSON and view files. Solver
-outputs are intentionally excluded and are regenerated when the model is
-solved.
+The ignored `case/` tree is the live local working copy; editing through
+MUIOGO edits that same directory. The tracked result-free ZIP is the laptop
+handoff artifact. The push and pull handoff skills maintain the ZIP, local
+case, and symlink without committing the unzipped case or solver results.
 
 For the inherited v12 diagnostic case, the included Pivot initially contains
 the validated authoritative `ENV_WATER` publication. Every new solve
@@ -69,6 +73,10 @@ The current package is under `Philippines_v16_CLEWs_build/`:
 - `diagnostics/`: generation, solve, ledger and provenance validation;
 - `muio/`: portable v16 MUIO case, predecessor archive, and checksums; and
 - `scripts/`: retained generator, validators and normalized research input.
+
+The ignored local `case/Philippines_v16/` directory is populated from the
+current portable archive and exposed to MUIOGO through a relative symlink. It
+is not part of Git history, which avoids the per-file Git size limit.
 
 The `Philippines_v12_CLEWs_build/` folder preserves the inherited build and
 reproduction package:

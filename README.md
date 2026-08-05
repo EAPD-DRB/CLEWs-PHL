@@ -6,8 +6,8 @@ assumptions, calculations, diagnostics, and portable MUIO cases.
 
 ## Current model package
 
-The current model is **Philippines v16.0.0**, prepared on the migration branch.
-Its portable case is:
+The current `main`-branch model is **Philippines v16.0.0**. Its portable case
+is:
 
 - `Philippines_v16_CLEWs_build/muio/Philippines_v16_v16.0.0_MUIO.zip`.
 

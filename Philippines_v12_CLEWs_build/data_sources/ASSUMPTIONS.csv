@@ -1,7 +1,8 @@
 assumption_id,statement,central_value,unit,evidence_source_ids,lower_bound,upper_bound
-ASM_LAW_TOMATO_PROXY,Vegetables are represented by the GAEZ tomato proxy.,TOM,GAEZ crop code,SRC_CROP_CODE_MAPPING;SRC_GAEZ_V4,,
-ASM_LAW_OTHER_AGGREGATION,"Selected crops outside rice, coconuts, maize, vegetables and sugar cane are aggregated as OTH.",OTH,model crop group,SRC_CROP_CODE_MAPPING;SRC_PHL_V12_REPOSITORY,,
-ASM_LAW_SSP2_GROWTH,Crop-output demand after 2020 grows only with the retained SSP2 population index.,population_y / population_2020,relative population index (2020=1),SRC_PHL_V12_REPOSITORY,,
+ASM_LAW_TOMATO_PROXY,Vegetables are represented by the GAEZ tomato proxy.,TOM,GAEZ crop code,SRC_CROP_CODE_MAPPING;SRC_GAEZ_V4;SRC_GAEZ_PHL_RASTER_MANIFEST;SRC_FAOSTAT_PHL_SELECTION,,
+ASM_LAW_OTHER_AGGREGATION,"Selected crops outside rice, coconuts, maize, vegetables and sugar cane are aggregated as OTH.",OTH,model crop group,SRC_CROP_CODE_MAPPING;SRC_PHL_V12_REPOSITORY;SRC_FAOSTAT_PHL_SELECTION;SRC_GAEZ_PHL_RASTER_MANIFEST,,
+ASM_LAW_SSP2_GROWTH,Crop-output demand after 2020 grows only with the retained SSP2 population index.,population_y / population_2020,relative population index (2020=1),SRC_SSP2_POP_WORKBOOK;SRC_SSP2_PHL_ROW;SRC_SSP2_PHL_ANNUAL_INDEX,,
+ASM_LAW_RUBBER_HIGH_ONLY,Para rubber has no matching row in any retained low-input GAEZ selection table and therefore contributes only high-input spatial proxy rasters to OTH.,RUB high input only,GAEZ proxy availability,SRC_GAEZ_YLD_LOW_TABLE;SRC_GAEZ_CWD_LOW_TABLE;SRC_GAEZ_EVT_LOW_TABLE;SRC_GAEZ_PHL_RASTER_MANIFEST,,
 ASM_LAW_POOLED_WATER,All irrigated crops draw from one pooled agricultural-water commodity.,1,pooled AGRWATPHL commodity,SRC_CLEWS_GLOBAL_PINNED;SRC_CLEWSY_PINNED,,
 ASM_LAW_NO_DIRECT_LIQUID,Direct on-farm liquid fuel is not assigned to individual crop technologies.,0,PJ direct liquid fuel per crop-technology activity,SRC_PHL_V12_REPOSITORY,,
 ASM_ENE_DONOR_PRESERVATION,The v10 energy formulation is inherited as the donor system.,Philippines_v10,donor model version,SRC_V10_ENERGY_DONOR;SRC_V10_MODEL_FIXES,,

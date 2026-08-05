@@ -47,6 +47,32 @@ Rice is `RCP`; coconuts `CON`; maize `MZE`; vegetables use the tomato proxy
 These mappings and the population-only growth rule are modelling assumptions,
 not observations.
 
+### Recovered exact source chain
+
+The 5 August 2026 recovery closes the earlier broad GAEZ, FAOSTAT and SSP2
+traceability gaps:
+
+- The six exact pinned GAEZ input-selection tables and a 90-row manifest now
+  record every crop raster's cache filename, URL, file identifier and physical
+  source-table line. The selection consists of 48 high-input and 42 low-input
+  rasters. Para rubber has no low-input source-table row.
+- The two non-crop cache files, `precipitation prc.tif` and `LCType_ncb.tif`,
+  are retained byte-for-byte with pinned repository URLs and SHA-256 values.
+- `FAOSTAT_2020.csv` and `FAOSTAT_production_2020.csv` are retained with their
+  exact checksums. A derived ten-row table records the selected CPC codes,
+  harvested-area and production values, flags, proxies, model groups and
+  physical source lines.
+- The exact SSP Public Database Version 2.0 workbook is retained. The selected
+  population row is `data!A1373:Y1373`: `IIASA-WiC POP`, `SSP2`, `PHL`,
+  `Population`, `million`. The exact annual 2020–2053 index is retained too.
+- Material build events, including cache quarantine, forced reruns, the final
+  Snakemake command and workflow identifier, are indexed from Codex task
+  `019f9991-7a2d-72a0-8fa1-6820178dd177`.
+
+See `calculation_notes/SOURCE_PROVENANCE_RECOVERY_2026-08-05.md` for the full
+forensic record. The original bytes and checksums of the 90 temporary crop
+rasters remain unavailable; their exact reproducible URLs are now retained.
+
 ## Fisheries v2.3
 
 | Source ID | Provider and publication | Model use | Status |

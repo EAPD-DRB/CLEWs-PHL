@@ -1,0 +1,11 @@
+Item Code (CPC),Item,gaez_proxy_code,model_output_group,Value_harvested_area,Unit_harvested_area,Flag_harvested_area,Flag Description_harvested_area,_source_csv_line_harvested_area,Value_production,Unit_production,Flag_production,Flag Description_production,_source_csv_line_production
+0113,Rice,RCP,RCP,4718896,ha,A,Official figure,7093,19294855.51,t,A,Official figure,7251
+01460,"Coconuts, in shell",CON,CON,3651289,ha,A,Official figure,7052,14490922.69,t,A,Official figure,7209
+0112,Maize (corn),MZE,MZE,2553781,ha,A,Official figure,7065,8118545.88,t,A,Official figure,7222
+01290.90,"Other vegetables, fresh n.e.c.",TOM,TOM,639800,ha,E,Estimated value,7081,5498265.59,t,I,Imputed value,7239
+01802,Sugar cane,SGC,SGC,399086,ha,A,Official figure,7100,24398941.25,t,A,Official figure,7258
+01319,"Other tropical fruits, n.e.c.",BAN,OTH,375101,ha,I,Imputed value,7080,3215377.53,t,I,Imputed value,7238
+01313,Plantains and cooking bananas,BAN,OTH,263580,ha,A,Official figure,7088,3100838.72,t,A,Official figure,7246
+01950.01,Natural rubber in primary forms,RUB,OTH,230723,ha,A,Official figure,7067,422407.1,t,A,Official figure,7225
+01520.01,"Cassava, fresh",CAS,OTH,219348,ha,A,Official figure,7046,2607758.63,t,A,Official figure,7203
+01316,"Mangoes, guavas and mangosteens",BAN,OTH,195135,ha,A,Official figure,7066,753103.14,t,A,Official figure,7223

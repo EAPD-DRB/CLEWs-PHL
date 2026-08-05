@@ -1,6 +1,6 @@
 # Philippines v15 national-water source trace
 
-This note routes every installed water value from evidence through calculation to the live JSON source and solver equation. It documents the v15 water delta; parameters inherited unchanged from v14 are traced to `SRC_PHL_V14_CASE` and the legacy register in `docs/philippines_v14_stock_turnover/`.
+This note routes every installed water value from evidence through calculation to the live JSON source and solver equation. It documents the v15 water delta; parameters inherited unchanged from v14 are traced cumulatively in this package's `MODEL_MAP.csv`, retained v13/v14 records, and current portable archive. Historical v14 names identify chronology only and are not external ledger dependencies.
 
 ## Observation classification
 

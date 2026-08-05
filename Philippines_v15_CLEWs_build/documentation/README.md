@@ -16,5 +16,6 @@
 - `../diagnostics/package_provenance_validation.json`: independent validation
   of the copied six-table ledger and retained hashes in this repository.
 
-The inherited v12 build and its detailed historical provenance remain under
-`../../Philippines_v12_CLEWs_build/`.
+The inherited raw build, detailed historical provenance and v13/v14 evolution
+records are retained inside this v15 package under `../data_sources/evidence/`.
+The separate older folders are historical conveniences, not dependencies.

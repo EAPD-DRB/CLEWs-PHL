@@ -141,18 +141,17 @@ ledger reconstructs production with its mode-specific values, but does not use
 Added 2026-08-04 as a documentation-only change. No case source parameter,
 generated solver artifact or result file was changed.
 
-The canonical package under `docs/philippines_v15/data_sources/` contains 21
-source records, 13 calculations, 12 assumptions, 14 live model mappings, 9
-evidence gaps and 5 change records. It traces the v14 source-case lineage;
+The canonical package under `data_sources/` contains 76 source records, 67
+calculations, 38 assumptions, 71,946 model mappings, 17 disclosed evidence
+gaps and 10 change records. It carries the complete inherited-base map, the v13
+calibration record, all 3,253 v14 cell changes and the v15 water addition;
 World Bank CCKP ERA5 and SSP2-4.5 evidence; IPCC scenario framing; Philippine
 national surface-water and groundwater benchmarks; groundwater screening and
 study leads; the local MUIO equations; full-precision generation evidence; and
-the authoritative post-solve water publication. Six retained artifacts are
-SHA-256 pinned.
+the authoritative post-solve water publication. The retained-evidence manifest
+pins 185 files, and the current portable model archive is pinned separately.
 
-`schema_ledger_build.json` passed the generic provenance validation with zero
-failures and five warnings for intentionally blank commit fields in the
-uncommitted working tree. `schema_ledger_live.json` passed 12 semantic checks
-with zero failures, including live `Philippines_v15/BASE_V15` identity,
-all-year formulas, source fingerprints, median-only installation, unchanged
-irrigation coefficients, policy inheritance and exact withdrawal accounting.
+The current generic package validation and the cumulative country validator
+pass with zero failures. They verify all retained evidence, all 36 populated
+raw input tables, the current archive, cumulative lineage coverage and the
+absence of an earlier-version ledger dependency.

@@ -39,18 +39,20 @@ aquifer storage, or groundwater safe yield. Neither ceiling binds in
 
 ## Source trace
 
-The six canonical CSV ledgers are under `data_sources/`:
+The six canonical, cumulative CSV ledgers are under `data_sources/`:
 
-- `SOURCES.csv`: 21 source and retained-evidence records;
-- `CALCULATIONS.csv`: 13 full-precision calculations;
-- `ASSUMPTIONS.csv`: 12 explicit modeling assumptions;
-- `MODEL_MAP.csv`: 14 mappings to live source files and parameters;
-- `GAPS.csv`: 9 unresolved evidence needs; and
-- `CHANGES.csv`: 5 implementation and documentation records.
+- `SOURCES.csv`: 76 source and retained-evidence records;
+- `CALCULATIONS.csv`: 67 calculations;
+- `ASSUMPTIONS.csv`: 38 explicit modeling assumptions;
+- `MODEL_MAP.csv`: 71,946 inherited and version-specific mappings;
+- `GAPS.csv`: 17 unresolved evidence needs; and
+- `CHANGES.csv`: 10 implementation and documentation records.
 
-`data_sources/PHILIPPINES_V15_WATER_SCHEMA_LEDGER.xlsx` is a formatted review
-copy; the CSV files are authoritative. The complete annual pathway and
-equation map are in
+`data_sources/PHILIPPINES_V15_CANONICAL_SCHEMA_LEDGER.xlsx` is a formatted
+review copy; the CSV files are authoritative. The package carries the complete
+inherited-base ledger, v13 calibration record, all 3,253 v14 cell changes, and
+the v15 water addition. No earlier installed case or ledger is required.
+The complete water pathway and equation map are in
 `data_sources/calculation_notes/national_water_v15.md`.
 
 ## Validation
@@ -67,9 +69,10 @@ optimization, result export, and comparison with the unchanged v14 baseline.
 - final-demand changed rows: 0; and
 - emission changed rows: 0.
 
-The generic provenance validation passed with zero failures and six retained
-digests verified. The live semantic ledger validation passed all 12 checks.
-See `diagnostics/` and `documentation/MODEL_FIXES_WATER_2026-08-04.md`.
+The canonical validator checks the generic schema, every retained-evidence
+manifest entry, the current model archive, cumulative lineage coverage and the
+absence of earlier-version path dependencies. See `diagnostics/` and
+`documentation/MODEL_FIXES_WATER_2026-08-04.md`.
 
 ## Reproduction scripts
 

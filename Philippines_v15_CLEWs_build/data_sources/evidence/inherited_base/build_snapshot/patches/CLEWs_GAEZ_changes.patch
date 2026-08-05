@@ -1,0 +1,557 @@
+diff --git a/GAEZ_Processing/Data/Crop_code.csv b/GAEZ_Processing/Data/Crop_code.csv
+index 59c28ef..5b80165 100755
+--- a/GAEZ_Processing/Data/Crop_code.csv
++++ b/GAEZ_Processing/Data/Crop_code.csv
+@@ -2,6 +2,9 @@
+ ALF,Alfalfa,Alfalfa
+ ARE,Arecanut,Arecanut
+ BAN,Bananas,Banana
++BAN,"Plantains and cooking bananas",Banana
++BAN,"Other tropical fruits, n.e.c.",Banana
++BAN,"Mangoes, guavas and mangosteens",Banana
+ BRL,Barley,Barley
+ BEA,"Beans, dry",Phaseolus bean
+ BMX,BMX,BMX
+@@ -20,6 +23,7 @@ RCD,Dryland rice,Dryland rice
+ FLA,"Flax, processed but not spun",Flax
+ MTF,Foxtail millet,Foxtail millet
+ FRU,Fruits,Fruits
++FRU,"Other fruits, n.e.c.",Fruits
+ GRM,Gram,Gram
+ GRO,"Groundnuts, excluding shelled",Groundnut
+ JAT,Jatropha,Jatropha
+@@ -37,7 +41,8 @@ PIG,"Pigeon peas, dry",Pigeonpea
+ PTW,Potatoes,White potato
+ RAP,Rape or colza seed,Rapeseed
+ REE,Reed,Reed canary grass
+-RUB,Rubber,Rubber
++RUB,Rubber,Para rubber
++RUB,"Natural rubber in primary forms",Para rubber
+ RYE,Rye,Rye
+ COT,"Seed cotton, unginned",Cotton
+ SOR,Sorghum,Sorghum
+@@ -47,11 +52,15 @@ SUN,Sunflower seed,Sunflower
+ PTS,Sweet potatoes,Sweet potato
+ SWI,Switchgrass,Switchgrass
+ TEA,Tea leaves,Tea
++YAM,Taro,Yam
+ TOM,Tomatoes,Tomato
+ TOB,Unmanufactured tobacco,Tobacco
+ VEG,Vegetables,Vegetables
++TOM,"Other vegetables, fresh n.e.c.",Tomato
++VEG,"Pepper (Piper spp.), raw",Vegetables
+ TEF,Warm C4,Warm C4
+ RCP,Rice,Wetland rice
+ WHE,Wheat,Wheat
+ YAM,Yams,Yam
++YAM,"Edible roots and tubers with high starch or inulin content, n.e.c., fresh",Yam
+ MLT,Millet,Millet
+diff --git a/GAEZ_Processing/libs/collect.py b/GAEZ_Processing/libs/collect.py
+index 936dbf5..1c272c4 100644
+--- a/GAEZ_Processing/libs/collect.py
++++ b/GAEZ_Processing/libs/collect.py
+@@ -45,6 +45,19 @@ def standardize_faostat(main_crops, other_crops):
+         if not matching_rows.empty:
+             other_crop_name.extend(matching_rows['Code'].tolist())
+ 
++    # If a proxy code occurs in both groups (for example, Fiji's taro and an
++    # additional root crop both mapping to YAM), keep it as a main crop.
++    # Otherwise calculation_cluster drops the main crop while constructing the
++    # aggregate OTH series.
++    main_crop_codes = set(crop_name)
++    other_crop_name = [
++        code for code in other_crop_name if code not in main_crop_codes
++    ]
++    # Multiple FAOSTAT commodities may share a documented GAEZ proxy.  Keep
++    # the first occurrence so their raster series is not duplicated.
++    crop_name = list(dict.fromkeys(crop_name))
++    other_crop_name = list(dict.fromkeys(other_crop_name))
++
+     # Adding "prc" refering to annual precipitation
+     crop_name.append('prc')
+     print(f"Based on 3-letter names, the main crops list from the FAOSTAT is: {crop_name}")
+@@ -75,6 +88,10 @@ def download_url(dataframe, column, folder_name):
+             row['New Water Supply']) + ' ' + str(row['Input Level'])
+         file_path = os.path.join(folder_name, filename + '.tif')
+ 
++        if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
++            print(f"Using cached: {filename}")
++            continue
++
+         response = requests.get(url)
+ 
+         with open(file_path, 'wb') as file:
+@@ -124,5 +141,3 @@ def process_gaez_data(crop_name, other_crop_name, crop_code, input_data):
+     except shutil.SameFileError:
+         os.remove(f'{GLOBAL_RASTER_PATH}/LCType_ncb.tif')
+         shutil.copyfile(f'{INPUT_DATA_PATH}/LCType_ncb.tif', f'{GLOBAL_RASTER_PATH}/LCType_ncb.tif')
+-
+-
+diff --git a/GAEZ_Processing/libs/extract_geospatial_attributes.py b/GAEZ_Processing/libs/extract_geospatial_attributes.py
+index 6697240..d8595f1 100644
+--- a/GAEZ_Processing/libs/extract_geospatial_attributes.py
++++ b/GAEZ_Processing/libs/extract_geospatial_attributes.py
+@@ -4,7 +4,9 @@ from rasterio.mask import mask
+ import datetime
+ import geopandas as gpd
+ import json
++import numpy as np
+ import os
++from scipy.spatial import cKDTree
+ 
+ from libs.constants import GLOBAL_RASTER_PATH, CROPPED_RASTER_PATH, OUTPUT_DATA_PATH, INPUT_DATA_PATH
+ 
+@@ -152,6 +154,7 @@ def extract_raster_values(input_data, raster_files_con, raster_files_dis):
+     country_name = input_data['country_name']
+     admin_level = input_data['admin_level']
+     land_cells = gpd.read_file(f"{OUTPUT_DATA_PATH}/{scenario}/{country_name}_vector_admin{admin_level}_land_cells.gpkg")
++    base_columns = set(land_cells.columns)
+ 
+     for raster in raster_files_con:
+         prefix = raster.rstrip(".tif")
+@@ -168,6 +171,48 @@ def extract_raster_values(input_data, raster_files_con, raster_files_dis):
+         land_cells = processing_raster_cat(CROPPED_RASTER_PATH, raster, prefix, land_cells)
+ 
+     land_cells = geojson_to_gdf(f"{OUTPUT_DATA_PATH}/{scenario}", land_cells)
++
++    # GAEZ pixels can be absent beneath small coastal or island grid cells.
++    # Retain those boundary-derived cells and fill only missing raster
++    # attributes from the nearest covered land cell.  This prevents a
++    # no-data-only agricultural cluster without altering observed pixels.
++    projected = land_cells.to_crs(input_data['crs_proj'])
++    centroids = projected.geometry.centroid
++    coordinates = np.column_stack([centroids.x, centroids.y])
++    continuous_columns = [
++        col for col in land_cells.columns
++        if col not in base_columns and col.endswith("_mean")
++    ]
++    for col in continuous_columns:
++        missing = land_cells[col].isna().to_numpy()
++        valid = ~missing
++        if missing.any() and valid.any():
++            tree = cKDTree(coordinates[valid])
++            _, nearest = tree.query(coordinates[missing], k=1)
++            source_values = land_cells.loc[valid, col].iloc[nearest].to_numpy()
++            land_cells.loc[missing, col] = source_values
++
++    land_cover_columns = [
++        col for col in land_cells.columns if col.startswith("LCType")
++    ]
++    precipitation_column = next(
++        (col for col in continuous_columns if "prc" in col), None
++    )
++    if precipitation_column and land_cover_columns:
++        # Continuous attributes have already been filled, so identify original
++        # all-missing land-cover rows before replacing ordinary absent classes
++        # with zero.
++        no_land_cover = land_cells[land_cover_columns].isna().all(axis=1).to_numpy()
++        covered = ~no_land_cover
++        if no_land_cover.any() and covered.any():
++            tree = cKDTree(coordinates[covered])
++            _, nearest = tree.query(coordinates[no_land_cover], k=1)
++            source = land_cells.loc[covered, land_cover_columns].iloc[nearest]
++            land_cells.loc[no_land_cover, land_cover_columns] = source.to_numpy()
++        land_cells.loc[:, land_cover_columns] = (
++            land_cells[land_cover_columns].fillna(0)
++        )
++
+     # Export as csv
+     land_cells.to_csv(
+         f"{OUTPUT_DATA_PATH}/{scenario}/{country_name}_vector_admin{admin_level}_land_cells_with_attributes.csv")
+diff --git a/GAEZ_Processing/libs/process_land_cells.py b/GAEZ_Processing/libs/process_land_cells.py
+index 7158bd0..839b9b1 100644
+--- a/GAEZ_Processing/libs/process_land_cells.py
++++ b/GAEZ_Processing/libs/process_land_cells.py
+@@ -6,6 +6,7 @@ import geopandas as gpd
+ 
+ #Plotting
+ import matplotlib.pyplot as plt
++from shapely.geometry import box
+ 
+ from libs.constants import USER_INPUTS_PATH, OUTPUT_DATA_PATH, SHAPEFILE_PATH
+ 
+@@ -27,11 +28,26 @@ def generate_georeference(shapefile, input_data):
+     country_name = input_data['country_name']
+     # Create point grid
+     spacing = 0.09
+-    xmin, ymin, xmax, ymax = shapefile.total_bounds
+-    xcoords = [i for i in np.arange(xmin, xmax, spacing)]
+-    ycoords = [i for i in np.arange(ymin, ymax, spacing)]
+-
+-    pointcoords = np.array(np.meshgrid(xcoords, ycoords)).T.reshape(-1, 2)
++    # Build the grid for each polygon part instead of across the layer's total
++    # bounds. This is essential for countries such as Fiji that cross the
++    # antimeridian: total_bounds spans almost 360 degrees even though the land
++    # area is compact.
++    point_chunks = []
++    for geometry in shapefile.geometry:
++        parts = geometry.geoms if hasattr(geometry, "geoms") else [geometry]
++        for part in parts:
++            xmin, ymin, xmax, ymax = part.bounds
++            xcoords = np.arange(xmin + spacing / 2, xmax, spacing)
++            ycoords = np.arange(ymin + spacing / 2, ymax, spacing)
++            if len(xcoords) and len(ycoords):
++                point_chunks.append(
++                    np.array(np.meshgrid(xcoords, ycoords)).T.reshape(-1, 2)
++                )
++
++    if not point_chunks:
++        raise ValueError("The selected boundary did not produce any grid points")
++
++    pointcoords = np.vstack(point_chunks)
+     points = gpd.points_from_xy(x=pointcoords[:, 0], y=pointcoords[:, 1])
+     grid = gpd.GeoSeries(points, crs=shapefile.crs)
+     grid.name = 'geometry'
+@@ -102,8 +118,16 @@ def convert_points_to_polygons(shapefile, clustered_gdf, input_data):
+     buffer_value = 0.045
+     # cap_style refers to the type of geometry generated; 3=square (see shapely documectation for more info -- https://shapely.readthedocs.io/en/stable/manual.html)
+ 
+-    clustered_gdf['geometry'] = clustered_gdf.apply(lambda x:
+-                                                    x.geometry.buffer(buffer_value, cap_style=3), axis=1)
++    # Construct bounded cells explicitly so cells beside the antimeridian do
++    # not wrap from +180 to -180 and become near-global polygons.
++    clustered_gdf['geometry'] = clustered_gdf.geometry.apply(
++        lambda point: box(
++            max(-180, point.x - buffer_value),
++            point.y - buffer_value,
++            min(180, point.x + buffer_value),
++            point.y + buffer_value,
++        )
++    )
+ 
+     print(clustered_gdf.head(3))
+     return clustered_gdf
+@@ -130,7 +154,8 @@ def calibrate_area(admin, clustered_gdf, input_data):
+ 
+     estimated_area = clustered_gdf_prj.sqkm.sum()
+     admin.to_crs(crs_p, inplace=True)
+-    official_area = admin.geometry.area.sum() / 10 ** 6
++    boundary_area = admin.geometry.area.sum() / 10 ** 6
++    official_area = input_data.get("official_land_area_sqkm", boundary_area)
+ 
+     # Estimate column multipler
+     multiplier = get_multiplier(estimated_area, official_area)
+@@ -138,7 +163,13 @@ def calibrate_area(admin, clustered_gdf, input_data):
+     clustered_gdf_prj.sqkm = clustered_gdf_prj.sqkm * multiplier
+ 
+     print("Our modelling exercise yields a total area of {0:.1f} sqkm for the country".format(estimated_area))
+-    print("The admin layer indicates {0:.1f} sqkm".format(official_area))
++    print("The admin layer indicates {0:.1f} sqkm".format(boundary_area))
++    if "official_land_area_sqkm" in input_data:
++        print(
++            "The configured official land area is {0:.1f} sqkm".format(
++                official_area
++            )
++        )
+     print("After calibration the total area is set at {0:.1f} sqkm".format(clustered_gdf_prj.sqkm.sum()))
+ 
+     # Revert to original crs
+diff --git a/GAEZ_Processing/libs/spatial_clustering.py b/GAEZ_Processing/libs/spatial_clustering.py
+index 97def68..a097272 100644
+--- a/GAEZ_Processing/libs/spatial_clustering.py
++++ b/GAEZ_Processing/libs/spatial_clustering.py
+@@ -19,7 +19,17 @@ def prepare_data_for_clustering(input_data):
+ 
+     # Generating Dendrogram
+     def generate_dendrogram(df, name):
+-        linkage_matrix_normalized = linkage(df.values, method='ward', metric='euclidean')
++        # The dendrogram is a diagnostic only.  Plotting every national grid
++        # cell can produce a recursion-depth failure for larger archipelagos
++        # such as the Philippines.  Use a deterministic, evenly spaced sample
++        # for this plot while retaining the complete dataframe for the actual
++        # agglomerative clustering below.
++        if len(df) > 750:
++            stride = max(1, len(df) // 750)
++            plot_df = df.iloc[::stride].head(750)
++        else:
++            plot_df = df
++        linkage_matrix_normalized = linkage(plot_df.values, method='ward', metric='euclidean')
+         dendrogram(linkage_matrix_normalized)
+         plt.title('Dendrogram ' + name)
+         out_path = f"{OUTPUT_DATA_PATH}/{scenario}/dendrogram_graph"
+@@ -93,10 +103,18 @@ def prepare_data_for_clustering(input_data):
+ 
+     for i in regions_normalized_list:
+         for col in regions_normalized_gdf[i].columns:
+-            min_value = min(regions_normalized_gdf[i].loc[:, col])
+-            max_value = max(regions_normalized_gdf[i].loc[:, col])
+-            regions_normalized_gdf[i].loc[:, col] = (regions_normalized_gdf[i].loc[:, col] - min_value) / (
+-                        max_value - min_value)
++            # Use pandas' NaN-aware extrema.  Python's built-in min/max can
++            # return NaN when the first island cell has no raster coverage,
++            # collapsing an otherwise valid national yield matrix to zeros.
++            min_value = regions_normalized_gdf[i].loc[:, col].min(skipna=True)
++            max_value = regions_normalized_gdf[i].loc[:, col].max(skipna=True)
++            value_range = max_value - min_value
++            if pd.isna(value_range) or value_range == 0:
++                regions_normalized_gdf[i].loc[:, col] = 0
++            else:
++                regions_normalized_gdf[i].loc[:, col] = (
++                    regions_normalized_gdf[i].loc[:, col] - min_value
++                ) / value_range
+ 
+     for i in regions_normalized_list:
+         regions_normalized_gdf[i].fillna(0, inplace=True)
+diff --git a/GAEZ_Processing/user_input/config.yaml b/GAEZ_Processing/user_input/config.yaml
+index b2715c2..5005b20 100644
+--- a/GAEZ_Processing/user_input/config.yaml
++++ b/GAEZ_Processing/user_input/config.yaml
+@@ -1,8 +1,234 @@
+ # Scenario Name
+-scenario: "Guyana"
++scenario: "PhilippinesV12Raw"
++country_full_name: "Philippines"
++# Temporal Parameters
++startYear: 2020
++endYear: 2053
++daytype: False
++dayparts:
++# daypart : [start_hour (inclusive), end_hour (exclusive)]
++  D1: [1, 13]
++  D2: [13, 25]
++seasons:
++# season : [month 1, month 2, ...] (all inclusive)
++  S1: [6, 7, 8, 9, 10, 11]
++  S2: [12, 1, 2, 3, 4, 5]
++
++timeslice: {
++  S1D1: ['Wet season daytime', ''],
++  S1D2: ['Wet season nighttime', ''],
++  S2D1: ['Dry season daytime', ''],
++  S2D2: ['Dry season nighttime', '']
++}
++
++timeshift: 8 # Philippine Standard Time is UTC+8
++
++# Spatial Parameters
++geographic_scope:
++  - "PHL"
++
++# Set to True if transmission should be included
++crossborderTrade: False
++
++# Set to True if existing transmission capacities should be included
++# from the Global Transmission Database (Brinkerink et al., 2024).
++transmission_existing: False
++
++# Set to True if planned transmission capacities should be included
++# from the Global Transmission Database (Brinkerink et al., 2024).
++transmission_planned: False
++
++# Set to True if existing storage capacities should be included
++# from the Global Energy Storage Database (DOE/Sandia).
++# If custom nodes are defined in 'nodes_to_add' and you want to assign
++# GESDB data to custom nodes you'll have to update 'GESDB_region_mapping'
++# in 'resources/data/custom'.
++storage_existing: True
++
++# Set to True if planned storage capacities should be included
++# from the Global Energy Storage Database (DOE/Sandia).
++# If custom nodes are defined in 'nodes_to_add' and you want to assign
++# GESDB data to custom nodes you'll have to update 'GESDB_region_mapping'
++# in 'resources/data/custom'.
++storage_planned: True
++
++# Emission Parameters
++emission_penalty: []
++# - [EMISSION, COUNTRY, START_YEAR, END_YEAR, VALUE]
++# EXAMPLE:  - ["CO2", "IND", 2020, 2050, 2.1]
++# where VALUE is in M$/MT CO2
++
++# Investment Parameters
++no_invest_technologies: []
++
++# Result Parameters
++results_by_country: True
++
++# solver parameters
++solver: "cbc" # cbc, cplex, gurobi
++
++user_defined_capacity:
++# technology: [capacity,
++#              build_year,
++#              first_year_of_expansion,
++#              build_rate_per_year,
++#              capex_cost,
++#              efficiency]
++# EXAMPLE:  PWRCOAINDWE01: [8, 2000, 2025, 5, 1100, 35]
++# Units are in GW (capacity/build_rate_per_year), m$/GW (capex_cost),
++# % (efficiency).
++
++user_defined_capacity_transmission:
++# entry: [technology,
++#         capacity,
++#         build_year,
++#         first_year_of_expansion,
++#         final_year_of_expansion,
++#         build_rate_per_year,
++#         capex_cost,
++#         annual_fixed_O&M_cost,
++#         variable_O&M_cost,
++#         efficiency]
++# EXAMPLE:  trn1: [TRNINDEAINDNE, 5, 1975, 2025, 2025, 0, 350, 13, 4, 95]
++# Per technology, only the capacity, build_year, first_year_of_expansion,
++# final_year_of_expansion and build_rate_per_year parameters can deviate
++# from each other. For all other parameters only the last entry will be used.
++
++user_defined_capacity_storage:
++# entry: [technology,
++#         capacity,
++#         build_year,
++#         first_year_of_expansion,
++#         build_rate_per_year,
++#         capex_cost,
++#         annual_fixed_O&M_cost,
++#         variable_O&M_cost,
++#         roundtrip_efficiency]
++# EXAMPLE:  sto1: [PWRSDSINDWE01, 2, 2010, 2025, 3, 1800, 40, 0, 87]
++# Per technology, only the capacity and build_year
++# parameters can deviate from each other. For all other
++# parameters only the last entry will be used.
++# Units are in GW (capacity/build_rate_per_year),
++# m$/GW (capex_cost/annual_fixed_O&M_cost),
++# $/MWh (variable_O&M_cost), % (roundtrip_efficiency).
++
++transmission_parameters:
++# technology_group: [Line CAPEX,
++#                    Converter pair CAPEX,
++#                    Line losses,
++#                    AC/DC Converter pair losses,
++#                    Fixed O&M costs,
++#                    Variable O&M costs]
++# Units are in $2020/MW/KM (Line CAPEX), $2020/MW (Converter pair CAPEX),
++# %/1000km (Line losses), % (AC/DC Converter pair losses),
++# % of total CAPEX/yr (Fixed O&M costs), $/MWh (Variable O&M costs).
++  HVAC: [779, 95400, 6.75, 0, 3.5, 4]
++  HVDC: [238, 297509, 3.5, 1.3, 3.5, 4]
++  HVDC_subsea: [295, 297509, 3.5, 1.3, 3.5, 4]
++
++storage_parameters:
++# technology_group: [capex_cost,
++#                    annual_fixed_O&M_cost,
++#                    variable_O&M_cost,
++#                    roundtrip_efficiency,
++#                    duration]
++# EXAMPLE:  SDS: [1938, 44.25, 0, 85, 4]
++# Units are in m$/GW (capex_cost, annual_fixed_O&M_cost), $/MWh (variable_O&M_cost),
++# % (roundtrip_efficiency), hours (duration = storage capacity (GWh)/Power rating (GW)).
++
++nodes_to_add:
++# - "AAAXX" where AAA is a 3-letter country code,
++# specified in the "geographic scope"
++# and XX is a 2-letter sub-regional node code.
++# E.g. - "IDNSM" for a sub-regional node in Sumatra, Indonesia.
++
++nodes_to_remove:
++# - "AAAXX" where AAA is a 3-letter country code, and XX is a 2-letter
++# sub-national code.
++# E.g. - "INDNO" for the Northern India region that is part of the default OSeMOSYS
++# Global workflow.
++
++reserve_margin:
++# RESERVE_MARGIN: [PERCENTAGE, START_YEAR, END_YEAR]
++# Years for which there is no PERCENTAGE value will be interpolated
++# EXAMPLE:  RM1: [10, 2025, 2050]
++
++reserve_margin_technologies:
++# TECHNOLOGY: PERCENTAGE,
++# Specify the share of capacity (%) per technology that can contribute to the
++# reserve margin. Technologies that are not listed are excluded from contributing.
++# EXAMPLE:  CCG : 90
++  BIO : 90
++  CCG : 90
++  COA : 90
++  COG : 50
++  CSP : 30
++  GEO : 90
++  HYD : 30
++  OCG : 90
++  OIL : 90
++  OTH : 90
++  PET : 90
++  SPV : 0
++  URN : 90
++  WAS : 90
++  WAV : 10
++  WOF : 10
++  WON : 10
++
++emission_limit: []
++# - [EMISSION, COUNTRY, TYPE, YEAR, VALUE]
++# where VALUE is emissions in million tonnes of CO2-equivalent and YEAR is
++# when that constraint must be adhered to. All years between multiple emission
++# constraints will be interpolated if TYPE is set to "LINEAR". If "POINT" is used
++# it means that a singular year value is set without interpolation occuring in
++# previous target years. A combination of TYPE targets can be set per EMISSION and
++# COUNTRY yet only a single target per YEAR.
++# EXAMPLE: - ["CO2", "IND", "LINEAR", 2050, 0]
++
++min_generation_factors:
++# TECHNOLOGY: [VALUE, COUNTRY, YEAR]
++# where VALUE is minimum utilization (PJ) of a given technology. This can be
++# used to constrain power plant output (generation), for example, to calibrate historical
++# generation values.
++# EXAMPLE:  OCG: [50, "IND", 2021]
++
++max_availability_factors:
++# [COUNTRY/NODE, TECHNOLOGY, START_YEAR, END_YEAR, VALUE]
++# where VALUE is percentage (%) MAX availability of a given technology. This overwrites
++# the default values from availability_factors.csv in resources/data. This parameter can
++# be used to constrain the maximum output of technologies to, for example, mimic
++# max generation policy targets.
++# EXAMPLE: - ["IND", 'COA', 2030, 2050, 25]
++
++fossil_capacity_targets:
++# [NODE, TECHNOLOGY, START_YEAR, END_YEAR, SENSE, VALUE]
++# where VALUE is the absolute (GW) capacity constraint and SENSE sets the type of constraint.
++# E.g. 'ABS' sets a fixed value, 'MIN' sets a minimum capacity value and 'MAX' sets a maximum
++# capacity value. Note that in case 'ABS' or 'MAX' is applied, the given value needs to be
++# higher than the residual capacity of that technology in the given year otherwise the workflow
++# will not complete. Targets can only be set at the nodal level.
++# EXAMPLE: - ["INDNE", 'CCG', 2040, 2050, 'MIN', 10]
++
++re_targets:
++# TARGET: [COUNTRY/NODE, [TECHNOLOGY], START_YEAR, END_YEAR, VALUE]
++# E.g. TO1: ["IND", [], "PCT", 2030, 2040, 60]
++# E.g. TO2: ["INDSO", ['WOF', 'WON'], "PCT", 2025, 2045, 15]
++# E.g. TO3: ["INDSO", ['WOF'], "ABS", 2040, 2050, 200]
++# Targets can be set in absolute terms ("ABS", VALUE = GW) or in relative terms
++# ("PCT", VALUE = %) where targets in relative terms represent the share of generation.
++# For "PCT", targets can be set at national (e.g. "IND") and nodal levels (e.g. "INDSO")
++# whereas "ABS" can only be set at nodal levels. For "PCT", a single technology can
++# be set for the target (e.g. ["WOF"]) a technology subset can be set (e.g. ['WOF', 'WON'])
++# or the TECHNOLOGY list can be left empty (e.g. []) as such that all renewable
++# technologies contribute to the target. For "ABS", only one technology can be
++# selected per target. Note that a combination of targets can be set that affect
++# the same countries/nodes/technologies. This can be computationally intensive.
++# EXAMPLE:  T01: ["", [], "PCT", 2048, 2050, 95]
++# EXAMPLE:  T02: ["IND", [], "PCT", 2030, 2040, 60]
++# EXAMPLE:  T03: ["INDSO", ['WOF','WON'], "PCT", 2025, 2045, 15]
++# EXAMPLE:  T04: ["INDSO", ['WOF'], "ABS", 2040, 2050, 100]
+ 
+-# Country Code (Three letters)
+-country_full_name: "Guyana"
+ 
+ # Choose your preferred RCP (Representative Concentration Pathway) from the available options: RCP2.6, RCP4.5, RCP6.0, RCP8.5.
+ rcp: "RCP4.5"
+@@ -30,9 +256,16 @@ region_per_group: 10
+ # Coordinate and projection systems
+ # More info: http://epsg.io/
+ crs_WGS84: "EPSG:4326"
+-crs_proj: "EPSG:24821"
++crs_proj: "EPSG:8857"
+ 
+ number_of_clusters: {
+ 
+-    'GUY': 4
+-}
+\ No newline at end of file
++    'PHL': 8,
++}
++
++region_codes: {
++    PHL: PHLXX,
++  }
++
++emissions:
++  - CO2PHL

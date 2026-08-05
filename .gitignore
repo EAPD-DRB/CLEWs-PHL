@@ -7,3 +7,7 @@ __pycache__/
 **/model/data.txt
 **/model/upstream_data.txt
 **/model/upstream_data_preprocessed.txt
+
+# Historical v14 local snapshot is preserved as GitHub Release assets.
+/Philippines_v14_STOCK_TURNOVER/
+/Philippines_v14_STOCK_TURNOVER.zip

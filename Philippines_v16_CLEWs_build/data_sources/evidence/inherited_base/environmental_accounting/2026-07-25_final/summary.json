@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "model": "Philippines_v12",
+  "architecture": "reporting-only",
+  "runs": [
+    "Base_v12",
+    "PEP_v12"
+  ],
+  "account_rows": 816,
+  "native_emission_rows": 136,
+  "maximum_water_coefficient_spread": 0.44700000000000006,
+  "source_hashes_unchanged": true
+}

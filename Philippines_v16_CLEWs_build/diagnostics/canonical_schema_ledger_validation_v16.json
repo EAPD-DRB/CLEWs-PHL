@@ -1,0 +1,75 @@
+{
+  "generated_at_utc": "2026-08-05T19:41:59.538706+00:00",
+  "validator": "Philippines_v16_CLEWs_build/scripts/validate_philippines_v16_canonical_ledger.py",
+  "ledger_dir": "Philippines_v16_CLEWs_build/data_sources",
+  "model_archive": "Philippines_v16_CLEWs_build/muio/Philippines_v16_v16.0.0_MUIO.zip",
+  "requires_earlier_live_case": false,
+  "status": "pass",
+  "checks": [
+    {
+      "name": "canonical_table_counts",
+      "status": "pass",
+      "detail": {
+        "SOURCES.csv": 77,
+        "CALCULATIONS.csv": 67,
+        "ASSUMPTIONS.csv": 38,
+        "MODEL_MAP.csv": 71947,
+        "GAPS.csv": 17,
+        "CHANGES.csv": 11
+      }
+    },
+    {
+      "name": "generic_six_table_schema",
+      "status": "pass",
+      "detail": {
+        "failure_count": 0,
+        "warning_count": 16,
+        "verified_digests": 48
+      }
+    },
+    {
+      "name": "retained_evidence_manifest",
+      "status": "pass",
+      "detail": {
+        "files": 185,
+        "bytes": 54741714
+      }
+    },
+    {
+      "name": "current_v16_model_archive",
+      "status": "pass",
+      "detail": {
+        "sha256": "6ae3e990370a1c9a49e6435d57a67dd219dd52049d91c13c087327ed7d137004",
+        "members": 53,
+        "bytes": 6808372
+      }
+    },
+    {
+      "name": "cumulative_lineage_mapping",
+      "status": "pass",
+      "detail": {
+        "inherited_base_rows": 68624,
+        "v13_pm25_factor_rows": 18,
+        "v14_cell_change_rows": 3253,
+        "v15_required_rows": 11
+      }
+    },
+    {
+      "name": "no_external_version_dependency",
+      "status": "pass",
+      "detail": {
+        "fields_inspected": 72101,
+        "promoted_raw_files_verified": 70,
+        "active_narrative_files_verified": 18
+      }
+    },
+    {
+      "name": "blanket_parent_reference_is_not_the_ledger",
+      "status": "pass",
+      "detail": {
+        "summary_rows": 1,
+        "detailed_rows": 71946
+      }
+    }
+  ]
+}

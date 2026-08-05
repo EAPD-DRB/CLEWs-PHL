@@ -1,0 +1,4417 @@
+{
+    "osy-version": "5.6",
+    "osy-casename": "Philippines_v14_STOCK_TURNOVER",
+    "osy-desc": "Philippines full scale CLEWs model\n* updated cap act units in the transport technologies\n* adding EF for railways liquid tech\n\nv7\n* capital costs PP and TD\n* RE target (PEP)\n\nv8\n* lower limit PPs generation 2021-2024 official stats\n* updated EV PEP starting on 2025; removed EV targets from base\n\nv9\n* updated IAR for housing elc demand\n\nv10 scaffold\n* added Fisheries Phase 1 (FSH): fleet motive power, aquaculture operations, post-harvest demands + TD link\n* Fisheries was subsequently updated to v2.3; dated v2.2 and earlier records are retained under documentation/history/fisheries\n* removed orphan tech PHL_PWR_GAS (consumed cooling water, produced nothing, zero activity in all runs)\n* PM2.5 EAR corrections: HOU_COOK oil/biomass values swapped back; transport LIQ factors rescaled x1e-3 (were g/vkm entered as Mt/1e9km). See documentation/history/v10/MODEL_FIXES_2026-07-17.md\n* transport PM2.5 occupancy refinement (car/1.7, 2-3wheel/1.6, light truck/1.85) + activity-basis labels on transport demands (bus/van/heavy-truck/rail are VEHICLE- or TRAIN-km based). See documentation/history/v10/MODEL_FIXES_2026-07-17.md Fix 3\n* the v10 placeholder land formulation is retired; its record is preserved at documentation/history/v10/LAND_CALIBRATION_v10_RETIRED.md\n\nv12\n* preserves the v10 energy system and current Fisheries v2.3\n* Fisheries v2.3 uses ordinary residual stock with lifetime retirement, AF = 1, open activity and investment bounds, and a direct useful-service Industry carve-out. See documentation/data_sources/fisheries/FSH_CALIBRATION_v2.3.md\n* replaces the placeholder land block with an uncalibrated, eight-cluster CLEWs Global land-agriculture-water system\n* connects irrigation pumping to PHL_AGR_ELE and connects raw surface/groundwater flows to the inherited water system\n* retains raw crop demands, land availability, precipitation, technology options, and costs without historical tuning Derived case with exact in-model ENV_LAND accounting; water accounting remains reporting-only. Diagnostic extension with an unforced ENV_WATER sink; its activity must be reconciled against the reporting-only reference.\n\nPhilippines v13 calibration: coherent PM2.5 kt accounting, 2020 sector anchoring, navigation PM2.5 coverage, and corrected blue-hydrogen CO2 capture accounting.\n\nPhilippines v14 stock-and-turnover recalibration. Observed activity is used only to initialize effective stocks or retained as final demand; historical activity is not pinned. Official 2020 power, road and household-cooking evidence replaces inherited stock totals where a defensible mapping is available. The stranded PHL_POW_HEAT and PHL_POW_HEAT1 commodities and the geothermal-old heat output link are removed; geothermal electricity production is unchanged.",
+    "osy-date": "2026-07-28",
+    "osy-currency": "USD",
+    "osy-mo": "30",
+    "osy-tech": [
+        {
+            "TechId": "TEC_3xgu6",
+            "Tech": "PHL_PRO_IMP_UR",
+            "Desc": "Uranium import",
+            "CapUnitId": "PJ",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_m7gm5"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_goiza",
+            "Tech": "PHL_DEM_PWR_GWT_WAT",
+            "Desc": "cooling water from underground sources",
+            "CapUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_bssc5"
+            ],
+            "OAR": [
+                "COM_viggz"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_8e254",
+            "Tech": "PHL_DEM_PWR_SUR_WAT",
+            "Desc": "cooling water from surface sources",
+            "CapUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_0bnsj"
+            ],
+            "OAR": [
+                "COM_viggz"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_5edgp",
+            "Tech": "PHL_DEM_PUB_GWT_WAT",
+            "Desc": "Demand for public sector groundwater use",
+            "CapUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_bssc5"
+            ],
+            "OAR": [
+                "COM_n1j3l"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_24bf8",
+            "Tech": "PHL_DEM_PUB_SUR_WAT",
+            "Desc": "Demand for public sector surface wate",
+            "CapUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_0bnsj"
+            ],
+            "OAR": [
+                "COM_n1j3l"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ri2sv",
+            "Tech": "PHL_AGR_MOT_ELE",
+            "Desc": "Agriculture motive power with electricity",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_86j76"
+            ],
+            "OAR": [
+                "COM_lsq4g"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_r4bfq",
+            "Tech": "PHL_AGR_MOT_LIQ",
+            "Desc": "Agriculture motive power with oil",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_lsq4g"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_4u6xf",
+            "Tech": "PHL_AGR_UNIT",
+            "Desc": "agriculture unit",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_ir2os",
+                "COM_bgnoe"
+            ],
+            "OAR": [
+                "COM_wmaws"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_l0cr4",
+            "Tech": "PHL_AGR_FAC",
+            "Desc": "Agriculture Facilities",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_86j76"
+            ],
+            "OAR": [
+                "COM_bgnoe"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_32u9e",
+            "Tech": "PHL_AGR_HEAT_OIL",
+            "Desc": "Agriculture heating with oil",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_ir2os"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_kv9in",
+            "Tech": "PHL_AGR_HEAT_NG",
+            "Desc": "Agriculture heating with natural gas",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_ir2os"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_vi4q0",
+            "Tech": "PHL_AGR_HEAT_ELE",
+            "Desc": "Agriculture heating with electricity",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_ir2os"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_0xuth",
+            "Tech": "PHL_AGR_HEAT_COAL",
+            "Desc": "Agriculture heating with coal",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_8jkgl"
+            ],
+            "OAR": [
+                "COM_ir2os"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ttzr5",
+            "Tech": "PHL_AGR_HEAT_BIOM",
+            "Desc": "Agriculture heating with biomass",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_0"
+            ],
+            "OAR": [
+                "COM_ir2os"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_7oiz4",
+            "Tech": "PHL_POW_TD_AGR",
+            "Desc": "Transmission and distribution for agriculture",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_d2vou"
+            ],
+            "OAR": [
+                "COM_86j76"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ze7d4",
+            "Tech": "PHL_POW_CHP_NG_OLD",
+            "Desc": "Combined heat and power natural gas OLD",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_viggz",
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_2hnym",
+            "Tech": "PHL_POW_CHP_OIL_OLD",
+            "Desc": "Combined heat and power oil OLD",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_viggz",
+                "COM_fbce3"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_wfrl9",
+            "Tech": "PHL_POW_DAC",
+            "Desc": "Direct air capture",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_o7vja",
+                "COM_ncpbl"
+            ],
+            "OAR": [
+                "COM_xp3uj"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_qzdk4",
+            "Tech": "PHL_POW_TD",
+            "Desc": "Transmission and distribution",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_o7vja"
+            ],
+            "OAR": [
+                "COM_d2vou"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_1wdli",
+            "Tech": "PHL_POW_PP_WON_T1",
+            "Desc": "Onshore wind tier 1",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_bl1d7",
+            "Tech": "PHL_POW_PP_WOF_T1",
+            "Desc": "Offshore wind tier 1",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_1k064",
+            "Tech": "PHL_POW_PP_SPV_T1",
+            "Desc": "Solar photovoltaic tier 1",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_fa6fe",
+            "Tech": "PHL_POW_PP_NUSMR",
+            "Desc": "Nuclear small modular reactor",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_m7gm5",
+                "COM_viggz"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_yv6yo",
+            "Tech": "PHL_POW_PP_NU",
+            "Desc": "Nuclear power plant",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_m7gm5",
+                "COM_viggz"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ayzlr",
+            "Tech": "PHL_POW_PP_NGCC_CCS",
+            "Desc": "Combined cycle power plant using natural gas and CCS",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_viggz",
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_2x8eb",
+            "Tech": "PHL_POW_PP_NGCC",
+            "Desc": "Combined cycle power plant using natural gas",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_viggz",
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_p3vu5",
+            "Tech": "PHL_POW_PP_HY_LA",
+            "Desc": "Power plant using large hydropower",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_nxhpa",
+            "Tech": "PHL_POW_PP_H2",
+            "Desc": "Power plant using hydrogen",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_h0bj1"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_mco0b",
+            "Tech": "PHL_POW_PP_COAL_CCS",
+            "Desc": "Power plant using coal and CCS",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_viggz",
+                "COM_8jkgl"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_46nha",
+            "Tech": "PHL_POW_PP_COAL",
+            "Desc": "Power plant using coal",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_viggz",
+                "COM_8jkgl"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_ojxym",
+            "Tech": "PHL_POW_PP_BIOM_CCS",
+            "Desc": "Power plant using biomass and CCS",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_viggz",
+                "COM_0"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_0qr3z",
+            "Tech": "PHL_POW_GEO_OLD",
+            "Desc": "Combined heat and power geothermal old",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_pyjfk",
+            "Tech": "PHL_POW_CHP_COAL_OLD",
+            "Desc": "Combined heat and power with coal OLD",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_viggz",
+                "COM_8jkgl"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_gthhk",
+            "Tech": "PHL_POW_CHP_BIOM_OLD",
+            "Desc": "Combined heat and power with biomass OLD",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_viggz",
+                "COM_0"
+            ],
+            "OAR": [
+                "COM_o7vja"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_s1taz",
+            "Tech": "PHL_INDU_PLANT_OTH",
+            "Desc": "Other industry plant",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_ncpbl",
+                "COM_6374i",
+                "COM_ormim"
+            ],
+            "OAR": [
+                "COM_8qscb"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_d6i5g",
+            "Tech": "PHL_INDU_OTHLPH_OIL",
+            "Desc": "Industry other industry low process heat with oil",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_fbce3"
+            ],
+            "OAR": [
+                "COM_ncpbl"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_yt6ao",
+            "Tech": "PHL_INDU_OTHLPH_NG",
+            "Desc": "Industry other industry low process heat with natural gas",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_ncpbl"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_838bf",
+            "Tech": "PHL_INDU_OTHLPH_H2",
+            "Desc": "Industry other industry low process heat with hydrogen",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_h0bj1"
+            ],
+            "OAR": [
+                "COM_ncpbl"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_g1pg3",
+            "Tech": "PHL_INDU_OTHLPH_ELE",
+            "Desc": "Industry other industry low process heat with electricity",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_ormim"
+            ],
+            "OAR": [
+                "COM_ncpbl"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_nbc72",
+            "Tech": "PHL_INDU_OTHLPH_COAL",
+            "Desc": "Industry other industry low process heat with coal",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_8jkgl"
+            ],
+            "OAR": [
+                "COM_ncpbl"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_0kumq",
+            "Tech": "PHL_INDU_OTHLPH_BIOM",
+            "Desc": "Industry other industry low process heat with biomass",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_0"
+            ],
+            "OAR": [
+                "COM_ncpbl"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_n9nde",
+            "Tech": "PHL_INDU_OTHHPH_OIL",
+            "Desc": "Industry other industry high process heat with oil",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_fbce3"
+            ],
+            "OAR": [
+                "COM_6374i"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_vvk62",
+            "Tech": "PHL_INDU_OTHHPH_NG_CCS",
+            "Desc": "Industry other industry high process heat with natural gas and CCS",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_6374i"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_5tf4l",
+            "Tech": "PHL_INDU_OTHHPH_NG",
+            "Desc": "Industry other industry high process heat with natural gas",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_6374i"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_zj7zw",
+            "Tech": "PHL_INDU_OTHHPH_H2",
+            "Desc": "Industry other industry high process heat with hydrogen",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_h0bj1"
+            ],
+            "OAR": [
+                "COM_6374i"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_l0wef",
+            "Tech": "PHL_INDU_OTHHPH_COAL_CCS",
+            "Desc": "Industry other industry high process heat with coal and CCS",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_8jkgl"
+            ],
+            "OAR": [
+                "COM_6374i"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_mnq2d",
+            "Tech": "PHL_INDU_OTHHPH_COAL",
+            "Desc": "Industry other industry high process heat with coal",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_8jkgl"
+            ],
+            "OAR": [
+                "COM_6374i"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_mlan5",
+            "Tech": "PHL_INDU_OTHHPH_BIOM_CCS",
+            "Desc": "Industry other industry high process heat with biomass and CCS",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_0"
+            ],
+            "OAR": [
+                "COM_6374i"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_wua47",
+            "Tech": "PHL_INDU_OTHHPH_BIOM",
+            "Desc": "Industry other industry  high process heat with biomass",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_0"
+            ],
+            "OAR": [
+                "COM_6374i"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_wv6pj",
+            "Tech": "PHL_POW_TD_INDU",
+            "Desc": "Transmission and distribution for industry",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_d2vou"
+            ],
+            "OAR": [
+                "COM_ormim"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_9mb24",
+            "Tech": "PHL_TRA_SHIP_AMMO",
+            "Desc": "Transport for shipping using ammonia",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_zhak9"
+            ],
+            "OAR": [
+                "COM_qit0o"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_6kppi",
+            "Tech": "PHL_TRA_SHIP_LIQ",
+            "Desc": "Transport for shipping using liquid fuel",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_qit0o"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_k9grm",
+            "Tech": "PHL_TRA_RAILF_H2",
+            "Desc": "Transport for passenger railway using hydrogen",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_h0bj1"
+            ],
+            "OAR": [
+                "COM_mcroh"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_it1h9",
+            "Tech": "PHL_TRA_RAILF_LIQ",
+            "Desc": "Transport for passenger railway using liquid fuel",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_mcroh"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_c8zhc",
+            "Tech": "PHL_TRA_RAILF_ELE",
+            "Desc": "Transport for passenger railway using electricity",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux"
+            ],
+            "OAR": [
+                "COM_mcroh"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_n65kb",
+            "Tech": "PHL_TRA_RAILP_H2",
+            "Desc": "Transport for passenger railway using hydrogen",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_h0bj1"
+            ],
+            "OAR": [
+                "COM_w02je"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_z5aov",
+            "Tech": "PHL_TRA_RAILP_LIQ",
+            "Desc": "Transport for passenger railway using liquid fuel",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_w02je"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_sfoj6",
+            "Tech": "PHL_TRA_RAILP_ELE",
+            "Desc": "Transport for passenger railway using electricity",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux"
+            ],
+            "OAR": [
+                "COM_w02je"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ahdzt",
+            "Tech": "PHL_TRA_AVI_LIQ",
+            "Desc": "Transport for aviation using liquid fuel",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_nfpcj"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_9v7fy",
+            "Tech": "PHL_TRA_TRUL_ELE",
+            "Desc": "Transport light trucks using electricity",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux"
+            ],
+            "OAR": [
+                "COM_s319j"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_rkxff",
+            "Tech": "PHL_TRA_TRUL_PHEV",
+            "Desc": "Transport light trucks using plug in hybrids",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux",
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_s319j"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_k3xjq",
+            "Tech": "PHL_TRA_TRUL_LIQ",
+            "Desc": "Transport light trucks using liquid fuel",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_s319j"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_hig3m",
+            "Tech": "PHL_TRA_TRUL_NG",
+            "Desc": "Transport light trucks using natural gas",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_s319j"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_st101",
+            "Tech": "PHL_TRA_TRUL_H2",
+            "Desc": "Transport light trucks using hydrogen",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_h0bj1"
+            ],
+            "OAR": [
+                "COM_s319j"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_2071z",
+            "Tech": "PHL_TRA_TRUH_H2",
+            "Desc": "Transport heavy trucks using hydrogen",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_h0bj1"
+            ],
+            "OAR": [
+                "COM_8mw4w"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ya11y",
+            "Tech": "PHL_TRA_TRUH_PHEV",
+            "Desc": "Transport heavy trucks using plug in hybrids",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux",
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_8mw4w"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_tp8ti",
+            "Tech": "PHL_TRA_TRUH_NG",
+            "Desc": "Transport heavy trucks using natural gas",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_8mw4w"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_cjwym",
+            "Tech": "PHL_TRA_TRUH_LIQ",
+            "Desc": "Transport heavy trucks using liquid fuel",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_8mw4w"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_6m7n3",
+            "Tech": "PHL_TRA_TRUH_ELE",
+            "Desc": "Transport heavy trucks using electricity",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux"
+            ],
+            "OAR": [
+                "COM_8mw4w"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_427lp",
+            "Tech": "PHL_TRA_VAN_PHEV",
+            "Desc": "Transport vans using plug in hybrids",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux",
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_wnboe"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_qppbf",
+            "Tech": "PHL_TRA_VAN_H2",
+            "Desc": "Transport vans using hydrogen",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_h0bj1"
+            ],
+            "OAR": [
+                "COM_wnboe"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_7tjb0",
+            "Tech": "PHL_TRA_VAN_LIQ",
+            "Desc": "Transport vans using liquid fuel",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_wnboe"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_87ogj",
+            "Tech": "PHL_TRA_VAN_NG",
+            "Desc": "Transport vans using natural gas",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_wnboe"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_2pm04",
+            "Tech": "PHL_TRA_VAN_ELE",
+            "Desc": "Transport vans using electricity",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux"
+            ],
+            "OAR": [
+                "COM_wnboe"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_bt8n5",
+            "Tech": "PHL_TRA_BUS_ELE",
+            "Desc": "Transport buses using electricity",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux"
+            ],
+            "OAR": [
+                "COM_hctei"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_mhaln",
+            "Tech": "PHL_TRA_BUS_LIQ",
+            "Desc": "Transport buses using liquid fuel",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_hctei"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_ru9ab",
+            "Tech": "PHL_TRA_BUS_NG",
+            "Desc": "Transport buses using natural gas",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_hctei"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_085ph",
+            "Tech": "PHL_TRA_BUS_PHEV",
+            "Desc": "Transport buses using plug in hybrids",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux",
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_hctei"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_8fk3w",
+            "Tech": "PHL_TRA_BUS_H2",
+            "Desc": "Transport buses using hydrogen",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_h0bj1"
+            ],
+            "OAR": [
+                "COM_hctei"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_dpe8t",
+            "Tech": "PHL_TRA_CAR_H2",
+            "Desc": "Transport cars using hydrogen",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_h0bj1"
+            ],
+            "OAR": [
+                "COM_7a8u0"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_gl5ju",
+            "Tech": "PHL_TRA_CAR_PHEV",
+            "Desc": "Transport cars using plug in hybrids",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux",
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_7a8u0"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_c6q1n",
+            "Tech": "PHL_TRA_CAR_NG",
+            "Desc": "Transport cars using natural gas",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_7a8u0"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_g3wdp",
+            "Tech": "PHL_TRA_CAR_LIQ",
+            "Desc": "Transport cars using liquid fuel",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_7a8u0"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_lv1dz",
+            "Tech": "PHL_TRA_CAR_ELE",
+            "Desc": "Transport cars using electricity",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux"
+            ],
+            "OAR": [
+                "COM_7a8u0"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_32tdz",
+            "Tech": "PHL_TRA_23WHEEL_NG",
+            "Desc": "Transport 2/3 wheelers using natural gas",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_blouo"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ojmg5",
+            "Tech": "PHL_TRA_23WHEEL_LIQ",
+            "Desc": "Transport 2/3 wheelers using liquid fuel",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_blouo"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_86iqi",
+            "Tech": "PHL_TRA_23WHEEL_ELE",
+            "Desc": "Transport 2/3 wheelers using electricity",
+            "CapUnitId": "10<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>kms",
+            "TG": [],
+            "IAR": [
+                "COM_pohux"
+            ],
+            "OAR": [
+                "COM_blouo"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_c2b46",
+            "Tech": "PHL_POW_TD_TRA",
+            "Desc": "Transmission and distribution for transport",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_d2vou"
+            ],
+            "OAR": [
+                "COM_pohux"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_d83h5",
+            "Tech": "PHL_SER_UNIT",
+            "Desc": "Services unit final",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_opmhk"
+            ],
+            "OAR": [
+                "COM_dyc97"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_d6cwk",
+            "Tech": "PHL_SER_HEAT_RES",
+            "Desc": "Services heating using resistive heating",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_opmhk"
+            ],
+            "OAR": [
+                "COM_t330z"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_g4zvf",
+            "Tech": "PHL_SER_HEAT_OIL",
+            "Desc": "Services heating using oil",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_fbce3"
+            ],
+            "OAR": [
+                "COM_t330z"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ck2to",
+            "Tech": "PHL_SER_HEAT_ELE",
+            "Desc": "Services heating using electricity",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_opmhk"
+            ],
+            "OAR": [
+                "COM_t330z"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_7gx2l",
+            "Tech": "PHL_SER_HEAT_NG",
+            "Desc": "Services heating using natural gas",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_t330z"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_t8vg5",
+            "Tech": "PHL_SER_HEAT_COAL",
+            "Desc": "Services heating using coal",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_8jkgl"
+            ],
+            "OAR": [
+                "COM_t330z"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_lvd0n",
+            "Tech": "PHL_SER_HEAT_BIOM",
+            "Desc": "Services heating using biomass",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_0"
+            ],
+            "OAR": [
+                "COM_t330z"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_e8zor",
+            "Tech": "PHL_POW_TD_SER",
+            "Desc": "Transmission and distribution for services",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_d2vou"
+            ],
+            "OAR": [
+                "COM_opmhk"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_4ygbm",
+            "Tech": "PHL_HOU_UNIT",
+            "Desc": "Housing unit",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_927ie"
+            ],
+            "OAR": [
+                "COM_9ncwn"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_zq5fy",
+            "Tech": "PHL_HOU_COOK_OIL",
+            "Desc": "Household cooking using oil",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_fbce3"
+            ],
+            "OAR": [
+                "COM_i03u7"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3",
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_ff2y1",
+            "Tech": "PHL_HOU_COOK_ELE",
+            "Desc": "Household cooking using electricty",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_927ie"
+            ],
+            "OAR": [
+                "COM_i03u7"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_qg08k",
+            "Tech": "PHL_HOU_COOK_NG",
+            "Desc": "Household cooking using natural gas",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_i03u7"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_35bad",
+            "Tech": "PHL_HOU_COOK_COAL",
+            "Desc": "Housing cooking using coal",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_8jkgl"
+            ],
+            "OAR": [
+                "COM_i03u7"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_aetj7",
+            "Tech": "PHL_HOU_COOK_BIOM",
+            "Desc": "Housing cooking using biomass",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_0"
+            ],
+            "OAR": [
+                "COM_i03u7"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_xfmi2",
+            "Tech": "PHL_POW_TD_HOU",
+            "Desc": "Transmission and distribution for housing",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_d2vou"
+            ],
+            "OAR": [
+                "COM_927ie"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_dbld7",
+            "Tech": "PHL_POW_ELEC",
+            "Desc": "Electrolyzers",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_o7vja"
+            ],
+            "OAR": [
+                "COM_h0bj1"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_qq1h3",
+            "Tech": "PHL_POW_GH2_COAL",
+            "Desc": "Grey hydrogen from Coal",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_8jkgl"
+            ],
+            "OAR": [
+                "COM_h0bj1"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_0s5uu",
+            "Tech": "PHL_POW_BH2_NG",
+            "Desc": "Blue hydrogen from Natural Gas",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_h0bj1"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_thxna",
+            "Tech": "PHL_POW_TECH_AMMO",
+            "Desc": "Ammonia producing technology",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_d2vou",
+                "COM_h0bj1"
+            ],
+            "OAR": [
+                "COM_zhak9"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_laj9f",
+            "Tech": "PHL_POW_GH2_NG",
+            "Desc": "Grey Hydrogen from Natural Gas",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_lej08"
+            ],
+            "OAR": [
+                "COM_h0bj1"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_d3fyp",
+            "Tech": "PHL_PRO_IMP_OIL",
+            "Desc": "Oil imports",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_62exk"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_hywb2",
+            "Tech": "PHL_PRO_BLEND_SFUEL",
+            "Desc": "Synthetic fuel blending",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_o0g3o"
+            ],
+            "OAR": [
+                "COM_6lnfq"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_76sjx",
+            "Tech": "PHL_PRO_BLEND_OIL",
+            "Desc": "Oil Blending",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_fbce3"
+            ],
+            "OAR": [
+                "COM_6lnfq"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_aa0ch",
+            "Tech": "PHL_PRO_BLEND_BIOF",
+            "Desc": "Biofuel Blending",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_zktz4"
+            ],
+            "OAR": [
+                "COM_6lnfq"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_l354z",
+            "Tech": "PHL_POW_SYNTH",
+            "Desc": "Syntheitc fuel production",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_xp3uj",
+                "COM_h0bj1"
+            ],
+            "OAR": [
+                "COM_o0g3o"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_telf6",
+            "Tech": "PHL_PRO_PROC_BIOM",
+            "Desc": "Biomass Processing",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_0"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_tnicp",
+            "Tech": "PHL_PRO_PROC_BIOF",
+            "Desc": "Biofuel Processing",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_zktz4"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_8tp94",
+            "Tech": "PHL_PRO_PROC_OIL",
+            "Desc": "Processing Oil",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_62exk"
+            ],
+            "OAR": [
+                "COM_fbce3"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_6m11x",
+            "Tech": "PHL_PRO_PROC_NG",
+            "Desc": "Natural Gas Processing",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_y6ati"
+            ],
+            "OAR": [
+                "COM_lej08"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_8t8tj",
+            "Tech": "PHL_PRO_PROC_COAL",
+            "Desc": "Coal Processing",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_g7h7w"
+            ],
+            "OAR": [
+                "COM_8jkgl"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_otz0y",
+            "Tech": "PHL_PRO_IMP_NG",
+            "Desc": "Natual gas imports",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_y6ati"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_khtrp",
+            "Tech": "PHL_PRO_IMP_COAL",
+            "Desc": "Coal imports",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_g7h7w"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_6rwx6",
+            "Tech": "PHL_PRO_EXTR_NG",
+            "Desc": "Natural Gas Extraction",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_y6ati"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_4qu6p",
+            "Tech": "PHL_PRO_EXTR_COAL",
+            "Desc": "Coal Extraction",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_g7h7w"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_0"
+            ]
+        },
+        {
+            "TechId": "TEC_0",
+            "Tech": "PHL_PRO_EXTR_OIL",
+            "Desc": "Oil Extraction",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_62exk"
+            ],
+            "EAR": [
+                "EMI_0"
+            ],
+            "INCR": [],
+            "ITCR": []
+        },
+        {
+            "TechId": "TEC_fsh01",
+            "Tech": "PHL_POW_TD_FSH",
+            "Desc": "Transmission and distribution for fisheries (FSH - endogenous technology choice; see FSH_CALIBRATION.md)",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_d2vou"
+            ],
+            "OAR": [
+                "COM_fsh04"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_fsh02",
+            "Tech": "PHL_FSH_MOT_LIQ",
+            "Desc": "Fishing fleet propulsion using liquid fuel (FSH - endogenous technology choice; see FSH_CALIBRATION.md)",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_fsh01"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_fsh03",
+            "Tech": "PHL_FSH_MOT_ELE",
+            "Desc": "Fishing fleet propulsion using electricity (FSH - endogenous technology choice; see FSH_CALIBRATION.md)",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_fsh04"
+            ],
+            "OAR": [
+                "COM_fsh01"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_fsh04",
+            "Tech": "PHL_FSH_AQC_LIQ",
+            "Desc": "Aquaculture operations using liquid fuel (FSH - endogenous technology choice; see FSH_CALIBRATION.md)",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_fsh02"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_fsh05",
+            "Tech": "PHL_FSH_AQC_ELE",
+            "Desc": "Aquaculture operations using electricity (FSH - endogenous technology choice; see FSH_CALIBRATION.md)",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_fsh04"
+            ],
+            "OAR": [
+                "COM_fsh02"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_fsh06",
+            "Tech": "PHL_FSH_PRO_LIQ",
+            "Desc": "Fish post-harvest and processing using liquid fuel (FSH - endogenous technology choice; see FSH_CALIBRATION.md)",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_6lnfq"
+            ],
+            "OAR": [
+                "COM_fsh03"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": [
+                "EMI_xpvk3"
+            ]
+        },
+        {
+            "TechId": "TEC_fsh07",
+            "Tech": "PHL_FSH_PRO_ELE",
+            "Desc": "Fish post-harvest and processing using electricity (FSH - endogenous technology choice; see FSH_CALIBRATION.md)",
+            "CapUnitId": "GW",
+            "ActUnitId": "PJ",
+            "TG": [],
+            "IAR": [
+                "COM_fsh04"
+            ],
+            "OAR": [
+                "COM_fsh03"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_dgw1l",
+            "Tech": "MINLNDTOT",
+            "Desc": "National land endowment supply from the raw Philippines CLEWs Global build.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_fxuo5"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_i9w9s",
+            "Tech": "DEMAGRGWTPHL",
+            "Desc": "Groundwater irrigation supply using existing agricultural electricity.",
+            "CapUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_86j76"
+            ],
+            "OAR": [
+                "COM_sp9qb"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_mcc1b",
+            "Tech": "DEMAGRSURPHL",
+            "Desc": "Surface-water irrigation supply.",
+            "CapUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_0bnsj"
+            ],
+            "OAR": [
+                "COM_sp9qb"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ag6sz",
+            "Tech": "MINPRCPHL",
+            "Desc": "National precipitation supply from clustered Philippines geospatial data.",
+            "CapUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "TG": [],
+            "IAR": [],
+            "OAR": [
+                "COM_e45vs"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_myoqm",
+            "Tech": "LNDTOMHRTOT",
+            "Desc": "Vegetables (tomato gaez proxy) land option: high inputs, rainfed.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_a6xna",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_s4of1",
+            "Tech": "LNDCONLITOT",
+            "Desc": "Coconuts land option: low inputs, irrigated.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_ws9gq",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_njn0k",
+            "Tech": "LNDSGCHRTOT",
+            "Desc": "Sugar cane land option: high inputs, rainfed.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_ofh97",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ba7n9",
+            "Tech": "LNDMZEHRTOT",
+            "Desc": "Maize land option: high inputs, rainfed.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_4l49i",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_tqfnh",
+            "Tech": "LNDTOMHITOT",
+            "Desc": "Vegetables (tomato gaez proxy) land option: high inputs, irrigated.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_fvip1",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_xc9n1",
+            "Tech": "LNDSGCHITOT",
+            "Desc": "Sugar cane land option: high inputs, irrigated.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_tgiv2",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_1lqls",
+            "Tech": "LNDMZELITOT",
+            "Desc": "Maize land option: low inputs, irrigated.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_rti6o",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_x0f58",
+            "Tech": "LNDCONHRTOT",
+            "Desc": "Coconuts land option: high inputs, rainfed.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_mx6uu",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_k0up8",
+            "Tech": "LNDSGCLITOT",
+            "Desc": "Sugar cane land option: low inputs, irrigated.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_joikz",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_b59id",
+            "Tech": "LNDMZEHITOT",
+            "Desc": "Maize land option: high inputs, irrigated.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_o1x8c",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_gnski",
+            "Tech": "LNDRCPHRTOT",
+            "Desc": "Rice land option: high inputs, rainfed.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_t422j",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_1gpo1",
+            "Tech": "LNDTOMLRTOT",
+            "Desc": "Vegetables (tomato gaez proxy) land option: low inputs, rainfed.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_ilmi5",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_zavm0",
+            "Tech": "LNDTOMLITOT",
+            "Desc": "Vegetables (tomato gaez proxy) land option: low inputs, irrigated.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_5w6m5",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_2vnpr",
+            "Tech": "LNDRCPLRTOT",
+            "Desc": "Rice land option: low inputs, rainfed.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_8g90y",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_yi712",
+            "Tech": "LNDMZELRTOT",
+            "Desc": "Maize land option: low inputs, rainfed.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_ktp63",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_8wsp8",
+            "Tech": "LNDCONHITOT",
+            "Desc": "Coconuts land option: high inputs, irrigated.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_cx8nv",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_3f392",
+            "Tech": "LNDRCPLITOT",
+            "Desc": "Rice land option: low inputs, irrigated.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_qbe8b",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_38qbs",
+            "Tech": "LNDSGCLRTOT",
+            "Desc": "Sugar cane land option: low inputs, rainfed.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_8442n",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_dyiju",
+            "Tech": "LNDRCPHITOT",
+            "Desc": "Rice land option: high inputs, irrigated.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_4a395",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_esgir",
+            "Tech": "LNDCONLRTOT",
+            "Desc": "Coconuts land option: low inputs, rainfed.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_5du28",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_fywq7",
+            "Tech": "LNDOTHLITOT",
+            "Desc": "Other crops land option: low inputs, irrigated.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_ko4ou",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_7er3u",
+            "Tech": "LNDOTHHITOT",
+            "Desc": "Other crops land option: high inputs, irrigated.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_x7ukp",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ch4nk",
+            "Tech": "LNDOTHLRTOT",
+            "Desc": "Other crops land option: low inputs, rainfed.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_599gi",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_aoh6k",
+            "Tech": "LNDOTHHRTOT",
+            "Desc": "Other crops land option: high inputs, rainfed.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_0stpu",
+                "COM_env_lcrp_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ibnh8",
+            "Tech": "LNDAGRPHLC01",
+            "Desc": "Spatial land, crop, and water allocation for Philippines cluster 1.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_0stpu",
+                "COM_26200",
+                "COM_4a395",
+                "COM_4l49i",
+                "COM_599gi",
+                "COM_5du28",
+                "COM_5w6m5",
+                "COM_8442n",
+                "COM_8g90y",
+                "COM_a6xna",
+                "COM_cx8nv",
+                "COM_d2z2w",
+                "COM_e45vs",
+                "COM_fvip1",
+                "COM_ilmi5",
+                "COM_joikz",
+                "COM_ko4ou",
+                "COM_ktp63",
+                "COM_mx6uu",
+                "COM_n4rtx",
+                "COM_o1x8c",
+                "COM_obyep",
+                "COM_ofh97",
+                "COM_qbe8b",
+                "COM_rti6o",
+                "COM_sp9qb",
+                "COM_t422j",
+                "COM_tgiv2",
+                "COM_tol91",
+                "COM_ws9gq",
+                "COM_x7ukp",
+                "COM_zxzvt"
+            ],
+            "OAR": [
+                "COM_0bnsj",
+                "COM_b0hu8",
+                "COM_bssc5",
+                "COM_ec7z7",
+                "COM_mmit0",
+                "COM_np43p",
+                "COM_v6c8s",
+                "COM_vwhhn",
+                "COM_zrfky"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_9lvqs",
+            "Tech": "LNDAGRPHLC02",
+            "Desc": "Spatial land, crop, and water allocation for Philippines cluster 2.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_0stpu",
+                "COM_26200",
+                "COM_4a395",
+                "COM_4l49i",
+                "COM_599gi",
+                "COM_5du28",
+                "COM_5w6m5",
+                "COM_8442n",
+                "COM_8g90y",
+                "COM_a6xna",
+                "COM_cx8nv",
+                "COM_d2z2w",
+                "COM_e45vs",
+                "COM_fvip1",
+                "COM_ilmi5",
+                "COM_joikz",
+                "COM_ko4ou",
+                "COM_ktp63",
+                "COM_mx6uu",
+                "COM_n4rtx",
+                "COM_o1x8c",
+                "COM_obyep",
+                "COM_ofh97",
+                "COM_qbe8b",
+                "COM_rti6o",
+                "COM_sp9qb",
+                "COM_t422j",
+                "COM_tgiv2",
+                "COM_tol91",
+                "COM_ws9gq",
+                "COM_x7ukp",
+                "COM_zxzvt"
+            ],
+            "OAR": [
+                "COM_0bnsj",
+                "COM_b0hu8",
+                "COM_bssc5",
+                "COM_ec7z7",
+                "COM_mmit0",
+                "COM_np43p",
+                "COM_v6c8s",
+                "COM_vwhhn",
+                "COM_zrfky"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_3mwof",
+            "Tech": "LNDAGRPHLC03",
+            "Desc": "Spatial land, crop, and water allocation for Philippines cluster 3.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_0stpu",
+                "COM_26200",
+                "COM_4a395",
+                "COM_4l49i",
+                "COM_599gi",
+                "COM_5du28",
+                "COM_5w6m5",
+                "COM_8442n",
+                "COM_8g90y",
+                "COM_a6xna",
+                "COM_cx8nv",
+                "COM_d2z2w",
+                "COM_e45vs",
+                "COM_fvip1",
+                "COM_ilmi5",
+                "COM_joikz",
+                "COM_ko4ou",
+                "COM_ktp63",
+                "COM_mx6uu",
+                "COM_n4rtx",
+                "COM_o1x8c",
+                "COM_obyep",
+                "COM_ofh97",
+                "COM_qbe8b",
+                "COM_rti6o",
+                "COM_sp9qb",
+                "COM_t422j",
+                "COM_tgiv2",
+                "COM_tol91",
+                "COM_ws9gq",
+                "COM_x7ukp",
+                "COM_zxzvt"
+            ],
+            "OAR": [
+                "COM_0bnsj",
+                "COM_b0hu8",
+                "COM_bssc5",
+                "COM_ec7z7",
+                "COM_mmit0",
+                "COM_np43p",
+                "COM_v6c8s",
+                "COM_vwhhn",
+                "COM_zrfky"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_ckkki",
+            "Tech": "LNDAGRPHLC04",
+            "Desc": "Spatial land, crop, and water allocation for Philippines cluster 4.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_0stpu",
+                "COM_26200",
+                "COM_4a395",
+                "COM_4l49i",
+                "COM_599gi",
+                "COM_5du28",
+                "COM_5w6m5",
+                "COM_8442n",
+                "COM_8g90y",
+                "COM_a6xna",
+                "COM_cx8nv",
+                "COM_d2z2w",
+                "COM_e45vs",
+                "COM_fvip1",
+                "COM_ilmi5",
+                "COM_joikz",
+                "COM_ko4ou",
+                "COM_ktp63",
+                "COM_mx6uu",
+                "COM_n4rtx",
+                "COM_o1x8c",
+                "COM_obyep",
+                "COM_ofh97",
+                "COM_qbe8b",
+                "COM_rti6o",
+                "COM_sp9qb",
+                "COM_t422j",
+                "COM_tgiv2",
+                "COM_tol91",
+                "COM_ws9gq",
+                "COM_x7ukp",
+                "COM_zxzvt"
+            ],
+            "OAR": [
+                "COM_0bnsj",
+                "COM_b0hu8",
+                "COM_bssc5",
+                "COM_ec7z7",
+                "COM_mmit0",
+                "COM_np43p",
+                "COM_v6c8s",
+                "COM_vwhhn",
+                "COM_zrfky"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_1ky0a",
+            "Tech": "LNDAGRPHLC05",
+            "Desc": "Spatial land, crop, and water allocation for Philippines cluster 5.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_0stpu",
+                "COM_26200",
+                "COM_4a395",
+                "COM_4l49i",
+                "COM_599gi",
+                "COM_5du28",
+                "COM_5w6m5",
+                "COM_8442n",
+                "COM_8g90y",
+                "COM_a6xna",
+                "COM_cx8nv",
+                "COM_d2z2w",
+                "COM_e45vs",
+                "COM_fvip1",
+                "COM_ilmi5",
+                "COM_joikz",
+                "COM_ko4ou",
+                "COM_ktp63",
+                "COM_mx6uu",
+                "COM_n4rtx",
+                "COM_o1x8c",
+                "COM_obyep",
+                "COM_ofh97",
+                "COM_qbe8b",
+                "COM_rti6o",
+                "COM_sp9qb",
+                "COM_t422j",
+                "COM_tgiv2",
+                "COM_tol91",
+                "COM_ws9gq",
+                "COM_x7ukp",
+                "COM_zxzvt"
+            ],
+            "OAR": [
+                "COM_0bnsj",
+                "COM_b0hu8",
+                "COM_bssc5",
+                "COM_ec7z7",
+                "COM_mmit0",
+                "COM_np43p",
+                "COM_v6c8s",
+                "COM_vwhhn",
+                "COM_zrfky"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_oeqz2",
+            "Tech": "LNDAGRPHLC06",
+            "Desc": "Spatial land, crop, and water allocation for Philippines cluster 6.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_0stpu",
+                "COM_26200",
+                "COM_4a395",
+                "COM_4l49i",
+                "COM_599gi",
+                "COM_5du28",
+                "COM_5w6m5",
+                "COM_8442n",
+                "COM_8g90y",
+                "COM_a6xna",
+                "COM_cx8nv",
+                "COM_d2z2w",
+                "COM_e45vs",
+                "COM_fvip1",
+                "COM_ilmi5",
+                "COM_joikz",
+                "COM_ko4ou",
+                "COM_ktp63",
+                "COM_mx6uu",
+                "COM_n4rtx",
+                "COM_o1x8c",
+                "COM_obyep",
+                "COM_ofh97",
+                "COM_qbe8b",
+                "COM_rti6o",
+                "COM_sp9qb",
+                "COM_t422j",
+                "COM_tgiv2",
+                "COM_tol91",
+                "COM_ws9gq",
+                "COM_x7ukp",
+                "COM_zxzvt"
+            ],
+            "OAR": [
+                "COM_0bnsj",
+                "COM_b0hu8",
+                "COM_bssc5",
+                "COM_ec7z7",
+                "COM_mmit0",
+                "COM_np43p",
+                "COM_v6c8s",
+                "COM_vwhhn",
+                "COM_zrfky"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_72dqm",
+            "Tech": "LNDAGRPHLC07",
+            "Desc": "Spatial land, crop, and water allocation for Philippines cluster 7.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_0stpu",
+                "COM_26200",
+                "COM_4a395",
+                "COM_4l49i",
+                "COM_599gi",
+                "COM_5du28",
+                "COM_5w6m5",
+                "COM_8442n",
+                "COM_8g90y",
+                "COM_a6xna",
+                "COM_cx8nv",
+                "COM_d2z2w",
+                "COM_e45vs",
+                "COM_fvip1",
+                "COM_ilmi5",
+                "COM_joikz",
+                "COM_ko4ou",
+                "COM_ktp63",
+                "COM_mx6uu",
+                "COM_n4rtx",
+                "COM_o1x8c",
+                "COM_obyep",
+                "COM_ofh97",
+                "COM_qbe8b",
+                "COM_rti6o",
+                "COM_sp9qb",
+                "COM_t422j",
+                "COM_tgiv2",
+                "COM_tol91",
+                "COM_ws9gq",
+                "COM_x7ukp",
+                "COM_zxzvt"
+            ],
+            "OAR": [
+                "COM_0bnsj",
+                "COM_b0hu8",
+                "COM_bssc5",
+                "COM_ec7z7",
+                "COM_mmit0",
+                "COM_np43p",
+                "COM_v6c8s",
+                "COM_vwhhn",
+                "COM_zrfky"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_xaiae",
+            "Tech": "LNDAGRPHLC08",
+            "Desc": "Spatial land, crop, and water allocation for Philippines cluster 8.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_0stpu",
+                "COM_26200",
+                "COM_4a395",
+                "COM_4l49i",
+                "COM_599gi",
+                "COM_5du28",
+                "COM_5w6m5",
+                "COM_8442n",
+                "COM_8g90y",
+                "COM_a6xna",
+                "COM_cx8nv",
+                "COM_d2z2w",
+                "COM_e45vs",
+                "COM_fvip1",
+                "COM_ilmi5",
+                "COM_joikz",
+                "COM_ko4ou",
+                "COM_ktp63",
+                "COM_mx6uu",
+                "COM_n4rtx",
+                "COM_o1x8c",
+                "COM_obyep",
+                "COM_ofh97",
+                "COM_qbe8b",
+                "COM_rti6o",
+                "COM_sp9qb",
+                "COM_t422j",
+                "COM_tgiv2",
+                "COM_tol91",
+                "COM_ws9gq",
+                "COM_x7ukp",
+                "COM_zxzvt"
+            ],
+            "OAR": [
+                "COM_0bnsj",
+                "COM_b0hu8",
+                "COM_bssc5",
+                "COM_ec7z7",
+                "COM_mmit0",
+                "COM_np43p",
+                "COM_v6c8s",
+                "COM_vwhhn",
+                "COM_zrfky"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_mzni5",
+            "Tech": "LNDBARTOT",
+            "Desc": "Bare land accounting from the raw Philippines CLEWs Global build.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_obyep",
+                "COM_env_lbar_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_bn8d7",
+            "Tech": "LNDBLTTOT",
+            "Desc": "Built-up land accounting from the raw Philippines CLEWs Global build.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_zxzvt",
+                "COM_env_lblt_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_hjgww",
+            "Tech": "LNDFORTOT",
+            "Desc": "Forest land accounting from the raw Philippines CLEWs Global build.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_n4rtx",
+                "COM_env_lfor_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_nozrj",
+            "Tech": "LNDGRSTOT",
+            "Desc": "Grassland accounting from the raw Philippines CLEWs Global build.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_d2z2w",
+                "COM_env_lgrs_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_zty92",
+            "Tech": "LNDOTHTOT",
+            "Desc": "Other land accounting from the raw Philippines CLEWs Global build.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_26200",
+                "COM_env_loth_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_6rzgn",
+            "Tech": "LNDWATTOT",
+            "Desc": "Water-body land accounting from the raw Philippines CLEWs Global build.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [],
+            "IAR": [
+                "COM_fxuo5"
+            ],
+            "OAR": [
+                "COM_tol91",
+                "COM_env_lwat_v12"
+            ],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_envland_v12",
+            "Tech": "ENV_LAND",
+            "Desc": "Exact multimode land-accounting terminal. Mode dictionary: 1=forest; 2=grassland; 3=other_land; 4=barren_or_savannah; 5=built_up_land; 6=inland_water_bodies; 7=cropland; 8=unallocated_modeled_land. Every mode consumes one area-stock commodity at IAR 1.",
+            "CapUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "ActUnitId": "10<sup>3</sup>km<sup>2</sup>",
+            "TG": [
+                "TG_ENVIRONMENT"
+            ],
+            "IAR": [
+                "COM_env_lfor_v12",
+                "COM_env_lgrs_v12",
+                "COM_env_loth_v12",
+                "COM_env_lbar_v12",
+                "COM_env_lblt_v12",
+                "COM_env_lwat_v12",
+                "COM_env_lcrp_v12",
+                "COM_fxuo5"
+            ],
+            "OAR": [],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        },
+        {
+            "TechId": "TEC_envwater_diag_v12",
+            "Tech": "ENV_WATER",
+            "Desc": "UNFORCED DIAGNOSTIC ONLY; not an authoritative water account. Mode dictionary: 1=water_vapor_returned; 2=modeled_raw_groundwater_remaining; 3=modeled_raw_surface_water_remaining. Each mode consumes one water commodity at IAR 1, but no BAL_ENV_WATER constraint forces complete residual consumption.",
+            "CapUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "ActUnitId": "10<sup>9</sup>m<sup>3</sup>",
+            "TG": [
+                "TG_ENVIRONMENT"
+            ],
+            "IAR": [
+                "COM_b0hu8",
+                "COM_bssc5",
+                "COM_0bnsj"
+            ],
+            "OAR": [],
+            "INCR": [],
+            "ITCR": [],
+            "EAR": []
+        }
+    ],
+    "osy-stg": [],
+    "osy-techGroups": [
+        {
+            "TechGroup": "TG_0",
+            "TechGroupId": "TG_0",
+            "Desc": "Default technology group"
+        },
+        {
+            "TechGroup": "ENVIRONMENT",
+            "TechGroupId": "TG_ENVIRONMENT",
+            "Desc": "Environmental accounting terminal technologies."
+        }
+    ],
+    "osy-comm": [
+        {
+            "CommId": "COM_m7gm5",
+            "Comm": "PHL_PRO_UR",
+            "Desc": "Uranium",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_viggz",
+            "Comm": "PHL_PWR_WAT",
+            "Desc": "Water for cooling in thermal power plants",
+            "UnitId": "10<sup>9</sup>m<sup>3</sup>"
+        },
+        {
+            "CommId": "COM_n1j3l",
+            "Comm": "PHL_PUB_WAT",
+            "Desc": "water demand",
+            "UnitId": "10<sup>9</sup>m<sup>3</sup>"
+        },
+        {
+            "CommId": "COM_0bnsj",
+            "Comm": "PHL_WTR_SUR",
+            "Desc": "surface water",
+            "UnitId": "10<sup>9</sup>m<sup>3</sup>"
+        },
+        {
+            "CommId": "COM_bssc5",
+            "Comm": "PHL_WTR_GWT",
+            "Desc": "groundwater",
+            "UnitId": "10<sup>9</sup>m<sup>3</sup>"
+        },
+        {
+            "CommId": "COM_b0hu8",
+            "Comm": "PHL_WTR_EVT",
+            "Desc": "evapotransportation",
+            "UnitId": "10<sup>9</sup>m<sup>3</sup>"
+        },
+        {
+            "CommId": "COM_e45vs",
+            "Comm": "PHL_WTR_PRC",
+            "Desc": "precipitation",
+            "UnitId": "10<sup>9</sup>m<sup>3</sup>"
+        },
+        {
+            "CommId": "COM_lsq4g",
+            "Comm": "PHL_AGR_MOT",
+            "Desc": "Agriculture motive power",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_wmaws",
+            "Comm": "PHL_AGR_PRO",
+            "Desc": "Agriculture processing",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_ir2os",
+            "Comm": "PHL_AGR_HEAT",
+            "Desc": "Agriculture heat",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_bgnoe",
+            "Comm": "PHL_AGR_ELEF",
+            "Desc": "Agriculture electricity after",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_86j76",
+            "Comm": "PHL_AGR_ELE",
+            "Desc": "Agriculture electricity before",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_fxuo5",
+            "Comm": "PHL_LND",
+            "Desc": "Land commodity",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_xp3uj",
+            "Comm": "PHL_POW_DACF",
+            "Desc": "Carbon Dioxide from direct air capture",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_d2vou",
+            "Comm": "PHL_POW_ELE1",
+            "Desc": "Power electricity after transmission grid",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_o7vja",
+            "Comm": "PHL_POW_ELE",
+            "Desc": "Power electricity",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_8qscb",
+            "Comm": "PHL_INDU_OTH",
+            "Desc": "Industry other industry",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_ncpbl",
+            "Comm": "PHL_INDU_OTHLPH",
+            "Desc": "Industry other industry low process heat",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_6374i",
+            "Comm": "PHL_INDU_OTHHPH",
+            "Desc": "Industry other industry high process heat",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_ormim",
+            "Comm": "PHL_INDU_ELE",
+            "Desc": "Industry electricity",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_qit0o",
+            "Comm": "PHL_TRA_FKMS",
+            "Desc": "Passenger kilometre-metres shipping [basis: tonne-km]",
+            "UnitId": "10<sup>9</sup>kms"
+        },
+        {
+            "CommId": "COM_mcroh",
+            "Comm": "PHL_TRA_FKMR",
+            "Desc": "Passenger kilometre-metres fright railway [basis: TRAIN-km]",
+            "UnitId": "10<sup>9</sup>kms"
+        },
+        {
+            "CommId": "COM_w02je",
+            "Comm": "PHL_TRA_PKMR",
+            "Desc": "Passenger kilometre-metres passenger railway [basis: TRAIN-km]",
+            "UnitId": "10<sup>9</sup>kms"
+        },
+        {
+            "CommId": "COM_nfpcj",
+            "Comm": "PHL_TRA_PKMA",
+            "Desc": "Passenger kilometre-metres aviation",
+            "UnitId": "10<sup>9</sup>kms"
+        },
+        {
+            "CommId": "COM_s319j",
+            "Comm": "PHL_TRA_FKMTL",
+            "Desc": "Passenger kilometre-metres light trucks [basis: tonne-km, load ~1.85 t in IAR/EAR]",
+            "UnitId": "10<sup>9</sup>kms"
+        },
+        {
+            "CommId": "COM_8mw4w",
+            "Comm": "PHL_TRA_FKMTH",
+            "Desc": "Passenger kilometre-metres heavy trucks [basis: VEHICLE-km, not tkm]",
+            "UnitId": "10<sup>9</sup>kms"
+        },
+        {
+            "CommId": "COM_wnboe",
+            "Comm": "PHL_TRA_PKMV",
+            "Desc": "Passenger kilometre-metres vans [basis: VEHICLE-km, not pkm]",
+            "UnitId": "10<sup>9</sup>kms"
+        },
+        {
+            "CommId": "COM_hctei",
+            "Comm": "PHL_TRA_PKMB",
+            "Desc": "Passenger kilometre-metres buses [basis: VEHICLE-km, not pkm]",
+            "UnitId": "10<sup>9</sup>kms"
+        },
+        {
+            "CommId": "COM_7a8u0",
+            "Comm": "PHL_TRA_PKMC",
+            "Desc": "Passenger kilometre-metres cars [basis: passenger-km, occupancy ~1.7 in IAR/EAR]",
+            "UnitId": "10<sup>9</sup>kms"
+        },
+        {
+            "CommId": "COM_blouo",
+            "Comm": "PHL_TRA_PKM23",
+            "Desc": "Passenger kilometre-metres 2/3 wheelers [basis: passenger-km, occupancy ~1.6 in IAR/EAR]",
+            "UnitId": "10<sup>9</sup>kms"
+        },
+        {
+            "CommId": "COM_pohux",
+            "Comm": "PHL_TRA_ELE",
+            "Desc": "Transport electricity",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_dyc97",
+            "Comm": "PHL_SER_ELEF",
+            "Desc": "Services electricty final",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_t330z",
+            "Comm": "PHL_SER_HEAT",
+            "Desc": "Services heating",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_opmhk",
+            "Comm": "PHL_SER_ELE",
+            "Desc": "Services electricity",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_9ncwn",
+            "Comm": "PHL_HOU_ELEF",
+            "Desc": "Housing electricity final",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_i03u7",
+            "Comm": "PHL_HOU_COOK",
+            "Desc": "Housing cooking",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_zhak9",
+            "Comm": "PHL_POW_AMMO",
+            "Desc": "Power using Ammonia",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_h0bj1",
+            "Comm": "PHL_POW_H2",
+            "Desc": "Power  Hydrogen",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_927ie",
+            "Comm": "PHL_HOU_ELE",
+            "Desc": "Housing electricity",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_o0g3o",
+            "Comm": "PHL_POW_SFUEL",
+            "Desc": "Power synthetic fuel",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_6lnfq",
+            "Comm": "PHL_PRO_LIQ",
+            "Desc": "Liquid fuel",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_62exk",
+            "Comm": "PHL_PRO_OIL0",
+            "Desc": "Oil before processing",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_fbce3",
+            "Comm": "PHL_PRO_OIL",
+            "Desc": "Oil",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_y6ati",
+            "Comm": "PHL_PRO_NG0",
+            "Desc": "Natural gas before processing",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_lej08",
+            "Comm": "PHL_PRO_NG",
+            "Desc": "Natural gas",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_g7h7w",
+            "Comm": "PHL_PRO_COAL0",
+            "Desc": "Coal before processing",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_8jkgl",
+            "Comm": "PHL_PRO_COAL",
+            "Desc": "Coal",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_zktz4",
+            "Comm": "PHL_PRO_BIOF",
+            "Desc": "Biofuel",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_0",
+            "Comm": "PHL_PRO_BIOM",
+            "Desc": "Biomass",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_fsh01",
+            "Comm": "PHL_FSH_MOT",
+            "Desc": "Fisheries fleet motive energy (FSH demand anchor; technology choice endogenous, see FSH_CALIBRATION.md)",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_fsh02",
+            "Comm": "PHL_FSH_AQC",
+            "Desc": "Aquaculture operations energy - aeration and pumping (FSH demand anchor; technology choice endogenous, see FSH_CALIBRATION.md)",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_fsh03",
+            "Comm": "PHL_FSH_PRO",
+            "Desc": "Fisheries post-harvest energy - ice, cold chain, processing (FSH demand anchor; technology choice endogenous, see FSH_CALIBRATION.md)",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_fsh04",
+            "Comm": "PHL_FSH_ELE",
+            "Desc": "Fisheries electricity (FSH - endogenous technology choice; see FSH_CALIBRATION.md)",
+            "UnitId": "PJ"
+        },
+        {
+            "CommId": "COM_sp9qb",
+            "Comm": "AGRWATPHL",
+            "Desc": "Irrigation water available to crop production.",
+            "UnitId": "10<sup>9</sup>m<sup>3</sup>"
+        },
+        {
+            "CommId": "COM_mmit0",
+            "Comm": "CRPTOM",
+            "Desc": "Vegetable production represented by the GAEZ tomato proxy.",
+            "UnitId": "Mt"
+        },
+        {
+            "CommId": "COM_a6xna",
+            "Comm": "LTOMHRTOT",
+            "Desc": "Land allocated to vegetables (tomato GAEZ proxy), high inputs, rainfed.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_vwhhn",
+            "Comm": "CRPCON",
+            "Desc": "Coconut production.",
+            "UnitId": "Mt"
+        },
+        {
+            "CommId": "COM_ws9gq",
+            "Comm": "LCONLITOT",
+            "Desc": "Land allocated to coconuts, low inputs, irrigated.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_ec7z7",
+            "Comm": "CRPSGC",
+            "Desc": "Sugar-cane production.",
+            "UnitId": "Mt"
+        },
+        {
+            "CommId": "COM_ofh97",
+            "Comm": "LSGCHRTOT",
+            "Desc": "Land allocated to sugar cane, high inputs, rainfed.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_v6c8s",
+            "Comm": "CRPMZE",
+            "Desc": "Maize production.",
+            "UnitId": "Mt"
+        },
+        {
+            "CommId": "COM_4l49i",
+            "Comm": "LMZEHRTOT",
+            "Desc": "Land allocated to maize, high inputs, rainfed.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_fvip1",
+            "Comm": "LTOMHITOT",
+            "Desc": "Land allocated to vegetables (tomato GAEZ proxy), high inputs, irrigated.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_tgiv2",
+            "Comm": "LSGCHITOT",
+            "Desc": "Land allocated to sugar cane, high inputs, irrigated.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_rti6o",
+            "Comm": "LMZELITOT",
+            "Desc": "Land allocated to maize, low inputs, irrigated.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_mx6uu",
+            "Comm": "LCONHRTOT",
+            "Desc": "Land allocated to coconuts, high inputs, rainfed.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_joikz",
+            "Comm": "LSGCLITOT",
+            "Desc": "Land allocated to sugar cane, low inputs, irrigated.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_o1x8c",
+            "Comm": "LMZEHITOT",
+            "Desc": "Land allocated to maize, high inputs, irrigated.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_zrfky",
+            "Comm": "CRPRCP",
+            "Desc": "Rice production.",
+            "UnitId": "Mt"
+        },
+        {
+            "CommId": "COM_t422j",
+            "Comm": "LRCPHRTOT",
+            "Desc": "Land allocated to rice, high inputs, rainfed.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_ilmi5",
+            "Comm": "LTOMLRTOT",
+            "Desc": "Land allocated to vegetables (tomato GAEZ proxy), low inputs, rainfed.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_5w6m5",
+            "Comm": "LTOMLITOT",
+            "Desc": "Land allocated to vegetables (tomato GAEZ proxy), low inputs, irrigated.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_8g90y",
+            "Comm": "LRCPLRTOT",
+            "Desc": "Land allocated to rice, low inputs, rainfed.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_ktp63",
+            "Comm": "LMZELRTOT",
+            "Desc": "Land allocated to maize, low inputs, rainfed.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_cx8nv",
+            "Comm": "LCONHITOT",
+            "Desc": "Land allocated to coconuts, high inputs, irrigated.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_qbe8b",
+            "Comm": "LRCPLITOT",
+            "Desc": "Land allocated to rice, low inputs, irrigated.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_8442n",
+            "Comm": "LSGCLRTOT",
+            "Desc": "Land allocated to sugar cane, low inputs, rainfed.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_4a395",
+            "Comm": "LRCPHITOT",
+            "Desc": "Land allocated to rice, high inputs, irrigated.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_5du28",
+            "Comm": "LCONLRTOT",
+            "Desc": "Land allocated to coconuts, low inputs, rainfed.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_np43p",
+            "Comm": "CRPOTH",
+            "Desc": "Other crop production.",
+            "UnitId": "Mt"
+        },
+        {
+            "CommId": "COM_ko4ou",
+            "Comm": "LOTHLITOT",
+            "Desc": "Land allocated to other crops, low inputs, irrigated.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_x7ukp",
+            "Comm": "LOTHHITOT",
+            "Desc": "Land allocated to other crops, high inputs, irrigated.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_599gi",
+            "Comm": "LOTHLRTOT",
+            "Desc": "Land allocated to other crops, low inputs, rainfed.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_0stpu",
+            "Comm": "LOTHHRTOT",
+            "Desc": "Land allocated to other crops, high inputs, rainfed.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_obyep",
+            "Comm": "LBARTOT",
+            "Desc": "Bare land.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_zxzvt",
+            "Comm": "LBLTTOT",
+            "Desc": "Built-up land.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_n4rtx",
+            "Comm": "LFORTOT",
+            "Desc": "Forest land.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_d2z2w",
+            "Comm": "LGRSTOT",
+            "Desc": "Grassland.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_26200",
+            "Comm": "LOTHTOT",
+            "Desc": "Other land.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_tol91",
+            "Comm": "LWATTOT",
+            "Desc": "Water-body land.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_env_lfor_v12",
+            "Comm": "ENV_LND_FOREST",
+            "Desc": "Parallel area stock for model-defined forest land.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_env_lgrs_v12",
+            "Comm": "ENV_LND_GRASSLAND",
+            "Desc": "Parallel area stock for model-defined grassland.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_env_loth_v12",
+            "Comm": "ENV_LND_OTHER",
+            "Desc": "Parallel area stock for model-defined other land.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_env_lbar_v12",
+            "Comm": "ENV_LND_BARREN",
+            "Desc": "Parallel area stock for model-defined barren land.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_env_lblt_v12",
+            "Comm": "ENV_LND_BUILT",
+            "Desc": "Parallel area stock for model-defined built-up land.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_env_lwat_v12",
+            "Comm": "ENV_LND_WATER",
+            "Desc": "Parallel area stock for modeled inland water bodies.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        },
+        {
+            "CommId": "COM_env_lcrp_v12",
+            "Comm": "ENV_LND_CROPLAND",
+            "Desc": "Parallel area stock for the 24 modeled crop-land options.",
+            "UnitId": "10<sup>3</sup>km<sup>2</sup>"
+        }
+    ],
+    "osy-ts": [
+        {
+            "TsId": "TS_0",
+            "Ts": "1",
+            "Desc": "Autumn-Winter low wind 1",
+            "SE": "SE_zywum",
+            "DT": "DT_0",
+            "DTB": "DTB_0"
+        },
+        {
+            "TsId": "TS_p366u",
+            "Ts": "2",
+            "Desc": "Autumn-Winter low wind 2",
+            "SE": "SE_zywum",
+            "DT": "DT_0",
+            "DTB": "DTB_m558j"
+        },
+        {
+            "TsId": "TS_6ecgy",
+            "Ts": "3",
+            "Desc": "Autumn-Winter low wind 3",
+            "SE": "SE_zywum",
+            "DT": "DT_0",
+            "DTB": "DTB_yjpfx"
+        },
+        {
+            "TsId": "TS_fke98",
+            "Ts": "4",
+            "Desc": "Autumn-Winter low wind 4",
+            "SE": "SE_zywum",
+            "DT": "DT_0",
+            "DTB": "DTB_dijqu"
+        },
+        {
+            "TsId": "TS_xnk8a",
+            "Ts": "5",
+            "Desc": "Autumn-Winter low wind 5",
+            "SE": "SE_zywum",
+            "DT": "DT_0",
+            "DTB": "DTB_f87uy"
+        },
+        {
+            "TsId": "TS_5r05k",
+            "Ts": "6",
+            "Desc": "Autumn-Winter low wind 6",
+            "SE": "SE_zywum",
+            "DT": "DT_0",
+            "DTB": "DTB_8vsfj"
+        },
+        {
+            "TsId": "TS_gdvi9",
+            "Ts": "7",
+            "Desc": "Autumn-Winter high wind 1",
+            "SE": "SE_zywum",
+            "DT": "DT_ii6mj",
+            "DTB": "DTB_0"
+        },
+        {
+            "TsId": "TS_wfx7c",
+            "Ts": "8",
+            "Desc": "Autumn-Winter high wind 2",
+            "SE": "SE_zywum",
+            "DT": "DT_ii6mj",
+            "DTB": "DTB_m558j"
+        },
+        {
+            "TsId": "TS_0xelv",
+            "Ts": "9",
+            "Desc": "Autumn-Winter high wind 3",
+            "SE": "SE_zywum",
+            "DT": "DT_ii6mj",
+            "DTB": "DTB_yjpfx"
+        },
+        {
+            "TsId": "TS_k58h0",
+            "Ts": "10",
+            "Desc": "Autumn-Winter high wind 4",
+            "SE": "SE_zywum",
+            "DT": "DT_ii6mj",
+            "DTB": "DTB_dijqu"
+        },
+        {
+            "TsId": "TS_y9u5w",
+            "Ts": "11",
+            "Desc": "Autumn-Winter high wind 5",
+            "SE": "SE_zywum",
+            "DT": "DT_ii6mj",
+            "DTB": "DTB_f87uy"
+        },
+        {
+            "TsId": "TS_hoqxv",
+            "Ts": "12",
+            "Desc": "Autumn-Winter high wind 6",
+            "SE": "SE_zywum",
+            "DT": "DT_ii6mj",
+            "DTB": "DTB_8vsfj"
+        },
+        {
+            "TsId": "TS_bmens",
+            "Ts": "13",
+            "Desc": "Spring Summer low wind 1",
+            "SE": "SE_0",
+            "DT": "DT_0",
+            "DTB": "DTB_0"
+        },
+        {
+            "TsId": "TS_mi8mf",
+            "Ts": "14",
+            "Desc": "Spring Summer low wind 2",
+            "SE": "SE_0",
+            "DT": "DT_0",
+            "DTB": "DTB_m558j"
+        },
+        {
+            "TsId": "TS_taggv",
+            "Ts": "15",
+            "Desc": "Spring Summer low wind 3",
+            "SE": "SE_0",
+            "DT": "DT_0",
+            "DTB": "DTB_yjpfx"
+        },
+        {
+            "TsId": "TS_g2mzr",
+            "Ts": "16",
+            "Desc": "Spring Summer low wind 4",
+            "SE": "SE_0",
+            "DT": "DT_0",
+            "DTB": "DTB_dijqu"
+        },
+        {
+            "TsId": "TS_a6gq1",
+            "Ts": "17",
+            "Desc": "Spring Summer low wind 5",
+            "SE": "SE_0",
+            "DT": "DT_0",
+            "DTB": "DTB_f87uy"
+        },
+        {
+            "TsId": "TS_udfi1",
+            "Ts": "18",
+            "Desc": "Spring Summer low wind 6",
+            "SE": "SE_0",
+            "DT": "DT_0",
+            "DTB": "DTB_8vsfj"
+        },
+        {
+            "TsId": "TS_lrodn",
+            "Ts": "19",
+            "Desc": "Spring Summer high wind 1",
+            "SE": "SE_0",
+            "DT": "DT_ii6mj",
+            "DTB": "DTB_0"
+        },
+        {
+            "TsId": "TS_4y45j",
+            "Ts": "20",
+            "Desc": "Spring Summer high wind 2",
+            "SE": "SE_0",
+            "DT": "DT_ii6mj",
+            "DTB": "DTB_m558j"
+        },
+        {
+            "TsId": "TS_dvre6",
+            "Ts": "21",
+            "Desc": "Spring Summer high wind 3",
+            "SE": "SE_0",
+            "DT": "DT_ii6mj",
+            "DTB": "DTB_yjpfx"
+        },
+        {
+            "TsId": "TS_22msf",
+            "Ts": "22",
+            "Desc": "Spring Summer high wind 4",
+            "SE": "SE_0",
+            "DT": "DT_ii6mj",
+            "DTB": "DTB_dijqu"
+        },
+        {
+            "TsId": "TS_n2l7m",
+            "Ts": "23",
+            "Desc": "Spring Summer high wind 5",
+            "SE": "SE_0",
+            "DT": "DT_ii6mj",
+            "DTB": "DTB_f87uy"
+        },
+        {
+            "TsId": "TS_j3bn4",
+            "Ts": "24",
+            "Desc": "Spring Summer high wind 6",
+            "SE": "SE_0",
+            "DT": "DT_ii6mj",
+            "DTB": "DTB_8vsfj"
+        },
+        {
+            "TsId": "TS_oqzs1",
+            "Ts": "25",
+            "Desc": "Worst Day",
+            "SE": "SE_ugd96",
+            "DT": "DT_0",
+            "DTB": "DTB_0"
+        },
+        {
+            "TsId": "TS_ejp3u",
+            "Ts": "26",
+            "Desc": "Worst Day",
+            "SE": "SE_ugd96",
+            "DT": "DT_0",
+            "DTB": "DTB_m558j"
+        },
+        {
+            "TsId": "TS_9hx99",
+            "Ts": "27",
+            "Desc": "Worst Day",
+            "SE": "SE_ugd96",
+            "DT": "DT_0",
+            "DTB": "DTB_yjpfx"
+        },
+        {
+            "TsId": "TS_hrld6",
+            "Ts": "28",
+            "Desc": "Worst Day",
+            "SE": "SE_ugd96",
+            "DT": "DT_0",
+            "DTB": "DTB_dijqu"
+        },
+        {
+            "TsId": "TS_iwy3j",
+            "Ts": "29",
+            "Desc": "Worst Day",
+            "SE": "SE_ugd96",
+            "DT": "DT_0",
+            "DTB": "DTB_f87uy"
+        },
+        {
+            "TsId": "TS_xsi3u",
+            "Ts": "30",
+            "Desc": "Worst Day",
+            "SE": "SE_ugd96",
+            "DT": "DT_0",
+            "DTB": "DTB_8vsfj"
+        }
+    ],
+    "osy-se": [
+        {
+            "SeId": "SE_0",
+            "Se": 1,
+            "Desc": "Spring Summer"
+        },
+        {
+            "SeId": "SE_zywum",
+            "Se": 2,
+            "Desc": "Autumn Winter"
+        },
+        {
+            "SeId": "SE_ugd96",
+            "Se": 3,
+            "Desc": "Worst Day"
+        }
+    ],
+    "osy-dt": [
+        {
+            "DtId": "DT_0",
+            "Dt": 1,
+            "Desc": "Low wind"
+        },
+        {
+            "DtId": "DT_ii6mj",
+            "Dt": 2,
+            "Desc": "High wind"
+        }
+    ],
+    "osy-dtb": [
+        {
+            "DtbId": "DTB_0",
+            "Dtb": 1,
+            "Desc": "0-4"
+        },
+        {
+            "DtbId": "DTB_m558j",
+            "Dtb": 2,
+            "Desc": "4-8"
+        },
+        {
+            "DtbId": "DTB_yjpfx",
+            "Dtb": 3,
+            "Desc": "8-12"
+        },
+        {
+            "DtbId": "DTB_dijqu",
+            "Dtb": 4,
+            "Desc": "12-16"
+        },
+        {
+            "DtbId": "DTB_f87uy",
+            "Dtb": 5,
+            "Desc": "16-20"
+        },
+        {
+            "DtbId": "DTB_8vsfj",
+            "Dtb": 6,
+            "Desc": "20-24"
+        }
+    ],
+    "osy-emis": [
+        {
+            "EmisId": "EMI_0",
+            "Emis": "CO2e",
+            "Desc": "CO2 equivalent",
+            "UnitId": "MTon"
+        },
+        {
+            "EmisId": "EMI_xpvk3",
+            "Emis": "PM2_5",
+            "Desc": "Default emission",
+            "UnitId": "kt"
+        }
+    ],
+    "osy-scenarios": [
+        {
+            "ScenarioId": "SC_0",
+            "Scenario": "BASE",
+            "Desc": "Base scenario",
+            "Active": true
+        },
+        {
+            "ScenarioId": "SC_3hgjb",
+            "Scenario": "COAL_PHASEOUT",
+            "Desc": "Phase out of coal by 2040",
+            "Active": true
+        },
+        {
+            "ScenarioId": "SC_w03qj",
+            "Scenario": "RE",
+            "Desc": "Renewables",
+            "Active": true
+        },
+        {
+            "ScenarioId": "SC_huc7i",
+            "Scenario": "EV",
+            "Desc": "EV penetration",
+            "Active": true
+        }
+    ],
+    "osy-constraints": [
+        {
+            "ConId": "CO_xr1eb",
+            "Con": "RENEWABLES",
+            "Desc": "RE targets",
+            "Tag": 0,
+            "CM": [
+                "TEC_ze7d4",
+                "TEC_2hnym",
+                "TEC_1wdli",
+                "TEC_bl1d7",
+                "TEC_1k064",
+                "TEC_fa6fe",
+                "TEC_yv6yo",
+                "TEC_ayzlr",
+                "TEC_2x8eb",
+                "TEC_p3vu5",
+                "TEC_nxhpa",
+                "TEC_mco0b",
+                "TEC_46nha",
+                "TEC_ojxym",
+                "TEC_0qr3z",
+                "TEC_pyjfk",
+                "TEC_gthhk"
+            ]
+        },
+        {
+            "ConId": "CO_sdx29",
+            "Con": "EV",
+            "Desc": "EV penetration",
+            "Tag": 1,
+            "CM": [
+                "TEC_9v7fy",
+                "TEC_rkxff",
+                "TEC_ya11y",
+                "TEC_6m7n3",
+                "TEC_427lp",
+                "TEC_2pm04",
+                "TEC_bt8n5",
+                "TEC_085ph",
+                "TEC_gl5ju",
+                "TEC_lv1dz",
+                "TEC_86iqi"
+            ]
+        },
+        {
+            "ConId": "CO_nucap",
+            "Con": "NUCLEAR_CAPACITY_TARGET",
+            "Desc": "PEP exact aggregate nuclear capacity milestones",
+            "Tag": 1,
+            "CM": [
+                "TEC_fa6fe",
+                "TEC_yv6yo"
+            ]
+        },
+        {
+            "ConId": "CO_envland_v12",
+            "Con": "BAL_ENV_LAND",
+            "Desc": "Exact aggregate land closure: MINLNDTOT annual activity equals total ENV_LAND annual activity.",
+            "Tag": 1,
+            "CM": [
+                "TEC_dgw1l",
+                "TEC_envland_v12"
+            ]
+        }
+    ],
+    "osy-indicators": [],
+    "osy-years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "2030",
+        "2031",
+        "2032",
+        "2033",
+        "2034",
+        "2035",
+        "2036",
+        "2037",
+        "2038",
+        "2039",
+        "2040",
+        "2041",
+        "2042",
+        "2043",
+        "2044",
+        "2045",
+        "2046",
+        "2047",
+        "2048",
+        "2049",
+        "2050",
+        "2051",
+        "2052",
+        "2053"
+    ]
+}

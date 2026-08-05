@@ -1,0 +1,89 @@
+# Philippines v16 CLEWs model
+
+Philippines v16 is an identity-only successor to the validated Philippines
+v15 whole-country model. Its model parameters are unchanged. The new version
+introduces a stable current-case name, a complete inherited provenance package,
+and a compact result-free archive for the simplified push/pull workflow.
+
+Philippines v15 is the validated whole-country MUIO/MUIOGO case that adds a
+national precipitation and renewable-water envelope to the Philippines v14
+stock-turnover model. The unchanged v14 case is the formal solve baseline; the
+v12 build package remains in this repository as inherited lineage and
+reproduction evidence.
+
+## Delivered model
+
+- Portable editable case: `muio/Philippines_v16_v16.0.0_MUIO.zip`
+- Archive checksum: `muio/SHA256SUMS`
+- Case identity: `Philippines_v16`
+- Validated run identity: `BASE_V15`
+- Horizon: 2020-2053
+
+Extract the `Philippines_v16` folder into
+`MUIOGO/WebAPP/DataStorage/`. Generated solver inputs and the 1.3 GB runtime
+result directory are intentionally excluded; regenerate them through the
+normal MUIOGO application chain.
+
+The original v15 package remains recoverable from Git tag `v15.0.0`; its
+archive is also retained here as predecessor evidence.
+
+## Water formulation
+
+- The inherited national hydrology coefficients are rebased to the World Bank
+  CCKP ERA5 1991-2020 precipitation normal.
+- A single CMIP6 SSP2-4.5 ensemble-median precipitation pathway is installed.
+  Retained p10/p90 values are evidence only, so users choose which additional
+  scenarios to construct.
+- `DEMAGRGWTPHL` consumes raw groundwater one-for-one in its active mode.
+- `WATER_SUR_AVAIL` and `WATER_GWT_POTENTIAL` constrain annual gross
+  withdrawals from the three corresponding single-mode pass-throughs.
+- The ordinary annual commodity balances independently prevent withdrawal
+  above modeled raw-water production.
+
+These are national potential-flow sensitivity ceilings. They are not basin
+allocations, dependable yield, environmental-flow-adjusted availability,
+aquifer storage, or groundwater safe yield. Neither ceiling binds in
+`BASE_V15`.
+
+## Source trace
+
+The six canonical, cumulative CSV ledgers are under `data_sources/`:
+
+- `SOURCES.csv`: 77 source and retained-evidence records;
+- `CALCULATIONS.csv`: 67 calculations;
+- `ASSUMPTIONS.csv`: 38 explicit modeling assumptions;
+- `MODEL_MAP.csv`: 71,947 inherited and version-specific mappings;
+- `GAPS.csv`: 17 unresolved evidence needs; and
+- `CHANGES.csv`: 11 implementation and documentation records.
+
+`data_sources/PHILIPPINES_V15_CANONICAL_SCHEMA_LEDGER.xlsx` is the inherited
+v15 formatted review copy; the current CSV files are authoritative. The package carries the complete
+inherited-base ledger, v13 calibration record, all 3,253 v14 cell changes, and
+the v15 water addition. No earlier installed case or ledger is required.
+The complete water pathway and equation map are in
+`data_sources/calculation_notes/national_water_v15.md`.
+
+## Validation
+
+The promoted case completed application generation, preprocessing,
+`glpsol --check`, LP inspection, a bounded CBC diagnostic, full CBC
+optimization, result export, and comparison with the unchanged v14 baseline.
+
+- status: optimal;
+- objective: 369630979.62464261;
+- CBC solve time: 219.681299 seconds;
+- matrix: 791109 rows, 884956 columns, 12533783 nonzeros;
+- maximum exact UDC residual: 0.00000390000001 km3/year;
+- final-demand changed rows: 0; and
+- emission changed rows: 0.
+
+The v16 canonical validator checks the generic schema, every retained-evidence
+manifest entry, the current model archive, cumulative lineage coverage and the
+absence of external installed-case dependencies. See `diagnostics/` and
+`documentation/MODEL_FIXES_WATER_2026-08-04.md`.
+
+## Reproduction scripts
+
+The exact MUIOGO generator and validator used for v15 are retained under
+`scripts/`, along with the v16 packaging validator. The normalized research
+input remains under `scripts/data/`. See `scripts/README.md`.

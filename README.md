@@ -6,10 +6,13 @@ assumptions, calculations, diagnostics, and portable MUIO cases.
 
 ## Current model package
 
-The current model is **Philippines v15.0.0**. The `main` branch provides the
-validated portable case at:
+The current model is **Philippines v16.0.0**, prepared on the migration branch.
+Its portable case is:
 
-- `Philippines_v15_CLEWs_build/muio/Philippines_v15_v15.0.0_MUIO.zip`.
+- `Philippines_v16_CLEWs_build/muio/Philippines_v16_v16.0.0_MUIO.zip`.
+
+Version 16 is an identity-only successor to v15: model parameters are
+unchanged. The full v15 release is protected by Git tag `v15.0.0`.
 
 Version 15 retains the v14 stock-turnover model and adds an ERA5-rebased,
 SSP2-4.5 median national precipitation pathway, a missing irrigation
@@ -35,13 +38,13 @@ All three v12 portable archives are tracked under
 
 The historical Philippines v10 energy system, Fisheries v2.3, and the v12
 CLEWs Global-derived land, agriculture, and water block remain inherited in
-v15. Read `Philippines_v15_CLEWs_build/README.md` and its canonical schema
+v16. Read `Philippines_v16_CLEWs_build/README.md` and its canonical schema
 ledger before using the model.
 
 ## Use with MUIOGO
 
 1. Install or clone [MUIOGO](https://github.com/EAPD-DRB/MUIOGO).
-2. Extract `Philippines_v15_CLEWs_build/muio/Philippines_v15_v15.0.0_MUIO.zip`.
+2. Extract `Philippines_v16_CLEWs_build/muio/Philippines_v16_v16.0.0_MUIO.zip`.
 3. Place the extracted case folder under `MUIOGO/WebAPP/DataStorage/`.
 4. Start MUIOGO and open the case.
 
@@ -58,13 +61,13 @@ with the installed model path and a unique evidence label before interpreting
 
 ## Repository structure
 
-The current package is under `Philippines_v15_CLEWs_build/`:
+The current package is under `Philippines_v16_CLEWs_build/`:
 
 - `data_sources/`: six canonical source-trace ledgers, retained evidence and
   the review workbook;
 - `documentation/`: equation-first model-change audit;
 - `diagnostics/`: generation, solve, ledger and provenance validation;
-- `muio/`: portable v15 MUIO case and checksum; and
+- `muio/`: portable v16 MUIO case, predecessor archive, and checksums; and
 - `scripts/`: retained generator, validators and normalized research input.
 
 The `Philippines_v12_CLEWs_build/` folder preserves the inherited build and

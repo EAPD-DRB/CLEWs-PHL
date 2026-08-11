@@ -1,0 +1,38 @@
+{
+    "_readme": [
+        "Machine-readable declaration of the portable MUIO cases this repository ships,",
+        "read by MUIOGO's /clews install layer (EAPD-DRB/MUIOGO PR #519+): MUIOGO fetches",
+        "the archive, verifies it against the vintage's SHA256SUMS, and imports it.",
+        "Policy: this file declares ONE vintage \u2014 the latest, best calibration for the",
+        "country. Every case variant (environmental accounting layers etc.) should be",
+        "built against that calibration and listed here; older build directories stay in",
+        "the repository as provenance but are not offered for install. When a new",
+        "calibration is released, this file moves to it in the same commit.",
+        "Keep this file in step with the build directory: every archive listed must",
+        "exist under the vintage's dir and appear in that dir's SHA256SUMS."
+    ],
+    "schema_version": 1,
+    "iso3": "PHL",
+    "un_code": "608",
+    "name": "Philippines",
+    "og": {
+        "key": "og-phl"
+    },
+    "vintages": [
+        {
+            "id": "v16",
+            "recommended": true,
+            "dir": "Philippines_v16_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_v16",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_v16_v16.0.0_MUIO.zip"
+                }
+            ]
+        }
+    ]
+}

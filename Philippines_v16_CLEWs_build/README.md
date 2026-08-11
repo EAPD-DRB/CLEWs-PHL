@@ -1,9 +1,10 @@
 # Philippines v16 CLEWs model
 
 Philippines v16 is the current whole-country model. Since the migration
-baseline it has received documented non-forcing crop-yield and energy-input
-repairs. The retained v16.0.0 archive remains the migration baseline; current
-live-source deltas are fully mapped in the canonical ledger.
+baseline it has received documented non-forcing water, irrigated-rice,
+achieved-crop-yield, and energy-input parameter repairs. The retained v16.0.0 archive remains
+the migration baseline; current live-source deltas are fully mapped in the
+canonical ledger.
 
 Philippines v15 is the validated whole-country MUIO/MUIOGO case that adds a
 national precipitation and renewable-water envelope to the Philippines v14
@@ -49,12 +50,12 @@ aquifer storage, or groundwater safe yield. Neither ceiling binds in
 
 The six canonical, cumulative CSV ledgers are under `data_sources/`:
 
-- `SOURCES.csv`: 95 source and retained-evidence records;
-- `CALCULATIONS.csv`: 88 calculations;
-- `ASSUMPTIONS.csv`: 49 explicit modeling assumptions;
-- `MODEL_MAP.csv`: 71,969 inherited and version-specific mappings;
-- `GAPS.csv`: 25 unresolved evidence needs; and
-- `CHANGES.csv`: 14 implementation and documentation records.
+- `SOURCES.csv`: 111 source and retained-evidence records;
+- `CALCULATIONS.csv`: 103 calculations;
+- `ASSUMPTIONS.csv`: 65 explicit modeling assumptions;
+- `MODEL_MAP.csv`: 72,000 inherited and version-specific mappings;
+- `GAPS.csv`: 34 unresolved evidence needs; and
+- `CHANGES.csv`: 18 implementation and documentation records.
 
 `data_sources/PHILIPPINES_V16_CANONICAL_SCHEMA_LEDGER.xlsx` is the current
 formatted review copy; the CSV files are authoritative. The package carries the complete
@@ -62,6 +63,10 @@ inherited-base ledger, v13 calibration record, all 3,253 v14 cell changes, and
 the v15 water addition. No earlier installed case or ledger is required.
 The complete water pathway and equation map are in
 `data_sources/calculation_notes/national_water_v15.md`.
+The irrigated-rice engineering-water correction is in
+`data_sources/calculation_notes/irrigation_water_engineering_v16_2026-08-11.md`.
+The current achieved-crop-yield pathway and equation map are in
+`data_sources/calculation_notes/crop_yields_v16_2026-08-11.md`.
 The renewable naming, offshore wind, geothermal and onshore wind pathway is in
 `data_sources/calculation_notes/energy_inputs_v16_2026-08-11.md`.
 
@@ -84,14 +89,33 @@ manifest entry, the current model archive, cumulative lineage coverage and the
 absence of external installed-case dependencies. See `diagnostics/` and
 `documentation/MODEL_FIXES_WATER_2026-08-04.md`.
 
-The 2026-08-11 energy-input candidate passed source-scope and non-forcing
+The 2026-08-11 crop-yield candidate separately passed source-diff and
+non-forcing guards, application generation, preprocessing, GLPK matrix check,
+full CBC optimization, result export, and BASE comparison. It solved optimally
+in 245.45 seconds at objective 369729000.2004411. The matrix has 791109 rows,
+884956 columns, and 12552173 nonzeros; annual technology emissions were
+unchanged. See `data_sources/snapshots/crop_yield_validation.json`.
+
+The 2026-08-11 energy-input candidate also passed source-scope and non-forcing
 guards, application generation, preprocessing, GLPK matrix checking, full CBC
 optimization and BASE comparison. It solved optimally in 215.64 seconds at
-objective 369730088.2957073. The promoted live source was regenerated
-independently as `Philippines_v16/ENERGY_INPUTS_BASE` and solved optimally at
-369730088.29570782 in 334.14 seconds. Offshore wind remained endogenous and
-was not built. See `data_sources/snapshots/energy_input_validation.json` and
+objective 369730088.2957073. Offshore wind remained endogenous and was not
+built; positive reduced costs show that the remaining no-build result is not
+caused by the corrected capacity factor. See
+`data_sources/snapshots/energy_input_validation.json`.
+The promoted source was then regenerated independently as
+`Philippines_v16/ENERGY_INPUTS_BASE`; it solved optimally at
+369730088.29570782 in 334.14 seconds and reproduced the candidate objective
+within 0.00000053. See
 `data_sources/snapshots/energy_input_live_validation.json`.
+
+The 2026-08-11 irrigated-rice engineering-water correction changed only 544
+`IAR` cells in `RYTCM.json`; no object, demand, activity bound, share, or user
+constraint was added. The matched candidate and promoted live runs both solved
+optimally on the unchanged 791109 by 884956 matrix. Live 2020 rice irrigation
+is 41.6286 km3, or 20752 m3/ha/year. See
+`data_sources/snapshots/irrigation_water_live_validation.json` and
+`documentation/MODEL_FIXES_IRRIGATION_WATER_2026-08-11.md`.
 
 ## Reproduction scripts
 

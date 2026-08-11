@@ -3,8 +3,8 @@
 This directory is the authoritative, cumulative provenance package for the
 Philippines v16 model. It contains the inherited-base source mappings, the v13
 environmental calibration, the v14 stock-and-turnover changes, the v15
-national-water addition, and the v16 crop-yield, land/water-boundary and
-energy-input additions. It does not require an installed earlier model or an
+national-water addition, and the v16 demand, irrigated-rice,
+achieved-crop-yield, and energy-input corrections. It does not require an installed earlier model or an
 earlier version's ledger.
 
 ## How to trace a model value
@@ -19,12 +19,12 @@ earlier version's ledger.
 
 The six authoritative CSVs contain:
 
-- `SOURCES.csv`: 95 external sources and retained evidence records;
-- `CALCULATIONS.csv`: 88 calculation records;
-- `ASSUMPTIONS.csv`: 49 explicit modeling assumptions;
-- `MODEL_MAP.csv`: 71,969 mappings;
-- `GAPS.csv`: 25 known evidence limitations; and
-- `CHANGES.csv`: 14 provenance and model-change records.
+- `SOURCES.csv`: 111 external sources and retained evidence records;
+- `CALCULATIONS.csv`: 103 calculation records;
+- `ASSUMPTIONS.csv`: 65 explicit modeling assumptions;
+- `MODEL_MAP.csv`: 72,000 mappings;
+- `GAPS.csv`: 34 known evidence limitations; and
+- `CHANGES.csv`: 18 provenance and model-change records.
 
 ## What was carried forward
 
@@ -47,16 +47,22 @@ capture calculation. The v14 layer retains its source register, 35
 calculations, 13 assumptions, 33 summary mappings, and all 3,253 exact
 before/after parameter changes. The v15 layer retains the complete water
 formulation, annual climate pathway, constraint values, manifests and
-validation records. The v16 addendum records the AQUASTAT gross/net
-boundary and the whole-coconut-versus-copra distinction without changing
-model inputs.
+validation records. The v16 crop-yield layer replaces absolute GAEZ attainable
+potential with unit-matched achieved national yields, resolves fresh-cane and
+retained-vegetable-aggregate definitions, and preserves an explicit
+non-forcing validation trail. The land/water boundary addendum records the
+AQUASTAT 2006 comparable gross/net pair, the differently scoped 2020 variables,
+and the whole-coconut-versus-copra distinction without changing model inputs.
 
 ## Self-contained evidence
 
 `evidence/RETAINED_EVIDENCE_MANIFEST.csv` records every retained evidence
-file's path, size, role and SHA-256. The retained v16 migration baseline is
+file's path, size, role and SHA-256. The current portable model is
 `../muio/Philippines_v16_v16.0.0_MUIO.zip`; its hash and member count are in
-`V16_MODEL_ARCHIVE_MANIFEST.csv`.
+`V16_MODEL_ARCHIVE_MANIFEST.csv`. That archive is the 2026-08-05 migration
+baseline. The current live source adds the fully traced 2026-08-07 water-demand
+and irrigated-rice deltas; archive refresh is intentionally left to the next
+explicit packaging task.
 
 Historical version names remain in identifiers and narrative to preserve
 chronology. They are not path dependencies. The former water-only ledger is
@@ -65,8 +71,14 @@ preserved unchanged under `history/water_delta_2026-08-04/`.
 See `calculation_notes/CANONICAL_LEDGER_RECONSTRUCTION_2026-08-05.md` for the
 reconstruction record and `calculation_notes/national_water_v15.md` for the
 water equations and annual pathway. See
-`calculation_notes/land_water_boundaries_v16_2026-08-11.md` for the
-AQUASTAT and coconut product-boundary resolution.
+`calculation_notes/irrigation_water_engineering_v16_2026-08-11.md` for the
+irrigated-rice engineering-water coefficients, sources, equations, scope guard,
+solve comparison, and limitations. See
+`calculation_notes/crop_yields_v16_2026-08-11.md` for the crop equations,
+source observations, parameter map, before/after results, and open spatial
+crop-water gaps. See
+`calculation_notes/land_water_boundaries_v16_2026-08-11.md` for the AQUASTAT
+and coconut product-boundary resolution.
 See `calculation_notes/energy_inputs_v16_2026-08-11.md` for the renewable
 naming correction, offshore and onshore wind calculations, geothermal
 availability treatment, equation map and non-forcing validation.

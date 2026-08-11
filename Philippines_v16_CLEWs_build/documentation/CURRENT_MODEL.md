@@ -17,8 +17,8 @@
 The retained portable case is `../muio/Philippines_v16_v16.0.0_MUIO.zip`.
 It is the 2026-08-05 migration baseline; the authoritative current model is
 the live source case mapped in `../data_sources/MODEL_MAP.csv`.
-Version 16 began as an identity-only successor to v15 and now includes traced
-non-forcing crop and energy-input corrections. The underlying model is the
+Version 16 began as an identity-only successor to v15 and now includes fully
+traced non-forcing water, crop and energy-input corrections. The underlying model is the
 v14 stock-turnover model plus a national precipitation pathway, a corrected
 groundwater input link, and annual surface-water and renewable-groundwater
 potential-flow ceilings. The final model is a MUIO evolution; `../config/` and

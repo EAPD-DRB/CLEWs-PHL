@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-11T21:21:41.804891+00:00",
+  "generated_at_utc": "2026-08-11T21:36:34.974969+00:00",
   "validator": "Philippines_v16_CLEWs_build/scripts/validate_philippines_v16_canonical_ledger.py",
   "ledger_dir": "Philippines_v16_CLEWs_build/data_sources",
   "model_archive": "Philippines_v16_CLEWs_build/muio/Philippines_v16_v16.0.0_MUIO.zip",
@@ -10,12 +10,12 @@
       "name": "canonical_table_counts",
       "status": "pass",
       "detail": {
-        "SOURCES.csv": 95,
-        "CALCULATIONS.csv": 88,
-        "ASSUMPTIONS.csv": 49,
-        "MODEL_MAP.csv": 71969,
-        "GAPS.csv": 25,
-        "CHANGES.csv": 14
+        "SOURCES.csv": 111,
+        "CALCULATIONS.csv": 103,
+        "ASSUMPTIONS.csv": 65,
+        "MODEL_MAP.csv": 72000,
+        "GAPS.csv": 34,
+        "CHANGES.csv": 18
       }
     },
     {
@@ -23,8 +23,8 @@
       "status": "pass",
       "detail": {
         "failure_count": 0,
-        "warning_count": 19,
-        "verified_digests": 59
+        "warning_count": 27,
+        "verified_digests": 65
       }
     },
     {
@@ -58,9 +58,9 @@
       "name": "no_external_version_dependency",
       "status": "pass",
       "detail": {
-        "fields_inspected": 72159,
+        "fields_inspected": 72222,
         "promoted_raw_files_verified": 70,
-        "active_narrative_files_verified": 23
+        "active_narrative_files_verified": 27
       }
     },
     {
@@ -68,7 +68,7 @@
       "status": "pass",
       "detail": {
         "summary_rows": 1,
-        "detailed_rows": 71968
+        "detailed_rows": 71999
       }
     }
   ]

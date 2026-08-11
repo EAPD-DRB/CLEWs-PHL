@@ -142,8 +142,8 @@ Added 2026-08-04 as a documentation-only change. No case source parameter,
 generated solver artifact or result file was changed.
 
 The canonical package under `data_sources/` contains 76 source records, 67
-calculations, 38 assumptions, 71,946 model mappings, 17 disclosed evidence
-gaps and 10 change records. It carries the complete inherited-base map, the v13
+calculations, 50 assumptions, 71,958 model mappings, 25 disclosed evidence
+gaps and 14 change records. It carries the complete inherited-base map, the v13
 calibration record, all 3,253 v14 cell changes and the v15 water addition;
 World Bank CCKP ERA5 and SSP2-4.5 evidence; IPCC scenario framing; Philippine
 national surface-water and groundwater benchmarks; groundwater screening and
@@ -155,3 +155,30 @@ The current generic package validation and the cumulative country validator
 pass with zero failures. They verify all retained evidence, all 36 populated
 raw input tables, the current archive, cumulative lineage coverage and the
 absence of an earlier-version ledger dependency.
+
+## Philippines v16 non-forcing irrigated-rice calibration — 2026-08-07
+
+The inherited model had no initial rice land-system capacity, potential
+rainfed and irrigated high-input rice productivities of roughly 0.75 and 0.81
+Mt per 1000 km2, and token crop production costs of 0.0001. This understated
+the observed irrigated productivity advantage and made every 2020 land system
+look like a new investment.
+
+National PSA/NIA observations now initialize 2.006 Mha of available irrigated
+service capacity and 1.47 Mha of rainfed rice capacity. Rice OARs are rebased
+to national effective annual productivity while retaining inherited cluster
+ratios; national irrigated and non-irrigated cost per kilogram replaces the
+token VC; optional new irrigation uses the DA-PRDP indicative 300,000 PHP/ha
+cost and a 30-year economic life. Source changes are in `RT.json`, `RYT.json`,
+`RYTCM.json`, and `RYTM.json`.
+
+No activity, capacity minimum, demand, share, UDC, technology or commodity was
+added. The optimal live BASE run selects 2.006 Mha of irrigation voluntarily,
+versus 0.71313 Mha before, and adds no new irrigated capacity. Objective value
+is 369729190.46216184; the live generation-to-result chain took 334.65 seconds.
+The quoted run predates the subsequent cost-and-life refinement, which was not
+run at the user's request. The matrix structure remains unchanged because no
+object or constraint family was added. Detailed sources, equations, calculations, mappings,
+limitations and hashes are recorded in
+`data_sources/calculation_notes/irrigated_rice_v16_2026-08-07.md` and the six
+canonical schema-ledger CSVs.

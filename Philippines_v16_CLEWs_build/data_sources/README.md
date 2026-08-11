@@ -7,7 +7,11 @@ package rather than delegated to an earlier version.
 - Start with `DATA_SOURCES.md` for the human-readable guide.
 - Use `MODEL_MAP.csv` for parameter-to-evidence tracing.
 - Use `evidence/RETAINED_EVIDENCE_MANIFEST.csv` to verify retained files.
-- Use `calculation_notes/crop_yields_v16_2026-08-11.md` for achieved crop yields, definitions, calculations, validation, and limitations.
+- Use `calculation_notes/crop_yields_v16_2026-08-11.md` for the current crop
+  OAR definitions, exact calculations, solve comparison, and limitations.
+- Use `calculation_notes/irrigation_water_engineering_v16_2026-08-11.md` for
+  the irrigated-rice engineering-water calculation, source map, validation,
+  and limitations.
 - Use `calculation_notes/energy_inputs_v16_2026-08-11.md` for the renewable
   naming correction, offshore and onshore wind calculations, geothermal
   availability, equation map, candidate solve and promoted live validation.

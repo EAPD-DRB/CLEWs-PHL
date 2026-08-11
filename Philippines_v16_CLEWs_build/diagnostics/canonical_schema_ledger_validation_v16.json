@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-11T21:36:34.974969+00:00",
+  "generated_at_utc": "2026-08-11T21:45:23.319279+00:00",
   "validator": "Philippines_v16_CLEWs_build/scripts/validate_philippines_v16_canonical_ledger.py",
   "ledger_dir": "Philippines_v16_CLEWs_build/data_sources",
   "model_archive": "Philippines_v16_CLEWs_build/muio/Philippines_v16_v16.0.0_MUIO.zip",
@@ -23,7 +23,7 @@
       "status": "pass",
       "detail": {
         "failure_count": 0,
-        "warning_count": 27,
+        "warning_count": 20,
         "verified_digests": 65
       }
     },

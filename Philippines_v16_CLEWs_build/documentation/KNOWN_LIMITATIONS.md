@@ -1,4 +1,4 @@
-# Philippines v15 known limitations
+# Philippines v16 known limitations
 
 The authoritative itemized register is `../data_sources/GAPS.csv`. The most
 material limits are:
@@ -11,7 +11,11 @@ material limits are:
 - there is no aquifer stock, head, drawdown, salinity, basin allocation,
   transfer or groundwater-storage state;
 - public/power groundwater electricity, irrigation diversion and public-water
-  demand remain uncalibrated; and
+  demand remain uncalibrated;
+- AQUASTAT national gross/net ratios are validation benchmarks, not a
+  crop-, scheme-, season-, or region-specific irrigation-efficiency parameter;
+- `CRPCON` is whole coconut with husk; v16 has no copra commodity or processing
+  conversion, so coconut results must not be reported as copra tonnes; and
 - only the SSP2-4.5 ensemble median is installed; p10/p90 are retained evidence.
 
 These are disclosed limitations, not missing links to an earlier model ledger.

@@ -1,9 +1,9 @@
-# Philippines v15 canonical source ledger
+# Philippines v16 canonical source ledger
 
 This directory is the authoritative, cumulative provenance package for the
-Philippines v15 model. It contains the inherited-base source mappings, the v13
-environmental calibration, the v14 stock-and-turnover changes, and the v15
-national-water addition. It does not require an installed earlier model or an
+Philippines v16 model. It contains the inherited-base source mappings, the v13
+environmental calibration, the v14 stock-and-turnover changes, the v15
+national-water addition, and the v16 land/water source-boundary addendum. It does not require an installed earlier model or an
 earlier version's ledger.
 
 ## How to trace a model value
@@ -18,12 +18,12 @@ earlier version's ledger.
 
 The six authoritative CSVs contain:
 
-- `SOURCES.csv`: 76 external sources and retained evidence records;
-- `CALCULATIONS.csv`: 67 calculation records;
-- `ASSUMPTIONS.csv`: 38 explicit modeling assumptions;
-- `MODEL_MAP.csv`: 71,946 mappings;
-- `GAPS.csv`: 17 known evidence limitations; and
-- `CHANGES.csv`: 10 provenance and model-change records.
+- `SOURCES.csv`: 86 external sources and retained evidence records;
+- `CALCULATIONS.csv`: 81 calculation records;
+- `ASSUMPTIONS.csv`: 44 explicit modeling assumptions;
+- `MODEL_MAP.csv`: 71,960 mappings;
+- `GAPS.csv`: 23 known evidence limitations; and
+- `CHANGES.csv`: 13 provenance and model-change records.
 
 ## What was carried forward
 
@@ -46,14 +46,16 @@ capture calculation. The v14 layer retains its source register, 35
 calculations, 13 assumptions, 33 summary mappings, and all 3,253 exact
 before/after parameter changes. The v15 layer retains the complete water
 formulation, annual climate pathway, constraint values, manifests and
-validation records.
+validation records. The v16 addendum records the AQUASTAT gross/net
+boundary and the whole-coconut-versus-copra distinction without changing
+model inputs.
 
 ## Self-contained evidence
 
 `evidence/RETAINED_EVIDENCE_MANIFEST.csv` records every retained evidence
-file's path, size, role and SHA-256. The current portable model is
-`../muio/Philippines_v15_v15.0.0_MUIO.zip`; its hash and member count are in
-`evidence/CURRENT_MODEL_ARCHIVE_MANIFEST.csv`.
+file's path, size, role and SHA-256. The retained v16 migration baseline is
+`../muio/Philippines_v16_v16.0.0_MUIO.zip`; its hash and member count are in
+`V16_MODEL_ARCHIVE_MANIFEST.csv`.
 
 Historical version names remain in identifiers and narrative to preserve
 chronology. They are not path dependencies. The former water-only ledger is
@@ -61,7 +63,9 @@ preserved unchanged under `history/water_delta_2026-08-04/`.
 
 See `calculation_notes/CANONICAL_LEDGER_RECONSTRUCTION_2026-08-05.md` for the
 reconstruction record and `calculation_notes/national_water_v15.md` for the
-water equations and annual pathway.
+water equations and annual pathway. See
+`calculation_notes/land_water_boundaries_v16_2026-08-11.md` for the
+AQUASTAT and coconut product-boundary resolution.
 
 ## Remaining limits
 

@@ -12,8 +12,8 @@ results are excluded from the archive.
 
 Current archive:
 
-- size: 6,811,573 bytes
-- SHA-256: `9bf0bb655ca792b83f774f5a3556a04f7d03198e110b78e9cb0142ccd3e43a0e`
+- size: 23,242,325 bytes
+- SHA-256: `b6163fbb97fd4ab1d1c441d77038ac034729aa6943ccc36f4da77529cae09e46`
 
 `Philippines_v15_v15.0.0_MUIO.zip` is retained as predecessor evidence and is
 also protected by Git tag `v15.0.0`.

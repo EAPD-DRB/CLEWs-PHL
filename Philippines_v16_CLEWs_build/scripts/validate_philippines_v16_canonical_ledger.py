@@ -23,12 +23,12 @@ REPORT = PACKAGE / "diagnostics" / "canonical_schema_ledger_validation_v16.json"
 GENERIC_REPORT = PACKAGE / "diagnostics" / "schema_ledger_build.json"
 
 EXPECTED_COUNTS = {
-    "SOURCES.csv": 83,
-    "CALCULATIONS.csv": 78,
-    "ASSUMPTIONS.csv": 42,
-    "MODEL_MAP.csv": 71958,
-    "GAPS.csv": 21,
-    "CHANGES.csv": 12,
+    "SOURCES.csv": 95,
+    "CALCULATIONS.csv": 88,
+    "ASSUMPTIONS.csv": 49,
+    "MODEL_MAP.csv": 71969,
+    "GAPS.csv": 25,
+    "CHANGES.csv": 14,
 }
 
 REQUIRED_V15_MAPS = {

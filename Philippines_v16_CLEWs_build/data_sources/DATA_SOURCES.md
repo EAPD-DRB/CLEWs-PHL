@@ -3,7 +3,8 @@
 This directory is the authoritative, cumulative provenance package for the
 Philippines v16 model. It contains the inherited-base source mappings, the v13
 environmental calibration, the v14 stock-and-turnover changes, the v15
-national-water addition, and the v16 land/water source-boundary addendum. It does not require an installed earlier model or an
+national-water addition, and the v16 crop-yield, land/water-boundary and
+energy-input additions. It does not require an installed earlier model or an
 earlier version's ledger.
 
 ## How to trace a model value
@@ -18,12 +19,12 @@ earlier version's ledger.
 
 The six authoritative CSVs contain:
 
-- `SOURCES.csv`: 86 external sources and retained evidence records;
-- `CALCULATIONS.csv`: 81 calculation records;
-- `ASSUMPTIONS.csv`: 44 explicit modeling assumptions;
-- `MODEL_MAP.csv`: 71,960 mappings;
-- `GAPS.csv`: 23 known evidence limitations; and
-- `CHANGES.csv`: 13 provenance and model-change records.
+- `SOURCES.csv`: 95 external sources and retained evidence records;
+- `CALCULATIONS.csv`: 88 calculation records;
+- `ASSUMPTIONS.csv`: 49 explicit modeling assumptions;
+- `MODEL_MAP.csv`: 71,969 mappings;
+- `GAPS.csv`: 25 known evidence limitations; and
+- `CHANGES.csv`: 14 provenance and model-change records.
 
 ## What was carried forward
 
@@ -66,6 +67,9 @@ reconstruction record and `calculation_notes/national_water_v15.md` for the
 water equations and annual pathway. See
 `calculation_notes/land_water_boundaries_v16_2026-08-11.md` for the
 AQUASTAT and coconut product-boundary resolution.
+See `calculation_notes/energy_inputs_v16_2026-08-11.md` for the renewable
+naming correction, offshore and onshore wind calculations, geothermal
+availability treatment, equation map and non-forcing validation.
 
 ## Remaining limits
 

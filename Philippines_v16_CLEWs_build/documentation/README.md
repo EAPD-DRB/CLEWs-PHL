@@ -1,7 +1,9 @@
-# Philippines v15 documentation
+# Philippines v16 documentation
 
 - `MODEL_FIXES_WATER_2026-08-04.md`: equation-first design, source changes,
   baseline, solver validation and known limitations.
+- `MODEL_FIXES_ENERGY_INPUTS_2026-08-11.md`: renewable naming, offshore and
+  onshore wind, geothermal availability, source calculations and validation.
 - `../data_sources/`: canonical source, calculation, assumption, model-map,
   gap and change ledgers.
 - `../diagnostics/national_water_manifest.json`: full-precision generation and

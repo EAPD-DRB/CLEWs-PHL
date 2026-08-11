@@ -7,6 +7,7 @@ package rather than delegated to an earlier version.
 - Start with `DATA_SOURCES.md` for the human-readable guide.
 - Use `MODEL_MAP.csv` for parameter-to-evidence tracing.
 - Use `evidence/RETAINED_EVIDENCE_MANIFEST.csv` to verify retained files.
+- Use `calculation_notes/crop_yields_v16_2026-08-11.md` for achieved crop yields, definitions, calculations, validation, and limitations.
 - Run `../scripts/validate_philippines_v15_schema_ledger.py` to validate the
   schema, evidence hashes, lineage coverage and current model archive without
   an earlier live case.

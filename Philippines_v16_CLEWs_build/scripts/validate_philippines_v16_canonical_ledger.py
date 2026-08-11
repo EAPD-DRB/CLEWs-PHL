@@ -23,12 +23,12 @@ REPORT = PACKAGE / "diagnostics" / "canonical_schema_ledger_validation_v16.json"
 GENERIC_REPORT = PACKAGE / "diagnostics" / "schema_ledger_build.json"
 
 EXPECTED_COUNTS = {
-    "SOURCES.csv": 77,
-    "CALCULATIONS.csv": 67,
-    "ASSUMPTIONS.csv": 38,
-    "MODEL_MAP.csv": 71947,
-    "GAPS.csv": 17,
-    "CHANGES.csv": 11,
+    "SOURCES.csv": 83,
+    "CALCULATIONS.csv": 78,
+    "ASSUMPTIONS.csv": 42,
+    "MODEL_MAP.csv": 71958,
+    "GAPS.csv": 21,
+    "CHANGES.csv": 12,
 }
 
 REQUIRED_V15_MAPS = {
@@ -180,14 +180,15 @@ def main() -> int:
             "config/config.yaml",
             "model/inputs/",
             "evidence/inherited_base/",
+            "case/Philippines_v16",
             "muio/Philippines_v15_v15.0.0_MUIO.zip",
             "muio/Philippines_v16_v16.0.0_MUIO.zip",
         )
         require(
             all(
                 row["model_file"] == allowed[0]
-                or row["model_file"].startswith(allowed[1:3])
-                or row["model_file"] in allowed[3:]
+                or row["model_file"].startswith(allowed[1:4])
+                or row["model_file"] in allowed[4:]
                 for row in tables["MODEL_MAP.csv"]
             ),
             "model maps point outside the active raw base, retained evidence, or current archive",

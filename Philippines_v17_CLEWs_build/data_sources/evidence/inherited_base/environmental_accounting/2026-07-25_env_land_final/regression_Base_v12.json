@@ -1,0 +1,1173 @@
+{
+  "baseline": "/Users/sato/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v12_ENV_LAND_Control_20260725/res/Base_v12",
+  "candidate": "/Users/sato/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v12_ENV_LAND/res/Base_v12",
+  "absolute_tolerance": 0.005,
+  "relative_tolerance": 1e-08,
+  "exclusions": [
+    "t=ENV_LAND",
+    "cn=BAL_ENV_LAND",
+    "f=ENV_LND_FOREST",
+    "f=ENV_LND_GRASSLAND",
+    "f=ENV_LND_OTHER",
+    "f=ENV_LND_BARREN",
+    "f=ENV_LND_BUILT",
+    "f=ENV_LND_WATER",
+    "f=ENV_LND_CROPLAND"
+  ],
+  "ignored_tokens": [],
+  "missing_cases": [],
+  "cases": {
+    ".": {
+      "baseline_solver": {
+        "status": "optimal",
+        "first_line": "Optimal - objective value 375930821.34054363"
+      },
+      "candidate_solver": {
+        "status": "optimal",
+        "first_line": "Optimal - objective value 375930821.34054434"
+      },
+      "missing_files": [],
+      "variables": {
+        "AccumulatedNewCapacity": {
+          "status": "numeric-difference",
+          "baseline_rows": 5848,
+          "candidate_rows": 5848,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 420.2641,
+          "max_relative_difference": 0.6234596316571276,
+          "count_outside_tolerance": 9,
+          "examples": [
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2020"
+              ],
+              "baseline": 243.8477,
+              "candidate": 205.9261,
+              "absolute_difference": 37.92160000000001,
+              "relative_difference": 0.15551346188625118
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2021"
+              ],
+              "baseline": 243.8477,
+              "candidate": 210.5188,
+              "absolute_difference": 33.328900000000004,
+              "relative_difference": 0.13667916490497964
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2029"
+              ],
+              "baseline": 674.0839,
+              "candidate": 253.8198,
+              "absolute_difference": 420.2641,
+              "relative_difference": 0.6234596316571276
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2030"
+              ],
+              "baseline": 674.0839,
+              "candidate": 253.8198,
+              "absolute_difference": 420.2641,
+              "relative_difference": 0.6234596316571276
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2031"
+              ],
+              "baseline": 674.0839,
+              "candidate": 270.8457,
+              "absolute_difference": 403.23819999999995,
+              "relative_difference": 0.5982017965419437
+            }
+          ]
+        },
+        "AnnualFixedOperatingCost": {
+          "status": "same",
+          "baseline_rows": 5848,
+          "candidate_rows": 5848,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "AnnualTechnologyEmission": {
+          "status": "same",
+          "baseline_rows": 11696,
+          "candidate_rows": 11696,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "AnnualTechnologyEmissionByMode": {
+          "status": "same",
+          "baseline_rows": 952,
+          "candidate_rows": 952,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "AnnualVariableOperatingCost": {
+          "status": "same",
+          "baseline_rows": 5848,
+          "candidate_rows": 5848,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 0.002,
+          "max_relative_difference": 1.0,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "AnnualizedInvestmentCost": {
+          "status": "same",
+          "baseline_rows": 1515,
+          "candidate_rows": 1515,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "CapitalInvestment": {
+          "status": "same",
+          "baseline_rows": 5848,
+          "candidate_rows": 5848,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "Demand": {
+          "status": "same",
+          "baseline_rows": 93840,
+          "candidate_rows": 93840,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "E8_AnnualEmissionsLimit": {
+          "status": "same",
+          "baseline_rows": 68,
+          "candidate_rows": 68,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "EBb4_EnergyBalanceEachYear4_ICR": {
+          "status": "numeric-difference",
+          "baseline_rows": 3128,
+          "candidate_rows": 3128,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 76643.2317894623,
+          "max_relative_difference": 1.0,
+          "count_outside_tolerance": 966,
+          "examples": [
+            {
+              "key": [
+                "RE1",
+                "CRPCON",
+                "2021",
+                "0.05"
+              ],
+              "baseline": 25.358052208389473,
+              "candidate": 0.0,
+              "absolute_difference": 25.358052208389473,
+              "relative_difference": 1.0
+            },
+            {
+              "key": [
+                "RE1",
+                "CRPCON",
+                "2022",
+                "0.05"
+              ],
+              "baseline": 25.357949995055588,
+              "candidate": 0.0,
+              "absolute_difference": 25.357949995055588,
+              "relative_difference": 1.0
+            },
+            {
+              "key": [
+                "RE1",
+                "CRPCON",
+                "2023",
+                "0.05"
+              ],
+              "baseline": 25.358023427266517,
+              "candidate": 0.0,
+              "absolute_difference": 25.358023427266517,
+              "relative_difference": 1.0
+            },
+            {
+              "key": [
+                "RE1",
+                "CRPCON",
+                "2024",
+                "0.05"
+              ],
+              "baseline": 25.357981909824183,
+              "candidate": 0.0,
+              "absolute_difference": 25.357981909824183,
+              "relative_difference": 1.0
+            },
+            {
+              "key": [
+                "RE1",
+                "CRPCON",
+                "2026",
+                "0.05"
+              ],
+              "baseline": 0.0,
+              "candidate": 25.35800214957732,
+              "absolute_difference": 25.35800214957732,
+              "relative_difference": 1.0
+            }
+          ]
+        },
+        "NewCapacity": {
+          "status": "numeric-difference",
+          "baseline_rows": 5848,
+          "candidate_rows": 5848,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 420.2641,
+          "max_relative_difference": 1.0,
+          "count_outside_tolerance": 6,
+          "examples": [
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2020"
+              ],
+              "baseline": 243.8477,
+              "candidate": 205.9261,
+              "absolute_difference": 37.92160000000001,
+              "relative_difference": 0.15551346188625118
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2021"
+              ],
+              "baseline": 0.0,
+              "candidate": 4.5927,
+              "absolute_difference": 4.5927,
+              "relative_difference": 1.0
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2022"
+              ],
+              "baseline": 0.0,
+              "candidate": 33.3289,
+              "absolute_difference": 33.3289,
+              "relative_difference": 1.0
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2029"
+              ],
+              "baseline": 430.2362,
+              "candidate": 9.9721,
+              "absolute_difference": 420.2641,
+              "relative_difference": 0.9768218016057226
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2031"
+              ],
+              "baseline": 0.0,
+              "candidate": 17.0259,
+              "absolute_difference": 17.0259,
+              "relative_difference": 1.0
+            }
+          ]
+        },
+        "ObjectiveValue": {
+          "status": "same",
+          "baseline_rows": 1,
+          "candidate_rows": 1,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 7.152557373046875e-07,
+          "max_relative_difference": 1.9026259532382396e-15,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "ProductionByTechnologyByMode": {
+          "status": "row-set-difference",
+          "baseline_rows": 86608,
+          "candidate_rows": 86575,
+          "baseline_only_keys": 1540,
+          "candidate_only_keys": 1507,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 413.0107,
+          "max_relative_difference": 0.999352855524996,
+          "count_outside_tolerance": 1604,
+          "examples": [
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "DEMAGRSURPHL",
+                "2029",
+                "1",
+                "RE1",
+                "1",
+                "RE1"
+              ],
+              "baseline": 0.0626,
+              "candidate": 0.0947,
+              "absolute_difference": 0.032100000000000004,
+              "relative_difference": 0.33896515311510034
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "DEMAGRSURPHL",
+                "2029",
+                "1",
+                "RE1",
+                "20",
+                "RE1"
+              ],
+              "baseline": 0.1305,
+              "candidate": 0.0985,
+              "absolute_difference": 0.032,
+              "relative_difference": 0.24521072796934865
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "DEMAGRSURPHL",
+                "2033",
+                "1",
+                "RE1",
+                "13",
+                "RE1"
+              ],
+              "baseline": 0.1225,
+              "candidate": 0.1305,
+              "absolute_difference": 0.008000000000000007,
+              "relative_difference": 0.06130268199233722
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "DEMAGRSURPHL",
+                "2033",
+                "1",
+                "RE1",
+                "24",
+                "RE1"
+              ],
+              "baseline": 0.1305,
+              "candidate": 0.1225,
+              "absolute_difference": 0.008000000000000007,
+              "relative_difference": 0.06130268199233722
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "DEMAGRSURPHL",
+                "2045",
+                "1",
+                "RE1",
+                "13",
+                "RE1"
+              ],
+              "baseline": 0.044,
+              "candidate": 0.0985,
+              "absolute_difference": 0.05450000000000001,
+              "relative_difference": 0.5532994923857868
+            }
+          ]
+        },
+        "RateOfActivity": {
+          "status": "numeric-difference",
+          "baseline_rows": 412080,
+          "candidate_rows": 412080,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 11823.9516,
+          "max_relative_difference": 1.0,
+          "count_outside_tolerance": 2976,
+          "examples": [
+            {
+              "key": [
+                "RE1",
+                "1",
+                "DEMAGRSURPHL",
+                "1",
+                "2029"
+              ],
+              "baseline": 1.7932,
+              "candidate": 2.7099,
+              "absolute_difference": 0.9167000000000003,
+              "relative_difference": 0.3382781652459501
+            },
+            {
+              "key": [
+                "RE1",
+                "1",
+                "LNDAGRPHLC01",
+                "27",
+                "2031"
+              ],
+              "baseline": 26.8449,
+              "candidate": 0.0,
+              "absolute_difference": 26.8449,
+              "relative_difference": 1.0
+            },
+            {
+              "key": [
+                "RE1",
+                "1",
+                "LNDAGRPHLC01",
+                "27",
+                "2048"
+              ],
+              "baseline": 0.0,
+              "candidate": 260.8503,
+              "absolute_difference": 260.8503,
+              "relative_difference": 1.0
+            },
+            {
+              "key": [
+                "RE1",
+                "1",
+                "LNDAGRPHLC02",
+                "3",
+                "2050"
+              ],
+              "baseline": 5.6075,
+              "candidate": 0.0,
+              "absolute_difference": 5.6075,
+              "relative_difference": 1.0
+            },
+            {
+              "key": [
+                "RE1",
+                "1",
+                "LNDAGRPHLC02",
+                "30",
+                "2028"
+              ],
+              "baseline": 0.0,
+              "candidate": 1.2396,
+              "absolute_difference": 1.2396,
+              "relative_difference": 1.0
+            }
+          ]
+        },
+        "RateOfProductionByTechnologyByMode": {
+          "status": "row-set-difference",
+          "baseline_rows": 87329,
+          "candidate_rows": 87296,
+          "baseline_only_keys": 1540,
+          "candidate_only_keys": 1507,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 11823.9516,
+          "max_relative_difference": 0.999354561101549,
+          "count_outside_tolerance": 1671,
+          "examples": [
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "DEMAGRSURPHL",
+                "2029",
+                "1",
+                "RE1",
+                "1",
+                "RE1"
+              ],
+              "baseline": 1.7932,
+              "candidate": 2.7099,
+              "absolute_difference": 0.9167000000000003,
+              "relative_difference": 0.3382781652459501
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "DEMAGRSURPHL",
+                "2029",
+                "1",
+                "RE1",
+                "20",
+                "RE1"
+              ],
+              "baseline": 2.7099,
+              "candidate": 2.0452,
+              "absolute_difference": 0.6647000000000003,
+              "relative_difference": 0.2452858039042032
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "DEMAGRSURPHL",
+                "2033",
+                "1",
+                "RE1",
+                "13",
+                "RE1"
+              ],
+              "baseline": 2.543,
+              "candidate": 2.7099,
+              "absolute_difference": 0.16690000000000005,
+              "relative_difference": 0.06158898852356177
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "DEMAGRSURPHL",
+                "2033",
+                "1",
+                "RE1",
+                "24",
+                "RE1"
+              ],
+              "baseline": 2.7099,
+              "candidate": 2.543,
+              "absolute_difference": 0.16690000000000005,
+              "relative_difference": 0.06158898852356177
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "DEMAGRSURPHL",
+                "2045",
+                "1",
+                "RE1",
+                "13",
+                "RE1"
+              ],
+              "baseline": 0.9128,
+              "candidate": 2.0446,
+              "absolute_difference": 1.1318000000000001,
+              "relative_difference": 0.5535557077178911
+            }
+          ]
+        },
+        "RateOfUseByTechnologyByMode": {
+          "status": "row-set-difference",
+          "baseline_rows": 67817,
+          "candidate_rows": 67785,
+          "baseline_only_keys": 1135,
+          "candidate_only_keys": 1103,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 3868.7365,
+          "max_relative_difference": 0.9993401174957459,
+          "count_outside_tolerance": 668,
+          "examples": [
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "LNDAGRPHLC07",
+                "2029",
+                "19",
+                "RE1",
+                "1",
+                "RE1"
+              ],
+              "baseline": 1.4659,
+              "candidate": 2.7099,
+              "absolute_difference": 1.2440000000000002,
+              "relative_difference": 0.45905752979814757
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "LNDAGRPHLC07",
+                "2029",
+                "19",
+                "RE1",
+                "20",
+                "RE1"
+              ],
+              "baseline": 2.7099,
+              "candidate": 1.8078,
+              "absolute_difference": 0.9021000000000001,
+              "relative_difference": 0.3328905125650393
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "LNDAGRPHLC07",
+                "2033",
+                "19",
+                "RE1",
+                "13",
+                "RE1"
+              ],
+              "baseline": 2.4835,
+              "candidate": 2.7099,
+              "absolute_difference": 0.22640000000000038,
+              "relative_difference": 0.08354551828480769
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "LNDAGRPHLC07",
+                "2033",
+                "19",
+                "RE1",
+                "24",
+                "RE1"
+              ],
+              "baseline": 2.7099,
+              "candidate": 2.4835,
+              "absolute_difference": 0.22640000000000038,
+              "relative_difference": 0.08354551828480769
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "LNDAGRPHLC07",
+                "2045",
+                "19",
+                "RE1",
+                "13",
+                "RE1"
+              ],
+              "baseline": 0.5086,
+              "candidate": 2.0446,
+              "absolute_difference": 1.536,
+              "relative_difference": 0.7512471877139784
+            }
+          ]
+        },
+        "SalvageValue": {
+          "status": "same",
+          "baseline_rows": 5848,
+          "candidate_rows": 5848,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "TechnologyEmissionsPenalty": {
+          "status": "same",
+          "baseline_rows": 5848,
+          "candidate_rows": 5848,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "TotalAnnualTechnologyActivityByMode": {
+          "status": "numeric-difference",
+          "baseline_rows": 13736,
+          "candidate_rows": 13736,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 20.498,
+          "max_relative_difference": 1.0,
+          "count_outside_tolerance": 63,
+          "examples": [
+            {
+              "key": [
+                "RE1",
+                "PHL_AGR_HEAT_NG",
+                "1",
+                "2021"
+              ],
+              "baseline": 8.4343,
+              "candidate": 8.3755,
+              "absolute_difference": 0.05879999999999974,
+              "relative_difference": 0.00697153290729518
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_AGR_HEAT_NG",
+                "1",
+                "2022"
+              ],
+              "baseline": 8.5744,
+              "candidate": 8.6008,
+              "absolute_difference": 0.02639999999999887,
+              "relative_difference": 0.003069481908659528
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_AGR_HEAT_NG",
+                "1",
+                "2025"
+              ],
+              "baseline": 9.2408,
+              "candidate": 9.2992,
+              "absolute_difference": 0.058400000000000674,
+              "relative_difference": 0.0062801101169993835
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_AGR_HEAT_NG",
+                "1",
+                "2027"
+              ],
+              "baseline": 9.478,
+              "candidate": 9.5202,
+              "absolute_difference": 0.042200000000001125,
+              "relative_difference": 0.004432679985714704
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_AGR_HEAT_NG",
+                "1",
+                "2028"
+              ],
+              "baseline": 9.8809,
+              "candidate": 9.8631,
+              "absolute_difference": 0.017800000000001148,
+              "relative_difference": 0.0018014553330163393
+            }
+          ]
+        },
+        "TotalCapacityAnnual": {
+          "status": "numeric-difference",
+          "baseline_rows": 5848,
+          "candidate_rows": 5848,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 420.2641,
+          "max_relative_difference": 0.6234596316571276,
+          "count_outside_tolerance": 9,
+          "examples": [
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2020"
+              ],
+              "baseline": 243.8477,
+              "candidate": 205.9261,
+              "absolute_difference": 37.92160000000001,
+              "relative_difference": 0.15551346188625118
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2021"
+              ],
+              "baseline": 243.8477,
+              "candidate": 210.5188,
+              "absolute_difference": 33.328900000000004,
+              "relative_difference": 0.13667916490497964
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2029"
+              ],
+              "baseline": 674.0839,
+              "candidate": 253.8198,
+              "absolute_difference": 420.2641,
+              "relative_difference": 0.6234596316571276
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2030"
+              ],
+              "baseline": 674.0839,
+              "candidate": 253.8198,
+              "absolute_difference": 420.2641,
+              "relative_difference": 0.6234596316571276
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_INDU_PLANT_OTH",
+                "2031"
+              ],
+              "baseline": 674.0839,
+              "candidate": 270.8457,
+              "absolute_difference": 403.23819999999995,
+              "relative_difference": 0.5982017965419437
+            }
+          ]
+        },
+        "TotalTechnologyModelPeriodActivity": {
+          "status": "numeric-difference",
+          "baseline_rows": 172,
+          "candidate_rows": 172,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 14.492900000000002,
+          "max_relative_difference": 0.42239190941812516,
+          "count_outside_tolerance": 9,
+          "examples": [
+            {
+              "key": [
+                "RE1",
+                "PHL_AGR_HEAT_NG"
+              ],
+              "baseline": 369.9596,
+              "candidate": 369.9001,
+              "absolute_difference": 0.0595000000000141,
+              "relative_difference": 0.0001608283715303349
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_AGR_HEAT_OIL"
+              ],
+              "baseline": 16.8983,
+              "candidate": 16.9578,
+              "absolute_difference": 0.059499999999999886,
+              "relative_difference": 0.003508709856231344
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_DEM_PUB_GWT_WAT"
+              ],
+              "baseline": 20.498,
+              "candidate": 20.636,
+              "absolute_difference": 0.13799999999999812,
+              "relative_difference": 0.00668734250823794
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_DEM_PUB_SUR_WAT"
+              ],
+              "baseline": 1294.838,
+              "candidate": 1294.7,
+              "absolute_difference": 0.13799999999991996,
+              "relative_difference": 0.00010657703898087635
+            },
+            {
+              "key": [
+                "RE1",
+                "PHL_DEM_PWR_GWT_WAT"
+              ],
+              "baseline": 19.8186,
+              "candidate": 34.3115,
+              "absolute_difference": 14.492900000000002,
+              "relative_difference": 0.42239190941812516
+            }
+          ]
+        },
+        "UDC1_UserDefinedConstraintInequality": {
+          "status": "same",
+          "baseline_rows": 34,
+          "candidate_rows": 34,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "UDC2_UserDefinedConstraintEquality": {
+          "status": "same",
+          "baseline_rows": 68,
+          "candidate_rows": 68,
+          "baseline_only_keys": 0,
+          "candidate_only_keys": 0,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 0.0,
+          "max_relative_difference": 0.0,
+          "count_outside_tolerance": 0,
+          "examples": []
+        },
+        "UseByTechnologyByMode": {
+          "status": "row-set-difference",
+          "baseline_rows": 67814,
+          "candidate_rows": 67782,
+          "baseline_only_keys": 1135,
+          "candidate_only_keys": 1103,
+          "multiplicity_mismatches": 0,
+          "duplicate_keys": 0,
+          "applied_tolerance": {
+            "absolute": 0.005,
+            "relative": 1e-08
+          },
+          "max_absolute_difference": 139.2166,
+          "max_relative_difference": 0.999365784049469,
+          "count_outside_tolerance": 618,
+          "examples": [
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "LNDAGRPHLC07",
+                "2029",
+                "19",
+                "RE1",
+                "1",
+                "RE1"
+              ],
+              "baseline": 0.0512,
+              "candidate": 0.0947,
+              "absolute_difference": 0.043500000000000004,
+              "relative_difference": 0.4593453009503696
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "LNDAGRPHLC07",
+                "2029",
+                "19",
+                "RE1",
+                "20",
+                "RE1"
+              ],
+              "baseline": 0.1305,
+              "candidate": 0.0871,
+              "absolute_difference": 0.04340000000000001,
+              "relative_difference": 0.33256704980842916
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "LNDAGRPHLC07",
+                "2033",
+                "19",
+                "RE1",
+                "13",
+                "RE1"
+              ],
+              "baseline": 0.1196,
+              "candidate": 0.1305,
+              "absolute_difference": 0.010900000000000007,
+              "relative_difference": 0.08352490421455944
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "LNDAGRPHLC07",
+                "2033",
+                "19",
+                "RE1",
+                "24",
+                "RE1"
+              ],
+              "baseline": 0.1305,
+              "candidate": 0.1196,
+              "absolute_difference": 0.010900000000000007,
+              "relative_difference": 0.08352490421455944
+            },
+            {
+              "key": [
+                "RE1",
+                "AGRWATPHL",
+                "LNDAGRPHLC07",
+                "2045",
+                "19",
+                "RE1",
+                "13",
+                "RE1"
+              ],
+              "baseline": 0.0245,
+              "candidate": 0.0985,
+              "absolute_difference": 0.07400000000000001,
+              "relative_difference": 0.751269035532995
+            }
+          ]
+        }
+      }
+    }
+  }
+}

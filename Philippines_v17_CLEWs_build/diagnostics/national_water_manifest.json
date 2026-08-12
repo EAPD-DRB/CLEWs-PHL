@@ -1,0 +1,448 @@
+{
+  "generated_at_utc": "2026-08-04T21:30:52.390304+00:00",
+  "source_case": "Philippines_v14_STOCK_TURNOVER",
+  "target_case": "Philippines_v15",
+  "identity_rename": {
+    "renamed_at_utc": "2026-08-04T21:44:24+00:00",
+    "from_case": "Philippines_v14_STOCK_TURNOVER",
+    "from_run": "BASE_V14",
+    "intermediate_case": "Philippines_v15_STOCK_TURNOVER",
+    "to_case": "Philippines_v15",
+    "to_run": "BASE_V15",
+    "name_shortened_at_utc": "2026-08-04T21:50:40+00:00",
+    "model_equations_or_values_changed": false,
+    "prior_full_validation": {
+      "status": "optimal",
+      "cbc_solve_seconds": 219.6812985419965,
+      "objective": 369630979.6246426,
+      "matrix_rows": 791109,
+      "matrix_columns": 884956,
+      "matrix_nonzeros": 12533783
+    }
+  },
+  "region": "RE1",
+  "years": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029",
+    "2030",
+    "2031",
+    "2032",
+    "2033",
+    "2034",
+    "2035",
+    "2036",
+    "2037",
+    "2038",
+    "2039",
+    "2040",
+    "2041",
+    "2042",
+    "2043",
+    "2044",
+    "2045",
+    "2046",
+    "2047",
+    "2048",
+    "2049",
+    "2050",
+    "2051",
+    "2052",
+    "2053"
+  ],
+  "source_data": {
+    "path": "scripts/data/philippines_water_precipitation_ssp245.json",
+    "sha256": "97f024db29f4d5a2df7440c5414949cbadbefd726bea74d8f790f648948c548d",
+    "installed_copy": "documentation/philippines_water_precipitation_ssp245.json",
+    "scenario_installed": "SSP2-4.5 ensemble median only",
+    "p10_p90_status": "research metadata only; no predefined model scenarios"
+  },
+  "model_formulation": {
+    "path": "WebAPP/SOLVERs/model.v.5.4.txt",
+    "sha256": "537d448b0252097065e47b84a72b1ec6dd008bb3bf6f84fce42ee377fc179736",
+    "equation_checks": {
+      "annual_commodity_balance": {
+        "token": "s.t. EBb4_EnergyBalanceEachYear4",
+        "present": true
+      },
+      "annual_activity_identity": {
+        "token": "s.t. AAC1_TotalAnnualTechnologyActivity",
+        "present": true
+      },
+      "tag_0_udc": {
+        "token": "s.t. UDC1_UserDefinedConstraintInequality",
+        "present": true
+      },
+      "udc_activity_term": {
+        "token": "UDCMultiplierActivity[r,t,u,y]*TotalTechnologyAnnualActivity[r,t,y] <= UDCConstant[r,u,y]",
+        "present": true
+      }
+    }
+  },
+  "observation_classification": {
+    "initial_stock": "None; groundwater stock/depletion is not initialized.",
+    "final_demand": "No final demand is changed.",
+    "continuing_real_world_constraints": [
+      "ERA5 1991-2020 national precipitation normal",
+      "SSP2-4.5 ensemble-median relative precipitation signal",
+      "national surface-water and groundwater potential-flow sensitivities"
+    ],
+    "benchmark_only": [
+      "SSP2-4.5 p10/p90 metadata",
+      "current national withdrawal estimates",
+      "regional/local groundwater studies and categorical screening"
+    ]
+  },
+  "technology_classification": {
+    "MINPRCPHL": "physical source",
+    "LNDAGRPHLC01...LNDAGRPHLC08": "physical land/water conversions",
+    "six PHL_DEM/DEMAGR withdrawal technologies": "physical pass-throughs",
+    "WATER_SUR_AVAIL and WATER_GWT_POTENTIAL": "annual accounting/physical constraint devices",
+    "PHL_PUB_WAT, PHL_PWR_WAT and crop commodities": "unchanged final demands"
+  },
+  "climate": {
+    "era5_1991_2020_normal_mm_per_year": 2658.12,
+    "source_model_precipitation_depth_mm_per_year": 2450.7547502122115,
+    "source_model_precipitation_volume_km3_per_year": 724.96536,
+    "national_land_area_1000km2": 295.8131,
+    "era5_rebase_factor": 1.0846128115307467,
+    "ssp245_median_multiplier": {
+      "2020": 1,
+      "2021": 1.0010122658529792,
+      "2022": 1.0020245317059586,
+      "2023": 1.0030367975589378,
+      "2024": 1.004049063411917,
+      "2025": 1.0050613292648964,
+      "2026": 1.0060735951178756,
+      "2027": 1.007085860970855,
+      "2028": 1.0080981268238343,
+      "2029": 1.0091103926768135,
+      "2030": 1.0101226585297929,
+      "2031": 1.0117712230738494,
+      "2032": 1.013419787617906,
+      "2033": 1.0150683521619626,
+      "2034": 1.016716916706019,
+      "2035": 1.0183654812500758,
+      "2036": 1.0200140457941322,
+      "2037": 1.0216626103381887,
+      "2038": 1.0233111748822454,
+      "2039": 1.024959739426302,
+      "2040": 1.0266083039703586,
+      "2041": 1.0282568685144151,
+      "2042": 1.0299054330584716,
+      "2043": 1.0315539976025283,
+      "2044": 1.0332025621465848,
+      "2045": 1.0348511266906413,
+      "2046": 1.036499691234698,
+      "2047": 1.0381482557787545,
+      "2048": 1.0397968203228112,
+      "2049": 1.0414453848668677,
+      "2050": 1.0430939494109241,
+      "2051": 1.0447425139549809,
+      "2052": 1.0463910784990373,
+      "2053": 1.048039643043094
+    },
+    "combined_hydrology_factor": {
+      "2020": 1.0846128115307467,
+      "2021": 1.0857107280435632,
+      "2022": 1.0868086445563796,
+      "2023": 1.087906561069196,
+      "2024": 1.0890044775820125,
+      "2025": 1.090102394094829,
+      "2026": 1.0912003106076453,
+      "2027": 1.0922982271204618,
+      "2028": 1.0933961436332782,
+      "2029": 1.0944940601460946,
+      "2030": 1.095591976658911,
+      "2031": 1.0973800308840302,
+      "2032": 1.0991680851091492,
+      "2033": 1.1009561393342684,
+      "2034": 1.1027441935593876,
+      "2035": 1.1045322477845065,
+      "2036": 1.1063203020096257,
+      "2037": 1.1081083562347447,
+      "2038": 1.1098964104598639,
+      "2039": 1.111684464684983,
+      "2040": 1.113472518910102,
+      "2041": 1.1152605731352212,
+      "2042": 1.1170486273603404,
+      "2043": 1.1188366815854593,
+      "2044": 1.1206247358105785,
+      "2045": 1.1224127900356975,
+      "2046": 1.1242008442608167,
+      "2047": 1.1259888984859359,
+      "2048": 1.1277769527110548,
+      "2049": 1.129565006936174,
+      "2050": 1.1313530611612932,
+      "2051": 1.1331411153864122,
+      "2052": 1.1349291696115313,
+      "2053": 1.1367172238366503
+    },
+    "changed_RYTCM_base_rows": 960,
+    "maximum_hydrological_closure_ratio_delta": 2.5948367549064585e-16,
+    "irrigation_water_coefficients_scaled": false
+  },
+  "withdrawal_constraints": {
+    "WATER_SUR_AVAIL": {
+      "ConId": "CO_wsur_v14",
+      "Tag": 0,
+      "raw_commodity": "PHL_WTR_SUR",
+      "members": [
+        "PHL_DEM_PUB_SUR_WAT",
+        "PHL_DEM_PWR_SUR_WAT",
+        "DEMAGRSURPHL"
+      ],
+      "annual_UCC_km3": {
+        "2020": 125.79,
+        "2021": 125.91733292164626,
+        "2022": 126.04466584329253,
+        "2023": 126.17199876493879,
+        "2024": 126.29933168658505,
+        "2025": 126.42666460823132,
+        "2026": 126.55399752987758,
+        "2027": 126.68133045152385,
+        "2028": 126.8086633731701,
+        "2029": 126.93599629481638,
+        "2030": 127.06332921646263,
+        "2031": 127.27070215045951,
+        "2032": 127.47807508445639,
+        "2033": 127.68544801845327,
+        "2034": 127.89282095245014,
+        "2035": 128.10019388644702,
+        "2036": 128.3075668204439,
+        "2037": 128.51493975444077,
+        "2038": 128.72231268843765,
+        "2039": 128.92968562243453,
+        "2040": 129.1370585564314,
+        "2041": 129.34443149042826,
+        "2042": 129.55180442442514,
+        "2043": 129.75917735842202,
+        "2044": 129.9665502924189,
+        "2045": 130.17392322641578,
+        "2046": 130.38129616041266,
+        "2047": 130.58866909440954,
+        "2048": 130.79604202840642,
+        "2049": 131.0034149624033,
+        "2050": 131.21078789640015,
+        "2051": 131.41816083039703,
+        "2052": 131.6255337643939,
+        "2053": 131.8329066983908
+      },
+      "exactness_proof": {
+        "tag": 0,
+        "members": {
+          "PHL_DEM_PUB_SUR_WAT": {
+            "active_modes": [
+              1
+            ],
+            "raw_water_IAR": 1,
+            "UDC_CAM": 1
+          },
+          "PHL_DEM_PWR_SUR_WAT": {
+            "active_modes": [
+              1
+            ],
+            "raw_water_IAR": 1,
+            "UDC_CAM": 1
+          },
+          "DEMAGRSURPHL": {
+            "active_modes": [
+              1
+            ],
+            "raw_water_IAR": 1,
+            "UDC_CAM": 1
+          }
+        },
+        "proof": "Each member has active mode {1}, raw-water IAR 1.0, and CAM 1.0; therefore the UDC activity sum equals gross annual withdrawal."
+      }
+    },
+    "WATER_GWT_POTENTIAL": {
+      "ConId": "CO_wgwt_v14",
+      "Tag": 0,
+      "raw_commodity": "PHL_WTR_GWT",
+      "members": [
+        "PHL_DEM_PUB_GWT_WAT",
+        "PHL_DEM_PWR_GWT_WAT",
+        "DEMAGRGWTPHL"
+      ],
+      "annual_UCC_km3": {
+        "2020": 20.2,
+        "2021": 20.22044777023018,
+        "2022": 20.240895540460365,
+        "2023": 20.261343310690545,
+        "2024": 20.281791080920726,
+        "2025": 20.302238851150907,
+        "2026": 20.322686621381088,
+        "2027": 20.34313439161127,
+        "2028": 20.363582161841453,
+        "2029": 20.384029932071634,
+        "2030": 20.404477702301815,
+        "2031": 20.43777870609176,
+        "2032": 20.4710797098817,
+        "2033": 20.504380713671644,
+        "2034": 20.537681717461584,
+        "2035": 20.57098272125153,
+        "2036": 20.604283725041473,
+        "2037": 20.637584728831413,
+        "2038": 20.670885732621358,
+        "2039": 20.704186736411298,
+        "2040": 20.737487740201242,
+        "2041": 20.770788743991186,
+        "2042": 20.804089747781127,
+        "2043": 20.83739075157107,
+        "2044": 20.870691755361012,
+        "2045": 20.903992759150956,
+        "2046": 20.9372937629409,
+        "2047": 20.97059476673084,
+        "2048": 21.003895770520785,
+        "2049": 21.037196774310726,
+        "2050": 21.07049777810067,
+        "2051": 21.103798781890614,
+        "2052": 21.137099785680554,
+        "2053": 21.1704007894705
+      },
+      "exactness_proof": {
+        "tag": 0,
+        "members": {
+          "PHL_DEM_PUB_GWT_WAT": {
+            "active_modes": [
+              1
+            ],
+            "raw_water_IAR": 1,
+            "UDC_CAM": 1
+          },
+          "PHL_DEM_PWR_GWT_WAT": {
+            "active_modes": [
+              1
+            ],
+            "raw_water_IAR": 1,
+            "UDC_CAM": 1
+          },
+          "DEMAGRGWTPHL": {
+            "active_modes": [
+              1
+            ],
+            "raw_water_IAR": 1,
+            "UDC_CAM": 1
+          }
+        },
+        "proof": "Each member has active mode {1}, raw-water IAR 1.0, and CAM 1.0; therefore the UDC activity sum equals gross annual withdrawal."
+      }
+    }
+  },
+  "source_diff": {
+    "semantic_parameter_files_changed": [
+      "RYCn.json",
+      "RYTCM.json",
+      "RYTCn.json",
+      "genData.json"
+    ],
+    "allowed_parameter_files": [
+      "RYCn.json",
+      "RYTCM.json",
+      "RYTCn.json",
+      "genData.json"
+    ],
+    "changes_outside_allowlist": []
+  },
+  "validation_design": {
+    "unchanged_control": "validated read-only Philippines_v14_STOCK_TURNOVER/BASE_V14 saved result; the changed case itself is disposable",
+    "minimal_candidate": "control plus one missing raw-groundwater IAR, 960 climate-linked BASE coefficients, and two three-member Tag-0 UDCs",
+    "last_known_good_runtime_seconds": 133.12081658299576,
+    "bounded_candidate_budget_seconds": 280,
+    "deterministic_checks": [
+      "source-file semantic allowlist",
+      "all-year climate ratios and UCC values",
+      "single-mode 1:1 withdrawal exactness",
+      "policy-scenario null inheritance",
+      "hydrological split/closure ratio preservation",
+      "ordinary raw-water input links for every withdrawal route"
+    ]
+  },
+  "known_limitations": [
+    "national potential is not dependable yield or environmental-flow-adjusted availability",
+    "20.2 km3/year is groundwater potential flow, not aquifer stock or safe yield",
+    "public and power groundwater pumping electricity is not calibrated",
+    "irrigation and public-water demand are not recalibrated",
+    "the model has no basin, aquifer, transfer, head or groundwater-storage state"
+  ],
+  "source_fingerprints_before": {
+    "R.json": "8e352ff8017301cb6fb2857b399a2d66f534e5691b03fd2c0ffbfe1b51994e84",
+    "RE.json": "85e0ea73dfd7ce398e0638ed23b8c8cd7b7ec7e0f0b4119d2963ce94625aba15",
+    "RS.json": "a954bbe1c640eabaa9b247534bf7caaf6e924de043ca22563b2515f0413e255e",
+    "RT.json": "ec6113d57f8128b3e7abf09ec9008beb43ee852220e48b38b52762743c2721a1",
+    "RTSM.json": "b5f05d6916f988e122fa368636e8f6841e2b89bb35f551bea3fd0f171c28609b",
+    "RYC.json": "791ceb0ea2ff68b3980b6796dc6458f1953bb8c1b1f887a7b7fffa0c1fb3e500",
+    "RYCTs.json": "ad759f6a874a8925a9c4986f54dde366d48bb7c4876dcf859ff136366123a6cc",
+    "RYCn.json": "bfa96f9c8b4d893eaa9dff855abf90e61bac4f0bf0dcf3998d2e350088dc840d",
+    "RYDtb.json": "5441dd7e9ac61fc9498c85ec20a8935a2870280035fecbe89a89e72b611826af",
+    "RYE.json": "025be0c838019c347dda8310cd326f5e65c414f49f83086db5b0763b96ba4e78",
+    "RYS.json": "a224467bc0afb311731cf9b588b04599d71529289e9660ce88a99eb11592a5e2",
+    "RYSeDt.json": "3d5981408cb25f2030e55373cec90b7aac78ba99e6eae91fa94b818624b63458",
+    "RYT.json": "9a3162e3c2a3b3a5dd5a71f508d0f020b38c8273566e63b369e0af914f8894e3",
+    "RYTC.json": "9d7fb98b0b06b40562f453e754b8d60aa8c81911d30f9ac9094bc96f05c61359",
+    "RYTCM.json": "97c98868e1cf08d34799bc91a24f22857fdbe4678199b96ea72f4a362bf9c33f",
+    "RYTCn.json": "d780a5b037366335840ef0dc616dfebf6cf45212d443cc20108fb123cf2d9c65",
+    "RYTEM.json": "394dde16110e917a19ff99026794436bce0e024383f125500e299fc108a6027d",
+    "RYTM.json": "8b60c8b4c758db1f9ba3f07d1c37b56f7b7d7dbb2e9762f29c413c1442470b9f",
+    "RYTTs.json": "3a1e5e92bf37584501726194bcbbb149548268cf2da573574ad523eba7823760",
+    "RYTs.json": "3facea3a09320ba6ab8c1ed11dd61ede33db2300c3c5a8090b67d504794ef5c2",
+    "genData.json": "a558a31941fecee27cdc35c7bfb261af653126d68998ea50a5156278b819bd16",
+    "view/resData.json": "3b0048fd1b259f8772daac6bbf8ad71a14c6c0da4ede84a7ffc47a917d580c09",
+    "view/viewDefinitions.json": "5d68d8b507fca7ce60af57f2c4972c9841f734886e0f6b9e440cca52496c6249"
+  },
+  "generated_source_fingerprints": {
+    "R.json": "8e352ff8017301cb6fb2857b399a2d66f534e5691b03fd2c0ffbfe1b51994e84",
+    "RE.json": "85e0ea73dfd7ce398e0638ed23b8c8cd7b7ec7e0f0b4119d2963ce94625aba15",
+    "RS.json": "a954bbe1c640eabaa9b247534bf7caaf6e924de043ca22563b2515f0413e255e",
+    "RT.json": "71ad164b828f0ade3e045d0b5313139d6827a3589e70db03449f5b86e745a441",
+    "RTSM.json": "b5f05d6916f988e122fa368636e8f6841e2b89bb35f551bea3fd0f171c28609b",
+    "RYC.json": "791ceb0ea2ff68b3980b6796dc6458f1953bb8c1b1f887a7b7fffa0c1fb3e500",
+    "RYCTs.json": "ad759f6a874a8925a9c4986f54dde366d48bb7c4876dcf859ff136366123a6cc",
+    "RYCn.json": "617b78d924643196ccb9a9e21cb25cef2f25b67b53d46db5f441bab6dc59f120",
+    "RYDtb.json": "5441dd7e9ac61fc9498c85ec20a8935a2870280035fecbe89a89e72b611826af",
+    "RYE.json": "025be0c838019c347dda8310cd326f5e65c414f49f83086db5b0763b96ba4e78",
+    "RYS.json": "a224467bc0afb311731cf9b588b04599d71529289e9660ce88a99eb11592a5e2",
+    "RYSeDt.json": "3d5981408cb25f2030e55373cec90b7aac78ba99e6eae91fa94b818624b63458",
+    "RYT.json": "54b26801141702774b4943d59593a5a1e5da9beaa063b0c4e4db807d7393c4ee",
+    "RYTC.json": "9d7fb98b0b06b40562f453e754b8d60aa8c81911d30f9ac9094bc96f05c61359",
+    "RYTCM.json": "b03fc3b9a33d63595f4573f0a47d7d16a5d2558a03a7bdac23e3384563f58dde",
+    "RYTCn.json": "17b0acd11c70636660b2232c917800fe36f2a74181f882d41abd9f3d49d5283b",
+    "RYTEM.json": "394dde16110e917a19ff99026794436bce0e024383f125500e299fc108a6027d",
+    "RYTM.json": "8b60c8b4c758db1f9ba3f07d1c37b56f7b7d7dbb2e9762f29c413c1442470b9f",
+    "RYTTs.json": "3a1e5e92bf37584501726194bcbbb149548268cf2da573574ad523eba7823760",
+    "RYTs.json": "3facea3a09320ba6ab8c1ed11dd61ede33db2300c3c5a8090b67d504794ef5c2",
+    "genData.json": "354017d46e1d33944b516bd1ed50dc0276d1cf46fa0279004abd2f665666b206",
+    "view/resData.json": "8b846a7959d7b8a728d474c39bcdaa9af7865732ef57da05d5add313a09b4ee8",
+    "view/viewDefinitions.json": "5d68d8b507fca7ce60af57f2c4972c9841f734886e0f6b9e440cca52496c6249"
+  },
+  "validation_status": {
+    "source_generation": "passed",
+    "deterministic_design_checks": "passed",
+    "generate_datafile": "passed",
+    "preprocess_data": "passed",
+    "glpsol_check": "passed",
+    "cbc": "passed_optimal",
+    "baseline_comparison": "passed",
+    "live_promotion": "passed"
+  },
+  "validation_report": {
+    "path": "WebAPP/DataStorage/Philippines_v15/documentation/national_water_validation.json",
+    "modified_utc": "2026-08-04T21:51:46.980335+00:00",
+    "size_bytes": 81882,
+    "sha256": "e5eae7ad63603b26fbef1f826142086c1aaf3c0dc3c54265beac0e91d71821ea"
+  },
+  "water_ledger": {
+    "path": "WebAPP/DataStorage/Philippines_v15/documentation/national_water_ledger.json",
+    "modified_utc": "2026-08-04T21:51:46.981262+00:00",
+    "size_bytes": 48694,
+    "sha256": "274aad558bbeeb7d0dfd7695c09cf18a3297799e3e382203991791bfe7bc0610"
+  }
+}

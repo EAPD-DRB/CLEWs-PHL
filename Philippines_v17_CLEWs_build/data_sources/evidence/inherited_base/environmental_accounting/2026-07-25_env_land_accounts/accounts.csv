@@ -1,0 +1,817 @@
+run,region,year,domain,reporter,mode,account,unit,value,equation,interpretation
+Base_v12,RE1,2020,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,404.9374,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2020,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.270599999999995,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2020,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,257.47219999999976,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2020,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,277.74279999999976,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2020,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,179.7818,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2020,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2020,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2020,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2020,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.7698,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2020,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2020,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,113.6631,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2020,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2021,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,403.4798999999998,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2021,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.313799999999997,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2021,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,258.3078999999999,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2021,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,278.6216999999999,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2021,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,178.0382,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2021,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2021,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2021,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2021,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.7812,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2021,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2021,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,115.3953,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2021,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2022,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,402.0237999999999,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2022,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.354500000000026,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2022,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,257.0417000000002,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2022,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,277.39620000000025,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2022,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,176.2946,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2022,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2022,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2022,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2022,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.7926,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2022,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2022,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,117.1275,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2022,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2023,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,400.5662999999994,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2023,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.394999999999975,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2023,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,258.40239999999994,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2023,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,278.7973999999999,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2023,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,174.551,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2023,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2023,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2023,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2023,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.804,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2023,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2023,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,118.8597,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2023,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2024,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,399.10969999999975,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2024,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.43450000000003,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2024,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,257.5724000000002,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2024,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,278.0069000000002,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2024,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,172.8074,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2024,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2024,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2024,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2024,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8154,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2024,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2024,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,120.592,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2024,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2025,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,397.6487000000001,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2025,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.476100000000006,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2025,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,266.2457999999996,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2025,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,286.7218999999996,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2025,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,171.0469,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2025,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2025,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2025,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2025,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8268,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2025,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2025,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,122.341,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2025,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2026,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,396.2887999999998,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2026,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.515099999999972,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2026,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,266.7955000000001,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2026,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,287.3106000000001,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2026,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,169.4011,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2026,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2026,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2026,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2026,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8373,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2026,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2026,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,123.9762,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2026,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2027,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,394.92890000000057,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2027,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.552700000000012,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2027,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,267.3614,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2027,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,287.9141,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2027,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,167.7554,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2027,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2027,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2027,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2027,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8479,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2027,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2027,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,125.6114,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2027,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2028,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,393.56629999999956,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2028,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.589000000000034,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2028,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,267.86669999999987,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2028,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,288.4556999999999,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2028,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,166.1096,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2028,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2028,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2028,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2028,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8585,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2028,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2028,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,127.2466,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2028,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2029,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,392.2628000000003,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2029,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.62459999999998,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2029,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,267.3816999999996,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2029,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,288.0062999999996,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2029,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,164.4588,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2029,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2029,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2029,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2029,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.869,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2029,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2029,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,128.8868,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2029,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2030,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,390.9527000000002,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2030,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.6564,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2030,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,268.6853000000008,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2030,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,289.3417000000008,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2030,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,162.808,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2030,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2030,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2030,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2030,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8796,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2030,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2030,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,130.5271,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2030,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2031,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,389.74669999999963,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2031,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.685800000000015,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2031,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,267.44750000000016,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2031,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,288.1333000000002,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2031,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,161.2814,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2031,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2031,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2031,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2031,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8894,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2031,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2031,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,132.0439,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2031,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2032,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,388.53939999999983,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2032,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.71699999999998,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2032,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,265.73570000000007,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2032,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,286.45270000000005,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2032,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,159.7548,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2032,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2032,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2032,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2032,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8992,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2032,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2032,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,133.5607,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2032,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2033,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,387.3303000000001,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2033,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.748399999999982,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2033,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,264.362,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2033,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,285.1104,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2033,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,158.2282,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2033,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2033,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2033,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2033,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9089,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2033,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2033,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,135.0775,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2033,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2034,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,386.1238999999996,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2034,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.779600000000016,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2034,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,264.11710000000033,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2034,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,284.89670000000035,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2034,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,156.7016,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2034,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2034,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2034,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2034,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9187,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2034,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2034,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,136.5944,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2034,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2035,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,385.1285999999996,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2035,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.770500000000006,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2035,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,262.6453000000002,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2035,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,283.4158000000002,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2035,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,154.9677,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2035,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2035,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2035,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2035,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9285,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2035,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2035,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,138.3185,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2035,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2036,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,383.9910000000004,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2036,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.8031,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2036,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,261.1541999999995,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2036,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,281.95729999999946,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2036,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,153.592,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2036,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2036,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2036,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2036,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9373,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2036,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2036,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,139.6854,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2036,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2037,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,382.8526000000001,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2037,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,13.735799999999989,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2037,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,266.27470000000017,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2037,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,280.01050000000015,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2037,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,152.2163,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2037,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2037,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2037,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2037,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9462,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2037,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2037,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,141.0522,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2037,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2038,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,381.71639999999985,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2038,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.8684,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2038,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,257.1023000000002,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2038,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,277.9707000000002,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2038,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,150.8407,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2038,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2038,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2038,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2038,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.955,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2038,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2038,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,142.419,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2038,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2039,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,380.58079999999933,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2039,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.900400000000012,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2039,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,254.39589999999987,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2039,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,275.29629999999986,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2039,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,149.465,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2039,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2039,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2039,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2039,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9638,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2039,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2039,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,143.7858,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2039,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2040,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,379.4414,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2040,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.93219999999998,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2040,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,257.11880000000014,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2040,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,278.0510000000001,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2040,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,148.0893,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2040,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2040,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2040,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2040,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9727,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2040,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2040,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,145.1527,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2040,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2041,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,378.42879999999997,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2041,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.95990000000001,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2041,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,255.29070000000024,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2041,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,276.25060000000025,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2041,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,146.8657,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2041,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2041,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2041,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2041,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9805,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2041,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2041,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,146.3684,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2041,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2042,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,377.4188000000001,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2042,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.95789999999999,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2042,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,253.27710000000002,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2042,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,274.235,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2042,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,145.6421,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2042,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2042,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2042,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2042,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9884,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2042,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2042,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,147.5842,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2042,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2043,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,376.4082,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2043,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.017399999999988,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2043,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,251.16960000000032,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2043,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,272.1870000000003,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2043,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,144.4185,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2043,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2043,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2043,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2043,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9963,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2043,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2043,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,148.7999,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2043,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2044,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,375.4393999999998,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2044,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.041399999999992,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2044,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,249.05229999999978,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2044,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,270.0936999999998,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2044,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,143.1912,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2044,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2044,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2044,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2044,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0041,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2044,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2044,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,150.0194,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2044,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2045,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,374.4645000000004,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2045,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,6.404899999999985,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2045,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,262.9541,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2045,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,269.359,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2045,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,141.9638,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2045,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2045,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2045,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2045,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.012,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2045,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2045,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,151.2389,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2045,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2046,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,373.6300999999994,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2046,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.08650000000001,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2046,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,245.9448000000006,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2046,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,267.0313000000006,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2046,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,140.907,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2046,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2046,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2046,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2046,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0187,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2046,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2046,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,152.289,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2046,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2047,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,372.8282999999999,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2047,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.107099999999978,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2047,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,243.51939999999996,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2047,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,264.62649999999996,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2047,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,139.8424,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2047,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2047,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2047,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2047,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0255,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2047,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2047,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,153.3468,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2047,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2048,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,372.06559999999985,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2048,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.125500000000017,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2048,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,240.5115000000003,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2048,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,261.6370000000003,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2048,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,138.7691,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2048,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2048,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2048,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2048,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0323,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2048,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2048,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,154.4133,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2048,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2049,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,371.3013000000004,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2049,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.143800000000006,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2049,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,237.52520000000004,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2049,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,258.66900000000004,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2049,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,137.6958,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2049,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2049,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2049,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2049,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.039,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2049,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2049,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,155.4799,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2049,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2050,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,370.4880999999997,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2050,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,0.5835999999999935,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2050,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,256.81710000000015,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2050,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,257.40070000000014,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2050,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,136.5595,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2050,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2050,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2050,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2050,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0458,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2050,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2050,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,156.6094,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2050,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2051,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,370.4882,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2051,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,15.467400000000001,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2051,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,239.08940000000007,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2051,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,254.55680000000007,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2051,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,136.5595,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2051,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2051,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2051,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2051,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0458,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2051,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2051,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,156.6094,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2051,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2052,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,370.48809999999963,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2052,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.160400000000006,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2052,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,229.94419999999974,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2052,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,251.10459999999975,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2052,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,136.5595,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2052,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2052,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2052,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2052,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0458,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2052,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2052,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,156.6094,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2052,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+Base_v12,RE1,2053,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,370.4879999999997,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+Base_v12,RE1,2053,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,14.275600000000004,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+Base_v12,RE1,2053,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,233.37199999999967,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+Base_v12,RE1,2053,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,247.64759999999967,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+Base_v12,RE1,2053,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,136.5595,activity(ENV_LAND mode 1),Model-defined forest land state
+Base_v12,RE1,2053,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+Base_v12,RE1,2053,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+Base_v12,RE1,2053,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+Base_v12,RE1,2053,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0458,activity(ENV_LAND mode 5),Model-defined built-up land state
+Base_v12,RE1,2053,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+Base_v12,RE1,2053,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,156.6094,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+Base_v12,RE1,2053,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2020,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,404.93720000000036,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2020,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.270500000000016,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2020,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,257.4721999999998,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2020,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,277.74269999999984,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2020,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,179.7818,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2020,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2020,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2020,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2020,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.7698,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2020,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2020,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,113.6631,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2020,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2021,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,403.4797999999994,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2021,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.313699999999972,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2021,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,258.30780000000004,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2021,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,278.6215,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2021,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,178.0382,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2021,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2021,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2021,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2021,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.7812,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2021,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2021,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,115.3953,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2021,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2022,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,402.02419999999984,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2022,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.354100000000003,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2022,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,257.0415999999999,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2022,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,277.3956999999999,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2022,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,176.2946,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2022,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2022,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2022,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2022,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.7926,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2022,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2022,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,117.1275,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2022,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2023,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,400.5663,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2023,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.394999999999985,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2023,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,258.40189999999967,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2023,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,278.79689999999965,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2023,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,174.551,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2023,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2023,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2023,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2023,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.804,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2023,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2023,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,118.8597,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2023,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2024,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,399.10970000000094,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2024,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.434599999999982,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2024,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,257.5725,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2024,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,278.0071,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2024,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,172.8074,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2024,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2024,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2024,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2024,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8154,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2024,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2024,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,120.592,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2024,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2025,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,397.64869999999996,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2025,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.475999999999996,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2025,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,266.0259999999998,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2025,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,286.5019999999998,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2025,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,171.0469,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2025,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2025,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2025,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2025,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8268,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2025,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2025,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,122.341,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2025,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2026,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,396.2887000000002,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2026,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.515,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2026,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,267.24429999999984,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2026,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,287.7592999999998,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2026,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,169.4011,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2026,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2026,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2026,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2026,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8373,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2026,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2026,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,123.9762,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2026,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2027,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,394.9291000000001,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2027,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.552800000000023,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2027,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,268.5726,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2027,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,289.12540000000007,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2027,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,167.7554,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2027,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2027,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2027,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2027,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8479,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2027,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2027,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,125.6114,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2027,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2028,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,393.56630000000007,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2028,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.58929999999999,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2028,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,268.26,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2028,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,288.84929999999997,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2028,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,166.1096,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2028,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2028,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2028,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2028,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8585,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2028,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2028,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,127.2466,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2028,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2029,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,392.2627999999999,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2029,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.6242,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2029,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,267.1239999999996,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2029,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,287.7481999999996,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2029,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,164.4588,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2029,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2029,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2029,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2029,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.869,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2029,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2029,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,128.8868,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2029,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2030,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,390.95280000000025,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2030,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.65630000000001,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2030,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,266.31570000000056,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2030,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,286.97200000000055,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2030,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,162.808,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2030,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2030,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2030,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2030,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8796,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2030,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2030,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,130.5271,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2030,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2031,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,389.7468,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2031,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.685800000000008,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2031,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,265.8178000000009,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2031,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,286.5036000000009,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2031,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,161.2814,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2031,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2031,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2031,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2031,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8894,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2031,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2031,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,132.0439,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2031,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2032,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,388.5396000000002,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2032,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.7169,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2032,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,240.34259999999978,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2032,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,261.0594999999998,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2032,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,159.7548,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2032,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2032,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2032,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2032,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.8992,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2032,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2032,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,133.5607,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2032,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2033,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,387.3300999999999,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2033,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.748799999999967,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2033,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,239.93760000000003,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2033,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,260.6864,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2033,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,158.2282,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2033,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2033,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2033,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2033,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9089,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2033,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2033,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,135.0775,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2033,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2034,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,386.1240999999999,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2034,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.779600000000016,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2034,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,239.48440000000022,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2034,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,260.26400000000024,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2034,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,156.7016,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2034,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2034,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2034,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2034,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9187,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2034,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2034,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,136.5944,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2034,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2035,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,385.12859999999955,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2035,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.77009999999999,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2035,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,216.05570000000023,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2035,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,236.8258000000002,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2035,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,154.9677,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2035,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2035,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2035,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2035,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9285,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2035,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2035,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,138.3185,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2035,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2036,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,383.99170000000004,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2036,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.8035,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2036,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,206.60379999999998,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2036,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,227.40729999999996,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2036,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,153.592,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2036,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2036,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2036,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2036,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9373,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2036,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2036,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,139.6854,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2036,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2037,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,382.8524000000004,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2037,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.83829999999998,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2037,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,202.53639999999987,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2037,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,223.37469999999985,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2037,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,152.2163,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2037,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2037,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2037,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2037,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9462,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2037,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2037,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,141.0522,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2037,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2038,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,381.7164999999998,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2038,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,6.326300000000003,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2038,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,211.8256000000003,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2038,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,218.1519000000003,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2038,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,150.8407,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2038,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2038,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2038,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2038,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.955,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2038,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2038,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,142.419,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2038,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2039,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,380.58069999999935,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2039,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,8.7717,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2039,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,203.58579999999984,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2039,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,212.35749999999985,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2039,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,149.465,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2039,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2039,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2039,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2039,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9638,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2039,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2039,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,143.7858,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2039,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2040,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,379.4412000000006,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2040,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,5.605599999999981,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2040,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,202.06700000000058,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2040,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,207.67260000000056,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2040,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,148.0893,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2040,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2040,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2040,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2040,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9727,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2040,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2040,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,145.1527,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2040,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2041,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,378.4286999999997,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2041,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.95990000000002,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2041,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,183.63,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2041,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,204.5899,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2041,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,146.8657,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2041,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2041,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2041,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2041,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9805,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2041,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2041,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,146.3684,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2041,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2042,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,377.4191000000001,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2042,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,20.987899999999993,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2042,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,181.35570000000004,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2042,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,202.34360000000004,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2042,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,145.6421,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2042,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2042,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2042,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2042,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9884,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2042,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2042,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,147.5842,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2042,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2043,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,376.4083000000002,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2043,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.017400000000006,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2043,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,181.2132999999998,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2043,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,202.2306999999998,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2043,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,144.4185,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2043,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2043,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2043,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2043,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,0.9963,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2043,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2043,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,148.7999,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2043,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2044,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,375.43929999999983,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2044,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,0.00019999999999598117,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2044,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,207.8730999999999,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2044,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,207.87329999999992,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2044,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,143.1912,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2044,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2044,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2044,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2044,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0041,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2044,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2044,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,150.0194,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2044,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2045,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,374.46440000000035,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2045,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,1.7606999999999964,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2045,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,210.2624999999999,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2045,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,212.0231999999999,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2045,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,141.9638,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2045,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2045,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2045,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2045,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.012,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2045,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2045,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,151.2389,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2045,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2046,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,373.6301000000001,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2046,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.086699999999993,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2046,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,190.70000000000027,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2046,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,211.78670000000028,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2046,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,140.907,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2046,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2046,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2046,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2046,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0187,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2046,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2046,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,152.289,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2046,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2047,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,372.8281999999999,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2047,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.10729999999997,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2047,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,190.03959999999944,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2047,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,211.14689999999942,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2047,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,139.8424,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2047,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2047,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2047,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2047,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0255,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2047,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2047,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,153.3468,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2047,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2048,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,372.0658000000001,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2048,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,0.01670000000000016,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2048,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,209.89620000000042,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2048,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,209.91290000000043,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2048,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,138.7691,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2048,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2048,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2048,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2048,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0323,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2048,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2048,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,154.4133,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2048,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2049,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,371.3008000000009,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2049,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.11050000000001,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2049,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,187.78300000000033,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2049,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,208.89350000000033,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2049,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,137.6958,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2049,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2049,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2049,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2049,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.039,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2049,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2049,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,155.4799,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2049,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2050,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,370.4880999999999,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2050,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.154799999999994,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2050,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,186.32690000000008,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2050,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,207.48170000000007,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2050,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,136.5595,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2050,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2050,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2050,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2050,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0458,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2050,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2050,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,156.6094,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2050,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2051,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,370.48819999999967,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2051,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.16079999999999,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2051,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,166.59199999999993,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2051,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,187.75279999999992,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2051,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,136.5595,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2051,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2051,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2051,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2051,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0458,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2051,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2051,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,156.6094,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2051,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2052,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,370.4882,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2052,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.160599999999995,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2052,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,146.10510000000022,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2052,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,167.2657000000002,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2052,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,136.5595,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2052,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2052,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2052,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2052,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0458,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2052,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2052,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,156.6094,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2052,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding
+PEP_v12,RE1,2053,WATER,ENV_WATER,1,water_vapor_returned,10<sup>9</sup>m<sup>3</sup>,370.48819999999984,production(PHL_WTR_EVT) - use(PHL_WTR_EVT),Evapotranspiration returned to the atmosphere
+PEP_v12,RE1,2053,WATER,ENV_WATER,2,modeled_raw_groundwater_remaining,10<sup>9</sup>m<sup>3</sup>,21.160599999999988,production(PHL_WTR_GWT) - use(PHL_WTR_GWT),Modeled raw groundwater production less modeled raw groundwater use; not a sustainable-yield estimate
+PEP_v12,RE1,2053,WATER,ENV_WATER,3,modeled_raw_surface_water_remaining,10<sup>9</sup>m<sup>3</sup>,126.66270000000011,production(PHL_WTR_SUR) - use(PHL_WTR_SUR),Modeled raw surface-water production less modeled raw surface-water use; not an environmental-flow reserve
+PEP_v12,RE1,2053,WATER_SUMMARY,ENV_WATER_DERIVED,,modeled_raw_liquid_water_remaining,10<sup>9</sup>m<sup>3</sup>,147.8233000000001,ENV_WATER mode 2 modeled raw groundwater remaining + mode 3 modeled raw surface water remaining,Derived liquid-water total; excludes mode 1 water vapor
+PEP_v12,RE1,2053,LAND,ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,136.5595,activity(ENV_LAND mode 1),Model-defined forest land state
+PEP_v12,RE1,2053,LAND,ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 2),Model-defined grassland state
+PEP_v12,RE1,2053,LAND,ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 3),Model-defined other land; no forest suitability is implied
+PEP_v12,RE1,2053,LAND,ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 4),Model-defined barren or savannah land state
+PEP_v12,RE1,2053,LAND,ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,1.0458,activity(ENV_LAND mode 5),Model-defined built-up land state
+PEP_v12,RE1,2053,LAND,ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,1.5984,activity(ENV_LAND mode 6),Land-cover area classified as water bodies
+PEP_v12,RE1,2053,LAND,ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,156.6094,activity(ENV_LAND mode 7),Sum of the 24 modeled crop-land production options
+PEP_v12,RE1,2053,LAND,ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,0.0,activity(ENV_LAND mode 8),Modeled total-land production less all modeled PHL_LND use; small positive or negative values inside the declared tolerance are CSV rounding

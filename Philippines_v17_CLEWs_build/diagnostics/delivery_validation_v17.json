@@ -1,0 +1,82 @@
+{
+  "schema": "philippines-v17-delivery-validation-v1",
+  "package": "/Users/sato/GitHub/CLEWs-PHL/Philippines_v17_CLEWs_build",
+  "case": "/Users/sato/GitHub/CLEWs-PHL/case/Philippines_v17",
+  "archive": "/Users/sato/GitHub/CLEWs-PHL/Philippines_v17_CLEWs_build/muio/Philippines_v17_v17.0.0_MUIO.zip",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "required_package_files",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "live_case_identity",
+      "status": "pass",
+      "detail": "Philippines_v17"
+    },
+    {
+      "name": "land_validation",
+      "status": "pass",
+      "detail": "pass"
+    },
+    {
+      "name": "provenance_validation",
+      "status": "pass",
+      "detail": {
+        "status": "pass",
+        "verified_digests": 77,
+        "input_coverage": {
+          "directory": "/Users/sato/GitHub/CLEWs-PHL/Philippines_v17_CLEWs_build/model/inputs",
+          "populated_input_count": 36,
+          "covered_input_count": 36,
+          "uncovered_inputs": []
+        }
+      }
+    },
+    {
+      "name": "archive_manifest_hash",
+      "status": "pass",
+      "detail": {
+        "expected": "25e18c248bde3f6567e0511412f8ee9e53e8a2c111ea4e2050165968b8b11120",
+        "actual": "25e18c248bde3f6567e0511412f8ee9e53e8a2c111ea4e2050165968b8b11120"
+      }
+    },
+    {
+      "name": "archive_manifest_size",
+      "status": "pass",
+      "detail": {
+        "expected": 19780576,
+        "actual": 19780576
+      }
+    },
+    {
+      "name": "archive_crc",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "archive_member_count",
+      "status": "pass",
+      "detail": {
+        "expected": 73,
+        "actual": 73
+      }
+    },
+    {
+      "name": "result_free_archive",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "archive_live_source_identity",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "archive_checksum_published",
+      "status": "pass",
+      "detail": "Philippines_v17_v17.0.0_MUIO.zip"
+    }
+  ]
+}

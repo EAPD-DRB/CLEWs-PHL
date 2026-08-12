@@ -1,0 +1,2 @@
+archive,sha256,size_bytes,member_count,internal_root,result_files_included,notes
+Philippines_v18_v18.0.0_MUIO.zip,b67e459c4c13ecf9a8effc59de7983173482d5a9e10d325d49fb7f9c64e9cf90,7668402,74,Philippines_v18/,false,"Complete editable v18 source JSON, regenerated view files, inherited local documentation, and v18 input/build/validation records; res/, data.txt, data_processed.txt, lp.lp, and results.txt excluded."

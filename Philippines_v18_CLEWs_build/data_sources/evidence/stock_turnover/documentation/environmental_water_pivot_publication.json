@@ -1,0 +1,30 @@
+{
+    "status": "PUBLISHED",
+    "model": "Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC",
+    "published_at": "2026-07-26T12:37:36-04:00",
+    "evidence": "Philippines_v12_CLEWs_build/diagnostics/environmental_accounting/2026-07-26_env_water_pivot_published",
+    "raw_result_manifest": {
+        "res/Base_v12/csv/ProductionByTechnologyByMode.csv": "a29d277093b9f2ebd38f47d6cf52f6fcebb7eb2c6b3eb65e257c1485f5ab0965",
+        "res/Base_v12/csv/RateOfActivity.csv": "74197c4b30012f33bc732739c6e1531ef62330e4852ad52feba4a79a661079f4",
+        "res/Base_v12/csv/RateOfUseByTechnologyByMode.csv": "8bb31c23a43a474467cfdb1d8603d4ce9e2ecd2e094f5af18a1ad874b71a87d2",
+        "res/Base_v12/csv/TotalAnnualTechnologyActivityByMode.csv": "e94375f1626686977971287e85de181f336516d1b306612f4d0506b2bb139de6",
+        "res/Base_v12/csv/TotalTechnologyModelPeriodActivity.csv": "a79d7ffdc360f319e65deb398e279a2d57175f290ba905a4f6542c5db5ce5e15",
+        "res/Base_v12/csv/UseByTechnologyByMode.csv": "70eccecdcbd4ba561efa8dbf43939fb91e5e6d2d1adbb8744dd1786ec3fc2107",
+        "res/Base_v12/results.txt": "ce72e42d746a5549f2718aa3e4576aa9b3af9014db09be3b6ef0e365e1b11845",
+        "res/PEP_v12/csv/ProductionByTechnologyByMode.csv": "2eeed2add5dfdd33f146962c6a1542055fdb232d714a53543815f6044a71a8be",
+        "res/PEP_v12/csv/RateOfActivity.csv": "2f1855cf8fed56b88bcc790e4ce96356ecc747c23ccfd1dedcf1e2ba0d431db7",
+        "res/PEP_v12/csv/RateOfUseByTechnologyByMode.csv": "1af324ddef1ff460a2aadb28bddeaa143e69fe970f9a06013e194f1824e808a6",
+        "res/PEP_v12/csv/TotalAnnualTechnologyActivityByMode.csv": "7b7052c300ad55196850be3f42179164583983996958838edb158c1a9fb3fd0a",
+        "res/PEP_v12/csv/TotalTechnologyModelPeriodActivity.csv": "d964bb3126f96fbd04a24ed61b484b0ae88aa8c5821f30371813701a5d084422",
+        "res/PEP_v12/csv/UseByTechnologyByMode.csv": "f0cb982450c3d8c7ccc028683c5c899c880530606bf9d919785cfee18e25cea8",
+        "res/PEP_v12/results.txt": "47dca133fea995e8247269b04af954f8ebc61fb7a64eaa2a0ab4e1d508ce17df"
+    },
+    "published_view_manifest": {
+        "view/RT.json": "e4a586670fd8909168f2d84a8dbd51986f894cf7184362454e00511317d87872",
+        "view/RYTCMTs.json": "049a8e21d3257e2815f3f615363f8522c70b1aff0a3669f029455c5b215761be",
+        "view/RYTM.json": "ad201cb1f37dfa848468bf45d25b89225f1cb6027d66fa9f32962a2a81041844",
+        "view/RYTMTs.json": "67fcd58086baaa3290dc9249f6876cc9d8c1fa356eb52ce303429d29cfc639a1"
+    },
+    "dynamic_graph_sha256": "5773504c0f66abe54483f8997cc09efbc8fdbd58513c0b908b5078250be49567",
+    "note": "ENV_WATER Pivot values are authoritative postprocessed reporting values; raw solver CSVs are unchanged."
+}

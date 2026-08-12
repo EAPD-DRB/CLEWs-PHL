@@ -1,0 +1,137 @@
+{
+  "schema": "philippines-v17-land-transition-safeguards-v1",
+  "prepared_date": "2026-08-12",
+  "geography": "Philippines",
+  "model_period": "2020-2053",
+  "units": "1000 km2 unless otherwise stated",
+  "policy_sources": [
+    {
+      "source_id": "SRC_PHL_EO26_NGP_2011",
+      "provider": "Official Gazette mirror at Lawphil / Office of the President of the Philippines",
+      "title": "Executive Order No. 26, s. 2011: National Greening Program",
+      "date": "2011-02-24",
+      "locator": "Section 2, Coverage",
+      "url": "https://lawphil.net/executive/execord/eo2011/eo_26_2011.html",
+      "reported_target": "1.5 billion trees covering about 1.5 million hectares over six years, 2011-2016",
+      "model_use": "Planning-rate benchmark only; not treated as observed net forest-cover change."
+    },
+    {
+      "source_id": "SRC_PHL_EO193_ENGP_2015",
+      "provider": "Official Gazette mirror at Lawphil / Office of the President of the Philippines",
+      "title": "Executive Order No. 193, s. 2015: Expanded National Greening Program",
+      "date": "2015-11-12",
+      "locator": "Whereas clauses and Section 1",
+      "url": "https://lawphil.net/executive/execord/eo2015/eo_193_2015.html",
+      "reported_scope": "Rehabilitation and reforestation of remaining unproductive, denuded and degraded forestlands; estimated 7.1 million hectares; implementation through 2028",
+      "model_use": "Supports restricting restoration eligibility rather than treating every non-forest class as convertible."
+    },
+    {
+      "source_id": "SRC_FAO_FMB_PHL_PLANTATION_SUITABILITY",
+      "provider": "FAO Regional Office for Asia and the Pacific; Philippine Forest Management Bureau",
+      "title": "Conservation, utilization and management of forest genetic resources in the Philippines",
+      "date": "2002",
+      "locator": "Potential plantation areas and Table 3; source identified as DENR/MPFD land-use database",
+      "url": "https://www.fao.org/4/AC648E/ac648e09.htm",
+      "reported_scope": "Potential production-plantation areas include 80 percent of all grassland and brushland, subject to slope below 50 percent and no competing use.",
+      "model_use": "Central national screening fraction applied to the current mapped brush/shrub stock only; true grassland is excluded."
+    },
+    {
+      "source_id": "SRC_PSA_URBAN_POPULATION_2020",
+      "provider": "Philippine Statistics Authority",
+      "title": "Urban Population of the Philippines (2020 Census of Population and Housing)",
+      "date": "2022-07-05",
+      "locator": "Items 1-2",
+      "url": "https://psa.gov.ph/content/urban-population-philippines-2020-census-population-and-housing",
+      "reported_scope": "58.93 million people, or 54.0 percent of the national population, lived in urban barangays in 2020.",
+      "model_use": "Base-year urban-share anchor for the central built-up trajectory."
+    },
+    {
+      "source_id": "SRC_WB_PHL_URBANIZATION_2050",
+      "provider": "World Bank and Government of the Philippines",
+      "title": "Philippines Urbanization Review: Fostering Competitive, Sustainable and Inclusive Cities",
+      "date": "2017",
+      "locator": "Memorandum to Policy Makers and City Mayors; 2050 urban outlook",
+      "url": "https://documents.worldbank.org/curated/en/963061495807736752/pdf/114088-REVISED-PUBLIC-Philippines-Urbanization-Review-Full-Report.pdf",
+      "reported_scope": "Approximately 65 percent of the Philippine population projected urban by 2050.",
+      "model_use": "2050 urban-share anchor; the report's absolute population is not used."
+    }
+  ],
+  "land_cover_source": {
+    "source_id": "SRC_PSA_NAMRIA_LAND_ACCOUNTS_2020",
+    "local_file": "land_cover_2020.json",
+    "published_grassland_km2": 19610.0,
+    "published_brush_and_shrubs_km2": 58070.8,
+    "reconciliation_scale_factor": 1.0008346686226852,
+    "reconciled_grassland_and_woodland_1000_km2": 77.7456
+  },
+  "calculations": {
+    "annual_restoration_rate": {
+      "formula": "1.5 million ha / 6 years / 100000 ha per 1000 km2",
+      "input_target_million_ha": 1.5,
+      "input_period_years": 6,
+      "output_1000_km2_per_year": 2.5
+    },
+    "true_grassland_reserve": {
+      "formula": "19610.0 km2 * 1.0008346686226852 / 1000",
+      "output_1000_km2": 19.6264
+    },
+    "mapped_brush_shrub_pool": {
+      "formula": "58070.8 km2 * 1.0008346686226852 / 1000",
+      "unrounded_output_1000_km2": 58.11926987465423,
+      "model_output_1000_km2": 58.1192,
+      "closure_check": "77.7456 - 19.6264 = 58.1192"
+    },
+    "forest_eligible_brush_shrub_pool": {
+      "formula": "58.1192 thousand km2 * 0.80",
+      "suitability_fraction": 0.8,
+      "output_1000_km2": 46.49536,
+      "maximum_forest_1000_km2": 118.81476
+    },
+    "central_built_up_path": {
+      "formula": "built[y] = 10.2649 * (PSA Scenario 2 population[y] / population[2020]) * (urban_share[y] / 0.54)",
+      "population_series_model_proxy": "PHL_PUB_WAT AAD ratio; this demand is exactly proportional to the inherited PSA Scenario 2 annual population series",
+      "urban_share_2020": 0.54,
+      "urban_share_2050": 0.65,
+      "urban_share_interpolation": "linear 2020-2050; 0.65 held constant in 2051-2053",
+      "selected_outputs_1000_km2": {
+        "2020": 10.2649,
+        "2030": 11.932692933125814,
+        "2050": 15.421728582490642,
+        "2053": 15.582887571647078
+      }
+    },
+    "idle_fallow_ceiling": {
+      "formula": "observed 2020 cropland 125.2805 - solved productive cropland 119.9928",
+      "output_1000_km2": 5.2877,
+      "model_use": "All-year TAMUL on LNDOTHTOT mode 2; productive crop technologies remain free to expand."
+    }
+  },
+  "model_rules": {
+    "forest_floor": "Forest activity is at least its 2020 stock in every year.",
+    "forest_upper_envelope": "forest[y] <= forest[2020] + min(2.5 * (y - 2020), 46.49536)",
+    "forest_absolute_ceiling": "forest[y] <= 118.81476",
+    "grass_brush_bounds": "grass_brush[2020] = 77.7456; 19.6264 <= grass_brush[y] <= 77.7456 thereafter",
+    "brush_conversion_scope": "The 80 percent ceiling applies only to net forest expansion above 2020. Brush remains available to cropland and built-up land through the national balance.",
+    "built_up_path": "built_up[y] is fixed annually to the central population-times-urban-share trajectory.",
+    "preserved_fixed_classes": [
+      "other_agricultural (fishpond)",
+      "barren",
+      "water_bodies"
+    ],
+    "preserved_fixed_class_rule": "Each listed class remains equal to its reconciled 2020 stock in every year because no sourced transition trajectory is available.",
+    "cropland_rule": "Total cropland remains at least its reconciled 2020 stock; productive crop activity remains endogenous and demand-driven, while existing LNDOTHTOT mode 2 carries the nonnegative idle/fallow balance.",
+    "idle_fallow_rule": "Idle/fallow mode 2 is capped at its 2020 balancing stock of 5.2877 thousand km2 so it cannot absorb brush as an unsourced residual; productive cropland has no added upper bound.",
+    "unallocated_rule": "Unallocated modeled land uses TAMLL=0 and TAMUL=0.000001 thousand km2. The positive sentinel is required because MUIOGO omits numeric-zero activity bounds from the solver data; it represents at most 0.001 km2 (0.1 ha).",
+    "disabled_mode_upper_sentinel_1000_km2": 0.000001,
+    "forest_variable_cost": "VC=-10 is retained unchanged."
+  },
+  "interpretation_limits": [
+    "The 2.5 thousand km2/year value is a policy planning-rate proxy, not measured annual net forest-cover change.",
+    "The national aggregate bounds do not identify parcel-level legal status, tenure, slope, soil, biodiversity value, restoration survival, or cluster location.",
+    "The formulation limits net annual forest expansion relative to a cumulative envelope; it does not model a gross hectare-by-hectare transition flow.",
+    "The 80 percent forest-suitability factor is an old national planning screen, not a current parcel overlay; it is applied to the 2020 brush stock only.",
+    "The forest bound constrains net forest stock above 2020, not gross parcel-level brush-to-forest flows.",
+    "The built-up path assumes constant built-up area per urban resident; it does not spatially allocate development or model density policy.",
+    "A numeric-zero TAMUL is sparse/default in MUIOGO and does not create a solver constraint; the 0.000001-thousand-km2 sentinel is a software representation requirement, not physical unallocated land."
+  ]
+}

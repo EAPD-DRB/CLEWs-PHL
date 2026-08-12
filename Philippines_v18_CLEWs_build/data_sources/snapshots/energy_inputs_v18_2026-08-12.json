@@ -1,0 +1,97 @@
+{
+  "schema": "philippines-v18-energy-inputs-v1",
+  "source_case": "Philippines_v17",
+  "target_case": "Philippines_v18",
+  "years": [2020, 2053],
+  "model_cost_convention": {
+    "currency": "USD",
+    "capital_cost_model_unit": "MUSD/GW (numerically USD/kW)",
+    "variable_cost_model_unit": "MUSD/PJ (numerically USD/GJ)",
+    "price_year": "not declared by the inherited model",
+    "decision": "Use source-year dollar values directly and preserve that limitation; do not claim a false constant-dollar normalization."
+  },
+  "technologies": {
+    "geothermal_existing": "TEC_0qr3z",
+    "onshore_wind": "TEC_1wdli",
+    "coal_power": "TEC_46nha",
+    "nuclear_smr": "TEC_fa6fe",
+    "large_hydro": "TEC_p3vu5",
+    "natural_gas_import": "TEC_otz0y",
+    "natural_gas_extraction": "TEC_6rwx6"
+  },
+  "geothermal": {
+    "availability_before": 0.9,
+    "availability_after": 0.7,
+    "basis": "Interim central ceiling between the v16 installed-capacity benchmark 0.637 and dependable-capacity benchmark 0.700; avoids treating observed utilization as a forced target."
+  },
+  "onshore_wind": {
+    "annual_capacity_factor_after": 0.21973098445200714,
+    "restricted_capacity_gw": 95.8,
+    "restricted_generation_twh_per_year": 184.4,
+    "annual_activity_upper_limit_pj": 663.84,
+    "formula": "184.4 TWh / (95.8 GW * 8.76 TWh/GW-year)",
+    "basis": "National restricted resource screen already used for the v16 activity ceiling."
+  },
+  "capital_costs": {
+    "coal_power_musd_per_gw": 1604.789,
+    "coal_reference_year": 2025,
+    "nuclear_smr_musd_per_gw": 8000.0,
+    "nuclear_reference_year": 2024,
+    "application": "flat 2020-2053 interim central values"
+  },
+  "operating_lives": {
+    "large_hydro_years_before": 100,
+    "large_hydro_years_after": 60,
+    "nuclear_smr_years_confirmed_unchanged": 60
+  },
+  "coal_price_conversion": {
+    "calorific_value_gj_per_tonne": 22.1,
+    "basis": "PR 1 diagnostic reports approximately 22.1 GJ/t as the DOE official conversion value; the exact DOE table byte and locator remain an evidence gap",
+    "model_effect": "documented conversion check only; no coal-price forecast is introduced in v18"
+  },
+  "natural_gas": {
+    "mmscf_to_pj": 0.00109303786331432,
+    "conversion_basis": "1036 Btu/scf and 1055.05585262 J/Btu",
+    "domestic_production_mmscf": {
+      "2020": 141732.0,
+      "2021": 121089.0,
+      "2022": 113611.0,
+      "2023": 89215.0,
+      "2024": 70337.85
+    },
+    "domestic_limit_after_2024": "2024 observed production multiplied by 0.992^(year-2024)",
+    "domestic_price_2020_usd_per_mmbtu": 7.0289,
+    "domestic_price_2020_usd_per_gj": 6.662111756970275,
+    "domestic_price_path": "scale the inherited extraction-price path to the sourced 2020 Malampaya value",
+    "lng_import_limit": {
+      "2020_2022_pj": 0.0,
+      "2023_consumption_mmscf": 21311.0,
+      "2023_pj": 23.29372990509147,
+      "2024_2053_terminal_capacity_mtpa": 8.0,
+      "lng_lhv_btu_per_lb": 21240.0,
+      "lng_lhv_gj_per_tonne": 49.40424000002743,
+      "2024_2053_pj_per_year": 395.2339200002194
+    },
+    "lng_prices": {
+      "2023_usd_per_mmbtu": 13.91,
+      "2023_usd_per_gj": 13.184136143558241,
+      "2024_usd_per_mmbtu": 14.9,
+      "2024_usd_per_gj": 14.122475092668427,
+      "path": "2023 observed-period benchmark; from 2024 scale the inherited import-price path to the sourced 2024 landed benchmark"
+    },
+    "structure": "Existing extraction and import technologies both produce the existing raw-gas commodity; no new technology or commodity is added."
+  },
+  "source_urls": {
+    "bnef_philippines_costs": "https://assets.bbhub.io/professional/sites/44/The-Philippines-Path-to-Clean-and-Affordable-Electricity.pdf",
+    "nrel_smr": "https://www.nrel.gov/docs/fy25osti/91633.pdf",
+    "irena_hydro_life": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2023/Feb/IRENA_Changing_role_of_hydropower_2023.pdf",
+    "nrel_philippines_wind": "https://docs.nrel.gov/docs/fy19osti/71814.pdf",
+    "doe_natural_gas_statistics": "https://legacy.doe.gov.ph/natgas/natural-gas-production-and-consumption-august-15-2023",
+    "doe_2023_gas_report": "https://legacy.doe.gov.ph/sites/default/files/pdf/downstream_oil/year-end-comprehensive-report-FY2023.pdf",
+    "doe_2024_gas_production": "https://prod-cms.doe.gov.ph/documents/d/erdb/petroleum-production-2024-pdf",
+    "doe_lng_capacity": "https://legacy.doe.gov.ph/press-releases/secretary-lotilla-emphasizes-role-natural-gas-energy-transition-at-norway-philippines-lng-summit-2024",
+    "erc_lng_price": "https://www.erc.gov.ph/Press-Singular/84222",
+    "peza_malampaya_price": "https://www.peza.gov.ph/documents/bulletin3energy.pdf",
+    "eia_energy_conversions": "https://www.eia.gov/energyexplained/units-and-calculators/energy-conversion-calculators.php"
+  }
+}

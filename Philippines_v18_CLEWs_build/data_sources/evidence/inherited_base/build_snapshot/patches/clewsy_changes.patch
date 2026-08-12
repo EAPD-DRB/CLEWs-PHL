@@ -1,0 +1,27 @@
+diff --git a/optn_mds.txt b/optn_mds.txt
+index f35750d..951272a 100644
+--- a/optn_mds.txt
++++ b/optn_mds.txt
+@@ -1 +1 @@
+-['COWHI', 'COWHR', 'MZEHR', 'PTSHR', 'TEAHR', 'MZEHI', 'BEAHI', 'TEAHI', 'SORHI', 'BEAHR', 'PTSHI', 'SORHR', 'Barren and sparsely vegetated land', 'Built-up land', 'Forest land', 'Grassland & woodland', 'Other agricultural land', 'Water bodies']
+\ No newline at end of file
++['TOMHR', 'CONLI', 'SGCHR', 'MZEHR', 'TOMHI', 'SGCHI', 'MZELI', 'CONHR', 'SGCLI', 'MZEHI', 'RCPHR', 'TOMLR', 'TOMLI', 'RCPLR', 'MZELR', 'CONHI', 'RCPLI', 'SGCLR', 'RCPHI', 'CONLR', 'OTHLI', 'OTHHI', 'OTHLR', 'OTHHR', 'Barren and sparsely vegetated land', 'Built-up land', 'Forest land', 'Grassland & woodland', 'Other agricultural land', 'Water bodies']
+\ No newline at end of file
+diff --git a/src/build/clewsy.py b/src/build/clewsy.py
+index d618533..effcff6 100755
+--- a/src/build/clewsy.py
++++ b/src/build/clewsy.py
+@@ -1012,7 +1012,7 @@ def BuildCLEWsModel(data, yaml_file):
+     with open(f2, 'w') as ModeFile:
+         ModeFile.write(str(ModeList))
+     fchk = filecmp.cmp(f1, f2)
+-    if fchk == 0:
++    if fchk:
+         print("fchk= {0}; Unchanged OperationModes= {1}; ..." .format(fchk, OperationModes))
+         os.remove(f2)
+     else:
+@@ -1125,4 +1125,3 @@ if __name__ == "__main__":
+         print("ASR-Probe::model_building distro run...")
+         datafile = param
+         build(datafile)
+-

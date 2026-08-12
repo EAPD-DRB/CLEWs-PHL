@@ -1,0 +1,15 @@
+# Philippines model history
+
+| 2026-08-12 | v18 energy inputs | Built from committed v17; retained land safeguards; updated geothermal, national onshore wind CF, coal and SMR capex, hydro life, and domestic/LNG chronology, prices and limits | `MODEL_FIXES_ENERGY_INPUTS_V18_2026-08-12.md` |
+
+| Date | Stage | What happened | Evidence |
+|---|---|---|---|
+| 2026-07-25 | Inherited raw base | Built the pinned CLEWs Global Philippines raw model and six-ledger source map | `../model/inputs/`; `../data_sources/evidence/inherited_base/` |
+| 2026-07-26 | v13 | Added environmental-emission calibration with retained generation and validation records | `../data_sources/evidence/stock_turnover/` |
+| 2026-07-28 | v14 | Added stock-turnover evolution and retained all 3,253 changed cells | `../data_sources/evidence/stock_turnover/` |
+| 2026-08-04 | v15 | Added and validated the national-water formulation; promoted `Philippines_v15/BASE_V15` | `MODEL_FIXES_WATER_2026-08-04.md`; `../diagnostics/national_water_validation.json` |
+| 2026-08-05 | Provenance recovery | Rebuilt one cumulative, self-contained six-ledger package and retained all available evidence | `../data_sources/calculation_notes/CANONICAL_LEDGER_RECONSTRUCTION_2026-08-05.md` |
+| 2026-08-05 | Package alignment | Adopted the current Model-tools package layout, promoted exact retained raw inputs/configuration, and repointed their existing map rows | `../config/`; `../model/inputs/`; `../data_sources/MODEL_MAP.csv` |
+| 2026-08-05 | v16 migration | Created the identity-only Philippines v16 successor and a compact result-free portable case; model parameters remain unchanged | `MIGRATION_V16.md`; `../muio/Philippines_v16_v16.0.0_MUIO.zip` |
+| 2026-08-11 | Energy inputs | Removed misleading `_T1` labels, corrected offshore wind capacity factor, restored geothermal availability and replaced the onshore wind ceiling with the screened NREL/USAID potential | `MODEL_FIXES_ENERGY_INPUTS_2026-08-11.md`; `../data_sources/calculation_notes/energy_inputs_v16_2026-08-11.md` |
+| 2026-08-12 | v17 land cover | Added the reconciled PSA/NAMRIA 2020 national land partition, fixed annual national land endowment, and reused `LNDOTHTOT` mode 2 for endogenous idle/fallow cropland; retained forest `VC=-10` | `MODEL_FIXES_LAND_COVER_2026-08-12.md`; `../data_sources/calculation_notes/land_cover_v17_2026-08-12.md` |

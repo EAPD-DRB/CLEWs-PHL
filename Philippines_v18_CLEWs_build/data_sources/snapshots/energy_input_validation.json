@@ -1,0 +1,171 @@
+{
+  "schema": "philippines-v16-energy-input-validation-v1",
+  "generated_at_utc": "2026-08-11T20:54:26.721291+00:00",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v16-energy-inputs-candidate",
+  "baseline": "/Users/sato/Documents/GitHub/CLEWs-PHL/case/Philippines_v16",
+  "run": "ENERGY_INPUTS_BASE",
+  "solver": {
+    "status": "optimal",
+    "wall_seconds_application_chain": 215.63974380493164,
+    "matrix_rows": 791109,
+    "matrix_columns": 884956,
+    "matrix_nonzeros": 12552173
+  },
+  "checks": [
+    {
+      "name": "source_diff_scope",
+      "status": "pass",
+      "detail": [
+        "RYT.json",
+        "RYTTs.json",
+        "genData.json"
+      ]
+    },
+    {
+      "name": "structural_rename",
+      "status": "pass",
+      "detail": {
+        "technology_ids_preserved": true,
+        "renames_exact": true,
+        "no_t1_names": true,
+        "commodities_identical": true,
+        "constraints_identical": true
+      }
+    },
+    {
+      "name": "physical_inputs_exact",
+      "status": "pass",
+      "detail": {
+        "geothermal_availability": [
+          0.9
+        ],
+        "onshore_tau_pj": [
+          663.84
+        ],
+        "offshore_annual_cf": 0.2847380261587777
+      }
+    },
+    {
+      "name": "generated_representation",
+      "status": "pass",
+      "detail": {
+        "new_names_present": true,
+        "old_names_absent": true
+      }
+    },
+    {
+      "name": "solver_optimal_and_current",
+      "status": "pass",
+      "detail": {
+        "objective": 369730088.2957073,
+        "result_mtime": 1786481481.840622,
+        "latest_source_mtime": 1786481238.870346
+      }
+    },
+    {
+      "name": "offshore_remains_endogenous",
+      "status": "pass",
+      "detail": {
+        "new_capacity_max_gw": 0.0,
+        "reduced_cost_2025": 1639.5751,
+        "reduced_cost_2053": 11.342552
+      }
+    },
+    {
+      "name": "physical_envelopes",
+      "status": "pass",
+      "detail": {
+        "onshore_peak_activity_pj": 2.4657,
+        "onshore_tau_pj": 663.84,
+        "geothermal_min_capacity_residual_pj": -0.0005524799999960806,
+        "geothermal_peak_activity_pj": 113.5296,
+        "geothermal_4gw_90pct_pj": 113.5296
+      }
+    },
+    {
+      "name": "regression_sanity",
+      "status": "pass",
+      "detail": {
+        "baseline_objective": 369729000.2004411,
+        "candidate_objective": 369730088.2957073,
+        "objective_change": 1088.09526617,
+        "objective_percent_change": 0.00029429535296936703,
+        "demand_rows_identical": true,
+        "max_annual_emission_change": 16.532099999999986,
+        "largest_activity_changes": [
+          {
+            "r": "RE1",
+            "t": "PHL_PRO_IMP_COAL",
+            "m": 1,
+            "y": 2035,
+            "change": 355.8527999999999
+          },
+          {
+            "r": "RE1",
+            "t": "PHL_PRO_EXTR_COAL",
+            "m": 1,
+            "y": 2035,
+            "change": -327.2525
+          },
+          {
+            "r": "RE1",
+            "t": "PHL_PRO_IMP_COAL",
+            "m": 1,
+            "y": 2034,
+            "change": 282.8077
+          },
+          {
+            "r": "RE1",
+            "t": "PHL_PRO_EXTR_COAL",
+            "m": 1,
+            "y": 2034,
+            "change": -254.20749999999998
+          },
+          {
+            "r": "RE1",
+            "t": "PHL_PRO_EXTR_COAL",
+            "m": 1,
+            "y": 2027,
+            "change": 156.23469999999998
+          },
+          {
+            "r": "RE1",
+            "t": "PHL_PRO_PROC_COAL",
+            "m": 1,
+            "y": 2027,
+            "change": 155.61840000000007
+          },
+          {
+            "r": "RE1",
+            "t": "PHL_PRO_EXTR_COAL",
+            "m": 1,
+            "y": 2026,
+            "change": 148.2754
+          },
+          {
+            "r": "RE1",
+            "t": "PHL_PRO_PROC_COAL",
+            "m": 1,
+            "y": 2026,
+            "change": 147.69039999999995
+          },
+          {
+            "r": "RE1",
+            "t": "PHL_PRO_EXTR_COAL",
+            "m": 1,
+            "y": 2028,
+            "change": 113.48180000000002
+          },
+          {
+            "r": "RE1",
+            "t": "PHL_PRO_PROC_COAL",
+            "m": 1,
+            "y": 2028,
+            "change": 113.03409999999985
+          }
+        ]
+      }
+    }
+  ],
+  "status": "pass"
+}

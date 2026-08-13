@@ -1,0 +1,240 @@
+{
+    "schema": "philippines-v18-re-nuclear-caps-v1",
+    "case": "Philippines_v18",
+    "scenario": "SC_w03qj",
+    "parameter": "TotalAnnualMaxCapacityInvestment",
+    "equation": "NCC1: NewCapacity[t,y] <= TotalAnnualMaxCapacityInvestment[t,y]",
+    "pep_milestones_gw": {
+        "2032": 1.2,
+        "2035": 2.4,
+        "2050": 4.8
+    },
+    "pep_first_commercial_operation_year": 2032,
+    "technology_split": "endogenous; PEP does not prescribe conventional nuclear versus SMR shares",
+    "source_ryt_sha256": "f7e846bb1214d5279218f40734973081f22d4bdc395d51f4163c4ee7bbfaa959",
+    "target_ryt_sha256": "a7f009a2566f6790689602cc4eafdd15d6c6b66236a330416b74344b3a7f0864",
+    "changed_source_files": [
+        "RYT.json"
+    ],
+    "changes": [
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2032,
+            "before": 0,
+            "after": 1.2,
+            "resolution": "explicit RE override"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2033,
+            "before": 0,
+            "after": 1.2,
+            "resolution": "explicit RE override"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2034,
+            "before": 0,
+            "after": 1.2,
+            "resolution": "explicit RE override"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2035,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2036,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2037,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2038,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2039,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2040,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2041,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2042,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2043,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2044,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2045,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2046,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2047,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2048,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2049,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2050,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2051,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2052,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NU",
+            "technology_id": "TEC_yv6yo",
+            "year": 2053,
+            "before": 0,
+            "after": null,
+            "resolved_value": 1.2,
+            "resolution": "inherit SC_0"
+        },
+        {
+            "technology": "PHL_POW_PP_NUSMR",
+            "technology_id": "TEC_fa6fe",
+            "year": 2032,
+            "before": null,
+            "after": 0.3,
+            "resolution": "explicit RE override"
+        },
+        {
+            "technology": "PHL_POW_PP_NUSMR",
+            "technology_id": "TEC_fa6fe",
+            "year": 2033,
+            "before": null,
+            "after": 0.3,
+            "resolution": "explicit RE override"
+        },
+        {
+            "technology": "PHL_POW_PP_NUSMR",
+            "technology_id": "TEC_fa6fe",
+            "year": 2034,
+            "before": null,
+            "after": 0.3,
+            "resolution": "explicit RE override"
+        }
+    ]
+}

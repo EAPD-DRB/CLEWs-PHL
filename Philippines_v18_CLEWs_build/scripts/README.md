@@ -87,3 +87,18 @@ MUIOGO-relative paths and need the historical baseline to repeat that old A/B
 exercise. The canonical ledger build and validation do not: all of their
 inputs are inside this v15 package. The completed promoted-run evidence remains
 under `../diagnostics/` and `../data_sources/snapshots/`.
+- `apply_philippines_v18_land_water_bounds.py` applies the parameter-only
+  geographic cluster bounds and conservative water-coefficient repair.
+- `validate_philippines_v18_land_water_closure.py` performs deterministic,
+  generation, GLPK, CBC, result and baseline checks while recording the
+  rejected aggregate-UDC runtime experiment.
+- `finalize_philippines_v18_land_water_closure.py` closes the schema ledger and
+  documentation after the validated candidate solve.
+- `verify_philippines_v18_land_water_promotion.py` regenerates the promoted
+  input, canonicalizes unordered derived-set serialization, and checks the
+  live GLPK matrix without a second optimization.
+- `complete_philippines_v18_land_water_delivery.py` closes promotion lineage
+  and builds the result-free v18.0.1 archive.
+- `validate_philippines_v18_land_water_delivery.py` checks the final archive
+  CRC, checksum, result exclusion, validation records, provenance, and
+  live/archive source identity.

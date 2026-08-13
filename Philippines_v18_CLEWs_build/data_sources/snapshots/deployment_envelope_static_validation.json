@@ -1,7 +1,7 @@
 {
   "schema": "philippines-v18-deployment-envelope-static-validation-v1",
   "control": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-deployment-envelope-20260813/control",
-  "candidate": "/Users/sato/Documents/GitHub/CLEWs-PHL/case/Philippines_v18",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-deployment-envelope-20260813/candidate",
   "status": "pass",
   "checks": [
     {

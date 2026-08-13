@@ -1,0 +1,104 @@
+{
+  "schema": "philippines-v18-land-water-closure-validation-v1",
+  "status": "pass",
+  "optimizer_run_count": 1,
+  "optimizer_run_count_this_invocation": 0,
+  "optimizer_run_purpose": "Disposable candidate full optimization; unchanged control reused from the verified v18 deployment-envelope result.",
+  "generation_resume_note": "Post-processed the existing optimal result after a CSV export-tolerance assertion; CBC was not rerun and exact CBC seconds were not retained by the interrupted validator.",
+  "land_formulation": "exact_cluster_bounds",
+  "baseline": {
+    "case": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-deployment-envelope-20260813/candidate",
+    "run": "DEPLOYMENT_CANDIDATE_20260813",
+    "status": "Optimal - objective value 369743573.32256168",
+    "objective": "369743573.32256168",
+    "matrix": {
+      "rows": 791245,
+      "columns": 886010,
+      "matrix_nonzeros": 12572675
+    },
+    "data_sha256": "3bacffbe6d00275e201047110259f131cc2c5bd75d8f97da12b0841f3257d670",
+    "results_sha256": "c856785f861823cdeb09bd2b9f6ef04e70212cc1f2075cc3ee5e5a07d19f5983"
+  },
+  "candidate": {
+    "case": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-land-water-bounds-20260813/candidate/Philippines_v18",
+    "run": "LAND_WATER_CLOSURE_V18_BASE",
+    "status": "Optimal - objective value 369743573.76853257",
+    "objective": "369743573.76853257",
+    "objective_delta": "0.44597089",
+    "objective_percent_change": "1.206162654816283034375284876355133723458400E-7",
+    "matrix": {
+      "rows": 791517,
+      "columns": 886010,
+      "matrix_nonzeros": 12817475
+    },
+    "data_sha256": "b9e5fa04a8dd125ccb6bf1377e5bea990a2ce21ef43cbee410958eadd1940191",
+    "data_processed_sha256": "67a70a698aec02bbec8d4d43eb01f359b94d81e5c9f02a36c60d8bca31368cf5",
+    "lp_sha256": "4ea9c8e8512d8552509880d3cd9f18ec18cb9199fc889ba1be632758bdfedf59",
+    "results_sha256": "2d59b19b7c34da521df17cef5c1ae9b5f443f1dfd2186e2d0869953c0c844201",
+    "timings_seconds": {
+      "generate_datafile": 0.0,
+      "preprocess_data": 0.0,
+      "glpsol_check_and_lp": 18.366014584004006,
+      "cbc_solve": null,
+      "csv_export": 0.0,
+      "viewer_export": 0.0,
+      "total": null
+    }
+  },
+  "checks": {
+    "maximum_land_routing_error_1000km2": "0.0006",
+    "maximum_equality_reported_residual": "not_applicable_exact_cluster_bounds",
+    "precipitation_km3": {
+      "2020": "786.30722714002144322480",
+      "2030": "794.26628655123789941617",
+      "2053": "824.08162307526707646497"
+    },
+    "precipitation_depth_mm_2020": "2658.1217232773715674687834987700003819979574941069",
+    "precipitation_change_2020_2053_percent": "4.8040250211917444417202101320877248207501886922400",
+    "maximum_precipitation_error_km3": "0.00101167832917646497",
+    "maximum_gross_to_delivered_error_km3": "0.000048",
+    "maximum_baseline_gross_irrigation_withdrawal_difference_km3": "1.2966",
+    "maximum_combined_baseline_gross_irrigation_withdrawal_difference_km3": "1.2966",
+    "combined_gross_irrigation_withdrawal_difference_km3": {
+      "2020": "-0.4222",
+      "2030": "-1.2966",
+      "2053": "0.3056"
+    },
+    "maximum_new_capacity_difference_gw": "0.0",
+    "maximum_annual_emission_difference": "0.0",
+    "maximum_crop_production_difference": "0.0007",
+    "source": {
+      "land_formulation": "exact_cluster_bounds",
+      "constraint_id": null,
+      "cluster_area_1000km2": {
+        "LNDAGRPHLC01": "9.1115",
+        "LNDAGRPHLC02": "23.6817",
+        "LNDAGRPHLC03": "103.2149",
+        "LNDAGRPHLC04": "27.3872",
+        "LNDAGRPHLC05": "27.1799",
+        "LNDAGRPHLC06": "18.7069",
+        "LNDAGRPHLC07": "18.385",
+        "LNDAGRPHLC08": "68.146"
+      },
+      "maximum_source_water_balance_residual": "4.7E-16",
+      "source_hashes": {
+        "genData.json": "8ff629771d77b66f07ed07108ff127e9f777f51c502910acc29374dd6ba38a8e",
+        "RYTCM.json": "053214503a9b9bc3a134253d40b7f06e992b26f7e87c7b7dd137c10d3f7d5e24",
+        "RYTCn.json": "17b0acd11c70636660b2232c917800fe36f2a74181f882d41abd9f3d49d5283b",
+        "RYCn.json": "617b78d924643196ccb9a9e21cb25cef2f25b67b53d46db5f441bab6dc59f120"
+      }
+    }
+  },
+  "validation_status": {
+    "source_generation": "passed",
+    "deterministic_design_checks": "passed",
+    "generate_datafile": "passed",
+    "preprocess_data": "passed",
+    "glpsol_check": "passed",
+    "cbc": "passed_optimal",
+    "baseline_comparison": "passed",
+    "promotion_identity": "passed"
+  },
+  "promotion_identity_sha256": "a331f681642731a3b9d687fed765e30d5781e79116579782f01f8fa31e8b2f05",
+  "post_promotion_optimizer_runs": 0
+}

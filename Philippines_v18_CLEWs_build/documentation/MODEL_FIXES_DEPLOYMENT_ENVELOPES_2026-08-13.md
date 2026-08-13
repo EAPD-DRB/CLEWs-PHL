@@ -125,12 +125,19 @@ generation and preprocessing, explicit `glpsol --check`, and full CBC
 optimization. Both matrices contain 791,245 rows, 886,010 columns, 12,572,675
 matrix nonzeros and 423,240 objective nonzeros.
 
-The control objective is 369,743,557.67980778 and the candidate objective is
-369,743,573.32256168: an increase of 15.64275390, or 0.0000042307%. CBC time
-fell from 294.66 seconds to 207.20 seconds; this single-run timing is recorded
-but is not treated as a general performance claim. Ten positive ceilings have
+The control objective is 369,743,557.67980778 and the promoted live candidate
+objective is 369,743,573.32184631: an increase of 15.64203852, or
+0.0000042305%. CBC time fell from 294.66 seconds to 218.64 seconds; this
+single-run timing is recorded but is not treated as a general performance
+claim. Ten positive ceilings have
 nonzero duals: onshore wind in 2050–2053, solar PV in 2037, 2038 and 2040, and
 new coal in 2039, 2046 and 2050.
+
+After promotion, the live application chain reproduced byte-identical generated
+`data.txt` and solved optimally at 369,743,573.32184631. The 0.00071537 absolute
+difference from the disposable result is approximately 2×10^-12 relative and
+reflects nondeterministic preprocessing order/solver tolerance, not a source
+change. Live CBC time was 218.64 seconds and total chain time was 268.36 seconds.
 
 Static validation passed all of the following:
 
@@ -144,7 +151,7 @@ Static validation passed all of the following:
 - every scheduled residual retirement and recycled permitted vintage is
   represented by the documented formula.
 
-The solved comparison reports 94 new-capacity, 110 total-capacity, 627 activity
+The live solved comparison reports 94 new-capacity, 109 total-capacity, 635 activity
 and 94 emission cells above the 1e-7 comparison tolerance. Some non-target and
 2020–2025 result cells move because the full-horizon LP has alternate optimal
 investment timing and accounting solutions. No historical source cell changed,

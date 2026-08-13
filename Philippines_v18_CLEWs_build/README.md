@@ -25,12 +25,18 @@ preserved, and retirement plus permitted-vintage replacement allowances prevent
 the ceiling from forcing stock retirement. No minimum, share, activity bound,
 aggregate construction cap, or PEP capacity total is introduced.
 
+V18 also closes the inherited land-water accounting. Every unit of
+fixed national land passes through one of the eight existing hydrological
+clusters, and every cluster-mode conserves precipitation plus delivered
+irrigation. The documented 0.38 irrigation efficiency now sits between gross
+withdrawal and field delivery. Crop and land-cover modes remain endogenous.
+
 ## Delivered model
 
-- Portable editable case: `muio/Philippines_v18_v18.0.0_MUIO.zip`
+- Portable editable case: `muio/Philippines_v18_v18.0.1_MUIO.zip`
 - Archive checksum: `muio/SHA256SUMS`
 - Case identity: `Philippines_v18`
-- Validated run: `DEPLOYMENT_ENVELOPE_V18_BASE`
+- Validated run: `LAND_WATER_CLOSURE_V18_BASE`
 - Horizon: 2020-2053
 
 Extract `Philippines_v18` under `MUIOGO/WebAPP/DataStorage/` and regenerate the
@@ -68,3 +74,13 @@ national land account remains closed at 295.8131 thousand km2.
 
 See `documentation/MODEL_FIXES_DEPLOYMENT_ENVELOPES_2026-08-13.md` and
 `documentation/REPRODUCE.md`.
+
+
+## Land-water closure validation
+
+The corrected BASE run solved optimally at objective 369743573.76853257. Full-land
+precipitation is 2,658.12 mm in 2020 and follows the installed SSP2-4.5 signal
+to a 4.804% increase by 2053. The authoritative records are
+`data_sources/snapshots/land_water_closure_build_manifest.json` and
+`land_water_closure_validation.json`; the rejected aggregate-UDC runtime test
+is disclosed in `land_water_closure_runtime_incident.json`.

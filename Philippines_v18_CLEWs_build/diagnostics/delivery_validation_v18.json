@@ -1,8 +1,8 @@
 {
   "schema": "philippines-v18-delivery-validation-v1",
-  "package": "/Users/sato/Documents/GitHub/CLEWs-PHL/Philippines_v18_CLEWs_build",
-  "case": "/Users/sato/Documents/GitHub/CLEWs-PHL/case/Philippines_v18",
-  "archive": "/Users/sato/Documents/GitHub/CLEWs-PHL/Philippines_v18_CLEWs_build/muio/Philippines_v18_v18.0.0_MUIO.zip",
+  "package": "/Users/sato/GitHub/CLEWs-PHL/Philippines_v18_CLEWs_build",
+  "case": "/Users/sato/GitHub/CLEWs-PHL/case/Philippines_v18",
+  "archive": "/Users/sato/GitHub/CLEWs-PHL/Philippines_v18_CLEWs_build/muio/Philippines_v18_v18.0.0_MUIO.zip",
   "status": "pass",
   "checks": [
     {
@@ -21,33 +21,13 @@
       "detail": "pass"
     },
     {
-      "name": "deployment_static_validation",
-      "status": "pass",
-      "detail": "pass"
-    },
-    {
-      "name": "deployment_solve_validation",
-      "status": "pass",
-      "detail": {
-        "status": "pass",
-        "objective": 369743573.3218463,
-        "matrix": {
-          "rows": 791245,
-          "columns": 886010,
-          "matrix_nonzeros": 12572675,
-          "objective_nonzeros": 423240,
-          "control_candidate_identical_dimensions": true
-        }
-      }
-    },
-    {
       "name": "provenance_validation",
       "status": "pass",
       "detail": {
         "status": "pass",
         "verified_digests": 93,
         "input_coverage": {
-          "directory": "/Users/sato/Documents/GitHub/CLEWs-PHL/Philippines_v18_CLEWs_build/model/inputs",
+          "directory": "/Users/sato/GitHub/CLEWs-PHL/Philippines_v18_CLEWs_build/model/inputs",
           "populated_input_count": 36,
           "covered_input_count": 36,
           "uncovered_inputs": []
@@ -58,16 +38,16 @@
       "name": "archive_manifest_hash",
       "status": "pass",
       "detail": {
-        "expected": "ec128a6e9aacb5e2494be88393a4ccff48c1b204e7be5de2f1ef9a51abe0fb9c",
-        "actual": "ec128a6e9aacb5e2494be88393a4ccff48c1b204e7be5de2f1ef9a51abe0fb9c"
+        "expected": "21488e2434b29b66824172b5ca1f4301057a4dc3c561347db486e09c16c3a54d",
+        "actual": "21488e2434b29b66824172b5ca1f4301057a4dc3c561347db486e09c16c3a54d"
       }
     },
     {
       "name": "archive_manifest_size",
       "status": "pass",
       "detail": {
-        "expected": 9938566,
-        "actual": 9938566
+        "expected": 7671888,
+        "actual": 7671888
       }
     },
     {
@@ -79,8 +59,8 @@
       "name": "archive_member_count",
       "status": "pass",
       "detail": {
-        "expected": 79,
-        "actual": 79
+        "expected": 74,
+        "actual": 74
       }
     },
     {

@@ -1,22 +1,20 @@
-# Reproduce and validate Philippines v18
+# Reproduce and validate Philippines v18.0.1
 
-1. Restore the committed v17 editable case under `case/Philippines_v17`.
-2. Run `python scripts/build_philippines_v18_energy_inputs.py` to create the
-   result-free `case/Philippines_v18` source. The normalized inputs are in
-   `data_sources/snapshots/energy_inputs_v18_2026-08-12.json`.
-3. Run `python scripts/apply_philippines_v18_deployment_envelopes.py` against
-   that case and this package. The script has an exact source fingerprint gate
-   and changes only `RYT.json` `TAMaxCI.SC_0` from 2026.
-4. Link the case as `MUIOGO/WebAPP/DataStorage/Philippines_v18` and run
-   `python scripts/solve_philippines_v18_energy_inputs.py`.
-5. Run `python scripts/validate_philippines_v18_deployment_envelopes.py` and
-   compare the unchanged control and candidate with
-   `python scripts/compare_philippines_v18_deployment_envelopes.py`.
-6. Validate the complete ledger with
-   `python scripts/validate_provenance.py . --stage build` and regenerate the
-   review workbook with `python scripts/build_philippines_v18_ledger_workbook.py`.
-7. Run `python scripts/validate_philippines_v18_delivery.py` to verify the
-   result-free archive, checksum, source identity, and retained validation.
+1. Restore the validated v18 deployment-envelope source.
+2. Run `python scripts/apply_philippines_v18_land_water_bounds.py` against that
+   source and a disposable target/package. The script gates exact source hashes.
+3. Run `python scripts/validate_philippines_v18_land_water_closure.py` once on
+   the disposable candidate. Reuse the retained deployment candidate as the
+   unchanged baseline; do not rerun it.
+4. Run `python scripts/validate_provenance.py . --stage build` and regenerate
+   `PHILIPPINES_V18_CANONICAL_SCHEMA_LEDGER.xlsx`.
+5. Promote only `RYT.json`, `RYTCM.json`, and the documented records. Regenerate
+   and preprocess the live solver input, compare it byte-for-byte with the solved
+   candidate, and run `glpsol --check`. Do not solve again when identical.
+6. Build `Philippines_v18_v18.0.1_MUIO.zip` without `res/`, `data.txt`,
+   `data_processed.txt`, `lp.lp`, or `results.txt`; validate CRC, checksum and
+   live/archive source identity.
 
-The portable archive excludes `res/`, `data.txt`, `data_processed.txt`,
-`lp.lp`, and `results.txt`.
+The aggregate nine-member UDC is not the promoted formulation: its diagnostic
+CBC run exceeded 430 seconds. The promoted formulation uses the existing
+source-derived cluster TAUs as matching TALs and retains endogenous modes.

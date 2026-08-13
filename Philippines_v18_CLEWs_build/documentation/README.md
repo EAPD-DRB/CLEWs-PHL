@@ -25,3 +25,4 @@
 The inherited raw build, detailed historical provenance and v13/v14 evolution
 records are retained inside this v17 package under `../data_sources/evidence/`.
 The separate older folders are historical conveniences, not dependencies.
+- `MODEL_FIXES_LAND_WATER_CLOSURE_2026-08-13.md`: geographic land routing, irrigation boundary, cluster water conservation, runtime A/B and full-chain validation.

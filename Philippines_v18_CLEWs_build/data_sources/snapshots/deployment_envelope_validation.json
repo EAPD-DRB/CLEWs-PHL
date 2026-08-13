@@ -3,14 +3,14 @@
   "status": "pass",
   "solver": {
     "control_status": "Optimal - objective value 369743557.67980778",
-    "candidate_status": "Optimal - objective value 369743573.32184631",
+    "candidate_status": "Optimal - objective value 369743573.32256168",
     "control_objective": 369743557.6798078,
-    "candidate_objective": 369743573.3218463,
-    "objective_delta": 15.642038524150848,
-    "objective_percent_change": 4.230510097791296e-06,
+    "candidate_objective": 369743573.3225617,
+    "objective_delta": 15.642753899097443,
+    "objective_percent_change": 4.230703565255567e-06,
     "control_cbc_seconds": 294.6608250420031,
-    "candidate_cbc_seconds": 218.63636879200203,
-    "cbc_percent_change": -25.80066632174942
+    "candidate_cbc_seconds": 207.19558720799978,
+    "cbc_percent_change": -29.683361478925953
   },
   "matrix": {
     "rows": 791245,
@@ -23,12 +23,12 @@
     "control_data_sha256": "5073d5614c0eb07e5461ba00c08f5949bcf0ef3bbd66ddeea9a76f19d96a0a12",
     "candidate_data_sha256": "3bacffbe6d00275e201047110259f131cc2c5bd75d8f97da12b0841f3257d670",
     "control_results_sha256": "734c1f19b930b7e21ffb0e005e442eb478d8a59b27d9c7f5cffa698499af1f35",
-    "candidate_results_sha256": "9cadbd476a704ea8cf8ffd47553cdcea3dc72b27c4a90e0d48b7420bb645ba69"
+    "candidate_results_sha256": "c856785f861823cdeb09bd2b9f6ef04e70212cc1f2075cc3ee5e5a07d19f5983"
   },
   "affected_counts": {
     "new_capacity_cells": 94,
-    "total_capacity_cells": 109,
-    "activity_cells": 635,
+    "total_capacity_cells": 110,
+    "activity_cells": 627,
     "emissions_cells": 94,
     "binding_target_ceiling_cells": 146,
     "economically_binding_positive_ceiling_cells": 10
@@ -564,105 +564,105 @@
       "year": 2039,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -31.320553
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2040,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -69.258754
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2041,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -108.3344
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2042,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -145.5462
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2043,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -180.99315
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2044,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -214.75894
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2045,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -246.92332
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2046,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -285.54015
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2047,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -282.06924
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2048,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -303.5217
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2049,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -307.64616
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2050,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -318.05547
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2051,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -103.75767
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2052,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -120.69693
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_NG_OLD",
       "year": 2053,
       "new_capacity_gw": 0.0,
       "ceiling_gw": 0.0,
-      "dual": -125.11311
+      "dual": 0.0
     },
     {
       "technology": "PHL_POW_CHP_OIL_OLD",
@@ -1133,11 +1133,11 @@
     {
       "key": [
         "PHL_INDU_PLANT_OTH",
-        "2029"
+        "2030"
       ],
-      "control": 4.986,
-      "candidate": 430.2362,
-      "delta": 425.2502
+      "control": 16.3366,
+      "candidate": 425.2502,
+      "delta": 408.91360000000003
     },
     {
       "key": [
@@ -1151,29 +1151,20 @@
     {
       "key": [
         "PHL_INDU_PLANT_OTH",
-        "2025"
+        "2021"
       ],
       "control": 0.0,
-      "candidate": 19.5508,
-      "delta": 19.5508
+      "candidate": 13.7781,
+      "delta": 13.7781
     },
     {
       "key": [
         "PHL_INDU_PLANT_OTH",
-        "2030"
+        "2023"
       ],
-      "control": 16.3366,
+      "control": 13.7781,
       "candidate": 0.0,
-      "delta": -16.3366
-    },
-    {
-      "key": [
-        "PHL_INDU_PLANT_OTH",
-        "2026"
-      ],
-      "control": 14.9581,
-      "candidate": 0.0,
-      "delta": -14.9581
+      "delta": -13.7781
     },
     {
       "key": [
@@ -1183,6 +1174,24 @@
       "control": 20.7489,
       "candidate": 10.0,
       "delta": -10.748899999999999
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2020"
+      ],
+      "control": 215.1115,
+      "candidate": 205.9261,
+      "delta": -9.185400000000016
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2024"
+      ],
+      "control": 0.0,
+      "candidate": 9.1854,
+      "delta": 9.1854
     },
     {
       "key": [
@@ -1210,15 +1219,6 @@
       "control": 15.1458,
       "candidate": 10.0825,
       "delta": -5.0633
-    },
-    {
-      "key": [
-        "PHL_INDU_PLANT_OTH",
-        "2023"
-      ],
-      "control": 13.7781,
-      "candidate": 9.1854,
-      "delta": -4.592700000000001
     },
     {
       "key": [
@@ -1405,15 +1405,6 @@
     {
       "key": [
         "PHL_INDU_PLANT_OTH",
-        "2029"
-      ],
-      "control": 248.8337,
-      "candidate": 674.0839,
-      "delta": 425.25019999999995
-    },
-    {
-      "key": [
-        "PHL_INDU_PLANT_OTH",
         "2030"
       ],
       "control": 265.1704,
@@ -1440,30 +1431,48 @@
     },
     {
       "key": [
-        "PHL_INDU_PLANT_OTH",
-        "2025"
-      ],
-      "control": 228.8896,
-      "candidate": 243.8477,
-      "delta": 14.958100000000002
-    },
-    {
-      "key": [
-        "PHL_INDU_PLANT_OTH",
-        "2050"
-      ],
-      "control": 445.1943,
-      "candidate": 430.2362,
-      "delta": -14.958100000000002
-    },
-    {
-      "key": [
         "PHL_POW_PP_WON",
         "2053"
       ],
       "control": 34.5537,
       "candidate": 24.5,
       "delta": -10.0537
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2020"
+      ],
+      "control": 215.1115,
+      "candidate": 205.9261,
+      "delta": -9.185400000000016
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2023"
+      ],
+      "control": 228.8896,
+      "candidate": 219.7042,
+      "delta": -9.185400000000016
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2045"
+      ],
+      "control": 458.9724,
+      "candidate": 468.1578,
+      "delta": 9.185400000000016
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2048"
+      ],
+      "control": 445.1943,
+      "candidate": 454.3797,
+      "delta": 9.185400000000016
     },
     {
       "key": [
@@ -1531,38 +1540,38 @@
     {
       "key": [
         "PHL_INDU_PLANT_OTH",
-        "2023"
+        "2021"
       ],
-      "control": 228.8896,
-      "candidate": 224.2969,
-      "delta": -4.592700000000008
-    },
-    {
-      "key": [
-        "PHL_INDU_PLANT_OTH",
-        "2024"
-      ],
-      "control": 228.8896,
-      "candidate": 224.2969,
-      "delta": -4.592700000000008
-    },
-    {
-      "key": [
-        "PHL_INDU_PLANT_OTH",
-        "2048"
-      ],
-      "control": 445.1943,
-      "candidate": 449.787,
+      "control": 215.1115,
+      "candidate": 219.7042,
       "delta": 4.592699999999979
     },
     {
       "key": [
         "PHL_INDU_PLANT_OTH",
-        "2049"
+        "2022"
       ],
-      "control": 445.1943,
-      "candidate": 449.787,
+      "control": 215.1115,
+      "candidate": 219.7042,
       "delta": 4.592699999999979
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2046"
+      ],
+      "control": 458.9724,
+      "candidate": 454.3797,
+      "delta": -4.592699999999979
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2047"
+      ],
+      "control": 458.9724,
+      "candidate": 454.3797,
+      "delta": -4.592699999999979
     },
     {
       "key": [
@@ -1662,27 +1671,9 @@
       "control": 51.223,
       "candidate": 52.0074,
       "delta": 0.784399999999998
-    },
-    {
-      "key": [
-        "PHL_POW_PP_WON",
-        "2050"
-      ],
-      "control": 5.7177,
-      "candidate": 5.0,
-      "delta": -0.7176999999999998
     }
   ],
   "top_activity_changes": [
-    {
-      "key": [
-        "ENV_WATER",
-        "2040"
-      ],
-      "control": 0.0,
-      "candidate": 229.3568,
-      "delta": 229.3568
-    },
     {
       "key": [
         "ENV_WATER",
@@ -1691,6 +1682,15 @@
       "control": 228.56640000000002,
       "candidate": 0.0,
       "delta": -228.56640000000002
+    },
+    {
+      "key": [
+        "ENV_WATER",
+        "2053"
+      ],
+      "control": 34.0815,
+      "candidate": 233.0064,
+      "delta": 198.9249
     },
     {
       "key": [
@@ -1785,20 +1785,20 @@
     {
       "key": [
         "PHL_POW_PP_WON",
+        "2053"
+      ],
+      "control": 233.6325,
+      "candidate": 163.0662,
+      "delta": -70.56629999999998
+    },
+    {
+      "key": [
+        "PHL_POW_PP_WON",
         "2052"
       ],
       "control": 187.4553,
       "candidate": 119.8037,
       "delta": -67.65159999999999
-    },
-    {
-      "key": [
-        "PHL_POW_PP_WON",
-        "2053"
-      ],
-      "control": 233.6325,
-      "candidate": 169.7712,
-      "delta": -63.8613
     },
     {
       "key": [
@@ -1883,6 +1883,15 @@
     },
     {
       "key": [
+        "PHL_POW_PP_WON",
+        "2051"
+      ],
+      "control": 121.2615,
+      "candidate": 76.5413,
+      "delta": -44.72019999999999
+    },
+    {
+      "key": [
         "PHL_POW_PP_COAL",
         "2052"
       ],
@@ -1893,29 +1902,11 @@
     {
       "key": [
         "LNDAGRPHLC03",
-        "2020"
+        "2021"
       ],
-      "control": 103.2149,
-      "candidate": 59.850500000000004,
-      "delta": -43.364399999999996
-    },
-    {
-      "key": [
-        "ENV_WATER",
-        "2047"
-      ],
-      "control": 0.0,
-      "candidate": 42.563300000000005,
-      "delta": 42.563300000000005
-    },
-    {
-      "key": [
-        "PHL_POW_PP_WON",
-        "2051"
-      ],
-      "control": 121.2615,
-      "candidate": 79.6885,
-      "delta": -41.57299999999999
+      "control": 103.1494,
+      "candidate": 68.11860000000001,
+      "delta": -35.030799999999985
     },
     {
       "key": [
@@ -1932,8 +1923,8 @@
         "2022"
       ],
       "control": 73.05319999999999,
-      "candidate": 103.2149,
-      "delta": 30.16170000000001
+      "candidate": 103.21509999999998,
+      "delta": 30.16189999999999
     },
     {
       "key": [
@@ -1941,8 +1932,17 @@
         "2052"
       ],
       "control": 428.5076,
-      "candidate": 455.2357,
-      "delta": 26.728099999999984
+      "candidate": 457.0974,
+      "delta": 28.58979999999997
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2053"
+      ],
+      "control": 433.2871,
+      "candidate": 459.4936,
+      "delta": 26.206500000000005
     }
   ],
   "top_emission_changes": [
@@ -2252,11 +2252,11 @@
       {
         "key": [
           "PHL_INDU_PLANT_OTH",
-          "2029"
+          "2030"
         ],
-        "control": 4.986,
-        "candidate": 430.2362,
-        "delta": 425.2502
+        "control": 16.3366,
+        "candidate": 425.2502,
+        "delta": 408.91360000000003
       },
       {
         "key": [
@@ -2270,29 +2270,11 @@
       {
         "key": [
           "PHL_INDU_PLANT_OTH",
-          "2025"
+          "2021"
         ],
         "control": 0.0,
-        "candidate": 19.5508,
-        "delta": 19.5508
-      },
-      {
-        "key": [
-          "PHL_INDU_PLANT_OTH",
-          "2030"
-        ],
-        "control": 16.3366,
-        "candidate": 0.0,
-        "delta": -16.3366
-      },
-      {
-        "key": [
-          "PHL_INDU_PLANT_OTH",
-          "2026"
-        ],
-        "control": 14.9581,
-        "candidate": 0.0,
-        "delta": -14.9581
+        "candidate": 13.7781,
+        "delta": 13.7781
       },
       {
         "key": [
@@ -2300,8 +2282,26 @@
           "2023"
         ],
         "control": 13.7781,
+        "candidate": 0.0,
+        "delta": -13.7781
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2020"
+        ],
+        "control": 215.1115,
+        "candidate": 205.9261,
+        "delta": -9.185400000000016
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2024"
+        ],
+        "control": 0.0,
         "candidate": 9.1854,
-        "delta": -4.592700000000001
+        "delta": 9.1854
       },
       {
         "key": [
@@ -2524,15 +2524,6 @@
       {
         "key": [
           "PHL_INDU_PLANT_OTH",
-          "2029"
-        ],
-        "control": 248.8337,
-        "candidate": 674.0839,
-        "delta": 425.25019999999995
-      },
-      {
-        "key": [
-          "PHL_INDU_PLANT_OTH",
           "2030"
         ],
         "control": 265.1704,
@@ -2560,20 +2551,11 @@
       {
         "key": [
           "PHL_INDU_PLANT_OTH",
-          "2025"
+          "2020"
         ],
-        "control": 228.8896,
-        "candidate": 243.8477,
-        "delta": 14.958100000000002
-      },
-      {
-        "key": [
-          "PHL_INDU_PLANT_OTH",
-          "2050"
-        ],
-        "control": 445.1943,
-        "candidate": 430.2362,
-        "delta": -14.958100000000002
+        "control": 215.1115,
+        "candidate": 205.9261,
+        "delta": -9.185400000000016
       },
       {
         "key": [
@@ -2581,17 +2563,17 @@
           "2023"
         ],
         "control": 228.8896,
-        "candidate": 224.2969,
-        "delta": -4.592700000000008
+        "candidate": 219.7042,
+        "delta": -9.185400000000016
       },
       {
         "key": [
           "PHL_INDU_PLANT_OTH",
-          "2024"
+          "2045"
         ],
-        "control": 228.8896,
-        "candidate": 224.2969,
-        "delta": -4.592700000000008
+        "control": 458.9724,
+        "candidate": 468.1578,
+        "delta": 9.185400000000016
       },
       {
         "key": [
@@ -2599,17 +2581,44 @@
           "2048"
         ],
         "control": 445.1943,
-        "candidate": 449.787,
+        "candidate": 454.3797,
+        "delta": 9.185400000000016
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2021"
+        ],
+        "control": 215.1115,
+        "candidate": 219.7042,
         "delta": 4.592699999999979
       },
       {
         "key": [
           "PHL_INDU_PLANT_OTH",
-          "2049"
+          "2022"
         ],
-        "control": 445.1943,
-        "candidate": 449.787,
+        "control": 215.1115,
+        "candidate": 219.7042,
         "delta": 4.592699999999979
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2046"
+        ],
+        "control": 458.9724,
+        "candidate": 454.3797,
+        "delta": -4.592699999999979
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2047"
+        ],
+        "control": 458.9724,
+        "candidate": 454.3797,
+        "delta": -4.592699999999979
       },
       {
         "key": [
@@ -2781,27 +2790,9 @@
         "control": 1.1227,
         "candidate": 1.1591,
         "delta": 0.03639999999999999
-      },
-      {
-        "key": [
-          "PHL_FSH_AQC_ELE",
-          "2046"
-        ],
-        "control": 0.0683,
-        "candidate": 0.0396,
-        "delta": -0.028699999999999996
       }
     ],
     "activity": [
-      {
-        "key": [
-          "ENV_WATER",
-          "2040"
-        ],
-        "control": 0.0,
-        "candidate": 229.3568,
-        "delta": 229.3568
-      },
       {
         "key": [
           "ENV_WATER",
@@ -2810,6 +2801,15 @@
         "control": 228.56640000000002,
         "candidate": 0.0,
         "delta": -228.56640000000002
+      },
+      {
+        "key": [
+          "ENV_WATER",
+          "2053"
+        ],
+        "control": 34.0815,
+        "candidate": 233.0064,
+        "delta": 198.9249
       },
       {
         "key": [
@@ -2940,20 +2940,11 @@
       {
         "key": [
           "LNDAGRPHLC03",
-          "2020"
+          "2021"
         ],
-        "control": 103.2149,
-        "candidate": 59.850500000000004,
-        "delta": -43.364399999999996
-      },
-      {
-        "key": [
-          "ENV_WATER",
-          "2047"
-        ],
-        "control": 0.0,
-        "candidate": 42.563300000000005,
-        "delta": 42.563300000000005
+        "control": 103.1494,
+        "candidate": 68.11860000000001,
+        "delta": -35.030799999999985
       },
       {
         "key": [
@@ -2961,8 +2952,8 @@
           "2022"
         ],
         "control": 73.05319999999999,
-        "candidate": 103.2149,
-        "delta": 30.16170000000001
+        "candidate": 103.21509999999998,
+        "delta": 30.16189999999999
       },
       {
         "key": [
@@ -3006,8 +2997,8 @@
           "2020"
         ],
         "control": 3.1277,
-        "candidate": 27.3871,
-        "delta": 24.2594
+        "candidate": 27.3872,
+        "delta": 24.2595
       },
       {
         "key": [
@@ -3030,11 +3021,38 @@
       {
         "key": [
           "LNDAGRPHLC04",
-          "2021"
+          "2022"
         ],
         "control": 27.3871,
-        "candidate": 4.2635,
-        "delta": -23.1236
+        "candidate": 3.8397,
+        "delta": -23.5474
+      },
+      {
+        "key": [
+          "LNDAGRPHLC03",
+          "2020"
+        ],
+        "control": 103.2149,
+        "candidate": 80.2506,
+        "delta": -22.964299999999994
+      },
+      {
+        "key": [
+          "LNDAGRPHLC02",
+          "2021"
+        ],
+        "control": 3.3845,
+        "candidate": 23.6818,
+        "delta": 20.2973
+      },
+      {
+        "key": [
+          "LNDAGRPHLC02",
+          "2024"
+        ],
+        "control": 23.681599999999996,
+        "candidate": 3.9272,
+        "delta": -19.754399999999997
       },
       {
         "key": [
@@ -3042,26 +3060,8 @@
           "2023"
         ],
         "control": 23.681600000000003,
-        "candidate": 0.7627,
-        "delta": -22.918900000000004
-      },
-      {
-        "key": [
-          "LNDAGRPHLC04",
-          "2024"
-        ],
-        "control": 27.3872,
-        "candidate": 4.7267,
-        "delta": -22.6605
-      },
-      {
-        "key": [
-          "LNDAGRPHLC02",
-          "2025"
-        ],
-        "control": 23.681699999999996,
-        "candidate": 1.7103,
-        "delta": -21.971399999999996
+        "candidate": 5.485,
+        "delta": -18.196600000000004
       }
     ],
     "emissions": [
@@ -3372,20 +3372,38 @@
       {
         "key": [
           "PHL_INDU_PLANT_OTH",
-          "2023"
+          "2020"
         ],
-        "control": 13.7781,
-        "candidate": 9.1854,
-        "delta": -4.592700000000001
+        "control": 215.1115,
+        "candidate": 205.9261,
+        "delta": -9.185400000000016
       },
       {
         "key": [
           "PHL_INDU_PLANT_OTH",
-          "2025"
+          "2021"
         ],
         "control": 0.0,
-        "candidate": 19.5508,
-        "delta": 19.5508
+        "candidate": 13.7781,
+        "delta": 13.7781
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2023"
+        ],
+        "control": 13.7781,
+        "candidate": 0.0,
+        "delta": -13.7781
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2024"
+        ],
+        "control": 0.0,
+        "candidate": 9.1854,
+        "delta": 9.1854
       },
       {
         "key": [
@@ -3410,29 +3428,38 @@
       {
         "key": [
           "PHL_INDU_PLANT_OTH",
+          "2020"
+        ],
+        "control": 215.1115,
+        "candidate": 205.9261,
+        "delta": -9.185400000000016
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2021"
+        ],
+        "control": 215.1115,
+        "candidate": 219.7042,
+        "delta": 4.592699999999979
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2022"
+        ],
+        "control": 215.1115,
+        "candidate": 219.7042,
+        "delta": 4.592699999999979
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
           "2023"
         ],
         "control": 228.8896,
-        "candidate": 224.2969,
-        "delta": -4.592700000000008
-      },
-      {
-        "key": [
-          "PHL_INDU_PLANT_OTH",
-          "2024"
-        ],
-        "control": 228.8896,
-        "candidate": 224.2969,
-        "delta": -4.592700000000008
-      },
-      {
-        "key": [
-          "PHL_INDU_PLANT_OTH",
-          "2025"
-        ],
-        "control": 228.8896,
-        "candidate": 243.8477,
-        "delta": 14.958100000000002
+        "candidate": 219.7042,
+        "delta": -9.185400000000016
       },
       {
         "key": [
@@ -3460,8 +3487,8 @@
           "2020"
         ],
         "control": 41.1656,
-        "candidate": 40.6419,
-        "delta": -0.5236999999999981
+        "candidate": 41.0497,
+        "delta": -0.11589999999999634
       },
       {
         "key": [
@@ -3469,8 +3496,8 @@
           "2021"
         ],
         "control": 41.2283,
-        "candidate": 41.0587,
-        "delta": -0.16959999999999553
+        "candidate": 41.1404,
+        "delta": -0.08789999999999765
       },
       {
         "key": [
@@ -3478,8 +3505,8 @@
           "2022"
         ],
         "control": 41.4916,
-        "candidate": 41.6622,
-        "delta": 0.1706000000000003
+        "candidate": 40.9966,
+        "delta": -0.49499999999999744
       },
       {
         "key": [
@@ -3487,8 +3514,8 @@
           "2023"
         ],
         "control": 41.6393,
-        "candidate": 40.5737,
-        "delta": -1.0655999999999963
+        "candidate": 40.5254,
+        "delta": -1.113900000000001
       },
       {
         "key": [
@@ -3496,8 +3523,8 @@
           "2024"
         ],
         "control": 40.5808,
-        "candidate": 40.7976,
-        "delta": 0.21679999999999922
+        "candidate": 41.2428,
+        "delta": 0.661999999999999
       },
       {
         "key": [
@@ -3505,26 +3532,17 @@
           "2025"
         ],
         "control": 41.1675,
-        "candidate": 40.2901,
-        "delta": -0.8773999999999944
+        "candidate": 40.2109,
+        "delta": -0.9565999999999946
       },
       {
         "key": [
-          "ENV_WATER",
-          "2020"
+          "ENV_LAND",
+          "2021"
         ],
-        "control": 0.0,
-        "candidate": 6.7057,
-        "delta": 6.7057
-      },
-      {
-        "key": [
-          "ENV_WATER",
-          "2024"
-        ],
-        "control": 0.0,
-        "candidate": 0.4983,
-        "delta": 0.4983
+        "control": 295.813,
+        "candidate": 295.8131,
+        "delta": 0.00010000000003174137
       },
       {
         "key": [
@@ -3532,17 +3550,8 @@
           "2025"
         ],
         "control": 0.0196,
-        "candidate": 9.0704,
-        "delta": 9.050799999999999
-      },
-      {
-        "key": [
-          "LNDAGRPHLC01",
-          "2021"
-        ],
-        "control": 9.1115,
-        "candidate": 9.1113,
-        "delta": -0.00019999999999953388
+        "candidate": 0.0,
+        "delta": -0.0196
       },
       {
         "key": [
@@ -3552,15 +3561,6 @@
         "control": 9.1113,
         "candidate": 9.1115,
         "delta": 0.00019999999999953388
-      },
-      {
-        "key": [
-          "LNDAGRPHLC01",
-          "2025"
-        ],
-        "control": 9.1115,
-        "candidate": 9.1114,
-        "delta": -9.999999999976694e-05
       },
       {
         "key": [
@@ -3577,8 +3577,8 @@
           "2021"
         ],
         "control": 3.3845,
-        "candidate": 23.6816,
-        "delta": 20.2971
+        "candidate": 23.6818,
+        "delta": 20.2973
       },
       {
         "key": [
@@ -3586,8 +3586,8 @@
           "2022"
         ],
         "control": 23.6817,
-        "candidate": 4.6253,
-        "delta": -19.0564
+        "candidate": 12.4922,
+        "delta": -11.189499999999999
       },
       {
         "key": [
@@ -3595,8 +3595,17 @@
           "2023"
         ],
         "control": 23.681600000000003,
-        "candidate": 0.7627,
-        "delta": -22.918900000000004
+        "candidate": 5.485,
+        "delta": -18.196600000000004
+      },
+      {
+        "key": [
+          "LNDAGRPHLC02",
+          "2024"
+        ],
+        "control": 23.681599999999996,
+        "candidate": 3.9272,
+        "delta": -19.754399999999997
       },
       {
         "key": [
@@ -3604,8 +3613,8 @@
           "2025"
         ],
         "control": 23.681699999999996,
-        "candidate": 1.7103,
-        "delta": -21.971399999999996
+        "candidate": 17.613,
+        "delta": -6.068699999999996
       },
       {
         "key": [
@@ -3613,8 +3622,8 @@
           "2020"
         ],
         "control": 103.2149,
-        "candidate": 59.850500000000004,
-        "delta": -43.364399999999996
+        "candidate": 80.2506,
+        "delta": -22.964299999999994
       },
       {
         "key": [
@@ -3622,8 +3631,8 @@
           "2021"
         ],
         "control": 103.1494,
-        "candidate": 87.3772,
-        "delta": -15.772199999999998
+        "candidate": 68.11860000000001,
+        "delta": -35.030799999999985
       },
       {
         "key": [
@@ -3631,8 +3640,8 @@
           "2022"
         ],
         "control": 73.05319999999999,
-        "candidate": 103.2149,
-        "delta": 30.16170000000001
+        "candidate": 103.21509999999998,
+        "delta": 30.16189999999999
       },
       {
         "key": [
@@ -3640,8 +3649,8 @@
           "2023"
         ],
         "control": 92.1213,
-        "candidate": 103.2149,
-        "delta": 11.093599999999995
+        "candidate": 103.21499999999999,
+        "delta": 11.093699999999984
       },
       {
         "key": [
@@ -3649,8 +3658,8 @@
           "2024"
         ],
         "control": 94.7191,
-        "candidate": 102.8534,
-        "delta": 8.134299999999996
+        "candidate": 100.02470000000001,
+        "delta": 5.3056000000000125
       },
       {
         "key": [
@@ -3658,8 +3667,8 @@
           "2025"
         ],
         "control": 87.48550000000002,
-        "candidate": 103.2149,
-        "delta": 15.729399999999984
+        "candidate": 103.215,
+        "delta": 15.729499999999987
       },
       {
         "key": [
@@ -3667,22 +3676,13 @@
           "2020"
         ],
         "control": 3.1277,
-        "candidate": 27.3871,
-        "delta": 24.2594
+        "candidate": 27.3872,
+        "delta": 24.2595
       },
       {
         "key": [
           "LNDAGRPHLC04",
           "2021"
-        ],
-        "control": 27.3871,
-        "candidate": 4.2635,
-        "delta": -23.1236
-      },
-      {
-        "key": [
-          "LNDAGRPHLC04",
-          "2022"
         ],
         "control": 27.3871,
         "candidate": 27.3872,
@@ -3691,11 +3691,20 @@
       {
         "key": [
           "LNDAGRPHLC04",
+          "2022"
+        ],
+        "control": 27.3871,
+        "candidate": 3.8397,
+        "delta": -23.5474
+      },
+      {
+        "key": [
+          "LNDAGRPHLC04",
           "2023"
         ],
         "control": 27.3871,
-        "candidate": 27.3873,
-        "delta": 0.00019999999999953388
+        "candidate": 14.1145,
+        "delta": -13.2726
       },
       {
         "key": [
@@ -3703,8 +3712,8 @@
           "2024"
         ],
         "control": 27.3872,
-        "candidate": 4.7267,
-        "delta": -22.6605
+        "candidate": 27.3871,
+        "delta": -9.999999999976694e-05
       },
       {
         "key": [
@@ -3712,8 +3721,17 @@
           "2025"
         ],
         "control": 27.387099999999997,
-        "candidate": 27.387199999999996,
-        "delta": 9.999999999976694e-05
+        "candidate": 10.3486,
+        "delta": -17.0385
+      },
+      {
+        "key": [
+          "LNDAGRPHLC05",
+          "2021"
+        ],
+        "control": 27.18,
+        "candidate": 27.179899999999996,
+        "delta": -0.00010000000000331966
       },
       {
         "key": [
@@ -3739,17 +3757,8 @@
           "2024"
         ],
         "control": 27.1799,
-        "candidate": 27.179799999999997,
-        "delta": -0.00010000000000331966
-      },
-      {
-        "key": [
-          "LNDAGRPHLC05",
-          "2025"
-        ],
-        "control": 27.179900000000004,
-        "candidate": 27.18,
-        "delta": 9.999999999621423e-05
+        "candidate": 27.1798,
+        "delta": -9.999999999976694e-05
       },
       {
         "key": [
@@ -3757,17 +3766,17 @@
           "2020"
         ],
         "control": 18.706899999999997,
-        "candidate": 18.706799999999998,
-        "delta": -9.999999999976694e-05
+        "candidate": 18.707,
+        "delta": 0.00010000000000331966
       },
       {
         "key": [
           "LNDAGRPHLC06",
-          "2021"
+          "2022"
         ],
-        "control": 18.706899999999997,
-        "candidate": 18.7068,
-        "delta": -9.999999999621423e-05
+        "control": 18.7068,
+        "candidate": 18.7069,
+        "delta": 9.999999999976694e-05
       },
       {
         "key": [
@@ -3775,8 +3784,8 @@
           "2023"
         ],
         "control": 18.7068,
-        "candidate": 18.706899999999997,
-        "delta": 9.999999999621423e-05
+        "candidate": 18.707,
+        "delta": 0.00019999999999953388
       },
       {
         "key": [
@@ -3784,8 +3793,8 @@
           "2024"
         ],
         "control": 18.7068,
-        "candidate": 18.7069,
-        "delta": 9.999999999976694e-05
+        "candidate": 18.707,
+        "delta": 0.00019999999999953388
       },
       {
         "key": [
@@ -3799,6 +3808,15 @@
       {
         "key": [
           "LNDAGRPHLC07",
+          "2020"
+        ],
+        "control": 18.385,
+        "candidate": 0.3524,
+        "delta": -18.032600000000002
+      },
+      {
+        "key": [
+          "LNDAGRPHLC07",
           "2021"
         ],
         "control": 0.3456,
@@ -3808,20 +3826,11 @@
       {
         "key": [
           "LNDAGRPHLC07",
-          "2022"
-        ],
-        "control": 18.384900000000002,
-        "candidate": 9.6473,
-        "delta": -8.737600000000002
-      },
-      {
-        "key": [
-          "LNDAGRPHLC07",
           "2023"
         ],
         "control": 3.7106999999999997,
-        "candidate": 13.433999999999997,
-        "delta": 9.723299999999998
+        "candidate": 18.385,
+        "delta": 14.674300000000002
       },
       {
         "key": [
@@ -3829,17 +3838,8 @@
           "2024"
         ],
         "control": 0.3456,
-        "candidate": 18.385,
-        "delta": 18.0394
-      },
-      {
-        "key": [
-          "LNDAGRPHLC07",
-          "2025"
-        ],
-        "control": 18.385,
-        "candidate": 17.249,
-        "delta": -1.1360000000000028
+        "candidate": 18.384899999999995,
+        "delta": 18.039299999999994
       },
       {
         "key": [
@@ -3847,8 +3847,8 @@
           "2020"
         ],
         "control": 8.426599999999999,
-        "candidate": 10.377899999999999,
-        "delta": 1.9512999999999998
+        "candidate": 8.0102,
+        "delta": -0.41639999999999944
       },
       {
         "key": [
@@ -3856,8 +3856,8 @@
           "2021"
         ],
         "control": 10.0749,
-        "candidate": 10.6342,
-        "delta": 0.5593000000000004
+        "candidate": 6.769,
+        "delta": -3.3058999999999994
       },
       {
         "key": [
@@ -3865,8 +3865,8 @@
           "2022"
         ],
         "control": 6.494,
-        "candidate": 4.1264,
-        "delta": -2.3675999999999995
+        "candidate": 11.069299999999998,
+        "delta": 4.575299999999999
       },
       {
         "key": [
@@ -3874,8 +3874,8 @@
           "2023"
         ],
         "control": 6.7596,
-        "candidate": 8.861699999999999,
-        "delta": 2.102099999999999
+        "candidate": 12.4613,
+        "delta": 5.7017
       },
       {
         "key": [
@@ -3883,8 +3883,8 @@
           "2024"
         ],
         "control": 12.1863,
-        "candidate": 8.673499999999999,
-        "delta": -3.5128000000000004
+        "candidate": 8.5961,
+        "delta": -3.5901999999999994
       },
       {
         "key": [
@@ -3898,6 +3898,15 @@
       {
         "key": [
           "LNDGRSTOT",
+          "2021"
+        ],
+        "control": 72.9395,
+        "candidate": 75.0877,
+        "delta": 2.1482000000000028
+      },
+      {
+        "key": [
+          "LNDGRSTOT",
           "2022"
         ],
         "control": 72.4286,
@@ -3907,11 +3916,20 @@
       {
         "key": [
           "LNDGRSTOT",
-          "2023"
+          "2024"
         ],
-        "control": 63.3239,
-        "candidate": 68.6116,
-        "delta": 5.287699999999994
+        "control": 63.8021,
+        "candidate": 58.5144,
+        "delta": -5.287700000000001
+      },
+      {
+        "key": [
+          "LNDOTHTOT",
+          "2021"
+        ],
+        "control": 7.5756,
+        "candidate": 5.4275,
+        "delta": -2.1480999999999995
       },
       {
         "key": [
@@ -3925,11 +3943,11 @@
       {
         "key": [
           "LNDOTHTOT",
-          "2023"
+          "2024"
         ],
-        "control": 7.5756,
-        "candidate": 2.2879,
-        "delta": -5.287699999999999
+        "control": 2.2879,
+        "candidate": 7.5756,
+        "delta": 5.287699999999999
       },
       {
         "key": [
@@ -3937,8 +3955,8 @@
           "2020"
         ],
         "control": 466.7416,
-        "candidate": 482.3332,
-        "delta": 15.591599999999971
+        "candidate": 475.8535,
+        "delta": 9.111899999999991
       },
       {
         "key": [
@@ -3946,8 +3964,8 @@
           "2021"
         ],
         "control": 483.0938,
-        "candidate": 486.6975,
-        "delta": 3.6037000000000035
+        "candidate": 490.0327,
+        "delta": 6.93889999999999
       },
       {
         "key": [
@@ -3955,8 +3973,8 @@
           "2022"
         ],
         "control": 501.3702,
-        "candidate": 490.6846,
-        "delta": -10.685600000000022
+        "candidate": 495.0169,
+        "delta": -6.35329999999999
       },
       {
         "key": [
@@ -3964,8 +3982,8 @@
           "2023"
         ],
         "control": 510.1248,
-        "candidate": 507.0472,
-        "delta": -3.077600000000018
+        "candidate": 509.2498,
+        "delta": -0.875
       },
       {
         "key": [
@@ -3973,8 +3991,8 @@
           "2024"
         ],
         "control": 526.9797,
-        "candidate": 519.6799,
-        "delta": -7.299800000000005
+        "candidate": 520.5451,
+        "delta": -6.434599999999932
       },
       {
         "key": [
@@ -3982,8 +4000,8 @@
           "2025"
         ],
         "control": 535.9185,
-        "candidate": 536.5283,
-        "delta": 0.6097999999999502
+        "candidate": 536.4045,
+        "delta": 0.48599999999999
       },
       {
         "key": [
@@ -3991,8 +4009,8 @@
           "2021"
         ],
         "control": 7.8216,
-        "candidate": 7.8309,
-        "delta": 0.009299999999999642
+        "candidate": 7.9173,
+        "delta": 0.0956999999999999
       },
       {
         "key": [
@@ -4000,8 +4018,8 @@
           "2022"
         ],
         "control": 8.0153,
-        "candidate": 8.0773,
-        "delta": 0.06199999999999939
+        "candidate": 8.0602,
+        "delta": 0.04490000000000016
       },
       {
         "key": [
@@ -4009,8 +4027,8 @@
           "2023"
         ],
         "control": 8.0295,
-        "candidate": 8.1859,
-        "delta": 0.15639999999999965
+        "candidate": 8.022,
+        "delta": -0.007500000000000284
       },
       {
         "key": [
@@ -4018,8 +4036,8 @@
           "2024"
         ],
         "control": 8.1828,
-        "candidate": 8.4375,
-        "delta": 0.2546999999999997
+        "candidate": 8.5588,
+        "delta": 0.37599999999999945
       },
       {
         "key": [
@@ -4036,8 +4054,8 @@
           "2021"
         ],
         "control": 1.2448,
-        "candidate": 1.2355,
-        "delta": -0.009299999999999864
+        "candidate": 1.1491,
+        "delta": -0.0956999999999999
       },
       {
         "key": [
@@ -4045,8 +4063,8 @@
           "2022"
         ],
         "control": 1.2507,
-        "candidate": 1.1887,
-        "delta": -0.06199999999999983
+        "candidate": 1.2058,
+        "delta": -0.04489999999999994
       },
       {
         "key": [
@@ -4054,8 +4072,8 @@
           "2023"
         ],
         "control": 1.4361,
-        "candidate": 1.2797,
-        "delta": -0.15639999999999987
+        "candidate": 1.4436,
+        "delta": 0.007500000000000062
       },
       {
         "key": [
@@ -4063,8 +4081,8 @@
           "2024"
         ],
         "control": 1.4824,
-        "candidate": 1.2277,
-        "delta": -0.2546999999999999
+        "candidate": 1.1064,
+        "delta": -0.3759999999999999
       },
       {
         "key": [

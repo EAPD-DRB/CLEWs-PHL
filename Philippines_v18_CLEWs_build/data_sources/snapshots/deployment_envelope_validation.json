@@ -1,0 +1,4227 @@
+{
+  "schema": "philippines-v18-deployment-envelope-solve-comparison-v1",
+  "status": "pass",
+  "solver": {
+    "control_status": "Optimal - objective value 369743557.67980778",
+    "candidate_status": "Optimal - objective value 369743573.32184631",
+    "control_objective": 369743557.6798078,
+    "candidate_objective": 369743573.3218463,
+    "objective_delta": 15.642038524150848,
+    "objective_percent_change": 4.230510097791296e-06,
+    "control_cbc_seconds": 294.6608250420031,
+    "candidate_cbc_seconds": 218.63636879200203,
+    "cbc_percent_change": -25.80066632174942
+  },
+  "matrix": {
+    "rows": 791245,
+    "columns": 886010,
+    "matrix_nonzeros": 12572675,
+    "objective_nonzeros": 423240,
+    "control_candidate_identical_dimensions": true
+  },
+  "artifact_identity": {
+    "control_data_sha256": "5073d5614c0eb07e5461ba00c08f5949bcf0ef3bbd66ddeea9a76f19d96a0a12",
+    "candidate_data_sha256": "3bacffbe6d00275e201047110259f131cc2c5bd75d8f97da12b0841f3257d670",
+    "control_results_sha256": "734c1f19b930b7e21ffb0e005e442eb478d8a59b27d9c7f5cffa698499af1f35",
+    "candidate_results_sha256": "9cadbd476a704ea8cf8ffd47553cdcea3dc72b27c4a90e0d48b7420bb645ba69"
+  },
+  "affected_counts": {
+    "new_capacity_cells": 94,
+    "total_capacity_cells": 109,
+    "activity_cells": 635,
+    "emissions_cells": 94,
+    "binding_target_ceiling_cells": 146,
+    "economically_binding_positive_ceiling_cells": 10
+  },
+  "binding_target_ceilings": [
+    {
+      "technology": "PHL_POW_PP_WON",
+      "year": 2050,
+      "new_capacity_gw": 5.0,
+      "ceiling_gw": 5.0,
+      "dual": -1.794999
+    },
+    {
+      "technology": "PHL_POW_PP_WON",
+      "year": 2051,
+      "new_capacity_gw": 6.5,
+      "ceiling_gw": 6.5,
+      "dual": -0.81712714
+    },
+    {
+      "technology": "PHL_POW_PP_WON",
+      "year": 2052,
+      "new_capacity_gw": 6.5,
+      "ceiling_gw": 6.5,
+      "dual": -0.47193386
+    },
+    {
+      "technology": "PHL_POW_PP_WON",
+      "year": 2053,
+      "new_capacity_gw": 6.5,
+      "ceiling_gw": 6.5,
+      "dual": -0.2345849
+    },
+    {
+      "technology": "PHL_POW_PP_SPV",
+      "year": 2037,
+      "new_capacity_gw": 7.0,
+      "ceiling_gw": 7.0,
+      "dual": -0.44423878
+    },
+    {
+      "technology": "PHL_POW_PP_SPV",
+      "year": 2038,
+      "new_capacity_gw": 7.0,
+      "ceiling_gw": 7.0,
+      "dual": -0.27736639
+    },
+    {
+      "technology": "PHL_POW_PP_SPV",
+      "year": 2040,
+      "new_capacity_gw": 10.0,
+      "ceiling_gw": 10.0,
+      "dual": -1.1700184
+    },
+    {
+      "technology": "PHL_POW_PP_COAL",
+      "year": 2039,
+      "new_capacity_gw": 2.5,
+      "ceiling_gw": 2.5,
+      "dual": -6.4771323
+    },
+    {
+      "technology": "PHL_POW_PP_COAL",
+      "year": 2046,
+      "new_capacity_gw": 3.0,
+      "ceiling_gw": 3.0,
+      "dual": -7.9779214
+    },
+    {
+      "technology": "PHL_POW_PP_COAL",
+      "year": 2050,
+      "new_capacity_gw": 3.0,
+      "ceiling_gw": 3.0,
+      "dual": -4.5700999
+    },
+    {
+      "technology": "PHL_POW_PP_H2",
+      "year": 2026,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_H2",
+      "year": 2027,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_H2",
+      "year": 2028,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_H2",
+      "year": 2029,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_WOF",
+      "year": 2026,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_WOF",
+      "year": 2027,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NUSMR",
+      "year": 2026,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NUSMR",
+      "year": 2027,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NUSMR",
+      "year": 2028,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NUSMR",
+      "year": 2029,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NUSMR",
+      "year": 2030,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NUSMR",
+      "year": 2031,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NUSMR",
+      "year": 2032,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NUSMR",
+      "year": 2033,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NUSMR",
+      "year": 2034,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NU",
+      "year": 2026,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NU",
+      "year": 2027,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NU",
+      "year": 2028,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NU",
+      "year": 2029,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NU",
+      "year": 2030,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NU",
+      "year": 2031,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NU",
+      "year": 2032,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NU",
+      "year": 2033,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_PP_NU",
+      "year": 2034,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2026,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2027,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2028,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2029,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2030,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2031,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2032,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2033,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2034,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2035,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2036,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2037,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2038,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2039,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2040,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2041,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2042,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2043,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2044,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2045,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2046,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2047,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2048,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2049,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2050,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2051,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2052,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "year": 2053,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2026,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2027,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2028,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2029,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2030,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2031,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2032,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2033,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2034,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2035,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2036,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2037,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2038,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2039,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -31.320553
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2040,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -69.258754
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2041,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -108.3344
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2042,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -145.5462
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2043,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -180.99315
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2044,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -214.75894
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2045,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -246.92332
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2046,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -285.54015
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2047,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -282.06924
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2048,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -303.5217
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2049,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -307.64616
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2050,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -318.05547
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2051,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -103.75767
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2052,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -120.69693
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2053,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": -125.11311
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2026,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2027,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2028,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2029,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2030,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2031,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2032,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2033,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2034,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2035,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2036,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2037,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2038,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2039,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2040,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2041,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2042,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2043,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2044,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2045,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2046,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2047,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2048,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2049,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2050,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2051,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2052,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_OIL_OLD",
+      "year": 2053,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2026,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2027,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2028,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2029,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2030,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2031,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2032,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2033,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2034,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2035,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2036,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2037,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2038,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2039,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2040,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2041,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2042,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2043,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2044,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2045,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2046,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2047,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2048,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2049,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2050,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2051,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2052,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    },
+    {
+      "technology": "PHL_POW_CHP_BIOM_OLD",
+      "year": 2053,
+      "new_capacity_gw": 0.0,
+      "ceiling_gw": 0.0,
+      "dual": 0.0
+    }
+  ],
+  "economically_binding_positive_ceilings": [
+    {
+      "technology": "PHL_POW_PP_WON",
+      "year": 2050,
+      "new_capacity_gw": 5.0,
+      "ceiling_gw": 5.0,
+      "dual": -1.794999
+    },
+    {
+      "technology": "PHL_POW_PP_WON",
+      "year": 2051,
+      "new_capacity_gw": 6.5,
+      "ceiling_gw": 6.5,
+      "dual": -0.81712714
+    },
+    {
+      "technology": "PHL_POW_PP_WON",
+      "year": 2052,
+      "new_capacity_gw": 6.5,
+      "ceiling_gw": 6.5,
+      "dual": -0.47193386
+    },
+    {
+      "technology": "PHL_POW_PP_WON",
+      "year": 2053,
+      "new_capacity_gw": 6.5,
+      "ceiling_gw": 6.5,
+      "dual": -0.2345849
+    },
+    {
+      "technology": "PHL_POW_PP_SPV",
+      "year": 2037,
+      "new_capacity_gw": 7.0,
+      "ceiling_gw": 7.0,
+      "dual": -0.44423878
+    },
+    {
+      "technology": "PHL_POW_PP_SPV",
+      "year": 2038,
+      "new_capacity_gw": 7.0,
+      "ceiling_gw": 7.0,
+      "dual": -0.27736639
+    },
+    {
+      "technology": "PHL_POW_PP_SPV",
+      "year": 2040,
+      "new_capacity_gw": 10.0,
+      "ceiling_gw": 10.0,
+      "dual": -1.1700184
+    },
+    {
+      "technology": "PHL_POW_PP_COAL",
+      "year": 2039,
+      "new_capacity_gw": 2.5,
+      "ceiling_gw": 2.5,
+      "dual": -6.4771323
+    },
+    {
+      "technology": "PHL_POW_PP_COAL",
+      "year": 2046,
+      "new_capacity_gw": 3.0,
+      "ceiling_gw": 3.0,
+      "dual": -7.9779214
+    },
+    {
+      "technology": "PHL_POW_PP_COAL",
+      "year": 2050,
+      "new_capacity_gw": 3.0,
+      "ceiling_gw": 3.0,
+      "dual": -4.5700999
+    }
+  ],
+  "top_new_capacity_changes": [
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2029"
+      ],
+      "control": 4.986,
+      "candidate": 430.2362,
+      "delta": 425.2502
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2033"
+      ],
+      "control": 408.9135,
+      "candidate": 0.0,
+      "delta": -408.9135
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2025"
+      ],
+      "control": 0.0,
+      "candidate": 19.5508,
+      "delta": 19.5508
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2030"
+      ],
+      "control": 16.3366,
+      "candidate": 0.0,
+      "delta": -16.3366
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2026"
+      ],
+      "control": 14.9581,
+      "candidate": 0.0,
+      "delta": -14.9581
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2040"
+      ],
+      "control": 20.7489,
+      "candidate": 10.0,
+      "delta": -10.748899999999999
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2038"
+      ],
+      "control": 0.0,
+      "candidate": 7.0,
+      "delta": 7.0
+    },
+    {
+      "key": [
+        "PHL_POW_PP_WON",
+        "2051"
+      ],
+      "control": 12.5013,
+      "candidate": 6.5,
+      "delta": -6.0013000000000005
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2050"
+      ],
+      "control": 15.1458,
+      "candidate": 10.0825,
+      "delta": -5.0633
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2023"
+      ],
+      "control": 13.7781,
+      "candidate": 9.1854,
+      "delta": -4.592700000000001
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2051"
+      ],
+      "control": 0.0,
+      "candidate": 3.1737,
+      "delta": 3.1737
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2048"
+      ],
+      "control": 0.0,
+      "candidate": 2.6616,
+      "delta": 2.6616
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2047"
+      ],
+      "control": 0.551,
+      "candidate": 3.0214,
+      "delta": 2.4703999999999997
+    },
+    {
+      "key": [
+        "PHL_POW_PP_WON",
+        "2052"
+      ],
+      "control": 8.833,
+      "candidate": 6.5,
+      "delta": -2.333
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2041"
+      ],
+      "control": 1.7421,
+      "candidate": 3.7041,
+      "delta": 1.962
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "2051"
+      ],
+      "control": 0.0,
+      "candidate": 1.8097,
+      "delta": 1.8097
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2037"
+      ],
+      "control": 5.2684,
+      "candidate": 7.0,
+      "delta": 1.7316000000000003
+    },
+    {
+      "key": [
+        "PHL_TRA_TRUH_NG",
+        "2049"
+      ],
+      "control": 3.3635,
+      "candidate": 1.9161,
+      "delta": -1.4474000000000002
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2052"
+      ],
+      "control": 0.0,
+      "candidate": 1.1295,
+      "delta": 1.1295
+    },
+    {
+      "key": [
+        "PHL_TRA_TRUH_NG",
+        "2051"
+      ],
+      "control": 5.8017,
+      "candidate": 6.8182,
+      "delta": 1.0164999999999997
+    },
+    {
+      "key": [
+        "PHL_POW_PP_WON",
+        "2053"
+      ],
+      "control": 7.5017,
+      "candidate": 6.5,
+      "delta": -1.0016999999999996
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2046"
+      ],
+      "control": 11.5618,
+      "candidate": 10.6901,
+      "delta": -0.8717000000000006
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2045"
+      ],
+      "control": 2.3274,
+      "candidate": 3.1117,
+      "delta": 0.7843
+    },
+    {
+      "key": [
+        "PHL_POW_PP_WON",
+        "2050"
+      ],
+      "control": 5.7177,
+      "candidate": 5.0,
+      "delta": -0.7176999999999998
+    },
+    {
+      "key": [
+        "PHL_TRA_TRUH_NG",
+        "2050"
+      ],
+      "control": 0.0,
+      "candidate": 0.6285,
+      "delta": 0.6285
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "2052"
+      ],
+      "control": 0.0775,
+      "candidate": 0.6647,
+      "delta": 0.5871999999999999
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2053"
+      ],
+      "control": 0.0,
+      "candidate": 0.4781,
+      "delta": 0.4781
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "2040"
+      ],
+      "control": 1.6245,
+      "candidate": 1.8968,
+      "delta": 0.2723
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "2053"
+      ],
+      "control": 1.1184,
+      "candidate": 1.3706,
+      "delta": 0.2522
+    },
+    {
+      "key": [
+        "PHL_POW_GH2_NG",
+        "2051"
+      ],
+      "control": 0.2097,
+      "candidate": 0.0022,
+      "delta": -0.2075
+    }
+  ],
+  "top_total_capacity_changes": [
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2029"
+      ],
+      "control": 248.8337,
+      "candidate": 674.0839,
+      "delta": 425.25019999999995
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2030"
+      ],
+      "control": 265.1704,
+      "candidate": 674.0839,
+      "delta": 408.9135
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2031"
+      ],
+      "control": 265.1704,
+      "candidate": 674.0839,
+      "delta": 408.9135
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2032"
+      ],
+      "control": 265.1704,
+      "candidate": 674.0839,
+      "delta": 408.9135
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2025"
+      ],
+      "control": 228.8896,
+      "candidate": 243.8477,
+      "delta": 14.958100000000002
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2050"
+      ],
+      "control": 445.1943,
+      "candidate": 430.2362,
+      "delta": -14.958100000000002
+    },
+    {
+      "key": [
+        "PHL_POW_PP_WON",
+        "2053"
+      ],
+      "control": 34.5537,
+      "candidate": 24.5,
+      "delta": -10.0537
+    },
+    {
+      "key": [
+        "PHL_POW_PP_WON",
+        "2052"
+      ],
+      "control": 27.052,
+      "candidate": 18.0,
+      "delta": -9.052
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2038"
+      ],
+      "control": 20.7277,
+      "candidate": 29.515,
+      "delta": 8.787300000000002
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2039"
+      ],
+      "control": 20.7277,
+      "candidate": 29.515,
+      "delta": 8.787300000000002
+    },
+    {
+      "key": [
+        "PHL_POW_PP_WON",
+        "2051"
+      ],
+      "control": 18.219,
+      "candidate": 11.5,
+      "delta": -6.719000000000001
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2048"
+      ],
+      "control": 62.5526,
+      "candidate": 67.5973,
+      "delta": 5.044700000000006
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2049"
+      ],
+      "control": 62.501,
+      "candidate": 67.5457,
+      "delta": 5.044699999999999
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2053"
+      ],
+      "control": 76.8002,
+      "candidate": 81.5629,
+      "delta": 4.762699999999995
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2023"
+      ],
+      "control": 228.8896,
+      "candidate": 224.2969,
+      "delta": -4.592700000000008
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2024"
+      ],
+      "control": 228.8896,
+      "candidate": 224.2969,
+      "delta": -4.592700000000008
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2048"
+      ],
+      "control": 445.1943,
+      "candidate": 449.787,
+      "delta": 4.592699999999979
+    },
+    {
+      "key": [
+        "PHL_INDU_PLANT_OTH",
+        "2049"
+      ],
+      "control": 445.1943,
+      "candidate": 449.787,
+      "delta": 4.592699999999979
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2052"
+      ],
+      "control": 76.957,
+      "candidate": 81.2416,
+      "delta": 4.284600000000012
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2051"
+      ],
+      "control": 77.2619,
+      "candidate": 80.417,
+      "delta": 3.1551000000000045
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "2053"
+      ],
+      "control": 38.2877,
+      "candidate": 40.8181,
+      "delta": 2.5304
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2047"
+      ],
+      "control": 62.5526,
+      "candidate": 64.9357,
+      "delta": 2.383099999999999
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "2052"
+      ],
+      "control": 38.0656,
+      "candidate": 40.3439,
+      "delta": 2.2782999999999944
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2040"
+      ],
+      "control": 41.4766,
+      "candidate": 39.515,
+      "delta": -1.9615999999999971
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2037"
+      ],
+      "control": 20.7277,
+      "candidate": 22.515,
+      "delta": 1.7873000000000019
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "2051"
+      ],
+      "control": 38.8321,
+      "candidate": 40.5232,
+      "delta": 1.6911000000000058
+    },
+    {
+      "key": [
+        "PHL_TRA_TRUH_NG",
+        "2049"
+      ],
+      "control": 94.2449,
+      "candidate": 92.6244,
+      "delta": -1.620500000000007
+    },
+    {
+      "key": [
+        "PHL_TRA_TRUH_NG",
+        "2050"
+      ],
+      "control": 87.1733,
+      "candidate": 86.1813,
+      "delta": -0.9920000000000044
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2045"
+      ],
+      "control": 51.223,
+      "candidate": 52.0074,
+      "delta": 0.784399999999998
+    },
+    {
+      "key": [
+        "PHL_POW_PP_WON",
+        "2050"
+      ],
+      "control": 5.7177,
+      "candidate": 5.0,
+      "delta": -0.7176999999999998
+    }
+  ],
+  "top_activity_changes": [
+    {
+      "key": [
+        "ENV_WATER",
+        "2040"
+      ],
+      "control": 0.0,
+      "candidate": 229.3568,
+      "delta": 229.3568
+    },
+    {
+      "key": [
+        "ENV_WATER",
+        "2051"
+      ],
+      "control": 228.56640000000002,
+      "candidate": 0.0,
+      "delta": -228.56640000000002
+    },
+    {
+      "key": [
+        "PHL_PRO_IMP_COAL",
+        "2038"
+      ],
+      "control": 2403.5795,
+      "candidate": 2283.9275,
+      "delta": -119.65200000000004
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "2038"
+      ],
+      "control": 2394.0974,
+      "candidate": 2274.9175,
+      "delta": -119.17990000000009
+    },
+    {
+      "key": [
+        "PHL_PRO_IMP_COAL",
+        "2039"
+      ],
+      "control": 2475.8609,
+      "candidate": 2358.1549,
+      "delta": -117.70600000000013
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "2039"
+      ],
+      "control": 2466.0937,
+      "candidate": 2348.8521,
+      "delta": -117.24159999999983
+    },
+    {
+      "key": [
+        "PHL_PRO_IMP_COAL",
+        "2053"
+      ],
+      "control": 2922.6835,
+      "candidate": 3030.6525,
+      "delta": 107.96900000000005
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "2053"
+      ],
+      "control": 2911.1536,
+      "candidate": 3018.6967,
+      "delta": 107.54309999999987
+    },
+    {
+      "key": [
+        "PHL_PRO_IMP_COAL",
+        "2052"
+      ],
+      "control": 2915.7261,
+      "candidate": 3010.6076,
+      "delta": 94.88149999999996
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "2052"
+      ],
+      "control": 2904.2237,
+      "candidate": 2998.7309,
+      "delta": 94.50720000000001
+    },
+    {
+      "key": [
+        "PHL_PRO_IMP_COAL",
+        "2051"
+      ],
+      "control": 2923.74,
+      "candidate": 2997.1971,
+      "delta": 73.45710000000008
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "2051"
+      ],
+      "control": 2912.2059,
+      "candidate": 2985.3733,
+      "delta": 73.16740000000027
+    },
+    {
+      "key": [
+        "PHL_POW_PP_WON",
+        "2052"
+      ],
+      "control": 187.4553,
+      "candidate": 119.8037,
+      "delta": -67.65159999999999
+    },
+    {
+      "key": [
+        "PHL_POW_PP_WON",
+        "2053"
+      ],
+      "control": 233.6325,
+      "candidate": 169.7712,
+      "delta": -63.8613
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "2039"
+      ],
+      "control": 602.9809,
+      "candidate": 551.26,
+      "delta": -51.72090000000003
+    },
+    {
+      "key": [
+        "PHL_PRO_IMP_COAL",
+        "2048"
+      ],
+      "control": 2928.8724,
+      "candidate": 2877.6614,
+      "delta": -51.21100000000024
+    },
+    {
+      "key": [
+        "PHL_PRO_IMP_COAL",
+        "2049"
+      ],
+      "control": 3053.7759,
+      "candidate": 3002.5907,
+      "delta": -51.185199999999895
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "2048"
+      ],
+      "control": 2917.3181,
+      "candidate": 2866.3091,
+      "delta": -51.009000000000015
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "2049"
+      ],
+      "control": 3041.7288,
+      "candidate": 2990.7456,
+      "delta": -50.98319999999967
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2038"
+      ],
+      "control": 118.5126,
+      "candidate": 168.755,
+      "delta": 50.24239999999999
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2039"
+      ],
+      "control": 118.5126,
+      "candidate": 168.755,
+      "delta": 50.24239999999999
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "2053"
+      ],
+      "control": 781.9419,
+      "candidate": 831.0468,
+      "delta": 49.10489999999993
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "2038"
+      ],
+      "control": 538.2689,
+      "candidate": 491.6976,
+      "delta": -46.57130000000001
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "2052"
+      ],
+      "control": 776.9063,
+      "candidate": 821.2233,
+      "delta": 44.31700000000001
+    },
+    {
+      "key": [
+        "LNDAGRPHLC03",
+        "2020"
+      ],
+      "control": 103.2149,
+      "candidate": 59.850500000000004,
+      "delta": -43.364399999999996
+    },
+    {
+      "key": [
+        "ENV_WATER",
+        "2047"
+      ],
+      "control": 0.0,
+      "candidate": 42.563300000000005,
+      "delta": 42.563300000000005
+    },
+    {
+      "key": [
+        "PHL_POW_PP_WON",
+        "2051"
+      ],
+      "control": 121.2615,
+      "candidate": 79.6885,
+      "delta": -41.57299999999999
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "2051"
+      ],
+      "control": 788.5257,
+      "candidate": 821.2512,
+      "delta": 32.72550000000001
+    },
+    {
+      "key": [
+        "LNDAGRPHLC03",
+        "2022"
+      ],
+      "control": 73.05319999999999,
+      "candidate": 103.2149,
+      "delta": 30.16170000000001
+    },
+    {
+      "key": [
+        "PHL_POW_PP_SPV",
+        "2052"
+      ],
+      "control": 428.5076,
+      "candidate": 455.2357,
+      "delta": 26.728099999999984
+    }
+  ],
+  "top_emission_changes": [
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "CO2e",
+        "2038"
+      ],
+      "control": 228.1575,
+      "candidate": 216.7996,
+      "delta": -11.3579
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "CO2e",
+        "2039"
+      ],
+      "control": 235.0187,
+      "candidate": 223.8456,
+      "delta": -11.173100000000005
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "CO2e",
+        "2053"
+      ],
+      "control": 277.4329,
+      "candidate": 287.6818,
+      "delta": 10.248899999999992
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "CO2e",
+        "2052"
+      ],
+      "control": 276.7725,
+      "candidate": 285.779,
+      "delta": 9.006500000000017
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "CO2e",
+        "2051"
+      ],
+      "control": 277.5332,
+      "candidate": 284.5061,
+      "delta": 6.9728999999999814
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "CO2e",
+        "2048"
+      ],
+      "control": 278.0204,
+      "candidate": 273.1593,
+      "delta": -4.861100000000022
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "CO2e",
+        "2049"
+      ],
+      "control": 289.8768,
+      "candidate": 285.0181,
+      "delta": -4.858699999999999
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "CO2e",
+        "2040"
+      ],
+      "control": 216.2573,
+      "candidate": 218.7353,
+      "delta": 2.4780000000000086
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "PM2_5",
+        "2039"
+      ],
+      "control": 27.5491,
+      "candidate": 25.1861,
+      "delta": -2.3629999999999995
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "CO2e",
+        "2047"
+      ],
+      "control": 266.2108,
+      "candidate": 263.854,
+      "delta": -2.356800000000021
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "CO2e",
+        "2037"
+      ],
+      "control": 220.9682,
+      "candidate": 218.6759,
+      "delta": -2.292299999999983
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "PM2_5",
+        "2053"
+      ],
+      "control": 35.7255,
+      "candidate": 37.969,
+      "delta": 2.2435000000000045
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "PM2_5",
+        "2038"
+      ],
+      "control": 24.5925,
+      "candidate": 22.4648,
+      "delta": -2.127700000000001
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "PM2_5",
+        "2052"
+      ],
+      "control": 35.4954,
+      "candidate": 37.5202,
+      "delta": 2.024800000000006
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "PM2_5",
+        "2051"
+      ],
+      "control": 36.0263,
+      "candidate": 37.5215,
+      "delta": 1.495200000000004
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "PM2_5",
+        "2048"
+      ],
+      "control": 35.843,
+      "candidate": 34.8952,
+      "delta": -0.9478000000000009
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "PM2_5",
+        "2049"
+      ],
+      "control": 38.0266,
+      "candidate": 37.0794,
+      "delta": -0.9472000000000023
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "CO2e",
+        "2045"
+      ],
+      "control": 254.1895,
+      "candidate": 253.283,
+      "delta": -0.9065000000000225
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_COAL",
+        "CO2e",
+        "2050"
+      ],
+      "control": 283.665,
+      "candidate": 284.2559,
+      "delta": 0.5908999999999764
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "PM2_5",
+        "2040"
+      ],
+      "control": 24.3611,
+      "candidate": 24.8532,
+      "delta": 0.49210000000000065
+    },
+    {
+      "key": [
+        "PHL_POW_CHP_COAL_OLD",
+        "PM2_5",
+        "2038"
+      ],
+      "control": 13.5085,
+      "candidate": 13.0211,
+      "delta": -0.48739999999999917
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "PM2_5",
+        "2037"
+      ],
+      "control": 22.2143,
+      "candidate": 21.7352,
+      "delta": -0.4791000000000025
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "PM2_5",
+        "2047"
+      ],
+      "control": 33.6551,
+      "candidate": 33.1947,
+      "delta": -0.4603999999999999
+    },
+    {
+      "key": [
+        "PHL_POW_CHP_COAL_OLD",
+        "PM2_5",
+        "2052"
+      ],
+      "control": 5.0167,
+      "candidate": 4.7475,
+      "delta": -0.26920000000000055
+    },
+    {
+      "key": [
+        "PHL_POW_CHP_BIOM_OLD",
+        "PM2_5",
+        "2050"
+      ],
+      "control": 0.0,
+      "candidate": 0.2467,
+      "delta": 0.2467
+    },
+    {
+      "key": [
+        "PHL_POW_CHP_COAL_OLD",
+        "PM2_5",
+        "2053"
+      ],
+      "control": 4.348,
+      "candidate": 4.1627,
+      "delta": -0.1852999999999998
+    },
+    {
+      "key": [
+        "PHL_POW_PP_COAL",
+        "PM2_5",
+        "2045"
+      ],
+      "control": 31.1822,
+      "candidate": 31.0033,
+      "delta": -0.17890000000000228
+    },
+    {
+      "key": [
+        "PHL_POW_CHP_COAL_OLD",
+        "PM2_5",
+        "2050"
+      ],
+      "control": 4.9538,
+      "candidate": 5.114,
+      "delta": 0.16019999999999968
+    },
+    {
+      "key": [
+        "PHL_PRO_PROC_NG",
+        "CO2e",
+        "2053"
+      ],
+      "control": 10.7043,
+      "candidate": 10.5509,
+      "delta": -0.15339999999999954
+    },
+    {
+      "key": [
+        "PHL_POW_CHP_COAL_OLD",
+        "PM2_5",
+        "2048"
+      ],
+      "control": 6.1668,
+      "candidate": 6.022,
+      "delta": -0.14480000000000004
+    }
+  ],
+  "unexpected_non_target_changes": {
+    "new_capacity": [
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2029"
+        ],
+        "control": 4.986,
+        "candidate": 430.2362,
+        "delta": 425.2502
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2033"
+        ],
+        "control": 408.9135,
+        "candidate": 0.0,
+        "delta": -408.9135
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2025"
+        ],
+        "control": 0.0,
+        "candidate": 19.5508,
+        "delta": 19.5508
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2030"
+        ],
+        "control": 16.3366,
+        "candidate": 0.0,
+        "delta": -16.3366
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2026"
+        ],
+        "control": 14.9581,
+        "candidate": 0.0,
+        "delta": -14.9581
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2023"
+        ],
+        "control": 13.7781,
+        "candidate": 9.1854,
+        "delta": -4.592700000000001
+      },
+      {
+        "key": [
+          "PHL_TRA_TRUH_NG",
+          "2049"
+        ],
+        "control": 3.3635,
+        "candidate": 1.9161,
+        "delta": -1.4474000000000002
+      },
+      {
+        "key": [
+          "PHL_TRA_TRUH_NG",
+          "2051"
+        ],
+        "control": 5.8017,
+        "candidate": 6.8182,
+        "delta": 1.0164999999999997
+      },
+      {
+        "key": [
+          "PHL_TRA_TRUH_NG",
+          "2050"
+        ],
+        "control": 0.0,
+        "candidate": 0.6285,
+        "delta": 0.6285
+      },
+      {
+        "key": [
+          "PHL_POW_GH2_NG",
+          "2051"
+        ],
+        "control": 0.2097,
+        "candidate": 0.0022,
+        "delta": -0.2075
+      },
+      {
+        "key": [
+          "PHL_TRA_TRUH_NG",
+          "2048"
+        ],
+        "control": 2.0559,
+        "candidate": 1.8828,
+        "delta": -0.1730999999999998
+      },
+      {
+        "key": [
+          "PHL_POW_GH2_NG",
+          "2049"
+        ],
+        "control": 0.0,
+        "candidate": 0.166,
+        "delta": 0.166
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_ELE",
+          "2051"
+        ],
+        "control": 0.2069,
+        "candidate": 0.3008,
+        "delta": 0.09390000000000001
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_ELE",
+          "2050"
+        ],
+        "control": 1.2742,
+        "candidate": 1.1975,
+        "delta": -0.07669999999999999
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2045"
+        ],
+        "control": 14.5804,
+        "candidate": 14.6552,
+        "delta": 0.07480000000000153
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_ELE",
+          "2045"
+        ],
+        "control": 0.0431,
+        "candidate": 0.0,
+        "delta": -0.0431
+      },
+      {
+        "key": [
+          "PHL_POW_GH2_NG",
+          "2048"
+        ],
+        "control": 0.2334,
+        "candidate": 0.2699,
+        "delta": 0.03649999999999998
+      },
+      {
+        "key": [
+          "PHL_TRA_TRUH_NG",
+          "2053"
+        ],
+        "control": 4.8456,
+        "candidate": 4.8135,
+        "delta": -0.032099999999999795
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2051"
+        ],
+        "control": 0.7049,
+        "candidate": 0.6753,
+        "delta": -0.02959999999999996
+      },
+      {
+        "key": [
+          "PHL_POW_TD",
+          "2026"
+        ],
+        "control": 0.6845,
+        "candidate": 0.7082,
+        "delta": 0.023700000000000054
+      },
+      {
+        "key": [
+          "PHL_POW_TD",
+          "2025"
+        ],
+        "control": 0.3809,
+        "candidate": 0.3572,
+        "delta": -0.0237
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_LIQ",
+          "2045"
+        ],
+        "control": 0.0,
+        "candidate": 0.0227,
+        "delta": 0.0227
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2046"
+        ],
+        "control": 0.6437,
+        "candidate": 0.6279,
+        "delta": -0.015800000000000036
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2048"
+        ],
+        "control": 0.6776,
+        "candidate": 0.6934,
+        "delta": 0.015800000000000036
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_ELE",
+          "2046"
+        ],
+        "control": 0.0252,
+        "candidate": 0.0396,
+        "delta": 0.014400000000000003
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_ELE",
+          "2048"
+        ],
+        "control": 0.0448,
+        "candidate": 0.0327,
+        "delta": -0.0121
+      },
+      {
+        "key": [
+          "PHL_FSH_PRO_LIQ",
+          "2052"
+        ],
+        "control": 0.0372,
+        "candidate": 0.0265,
+        "delta": -0.010699999999999998
+      },
+      {
+        "key": [
+          "PHL_TRA_TRUH_NG",
+          "2052"
+        ],
+        "control": 5.5077,
+        "candidate": 5.4971,
+        "delta": -0.010600000000000165
+      },
+      {
+        "key": [
+          "PHL_TRA_TRUH_H2",
+          "2039"
+        ],
+        "control": 4.6027,
+        "candidate": 4.613,
+        "delta": 0.010300000000000864
+      },
+      {
+        "key": [
+          "PHL_POW_ELEC",
+          "2053"
+        ],
+        "control": 0.4567,
+        "candidate": 0.4464,
+        "delta": -0.010299999999999976
+      }
+    ],
+    "total_capacity": [
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2029"
+        ],
+        "control": 248.8337,
+        "candidate": 674.0839,
+        "delta": 425.25019999999995
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2030"
+        ],
+        "control": 265.1704,
+        "candidate": 674.0839,
+        "delta": 408.9135
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2031"
+        ],
+        "control": 265.1704,
+        "candidate": 674.0839,
+        "delta": 408.9135
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2032"
+        ],
+        "control": 265.1704,
+        "candidate": 674.0839,
+        "delta": 408.9135
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2025"
+        ],
+        "control": 228.8896,
+        "candidate": 243.8477,
+        "delta": 14.958100000000002
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2050"
+        ],
+        "control": 445.1943,
+        "candidate": 430.2362,
+        "delta": -14.958100000000002
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2023"
+        ],
+        "control": 228.8896,
+        "candidate": 224.2969,
+        "delta": -4.592700000000008
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2024"
+        ],
+        "control": 228.8896,
+        "candidate": 224.2969,
+        "delta": -4.592700000000008
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2048"
+        ],
+        "control": 445.1943,
+        "candidate": 449.787,
+        "delta": 4.592699999999979
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2049"
+        ],
+        "control": 445.1943,
+        "candidate": 449.787,
+        "delta": 4.592699999999979
+      },
+      {
+        "key": [
+          "PHL_TRA_TRUH_NG",
+          "2049"
+        ],
+        "control": 94.2449,
+        "candidate": 92.6244,
+        "delta": -1.620500000000007
+      },
+      {
+        "key": [
+          "PHL_TRA_TRUH_NG",
+          "2050"
+        ],
+        "control": 87.1733,
+        "candidate": 86.1813,
+        "delta": -0.9920000000000044
+      },
+      {
+        "key": [
+          "PHL_POW_GH2_NG",
+          "2049"
+        ],
+        "control": 1.1227,
+        "candidate": 1.3251,
+        "delta": 0.2023999999999999
+      },
+      {
+        "key": [
+          "PHL_POW_GH2_NG",
+          "2050"
+        ],
+        "control": 1.1227,
+        "candidate": 1.3251,
+        "delta": 0.2023999999999999
+      },
+      {
+        "key": [
+          "PHL_TRA_TRUH_NG",
+          "2048"
+        ],
+        "control": 97.6604,
+        "candidate": 97.4874,
+        "delta": -0.17300000000000182
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_ELE",
+          "2050"
+        ],
+        "control": 1.4666,
+        "candidate": 1.3469,
+        "delta": -0.11969999999999992
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2050"
+        ],
+        "control": 25.0687,
+        "candidate": 25.1448,
+        "delta": 0.07610000000000028
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2045"
+        ],
+        "control": 22.9637,
+        "candidate": 23.0386,
+        "delta": 0.07489999999999952
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2048"
+        ],
+        "control": 24.6158,
+        "candidate": 24.6906,
+        "delta": 0.07479999999999976
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2049"
+        ],
+        "control": 25.1731,
+        "candidate": 25.2474,
+        "delta": 0.07429999999999737
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2046"
+        ],
+        "control": 23.505,
+        "candidate": 23.564,
+        "delta": 0.05900000000000105
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2047"
+        ],
+        "control": 24.0791,
+        "candidate": 24.1381,
+        "delta": 0.05900000000000105
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2052"
+        ],
+        "control": 26.0483,
+        "candidate": 26.101,
+        "delta": 0.05269999999999797
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2053"
+        ],
+        "control": 26.6951,
+        "candidate": 26.7436,
+        "delta": 0.048500000000000654
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_BIOF",
+          "2051"
+        ],
+        "control": 25.5498,
+        "candidate": 25.5963,
+        "delta": 0.04649999999999821
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_ELE",
+          "2045"
+        ],
+        "control": 0.0431,
+        "candidate": 0.0,
+        "delta": -0.0431
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_ELE",
+          "2049"
+        ],
+        "control": 0.1924,
+        "candidate": 0.1494,
+        "delta": -0.04299999999999998
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_ELE",
+          "2048"
+        ],
+        "control": 0.1324,
+        "candidate": 0.0916,
+        "delta": -0.04079999999999999
+      },
+      {
+        "key": [
+          "PHL_POW_GH2_NG",
+          "2048"
+        ],
+        "control": 1.1227,
+        "candidate": 1.1591,
+        "delta": 0.03639999999999999
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_ELE",
+          "2046"
+        ],
+        "control": 0.0683,
+        "candidate": 0.0396,
+        "delta": -0.028699999999999996
+      }
+    ],
+    "activity": [
+      {
+        "key": [
+          "ENV_WATER",
+          "2040"
+        ],
+        "control": 0.0,
+        "candidate": 229.3568,
+        "delta": 229.3568
+      },
+      {
+        "key": [
+          "ENV_WATER",
+          "2051"
+        ],
+        "control": 228.56640000000002,
+        "candidate": 0.0,
+        "delta": -228.56640000000002
+      },
+      {
+        "key": [
+          "PHL_PRO_IMP_COAL",
+          "2038"
+        ],
+        "control": 2403.5795,
+        "candidate": 2283.9275,
+        "delta": -119.65200000000004
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "2038"
+        ],
+        "control": 2394.0974,
+        "candidate": 2274.9175,
+        "delta": -119.17990000000009
+      },
+      {
+        "key": [
+          "PHL_PRO_IMP_COAL",
+          "2039"
+        ],
+        "control": 2475.8609,
+        "candidate": 2358.1549,
+        "delta": -117.70600000000013
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "2039"
+        ],
+        "control": 2466.0937,
+        "candidate": 2348.8521,
+        "delta": -117.24159999999983
+      },
+      {
+        "key": [
+          "PHL_PRO_IMP_COAL",
+          "2053"
+        ],
+        "control": 2922.6835,
+        "candidate": 3030.6525,
+        "delta": 107.96900000000005
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "2053"
+        ],
+        "control": 2911.1536,
+        "candidate": 3018.6967,
+        "delta": 107.54309999999987
+      },
+      {
+        "key": [
+          "PHL_PRO_IMP_COAL",
+          "2052"
+        ],
+        "control": 2915.7261,
+        "candidate": 3010.6076,
+        "delta": 94.88149999999996
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "2052"
+        ],
+        "control": 2904.2237,
+        "candidate": 2998.7309,
+        "delta": 94.50720000000001
+      },
+      {
+        "key": [
+          "PHL_PRO_IMP_COAL",
+          "2051"
+        ],
+        "control": 2923.74,
+        "candidate": 2997.1971,
+        "delta": 73.45710000000008
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "2051"
+        ],
+        "control": 2912.2059,
+        "candidate": 2985.3733,
+        "delta": 73.16740000000027
+      },
+      {
+        "key": [
+          "PHL_PRO_IMP_COAL",
+          "2048"
+        ],
+        "control": 2928.8724,
+        "candidate": 2877.6614,
+        "delta": -51.21100000000024
+      },
+      {
+        "key": [
+          "PHL_PRO_IMP_COAL",
+          "2049"
+        ],
+        "control": 3053.7759,
+        "candidate": 3002.5907,
+        "delta": -51.185199999999895
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "2048"
+        ],
+        "control": 2917.3181,
+        "candidate": 2866.3091,
+        "delta": -51.009000000000015
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "2049"
+        ],
+        "control": 3041.7288,
+        "candidate": 2990.7456,
+        "delta": -50.98319999999967
+      },
+      {
+        "key": [
+          "LNDAGRPHLC03",
+          "2020"
+        ],
+        "control": 103.2149,
+        "candidate": 59.850500000000004,
+        "delta": -43.364399999999996
+      },
+      {
+        "key": [
+          "ENV_WATER",
+          "2047"
+        ],
+        "control": 0.0,
+        "candidate": 42.563300000000005,
+        "delta": 42.563300000000005
+      },
+      {
+        "key": [
+          "LNDAGRPHLC03",
+          "2022"
+        ],
+        "control": 73.05319999999999,
+        "candidate": 103.2149,
+        "delta": 30.16170000000001
+      },
+      {
+        "key": [
+          "PHL_PRO_IMP_COAL",
+          "2040"
+        ],
+        "control": 2278.2138,
+        "candidate": 2304.3188,
+        "delta": 26.105000000000018
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "2040"
+        ],
+        "control": 2269.2263,
+        "candidate": 2295.2283,
+        "delta": 26.002000000000407
+      },
+      {
+        "key": [
+          "PHL_PRO_IMP_COAL",
+          "2047"
+        ],
+        "control": 2804.4606,
+        "candidate": 2779.6329,
+        "delta": -24.827699999999822
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "2047"
+        ],
+        "control": 2793.3971,
+        "candidate": 2768.6674,
+        "delta": -24.72970000000032
+      },
+      {
+        "key": [
+          "LNDAGRPHLC04",
+          "2020"
+        ],
+        "control": 3.1277,
+        "candidate": 27.3871,
+        "delta": 24.2594
+      },
+      {
+        "key": [
+          "PHL_PRO_IMP_COAL",
+          "2037"
+        ],
+        "control": 2327.8417,
+        "candidate": 2303.6931,
+        "delta": -24.148599999999988
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "2037"
+        ],
+        "control": 2318.6585,
+        "candidate": 2294.6051,
+        "delta": -24.053399999999783
+      },
+      {
+        "key": [
+          "LNDAGRPHLC04",
+          "2021"
+        ],
+        "control": 27.3871,
+        "candidate": 4.2635,
+        "delta": -23.1236
+      },
+      {
+        "key": [
+          "LNDAGRPHLC02",
+          "2023"
+        ],
+        "control": 23.681600000000003,
+        "candidate": 0.7627,
+        "delta": -22.918900000000004
+      },
+      {
+        "key": [
+          "LNDAGRPHLC04",
+          "2024"
+        ],
+        "control": 27.3872,
+        "candidate": 4.7267,
+        "delta": -22.6605
+      },
+      {
+        "key": [
+          "LNDAGRPHLC02",
+          "2025"
+        ],
+        "control": 23.681699999999996,
+        "candidate": 1.7103,
+        "delta": -21.971399999999996
+      }
+    ],
+    "emissions": [
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2038"
+        ],
+        "control": 228.1575,
+        "candidate": 216.7996,
+        "delta": -11.3579
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2039"
+        ],
+        "control": 235.0187,
+        "candidate": 223.8456,
+        "delta": -11.173100000000005
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2053"
+        ],
+        "control": 277.4329,
+        "candidate": 287.6818,
+        "delta": 10.248899999999992
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2052"
+        ],
+        "control": 276.7725,
+        "candidate": 285.779,
+        "delta": 9.006500000000017
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2051"
+        ],
+        "control": 277.5332,
+        "candidate": 284.5061,
+        "delta": 6.9728999999999814
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2048"
+        ],
+        "control": 278.0204,
+        "candidate": 273.1593,
+        "delta": -4.861100000000022
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2049"
+        ],
+        "control": 289.8768,
+        "candidate": 285.0181,
+        "delta": -4.858699999999999
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2040"
+        ],
+        "control": 216.2573,
+        "candidate": 218.7353,
+        "delta": 2.4780000000000086
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2047"
+        ],
+        "control": 266.2108,
+        "candidate": 263.854,
+        "delta": -2.356800000000021
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2037"
+        ],
+        "control": 220.9682,
+        "candidate": 218.6759,
+        "delta": -2.292299999999983
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2045"
+        ],
+        "control": 254.1895,
+        "candidate": 253.283,
+        "delta": -0.9065000000000225
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2050"
+        ],
+        "control": 283.665,
+        "candidate": 284.2559,
+        "delta": 0.5908999999999764
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_NG",
+          "CO2e",
+          "2053"
+        ],
+        "control": 10.7043,
+        "candidate": 10.5509,
+        "delta": -0.15339999999999954
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_NG",
+          "CO2e",
+          "2039"
+        ],
+        "control": 7.1499,
+        "candidate": 7.2721,
+        "delta": 0.12220000000000031
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_NG",
+          "CO2e",
+          "2051"
+        ],
+        "control": 9.6883,
+        "candidate": 9.5719,
+        "delta": -0.1164000000000005
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_NG",
+          "CO2e",
+          "2052"
+        ],
+        "control": 10.2524,
+        "candidate": 10.1393,
+        "delta": -0.11309999999999931
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2046"
+        ],
+        "control": 255.2193,
+        "candidate": 255.1179,
+        "delta": -0.10140000000001237
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2034"
+        ],
+        "control": 199.7012,
+        "candidate": 199.6209,
+        "delta": -0.08029999999999404
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_LIQ",
+          "PM2_5",
+          "2050"
+        ],
+        "control": 0.3802,
+        "candidate": 0.4603,
+        "delta": 0.0801
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_LIQ",
+          "PM2_5",
+          "2045"
+        ],
+        "control": 1.1466,
+        "candidate": 1.2253,
+        "delta": 0.07869999999999999
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_LIQ",
+          "PM2_5",
+          "2048"
+        ],
+        "control": 1.03,
+        "candidate": 1.1087,
+        "delta": 0.07869999999999999
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_LIQ",
+          "PM2_5",
+          "2049"
+        ],
+        "control": 0.9824,
+        "candidate": 1.0609,
+        "delta": 0.0784999999999999
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2035"
+        ],
+        "control": 206.7696,
+        "candidate": 206.6939,
+        "delta": -0.07569999999998345
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2036"
+        ],
+        "control": 214.7874,
+        "candidate": 214.7159,
+        "delta": -0.07149999999998613
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_LIQ",
+          "PM2_5",
+          "2046"
+        ],
+        "control": 1.1048,
+        "candidate": 1.1668,
+        "delta": 0.062000000000000055
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_LIQ",
+          "PM2_5",
+          "2047"
+        ],
+        "control": 1.0903,
+        "candidate": 1.1523,
+        "delta": 0.062000000000000055
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_NG",
+          "CO2e",
+          "2050"
+        ],
+        "control": 9.0936,
+        "candidate": 9.1528,
+        "delta": 0.05919999999999881
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_LIQ",
+          "PM2_5",
+          "2052"
+        ],
+        "control": 0.086,
+        "candidate": 0.1414,
+        "delta": 0.055400000000000005
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_LIQ",
+          "PM2_5",
+          "2053"
+        ],
+        "control": 0.0847,
+        "candidate": 0.1358,
+        "delta": 0.051100000000000007
+      },
+      {
+        "key": [
+          "PHL_FSH_AQC_LIQ",
+          "PM2_5",
+          "2051"
+        ],
+        "control": 0.227,
+        "candidate": 0.2759,
+        "delta": 0.04889999999999997
+      }
+    ]
+  },
+  "historical_results_2020_2025_changes": {
+    "new_capacity": [
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2023"
+        ],
+        "control": 13.7781,
+        "candidate": 9.1854,
+        "delta": -4.592700000000001
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2025"
+        ],
+        "control": 0.0,
+        "candidate": 19.5508,
+        "delta": 19.5508
+      },
+      {
+        "key": [
+          "PHL_POW_PP_COAL",
+          "2025"
+        ],
+        "control": 1.1261,
+        "candidate": 1.1067,
+        "delta": -0.019400000000000084
+      },
+      {
+        "key": [
+          "PHL_POW_TD",
+          "2025"
+        ],
+        "control": 0.3809,
+        "candidate": 0.3572,
+        "delta": -0.0237
+      }
+    ],
+    "total_capacity": [
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2023"
+        ],
+        "control": 228.8896,
+        "candidate": 224.2969,
+        "delta": -4.592700000000008
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2024"
+        ],
+        "control": 228.8896,
+        "candidate": 224.2969,
+        "delta": -4.592700000000008
+      },
+      {
+        "key": [
+          "PHL_INDU_PLANT_OTH",
+          "2025"
+        ],
+        "control": 228.8896,
+        "candidate": 243.8477,
+        "delta": 14.958100000000002
+      },
+      {
+        "key": [
+          "PHL_POW_PP_COAL",
+          "2025"
+        ],
+        "control": 3.3427,
+        "candidate": 3.3234,
+        "delta": -0.019299999999999873
+      },
+      {
+        "key": [
+          "PHL_POW_TD",
+          "2025"
+        ],
+        "control": 13.5809,
+        "candidate": 13.5572,
+        "delta": -0.023699999999999832
+      }
+    ],
+    "activity": [
+      {
+        "key": [
+          "DEMAGRSURPHL",
+          "2020"
+        ],
+        "control": 41.1656,
+        "candidate": 40.6419,
+        "delta": -0.5236999999999981
+      },
+      {
+        "key": [
+          "DEMAGRSURPHL",
+          "2021"
+        ],
+        "control": 41.2283,
+        "candidate": 41.0587,
+        "delta": -0.16959999999999553
+      },
+      {
+        "key": [
+          "DEMAGRSURPHL",
+          "2022"
+        ],
+        "control": 41.4916,
+        "candidate": 41.6622,
+        "delta": 0.1706000000000003
+      },
+      {
+        "key": [
+          "DEMAGRSURPHL",
+          "2023"
+        ],
+        "control": 41.6393,
+        "candidate": 40.5737,
+        "delta": -1.0655999999999963
+      },
+      {
+        "key": [
+          "DEMAGRSURPHL",
+          "2024"
+        ],
+        "control": 40.5808,
+        "candidate": 40.7976,
+        "delta": 0.21679999999999922
+      },
+      {
+        "key": [
+          "DEMAGRSURPHL",
+          "2025"
+        ],
+        "control": 41.1675,
+        "candidate": 40.2901,
+        "delta": -0.8773999999999944
+      },
+      {
+        "key": [
+          "ENV_WATER",
+          "2020"
+        ],
+        "control": 0.0,
+        "candidate": 6.7057,
+        "delta": 6.7057
+      },
+      {
+        "key": [
+          "ENV_WATER",
+          "2024"
+        ],
+        "control": 0.0,
+        "candidate": 0.4983,
+        "delta": 0.4983
+      },
+      {
+        "key": [
+          "ENV_WATER",
+          "2025"
+        ],
+        "control": 0.0196,
+        "candidate": 9.0704,
+        "delta": 9.050799999999999
+      },
+      {
+        "key": [
+          "LNDAGRPHLC01",
+          "2021"
+        ],
+        "control": 9.1115,
+        "candidate": 9.1113,
+        "delta": -0.00019999999999953388
+      },
+      {
+        "key": [
+          "LNDAGRPHLC01",
+          "2022"
+        ],
+        "control": 9.1113,
+        "candidate": 9.1115,
+        "delta": 0.00019999999999953388
+      },
+      {
+        "key": [
+          "LNDAGRPHLC01",
+          "2025"
+        ],
+        "control": 9.1115,
+        "candidate": 9.1114,
+        "delta": -9.999999999976694e-05
+      },
+      {
+        "key": [
+          "LNDAGRPHLC02",
+          "2020"
+        ],
+        "control": 6.5278,
+        "candidate": 23.6817,
+        "delta": 17.1539
+      },
+      {
+        "key": [
+          "LNDAGRPHLC02",
+          "2021"
+        ],
+        "control": 3.3845,
+        "candidate": 23.6816,
+        "delta": 20.2971
+      },
+      {
+        "key": [
+          "LNDAGRPHLC02",
+          "2022"
+        ],
+        "control": 23.6817,
+        "candidate": 4.6253,
+        "delta": -19.0564
+      },
+      {
+        "key": [
+          "LNDAGRPHLC02",
+          "2023"
+        ],
+        "control": 23.681600000000003,
+        "candidate": 0.7627,
+        "delta": -22.918900000000004
+      },
+      {
+        "key": [
+          "LNDAGRPHLC02",
+          "2025"
+        ],
+        "control": 23.681699999999996,
+        "candidate": 1.7103,
+        "delta": -21.971399999999996
+      },
+      {
+        "key": [
+          "LNDAGRPHLC03",
+          "2020"
+        ],
+        "control": 103.2149,
+        "candidate": 59.850500000000004,
+        "delta": -43.364399999999996
+      },
+      {
+        "key": [
+          "LNDAGRPHLC03",
+          "2021"
+        ],
+        "control": 103.1494,
+        "candidate": 87.3772,
+        "delta": -15.772199999999998
+      },
+      {
+        "key": [
+          "LNDAGRPHLC03",
+          "2022"
+        ],
+        "control": 73.05319999999999,
+        "candidate": 103.2149,
+        "delta": 30.16170000000001
+      },
+      {
+        "key": [
+          "LNDAGRPHLC03",
+          "2023"
+        ],
+        "control": 92.1213,
+        "candidate": 103.2149,
+        "delta": 11.093599999999995
+      },
+      {
+        "key": [
+          "LNDAGRPHLC03",
+          "2024"
+        ],
+        "control": 94.7191,
+        "candidate": 102.8534,
+        "delta": 8.134299999999996
+      },
+      {
+        "key": [
+          "LNDAGRPHLC03",
+          "2025"
+        ],
+        "control": 87.48550000000002,
+        "candidate": 103.2149,
+        "delta": 15.729399999999984
+      },
+      {
+        "key": [
+          "LNDAGRPHLC04",
+          "2020"
+        ],
+        "control": 3.1277,
+        "candidate": 27.3871,
+        "delta": 24.2594
+      },
+      {
+        "key": [
+          "LNDAGRPHLC04",
+          "2021"
+        ],
+        "control": 27.3871,
+        "candidate": 4.2635,
+        "delta": -23.1236
+      },
+      {
+        "key": [
+          "LNDAGRPHLC04",
+          "2022"
+        ],
+        "control": 27.3871,
+        "candidate": 27.3872,
+        "delta": 9.999999999976694e-05
+      },
+      {
+        "key": [
+          "LNDAGRPHLC04",
+          "2023"
+        ],
+        "control": 27.3871,
+        "candidate": 27.3873,
+        "delta": 0.00019999999999953388
+      },
+      {
+        "key": [
+          "LNDAGRPHLC04",
+          "2024"
+        ],
+        "control": 27.3872,
+        "candidate": 4.7267,
+        "delta": -22.6605
+      },
+      {
+        "key": [
+          "LNDAGRPHLC04",
+          "2025"
+        ],
+        "control": 27.387099999999997,
+        "candidate": 27.387199999999996,
+        "delta": 9.999999999976694e-05
+      },
+      {
+        "key": [
+          "LNDAGRPHLC05",
+          "2022"
+        ],
+        "control": 27.1799,
+        "candidate": 27.1798,
+        "delta": -9.999999999976694e-05
+      },
+      {
+        "key": [
+          "LNDAGRPHLC05",
+          "2023"
+        ],
+        "control": 27.18,
+        "candidate": 27.179899999999996,
+        "delta": -0.00010000000000331966
+      },
+      {
+        "key": [
+          "LNDAGRPHLC05",
+          "2024"
+        ],
+        "control": 27.1799,
+        "candidate": 27.179799999999997,
+        "delta": -0.00010000000000331966
+      },
+      {
+        "key": [
+          "LNDAGRPHLC05",
+          "2025"
+        ],
+        "control": 27.179900000000004,
+        "candidate": 27.18,
+        "delta": 9.999999999621423e-05
+      },
+      {
+        "key": [
+          "LNDAGRPHLC06",
+          "2020"
+        ],
+        "control": 18.706899999999997,
+        "candidate": 18.706799999999998,
+        "delta": -9.999999999976694e-05
+      },
+      {
+        "key": [
+          "LNDAGRPHLC06",
+          "2021"
+        ],
+        "control": 18.706899999999997,
+        "candidate": 18.7068,
+        "delta": -9.999999999621423e-05
+      },
+      {
+        "key": [
+          "LNDAGRPHLC06",
+          "2023"
+        ],
+        "control": 18.7068,
+        "candidate": 18.706899999999997,
+        "delta": 9.999999999621423e-05
+      },
+      {
+        "key": [
+          "LNDAGRPHLC06",
+          "2024"
+        ],
+        "control": 18.7068,
+        "candidate": 18.7069,
+        "delta": 9.999999999976694e-05
+      },
+      {
+        "key": [
+          "LNDAGRPHLC06",
+          "2025"
+        ],
+        "control": 18.707,
+        "candidate": 18.7068,
+        "delta": -0.00019999999999953388
+      },
+      {
+        "key": [
+          "LNDAGRPHLC07",
+          "2021"
+        ],
+        "control": 0.3456,
+        "candidate": 18.3851,
+        "delta": 18.0395
+      },
+      {
+        "key": [
+          "LNDAGRPHLC07",
+          "2022"
+        ],
+        "control": 18.384900000000002,
+        "candidate": 9.6473,
+        "delta": -8.737600000000002
+      },
+      {
+        "key": [
+          "LNDAGRPHLC07",
+          "2023"
+        ],
+        "control": 3.7106999999999997,
+        "candidate": 13.433999999999997,
+        "delta": 9.723299999999998
+      },
+      {
+        "key": [
+          "LNDAGRPHLC07",
+          "2024"
+        ],
+        "control": 0.3456,
+        "candidate": 18.385,
+        "delta": 18.0394
+      },
+      {
+        "key": [
+          "LNDAGRPHLC07",
+          "2025"
+        ],
+        "control": 18.385,
+        "candidate": 17.249,
+        "delta": -1.1360000000000028
+      },
+      {
+        "key": [
+          "LNDAGRPHLC08",
+          "2020"
+        ],
+        "control": 8.426599999999999,
+        "candidate": 10.377899999999999,
+        "delta": 1.9512999999999998
+      },
+      {
+        "key": [
+          "LNDAGRPHLC08",
+          "2021"
+        ],
+        "control": 10.0749,
+        "candidate": 10.6342,
+        "delta": 0.5593000000000004
+      },
+      {
+        "key": [
+          "LNDAGRPHLC08",
+          "2022"
+        ],
+        "control": 6.494,
+        "candidate": 4.1264,
+        "delta": -2.3675999999999995
+      },
+      {
+        "key": [
+          "LNDAGRPHLC08",
+          "2023"
+        ],
+        "control": 6.7596,
+        "candidate": 8.861699999999999,
+        "delta": 2.102099999999999
+      },
+      {
+        "key": [
+          "LNDAGRPHLC08",
+          "2024"
+        ],
+        "control": 12.1863,
+        "candidate": 8.673499999999999,
+        "delta": -3.5128000000000004
+      },
+      {
+        "key": [
+          "LNDAGRPHLC08",
+          "2025"
+        ],
+        "control": 6.0402000000000005,
+        "candidate": 13.418199999999999,
+        "delta": 7.377999999999998
+      },
+      {
+        "key": [
+          "LNDGRSTOT",
+          "2022"
+        ],
+        "control": 72.4286,
+        "candidate": 68.1323,
+        "delta": -4.296300000000002
+      },
+      {
+        "key": [
+          "LNDGRSTOT",
+          "2023"
+        ],
+        "control": 63.3239,
+        "candidate": 68.6116,
+        "delta": 5.287699999999994
+      },
+      {
+        "key": [
+          "LNDOTHTOT",
+          "2022"
+        ],
+        "control": 3.2794,
+        "candidate": 7.5756,
+        "delta": 4.2962
+      },
+      {
+        "key": [
+          "LNDOTHTOT",
+          "2023"
+        ],
+        "control": 7.5756,
+        "candidate": 2.2879,
+        "delta": -5.287699999999999
+      },
+      {
+        "key": [
+          "MINPRCPHL",
+          "2020"
+        ],
+        "control": 466.7416,
+        "candidate": 482.3332,
+        "delta": 15.591599999999971
+      },
+      {
+        "key": [
+          "MINPRCPHL",
+          "2021"
+        ],
+        "control": 483.0938,
+        "candidate": 486.6975,
+        "delta": 3.6037000000000035
+      },
+      {
+        "key": [
+          "MINPRCPHL",
+          "2022"
+        ],
+        "control": 501.3702,
+        "candidate": 490.6846,
+        "delta": -10.685600000000022
+      },
+      {
+        "key": [
+          "MINPRCPHL",
+          "2023"
+        ],
+        "control": 510.1248,
+        "candidate": 507.0472,
+        "delta": -3.077600000000018
+      },
+      {
+        "key": [
+          "MINPRCPHL",
+          "2024"
+        ],
+        "control": 526.9797,
+        "candidate": 519.6799,
+        "delta": -7.299800000000005
+      },
+      {
+        "key": [
+          "MINPRCPHL",
+          "2025"
+        ],
+        "control": 535.9185,
+        "candidate": 536.5283,
+        "delta": 0.6097999999999502
+      },
+      {
+        "key": [
+          "PHL_AGR_HEAT_NG",
+          "2021"
+        ],
+        "control": 7.8216,
+        "candidate": 7.8309,
+        "delta": 0.009299999999999642
+      },
+      {
+        "key": [
+          "PHL_AGR_HEAT_NG",
+          "2022"
+        ],
+        "control": 8.0153,
+        "candidate": 8.0773,
+        "delta": 0.06199999999999939
+      },
+      {
+        "key": [
+          "PHL_AGR_HEAT_NG",
+          "2023"
+        ],
+        "control": 8.0295,
+        "candidate": 8.1859,
+        "delta": 0.15639999999999965
+      },
+      {
+        "key": [
+          "PHL_AGR_HEAT_NG",
+          "2024"
+        ],
+        "control": 8.1828,
+        "candidate": 8.4375,
+        "delta": 0.2546999999999997
+      },
+      {
+        "key": [
+          "PHL_AGR_HEAT_NG",
+          "2025"
+        ],
+        "control": 7.9687,
+        "candidate": 8.2264,
+        "delta": 0.2576999999999998
+      },
+      {
+        "key": [
+          "PHL_AGR_HEAT_OIL",
+          "2021"
+        ],
+        "control": 1.2448,
+        "candidate": 1.2355,
+        "delta": -0.009299999999999864
+      },
+      {
+        "key": [
+          "PHL_AGR_HEAT_OIL",
+          "2022"
+        ],
+        "control": 1.2507,
+        "candidate": 1.1887,
+        "delta": -0.06199999999999983
+      },
+      {
+        "key": [
+          "PHL_AGR_HEAT_OIL",
+          "2023"
+        ],
+        "control": 1.4361,
+        "candidate": 1.2797,
+        "delta": -0.15639999999999987
+      },
+      {
+        "key": [
+          "PHL_AGR_HEAT_OIL",
+          "2024"
+        ],
+        "control": 1.4824,
+        "candidate": 1.2277,
+        "delta": -0.2546999999999999
+      },
+      {
+        "key": [
+          "PHL_AGR_HEAT_OIL",
+          "2025"
+        ],
+        "control": 1.889,
+        "candidate": 1.6314,
+        "delta": -0.25760000000000005
+      },
+      {
+        "key": [
+          "PHL_DEM_PWR_SUR_WAT",
+          "2025"
+        ],
+        "control": 18.4652,
+        "candidate": 18.4588,
+        "delta": -0.006399999999999295
+      },
+      {
+        "key": [
+          "PHL_INDU_OTHLPH_ELE",
+          "2025"
+        ],
+        "control": 22.4881,
+        "candidate": 22.1747,
+        "delta": -0.3133999999999979
+      },
+      {
+        "key": [
+          "PHL_INDU_OTHLPH_OIL",
+          "2025"
+        ],
+        "control": 17.6163,
+        "candidate": 17.9298,
+        "delta": 0.3135000000000012
+      },
+      {
+        "key": [
+          "PHL_POW_CHP_COAL_OLD",
+          "2025"
+        ],
+        "control": 261.3157,
+        "candidate": 261.7977,
+        "delta": 0.48200000000002774
+      },
+      {
+        "key": [
+          "PHL_POW_PP_COAL",
+          "2025"
+        ],
+        "control": 105.4155,
+        "candidate": 104.8057,
+        "delta": -0.6097999999999928
+      },
+      {
+        "key": [
+          "PHL_POW_TD",
+          "2025"
+        ],
+        "control": 363.1488,
+        "candidate": 363.0442,
+        "delta": -0.10460000000000491
+      },
+      {
+        "key": [
+          "PHL_POW_TD_INDU",
+          "2025"
+        ],
+        "control": 109.0315,
+        "candidate": 108.927,
+        "delta": -0.10449999999998738
+      },
+      {
+        "key": [
+          "PHL_PRO_EXTR_COAL",
+          "2025"
+        ],
+        "control": 1478.3247,
+        "candidate": 1478.4453,
+        "delta": 0.120600000000195
+      },
+      {
+        "key": [
+          "PHL_PRO_IMP_OIL",
+          "2025"
+        ],
+        "control": 187.0577,
+        "candidate": 187.3838,
+        "delta": 0.3260999999999967
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "2025"
+        ],
+        "control": 1472.4928,
+        "candidate": 1472.6129,
+        "delta": 0.12010000000009313
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_OIL",
+          "2025"
+        ],
+        "control": 190.2836,
+        "candidate": 190.6154,
+        "delta": 0.331799999999987
+      }
+    ],
+    "emissions": [
+      {
+        "key": [
+          "PHL_POW_CHP_COAL_OLD",
+          "PM2_5",
+          "2025"
+        ],
+        "control": 32.8144,
+        "candidate": 32.875,
+        "delta": 0.060600000000000875
+      },
+      {
+        "key": [
+          "PHL_POW_PP_COAL",
+          "PM2_5",
+          "2025"
+        ],
+        "control": 4.8162,
+        "candidate": 4.7884,
+        "delta": -0.027800000000000047
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_COAL",
+          "CO2e",
+          "2025"
+        ],
+        "control": 140.3286,
+        "candidate": 140.34,
+        "delta": 0.011400000000008959
+      },
+      {
+        "key": [
+          "PHL_PRO_PROC_OIL",
+          "CO2e",
+          "2025"
+        ],
+        "control": 13.9478,
+        "candidate": 13.9721,
+        "delta": 0.024299999999998434
+      }
+    ]
+  },
+  "notes": [
+    "Differences below 1e-7 are treated as solver/export numerical noise.",
+    "Non-target result changes are endogenous system responses, not source-parameter changes.",
+    "A binding zero ceiling is reported when candidate NewCapacity is zero; its dual distinguishes valuable restrictions from inactive zero rows.",
+    "Economically binding positive ceilings require a positive ceiling and a dual magnitude above 1e-7."
+  ]
+}

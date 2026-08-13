@@ -18,12 +18,19 @@ clear chronology correction:
   annual limits. LNG import activity is zero through 2022 and available from
   2023. No technology or commodity was added.
 
+V18 now also applies policy-neutral annual generation deployment envelopes
+from 2026. They constrain only `TotalAnnualMaxCapacityInvestment`: capacity
+choice and dispatch remain endogenous, all source cells through 2025 are
+preserved, and retirement plus permitted-vintage replacement allowances prevent
+the ceiling from forcing stock retirement. No minimum, share, activity bound,
+aggregate construction cap, or PEP capacity total is introduced.
+
 ## Delivered model
 
 - Portable editable case: `muio/Philippines_v18_v18.0.0_MUIO.zip`
 - Archive checksum: `muio/SHA256SUMS`
 - Case identity: `Philippines_v18`
-- Validated run: `ENERGY_INPUTS_V18_BASE`
+- Validated run: `DEPLOYMENT_ENVELOPE_V18_BASE`
 - Horizon: 2020-2053
 
 Extract `Philippines_v18` under `MUIOGO/WebAPP/DataStorage/` and regenerate the
@@ -44,14 +51,20 @@ The normalized input record is
 diff is in `energy_inputs_v18_build_manifest.json`; and solved validation is in
 `energy_inputs_v18_validation.json`.
 
+The deployment-envelope record is
+`data_sources/snapshots/deployment_envelopes_v18_2026-08-13.json`; the exact
+source diff is in `deployment_envelope_build_manifest.json`; and static and
+solved validation are in `deployment_envelope_static_validation.json` and
+`deployment_envelope_validation.json`.
+
 ## Validation
 
-The v18 BASE run solved optimally at objective 369743557.68076980. This is
-3,211.91015, or 0.0008687%, above the v17 objective. Source changes are limited
-to `genData.json`, `RT.json`, `RYT.json`, `RYTM.json`, and `RYTTs.json`.
+The deployment-envelope BASE run solved optimally at objective
+369743573.32256168, 15.64275390 or 0.0000042307% above the unchanged v18
+control. The new source change is limited to `RYT.json` `TAMaxCI.SC_0`.
 Technology IDs, commodity IDs, user constraints, and all other source JSON are
 unchanged. The solved 2020 land partition exactly reproduces v17 and the annual
 national land account remains closed at 295.8131 thousand km2.
 
-See `documentation/MODEL_FIXES_ENERGY_INPUTS_V18_2026-08-12.md` and
+See `documentation/MODEL_FIXES_DEPLOYMENT_ENVELOPES_2026-08-13.md` and
 `documentation/REPRODUCE.md`.

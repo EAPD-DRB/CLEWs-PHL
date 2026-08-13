@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "case": "/Users/sato/Documents/GitHub/CLEWs-PHL/case/Philippines_v18",
+  "archive": "/Users/sato/Documents/GitHub/CLEWs-PHL/Philippines_v18_CLEWs_build/muio/Philippines_v18_v18.0.0_MUIO.zip",
+  "archive_sha256": "ec128a6e9aacb5e2494be88393a4ccff48c1b204e7be5de2f1ef9a51abe0fb9c",
+  "archive_size_bytes": 9938566,
+  "archive_member_count": 79,
+  "result_files_included": false
+}

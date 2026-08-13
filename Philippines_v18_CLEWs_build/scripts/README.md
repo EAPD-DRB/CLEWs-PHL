@@ -4,7 +4,8 @@ The v15 model-construction scripts are retained unchanged as provenance. The
 v16-specific canonical validator checks the identity-only successor package.
 The v17 land scripts build and validate the current national land account.
 The v18 scripts apply and validate the current energy-input update on that
-complete v17 source.
+complete v17 source, followed by the policy-neutral annual generation
+deployment envelopes.
 
 These are the exact source scripts retained by the schema ledger:
 
@@ -71,6 +72,15 @@ These are the exact source scripts retained by the schema ledger:
   workbook.
 - `validate_philippines_v18_delivery.py` verifies the current result-free
   archive, checksum, live source identity, and validation reports.
+- `apply_philippines_v18_deployment_envelopes.py` applies the exact
+  `TAMaxCI.SC_0` formula, records every annual calculation and rejects an
+  unexpected source fingerprint.
+- `validate_philippines_v18_deployment_envelopes.py` proves the exact source
+  allowlist, historical preservation, scenario inheritance and absence of new
+  forcing constraints.
+- `compare_philippines_v18_deployment_envelopes.py` compares the solved control
+  and candidate, including matrix size, objective, affected results and NCC1
+  duals.
 
 The water generator and full before/after model validator retain their original
 MUIOGO-relative paths and need the historical baseline to repeat that old A/B

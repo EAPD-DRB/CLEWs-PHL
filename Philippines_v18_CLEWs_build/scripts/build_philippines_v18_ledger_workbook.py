@@ -31,7 +31,7 @@ def main() -> None:
     index = workbook.create_sheet("INDEX")
     index.append(["Philippines v18 canonical cumulative schema ledger"])
     index.append(["Authority", "The six CSV files beside this workbook are authoritative; this workbook is a review copy."])
-    index.append(["Scope", "Inherited base + v13 calibration + v14 stock turnover + v15 national water + complete v16 repairs + v17 national land-cover accounting + v18 energy inputs"])
+    index.append(["Scope", "Inherited base + v13 calibration + v14 stock turnover + v15 national water + complete v16 repairs + v17 national land-cover accounting + v18 energy inputs and deployment envelopes"])
     index.append(["Self-containment", "No earlier installed case or earlier-version ledger is required."])
     index.append([])
     index.append(["Sheet", "Rows"])

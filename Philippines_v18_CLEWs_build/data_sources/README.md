@@ -20,6 +20,10 @@ package rather than delegated to an earlier version.
   calculation.
 - Use `calculation_notes/energy_inputs_v18_2026-08-12.md` for the geothermal,
   wind, coal, SMR, hydro, and domestic/imported-gas changes and limitations.
+- Use `snapshots/deployment_envelopes_v18_2026-08-13.json` for every annual
+  deployment-ceiling component and
+  `../documentation/MODEL_FIXES_DEPLOYMENT_ENVELOPES_2026-08-13.md` for the
+  equation map, evidence classification, solve comparison, and limitations.
 - Run `../scripts/provenance.py` and
   `../scripts/validate_philippines_v18_delivery.py` to validate the schema,
   evidence hashes, input coverage, archive, and current source identity.

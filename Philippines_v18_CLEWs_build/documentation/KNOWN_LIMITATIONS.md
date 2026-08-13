@@ -1,4 +1,4 @@
-# Philippines v17 known limitations
+# Philippines v18 known limitations
 
 The authoritative itemized register is `../data_sources/GAPS.csv`. The most
 material limits are:
@@ -25,5 +25,10 @@ material limits are:
   restoration/conversion costs or lags, or completed benefit sensitivity
   cases; and
 - only the SSP2-4.5 ensemble median is installed; p10/p90 are retained evidence.
+- the 2030–2053 technology deployment bands are judgmental physical envelopes,
+  not forecasts, and need later pipeline, interconnection, permitting, finance,
+  construction-workforce and transmission evidence; and
+- geothermal greenfield expansion and existing-field repowering share the
+  single `PHL_POW_GEO_OLD` cost, performance and lifetime representation.
 
 These are disclosed limitations, not missing links to an earlier model ledger.

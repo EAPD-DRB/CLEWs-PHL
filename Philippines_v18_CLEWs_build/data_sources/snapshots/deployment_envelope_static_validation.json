@@ -1,0 +1,83 @@
+{
+  "schema": "philippines-v18-deployment-envelope-static-validation-v1",
+  "control": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-deployment-envelope-20260813/control",
+  "candidate": "/Users/sato/Documents/GitHub/CLEWs-PHL/case/Philippines_v18",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "source_file_allowlist",
+      "status": "pass",
+      "detail": [
+        "RYT.json"
+      ]
+    },
+    {
+      "name": "target_cells_2020_2025_unchanged",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "tamaxci_cell_allowlist",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "only_tamaxci_parameter_changed",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "scenario_overrides_unchanged",
+      "status": "pass",
+      "detail": [
+        "SC_3hgjb",
+        "SC_huc7i",
+        "SC_w03qj"
+      ]
+    },
+    {
+      "name": "annual_formula_and_nonnegative",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "annual_calculation_coverage",
+      "status": "pass",
+      "detail": {
+        "expected_cells": 476,
+        "missing": []
+      }
+    },
+    {
+      "name": "annual_model_map_coverage",
+      "status": "pass",
+      "detail": {
+        "expected_cells": 476,
+        "missing": []
+      }
+    },
+    {
+      "name": "active_ncc1_equation",
+      "status": "pass",
+      "detail": "NCC1 upper bound on NewCapacity"
+    },
+    {
+      "name": "no_minimum_share_or_activity_change",
+      "status": "pass",
+      "detail": "TAMinCI, TAMinC, TAL and TAU unchanged"
+    },
+    {
+      "name": "technology_role_coverage",
+      "status": "pass",
+      "detail": {
+        "classified": 17,
+        "targeted": 17
+      }
+    },
+    {
+      "name": "full_horizon_replacement_allowance",
+      "status": "pass",
+      "detail": []
+    }
+  ]
+}

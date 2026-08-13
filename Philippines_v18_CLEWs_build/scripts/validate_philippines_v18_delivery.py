@@ -16,6 +16,8 @@ CASE = REPO / "case" / "Philippines_v18"
 ARCHIVE = PACKAGE / "muio" / "Philippines_v18_v18.0.0_MUIO.zip"
 ARCHIVE_MANIFEST = PACKAGE / "data_sources" / "V18_MODEL_ARCHIVE_MANIFEST.csv"
 ENERGY_VALIDATION = PACKAGE / "data_sources" / "snapshots" / "energy_inputs_v18_validation.json"
+DEPLOYMENT_STATIC = PACKAGE / "data_sources" / "snapshots" / "deployment_envelope_static_validation.json"
+DEPLOYMENT_VALIDATION = PACKAGE / "data_sources" / "snapshots" / "deployment_envelope_validation.json"
 PROVENANCE_VALIDATION = PACKAGE / "diagnostics" / "provenance_validation_v18.json"
 OUTPUT = PACKAGE / "diagnostics" / "delivery_validation_v18.json"
 
@@ -49,6 +51,8 @@ def main() -> None:
         PACKAGE / "data_sources" / "PHILIPPINES_V18_CANONICAL_SCHEMA_LEDGER.xlsx",
         ARCHIVE,
         ENERGY_VALIDATION,
+        DEPLOYMENT_STATIC,
+        DEPLOYMENT_VALIDATION,
         PROVENANCE_VALIDATION,
     ]
     missing = [str(path.relative_to(PACKAGE)) for path in required if not path.is_file()]
@@ -58,6 +62,14 @@ def main() -> None:
     check("live_case_identity", gen["osy-casename"] == "Philippines_v18", gen["osy-casename"])
     energy_validation = read_json(ENERGY_VALIDATION)
     check("energy_input_validation", energy_validation["status"] == "pass", energy_validation["status"])
+    deployment_static = read_json(DEPLOYMENT_STATIC)
+    check("deployment_static_validation", deployment_static["status"] == "pass", deployment_static["status"])
+    deployment_validation = read_json(DEPLOYMENT_VALIDATION)
+    check("deployment_solve_validation", deployment_validation["status"] == "pass", {
+        "status": deployment_validation["status"],
+        "objective": deployment_validation["solver"]["candidate_objective"],
+        "matrix": deployment_validation["matrix"],
+    })
     provenance = read_json(PROVENANCE_VALIDATION)
     ledger = provenance.get("ledger", provenance)
     check("provenance_validation", provenance["status"] == "pass", {

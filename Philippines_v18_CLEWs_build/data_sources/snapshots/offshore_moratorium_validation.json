@@ -1,0 +1,32 @@
+{
+ "date": "2026-08-14",
+ "case": "Philippines_v18 (v18.0.1 archive c8b57aca)",
+ "solver": "CBC 2.10.13 via glpsol-generated LP (standard chain)",
+ "runs": {
+  "Base_as_shipped": {
+   "objective": 369743573.76855534,
+   "status": "Optimal"
+  },
+  "Base_with_fixes": {
+   "objective": 369743573.76859015,
+   "status": "Optimal"
+  },
+  "Policy_as_shipped": {
+   "objective": 369766929.9070535,
+   "status": "Optimal",
+   "new_coal_2028_2030_GW": 6.5,
+   "offshore_max_PJ": 0.0
+  },
+  "Policy_with_fixes": {
+   "objective": 369768776.18784136,
+   "status": "Optimal",
+   "new_coal_2028_2030_GW": 0.0,
+   "offshore_max_PJ": 485.6
+  }
+ },
+ "patch_report": {
+  "offshore_cap_cells": 33,
+  "offshore_cf": "mean 0.2929 -> 0.45 (x1.5363, 120 rows, shape preserved)",
+  "moratorium": "2028..2053 zero in COAL_PHASEOUT layer; 2020..2027 inherit base envelope"
+ }
+}

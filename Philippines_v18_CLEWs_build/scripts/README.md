@@ -81,6 +81,20 @@ These are the exact source scripts retained by the schema ledger:
 - `compare_philippines_v18_deployment_envelopes.py` compares the solved control
   and candidate, including matrix size, objective, affected results and NCC1
   duals.
+- `apply_philippines_v18_power_investment_cleanup.py` removes the 20
+  post-2020 observed-addition pins, closes legacy stock-only entry and applies
+  the approved coal envelope from an asserted source fingerprint.
+- `validate_philippines_v18_power_investment_cleanup.py` checks the exact
+  62-cell source allowlist, generated scenario values, optimum, benchmark-only
+  additions, fossil flows and qualified baseline comparison.
+- `run_philippines_v18_power_investment_cleanup.py` runs the single budgeted
+  disposable CBC optimization and retains its log and report.
+- `document_philippines_v18_power_investment_cleanup.py` writes the complete
+  six-table schema-ledger record, including one calculation and model-map row
+  for every changed cell.
+- `validate_philippines_v18_power_investment_ledger.py` verifies the exact
+  cell-to-calculation-to-map correspondence, cross-references, retained hashes,
+  disclosed gaps, narrative and regenerated review workbook.
 
 The water generator and full before/after model validator retain their original
 MUIOGO-relative paths and need the historical baseline to repeat that old A/B
@@ -102,3 +116,6 @@ under `../diagnostics/` and `../data_sources/snapshots/`.
 - `validate_philippines_v18_land_water_delivery.py` checks the final archive
   CRC, checksum, result exclusion, validation records, provenance, and
   live/archive source identity.
+
+- `document_philippines_v18_fossil_border_prices.py` records the official fossil border-price sources, four assumptions, 20 changed-cell calculations and maps, two validation maps, gaps, change lineage and retained snapshots in the six-table canonical ledger.
+- `validate_philippines_v18_fossil_border_price_ledger.py` verifies exact cell-to-calculation-to-map coverage, retained hashes, cross-references, narrative and review workbook.

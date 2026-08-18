@@ -34,3 +34,5 @@ The historical water-only ledger is preserved under
 The formatted current review copy is
 `PHILIPPINES_V18_CANONICAL_SCHEMA_LEDGER.xlsx`; the six CSV files remain the
 source of truth.
+
+- Use `snapshots/fossil_border_prices_inputs_2026-08-18.json` and `snapshots/fossil_border_prices_validation_2026-08-18.json` for the exact 2020-2024 border-price inputs, calculations, source URLs, solved comparison and promotion identity.

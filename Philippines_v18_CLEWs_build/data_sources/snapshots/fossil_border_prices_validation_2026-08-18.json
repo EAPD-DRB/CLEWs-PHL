@@ -1,0 +1,154 @@
+{
+  "schema": "philippines-v18-fossil-border-prices-validation-v1",
+  "date": "2026-08-18",
+  "status": "pass_with_disclosed_aggregation_and_solution_sensitivity_gaps",
+  "baseline": {
+    "case": ".Philippines_v18-power-investment-20260817",
+    "run": "TOMORROWLAND",
+    "source_matches_accepted_prechange_live": true,
+    "status": "optimal",
+    "objective": 369758319.2749507,
+    "cbc_wall_seconds": 371.19,
+    "iterations": 318220,
+    "full_matrix": {"rows": 808384, "columns": 900022, "matrix_nonzeros": 12892647},
+    "presolved_matrix": {"rows": 227048, "columns": 420808, "matrix_nonzeros": 6668397}
+  },
+  "candidate": {
+    "case": ".Philippines_v18-fossil-border-price-candidate",
+    "run": "TOMORROWLAND",
+    "status": "optimal",
+    "objective": 369762721.4037087,
+    "objective_change": 4402.128758013248,
+    "objective_change_percent": 0.001190542180807525,
+    "cbc_wall_seconds": 288.7,
+    "cbc_wall_change_percent": -22.22312023492012,
+    "iterations": 289475,
+    "full_matrix": {
+      "rows": 808384,
+      "columns": 900022,
+      "matrix_nonzeros": 12892647,
+      "interpretation": "unchanged because the source edit changes objective coefficients only"
+    },
+    "presolved_matrix": {"rows": 227048, "columns": 420808, "matrix_nonzeros": 6668397},
+    "hashes": {
+      "source_RYTM_json": "7d66727dddf71e631b03f3843b529e74b840dbb4d40dcf55ad052dd8f4a4da02",
+      "data_txt": "6e5d537f9f478a848dee1563dfd30d88c70b722bb75edfb5852b60bb90d587cf",
+      "data_processed_txt": "07e9fdc34600a1e0928811aca2b95cfb33717a5bfa1e04eb9673ec4502721149",
+      "lp_lp": "292ef7a146c0d513630cffec7dc10913f0183ca2d70433862e99f8a923a91503",
+      "results_txt": "1be74cd4407e41fc43f034dcaecd7a9c06a275c4e96560a994e217802134f849"
+    }
+  },
+  "optimizer_runs": [
+    {
+      "sequence": 1,
+      "purpose": "single disposable candidate optimization required to validate the historical border-price correction",
+      "status": "optimal",
+      "objective": 369762721.4037087,
+      "cbc_wall_seconds": 288.7
+    }
+  ],
+  "generation_and_deterministic_checks": {
+    "source_file_allowlist_RYTM_only": "pass",
+    "full_precision_2020_2024_price_cells": "pass",
+    "future_2025_2053_prices_unchanged": "pass",
+    "unrelated_VC_rows_unchanged": "pass",
+    "nonbase_scenarios_inherit_SC_0": "pass",
+    "physical_constraints_and_mappings_unchanged": "pass",
+    "positive_import_minus_export_spread_each_historical_year": "pass",
+    "application_generation": "pass",
+    "application_preprocessing": "pass",
+    "generated_price_values_and_MODEperTECHNOLOGY": "pass",
+    "glpsol_check_and_LP_export": "pass"
+  },
+  "fossil_outcome_ledger_pj": {
+    "coal": {
+      "baseline_total_extraction": 9244.9475,
+      "candidate_total_extraction": 9244.9475,
+      "baseline_total_domestic_bridge": 8537.7475,
+      "candidate_total_domestic_bridge": 9244.9475,
+      "baseline_total_exports": 707.2,
+      "candidate_total_exports": 0.0,
+      "baseline_total_imports": 43901.0844,
+      "candidate_total_imports": 42296.4,
+      "baseline_exports_by_year": {"2022": 353.6, "2023": 353.6},
+      "candidate_exports_by_year": {},
+      "candidate_maximum_annual_branch_balance_error": 0.0,
+      "reserve_cap_activity": 9244.9475,
+      "reserve_cap_dual": -0.65257781
+    },
+    "oil": {
+      "baseline_total_extraction": 22.08343449,
+      "candidate_total_extraction": 17.938402,
+      "baseline_total_exports": 3.35747599,
+      "candidate_total_exports": 0.0,
+      "baseline_total_imports": 2363.6713,
+      "candidate_total_imports": 2370.793,
+      "baseline_exports_by_year": {"2022": 3.35747599},
+      "candidate_exports_by_year": {},
+      "candidate_2020_extraction": 0.0,
+      "candidate_2021_2027_extraction": 17.938402,
+      "candidate_maximum_annual_branch_balance_error": 0.0,
+      "reserve_cap_activity": 17.938402,
+      "reserve_cap_dual": 0.0
+    }
+  },
+  "constraint_review": {
+    "coal_AAC2_activity_2020_2024": [353.6, 353.6, 353.6, 353.6, 353.6],
+    "coal_AAC2_dual_2020_2024": [-0.69172072, -2.1983485, -6.0346108, -2.6761118, -1.4923938],
+    "oil_AAC2_activity_2020_2024": [0.0, 3.7305289, 3.357476, 3.0217284, 2.7195556],
+    "oil_AAC2_dual_2020_2024": [0.0, -3.8093797, -7.2206623, -4.7920414, -5.0607459],
+    "interpretation": "The continuing physical extraction envelopes remain active. Prices, rather than trade-volume bounds, route extracted fuel between domestic use and the optional export sink."
+  },
+  "system_results": {
+    "changed_annual_activity_cells": 3007,
+    "changed_annual_activity_cells_outside_direct_fossil_supply": 2944,
+    "largest_model_period_activity_changes_pj": {
+      "PHL_POW_CHP_COAL_OLD": -271.567,
+      "PHL_POW_GEO_OLD": 181.4572,
+      "PHL_PRO_PROC_NG": 64.0949,
+      "PHL_POW_PP_WON": 56.603
+    },
+    "model_period_emission_change": {"CO2e": -84.7983, "PM2_5": -34.9666},
+    "changed_NewCapacity_cells": 246,
+    "changed_TotalCapacityAnnual_cells": 470,
+    "largest_capacity_sensitivity": "PHL_TRA_23WHEEL_ELE new-capacity vintages shift by at most 64.3629 capacity units; solar PV moves 7.6926 GW from 2025 into 2022",
+    "interpretation": "The corrected historical objective coefficients alter dispatch, intertemporal resource use and the selected solution among many weakly distinguished capacity schedules. No capacity source parameter was changed. These system-wide differences are disclosed and are not treated as historical calibration targets."
+  },
+  "benchmark_assessment": {
+    "observed_activity_used_as_constraint": false,
+    "coal": "The erroneous full-envelope export-and-replacement behavior is removed: the candidate uses domestic coal domestically in both 2022 and 2023. Actual simultaneous coal imports and exports remain unrepresented because the case has one homogeneous coal commodity and no grade or plant-compatibility distinction.",
+    "oil": "The candidate uses Galoc extraction domestically in 2022 and chooses no crude exports. It also leaves the 2020 oil extraction envelope unused because domestic extraction is then uneconomic. Actual Galoc exports cannot coexist economically with higher-cost imported crude in the aggregated one-crude-pool topology.",
+    "interpretation": "The price correction fixes the artificial arbitrage without forcing trade outcomes. Zero modeled exports and zero 2020 oil extraction are disclosed benchmark gaps requiring grade/location/refinery differentiation if future fidelity is needed."
+  },
+  "promotion_verification": {
+    "live_source_RYTM_sha256": "7d66727dddf71e631b03f3843b529e74b840dbb4d40dcf55ad052dd8f4a4da02",
+    "live_source_byte_identical_to_solved_candidate": true,
+    "live_data_txt_sha256": "6e5d537f9f478a848dee1563dfd30d88c70b722bb75edfb5852b60bb90d587cf",
+    "live_data_txt_byte_identical_to_solved_candidate": true,
+    "live_data_processed_txt_sha256": "0a9f63fd8a2e830efc9e41f3e114ae3c8f72d2d8b10178837b292bd353870ee8",
+    "live_data_processed_byte_identical_to_candidate": false,
+    "preprocess_difference_assessment": "pass: exactly 92 derived set declarations differ only in member order; every set name and member multiset is identical and every non-set line is byte-identical",
+    "live_glpsol_check": "pass",
+    "live_matrix": {"rows": 808384, "columns": 900022, "matrix_nonzeros": 12892647, "objective_nonzeros": 427456},
+    "post_promotion_optimizer_runs": 0,
+    "interpretation": "Python set iteration changes serialization order but not mathematical content. The authoritative data.txt is byte-identical and the live GLPK check reproduces the solved candidate matrix dimensions, so no second CBC optimization is required."
+  },
+  "canonical_schema_ledger": {
+    "status": "pass",
+    "authoritative_tables": ["SOURCES.csv", "CALCULATIONS.csv", "ASSUMPTIONS.csv", "MODEL_MAP.csv", "GAPS.csv", "CHANGES.csv"],
+    "sources_added": 6,
+    "assumptions_added": 4,
+    "changed_cell_calculations_verified": 20,
+    "changed_cell_model_maps_verified": 20,
+    "summary_model_maps_verified": 2,
+    "gaps_added_or_updated": 3,
+    "prior_trade_diagnostic_lineage_verified": true,
+    "review_workbook_regenerated": true,
+    "validation_record": "Philippines_v18_CLEWs_build/diagnostics/fossil_border_price_schema_ledger_validation.json"
+  },
+  "incomplete_or_not_run": [
+    "No second optimizer run was performed; the solve-economy rule permits the solved disposable candidate to validate the live case when source and generated input are byte-identical after promotion.",
+    "No coal-grade, crude-grade, port, refinery-compatibility or transport-cost disaggregation was added in this intentionally minimal fix.",
+    "The capacity-schedule sensitivity was not pinned or otherwise forced; doing so would violate the non-forcing calibration rule."
+  ]
+}

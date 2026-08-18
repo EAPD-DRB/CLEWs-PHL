@@ -1,0 +1,39 @@
+{
+  "schema": "philippines-v18-power-investment-cleanup-promotion-v1",
+  "status": "pass",
+  "date": "2026-08-17",
+  "live_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v18",
+  "solved_candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v18-power-investment-20260817",
+  "source_identity": {
+    "file": "RYT.json",
+    "candidate_sha256": "333f37a5ac526530af7ea797b119ac7c09ba69be99accd5318b829f68b188792",
+    "live_sha256": "333f37a5ac526530af7ea797b119ac7c09ba69be99accd5318b829f68b188792",
+    "byte_identical": true
+  },
+  "generated_input_identity": {
+    "file": "res/TOMORROWLAND/data.txt",
+    "candidate_sha256": "3b5f6e9069b438e1eba1e456627a92df0dbc116b513589a5efea81fe5f78caf8",
+    "live_sha256": "3b5f6e9069b438e1eba1e456627a92df0dbc116b513589a5efea81fe5f78caf8",
+    "byte_identical": true
+  },
+  "preprocessed_input": {
+    "candidate_sha256": "89b8d1baea3248b184279a8a21e85ae4fc5be78643ac8d9accc57b0ca64e56a2",
+    "live_sha256": "556bcd6c2d4668c38fa485c23f558fa066af67e727bd4d8b3e61598a0010db1f",
+    "byte_identical": false,
+    "difference_class": "order-only differences in derived set members emitted from Python sets"
+  },
+  "glpk_check": {
+    "candidate_status": "pass",
+    "live_status": "pass",
+    "dimensions_identical": true,
+    "rows": 808384,
+    "columns": 900022,
+    "matrix_nonzeros": 12892647,
+    "objective_nonzeros": 427456
+  },
+  "optimizer_runs": {
+    "candidate": 1,
+    "live": 0,
+    "live_solve_omitted_reason": "Promoted RYT.json and generated data.txt are byte-identical to the optimal solved candidate; live GLPK regeneration reproduces the matrix dimensions."
+  }
+}

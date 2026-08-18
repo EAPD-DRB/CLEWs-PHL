@@ -30,5 +30,15 @@ material limits are:
   construction-workforce and transmission evidence; and
 - geothermal greenfield expansion and existing-field repowering share the
   single `PHL_POW_GEO_OLD` cost, performance and lifetime representation.
+- the DOE end-2020 committed-project aggregate has not been mapped at project
+  level to surviving, irreversible model vintages, so no committed-capacity
+  minimum is applied; and
+- the current fossil-trade economics export the full domestic coal envelope in
+  2022 and replace it with imports because export revenue exceeds import cost;
+  coal grade, calorific value, location, plant compatibility, freight and
+  terminal constraints require a separate non-forcing repair.
 
 These are disclosed limitations, not missing links to an earlier model ledger.
+
+- corrected fossil border prices remove the artificial coal export-and-reimport incentive, but the single homogeneous coal and crude pools cannot represent grade-, port-, plant- or refinery-specific simultaneous imports and exports; zero modeled exports and zero 2020 oil extraction remain disclosed benchmark gaps; and
+- the inherited case still lacks a complete model-wide real-currency-year and deflator ledger, so the official nominal annual unit values are not presented as a full cost-base rebasing.

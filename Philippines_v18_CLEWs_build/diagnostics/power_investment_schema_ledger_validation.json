@@ -1,0 +1,16 @@
+{
+  "schema": "philippines-v18-power-investment-ledger-validation-v1",
+  "status": "pass",
+  "cell_changes_in_manifest": 62,
+  "cell_calculations_verified": 62,
+  "cell_model_maps_verified": 62,
+  "summary_model_maps_verified": 5,
+  "sources_verified": 7,
+  "retained_evidence_hashes_verified": 4,
+  "assumptions_verified": 6,
+  "gaps_verified": 3,
+  "change_row_exact_map_set": true,
+  "canonical_workbook_present": true,
+  "narrative_present": true,
+  "generic_provenance_validator_note": "New rows pass focused schema and cross-reference checks. The cumulative generic validator still reports three pre-existing archive-manifest digest mismatches unrelated to this change."
+}

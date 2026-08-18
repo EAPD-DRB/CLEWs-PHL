@@ -47,14 +47,14 @@
       "name": "archive_hash",
       "status": "pass",
       "detail": {
-        "actual": "c8b57aca930af20ee04d79d9017b456de38ed8a47c21c313d0303964651c764a",
-        "expected": "c8b57aca930af20ee04d79d9017b456de38ed8a47c21c313d0303964651c764a"
+        "actual": "c3f4ee25d2e8c3315ced1be4bf819673859be45079536abb2cfbc40a65d1dc55",
+        "expected": "c3f4ee25d2e8c3315ced1be4bf819673859be45079536abb2cfbc40a65d1dc55"
       }
     },
     {
       "name": "archive_size",
       "status": "pass",
-      "detail": 15513971
+      "detail": 16056712
     },
     {
       "name": "archive_crc",

@@ -1,0 +1,30 @@
+{
+  "schema": "muiogo.parameter_change_manifest.v1",
+  "date": "2026-08-19",
+  "case": "Philippines_v18 / PHL v18.0.1",
+  "parameter": "TotalAnnualMaxCapacityInvestment (TAMaxCI)",
+  "scenario": "SC_0",
+  "technology": {
+    "id": "TEC_1k064",
+    "name": "PHL_POW_PP_SPV"
+  },
+  "model_equation": "NCC1: NewCapacity[r,t,y] <= TotalAnnualMaxCapacityInvestment[r,t,y]",
+  "rationale": "Extend the existing 4 GW/year solar construction ceiling for 2026-2029 across the full 2020-2029 decade for temporal consistency. This is a judgmental, non-target physical envelope and is not an observed-capacity calibration.",
+  "changes": [
+    {"year": 2020, "before_gw_per_year": 999999, "after_gw_per_year": 4},
+    {"year": 2021, "before_gw_per_year": 999999, "after_gw_per_year": 4},
+    {"year": 2022, "before_gw_per_year": 999999, "after_gw_per_year": 4},
+    {"year": 2023, "before_gw_per_year": 999999, "after_gw_per_year": 4},
+    {"year": 2024, "before_gw_per_year": 999999, "after_gw_per_year": 4},
+    {"year": 2025, "before_gw_per_year": 999999, "after_gw_per_year": 4}
+  ],
+  "unchanged": [
+    "TAMaxCI.SC_0 for 2026-2053",
+    "TAMinCI",
+    "ResidualCapacity",
+    "TotalAnnualMaxCapacity",
+    "scenario overlays",
+    "all other technologies"
+  ],
+  "validation": "Static source and ledger checks only. Application generation, preprocessing, LP generation, and optimization were not run at the user's request."
+}

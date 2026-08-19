@@ -1,0 +1,21 @@
+{
+  "schema": "muiogo.parameter_change_manifest.v1",
+  "date": "2026-08-19",
+  "case": "Philippines_v18 / PHL v18.0.1",
+  "parameter": "TotalAnnualMaxCapacityInvestment (TAMaxCI)",
+  "scenario": "SC_0",
+  "changes": [
+    {"technology": "PHL_POW_PP_WOF", "technology_id": "TEC_bl1d7", "years": "2021-2025", "before": "999999 each year", "after": "0 each year", "expansion_headroom_schedule": "0 through 2027; 1 in 2028-2030; 2 in 2031-2039; 4 in 2040-2053", "retained_recycling": "The permitted 1 GW 2028 vintage is recycled after its 25-year life, so total TAMaxCI is 5 in 2053.", "unit": "GW/year"},
+    {"technology": "PHL_POW_PP_NUSMR", "technology_id": "TEC_fa6fe", "years": "2021-2025", "before": "999999 each year", "after": "0 each year", "full_schedule": "0 through 2034; 0.3 in 2035-2039; 0.6 in 2040-2053", "unit": "GW/year"},
+    {"technology": "PHL_POW_PP_NU", "technology_id": "TEC_yv6yo", "years": "2021-2025", "before": "999999 each year", "after": "0 each year", "full_schedule": "0 through 2034; 1.2 in 2035-2053", "unit": "GW/year"},
+    {"technology": "PHL_POW_GEO_OLD", "technology_id": "TEC_0qr3z", "years": "2023", "before": 0.15, "expansion_headroom": 0.15, "scheduled_residual_retirement": 0.484481960816, "after": 0.634481960816, "unit": "GW/year"}
+  ],
+  "change_count": 16,
+  "verified_unchanged": {
+    "inherited_stock_only_tamaxci_zero_2020_2053": ["PHL_POW_CHP_COAL_OLD", "PHL_POW_CHP_NG_OLD", "PHL_POW_CHP_OIL_OLD", "PHL_POW_CHP_BIOM_OLD"],
+    "geothermal_attributes": ["cost", "efficiency", "availability factor 0.70", "ResidualCapacity profile"],
+    "other_parameters": ["TAMinCI", "TotalAnnualMaxCapacity", "scenario overlays"]
+  },
+  "geothermal_note": "PHL_POW_GEO_OLD remains the only geothermal technology. Greenfield expansion and replacement/repowering share one cost and performance representation; replacement is permitted but not required.",
+  "validation": "Static source and schema-ledger checks only; no model generation or optimization."
+}

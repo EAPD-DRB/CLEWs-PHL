@@ -1,0 +1,38 @@
+{
+  "schema": "muiogo.parameter_change_manifest.v1",
+  "date": "2026-08-19",
+  "case": "Philippines_v18 / PHL v18.0.1",
+  "parameter": "TotalAnnualMaxCapacityInvestment (TAMaxCI)",
+  "scenario": "SC_0",
+  "reason": "Extend the established 2026-2029 deployment bands for the ten specified existing v18 technologies across the full 2020-2029 decade.",
+  "changes": [
+    {"technology_id": "TEC_1wdli", "technology": "PHL_POW_PP_WON", "years": "2020-2025", "before": "999999 each year", "after": "1.5 each year", "unit": "GW/year"},
+    {"technology_id": "TEC_2x8eb", "technology": "PHL_POW_PP_NGCC", "years": "2020-2025", "before": "999999;9999;9999;9999;9999;999999", "after": "2 each year", "unit": "GW/year"},
+    {"technology_id": "TEC_ayzlr", "technology": "PHL_POW_PP_NGCC_CCS", "years": "2020-2025", "before": "0;999999;999999;999999;999999;999999", "after": "2 each year", "unit": "GW/year"},
+    {"technology_id": "TEC_p3vu5", "technology": "PHL_POW_PP_HY_LA", "years": "2020-2025", "before": "999999;9999;999999;999999;999999;9999", "after": "1 each year", "unit": "GW/year"},
+    {"technology_id": "TEC_mco0b", "technology": "PHL_POW_PP_COAL_CCS", "years": "2020-2025", "before": "0;999999;999999;999999;999999;999999", "after": "2 each year", "unit": "GW/year"},
+    {"technology_id": "TEC_ojxym", "technology": "PHL_POW_PP_BIOM_CCS", "years": "2020-2025", "before": "0;999999;999999;999999;999999;999999", "after": "0.2 each year", "unit": "GW/year"},
+    {"technology_id": "TEC_0qr3z", "technology": "PHL_POW_GEO_OLD", "years": "2020-2025", "before": "999999;9999;999999;9999;9999;999999", "after": "0.15 each year", "unit": "GW/year"},
+    {"technology_id": "TEC_nxhpa", "technology": "PHL_POW_PP_H2", "years": "2021-2025", "before": "999999 each year", "after": "0 each year", "unit": "GW/year"}
+  ],
+  "change_count": 47,
+  "already_consistent": [
+    "PHL_POW_PP_COAL is 2 GW/year in 2020-2029",
+    "PHL_POW_PP_SPV is 4 GW/year in 2020-2029",
+    "The 2026-2029 cells for every listed technology already matched the intended first band"
+  ],
+  "full_first_decade_bands": {
+    "PHL_POW_PP_WON": 1.5,
+    "PHL_POW_PP_SPV": 4.0,
+    "PHL_POW_PP_COAL": 2.0,
+    "PHL_POW_PP_COAL_CCS": 2.0,
+    "PHL_POW_PP_NGCC": 2.0,
+    "PHL_POW_PP_NGCC_CCS": 2.0,
+    "PHL_POW_GEO_OLD": 0.15,
+    "PHL_POW_PP_HY_LA": 1.0,
+    "PHL_POW_PP_BIOM_CCS": 0.20,
+    "PHL_POW_PP_H2": 0
+  },
+  "unchanged": ["2026-2053 values", "TAMinCI", "ResidualCapacity", "TotalAnnualMaxCapacity", "scenario overlays", "all unlisted technologies"],
+  "validation": "Static source and schema-ledger checks only; no model generation or optimization."
+}

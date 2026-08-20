@@ -1,0 +1,119 @@
+{
+    "status": "PASS",
+    "dry_run": false,
+    "source": "Philippines_v12_ENV_LAND",
+    "target": "Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC",
+    "source_file_count": 23,
+    "source_manifest_digest": "f4f630f994199ee2266383259f366b02239fbbff780a38e0f1cb3444673f327b",
+    "source_manifest": {
+        "R.json": "741adb0ce8eae3075e46c3c18120deab5d674928ed85494dbd5478106cacb86a",
+        "RE.json": "6d0dbb61b0fe99a0973acaac1e45351aa318143406c977254911c33ca65fb903",
+        "RS.json": "de28a99a4585298174c810bab9bad0e0bda2a5ea37dd58875ed2f91539c34b87",
+        "RT.json": "64a39289db269603914a580b48d5ce7f6762cc64f11eebe5ed45667a86f9a7c9",
+        "RTSM.json": "bc90a6ec7e9517188e2891fe35a4b6d168587a7ab9d4d04e813e3a956e15ffe0",
+        "RYC.json": "4b74b8d82db8c0dd96b5c780a8a07e94fee2f1304a44575103f1bec40ccb8f3d",
+        "RYCTs.json": "82f96dbfef03f0b93a50e0c888893d57517e6b6b292a2f8a7c51b219682b84f3",
+        "RYCn.json": "e372a8c85639f035c9b6095e9c34ea3bc1ea31364be83f71843675bf8898979d",
+        "RYDtb.json": "9dda8758603e2cb9da1d99eb835cbb07e68bbaa44165965ad542aeb0303bb097",
+        "RYE.json": "d7b4bd797f76c294927724e6637e7c891f5ab51c059be1867b0616660e911e51",
+        "RYS.json": "a9a7708f39a9894e306883e6d03a12e4806723cd45151e76204ba81956351dd9",
+        "RYSeDt.json": "adfe9b796252dab541ca3727890da9b81b2277654db153298aeb00f7b3c49851",
+        "RYT.json": "4800646b0788f99a7701fd88bb541b05eb6fd971b218d6b12f145d6664f33bf0",
+        "RYTC.json": "557e5c8ab583cafdce04d3061e70e5ce6d9d8091ff4138af51ff603002056f55",
+        "RYTCM.json": "3d768e18fa7c5d58ad91d5de953a916f282e4554ec0edf923ef788ef50e7dca5",
+        "RYTCn.json": "c6b16ec4a244c93c5d41acca2627924d6348c344c363b22dd03c258929fd816e",
+        "RYTEM.json": "b93afc51a0f13dd7ac85be3f901f1bb6d01cacdf308a436226b66b79e6494f7d",
+        "RYTM.json": "a445b2349eeaace358012b6874a1a53856f024cb0569e6e6540c7656025e3028",
+        "RYTTs.json": "8c11576ea75d4a8b9e2b1a100b53c06790ea1f481fb522cba192bf7e82db2e2e",
+        "RYTs.json": "0cf13bcef933357b648085baf12ec0c80fa1e0cca18d48ad3b9920bc40c37d00",
+        "genData.json": "cfa4cc0f264cc56da14235b12a77393bc72c15319295d238ba9cec8bd59cc6fe",
+        "view/resData.json": "436ef251def4402a0a8b44eb80eeaaead440def6347c2aea26b82ee23a419d72",
+        "view/viewDefinitions.json": "5d68d8b507fca7ce60af57f2c4972c9841f734886e0f6b9e440cca52496c6249"
+    },
+    "validation": {
+        "status": "PASS",
+        "counts": {
+            "technologies": 174,
+            "commodities": 99,
+            "constraints": 4,
+            "technology_groups": 2
+        },
+        "terminal": "ENV_WATER",
+        "terminal_role": "unforced diagnostic; not authoritative",
+        "terminal_modes": [
+            1,
+            2,
+            3
+        ],
+        "balance_constraint": null,
+        "water_commodities": [
+            {
+                "mode": 1,
+                "account": "water_vapor_returned",
+                "commodity": "PHL_WTR_EVT",
+                "unit": "10<sup>9</sup>m<sup>3</sup>"
+            },
+            {
+                "mode": 2,
+                "account": "modeled_raw_groundwater_remaining",
+                "commodity": "PHL_WTR_GWT",
+                "unit": "10<sup>9</sup>m<sup>3</sup>"
+            },
+            {
+                "mode": 3,
+                "account": "modeled_raw_surface_water_remaining",
+                "commodity": "PHL_WTR_SUR",
+                "unit": "10<sup>9</sup>m<sup>3</sup>"
+            }
+        ],
+        "water_producers": [
+            "LNDAGRPHLC01",
+            "LNDAGRPHLC02",
+            "LNDAGRPHLC03",
+            "LNDAGRPHLC04",
+            "LNDAGRPHLC05",
+            "LNDAGRPHLC06",
+            "LNDAGRPHLC07",
+            "LNDAGRPHLC08"
+        ],
+        "annual_production_envelope_by_year": {
+            "2020": 761.3483851000001,
+            "2021": 761.3483851000001,
+            "2022": 761.3483851000001,
+            "2023": 761.3483851000001,
+            "2024": 761.3483851000001,
+            "2025": 761.3483851000001,
+            "2026": 761.3483851000001,
+            "2027": 761.3483851000001,
+            "2028": 761.3483851000001,
+            "2029": 761.3483851000001,
+            "2030": 761.3483851000001,
+            "2031": 761.3483851000001,
+            "2032": 761.3483851000001,
+            "2033": 761.3483851000001,
+            "2034": 761.3483851000001,
+            "2035": 761.3483851000001,
+            "2036": 761.3483851000001,
+            "2037": 761.3483851000001,
+            "2038": 761.3483851000001,
+            "2039": 761.3483851000001,
+            "2040": 761.3483851000001,
+            "2041": 761.3483851000001,
+            "2042": 761.3483851000001,
+            "2043": 761.3483851000001,
+            "2044": 761.3483851000001,
+            "2045": 761.3483851000001,
+            "2046": 761.3483851000001,
+            "2047": 761.3483851000001,
+            "2048": 761.3483851000001,
+            "2049": 761.3483851000001,
+            "2050": 761.3483851000001,
+            "2051": 761.3483851000001,
+            "2052": 761.3483851000001,
+            "2053": 761.3483851000001
+        },
+        "annual_terminal_activity_upper_bound": 761.3483851000001,
+        "model_period_terminal_activity_upper_bound": 25885.845093399985,
+        "authoritative_reference": "production minus use by every technology except ENV_WATER"
+    }
+}

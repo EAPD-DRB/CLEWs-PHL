@@ -1,0 +1,46 @@
+year,boundary,technology,gross_generation_gwh,gross_generation_pj,source_id,model_role
+2020,"Grid-connected, embedded, off-grid, and test/commissioning generation",coal,58176,209.4336,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2020,"Grid-connected, embedded, off-grid, and test/commissioning generation",oil,2474,8.9064,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2020,"Grid-connected, embedded, off-grid, and test/commissioning generation",natural_gas,19497,70.1892,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2020,"Grid-connected, embedded, off-grid, and test/commissioning generation",geothermal,10757,38.7252,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2020,"Grid-connected, embedded, off-grid, and test/commissioning generation",hydro,7192,25.8912,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2020,"Grid-connected, embedded, off-grid, and test/commissioning generation",biomass,1261,4.5396,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2020,"Grid-connected, embedded, off-grid, and test/commissioning generation",solar,1373,4.9428,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2020,"Grid-connected, embedded, off-grid, and test/commissioning generation",wind,1026,3.6936,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2020,"Grid-connected, embedded, off-grid, and test/commissioning generation",total,101756,366.3216,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2021,"Grid generation only; DOE separates off-grid starting in 2021",coal,62052,223.3872,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2021,"Grid generation only; DOE separates off-grid starting in 2021",oil,1616,5.8176,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2021,"Grid generation only; DOE separates off-grid starting in 2021",natural_gas,19060,68.616,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2021,"Grid generation only; DOE separates off-grid starting in 2021",geothermal,10016,36.0576,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2021,"Grid generation only; DOE separates off-grid starting in 2021",hydro,9185,33.066,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2021,"Grid generation only; DOE separates off-grid starting in 2021",biomass,1445,5.202,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2021,"Grid generation only; DOE separates off-grid starting in 2021",solar,1470,5.292,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2021,"Grid generation only; DOE separates off-grid starting in 2021",wind,1270,4.572,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2021,"Grid generation only; DOE separates off-grid starting in 2021",total,106115,382.014,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2022,"Grid generation only; DOE separates off-grid starting in 2021",coal,66430,239.148,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2022,"Grid generation only; DOE separates off-grid starting in 2021",oil,2519,9.0684,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2022,"Grid generation only; DOE separates off-grid starting in 2021",natural_gas,17884,64.3824,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2022,"Grid generation only; DOE separates off-grid starting in 2021",geothermal,10425,37.53,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2022,"Grid generation only; DOE separates off-grid starting in 2021",hydro,10085,36.306,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2022,"Grid generation only; DOE separates off-grid starting in 2021",biomass,1322,4.7592,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2022,"Grid generation only; DOE separates off-grid starting in 2021",solar,1822,6.5592,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2022,"Grid generation only; DOE separates off-grid starting in 2021",wind,1030,3.708,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2022,"Grid generation only; DOE separates off-grid starting in 2021",total,111516,401.4576,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2023,"Grid generation only; DOE separates off-grid starting in 2021",coal,73754,265.5144,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2023,"Grid generation only; DOE separates off-grid starting in 2021",oil,1304,4.6944,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2023,"Grid generation only; DOE separates off-grid starting in 2021",natural_gas,16668,60.0048,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2023,"Grid generation only; DOE separates off-grid starting in 2021",geothermal,10730,38.628,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2023,"Grid generation only; DOE separates off-grid starting in 2021",hydro,10287,37.0332,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2023,"Grid generation only; DOE separates off-grid starting in 2021",biomass,1409,5.0724,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2023,"Grid generation only; DOE separates off-grid starting in 2021",solar,2544,9.1584,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2023,"Grid generation only; DOE separates off-grid starting in 2021",wind,1308,4.7088,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2023,"Grid generation only; DOE separates off-grid starting in 2021",total,118004,424.8144,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2024,"Grid generation only; DOE separates off-grid starting in 2021",coal,79359,285.6924,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2024,"Grid generation only; DOE separates off-grid starting in 2021",oil,1342,4.8312,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2024,"Grid generation only; DOE separates off-grid starting in 2021",natural_gas,18047,64.9692,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2024,"Grid generation only; DOE separates off-grid starting in 2021",geothermal,10789,38.8404,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2024,"Grid generation only; DOE separates off-grid starting in 2021",hydro,10909,39.2724,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2024,"Grid generation only; DOE separates off-grid starting in 2021",biomass,1446,5.2056,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2024,"Grid generation only; DOE separates off-grid starting in 2021",solar,3811,13.7196,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2024,"Grid generation only; DOE separates off-grid starting in 2021",wind,1239,4.4604,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only
+2024,"Grid generation only; DOE separates off-grid starting in 2021",total,126941,456.9876,SRC_PHL_DOE_2024_POWER_SUMMARY,benchmark_only

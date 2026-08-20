@@ -1,0 +1,527 @@
+{
+    "schema": "philippines-v18-power-investment-cleanup-v1",
+    "case": "/Users/sato/Documents/GitHub/CLEWs-PHL/case/Philippines_v18",
+    "source_ryt_sha256": "d51fe9e4f249c06b9987ed311bbbd39d1ecd704c08a3a15819ab59dba52d571e",
+    "candidate_ryt_sha256": "333f37a5ac526530af7ea797b119ac7c09ba69be99accd5318b829f68b188792",
+    "information_cutoff": "2020",
+    "equations": {
+        "new_capacity_ceiling": "NCC1: NewCapacity[r,t,y] <= TotalAnnualMaxCapacityInvestment[r,t,y]",
+        "residual_and_vintage_capacity": "CAa1/CAa2"
+    },
+    "classifications": {
+        "RC": "unchanged 2020 initial physical stock and retirement path",
+        "2021_2025_observed_additions": "benchmark only",
+        "coal_envelope": "continuing physical construction/permitting/financing/grid constraint",
+        "old_thermal_entry_zero": "technology-role constraint; residual stock remains available",
+        "project_minimums": "none added; no lossless project-to-technology/COD proof"
+    },
+    "changed_cell_count": 62,
+    "changed_parameter_counts": {
+        "TAMinCI": 20,
+        "TAMaxCI": 42
+    },
+    "changes": [
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_SPV",
+            "year": 2021,
+            "before": 0.3024,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_SPV",
+            "year": 2022,
+            "before": 0.3049,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_SPV",
+            "year": 2023,
+            "before": 0.1568,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_SPV",
+            "year": 2024,
+            "before": 1.0012,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_SPV",
+            "year": 2025,
+            "before": 0.2749,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_COAL",
+            "year": 2021,
+            "before": 0.725,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_COAL",
+            "year": 2022,
+            "before": 0.7694,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_COAL",
+            "year": 2024,
+            "before": 0.6,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_OIL_OLD",
+            "year": 2021,
+            "before": 0.1798,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_OIL_OLD",
+            "year": 2022,
+            "before": 0.0973,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_OIL_OLD",
+            "year": 2024,
+            "before": 0.0112,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_BIOM_OLD",
+            "year": 2022,
+            "before": 0.082,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_BIOM_OLD",
+            "year": 2023,
+            "before": 0.006,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_BIOM_OLD",
+            "year": 2024,
+            "before": 0.0099,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_HY_LA",
+            "year": 2022,
+            "before": 0.0159,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_HY_LA",
+            "year": 2023,
+            "before": 0.0468,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_HY_LA",
+            "year": 2024,
+            "before": 0.0352,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_GEO_OLD",
+            "year": 2022,
+            "before": 0.0037,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_GEO_OLD",
+            "year": 2025,
+            "before": 0.0357,
+            "after": 0
+        },
+        {
+            "parameter": "TAMinCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_NGCC",
+            "year": 2025,
+            "before": 0.88,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_WON",
+            "year": 2020,
+            "before": 0.0,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_SPV",
+            "year": 2020,
+            "before": 0.0,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_NGCC",
+            "year": 2020,
+            "before": 0.0,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_HY_LA",
+            "year": 2020,
+            "before": 0.0,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_GEO_OLD",
+            "year": 2020,
+            "before": 0.0,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_SPV",
+            "year": 2021,
+            "before": 0.3024,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_SPV",
+            "year": 2022,
+            "before": 0.3049,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_SPV",
+            "year": 2023,
+            "before": 0.1568,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_SPV",
+            "year": 2024,
+            "before": 1.0012,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_SPV",
+            "year": 2025,
+            "before": 0.2749,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_NGCC",
+            "year": 2025,
+            "before": 0.88,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_HY_LA",
+            "year": 2022,
+            "before": 0.0159,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_HY_LA",
+            "year": 2023,
+            "before": 0.0468,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_HY_LA",
+            "year": 2024,
+            "before": 0.0352,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_GEO_OLD",
+            "year": 2022,
+            "before": 0.0037,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_GEO_OLD",
+            "year": 2025,
+            "before": 0.0357,
+            "after": 999999
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_COAL_OLD",
+            "year": 2021,
+            "before": 999999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_COAL_OLD",
+            "year": 2022,
+            "before": 999999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_COAL_OLD",
+            "year": 2023,
+            "before": 999999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_COAL_OLD",
+            "year": 2024,
+            "before": 999999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_COAL_OLD",
+            "year": 2025,
+            "before": 999999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_NG_OLD",
+            "year": 2021,
+            "before": 999999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_NG_OLD",
+            "year": 2022,
+            "before": 999999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_NG_OLD",
+            "year": 2023,
+            "before": 999999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_NG_OLD",
+            "year": 2024,
+            "before": 999999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_NG_OLD",
+            "year": 2025,
+            "before": 999999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_OIL_OLD",
+            "year": 2021,
+            "before": 0.1798,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_OIL_OLD",
+            "year": 2022,
+            "before": 0.0973,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_OIL_OLD",
+            "year": 2023,
+            "before": 9999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_OIL_OLD",
+            "year": 2024,
+            "before": 0.0112,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_OIL_OLD",
+            "year": 2025,
+            "before": 9999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_BIOM_OLD",
+            "year": 2021,
+            "before": 9999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_BIOM_OLD",
+            "year": 2022,
+            "before": 0.082,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_BIOM_OLD",
+            "year": 2023,
+            "before": 0.006,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_BIOM_OLD",
+            "year": 2024,
+            "before": 0.0099,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_CHP_BIOM_OLD",
+            "year": 2025,
+            "before": 9999,
+            "after": 0
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_COAL",
+            "year": 2020,
+            "before": 0.0,
+            "after": 2
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_COAL",
+            "year": 2021,
+            "before": 0.725,
+            "after": 2
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_COAL",
+            "year": 2022,
+            "before": 0.7694,
+            "after": 2
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_COAL",
+            "year": 2023,
+            "before": 9999,
+            "after": 2
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_COAL",
+            "year": 2024,
+            "before": 0.6,
+            "after": 2
+        },
+        {
+            "parameter": "TAMaxCI",
+            "scenario": "SC_0",
+            "technology": "PHL_POW_PP_COAL",
+            "year": 2025,
+            "before": 9999,
+            "after": 2
+        }
+    ],
+    "unchanged": [
+        "RC all scenarios",
+        "all non-base scenario overlays",
+        "all post-2029 PHL_POW_PP_COAL TAMaxCI values",
+        "all non-RYT source files"
+    ]
+}

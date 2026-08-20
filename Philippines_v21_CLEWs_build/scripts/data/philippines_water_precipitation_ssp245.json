@@ -1,0 +1,171 @@
+{
+  "dataset": {
+    "provider": "World Bank Climate Change Knowledge Portal (CCKP)",
+    "geography": "Philippines (ISO3 PHL), country mean, spatial aggregation 'mean'",
+    "variable": "pr (precipitation)",
+    "access_date": "2026-08-03",
+    "observed_product": "ERA5 0.25-degree reanalysis, annual country-mean timeseries 1950-2025",
+    "projection_product": "CMIP6 0.25-degree multi-model ensemble climatology, scenario SSP2-4.5",
+    "projection_reference_period": "1995-2014",
+    "rcp_equivalence": "SSP2-4.5 carries the same 4.5 W/m2 end-of-century forcing level as CMIP5 RCP4.5 and is used here as the requested RCP4.5-equivalent pathway. This mirrors the choice already made for Fiji_v2.6 in scripts/data/fiji_v26_precipitation_ssp245.json.",
+    "download_documentation_url": "https://climateknowledgeportal.worldbank.org/download-data",
+    "metadata_url": "https://climateknowledgeportal.worldbank.org/metadata",
+    "aws_collection_url": "https://registry.opendata.aws/wbg-cckp/"
+  },
+
+  "observed_annual_mm_per_year": {
+    "source": "ERA5-x0.25 historical annual timeseries, country mean",
+    "url": "https://cckpapi.worldbank.org/cckp/v1/era5-x0.25_timeseries_pr_timeseries_annual_1950-2025_mean_historical_era5_x0.25_mean/PHL?_format=json",
+    "note": "CCKP returns annual values keyed 'YYYY-07' (July midpoint convention). Keys below are calendar years. 2024 and 2025 draw on ERA5T preliminary input and should be treated as provisional.",
+    "series": {
+      "1950": 2204.57, "1951": 2200.84, "1952": 2447.15, "1953": 2085.73, "1954": 2625.70,
+      "1955": 2649.27, "1956": 3226.04, "1957": 2282.27, "1958": 2194.66, "1959": 1949.16,
+      "1960": 2206.62, "1961": 2046.42, "1962": 2146.08, "1963": 1932.19, "1964": 2526.86,
+      "1965": 2035.99, "1966": 1941.91, "1967": 1805.99, "1968": 1665.79, "1969": 1960.46,
+      "1970": 2406.88, "1971": 2558.76, "1972": 2302.98, "1973": 2288.89, "1974": 2655.69,
+      "1975": 2603.47, "1976": 2691.82, "1977": 2537.82, "1978": 2765.17, "1979": 2443.66,
+      "1980": 2667.55, "1981": 2543.57, "1982": 2409.35, "1983": 2125.79, "1984": 2799.45,
+      "1985": 2648.43, "1986": 2615.52, "1987": 2126.12, "1988": 2711.41, "1989": 2559.62,
+      "1990": 2371.33, "1991": 2058.97, "1992": 2007.99, "1993": 2434.28, "1994": 2287.58,
+      "1995": 2816.69, "1996": 2743.80, "1997": 2080.78, "1998": 2308.14, "1999": 3192.94,
+      "2000": 3136.73, "2001": 2723.22, "2002": 2221.57, "2003": 2401.79, "2004": 2280.98,
+      "2005": 2547.24, "2006": 2647.49, "2007": 2636.82, "2008": 3101.57, "2009": 2981.16,
+      "2010": 2550.88, "2011": 3413.21, "2012": 2915.85, "2013": 3045.08, "2014": 2959.39,
+      "2015": 2336.91, "2016": 2758.21, "2017": 3327.31, "2018": 2632.37, "2019": 2310.21,
+      "2020": 2884.33, "2021": 3109.17, "2022": 3266.34, "2023": 3003.42, "2024": 3021.51,
+      "2025": 3676.48
+    },
+    "derived_statistics_mm_per_year": {
+      "mean_1950_2025": 2536.7,
+      "mean_1950_1979": 2313.0,
+      "mean_1980_2009": 2539.6,
+      "mean_1991_2020_wmo_normal": 2658.1,
+      "mean_1995_2014_cmip6_reference": 2735.3,
+      "mean_2016_2025_last_decade": 2998.9,
+      "mean_2021_2025": 3215.4,
+      "interannual_sd_1991_2020": 379.1,
+      "coefficient_of_variation_1991_2020_percent": 14.3,
+      "ols_trend_1950_2025_mm_per_year": 10.85,
+      "ols_trend_1950_2025_percent_per_decade": 4.28,
+      "driest_year": {"year": 1968, "value": 1665.79},
+      "wettest_year": {"year": 2025, "value": 3676.48}
+    },
+    "era5_climatology_1991_2020_mm_per_year": {
+      "value": 2658.12,
+      "url": "https://cckpapi.worldbank.org/cckp/v1/era5-x0.25_climatology_pr_climatology_annual_1991-2020_mean_historical_era5_x0.25_mean/PHL?_format=json"
+    }
+  },
+
+  "projections_ssp245": {
+    "historical_climatology_median_mm_per_year": {
+      "period": "1995-2014",
+      "value": 2477.61,
+      "url": "https://cckpapi.worldbank.org/cckp/v1/cmip6-x0.25_climatology_pr_climatology_annual_1995-2014_median_historical_ensemble_all_mean/PHL?_format=json",
+      "note": "CMIP6 ensemble median for the reference period. It sits 9.4 percent below the ERA5 1995-2014 observed mean of 2735.3 mm/yr, which is why anomalies (not absolute projected climatologies) are the quantity carried into the model."
+    },
+    "annual_anomaly_mm_per_year": {
+      "2020-2039": {
+        "midpoint_model_year": 2030,
+        "median": 25.08,
+        "p10": -65.48,
+        "p90": 160.55,
+        "urls": {
+          "median": "https://cckpapi.worldbank.org/cckp/v1/cmip6-x0.25_climatology_pr_anomaly_annual_2020-2039_median_ssp245_ensemble_all_mean/PHL?_format=json",
+          "p10": "https://cckpapi.worldbank.org/cckp/v1/cmip6-x0.25_climatology_pr_anomaly_annual_2020-2039_p10_ssp245_ensemble_all_mean/PHL?_format=json",
+          "p90": "https://cckpapi.worldbank.org/cckp/v1/cmip6-x0.25_climatology_pr_anomaly_annual_2020-2039_p90_ssp245_ensemble_all_mean/PHL?_format=json"
+        }
+      },
+      "2040-2059": {
+        "midpoint_model_year": 2050,
+        "median": 106.77,
+        "p10": -69.45,
+        "p90": 230.05,
+        "urls": {
+          "median": "https://cckpapi.worldbank.org/cckp/v1/cmip6-x0.25_climatology_pr_anomaly_annual_2040-2059_median_ssp245_ensemble_all_mean/PHL?_format=json",
+          "p10": "https://cckpapi.worldbank.org/cckp/v1/cmip6-x0.25_climatology_pr_anomaly_annual_2040-2059_p10_ssp245_ensemble_all_mean/PHL?_format=json",
+          "p90": "https://cckpapi.worldbank.org/cckp/v1/cmip6-x0.25_climatology_pr_anomaly_annual_2040-2059_p90_ssp245_ensemble_all_mean/PHL?_format=json"
+        }
+      }
+    },
+    "seasonal_anomaly_mm_per_season_median": {
+      "note": "Season keys follow the CCKP convention: 01 = DJF, 04 = MAM, 07 = JJA, 10 = SON.",
+      "2020-2039": {"DJF": 20.79, "MAM": -1.08, "JJA": 19.57, "SON": 16.99,
+        "url": "https://cckpapi.worldbank.org/cckp/v1/cmip6-x0.25_climatology_pr_anomaly_seasonal_2020-2039_median_ssp245_ensemble_all_mean/PHL?_format=json"},
+      "2040-2059": {"DJF": 41.00, "MAM": 1.01, "JJA": 39.33, "SON": 38.27,
+        "url": "https://cckpapi.worldbank.org/cckp/v1/cmip6-x0.25_climatology_pr_anomaly_seasonal_2040-2059_median_ssp245_ensemble_all_mean/PHL?_format=json"},
+      "interpretation": "The wet seasons gain 38-41 mm by 2040-2059 while MAM (March-May, the pre-monsoon dry season that sets irrigation and hydropower stress) gains essentially nothing. Annual-mean wetting therefore does not imply dry-season relief."
+    },
+    "derived_multipliers_relative_to_1995_2014": {
+      "formula": "multiplier = 1 + CCKP median annual anomaly / CCKP 1995-2014 historical climatology median",
+      "anchor_2020": 1.0,
+      "anchor_2030": 1.01012,
+      "anchor_2050": 1.04309,
+      "p10_2030": 0.97358,
+      "p90_2030": 1.06479,
+      "p10_2050": 0.97197,
+      "p90_2050": 1.09285,
+      "annualisation": "Linear interpolation 2020 -> 2030 anchor, then 2030 -> 2050 anchor, then held on the same slope to 2053 (model horizon)."
+    }
+  },
+
+  "national_water_resources": {
+    "note": "Reference values for national potential sensitivities. These are national assessment figures, not model outputs, dependable flow, environmental-flow-adjusted availability, groundwater safe yield, or aquifer stock.",
+    "surface_water_potential_km3_per_year": 125.79,
+    "groundwater_potential_km3_per_year": 20.20,
+    "total_potential_km3_per_year": 145.99,
+    "total_current_withdrawals_km3_per_year_approx": 91,
+    "sector_shares_of_water_used_2020_percent": {"irrigated_agriculture": 78.8, "industry": 12.4},
+    "water_stress_2020_percent": 26.7,
+    "sources": [
+      "National Water Resources Board figures as reported in the Philippine Department of Economy, Planning and Development (formerly NEDA) Policy Note on the Philippine Water Sector, https://depdev.gov.ph/wp-content/uploads/2024/05/Policy-Note-on-the-Philippine-Water-Sector.pdf",
+      "Philippine Statistics Authority, water use efficiency and water stress release (SDG 6.4.1 / 6.4.2), https://psa.gov.ph/content/countrys-overall-water-use-efficiency-decreased-while-water-stress-remains-low-level",
+      "National Water Resources Board, https://nwrb.gov.ph/"
+    ]
+  },
+
+  "groundwater_evidence": {
+    "model_role": "The currently available evidence supports an annual national renewable-flow sensitivity and local screening only. It does not support initialization of aquifer stock, drawdown, or depletion.",
+    "national_potential_flow_km3_per_year": 20.2,
+    "domestic_municipal_groundwater_use_km3_per_year_approx": 2.0,
+    "national_source": "Philippine Development Plan 2023-2028, Chapter 12, https://pdp.neda.gov.ph/wp-content/uploads/2023/07/Chapter-12.pdf",
+    "historical_regional_potential_km3_per_year_selected": {
+      "Cagayan_Valley": 2.825,
+      "Eastern_Visayas": 2.557,
+      "Central_Visayas": 0.879
+    },
+    "historical_regional_source": "PIDS Development Research News regional water-resource table; use as an older planning cross-check only, https://pidswebs.pids.gov.ph/CDN/PUBLICATIONS/pidsdrn11-3.pdf",
+    "local_study_leads": {
+      "Metro_Manila_recharge_km3_per_year": 0.206,
+      "Cebu_note": "Local recharge constraints and saltwater-intrusion risk; do not extrapolate nationally.",
+      "source": "PIDS, Metro Manila and Metro Cebu Groundwater Assessment, https://serp-p.pids.gov.ph/publication/public/view?slug=metro-manila-and-metro-cebu-groundwater-assessment"
+    },
+    "spatial_screening_source": "MGB Regional Groundwater Availability feature layer; categorical screening, not a volumetric stock or safe-yield dataset, https://controlmap.mgb.gov.ph/arcgis/rest/services/GeospatialDataInventory/GDI_Regional_Groundwater_Availability/FeatureServer/0",
+    "required_for_aquifer_stock": [
+      "aquifer polygons crosswalked to land clusters and demand nodes",
+      "initial saturated thickness or head and reference date",
+      "aquifer area and specific yield or storage coefficient",
+      "admissible drawdown or minimum head",
+      "precipitation-to-recharge calibration by aquifer, season, land cover, soil, and geology",
+      "natural discharge, baseflow, and groundwater-dependent ecosystem requirements",
+      "pumping locations, lift and energy, salinity and critical-area limits",
+      "observed head time series for validation"
+    ],
+    "spatial_data_status": {
+      "national_model_requirement": "No cluster geometry is required for the proposed whole-country formulation. All eight LNDAGRPHLC classes feed shared national surface-water and groundwater commodities and receive the same national climate multiplier.",
+      "retained_companion_artifacts": "EAPD-DRB/CLEWs-PHL retains the national boundary, a cluster-map PNG, and eight-row land-cover, parameter, precipitation, evapotranspiration and crop-water-deficit summaries that reproduce the model coefficients, https://github.com/EAPD-DRB/CLEWs-PHL/tree/main/Philippines_v12_CLEWs_build/geospatial",
+      "missing_optional_artifact": "Cell-level cluster geometry or point membership is absent. This matters only for a future spatial rebuild with basin/aquifer commodities, geographically allocated demands and explicit transfers; it does not block a national water balance or national withdrawal ceiling."
+    }
+  },
+
+  "limitations": [
+    "The CCKP ensemble climatologies are period means represented by their midpoints. The year-by-year interpolation is a modelling assumption, not an annual forecast.",
+    "Only the ensemble median is proposed for installation in the model. p10 and p90 are retained as research metadata, not predefined model scenarios; note that p10 is drier than the 1995-2014 reference in both periods, so the sign of the change is not robust.",
+    "ERA5 is a reanalysis, not a gauge network. It is used here for a consistent 76-year national mean; PAGASA station data remain the authority for Philippine station-level rainfall.",
+    "The 2024 and 2025 ERA5 values rely on ERA5T preliminary input and may be revised.",
+    "Anomalies are national means. They do not represent the eight spatial clusters of the land block separately, nor typhoon rainfall, El Nino/La Nina sequencing, or interannual variability.",
+    "The national water resource figures are potential and withdrawal assessments from national sources. They are not derived from the model's own runoff coefficients and are not a sustainable-yield calculation for any specific basin or aquifer.",
+    "The 20.2 km3/year groundwater figure is an annual national potential flow, not an aquifer volume or stock initial condition.",
+    "The current MUIO formulation fixes StorageLevelYearStart to zero in every year and cannot carry groundwater stock or depletion across model years.",
+    "The eight land clusters are coefficient classes feeding shared national water pools, not river basins or aquifers. The national proposal intentionally applies one climate path and national withdrawal ceilings; it makes no local-scarcity claim."
+  ]
+}

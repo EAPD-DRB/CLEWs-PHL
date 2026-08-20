@@ -1,0 +1,1 @@
+['TOMHR', 'CONLI', 'SGCHR', 'MZEHR', 'TOMHI', 'SGCHI', 'MZELI', 'CONHR', 'SGCLI', 'MZEHI', 'RCPHR', 'TOMLR', 'TOMLI', 'RCPLR', 'MZELR', 'CONHI', 'RCPLI', 'SGCLR', 'RCPHI', 'CONLR', 'OTHLI', 'OTHHI', 'OTHLR', 'OTHHR', 'Barren and sparsely vegetated land', 'Built-up land', 'Forest land', 'Grassland & woodland', 'Other agricultural land', 'Water bodies']

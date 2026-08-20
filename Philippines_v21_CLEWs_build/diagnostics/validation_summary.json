@@ -1,0 +1,33 @@
+{
+  "case": "Philippines_v15",
+  "run": "BASE_V15",
+  "status": "passed",
+  "upstream_raw": {
+    "status": "retained_inherited_base",
+    "solver_status": "CBC 2.10.12 authoritative raw result",
+    "evidence": "data_sources/evidence/inherited_base/build_snapshot/diagnostics/validation_summary.json"
+  },
+  "muio_import": {
+    "status": "passed",
+    "nondefault_errors": 0,
+    "unsupported_nondefault_rows": 0,
+    "evidence": "data_sources/evidence/inherited_base/build_snapshot/documentation/MUIO_IMPORT.md"
+  },
+  "muio_final": {
+    "status": "optimal",
+    "solver_status": "Optimal - objective value 369630979.62464261",
+    "objective": 369630979.62464261,
+    "matrix": {
+      "rows": 791109,
+      "columns": 884956,
+      "nonzeros": 12533783
+    },
+    "evidence": "diagnostics/national_water_validation.json"
+  },
+  "provenance": {
+    "status": "passed",
+    "canonical_ledger": "data_sources/",
+    "evidence": "diagnostics/canonical_schema_ledger_validation.json"
+  },
+  "documentation_only_packaging_update": true
+}

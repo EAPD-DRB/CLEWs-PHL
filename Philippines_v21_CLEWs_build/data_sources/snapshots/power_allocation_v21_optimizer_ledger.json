@@ -1,0 +1,48 @@
+{
+  "schema": "philippines-v21-optimizer-run-ledger-v1",
+  "baseline": {
+    "case": "Philippines_v20 accepted r2 candidate",
+    "optimizer_rerun": false,
+    "status": "Optimal",
+    "objective": 369737957.77807945,
+    "cbc_seconds": 148.45
+  },
+  "runs": [
+    {
+      "candidate": "r1_full_disaggregation",
+      "status": "timed_out",
+      "cutoff_seconds": 1000,
+      "result": null,
+      "reason_retained": "Five-technology structural candidate did not meet usability; timeout handling did not persist a CBC log.",
+      "sensitivity": false
+    },
+    {
+      "candidate": "r2_compact_closed_replacement",
+      "status": "timed_out_and_deterministically_invalid",
+      "cutoff_seconds": 320,
+      "result": null,
+      "first_provable_failure": "2034 off-grid service demand exceeds maximum surviving stock output by 5.051928100256135 PJ",
+      "reason_rejected": "TAMaxCI=0 closed both replacement routes while residual stocks retired and exogenous service demand grew.",
+      "sensitivity": false
+    },
+    {
+      "candidate": "r3_open_replacement_diagnostic",
+      "status": "Optimal but rejected",
+      "cbc_seconds": 157.03650037499756,
+      "objective": 369736947.59293264,
+      "reason_rejected": "The 1 GW/year renewable envelope allowed 0.6144 GW of same-year 2020 build and unrealistically displaced off-grid oil.",
+      "sensitivity": false
+    },
+    {
+      "candidate": "r4_doe_anchored_replacement",
+      "status": "Optimal and accepted",
+      "cutoff_seconds": 500,
+      "cbc_seconds": 155.88579662499978,
+      "objective": 369746369.55929643,
+      "reason_accepted": "Passed source, stock, demand, every-year/every-timeslice envelope, generation, matrix, runtime and promotion-identity checks.",
+      "sensitivity": false
+    }
+  ],
+  "optimizer_runs": 4,
+  "sensitivity_runs": 0
+}

@@ -1,0 +1,13 @@
+{
+  "status": "failed_before_optimization",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v21-power-allocation-candidate-r2",
+  "check": "every-year/every-timeslice off-grid stock-vintage-service envelope",
+  "first_failure": {
+    "year": "2034",
+    "level": "annual",
+    "service_headroom_pj": -5.051928100256135,
+    "reason": "exogenous off-grid demand exceeds the maximum stock-and-vintage service envelope"
+  },
+  "failure_count": 620,
+  "optimizer_runs_required_to_detect": 0
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-08-07",
+  "case": "Philippines_v16",
+  "source_files": {
+    "RT.json": "43ad5fd503960156f254aab4fe459b179f3dd130f95009f7e2a1550d2000147f",
+    "RYT.json": "3189d59104db96df601d53a4dfc0c70cc4d401c5269b3600fb6cea2b110f8cbf",
+    "RYTCM.json": "fff3c9b90036ca2ff0167475759968aa3a731a9cb4719ea3070aa79783dd0cf3",
+    "RYTM.json": "ee30eb213c31f3b72ae845cba85dad18b31c363d97045f9676adc3aa0d7b0435"
+  },
+  "calibration": {
+    "irrigated_stock_mha": 2.006,
+    "rainfed_stock_mha": 1.47,
+    "irrigated_target_oar": 0.726321036889332,
+    "rainfed_target_oar": 0.32108843537414966,
+    "irrigated_yield_scale": 0.8980756098785642,
+    "rainfed_yield_scale": 0.42727684452644354,
+    "irrigated_cost_musd_per_mt": 253.60406091370558,
+    "rainfed_cost_musd_per_mt": 283.24873096446703,
+    "new_irrigation_capital_cost_musd_per_1000km2": 604.5949214026602,
+    "new_irrigation_operational_life_years": 30
+  },
+  "validation_status": "cost-and-life refinement implemented but not run; user will run separately",
+  "non_forcing": {
+    "food_demand_changed": false,
+    "demand_or_activity_bound_added": false,
+    "share_or_udc_added": false,
+    "commodity_or_technology_added": false,
+    "irrigated_activity_endogenous": true
+  }
+}

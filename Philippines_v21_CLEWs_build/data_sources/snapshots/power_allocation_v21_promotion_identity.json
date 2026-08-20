@@ -1,0 +1,17 @@
+{
+  "schema": "philippines-v21-promotion-identity-v1",
+  "status": "passed",
+  "accepted_candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v21-power-allocation-candidate-r4",
+  "promoted_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v21",
+  "source_json_byte_identity": true,
+  "generated_data_txt_byte_identity": true,
+  "data_txt_sha256": "faca05cebcd93759d87428a073d0651b7c61c409848b58e6337d1da40facbc7c",
+  "live_glpsol_check": "passed",
+  "matrix": {
+    "rows": 821091,
+    "columns": 911143,
+    "nonzeros": 13210825,
+    "objective_nonzeros": 430720
+  },
+  "post_promotion_optimizer_runs": 0
+}

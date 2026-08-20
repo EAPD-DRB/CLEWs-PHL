@@ -1,0 +1,18 @@
+{
+  "optimizer_runs": 0,
+  "status": "matrix_check_passed",
+  "case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v21",
+  "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v21/res/POWER_ALLOCATION_V21_BASE",
+  "timings_seconds": {
+    "generate_datafile": 2.4015717090005637,
+    "preprocess_data": 0.008197750001272652,
+    "glpsol_check_and_lp": 41.23485325000365
+  },
+  "cbc_binary": "/opt/homebrew/Cellar/cbc/2.10.13/bin/cbc",
+  "artifacts": {
+    "data": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v21/res/POWER_ALLOCATION_V21_BASE/data.txt",
+    "processed_data": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v21/res/POWER_ALLOCATION_V21_BASE/data_processed.txt",
+    "lp": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v21/res/POWER_ALLOCATION_V21_BASE/lp.lp",
+    "glpsol_log": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v21/res/POWER_ALLOCATION_V21_BASE/glpsol_check.log"
+  }
+}

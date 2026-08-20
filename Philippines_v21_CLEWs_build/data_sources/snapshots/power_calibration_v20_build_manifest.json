@@ -1,0 +1,89 @@
+{
+    "case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v20-power-calibration-candidate-r2",
+    "date": "2026-08-20",
+    "classification": {
+        "doe_2020_installed_capacity": "initial stock cross-check",
+        "doe_2020_dependable_capacity": "continuing physical availability driver",
+        "malampaya_take_or_pay": "historical contractual/economic driver",
+        "doe_2020_2024_gross_generation": "benchmark only"
+    },
+    "changed_source_files": [
+        "genData.json",
+        "RYT.json",
+        "RYTM.json"
+    ],
+    "before_sha256": {
+        "genData.json": "4c63e167c3988d582722f1b0e1a3722504684ce9bcfed215adf6e23d75a66bc1",
+        "RYT.json": "333f37a5ac526530af7ea797b119ac7c09ba69be99accd5318b829f68b188792",
+        "RYTM.json": "7d66727dddf71e631b03f3843b529e74b840dbb4d40dcf55ad052dd8f4a4da02"
+    },
+    "after_sha256": {
+        "genData.json": "8bd2e0eaf4e39d9819f470198855d99db700b31b06a184f8a9850973f251b7b3",
+        "RYT.json": "f0d87d3e353713d16cf8c902036e9df3772ebebab9e3760a0494f597713deca4",
+        "RYTM.json": "60bf2a0db71dc970864aa21b3be2603075d3ef403f29c9740b16351da83240b0"
+    },
+    "availability_changes": [
+        {
+            "technology": "TEC_pyjfk",
+            "before": 1,
+            "after": 0.9361653523880883,
+            "installed_mw": 10943.9,
+            "dependable_mw": 10245.3
+        },
+        {
+            "technology": "TEC_ze7d4",
+            "before": 1,
+            "after": 0.9518030412744388,
+            "installed_mw": 3452.5,
+            "dependable_mw": 3286.1
+        },
+        {
+            "technology": "TEC_2hnym",
+            "before": 1,
+            "after": 0.7207666525043667,
+            "installed_mw": 4236.6,
+            "dependable_mw": 3053.6
+        },
+        {
+            "technology": "TEC_gthhk",
+            "before": 1,
+            "after": 0.6379079123826553,
+            "installed_mw": 447.4,
+            "dependable_mw": 285.4
+        }
+    ],
+    "take_or_pay_changes": [
+        {
+            "year": 2020,
+            "gas_envelope_pj": 154.9184424432652,
+            "gas_extraction_variable_cost_musd_per_pj_unchanged": 6.662111756970275,
+            "raw_gas_input_per_pj_power_activity": 1.9762086347176167,
+            "before_power_variable_cost_musd_per_pj": 0.0001,
+            "plant_contract_credit_musd_per_pj": 13.16572277957841,
+            "after_power_variable_cost_musd_per_pj": -13.16562277957841,
+            "before_fixed_cost_musd_per_gw_year": 22,
+            "added_sunk_cost_musd_per_gw_year": 298.93815402543083,
+            "after_fixed_cost_musd_per_gw_year": 320.93815402543083,
+            "legacy_gas_capacity_gw": 3.4525
+        },
+        {
+            "year": 2021,
+            "gas_envelope_pj": 132.3548618308677,
+            "gas_extraction_variable_cost_musd_per_pj_unchanged": 6.68807478018528,
+            "raw_gas_input_per_pj_power_activity": 1.9762086347176167,
+            "before_power_variable_cost_musd_per_pj": 0.0001,
+            "plant_contract_credit_musd_per_pj": 13.217031130239278,
+            "after_power_variable_cost_musd_per_pj": -13.216931130239278,
+            "before_fixed_cost_musd_per_gw_year": 22,
+            "added_sunk_cost_musd_per_gw_year": 256.39368962952454,
+            "after_fixed_cost_musd_per_gw_year": 278.39368962952454,
+            "legacy_gas_capacity_gw": 3.4525
+        }
+    ],
+    "prohibited_changes_confirmed_absent": [
+        "TotalTechnologyAnnualActivityLowerLimit",
+        "TotalTechnologyAnnualActivityUpperLimit",
+        "technology generation shares",
+        "realized post-2020 capacity additions"
+    ]
+}

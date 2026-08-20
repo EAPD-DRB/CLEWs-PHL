@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "status": "not_frozen",
+  "model_status": "validated_and_promoted",
+  "created": "2026-08-05",
+  "source_package": "Philippines_v20_CLEWs_build",
+  "muio_archive": "muio/Philippines_v20_v20.0.0_MUIO.zip",
+  "tree_hashes": {},
+  "notes": "A Model-tools raw-baseline delivery freeze is intentionally not claimed for this evolved and partly calibrated model. The result-free v20 portable archive is SHA-256 pinned in data_sources/evidence/CURRENT_MODEL_ARCHIVE_MANIFEST.csv; retained evidence is pinned in RETAINED_EVIDENCE_MANIFEST.csv. Build-stage package and ledger validation are authoritative."
+}

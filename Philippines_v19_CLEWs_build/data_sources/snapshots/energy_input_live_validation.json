@@ -1,0 +1,100 @@
+{
+  "schema": "philippines-v16-energy-input-live-validation-v1",
+  "generated_at_utc": "2026-08-11T21:06:54.377487+00:00",
+  "status": "pass",
+  "case": "Philippines_v16",
+  "run": "ENERGY_INPUTS_BASE",
+  "solver": {
+    "status": "Optimal - objective value 369730088.29570782",
+    "cbc_wall_seconds": 263.58,
+    "full_chain_seconds": 334.13972902297974,
+    "matrix_rows": 791109,
+    "matrix_columns": 884956,
+    "matrix_nonzeros": 12552173
+  },
+  "checks": [
+    {
+      "name": "promoted_source_identity",
+      "status": "pass",
+      "detail": {
+        "live": {
+          "genData.json": "c8f277c5b3bd7e083554a86c0babbd61f263ab59f045283ca04a1fd46dc3a531",
+          "RYT.json": "54efdd48659ee0ce77e96e3845de528283c056b092ba0dd5c7921d14fdaca1d9",
+          "RYTTs.json": "ae37bfbc69eda5a73f9b3ff26314bdf995b97f892e5f0e00f2f998d62d284848"
+        },
+        "validated_candidate": {
+          "genData.json": "c8f277c5b3bd7e083554a86c0babbd61f263ab59f045283ca04a1fd46dc3a531",
+          "RYT.json": "54efdd48659ee0ce77e96e3845de528283c056b092ba0dd5c7921d14fdaca1d9",
+          "RYTTs.json": "ae37bfbc69eda5a73f9b3ff26314bdf995b97f892e5f0e00f2f998d62d284848"
+        }
+      }
+    },
+    {
+      "name": "live_cbc_optimal",
+      "status": "pass",
+      "detail": "Optimal - objective value 369730088.29570782"
+    },
+    {
+      "name": "live_objective_reproduces_candidate",
+      "status": "pass",
+      "detail": {
+        "live": 369730088.2957078,
+        "validated_candidate": 369730088.2957073,
+        "difference": 5.3e-07
+      }
+    },
+    {
+      "name": "live_generated_representation",
+      "status": "pass",
+      "detail": {
+        "new_names_present": true,
+        "old_names_absent": true
+      }
+    },
+    {
+      "name": "live_affected_results",
+      "status": "pass",
+      "detail": {
+        "demand_rows_identical": true,
+        "maximum_annual_technology_emission_difference": 0.0,
+        "offshore_new_capacity_max_gw": 0.0,
+        "onshore_peak_activity_pj": 2.4657,
+        "onshore_tau_pj": 663.84,
+        "geothermal_peak_activity_pj": 113.5296,
+        "geothermal_min_capacity_residual_pj": -0.0005524799999960806
+      }
+    },
+    {
+      "name": "alternative_optimum_disclosed",
+      "status": "pass",
+      "detail": {
+        "objective_difference": 5.3e-07,
+        "maximum_absolute_output_differences": {
+          "NewCapacity.csv": 354.911,
+          "TotalCapacityAnnual.csv": 317.0789,
+          "TotalAnnualTechnologyActivityByMode.csv": 453.4635
+        },
+        "interpretation": "Repeated CBC solves selected different degenerate activity/capacity solutions at the same objective; affected physical checks remain valid."
+      }
+    },
+    {
+      "name": "live_generation_and_freshness",
+      "status": "pass",
+      "detail": {
+        "generated_files": {
+          "data.txt": true,
+          "data_processed.txt": true,
+          "lp.lp": true,
+          "results.txt": true
+        },
+        "result_after_source": true,
+        "result_mtime_utc": "2026-08-11T21:03:42.102196+00:00"
+      }
+    }
+  ],
+  "non_forcing_result": {
+    "offshore_new_capacity_gw": 0.0,
+    "offshore_reduced_cost_2025": 1639.5751,
+    "offshore_reduced_cost_2053": 11.342552
+  }
+}

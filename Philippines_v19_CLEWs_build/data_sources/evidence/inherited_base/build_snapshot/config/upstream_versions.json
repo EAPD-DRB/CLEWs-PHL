@@ -1,0 +1,28 @@
+{
+  "created": "2026-07-25",
+  "workflow": {
+    "repository": "https://github.com/ClimateCompatibleGrowth/clews-global",
+    "commit": "8df78c66be104e446f84a7dbb0df1c0a4fda4080"
+  },
+  "submodules": {
+    "CLEWs_GAEZ": {
+      "repository": "https://github.com/ClimateCompatibleGrowth/CLEWs_GAEZ",
+      "commit": "30ec12e6524dc9c8ce474ffe1a467508f992007f"
+    },
+    "clewsy": {
+      "repository": "https://github.com/ClimateCompatibleGrowth/clewsy",
+      "commit": "6eefaf2abc6d91917c0fddfeea373db37443a8dd"
+    },
+    "osemosys_global": {
+      "repository": "https://github.com/ClimateCompatibleGrowth/osemosys_global",
+      "commit": "036fdd07cc0dc31df1649cdc1689a8aa35a83a36"
+    }
+  },
+  "toolchain": {
+    "snakemake": "9.23.1",
+    "otoole": "1.1.5",
+    "glpk": "5.0",
+    "cbc": "2.10.12"
+  },
+  "solver_used_for_authoritative_raw_result": "CBC 2.10.12"
+}

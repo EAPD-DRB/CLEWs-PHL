@@ -1,0 +1,1131 @@
+{
+  "schema": "philippines-v18-power-investment-cleanup-validation-v1",
+  "status": "pass",
+  "control": "/Users/sato/Documents/GitHub/CLEWs-PHL/case/Philippines_v18",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v18-power-investment-20260817",
+  "source": {
+    "changed_source_files": [
+      "RYT.json"
+    ],
+    "changed_cells": 62,
+    "changed_parameter_counts": {
+      "TAMinCI": 20,
+      "TAMaxCI": 42
+    },
+    "residual_capacity_byte_unchanged": true,
+    "scenario_overlays_unchanged": true,
+    "pins_remaining": 0,
+    "stock_only_entry_zero_all_years": true,
+    "base_coal_envelope_verified": true,
+    "coal_phaseout_exact_zero_verified": true,
+    "candidate_ryt_sha256": "333f37a5ac526530af7ea797b119ac7c09ba69be99accd5318b829f68b188792"
+  },
+  "generated": {
+    "data_txt_sha256": "3b5f6e9069b438e1eba1e456627a92df0dbc116b513589a5efea81fe5f78caf8",
+    "effective_tomorrowland_coal_tamaxci": {
+      "2020-2029": 2,
+      "2030": 2.5,
+      "2031-2053": 0
+    },
+    "generated_pin_minima_zero": true,
+    "generated_stock_only_entry_zero": true
+  },
+  "solve": {
+    "status": "Optimal - objective value 369758319.27495068",
+    "objective": 369758319.2749507,
+    "cbc_cpu_seconds": 366.2,
+    "cbc_wall_seconds": 371.19,
+    "matrix": {
+      "rows": 808384,
+      "columns": 900022,
+      "matrix_nonzeros": 12892647,
+      "objective_nonzeros": 427456
+    },
+    "stock_only_new_capacity_zero": true,
+    "coal_new_capacity_within_effective_cap": true,
+    "observed_additions_are_benchmark_only": {
+      "PHL_POW_PP_SPV": {
+        "2021": {
+          "benchmark_gw": 0.3024,
+          "model_gw": 0.0,
+          "difference_gw": -0.3024
+        },
+        "2022": {
+          "benchmark_gw": 0.3049,
+          "model_gw": 0.0,
+          "difference_gw": -0.3049
+        },
+        "2023": {
+          "benchmark_gw": 0.1568,
+          "model_gw": 0.0,
+          "difference_gw": -0.1568
+        },
+        "2024": {
+          "benchmark_gw": 1.0012,
+          "model_gw": 0.0,
+          "difference_gw": -1.0012
+        },
+        "2025": {
+          "benchmark_gw": 0.2749,
+          "model_gw": 6.7976528,
+          "difference_gw": 6.5227528
+        }
+      },
+      "PHL_POW_PP_COAL": {
+        "2021": {
+          "benchmark_gw": 0.725,
+          "model_gw": 0.0,
+          "difference_gw": -0.725
+        },
+        "2022": {
+          "benchmark_gw": 0.7694,
+          "model_gw": 0.0,
+          "difference_gw": -0.7694
+        },
+        "2024": {
+          "benchmark_gw": 0.6,
+          "model_gw": 2.0,
+          "difference_gw": 1.4
+        }
+      },
+      "PHL_POW_CHP_OIL_OLD": {
+        "2021": {
+          "benchmark_gw": 0.1798,
+          "model_gw": 0.0,
+          "difference_gw": -0.1798
+        },
+        "2022": {
+          "benchmark_gw": 0.0973,
+          "model_gw": 0.0,
+          "difference_gw": -0.0973
+        },
+        "2024": {
+          "benchmark_gw": 0.0112,
+          "model_gw": 0.0,
+          "difference_gw": -0.0112
+        }
+      },
+      "PHL_POW_CHP_BIOM_OLD": {
+        "2022": {
+          "benchmark_gw": 0.082,
+          "model_gw": 0.0,
+          "difference_gw": -0.082
+        },
+        "2023": {
+          "benchmark_gw": 0.006,
+          "model_gw": 0.0,
+          "difference_gw": -0.006
+        },
+        "2024": {
+          "benchmark_gw": 0.0099,
+          "model_gw": 0.0,
+          "difference_gw": -0.0099
+        }
+      },
+      "PHL_POW_PP_HY_LA": {
+        "2022": {
+          "benchmark_gw": 0.0159,
+          "model_gw": 0.0,
+          "difference_gw": -0.0159
+        },
+        "2023": {
+          "benchmark_gw": 0.0468,
+          "model_gw": 0.0,
+          "difference_gw": -0.0468
+        },
+        "2024": {
+          "benchmark_gw": 0.0352,
+          "model_gw": 0.0,
+          "difference_gw": -0.0352
+        }
+      },
+      "PHL_POW_GEO_OLD": {
+        "2022": {
+          "benchmark_gw": 0.0037,
+          "model_gw": 0.0,
+          "difference_gw": -0.0037
+        },
+        "2025": {
+          "benchmark_gw": 0.0357,
+          "model_gw": 0.084734196,
+          "difference_gw": 0.049034195999999995
+        }
+      },
+      "PHL_POW_PP_NGCC": {
+        "2025": {
+          "benchmark_gw": 0.88,
+          "model_gw": 0.0,
+          "difference_gw": -0.88
+        }
+      }
+    },
+    "fossil_supply_activity_pj": {
+      "PHL_PRO_EXTR_COAL": {
+        "2020": 353.6,
+        "2021": 353.6,
+        "2022": 353.6,
+        "2023": 353.6,
+        "2024": 353.6,
+        "2025": 442.0,
+        "2026": 442.0,
+        "2027": 442.0,
+        "2028": 353.6,
+        "2029": 353.6,
+        "2030": 353.6,
+        "2031": 353.6,
+        "2032": 353.6,
+        "2033": 353.6,
+        "2034": 353.6,
+        "2035": 353.6,
+        "2036": 353.6,
+        "2037": 353.6,
+        "2038": 353.6,
+        "2039": 353.6,
+        "2040": 353.6,
+        "2041": 353.6,
+        "2042": 353.6,
+        "2043": 353.6,
+        "2044": 353.6,
+        "2045": 139.74747,
+        "2046": 0.0,
+        "2047": 0.0,
+        "2048": 0.0,
+        "2049": 0.0,
+        "2050": 0.0,
+        "2051": 0.0,
+        "2052": 0.0,
+        "2053": 0.0
+      },
+      "PHL_PRO_IMP_COAL": {
+        "2020": 674.33356,
+        "2021": 743.82033,
+        "2022": 1198.1289,
+        "2023": 1316.9638,
+        "2024": 1045.2397,
+        "2025": 912.96963,
+        "2026": 916.68288,
+        "2027": 958.14393,
+        "2028": 1092.6221,
+        "2029": 1127.6015,
+        "2030": 1155.754,
+        "2031": 1224.5327,
+        "2032": 1194.8102,
+        "2033": 1247.6943,
+        "2034": 1298.4699,
+        "2035": 1246.5135,
+        "2036": 1293.5473,
+        "2037": 1332.0698,
+        "2038": 1295.5185,
+        "2039": 1259.1003,
+        "2040": 1216.0897,
+        "2041": 1232.3936,
+        "2042": 1228.0742,
+        "2043": 1251.6134,
+        "2044": 1274.7533,
+        "2045": 1511.0158,
+        "2046": 1665.4031,
+        "2047": 1694.8164,
+        "2048": 1722.2797,
+        "2049": 1729.5218,
+        "2050": 1664.163,
+        "2051": 1695.9667,
+        "2052": 1726.1977,
+        "2053": 1754.2792
+      },
+      "PHL_PRO_EXP_COAL": {
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 353.6,
+        "2023": 353.6,
+        "2024": 0.0,
+        "2025": 0.0,
+        "2026": 0.0,
+        "2027": 0.0,
+        "2028": 0.0,
+        "2029": 0.0,
+        "2030": 0.0,
+        "2031": 0.0,
+        "2032": 0.0,
+        "2033": 0.0,
+        "2034": 0.0,
+        "2035": 0.0,
+        "2036": 0.0,
+        "2037": 0.0,
+        "2038": 0.0,
+        "2039": 0.0,
+        "2040": 0.0,
+        "2041": 0.0,
+        "2042": 0.0,
+        "2043": 0.0,
+        "2044": 0.0,
+        "2045": 0.0,
+        "2046": 0.0,
+        "2047": 0.0,
+        "2048": 0.0,
+        "2049": 0.0,
+        "2050": 0.0,
+        "2051": 0.0,
+        "2052": 0.0,
+        "2053": 0.0
+      },
+      "PHL_PRO_EXTR_OIL": {
+        "2020": 4.1450321,
+        "2021": 3.7305289,
+        "2022": 3.357476,
+        "2023": 3.0217284,
+        "2024": 2.7195556,
+        "2025": 2.4476,
+        "2026": 2.20284,
+        "2027": 0.45867353,
+        "2028": 0.0,
+        "2029": 0.0,
+        "2030": 0.0,
+        "2031": 0.0,
+        "2032": 0.0,
+        "2033": 0.0,
+        "2034": 0.0,
+        "2035": 0.0,
+        "2036": 0.0,
+        "2037": 0.0,
+        "2038": 0.0,
+        "2039": 0.0,
+        "2040": 0.0,
+        "2041": 0.0,
+        "2042": 0.0,
+        "2043": 0.0,
+        "2044": 0.0,
+        "2045": 0.0,
+        "2046": 0.0,
+        "2047": 0.0,
+        "2048": 0.0,
+        "2049": 0.0,
+        "2050": 0.0,
+        "2051": 0.0,
+        "2052": 0.0,
+        "2053": 0.0
+      },
+      "PHL_PRO_IMP_OIL": {
+        "2020": 350.85904,
+        "2021": 324.07884,
+        "2022": 299.70447,
+        "2023": 260.12043,
+        "2024": 238.63614,
+        "2025": 200.88802,
+        "2026": 174.98468,
+        "2027": 149.72852,
+        "2028": 103.36041,
+        "2029": 73.82,
+        "2030": 61.52,
+        "2031": 49.22,
+        "2032": 36.91,
+        "2033": 24.61,
+        "2034": 12.3,
+        "2035": -9.2740866e-13,
+        "2036": 3.2523449e-14,
+        "2037": 6.3964078e-14,
+        "2038": 6.4788756e-14,
+        "2039": 0.0,
+        "2040": 0.20269645,
+        "2041": 0.26088537,
+        "2042": 0.26275907,
+        "2043": 0.27378995,
+        "2044": 0.27113055,
+        "2045": 0.23291717,
+        "2046": 0.22680233,
+        "2047": 0.2253494,
+        "2048": 0.2114263,
+        "2049": 0.20628635,
+        "2050": 0.11939453,
+        "2051": 0.20021958,
+        "2052": 0.18881393,
+        "2053": 0.048452071
+      },
+      "PHL_PRO_EXP_OIL": {
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 3.357476,
+        "2023": 0.0,
+        "2024": 0.0,
+        "2025": 0.0,
+        "2026": 0.0,
+        "2027": 0.0,
+        "2028": 0.0,
+        "2029": 0.0,
+        "2030": 0.0,
+        "2031": 0.0,
+        "2032": 0.0,
+        "2033": 0.0,
+        "2034": 0.0,
+        "2035": 0.0,
+        "2036": 0.0,
+        "2037": 0.0,
+        "2038": 0.0,
+        "2039": 0.0,
+        "2040": 0.0,
+        "2041": 0.0,
+        "2042": 0.0,
+        "2043": 0.0,
+        "2044": 0.0,
+        "2045": 0.0,
+        "2046": 0.0,
+        "2047": 0.0,
+        "2048": 0.0,
+        "2049": 0.0,
+        "2050": 0.0,
+        "2051": 0.0,
+        "2052": 0.0,
+        "2053": 0.0
+      }
+    },
+    "baseline_comparison": {
+      "status": "Optimal - objective value 369766929.90727115",
+      "objective": 369766929.90727115,
+      "objective_difference": -8610.632320463657,
+      "objective_percent_difference": -0.002328664795043462,
+      "source_identity": "nearest retained canonical only; not source-identical because current source contains intervening fossil-supply structure",
+      "changed_power_new_capacity_cells_over_1e-7": [
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_CHP_OIL_OLD,2021)",
+          "baseline": 0.1798,
+          "candidate": 0.0,
+          "delta": -0.1798
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_CHP_OIL_OLD,2022)",
+          "baseline": 0.0973,
+          "candidate": 0.0,
+          "delta": -0.0973
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_CHP_OIL_OLD,2024)",
+          "baseline": 0.0112,
+          "candidate": 0.0,
+          "delta": -0.0112
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2026)",
+          "baseline": 0.8007574,
+          "candidate": 0.82733874,
+          "delta": 0.02658134000000001
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2027)",
+          "baseline": 0.84106553,
+          "candidate": 0.81521405,
+          "delta": -0.025851479999999927
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2028)",
+          "baseline": 0.82928428,
+          "candidate": 0.82148689,
+          "delta": -0.007797390000000015
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2029)",
+          "baseline": 0.85592753,
+          "candidate": 0.86299838,
+          "delta": 0.007070849999999962
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2030)",
+          "baseline": 0.8930583,
+          "candidate": 0.90035043,
+          "delta": 0.007292130000000063
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2031)",
+          "baseline": 1.0616985,
+          "candidate": 1.0544064,
+          "delta": -0.007292100000000135
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2033)",
+          "baseline": 1.0433535,
+          "candidate": 1.0364032,
+          "delta": -0.006950299999999965
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2034)",
+          "baseline": 1.0335863,
+          "candidate": 1.0393831,
+          "delta": 0.005796799999999935
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2035)",
+          "baseline": 1.0282348,
+          "candidate": 1.0378174,
+          "delta": 0.009582600000000108
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2036)",
+          "baseline": 1.1720123,
+          "candidate": 1.1635799,
+          "delta": -0.008432400000000007
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2038)",
+          "baseline": 1.0882772,
+          "candidate": 0.754982,
+          "delta": -0.3332952
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2039)",
+          "baseline": 0.40973668,
+          "candidate": 0.72206651,
+          "delta": 0.31232983
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2040)",
+          "baseline": 0.87395951,
+          "candidate": 0.89337684,
+          "delta": 0.0194173299999999
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2041)",
+          "baseline": 1.0993627,
+          "candidate": 1.3665314,
+          "delta": 0.26716870000000004
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2042)",
+          "baseline": 1.9719639,
+          "candidate": 2.0004694,
+          "delta": 0.028505500000000072
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2043)",
+          "baseline": 1.745534,
+          "candidate": 1.4585673,
+          "delta": -0.2869667
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2044)",
+          "baseline": 1.2923045,
+          "candidate": 1.2849883,
+          "delta": -0.007316199999999995
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2045)",
+          "baseline": 1.2650816,
+          "candidate": 1.2650835,
+          "delta": 1.8999999999991246e-06
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2046)",
+          "baseline": 1.4149341,
+          "candidate": 1.4046082,
+          "delta": -0.010325899999999999
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2047)",
+          "baseline": 1.32927,
+          "candidate": 1.339594,
+          "delta": 0.010324
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2048)",
+          "baseline": 1.3202504,
+          "candidate": 1.3204823,
+          "delta": 0.00023190000000017363
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2049)",
+          "baseline": 1.1509819,
+          "candidate": 1.1373695,
+          "delta": -0.013612399999999969
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2050)",
+          "baseline": 1.7237489,
+          "candidate": 1.7074537,
+          "delta": -0.016295199999999843
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2051)",
+          "baseline": 1.1843476,
+          "candidate": 1.1964339,
+          "delta": 0.012086299999999994
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_TD,2053)",
+          "baseline": 1.1624304,
+          "candidate": 1.1848752,
+          "delta": 0.02244479999999993
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2021)",
+          "baseline": 0.3024,
+          "candidate": 0.0,
+          "delta": -0.3024
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2022)",
+          "baseline": 0.3049,
+          "candidate": 0.0,
+          "delta": -0.3049
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2023)",
+          "baseline": 0.1568,
+          "candidate": 0.0,
+          "delta": -0.1568
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2024)",
+          "baseline": 1.0012,
+          "candidate": 0.0,
+          "delta": -1.0012
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2025)",
+          "baseline": 0.2749,
+          "candidate": 6.7976528,
+          "delta": 6.5227528
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2027)",
+          "baseline": 3.2225269,
+          "candidate": 2.6416132,
+          "delta": -0.5809137
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2028)",
+          "baseline": 3.4329332,
+          "candidate": 2.8519045,
+          "delta": -0.5810287000000001
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2029)",
+          "baseline": 3.6296858,
+          "candidate": 3.0594837,
+          "delta": -0.5702020999999999
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2030)",
+          "baseline": 3.7891814,
+          "candidate": 3.7802374,
+          "delta": -0.008944000000000063
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2031)",
+          "baseline": 3.7591904,
+          "candidate": 3.7419837,
+          "delta": -0.01720670000000002
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2032)",
+          "baseline": 3.9376665,
+          "candidate": 3.9439726,
+          "delta": 0.006306099999999759
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2033)",
+          "baseline": 1.247435,
+          "candidate": 0.0,
+          "delta": -1.247435
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2034)",
+          "baseline": 0.58755225,
+          "candidate": 0.0,
+          "delta": -0.58755225
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2035)",
+          "baseline": 0.50800374,
+          "candidate": 0.0,
+          "delta": -0.50800374
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2036)",
+          "baseline": 0.26406225,
+          "candidate": 0.0057061677,
+          "delta": -0.2583560823
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2037)",
+          "baseline": 0.58174296,
+          "candidate": 0.58174956,
+          "delta": 6.599999999967743e-06
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2038)",
+          "baseline": 0.6702777,
+          "candidate": 0.43523027,
+          "delta": -0.23504743
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2039)",
+          "baseline": 0.68203386,
+          "candidate": 0.8256651,
+          "delta": 0.14363124000000005
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2041)",
+          "baseline": 0.039581877,
+          "candidate": 0.0,
+          "delta": -0.039581877
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2042)",
+          "baseline": 2.3952073,
+          "candidate": 2.1589764,
+          "delta": -0.23623090000000024
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2045)",
+          "baseline": 0.26821661,
+          "candidate": 0.4646197,
+          "delta": 0.19640309
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2046)",
+          "baseline": 1.8721556,
+          "candidate": 1.7831286,
+          "delta": -0.08902699999999997
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2047)",
+          "baseline": 1.5585893,
+          "candidate": 0.98771391,
+          "delta": -0.57087539
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2048)",
+          "baseline": 2.7818897,
+          "candidate": 3.1730082,
+          "delta": 0.39111850000000015
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2049)",
+          "baseline": 1.6069629,
+          "candidate": 1.6332963,
+          "delta": 0.02633339999999995
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2050)",
+          "baseline": 6.0074113,
+          "candidate": 6.027631,
+          "delta": 0.020219700000000174
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2051)",
+          "baseline": 1.5768929,
+          "candidate": 1.3166162,
+          "delta": -0.26027670000000014
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2052)",
+          "baseline": 1.9393724,
+          "candidate": 1.6276526,
+          "delta": -0.3117198000000001
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_SPV,2053)",
+          "baseline": 2.6724131,
+          "candidate": 2.6846591,
+          "delta": 0.012246000000000201
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2025)",
+          "baseline": 0.88,
+          "candidate": 0.0,
+          "delta": -0.88
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2038)",
+          "baseline": 0.0,
+          "candidate": 0.82239671,
+          "delta": 0.82239671
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2039)",
+          "baseline": 0.79468369,
+          "candidate": 1.4760391,
+          "delta": 0.6813554099999999
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2040)",
+          "baseline": 2.2644368,
+          "candidate": 2.1951417,
+          "delta": -0.06929509999999972
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2041)",
+          "baseline": 0.42403074,
+          "candidate": 0.77225508,
+          "delta": 0.34822433999999997
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2042)",
+          "baseline": 1.1883695,
+          "candidate": 1.2232127,
+          "delta": 0.03484319999999985
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2043)",
+          "baseline": 1.2061517,
+          "candidate": 1.1041419,
+          "delta": -0.10200980000000004
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2044)",
+          "baseline": 1.1390004,
+          "candidate": 1.2027484,
+          "delta": 0.06374799999999992
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2045)",
+          "baseline": 1.3338097,
+          "candidate": 1.3829689,
+          "delta": 0.04915920000000007
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2046)",
+          "baseline": 2.4384764,
+          "candidate": 1.8662169,
+          "delta": -0.5722594999999999
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2047)",
+          "baseline": 1.1773096,
+          "candidate": 1.1492066,
+          "delta": -0.02810299999999999
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2048)",
+          "baseline": 1.3201019,
+          "candidate": 1.3406539,
+          "delta": 0.020551999999999904
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2049)",
+          "baseline": 1.2688641,
+          "candidate": 1.2795229,
+          "delta": 0.010658799999999857
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2050)",
+          "baseline": 2.486661,
+          "candidate": 1.618371,
+          "delta": -0.8682899999999998
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2051)",
+          "baseline": 1.4940041,
+          "candidate": 1.4936371,
+          "delta": -0.0003670000000000062
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2052)",
+          "baseline": 1.5822146,
+          "candidate": 1.5818542,
+          "delta": -0.00036039999999992745
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_NGCC,2053)",
+          "baseline": 2.1630338,
+          "candidate": 2.1445051,
+          "delta": -0.018528700000000065
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_HY_LA,2022)",
+          "baseline": 0.0159,
+          "candidate": 0.0,
+          "delta": -0.0159
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_HY_LA,2023)",
+          "baseline": 0.0468,
+          "candidate": 0.0,
+          "delta": -0.0468
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_HY_LA,2024)",
+          "baseline": 0.0352,
+          "candidate": 0.0,
+          "delta": -0.0352
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_H2,2043)",
+          "baseline": 0.020486708,
+          "candidate": 0.065412824,
+          "delta": 0.044926115999999995
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_H2,2044)",
+          "baseline": 0.033132146,
+          "candidate": 0.033057507,
+          "delta": -7.463900000000134e-05
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_H2,2045)",
+          "baseline": 0.025265766,
+          "candidate": 0.0094260543,
+          "delta": -0.0158397117
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_H2,2051)",
+          "baseline": 0.012180314,
+          "candidate": 0.0,
+          "delta": -0.012180314
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL_CCS,2046)",
+          "baseline": 0.15273975,
+          "candidate": 0.0,
+          "delta": -0.15273975
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL_CCS,2047)",
+          "baseline": 0.91623626,
+          "candidate": 0.17493529,
+          "delta": -0.7413009700000001
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL_CCS,2048)",
+          "baseline": 0.063192497,
+          "candidate": 0.8120148,
+          "delta": 0.7488223030000001
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL_CCS,2049)",
+          "baseline": 0.058807719,
+          "candidate": 1.4408054,
+          "delta": 1.3819976809999999
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL_CCS,2050)",
+          "baseline": 1.6741268,
+          "candidate": 0.4159755,
+          "delta": -1.2581513
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL_CCS,2051)",
+          "baseline": 1.6779924,
+          "candidate": 1.6905398,
+          "delta": 0.012547400000000097
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL_CCS,2052)",
+          "baseline": 1.6439947,
+          "candidate": 1.6443552,
+          "delta": 0.00036049999999998583
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL_CCS,2053)",
+          "baseline": 1.5887038,
+          "candidate": 1.6072325,
+          "delta": 0.018528700000000065
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL,2021)",
+          "baseline": 0.725,
+          "candidate": 0.0,
+          "delta": -0.725
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL,2022)",
+          "baseline": 0.7694,
+          "candidate": 0.0,
+          "delta": -0.7694
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL,2023)",
+          "baseline": 0.0,
+          "candidate": 0.76923797,
+          "delta": 0.76923797
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL,2024)",
+          "baseline": 0.6,
+          "candidate": 2.0,
+          "delta": 1.4
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_PP_COAL,2025)",
+          "baseline": 3.2371645,
+          "candidate": 2.0,
+          "delta": -1.2371645
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GEO_OLD,2022)",
+          "baseline": 0.0037,
+          "candidate": 0.0,
+          "delta": -0.0037
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GEO_OLD,2024)",
+          "baseline": 1.2497465,
+          "candidate": 0.0,
+          "delta": -1.2497465
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GEO_OLD,2025)",
+          "baseline": 0.0357,
+          "candidate": 0.084734196,
+          "delta": 0.049034195999999995
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GEO_OLD,2027)",
+          "baseline": 0.0,
+          "candidate": 0.15,
+          "delta": 0.15
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GEO_OLD,2028)",
+          "baseline": 0.0,
+          "candidate": 0.15,
+          "delta": 0.15
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GEO_OLD,2029)",
+          "baseline": 0.0,
+          "candidate": 0.15,
+          "delta": 0.15
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GEO_OLD,2033)",
+          "baseline": 0.0,
+          "candidate": 0.32612226,
+          "delta": 0.32612226
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GEO_OLD,2034)",
+          "baseline": 0.0,
+          "candidate": 0.16050958,
+          "delta": 0.16050958
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GEO_OLD,2035)",
+          "baseline": 0.064448629,
+          "candidate": 0.25,
+          "delta": 0.18555137100000002
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GEO_OLD,2040)",
+          "baseline": 0.26777092,
+          "candidate": 0.35,
+          "delta": 0.08222907999999995
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_CHP_BIOM_OLD,2022)",
+          "baseline": 0.082,
+          "candidate": 0.0,
+          "delta": -0.082
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_CHP_BIOM_OLD,2023)",
+          "baseline": 0.006,
+          "candidate": 0.0,
+          "delta": -0.006
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_CHP_BIOM_OLD,2024)",
+          "baseline": 0.0099,
+          "candidate": 0.0,
+          "delta": -0.0099
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_ELEC,2048)",
+          "baseline": 0.2010347,
+          "candidate": 0.20041188,
+          "delta": -0.0006228200000000239
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_ELEC,2050)",
+          "baseline": 0.84142012,
+          "candidate": 0.88883003,
+          "delta": 0.047409910000000055
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_ELEC,2051)",
+          "baseline": 0.53354989,
+          "candidate": 0.51338381,
+          "delta": -0.020166079999999975
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_ELEC,2052)",
+          "baseline": 0.56448592,
+          "candidate": 0.55414282,
+          "delta": -0.010343099999999938
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_ELEC,2053)",
+          "baseline": 0.52913878,
+          "candidate": 0.53948187,
+          "delta": 0.01034309
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GH2_COAL,2041)",
+          "baseline": 0.072232461,
+          "candidate": 0.0395987,
+          "delta": -0.032633761
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GH2_COAL,2042)",
+          "baseline": 0.010442364,
+          "candidate": 0.04307807,
+          "delta": 0.032635706
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GH2_COAL,2043)",
+          "baseline": 0.067735038,
+          "candidate": 0.067839292,
+          "delta": 0.00010425399999999807
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GH2_COAL,2044)",
+          "baseline": 0.054854546,
+          "candidate": 0.054730972,
+          "delta": -0.00012357399999999436
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GH2_COAL,2045)",
+          "baseline": 0.041830738,
+          "candidate": 0.041745139,
+          "delta": -8.55989999999987e-05
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GH2_COAL,2046)",
+          "baseline": 0.087213429,
+          "candidate": 0.087167119,
+          "delta": -4.6309999999993856e-05
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GH2_COAL,2047)",
+          "baseline": 0.058300165,
+          "candidate": 0.05827171,
+          "delta": -2.8455000000003616e-05
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GH2_COAL,2048)",
+          "baseline": 0.035966394,
+          "candidate": 0.035536701,
+          "delta": -0.0004296930000000018
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GH2_COAL,2049)",
+          "baseline": 0.021877157,
+          "candidate": 0.043075159,
+          "delta": 0.021198002
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GH2_COAL,2050)",
+          "baseline": 0.073648577,
+          "candidate": 0.10046791,
+          "delta": 0.026819332999999987
+        },
+        {
+          "variable": "NewCapacity(RE1,PHL_POW_GH2_COAL,2051)",
+          "baseline": 0.18439863,
+          "candidate": 0.16423254,
+          "delta": -0.020166089999999998
+        }
+      ]
+    },
+    "results_sha256": "95efcfd130f44beb8aed9961bfeb47fd84e2702c07ce033f9109974344f49f29",
+    "lp_sha256": "ec7b236ba3bbf9b44644a8a5a6fd97ca59d32be1ce5e3ea4274c13ba5520ddff"
+  },
+  "optimizer_runs_for_candidate": 1
+}

@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-07",
+  "case": "Philippines_v16",
+  "run": "BASE_V15",
+  "input_status": "This result predates the change from PHP250000/ha and 15 years to PHP300000/ha and 30 years.",
+  "status": "optimal",
+  "objective": 369729190.46216184,
+  "full_chain_wall_seconds": 334.6472430229187,
+  "cbc_wall_seconds": 281.75,
+  "source_identical_candidate_objective": 369729190.46215844,
+  "source_identical_candidate_full_chain_wall_seconds": 216.65740704536438,
+  "matrix_structure_changed": false,
+  "irrigated_area_mha": {
+    "2020": 2.006,
+    "2030": 2.006,
+    "2050": 2.006,
+    "2053": 2.006
+  },
+  "rainfed_rice_area_mha": {
+    "2020": 0.87965,
+    "2030": 1.68859,
+    "2050": 2.91279,
+    "2053": 2.91279
+  },
+  "new_irrigated_rice_capacity": 0,
+  "irrigated_rice_production_mt_2020": 16.2883,
+  "national_irrigated_rice_production_benchmark_mt_2020": 14.57,
+  "limitations": [
+    "National irrigation service area is not split by model crop, input class, cluster, or scheme age.",
+    "Endogenous selection of higher-yield clusters raises modeled irrigated output above the national benchmark."
+  ]
+}

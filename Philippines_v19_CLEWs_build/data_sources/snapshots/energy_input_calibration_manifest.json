@@ -1,0 +1,109 @@
+{
+    "schema": "philippines-v16-energy-input-candidate-v1",
+    "source_case": "/Users/sato/Documents/GitHub/CLEWs-PHL/case/Philippines_v16",
+    "target_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v16-energy-inputs-candidate",
+    "input_file": "/Users/sato/Documents/GitHub/MUIOGO/scripts/data/philippines_v16_energy_inputs.json",
+    "input_sha256": "d16ac808cda4bf15b19c4969e406234cd1cd66a40ba96948b610c23b69cdf744",
+    "source_hashes": {
+        "genData.json": "8552b5a84594a420055b05880363b69c9da0a3f5095cbaf3b639c487bfb5b5c6",
+        "RYT.json": "857199752aa709f1d1d30398d68db38b0cb689777d274d701ee8fa898042528a",
+        "RYTTs.json": "3a1e5e92bf37584501726194bcbbb149548268cf2da573574ad523eba7823760"
+    },
+    "candidate_hashes": {
+        "genData.json": "c8f277c5b3bd7e083554a86c0babbd61f263ab59f045283ca04a1fd46dc3a531",
+        "RYT.json": "54efdd48659ee0ce77e96e3845de528283c056b092ba0dd5c7921d14fdaca1d9",
+        "RYTTs.json": "ae37bfbc69eda5a73f9b3ff26314bdf995b97f892e5f0e00f2f998d62d284848"
+    },
+    "changed_source_files": [
+        "RYT.json",
+        "RYTTs.json",
+        "genData.json"
+    ],
+    "technology_renames": [
+        {
+            "tech_id": "TEC_1wdli",
+            "before": "PHL_POW_PP_WON_T1",
+            "after": "PHL_POW_PP_WON"
+        },
+        {
+            "tech_id": "TEC_bl1d7",
+            "before": "PHL_POW_PP_WOF_T1",
+            "after": "PHL_POW_PP_WOF"
+        },
+        {
+            "tech_id": "TEC_1k064",
+            "before": "PHL_POW_PP_SPV_T1",
+            "after": "PHL_POW_PP_SPV"
+        }
+    ],
+    "parameter_summary": {
+        "years": [
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029",
+            "2030",
+            "2031",
+            "2032",
+            "2033",
+            "2034",
+            "2035",
+            "2036",
+            "2037",
+            "2038",
+            "2039",
+            "2040",
+            "2041",
+            "2042",
+            "2043",
+            "2044",
+            "2045",
+            "2046",
+            "2047",
+            "2048",
+            "2049",
+            "2050",
+            "2051",
+            "2052",
+            "2053"
+        ],
+        "scenarios": [
+            "SC_0",
+            "SC_3hgjb",
+            "SC_w03qj",
+            "SC_huc7i"
+        ],
+        "physical_input_scenario": "SC_0",
+        "policy_scenario_treatment": "null overrides preserved; policy scenarios inherit SC_0 physical inputs",
+        "offshore": {
+            "SC_0": {
+                "before_annual_cf": 0.19427924507532,
+                "after_annual_cf": 0.2847380261587777,
+                "scale_factor": 1.4656121710190289,
+                "timeslice_rows": 30
+            }
+        },
+        "geothermal_availability": 0.9,
+        "onshore_tau_pj": 663.84
+    },
+    "classification": {
+        "initial_stock": "unchanged",
+        "final_demand": "unchanged",
+        "continuing_constraints": "onshore screened technical resource ceiling; unchanged geothermal 4 GW capacity ceiling",
+        "benchmark_only": "DOE 2020 geothermal generation and utilization"
+    },
+    "non_forcing_assertions": {
+        "technology_ids_changed": false,
+        "commodity_changed": false,
+        "final_demand_changed": false,
+        "activity_target_or_lower_bound_added": false,
+        "user_constraint_changed": false,
+        "wind_construction_required": false
+    }
+}

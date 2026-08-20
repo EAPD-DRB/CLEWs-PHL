@@ -1,0 +1,246 @@
+{
+  "schema": "philippines-v16-crop-yield-validation-v1",
+  "status": "pass",
+  "candidate_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v16-crop-yields",
+  "candidate_run": "CROP_YIELD_TEST",
+  "baseline_case": "/Users/sato/Documents/GitHub/CLEWs-PHL/case/Philippines_v16",
+  "baseline_run": "BASE",
+  "source_input": "/Users/sato/Documents/GitHub/MUIOGO/scripts/data/philippines_v16_crop_yields.json",
+  "source_input_sha256": "3cc90435dc84b14e6ef05ac5c9fd763c951423542fde4634b6f76fe992b86cdb",
+  "solver": {
+    "status": "Optimal - objective value 369729000.20044112",
+    "wall_seconds": 245.45,
+    "matrix_rows": 791109,
+    "matrix_columns": 884956,
+    "matrix_nonzeros": 12552173,
+    "matrix_objective_nonzeros": 422220
+  },
+  "checks": [
+    {
+      "name": "source_diff_scope",
+      "status": "pass",
+      "detail": [
+        "RYT.json",
+        "RYTCM.json",
+        "RYTM.json",
+        "genData.json"
+      ]
+    },
+    {
+      "name": "structural_identity",
+      "status": "pass",
+      "detail": {
+        "technologies_identical": true,
+        "commodities_identical": true,
+        "oar_mode_coordinates_identical": true,
+        "constraints_identical": true
+      }
+    },
+    {
+      "name": "no_activity_or_share_forcing",
+      "status": "pass",
+      "detail": {
+        "TAL": true,
+        "TAU": true,
+        "TAMinCI": true,
+        "TAMinC": true,
+        "TAMaxCI": true,
+        "TAMaxC": true
+      }
+    },
+    {
+      "name": "achieved_yield_formula",
+      "status": "pass",
+      "detail": {
+        "formula": "OAR [Mt/(1000 km2)] = production [t] / area [ha] / 10",
+        "expected": {
+          "rice_irrigated": 0.7264090319042872,
+          "rice_rainfed": 0.32229806503462954,
+          "corn": 0.3179030359519341,
+          "coconut": 0.3968714512187746,
+          "sugarcane": 6.113704362755851,
+          "other_vegetables_fresh_nec": 0.8593725523601126,
+          "other_crops_aggregate": 0.7866334903305353
+        },
+        "actual": {
+          "rice_irrigated": 0.7264090319042872,
+          "rice_rainfed": 0.32229806503462954,
+          "corn": 0.3179030359519341,
+          "coconut": 0.3968714512187746,
+          "sugarcane": 6.113704362755851,
+          "other_vegetables_fresh_nec": 0.8593725523601126,
+          "other_crops_aggregate": 0.7866334903305353
+        },
+        "error": {
+          "rice_irrigated": 0.0,
+          "rice_rainfed": 0.0,
+          "corn": 0.0,
+          "coconut": 0.0,
+          "sugarcane": 0.0,
+          "other_vegetables_fresh_nec": 0.0,
+          "other_crops_aggregate": 0.0
+        }
+      }
+    },
+    {
+      "name": "observed_2020_crop_area_recovery",
+      "status": "pass",
+      "detail": {
+        "baseline_mha": {
+          "other_vegetables_fresh_nec": 1.22184,
+          "coconut": 3.1249900000000004,
+          "sugarcane": 2.21809,
+          "corn": 0.97814,
+          "rice_rainfed": 0.87965,
+          "rice_irrigated": 2.006,
+          "other_crops_aggregate": 1.54928
+        },
+        "candidate_mha": {
+          "other_vegetables_fresh_nec": 0.63981,
+          "coconut": 3.65128,
+          "sugarcane": 0.39908,
+          "corn": 2.55378,
+          "rice_rainfed": 1.4654500000000001,
+          "rice_irrigated": 2.006,
+          "other_crops_aggregate": 1.2838999999999998
+        },
+        "observed_basis_mha": {
+          "rice_irrigated": 2.006,
+          "rice_rainfed": 1.46544173,
+          "corn": 2.55378055,
+          "coconut": 3.65128876,
+          "sugarcane": 0.39908605,
+          "other_vegetables_fresh_nec": 0.6398,
+          "other_crops_aggregate": 1.283887
+        },
+        "candidate_minus_observed_mha": {
+          "rice_irrigated": 0.0,
+          "rice_rainfed": 8.27000000014344e-06,
+          "corn": -5.499999997660154e-07,
+          "coconut": -8.76000000005206e-06,
+          "sugarcane": -6.050000000035194e-06,
+          "other_vegetables_fresh_nec": 9.99999999995449e-06,
+          "other_crops_aggregate": 1.2999999999818712e-05
+        }
+      }
+    },
+    {
+      "name": "crop_output_preserved",
+      "status": "pass",
+      "detail": {
+        "candidate_mt": {
+          "other_vegetables_fresh_nec": 5.4996,
+          "coconut": 14.491199999999997,
+          "sugarcane": 24.3996,
+          "corn": 8.1192,
+          "rice_rainfed": 4.7232,
+          "rice_irrigated": 14.5716,
+          "other_crops_aggregate": 10.099800000000002
+        },
+        "observed_demand_basis_mt": {
+          "rice_irrigated": 14.57176518,
+          "rice_rainfed": 4.72309034,
+          "corn": 8.1185459,
+          "coconut": 14.49092269,
+          "sugarcane": 24.39894125,
+          "other_vegetables_fresh_nec": 5.49826559,
+          "other_crops_aggregate": 10.09948512
+        },
+        "rounding_error_mt": {
+          "rice_irrigated": -0.00016517999999976496,
+          "rice_rainfed": 0.00010966000000056653,
+          "corn": 0.0006540999999984365,
+          "coconut": 0.00027730999999775463,
+          "sugarcane": 0.0006587499999994861,
+          "other_vegetables_fresh_nec": 0.0013344100000001191,
+          "other_crops_aggregate": 0.0003148800000012386
+        }
+      }
+    },
+    {
+      "name": "objective_continuity",
+      "status": "pass",
+      "detail": {
+        "baseline": 369729128.8422815,
+        "candidate": 369729000.2004411,
+        "absolute_change": -128.64184039831161,
+        "percent_change": -3.4793536771398783e-05
+      }
+    },
+    {
+      "name": "annual_emissions_unchanged",
+      "status": "pass",
+      "detail": {
+        "maximum_row_difference": 0.0
+      }
+    },
+    {
+      "name": "crop_water_effect_disclosed",
+      "status": "pass",
+      "detail": {
+        "baseline": {
+          "AGRWATPHL": {
+            "other_vegetables_fresh_nec": 0.0,
+            "coconut": 0.0,
+            "sugarcane": 0.0,
+            "corn": 0.0,
+            "rice_rainfed": 0.0,
+            "rice_irrigated": 13.182,
+            "other_crops_aggregate": 0.0
+          },
+          "PHL_WTR_PRC": {
+            "other_vegetables_fresh_nec": 22.528199999999995,
+            "coconut": 69.92,
+            "sugarcane": 60.1434,
+            "corn": 25.46219999999999,
+            "rice_rainfed": 20.989400000000003,
+            "rice_irrigated": 44.986599999999996,
+            "other_crops_aggregate": 42.00959999999998
+          }
+        },
+        "candidate": {
+          "AGRWATPHL": {
+            "other_vegetables_fresh_nec": 0.0,
+            "coconut": 0.0,
+            "sugarcane": 0.0,
+            "corn": 0.0,
+            "rice_rainfed": 0.0,
+            "rice_irrigated": 0.4332,
+            "other_crops_aggregate": 0.0
+          },
+          "PHL_WTR_PRC": {
+            "other_vegetables_fresh_nec": 20.479400000000002,
+            "coconut": 105.13129999999998,
+            "sugarcane": 11.372399999999999,
+            "corn": 87.58130000000001,
+            "rice_rainfed": 46.04560000000001,
+            "rice_irrigated": 69.62339999999999,
+            "other_crops_aggregate": 34.243
+          }
+        },
+        "interpretation": "Crop-area correction changes modeled water use. Uniform national yields leave spatial cluster selection endogenous, so this is an impact and a remaining spatial-calibration gap, not a validation target."
+      }
+    },
+    {
+      "name": "cbc_optimal",
+      "status": "pass",
+      "detail": "Optimal - objective value 369729000.20044112"
+    },
+    {
+      "name": "result_identity_and_freshness",
+      "status": "pass",
+      "detail": {
+        "candidate_case": ".Philippines_v16-crop-yields",
+        "candidate_run": "CROP_YIELD_TEST",
+        "candidate_result_mtime": 1786479257.7006845,
+        "baseline_result_mtime": 1786128053.719189
+      }
+    }
+  ],
+  "known_limitations": [
+    "National achieved yields are applied uniformly because no source-compatible subnational achieved-yield series is frozen in the ledger.",
+    "Rainfed annual-crop harvested area is a physical-area proxy; multiple cropping is not separately represented.",
+    "CRPTOM and CRPOTH remain existing aggregates; their composition is not expanded into new commodities.",
+    "Spatial water use remains sensitive to endogenous cluster choice and must not be read as a calibrated subnational crop-water allocation."
+  ]
+}

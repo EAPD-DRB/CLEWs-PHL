@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "case": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-land-water-bounds-20260813/candidate/Philippines_v18",
+  "package": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-land-water-bounds-20260813/package",
+  "objective": "369743573.76853257",
+  "optimizer_runs_total": 2,
+  "ledger_status": "finalized_pending_promotion_identity"
+}

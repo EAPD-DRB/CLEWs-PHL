@@ -1,0 +1,73 @@
+{
+  "schema": "philippines-v16-energy-inputs-v1",
+  "date": "2026-08-11",
+  "technology_renames": [
+    {
+      "tech_id": "TEC_1wdli",
+      "before": "PHL_POW_PP_WON_T1",
+      "after": "PHL_POW_PP_WON",
+      "description": "Onshore wind"
+    },
+    {
+      "tech_id": "TEC_bl1d7",
+      "before": "PHL_POW_PP_WOF_T1",
+      "after": "PHL_POW_PP_WOF",
+      "description": "Offshore wind"
+    },
+    {
+      "tech_id": "TEC_1k064",
+      "before": "PHL_POW_PP_SPV_T1",
+      "after": "PHL_POW_PP_SPV",
+      "description": "Solar photovoltaic"
+    }
+  ],
+  "offshore_wind": {
+    "tech_id": "TEC_bl1d7",
+    "method": "Capacity-weight the NREL 2009-2021 net annual capacity factors for the seven Philippine offshore development zones by their technical-potential capacity, then scale the inherited 30-timeslice shape to that annual mean.",
+    "losses_already_included_percent": 15,
+    "zones": [
+      {"zone": "A", "capacity_factor_percent": 35.28, "fixed_mw": 383, "floating_mw": 2764},
+      {"zone": "B", "capacity_factor_percent": 20.80, "fixed_mw": 174, "floating_mw": 1184},
+      {"zone": "C", "capacity_factor_percent": 28.67, "fixed_mw": 477, "floating_mw": 5622},
+      {"zone": "D", "capacity_factor_percent": 28.78, "fixed_mw": 414, "floating_mw": 26806},
+      {"zone": "E", "capacity_factor_percent": 24.56, "fixed_mw": 573, "floating_mw": 0},
+      {"zone": "F", "capacity_factor_percent": 27.18, "fixed_mw": 228, "floating_mw": 2006},
+      {"zone": "G", "capacity_factor_percent": 21.17, "fixed_mw": 704, "floating_mw": 1404}
+    ],
+    "expected_total_capacity_mw": 42739,
+    "expected_weighted_capacity_factor": 0.2847380261587777,
+    "source": {
+      "provider": "National Renewable Energy Laboratory",
+      "title": "Integrating Offshore Wind Into Competitive Renewable Energy Zones (CREZ) for the Philippines",
+      "report_number": "NREL/TP-5R00-92293",
+      "url": "https://www.nrel.gov/docs/fy25osti/92293.pdf",
+      "locators": "Figure 10 (printed page 10): annual net capacity factors; Table 4 (printed page 13): technical-potential capacity by zone and foundation type; Table 2 (printed page 9): 15% losses"
+    }
+  },
+  "geothermal": {
+    "tech_id": "TEC_0qr3z",
+    "availability_factor_before": 1.0,
+    "availability_factor_after": 0.9,
+    "source": "Retained inherited CLEWs Global AvailabilityFactor.csv for PWRGEOPHLXX01, rows 206-239",
+    "benchmark": {
+      "installed_capacity_mw_2020": 1928,
+      "dependable_capacity_mw_2020": 1753,
+      "gross_generation_mwh_2020": 10756815,
+      "installed_capacity_factor": 0.6368577374723404,
+      "dependable_capacity_factor": 0.7004594018313268
+    }
+  },
+  "onshore_wind": {
+    "tech_id": "TEC_1wdli",
+    "annual_activity_upper_limit_before_pj": 1594.08,
+    "annual_activity_upper_limit_after_pj": 663.84,
+    "calculation": "(27.0 + 120.9 + 36.5) TWh * 3.6 PJ/TWh",
+    "source": {
+      "provider": "USAID-NREL Partnership",
+      "title": "Exploring Renewable Energy Opportunities in Select Southeast Asian Countries",
+      "report_number": "NREL/TP-7A40-71814",
+      "url": "https://docs.nrel.gov/docs/fy19osti/71814.pdf",
+      "locator": "Table B-2, Philippines restricted land-use rows, printed page 62"
+    }
+  }
+}

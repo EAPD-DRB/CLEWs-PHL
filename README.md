@@ -6,9 +6,15 @@ assumptions, calculations, diagnostics, and portable MUIO cases.
 
 ## Current model package
 
-The current working model is **Philippines v18.0.0**. Its portable case is:
+The current working model is **Philippines v19.0.0**. Its portable case is:
 
-- `Philippines_v18_CLEWs_build/muio/Philippines_v18_v18.0.0_MUIO.zip`.
+- `Philippines_v19_CLEWs_build/muio/Philippines_v19_v19.0.0_MUIO.zip`.
+
+Version 19 starts from the exact working v18.0.1 archive at Git commit
+`2735feb` and adds source-traceable endogenous PM2.5 factors for 52 existing
+technologies. Only `genData.json` and `RYTEM.json` change. CO2e, costs, demands,
+capacities, constraints, and `TAMaxCI` are unchanged. The later experiment
+extending additional deployment caps into 2020-2025 is not included.
 
 Version 18 starts from the complete v17 model, retains its safeguarded national
 land account, and updates the documented geothermal, onshore-wind, coal, SMR,
@@ -39,17 +45,17 @@ All three v12 portable archives are tracked under
 
 The historical Philippines v10 energy system, Fisheries v2.3, and the v12
 CLEWs Global-derived land, agriculture, and water block remain inherited in
-v18. Read `Philippines_v18_CLEWs_build/README.md` and its canonical schema
+v19. Read `Philippines_v19_CLEWs_build/README.md` and its canonical schema
 ledger before using the model.
 
 ## Use with MUIOGO
 
 1. Install or clone [MUIOGO](https://github.com/EAPD-DRB/MUIOGO).
 2. Extract the current archive into this repository as
-   `case/Philippines_v18`.
+   `case/Philippines_v19`.
 3. Create a relative symlink from
-   `MUIOGO/WebAPP/DataStorage/Philippines_v18` to
-   `CLEWs-PHL/case/Philippines_v18`.
+   `MUIOGO/WebAPP/DataStorage/Philippines_v19` to
+   `CLEWs-PHL/case/Philippines_v19`.
 4. Start MUIOGO and open the case.
 
 The ignored `case/` tree is the live local working copy; editing through
@@ -66,16 +72,16 @@ with the installed model path and a unique evidence label before interpreting
 
 ## Repository structure
 
-The current package is under `Philippines_v18_CLEWs_build/`:
+The current package is under `Philippines_v19_CLEWs_build/`:
 
 - `data_sources/`: six canonical source-trace ledgers, retained evidence and
   the review workbook;
 - `documentation/`: equation-first model-change audit;
 - `diagnostics/`: generation, solve, ledger and provenance validation;
-- `muio/`: portable v18 MUIO case, predecessor archives, and checksums; and
+- `muio/`: portable v19 MUIO case, predecessor archives, and checksums; and
 - `scripts/`: retained generator, validators and normalized research input.
 
-The ignored local `case/Philippines_v18/` directory is populated from the
+The ignored local `case/Philippines_v19/` directory is populated from the
 current portable archive and exposed to MUIOGO through a relative symlink. It
 is not part of Git history, which avoids the per-file Git size limit.
 

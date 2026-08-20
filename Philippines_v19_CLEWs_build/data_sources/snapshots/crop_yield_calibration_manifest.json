@@ -1,0 +1,64 @@
+{
+    "schema": "philippines-v16-crop-yield-candidate-v1",
+    "source_case": "/Users/sato/Documents/GitHub/CLEWs-PHL/case/Philippines_v16",
+    "target_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v16-crop-yields",
+    "input_file": "/Users/sato/Documents/GitHub/MUIOGO/scripts/data/philippines_v16_crop_yields.json",
+    "input_sha256": "3cc90435dc84b14e6ef05ac5c9fd763c951423542fde4634b6f76fe992b86cdb",
+    "source_hashes": {
+        "genData.json": "a1f1c683f564605e8285f150ee3c0244cf0a53ca7ef9f62fb6703e9bd1920e2b",
+        "RYT.json": "3189d59104db96df601d53a4dfc0c70cc4d401c5269b3600fb6cea2b110f8cbf",
+        "RYTCM.json": "fff3c9b90036ca2ff0167475759968aa3a731a9cb4719ea3070aa79783dd0cf3",
+        "RYTM.json": "ee30eb213c31f3b72ae845cba85dad18b31c363d97045f9676adc3aa0d7b0435"
+    },
+    "candidate_hashes": {
+        "genData.json": "8552b5a84594a420055b05880363b69c9da0a3f5095cbaf3b639c487bfb5b5c6",
+        "RYT.json": "857199752aa709f1d1d30398d68db38b0cb689777d274d701ee8fa898042528a",
+        "RYTCM.json": "846a1c1cf4cd96efb2103ec44c35631be080609489c5563a134f983526397b4b",
+        "RYTM.json": "2cb8ef4c3fb44a0f05646c6e6ea93174968013f19f3fb1d0913e70d74d260f94"
+    },
+    "changed_source_files": [
+        "RYT.json",
+        "RYTCM.json",
+        "RYTM.json",
+        "genData.json"
+    ],
+    "description_records_changed": 12,
+    "oar_rows_changed": 192,
+    "oar_cells_changed": 6528,
+    "rice_variable_cost_cells_changed": 1088,
+    "achieved_oar_mt_per_1000km2": {
+        "rice_irrigated": 0.7264090319042872,
+        "rice_rainfed": 0.32229806503462954,
+        "corn": 0.3179030359519341,
+        "coconut": 0.3968714512187746,
+        "sugarcane": 6.113704362755851,
+        "other_vegetables_fresh_nec": 0.8593725523601126,
+        "other_crops_aggregate": 0.7866334903305353
+    },
+    "deterministic_2020_area_mha": {
+        "rice_irrigated": 2.006,
+        "rice_rainfed": 1.46544173,
+        "corn": 2.55378055,
+        "coconut": 3.65128876,
+        "sugarcane": 0.39908605,
+        "other_vegetables_fresh_nec": 0.6398,
+        "other_crops_aggregate": 1.283887
+    },
+    "rice_capacity_1000km2": {
+        "rainfed": 14.6544173,
+        "irrigated": 20.06
+    },
+    "classification": {
+        "initial_stock": "2020 irrigated service area and rainfed rice area proxy",
+        "final_demand": "unchanged existing crop-output demands",
+        "continuing_constraint": "unchanged cluster land availability and water constraints",
+        "benchmark_only": "observed crop areas; no activity target or share is added"
+    },
+    "non_forcing_assertions": {
+        "technology_or_commodity_added": false,
+        "demand_changed": false,
+        "activity_or_share_bound_added": false,
+        "udc_added": false,
+        "absolute_gaez_potential_used_as_achieved_yield": false
+    }
+}

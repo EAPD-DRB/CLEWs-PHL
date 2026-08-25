@@ -1,0 +1,49 @@
+{
+  "schema": "philippines-v20-power-history-delivery-validation-v1",
+  "status": "passed",
+  "ledger_rows": {
+    "SOURCES.csv": 183,
+    "CALCULATIONS.csv": 734,
+    "ASSUMPTIONS.csv": 148,
+    "MODEL_MAP.csv": 92573,
+    "GAPS.csv": 62,
+    "CHANGES.csv": 28
+  },
+  "v20_records": {
+    "sources": 8,
+    "calculations": 8,
+    "assumptions": 4,
+    "maps": 11,
+    "gaps": 5,
+    "changes": 1
+  },
+  "source_parameter_checks": "passed",
+  "cross_references_and_retained_hashes": "passed",
+  "review_workbook": "/Users/sato/Documents/GitHub/CLEWs-PHL/Philippines_v20_CLEWs_build/data_sources/PHILIPPINES_V20_CANONICAL_SCHEMA_LEDGER.xlsx",
+  "archive": {
+    "path": "/Users/sato/Documents/GitHub/CLEWs-PHL/Philippines_v20_CLEWs_build/muio/Philippines_v20_v20.0.0_MUIO.zip",
+    "sha256": "787217348537c1bdeb49700a33fc38d88ba22b715ecd656f4598fc5622b7a584",
+    "members": 96,
+    "result_files_included": false
+  },
+  "promotion_identity": {
+    "schema": "philippines-v20-power-promotion-identity-v1",
+    "status": "passed",
+    "source_files_byte_identical": 21,
+    "candidate_data_sha256": "13b8231a4f6fae9d9c69b1551d8ea6f56bf12780664ec81c865f8465694d70af",
+    "live_data_sha256": "13b8231a4f6fae9d9c69b1551d8ea6f56bf12780664ec81c865f8465694d70af",
+    "matrix": {
+      "rows": 809933,
+      "columns": 901586,
+      "nonzeros": 13080959
+    },
+    "optimizer_runs": 0,
+    "reason_no_live_solve": "promoted source and generated data.txt are byte-identical to the solved accepted candidate"
+  },
+  "optimizer_runs": {
+    "rejected_diagnostic": 1,
+    "accepted_corrective": 1,
+    "post_promotion": 0,
+    "sensitivities": 0
+  }
+}

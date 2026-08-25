@@ -1,0 +1,29 @@
+{
+  "schema": "philippines-v22-fit-accounting-r9-promotion-identity-v1",
+  "date": "2026-08-21",
+  "status": "pass",
+  "candidate_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v22-transition-scope-fit-repair-candidate-r9",
+  "live_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v22",
+  "four_scenario_candidate_gate": "pass",
+  "source_json_count": 22,
+  "source_json_byte_identical": true,
+  "schema_ledger_csv_count": 6,
+  "schema_ledger_csv_byte_identical_before_promotion_record": true,
+  "data_txt_byte_identical": true,
+  "data_processed_txt_byte_identical": false,
+  "data_processed_set_order_equivalent": true,
+  "data_processed_normalized_sha256": "75866ea446066f06697d7bd16d2aff285119b75b5b9f7d7e0bb1b8986231c452",
+  "matrix": {
+    "rows": 553001,
+    "columns": 584981,
+    "matrix_nonzeros": 8108623
+  },
+  "glpsol_check": "pass",
+  "post_promotion_optimizer_runs": 0,
+  "post_promotion_cbc": "not run because source JSON and generated data.txt are byte-identical; processed data differ only in unordered set declaration order and matrix dimensions match",
+  "hashes": {
+    "data_txt": "c44c94c1b0f74f43f1d2055c2aaf0f26daa1d495c7b79dc65584c3125c3f8c5c",
+    "data_processed_txt": "25e94d671505916db1b55b35a89ac70586f38804755b0271335915f618e116ac",
+    "lp": "837cf0d54d683b5be4e904a5afe75b1b919984c0c5a04f151f16e9d0a84aece3"
+  }
+}

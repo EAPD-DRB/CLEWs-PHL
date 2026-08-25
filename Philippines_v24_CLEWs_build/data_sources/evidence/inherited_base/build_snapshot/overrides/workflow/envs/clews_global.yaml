@@ -1,0 +1,17 @@
+name: clews-global
+
+channels:
+ - defaults
+ - bioconda
+ - conda-forge
+
+dependencies:
+ - python<=3.11 # see PR 213
+ - pip>=24.0
+ - setuptools<81
+ - snakemake>=8
+ - glpk>=5.0
+ - colorama
+ - pip:
+   - otoole>=1.1.4
+   - ../submodules/osemosys_global/. # path to setup.py

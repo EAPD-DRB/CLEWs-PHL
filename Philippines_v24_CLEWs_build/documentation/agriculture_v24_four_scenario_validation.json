@@ -1,0 +1,1302 @@
+{
+  "schema": "philippines-v24-agriculture-four-scenario-validation-v1",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v24-agriculture-candidate-20260825",
+  "parent": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v23",
+  "status": "passed",
+  "promotion_allowed": true,
+  "optimizer_run_inventory": {
+    "successful_candidate_runs": 4,
+    "preserved_concurrent_timeouts_outside_candidate": 2,
+    "total_optimizer_attempts": 6,
+    "timeouts": {
+      "RE": {
+        "status": "timed_out_without_optimal_solution",
+        "solve_seconds": 600.0825198340026,
+        "data_txt_equal_to_retry": true,
+        "matrix_dimensions_equal_to_retry": true,
+        "preprocessed_differences_are_set_order_only": true
+      },
+      "EV": {
+        "status": "timed_out_without_optimal_solution",
+        "solve_seconds": 660.043716082997,
+        "data_txt_equal_to_retry": true,
+        "matrix_dimensions_equal_to_retry": true,
+        "preprocessed_differences_are_set_order_only": true
+      }
+    }
+  },
+  "schema_ledger": {
+    "missing": {
+      "SOURCES": [],
+      "ASSUMPTIONS": [],
+      "CALCULATIONS": [],
+      "MODEL_MAP": [],
+      "GAPS": [],
+      "CHANGES": []
+    },
+    "duplicates": {
+      "SOURCES": 0,
+      "ASSUMPTIONS": 0,
+      "CALCULATIONS": 0,
+      "MODEL_MAP": 0,
+      "GAPS": 0,
+      "CHANGES": 0
+    },
+    "broken_references": []
+  },
+  "scenarios": {
+    "BASE": {
+      "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v24-agriculture-candidate-20260825/res/AGRICULTURE_V24_BASE",
+      "passed": true,
+      "status": "Optimal - objective value 369764275.24539721",
+      "objective": 369764275.2453972,
+      "objective_change": -50621.38153886795,
+      "objective_change_percent": -0.013688302445513667,
+      "solve_seconds": 248.5202838749974,
+      "runtime_ratio_to_v23": 1.550126240148298,
+      "matrix_dimensions": {
+        "rows": 563273,
+        "columns": 594877,
+        "matrix_nonzeros": 8607675
+      },
+      "matrix_deltas": {
+        "rows": 6528,
+        "columns": 6528,
+        "matrix_nonzeros": 476544
+      },
+      "crop_land_activity_range": {
+        "minimum": 119.99259999999998,
+        "maximum": 122.20889999999999
+      },
+      "national_land_commodity_balance": {
+        "maximum_abs_export_rounding_residual": 0.0015999999998825842,
+        "selected_years": {
+          "2020": {
+            "production": 295.81290000000007,
+            "use": 295.8135,
+            "residual": -0.0005999999999062311
+          },
+          "2024": {
+            "production": 295.8133,
+            "use": 295.8133,
+            "residual": 0.0
+          },
+          "2053": {
+            "production": 295.8129,
+            "use": 295.81310000000013,
+            "residual": -0.00020000000012032615
+          }
+        }
+      },
+      "crop_mode_activity": {
+        "2020": {
+          "4": 1.893,
+          "8": 15.8081,
+          "12": 7.6635,
+          "15": 34.1428,
+          "18": 8.980599999999999,
+          "19": 14.9452,
+          "20": 15.3446,
+          "23": 21.2152
+        },
+        "2024": {
+          "4": 1.8931,
+          "8": 15.8006,
+          "12": 7.6599,
+          "15": 34.1382,
+          "18": 8.9554,
+          "19": 15.9973,
+          "20": 15.3088,
+          "23": 21.1559
+        },
+        "2053": {
+          "4": 2.1980999999999997,
+          "8": 14.809,
+          "12": 7.559,
+          "15": 32.097300000000004,
+          "18": 9.1596,
+          "19": 15.3753,
+          "20": 18.2521,
+          "23": 20.542499999999997
+        }
+      },
+      "rice_activity_benchmark_view": {
+        "2020": {
+          "rainfed": 0.0,
+          "irrigated": 14.9452
+        },
+        "2024": {
+          "rainfed": 0.0,
+          "irrigated": 15.9973
+        },
+        "2053": {
+          "rainfed": 0.0,
+          "irrigated": 15.3753
+        }
+      },
+      "crop_co2e_mt": {
+        "2020": 22.140300000000003,
+        "2024": 23.124499999999994,
+        "2053": 22.51369999999999
+      },
+      "emission_reconciliation_max_abs_error": 0.0003485503568434467,
+      "water": {
+        "DEMAGRSURPHL": [
+          {
+            "year": "2020",
+            "activity": 52.9431,
+            "limit": 125.79,
+            "headroom": 72.8469
+          },
+          {
+            "year": "2024",
+            "activity": 56.6702,
+            "limit": 126.29933168658505,
+            "headroom": 69.62913168658505
+          },
+          {
+            "year": "2053",
+            "activity": 54.467,
+            "limit": 131.8329066983908,
+            "headroom": 77.36590669839079
+          }
+        ],
+        "DEMAGRGWTPHL": [
+          {
+            "year": "2020",
+            "activity": 0.0,
+            "limit": 20.2,
+            "headroom": 20.2
+          },
+          {
+            "year": "2024",
+            "activity": 0.0,
+            "limit": 20.281791080920726,
+            "headroom": 20.281791080920726
+          },
+          {
+            "year": "2053",
+            "activity": 0.0,
+            "limit": 21.1704007894705,
+            "headroom": 21.1704007894705
+          }
+        ]
+      },
+      "water_constraint_max_abs_dual": 0.0,
+      "hashes": {
+        "data.txt": "0d326f615aa36ef77ca0036cf5c75ed54ecc3aca7cb9a9a3037b7d8191ed9a5a",
+        "lp.lp": "8e2fd1fbf09a222eb4fa42464a0919bf1f8e467ea7fc2a464320627a330a5dc7",
+        "results.txt": "ad22599deead4b2e4c8c4037d5d77142f1bca64ac2789bae488ebbf3325ed066"
+      }
+    },
+    "COAL_PHASEOUT": {
+      "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v24-agriculture-candidate-20260825/res/AGRICULTURE_V24_COAL_PHASEOUT",
+      "passed": true,
+      "status": "Optimal - objective value 369782569.89054197",
+      "objective": 369782569.890542,
+      "objective_change": -50621.38149547577,
+      "objective_change_percent": -0.013687625310576657,
+      "solve_seconds": 424.8323305419981,
+      "runtime_ratio_to_v23": 1.5143129144383207,
+      "matrix_dimensions": {
+        "rows": 563288,
+        "columns": 594877,
+        "matrix_nonzeros": 8607945
+      },
+      "matrix_deltas": {
+        "rows": 6528,
+        "columns": 6528,
+        "matrix_nonzeros": 476544
+      },
+      "crop_land_activity_range": {
+        "minimum": 119.9926,
+        "maximum": 122.209
+      },
+      "national_land_commodity_balance": {
+        "maximum_abs_export_rounding_residual": 0.0011999999999829924,
+        "selected_years": {
+          "2020": {
+            "production": 295.813,
+            "use": 295.81299999999993,
+            "residual": 5.684341886080802e-14
+          },
+          "2024": {
+            "production": 295.8130999999999,
+            "use": 295.81290000000007,
+            "residual": 0.00019999999983610905
+          },
+          "2053": {
+            "production": 295.8131,
+            "use": 295.8129999999999,
+            "residual": 0.0001000000001454282
+          }
+        }
+      },
+      "crop_mode_activity": {
+        "2020": {
+          "4": 1.8931,
+          "8": 15.8081,
+          "12": 7.6635,
+          "15": 34.1427,
+          "18": 8.9805,
+          "19": 14.9452,
+          "20": 15.346,
+          "23": 21.2138
+        },
+        "2024": {
+          "4": 1.8931,
+          "8": 15.781600000000001,
+          "12": 7.6563,
+          "15": 34.0631,
+          "18": 8.9554,
+          "19": 15.9973,
+          "20": 15.3102,
+          "23": 21.1643
+        },
+        "2053": {
+          "4": 2.1982,
+          "8": 14.808900000000001,
+          "12": 7.558999999999999,
+          "15": 32.0942,
+          "18": 9.0308,
+          "19": 15.3753,
+          "20": 18.2817,
+          "23": 20.6445
+        }
+      },
+      "rice_activity_benchmark_view": {
+        "2020": {
+          "rainfed": 0.0,
+          "irrigated": 14.9452
+        },
+        "2024": {
+          "rainfed": 0.0,
+          "irrigated": 15.9973
+        },
+        "2053": {
+          "rainfed": 0.0,
+          "irrigated": 15.3753
+        }
+      },
+      "crop_co2e_mt": {
+        "2020": 22.1403,
+        "2024": 23.117800000000003,
+        "2053": 22.5141
+      },
+      "emission_reconciliation_max_abs_error": 0.00022845525358050622,
+      "water": {
+        "DEMAGRSURPHL": [
+          {
+            "year": "2020",
+            "activity": 52.9431,
+            "limit": 125.79,
+            "headroom": 72.8469
+          },
+          {
+            "year": "2024",
+            "activity": 56.6702,
+            "limit": 126.29933168658505,
+            "headroom": 69.62913168658505
+          },
+          {
+            "year": "2053",
+            "activity": 54.467,
+            "limit": 131.8329066983908,
+            "headroom": 77.36590669839079
+          }
+        ],
+        "DEMAGRGWTPHL": [
+          {
+            "year": "2020",
+            "activity": 0.0,
+            "limit": 20.2,
+            "headroom": 20.2
+          },
+          {
+            "year": "2024",
+            "activity": 0.0,
+            "limit": 20.281791080920726,
+            "headroom": 20.281791080920726
+          },
+          {
+            "year": "2053",
+            "activity": 0.0,
+            "limit": 21.1704007894705,
+            "headroom": 21.1704007894705
+          }
+        ]
+      },
+      "water_constraint_max_abs_dual": 0.0,
+      "hashes": {
+        "data.txt": "524e6411b0865d6d502274b6a283923eef78fd95506eaeae57675270ce895a4f",
+        "lp.lp": "f2574869eddc4c55d464c6ed3d78228206e34b4ca09d68808fa2eb54b8f36f82",
+        "results.txt": "e7e25cb89dbecc5809e57ecae6f56d835566159a3be4a45d0190bbf0447cdbb7"
+      }
+    },
+    "RE": {
+      "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v24-agriculture-candidate-20260825/res/AGRICULTURE_V24_RE",
+      "passed": true,
+      "status": "Optimal - objective value 369775964.36481988",
+      "objective": 369775964.3648199,
+      "objective_change": -50621.38104736805,
+      "objective_change_percent": -0.013687869666068053,
+      "solve_seconds": 374.763844167006,
+      "runtime_ratio_to_v23": 1.3357089979337708,
+      "matrix_dimensions": {
+        "rows": 563273,
+        "columns": 594877,
+        "matrix_nonzeros": 8608185
+      },
+      "matrix_deltas": {
+        "rows": 6528,
+        "columns": 6528,
+        "matrix_nonzeros": 476544
+      },
+      "crop_land_activity_range": {
+        "minimum": 119.99259999999998,
+        "maximum": 122.209
+      },
+      "national_land_commodity_balance": {
+        "maximum_abs_export_rounding_residual": 0.0009000000000014552,
+        "selected_years": {
+          "2020": {
+            "production": 295.813,
+            "use": 295.8131999999999,
+            "residual": -0.00019999999989295247
+          },
+          "2024": {
+            "production": 295.8131,
+            "use": 295.8129,
+            "residual": 0.0002000000000066393
+          },
+          "2053": {
+            "production": 295.81289999999996,
+            "use": 295.81310000000013,
+            "residual": -0.00020000000017716957
+          }
+        }
+      },
+      "crop_mode_activity": {
+        "2020": {
+          "4": 1.893,
+          "8": 15.808,
+          "12": 7.6635,
+          "15": 34.1428,
+          "18": 8.9805,
+          "19": 14.9452,
+          "20": 15.346,
+          "23": 21.2137
+        },
+        "2024": {
+          "4": 1.893,
+          "8": 15.8006,
+          "12": 7.6599,
+          "15": 34.142799999999994,
+          "18": 8.955400000000001,
+          "19": 15.9973,
+          "20": 15.3388,
+          "23": 21.194
+        },
+        "2053": {
+          "4": 2.1980999999999997,
+          "8": 14.808900000000001,
+          "12": 7.5998,
+          "15": 31.9391,
+          "18": 9.1596,
+          "19": 15.3753,
+          "20": 18.186,
+          "23": 20.726
+        }
+      },
+      "rice_activity_benchmark_view": {
+        "2020": {
+          "rainfed": 0.0,
+          "irrigated": 14.9452
+        },
+        "2024": {
+          "rainfed": 0.0,
+          "irrigated": 15.9973
+        },
+        "2053": {
+          "rainfed": 0.0,
+          "irrigated": 15.3753
+        }
+      },
+      "crop_co2e_mt": {
+        "2020": 22.140399999999996,
+        "2024": 23.130000000000003,
+        "2053": 22.514100000000003
+      },
+      "emission_reconciliation_max_abs_error": 0.00042461330553322796,
+      "water": {
+        "DEMAGRSURPHL": [
+          {
+            "year": "2020",
+            "activity": 52.9431,
+            "limit": 125.79,
+            "headroom": 72.8469
+          },
+          {
+            "year": "2024",
+            "activity": 56.6702,
+            "limit": 126.29933168658505,
+            "headroom": 69.62913168658505
+          },
+          {
+            "year": "2053",
+            "activity": 54.467,
+            "limit": 131.8329066983908,
+            "headroom": 77.36590669839079
+          }
+        ],
+        "DEMAGRGWTPHL": [
+          {
+            "year": "2020",
+            "activity": 0.0,
+            "limit": 20.2,
+            "headroom": 20.2
+          },
+          {
+            "year": "2024",
+            "activity": 0.0,
+            "limit": 20.281791080920726,
+            "headroom": 20.281791080920726
+          },
+          {
+            "year": "2053",
+            "activity": 0.0,
+            "limit": 21.1704007894705,
+            "headroom": 21.1704007894705
+          }
+        ]
+      },
+      "water_constraint_max_abs_dual": 0.0,
+      "hashes": {
+        "data.txt": "d1d6a0135d5b43beeaf476851619204115154dd3efd8655f7de207989275131a",
+        "lp.lp": "7a033efacb22b075a830f8b892648380ccc36d7aed85ca1a27283ef80687a701",
+        "results.txt": "1ff777789154935b1c3cbedb6ee5e413914f320070e541897422199dfbdf7c11"
+      }
+    },
+    "EV": {
+      "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v24-agriculture-candidate-20260825/res/AGRICULTURE_V24_EV",
+      "passed": true,
+      "status": "Optimal - objective value 369749398.42877322",
+      "objective": 369749398.4287732,
+      "objective_change": -50621.38104993105,
+      "objective_change_percent": -0.01368885298490552,
+      "solve_seconds": 567.2434564170035,
+      "runtime_ratio_to_v23": 1.8501851341176876,
+      "matrix_dimensions": {
+        "rows": 563273,
+        "columns": 594877,
+        "matrix_nonzeros": 8607983
+      },
+      "matrix_deltas": {
+        "rows": 6528,
+        "columns": 6528,
+        "matrix_nonzeros": 476544
+      },
+      "crop_land_activity_range": {
+        "minimum": 119.99259999999998,
+        "maximum": 122.2091
+      },
+      "national_land_commodity_balance": {
+        "maximum_abs_export_rounding_residual": 0.0018000000001165972,
+        "selected_years": {
+          "2020": {
+            "production": 295.813,
+            "use": 295.8136000000002,
+            "residual": -0.0006000000001904482
+          },
+          "2024": {
+            "production": 295.8132,
+            "use": 295.81350000000003,
+            "residual": -0.0003000000000383807
+          },
+          "2053": {
+            "production": 295.8128,
+            "use": 295.81360000000006,
+            "residual": -0.0008000000000834007
+          }
+        }
+      },
+      "crop_mode_activity": {
+        "2020": {
+          "4": 1.8931,
+          "8": 15.8079,
+          "12": 7.663500000000001,
+          "15": 34.1428,
+          "18": 8.980599999999999,
+          "19": 14.9452,
+          "20": 15.3458,
+          "23": 21.214100000000002
+        },
+        "2024": {
+          "4": 1.8930999999999998,
+          "8": 15.800699999999999,
+          "12": 7.6634,
+          "15": 34.1427,
+          "18": 8.976400000000002,
+          "19": 15.9973,
+          "20": 15.3171,
+          "23": 21.214100000000002
+        },
+        "2053": {
+          "4": 2.1980999999999997,
+          "8": 14.8088,
+          "12": 7.6029,
+          "15": 31.978,
+          "18": 9.2411,
+          "19": 15.3753,
+          "20": 18.2449,
+          "23": 20.5435
+        }
+      },
+      "rice_activity_benchmark_view": {
+        "2020": {
+          "rainfed": 0.0,
+          "irrigated": 14.9452
+        },
+        "2024": {
+          "rainfed": 0.0,
+          "irrigated": 15.9973
+        },
+        "2053": {
+          "rainfed": 0.0,
+          "irrigated": 15.3753
+        }
+      },
+      "crop_co2e_mt": {
+        "2020": 22.1401,
+        "2024": 23.1317,
+        "2053": 22.514
+      },
+      "emission_reconciliation_max_abs_error": 0.0003023826228378823,
+      "water": {
+        "DEMAGRSURPHL": [
+          {
+            "year": "2020",
+            "activity": 52.9431,
+            "limit": 125.79,
+            "headroom": 72.8469
+          },
+          {
+            "year": "2024",
+            "activity": 56.6702,
+            "limit": 126.29933168658505,
+            "headroom": 69.62913168658505
+          },
+          {
+            "year": "2053",
+            "activity": 54.467,
+            "limit": 131.8329066983908,
+            "headroom": 77.36590669839079
+          }
+        ],
+        "DEMAGRGWTPHL": [
+          {
+            "year": "2020",
+            "activity": 0.0,
+            "limit": 20.2,
+            "headroom": 20.2
+          },
+          {
+            "year": "2024",
+            "activity": 0.0,
+            "limit": 20.281791080920726,
+            "headroom": 20.281791080920726
+          },
+          {
+            "year": "2053",
+            "activity": 0.0,
+            "limit": 21.1704007894705,
+            "headroom": 21.1704007894705
+          }
+        ]
+      },
+      "water_constraint_max_abs_dual": 0.0,
+      "hashes": {
+        "data.txt": "e5fc01936643b670eb61c0cc10efb94efb8026685ec53ba1820678babbdd591d",
+        "lp.lp": "a0aef33c53014beb39d0383d3284e90db865dce9f146a9cf402ad4b2a20420ae",
+        "results.txt": "58e8c3751c72d1952f519fa1d554b3a85e5d3192f924dc350fbc71a534d1e38e"
+      }
+    }
+  },
+  "checks": [
+    {
+      "check": "clean_candidate_run_inventory",
+      "passed": true,
+      "detail": [
+        "AGRICULTURE_V24_BASE",
+        "AGRICULTURE_V24_COAL_PHASEOUT",
+        "AGRICULTURE_V24_EV",
+        "AGRICULTURE_V24_RE"
+      ]
+    },
+    {
+      "check": "base_result_chain",
+      "passed": true,
+      "detail": {
+        "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v24-agriculture-candidate-20260825/res/AGRICULTURE_V24_BASE",
+        "passed": true,
+        "status": "Optimal - objective value 369764275.24539721",
+        "objective": 369764275.2453972,
+        "objective_change": -50621.38153886795,
+        "objective_change_percent": -0.013688302445513667,
+        "solve_seconds": 248.5202838749974,
+        "runtime_ratio_to_v23": 1.550126240148298,
+        "matrix_dimensions": {
+          "rows": 563273,
+          "columns": 594877,
+          "matrix_nonzeros": 8607675
+        },
+        "matrix_deltas": {
+          "rows": 6528,
+          "columns": 6528,
+          "matrix_nonzeros": 476544
+        },
+        "crop_land_activity_range": {
+          "minimum": 119.99259999999998,
+          "maximum": 122.20889999999999
+        },
+        "national_land_commodity_balance": {
+          "maximum_abs_export_rounding_residual": 0.0015999999998825842,
+          "selected_years": {
+            "2020": {
+              "production": 295.81290000000007,
+              "use": 295.8135,
+              "residual": -0.0005999999999062311
+            },
+            "2024": {
+              "production": 295.8133,
+              "use": 295.8133,
+              "residual": 0.0
+            },
+            "2053": {
+              "production": 295.8129,
+              "use": 295.81310000000013,
+              "residual": -0.00020000000012032615
+            }
+          }
+        },
+        "crop_mode_activity": {
+          "2020": {
+            "4": 1.893,
+            "8": 15.8081,
+            "12": 7.6635,
+            "15": 34.1428,
+            "18": 8.980599999999999,
+            "19": 14.9452,
+            "20": 15.3446,
+            "23": 21.2152
+          },
+          "2024": {
+            "4": 1.8931,
+            "8": 15.8006,
+            "12": 7.6599,
+            "15": 34.1382,
+            "18": 8.9554,
+            "19": 15.9973,
+            "20": 15.3088,
+            "23": 21.1559
+          },
+          "2053": {
+            "4": 2.1980999999999997,
+            "8": 14.809,
+            "12": 7.559,
+            "15": 32.097300000000004,
+            "18": 9.1596,
+            "19": 15.3753,
+            "20": 18.2521,
+            "23": 20.542499999999997
+          }
+        },
+        "rice_activity_benchmark_view": {
+          "2020": {
+            "rainfed": 0.0,
+            "irrigated": 14.9452
+          },
+          "2024": {
+            "rainfed": 0.0,
+            "irrigated": 15.9973
+          },
+          "2053": {
+            "rainfed": 0.0,
+            "irrigated": 15.3753
+          }
+        },
+        "crop_co2e_mt": {
+          "2020": 22.140300000000003,
+          "2024": 23.124499999999994,
+          "2053": 22.51369999999999
+        },
+        "emission_reconciliation_max_abs_error": 0.0003485503568434467,
+        "water": {
+          "DEMAGRSURPHL": [
+            {
+              "year": "2020",
+              "activity": 52.9431,
+              "limit": 125.79,
+              "headroom": 72.8469
+            },
+            {
+              "year": "2024",
+              "activity": 56.6702,
+              "limit": 126.29933168658505,
+              "headroom": 69.62913168658505
+            },
+            {
+              "year": "2053",
+              "activity": 54.467,
+              "limit": 131.8329066983908,
+              "headroom": 77.36590669839079
+            }
+          ],
+          "DEMAGRGWTPHL": [
+            {
+              "year": "2020",
+              "activity": 0.0,
+              "limit": 20.2,
+              "headroom": 20.2
+            },
+            {
+              "year": "2024",
+              "activity": 0.0,
+              "limit": 20.281791080920726,
+              "headroom": 20.281791080920726
+            },
+            {
+              "year": "2053",
+              "activity": 0.0,
+              "limit": 21.1704007894705,
+              "headroom": 21.1704007894705
+            }
+          ]
+        },
+        "water_constraint_max_abs_dual": 0.0,
+        "hashes": {
+          "data.txt": "0d326f615aa36ef77ca0036cf5c75ed54ecc3aca7cb9a9a3037b7d8191ed9a5a",
+          "lp.lp": "8e2fd1fbf09a222eb4fa42464a0919bf1f8e467ea7fc2a464320627a330a5dc7",
+          "results.txt": "ad22599deead4b2e4c8c4037d5d77142f1bca64ac2789bae488ebbf3325ed066"
+        }
+      }
+    },
+    {
+      "check": "coal_phaseout_result_chain",
+      "passed": true,
+      "detail": {
+        "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v24-agriculture-candidate-20260825/res/AGRICULTURE_V24_COAL_PHASEOUT",
+        "passed": true,
+        "status": "Optimal - objective value 369782569.89054197",
+        "objective": 369782569.890542,
+        "objective_change": -50621.38149547577,
+        "objective_change_percent": -0.013687625310576657,
+        "solve_seconds": 424.8323305419981,
+        "runtime_ratio_to_v23": 1.5143129144383207,
+        "matrix_dimensions": {
+          "rows": 563288,
+          "columns": 594877,
+          "matrix_nonzeros": 8607945
+        },
+        "matrix_deltas": {
+          "rows": 6528,
+          "columns": 6528,
+          "matrix_nonzeros": 476544
+        },
+        "crop_land_activity_range": {
+          "minimum": 119.9926,
+          "maximum": 122.209
+        },
+        "national_land_commodity_balance": {
+          "maximum_abs_export_rounding_residual": 0.0011999999999829924,
+          "selected_years": {
+            "2020": {
+              "production": 295.813,
+              "use": 295.81299999999993,
+              "residual": 5.684341886080802e-14
+            },
+            "2024": {
+              "production": 295.8130999999999,
+              "use": 295.81290000000007,
+              "residual": 0.00019999999983610905
+            },
+            "2053": {
+              "production": 295.8131,
+              "use": 295.8129999999999,
+              "residual": 0.0001000000001454282
+            }
+          }
+        },
+        "crop_mode_activity": {
+          "2020": {
+            "4": 1.8931,
+            "8": 15.8081,
+            "12": 7.6635,
+            "15": 34.1427,
+            "18": 8.9805,
+            "19": 14.9452,
+            "20": 15.346,
+            "23": 21.2138
+          },
+          "2024": {
+            "4": 1.8931,
+            "8": 15.781600000000001,
+            "12": 7.6563,
+            "15": 34.0631,
+            "18": 8.9554,
+            "19": 15.9973,
+            "20": 15.3102,
+            "23": 21.1643
+          },
+          "2053": {
+            "4": 2.1982,
+            "8": 14.808900000000001,
+            "12": 7.558999999999999,
+            "15": 32.0942,
+            "18": 9.0308,
+            "19": 15.3753,
+            "20": 18.2817,
+            "23": 20.6445
+          }
+        },
+        "rice_activity_benchmark_view": {
+          "2020": {
+            "rainfed": 0.0,
+            "irrigated": 14.9452
+          },
+          "2024": {
+            "rainfed": 0.0,
+            "irrigated": 15.9973
+          },
+          "2053": {
+            "rainfed": 0.0,
+            "irrigated": 15.3753
+          }
+        },
+        "crop_co2e_mt": {
+          "2020": 22.1403,
+          "2024": 23.117800000000003,
+          "2053": 22.5141
+        },
+        "emission_reconciliation_max_abs_error": 0.00022845525358050622,
+        "water": {
+          "DEMAGRSURPHL": [
+            {
+              "year": "2020",
+              "activity": 52.9431,
+              "limit": 125.79,
+              "headroom": 72.8469
+            },
+            {
+              "year": "2024",
+              "activity": 56.6702,
+              "limit": 126.29933168658505,
+              "headroom": 69.62913168658505
+            },
+            {
+              "year": "2053",
+              "activity": 54.467,
+              "limit": 131.8329066983908,
+              "headroom": 77.36590669839079
+            }
+          ],
+          "DEMAGRGWTPHL": [
+            {
+              "year": "2020",
+              "activity": 0.0,
+              "limit": 20.2,
+              "headroom": 20.2
+            },
+            {
+              "year": "2024",
+              "activity": 0.0,
+              "limit": 20.281791080920726,
+              "headroom": 20.281791080920726
+            },
+            {
+              "year": "2053",
+              "activity": 0.0,
+              "limit": 21.1704007894705,
+              "headroom": 21.1704007894705
+            }
+          ]
+        },
+        "water_constraint_max_abs_dual": 0.0,
+        "hashes": {
+          "data.txt": "524e6411b0865d6d502274b6a283923eef78fd95506eaeae57675270ce895a4f",
+          "lp.lp": "f2574869eddc4c55d464c6ed3d78228206e34b4ca09d68808fa2eb54b8f36f82",
+          "results.txt": "e7e25cb89dbecc5809e57ecae6f56d835566159a3be4a45d0190bbf0447cdbb7"
+        }
+      }
+    },
+    {
+      "check": "re_result_chain",
+      "passed": true,
+      "detail": {
+        "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v24-agriculture-candidate-20260825/res/AGRICULTURE_V24_RE",
+        "passed": true,
+        "status": "Optimal - objective value 369775964.36481988",
+        "objective": 369775964.3648199,
+        "objective_change": -50621.38104736805,
+        "objective_change_percent": -0.013687869666068053,
+        "solve_seconds": 374.763844167006,
+        "runtime_ratio_to_v23": 1.3357089979337708,
+        "matrix_dimensions": {
+          "rows": 563273,
+          "columns": 594877,
+          "matrix_nonzeros": 8608185
+        },
+        "matrix_deltas": {
+          "rows": 6528,
+          "columns": 6528,
+          "matrix_nonzeros": 476544
+        },
+        "crop_land_activity_range": {
+          "minimum": 119.99259999999998,
+          "maximum": 122.209
+        },
+        "national_land_commodity_balance": {
+          "maximum_abs_export_rounding_residual": 0.0009000000000014552,
+          "selected_years": {
+            "2020": {
+              "production": 295.813,
+              "use": 295.8131999999999,
+              "residual": -0.00019999999989295247
+            },
+            "2024": {
+              "production": 295.8131,
+              "use": 295.8129,
+              "residual": 0.0002000000000066393
+            },
+            "2053": {
+              "production": 295.81289999999996,
+              "use": 295.81310000000013,
+              "residual": -0.00020000000017716957
+            }
+          }
+        },
+        "crop_mode_activity": {
+          "2020": {
+            "4": 1.893,
+            "8": 15.808,
+            "12": 7.6635,
+            "15": 34.1428,
+            "18": 8.9805,
+            "19": 14.9452,
+            "20": 15.346,
+            "23": 21.2137
+          },
+          "2024": {
+            "4": 1.893,
+            "8": 15.8006,
+            "12": 7.6599,
+            "15": 34.142799999999994,
+            "18": 8.955400000000001,
+            "19": 15.9973,
+            "20": 15.3388,
+            "23": 21.194
+          },
+          "2053": {
+            "4": 2.1980999999999997,
+            "8": 14.808900000000001,
+            "12": 7.5998,
+            "15": 31.9391,
+            "18": 9.1596,
+            "19": 15.3753,
+            "20": 18.186,
+            "23": 20.726
+          }
+        },
+        "rice_activity_benchmark_view": {
+          "2020": {
+            "rainfed": 0.0,
+            "irrigated": 14.9452
+          },
+          "2024": {
+            "rainfed": 0.0,
+            "irrigated": 15.9973
+          },
+          "2053": {
+            "rainfed": 0.0,
+            "irrigated": 15.3753
+          }
+        },
+        "crop_co2e_mt": {
+          "2020": 22.140399999999996,
+          "2024": 23.130000000000003,
+          "2053": 22.514100000000003
+        },
+        "emission_reconciliation_max_abs_error": 0.00042461330553322796,
+        "water": {
+          "DEMAGRSURPHL": [
+            {
+              "year": "2020",
+              "activity": 52.9431,
+              "limit": 125.79,
+              "headroom": 72.8469
+            },
+            {
+              "year": "2024",
+              "activity": 56.6702,
+              "limit": 126.29933168658505,
+              "headroom": 69.62913168658505
+            },
+            {
+              "year": "2053",
+              "activity": 54.467,
+              "limit": 131.8329066983908,
+              "headroom": 77.36590669839079
+            }
+          ],
+          "DEMAGRGWTPHL": [
+            {
+              "year": "2020",
+              "activity": 0.0,
+              "limit": 20.2,
+              "headroom": 20.2
+            },
+            {
+              "year": "2024",
+              "activity": 0.0,
+              "limit": 20.281791080920726,
+              "headroom": 20.281791080920726
+            },
+            {
+              "year": "2053",
+              "activity": 0.0,
+              "limit": 21.1704007894705,
+              "headroom": 21.1704007894705
+            }
+          ]
+        },
+        "water_constraint_max_abs_dual": 0.0,
+        "hashes": {
+          "data.txt": "d1d6a0135d5b43beeaf476851619204115154dd3efd8655f7de207989275131a",
+          "lp.lp": "7a033efacb22b075a830f8b892648380ccc36d7aed85ca1a27283ef80687a701",
+          "results.txt": "1ff777789154935b1c3cbedb6ee5e413914f320070e541897422199dfbdf7c11"
+        }
+      }
+    },
+    {
+      "check": "ev_result_chain",
+      "passed": true,
+      "detail": {
+        "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v24-agriculture-candidate-20260825/res/AGRICULTURE_V24_EV",
+        "passed": true,
+        "status": "Optimal - objective value 369749398.42877322",
+        "objective": 369749398.4287732,
+        "objective_change": -50621.38104993105,
+        "objective_change_percent": -0.01368885298490552,
+        "solve_seconds": 567.2434564170035,
+        "runtime_ratio_to_v23": 1.8501851341176876,
+        "matrix_dimensions": {
+          "rows": 563273,
+          "columns": 594877,
+          "matrix_nonzeros": 8607983
+        },
+        "matrix_deltas": {
+          "rows": 6528,
+          "columns": 6528,
+          "matrix_nonzeros": 476544
+        },
+        "crop_land_activity_range": {
+          "minimum": 119.99259999999998,
+          "maximum": 122.2091
+        },
+        "national_land_commodity_balance": {
+          "maximum_abs_export_rounding_residual": 0.0018000000001165972,
+          "selected_years": {
+            "2020": {
+              "production": 295.813,
+              "use": 295.8136000000002,
+              "residual": -0.0006000000001904482
+            },
+            "2024": {
+              "production": 295.8132,
+              "use": 295.81350000000003,
+              "residual": -0.0003000000000383807
+            },
+            "2053": {
+              "production": 295.8128,
+              "use": 295.81360000000006,
+              "residual": -0.0008000000000834007
+            }
+          }
+        },
+        "crop_mode_activity": {
+          "2020": {
+            "4": 1.8931,
+            "8": 15.8079,
+            "12": 7.663500000000001,
+            "15": 34.1428,
+            "18": 8.980599999999999,
+            "19": 14.9452,
+            "20": 15.3458,
+            "23": 21.214100000000002
+          },
+          "2024": {
+            "4": 1.8930999999999998,
+            "8": 15.800699999999999,
+            "12": 7.6634,
+            "15": 34.1427,
+            "18": 8.976400000000002,
+            "19": 15.9973,
+            "20": 15.3171,
+            "23": 21.214100000000002
+          },
+          "2053": {
+            "4": 2.1980999999999997,
+            "8": 14.8088,
+            "12": 7.6029,
+            "15": 31.978,
+            "18": 9.2411,
+            "19": 15.3753,
+            "20": 18.2449,
+            "23": 20.5435
+          }
+        },
+        "rice_activity_benchmark_view": {
+          "2020": {
+            "rainfed": 0.0,
+            "irrigated": 14.9452
+          },
+          "2024": {
+            "rainfed": 0.0,
+            "irrigated": 15.9973
+          },
+          "2053": {
+            "rainfed": 0.0,
+            "irrigated": 15.3753
+          }
+        },
+        "crop_co2e_mt": {
+          "2020": 22.1401,
+          "2024": 23.1317,
+          "2053": 22.514
+        },
+        "emission_reconciliation_max_abs_error": 0.0003023826228378823,
+        "water": {
+          "DEMAGRSURPHL": [
+            {
+              "year": "2020",
+              "activity": 52.9431,
+              "limit": 125.79,
+              "headroom": 72.8469
+            },
+            {
+              "year": "2024",
+              "activity": 56.6702,
+              "limit": 126.29933168658505,
+              "headroom": 69.62913168658505
+            },
+            {
+              "year": "2053",
+              "activity": 54.467,
+              "limit": 131.8329066983908,
+              "headroom": 77.36590669839079
+            }
+          ],
+          "DEMAGRGWTPHL": [
+            {
+              "year": "2020",
+              "activity": 0.0,
+              "limit": 20.2,
+              "headroom": 20.2
+            },
+            {
+              "year": "2024",
+              "activity": 0.0,
+              "limit": 20.281791080920726,
+              "headroom": 20.281791080920726
+            },
+            {
+              "year": "2053",
+              "activity": 0.0,
+              "limit": 21.1704007894705,
+              "headroom": 21.1704007894705
+            }
+          ]
+        },
+        "water_constraint_max_abs_dual": 0.0,
+        "hashes": {
+          "data.txt": "e5fc01936643b670eb61c0cc10efb94efb8026685ec53ba1820678babbdd591d",
+          "lp.lp": "a0aef33c53014beb39d0383d3284e90db865dce9f146a9cf402ad4b2a20420ae",
+          "results.txt": "58e8c3751c72d1952f519fa1d554b3a85e5d3192f924dc350fbc71a534d1e38e"
+        }
+      }
+    },
+    {
+      "check": "agriculture_results_materially_stable_across_policies",
+      "passed": true,
+      "detail": {
+        "land": 0.1834999999999951,
+        "crop_emissions": 0.013899999999996027,
+        "surface_water": 0.0,
+        "groundwater": 0.0
+      }
+    },
+    {
+      "check": "objective_shift_consistent",
+      "passed": true,
+      "detail": {
+        "changes": [
+          -50621.38153886795,
+          -50621.38149547577,
+          -50621.38104736805,
+          -50621.38104993105
+        ],
+        "spread": 0.0004914999008178711
+      }
+    },
+    {
+      "check": "concurrent_timeout_audit_preserved",
+      "passed": true,
+      "detail": {
+        "RE": {
+          "status": "timed_out_without_optimal_solution",
+          "solve_seconds": 600.0825198340026,
+          "data_txt_equal_to_retry": true,
+          "matrix_dimensions_equal_to_retry": true,
+          "preprocessed_differences_are_set_order_only": true
+        },
+        "EV": {
+          "status": "timed_out_without_optimal_solution",
+          "solve_seconds": 660.043716082997,
+          "data_txt_equal_to_retry": true,
+          "matrix_dimensions_equal_to_retry": true,
+          "preprocessed_differences_are_set_order_only": true
+        }
+      }
+    },
+    {
+      "check": "canonical_six_file_schema_ledger",
+      "passed": true,
+      "detail": {
+        "missing": {
+          "SOURCES": [],
+          "ASSUMPTIONS": [],
+          "CALCULATIONS": [],
+          "MODEL_MAP": [],
+          "GAPS": [],
+          "CHANGES": []
+        },
+        "duplicates": {
+          "SOURCES": 0,
+          "ASSUMPTIONS": 0,
+          "CALCULATIONS": 0,
+          "MODEL_MAP": 0,
+          "GAPS": 0,
+          "CHANGES": 0
+        },
+        "broken_references": []
+      }
+    }
+  ],
+  "failure_count": 0,
+  "known_limitations": [
+    "Observed crop, irrigation and water-source shares remain benchmark-only and are not forced.",
+    "Crop GHG uses national-average rice CH4 and managed-soil N2O factors; input-specific fertilizer and land-use-change accounting remain gaps.",
+    "Application preprocessing emits derived sets in process-dependent order; the sealed LPs are exact, but regeneration should sort those sets or fix the Python hash seed.",
+    "The 1% post-2024 productivity path is a transparent central assumption, not a forecast."
+  ]
+}

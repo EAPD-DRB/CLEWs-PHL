@@ -1,0 +1,1081 @@
+{
+  "schema": "philippines-v23-package1-four-scenario-validation-v1",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v23-package1-candidate-20260824",
+  "status": "passed",
+  "scenarios": {
+    "BASE": {
+      "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v23-package1-candidate-20260824/res/PACKAGE1_V23_BASE",
+      "status": "Optimal - objective value 369951589.02057099",
+      "objective": 369951589.020571,
+      "objective_change": 152657.93457096815,
+      "objective_change_percent": 0.04128133473038087,
+      "solve_seconds": 165.78136366699982,
+      "matrix_dimensions": {
+        "rows": 554873,
+        "columns": 586648,
+        "matrix_nonzeros": 8118754
+      },
+      "source_gate_hashes": {
+        "generic": "db913f1a16e2e0abb36483dda95688a39152a33634a5d295e520e76b99b807e3",
+        "semantic": "3bdf06842a47a560ed7371345129abfdab0d0b9bd167ea8b69b3cab11d11aec9"
+      },
+      "closed_route_absolute_activity_sums": {
+        "PHL_PRO_PROC_BIOF": 0.0,
+        "PHL_POW_GH2_COAL": 0.0,
+        "PHL_AGR_HEAT_COAL": 0.0
+      },
+      "reserve": {
+        "row_count": 34,
+        "all_satisfied": true,
+        "minimum_headroom_gw": 0.0,
+        "binding_years": [
+          "2027",
+          "2028",
+          "2029",
+          "2032",
+          "2033",
+          "2034",
+          "2035",
+          "2036",
+          "2037",
+          "2038",
+          "2039",
+          "2040",
+          "2041",
+          "2042",
+          "2043",
+          "2044",
+          "2045",
+          "2046",
+          "2047",
+          "2048",
+          "2049",
+          "2050",
+          "2051",
+          "2052",
+          "2053"
+        ],
+        "rows": [
+          {
+            "year": "2020",
+            "lhs_gw": -4.4613531,
+            "headroom_gw": 4.4613531,
+            "dual": 0.0
+          },
+          {
+            "year": "2021",
+            "lhs_gw": -2.1888399,
+            "headroom_gw": 2.1888399,
+            "dual": 0.0
+          },
+          {
+            "year": "2022",
+            "lhs_gw": -3.4123536,
+            "headroom_gw": 3.4123536,
+            "dual": 0.0
+          },
+          {
+            "year": "2023",
+            "lhs_gw": -2.2807394,
+            "headroom_gw": 2.2807394,
+            "dual": 0.0
+          },
+          {
+            "year": "2024",
+            "lhs_gw": -1.0208677,
+            "headroom_gw": 1.0208677,
+            "dual": 0.0
+          },
+          {
+            "year": "2025",
+            "lhs_gw": -0.83724574,
+            "headroom_gw": 0.83724574,
+            "dual": 0.0
+          },
+          {
+            "year": "2026",
+            "lhs_gw": -0.26975288,
+            "headroom_gw": 0.26975288,
+            "dual": 0.0
+          },
+          {
+            "year": "2027",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -40.868689
+          },
+          {
+            "year": "2028",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -28.277144
+          },
+          {
+            "year": "2029",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -122.9983
+          },
+          {
+            "year": "2030",
+            "lhs_gw": -0.68769896,
+            "headroom_gw": 0.68769896,
+            "dual": 0.0
+          },
+          {
+            "year": "2031",
+            "lhs_gw": -0.35766905,
+            "headroom_gw": 0.35766905,
+            "dual": 0.0
+          },
+          {
+            "year": "2032",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -71.25196
+          },
+          {
+            "year": "2033",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -21.900113
+          },
+          {
+            "year": "2034",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -159.57005
+          },
+          {
+            "year": "2035",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -49.534781
+          },
+          {
+            "year": "2036",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -63.17215
+          },
+          {
+            "year": "2037",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -53.241585
+          },
+          {
+            "year": "2038",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -39.43569
+          },
+          {
+            "year": "2039",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -70.892126
+          },
+          {
+            "year": "2040",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -41.305825
+          },
+          {
+            "year": "2041",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -26.397501
+          },
+          {
+            "year": "2042",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -25.140477
+          },
+          {
+            "year": "2043",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -23.943311
+          },
+          {
+            "year": "2044",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -22.803154
+          },
+          {
+            "year": "2045",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -21.717289
+          },
+          {
+            "year": "2046",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -20.683133
+          },
+          {
+            "year": "2047",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -19.698221
+          },
+          {
+            "year": "2048",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -18.760211
+          },
+          {
+            "year": "2049",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -17.866868
+          },
+          {
+            "year": "2050",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -17.016064
+          },
+          {
+            "year": "2051",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -16.205776
+          },
+          {
+            "year": "2052",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -15.434072
+          },
+          {
+            "year": "2053",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -14.699116
+          }
+        ]
+      },
+      "hashes": {
+        "data.txt": "916129dc549d8dbb3777f3b2d4a610f73dfe4e25c978dea491acce8af01eb27c",
+        "lp.lp": "930ac008c5e4ad9a861c883706676cadcc261cff1f9c8621b389ce55f3549932",
+        "results.txt": "819edd7ebb11358c1da98ca0170b7f3898de53816a190e013da532e4102d125c"
+      },
+      "passed": true
+    },
+    "COAL_PHASEOUT": {
+      "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v23-package1-candidate-20260824/res/PACKAGE1_V23_COAL_PHASEOUT",
+      "status": "Optimal - objective value 369974408.90812081",
+      "objective": 369974408.9081208,
+      "objective_change": 158092.75512081385,
+      "objective_change_percent": 0.04274899408587274,
+      "solve_seconds": 175.56098933400062,
+      "matrix_dimensions": {
+        "rows": 554888,
+        "columns": 586648,
+        "matrix_nonzeros": 8119024
+      },
+      "source_gate_hashes": {
+        "generic": "8c16ad8f36c8c24d55735c20fec00494f99b9ccd77d618c344bc20fc9bcb882d",
+        "semantic": "3bdf06842a47a560ed7371345129abfdab0d0b9bd167ea8b69b3cab11d11aec9"
+      },
+      "closed_route_absolute_activity_sums": {
+        "PHL_PRO_PROC_BIOF": 0.0,
+        "PHL_POW_GH2_COAL": 0.0,
+        "PHL_AGR_HEAT_COAL": 0.0
+      },
+      "reserve": {
+        "row_count": 34,
+        "all_satisfied": true,
+        "minimum_headroom_gw": 0.0,
+        "binding_years": [
+          "2032",
+          "2033",
+          "2034",
+          "2035",
+          "2036",
+          "2037",
+          "2038",
+          "2039",
+          "2040",
+          "2041",
+          "2042",
+          "2043",
+          "2044",
+          "2045",
+          "2046",
+          "2047",
+          "2048",
+          "2049",
+          "2050",
+          "2051",
+          "2052",
+          "2053"
+        ],
+        "rows": [
+          {
+            "year": "2020",
+            "lhs_gw": -4.4613531,
+            "headroom_gw": 4.4613531,
+            "dual": 0.0
+          },
+          {
+            "year": "2021",
+            "lhs_gw": -3.8888399,
+            "headroom_gw": 3.8888399,
+            "dual": 0.0
+          },
+          {
+            "year": "2022",
+            "lhs_gw": -4.4867686,
+            "headroom_gw": 4.4867686,
+            "dual": 0.0
+          },
+          {
+            "year": "2023",
+            "lhs_gw": -3.612325,
+            "headroom_gw": 3.612325,
+            "dual": 0.0
+          },
+          {
+            "year": "2024",
+            "lhs_gw": -2.4911329,
+            "headroom_gw": 2.4911329,
+            "dual": 0.0
+          },
+          {
+            "year": "2025",
+            "lhs_gw": -2.0369652,
+            "headroom_gw": 2.0369652,
+            "dual": 0.0
+          },
+          {
+            "year": "2026",
+            "lhs_gw": -1.4140552,
+            "headroom_gw": 1.4140552,
+            "dual": 0.0
+          },
+          {
+            "year": "2027",
+            "lhs_gw": -0.82129038,
+            "headroom_gw": 0.82129038,
+            "dual": 0.0
+          },
+          {
+            "year": "2028",
+            "lhs_gw": -0.22383978,
+            "headroom_gw": 0.22383978,
+            "dual": 0.0
+          },
+          {
+            "year": "2029",
+            "lhs_gw": -0.22398445,
+            "headroom_gw": 0.22398445,
+            "dual": 0.0
+          },
+          {
+            "year": "2030",
+            "lhs_gw": -1.1858482,
+            "headroom_gw": 1.1858482,
+            "dual": 0.0
+          },
+          {
+            "year": "2031",
+            "lhs_gw": -0.096336012,
+            "headroom_gw": 0.096336012,
+            "dual": 0.0
+          },
+          {
+            "year": "2032",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -133.17131
+          },
+          {
+            "year": "2033",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -41.442517
+          },
+          {
+            "year": "2034",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -74.3753
+          },
+          {
+            "year": "2035",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -54.736809
+          },
+          {
+            "year": "2036",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -44.57306
+          },
+          {
+            "year": "2037",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -21.203911
+          },
+          {
+            "year": "2038",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -20.050769
+          },
+          {
+            "year": "2039",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -39.610883
+          },
+          {
+            "year": "2040",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -27.717376
+          },
+          {
+            "year": "2041",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -28.170272
+          },
+          {
+            "year": "2042",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -29.724538
+          },
+          {
+            "year": "2043",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -26.900683
+          },
+          {
+            "year": "2044",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -29.178855
+          },
+          {
+            "year": "2045",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -21.288755
+          },
+          {
+            "year": "2046",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -19.508689
+          },
+          {
+            "year": "2047",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -14.476195
+          },
+          {
+            "year": "2048",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -13.978763
+          },
+          {
+            "year": "2049",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -18.345178
+          },
+          {
+            "year": "2050",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -12.4543
+          },
+          {
+            "year": "2051",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -16.205776
+          },
+          {
+            "year": "2052",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -15.434072
+          },
+          {
+            "year": "2053",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -14.699116
+          }
+        ]
+      },
+      "hashes": {
+        "data.txt": "93a11bf00d6e6c18cf54d8fb59a3e52695b9be4826c2dbe55aacb2630ef04cea",
+        "lp.lp": "fe473a668e48f50ffcf6f38f8d36a29e13d5b4247065dcf8922ab9e5884f3951",
+        "results.txt": "afad25f1ac631bd812e353f08bcb2151083a7f04ae7b6aea6869af9106612afb"
+      },
+      "passed": true
+    },
+    "RE": {
+      "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v23-package1-candidate-20260824/res/PACKAGE1_V23_RE",
+      "status": "Optimal - objective value 369965855.12309593",
+      "objective": 369965855.1230959,
+      "objective_change": 156141.4900959134,
+      "objective_change_percent": 0.04222211703472922,
+      "solve_seconds": 274.87052233400027,
+      "matrix_dimensions": {
+        "rows": 554873,
+        "columns": 586648,
+        "matrix_nonzeros": 8119264
+      },
+      "source_gate_hashes": {
+        "generic": "5d366f621bc36b8edd5033fabcaf1860a6a096a429ad54eafd67b7df1e790ece",
+        "semantic": "3bdf06842a47a560ed7371345129abfdab0d0b9bd167ea8b69b3cab11d11aec9"
+      },
+      "closed_route_absolute_activity_sums": {
+        "PHL_PRO_PROC_BIOF": 0.0,
+        "PHL_POW_GH2_COAL": 0.0,
+        "PHL_AGR_HEAT_COAL": 0.0
+      },
+      "reserve": {
+        "row_count": 34,
+        "all_satisfied": true,
+        "minimum_headroom_gw": 0.0,
+        "binding_years": [
+          "2026",
+          "2027",
+          "2028",
+          "2029",
+          "2030",
+          "2031",
+          "2032",
+          "2033",
+          "2034",
+          "2035",
+          "2036",
+          "2037",
+          "2038",
+          "2039",
+          "2040",
+          "2041",
+          "2042",
+          "2043",
+          "2044",
+          "2045",
+          "2046",
+          "2047",
+          "2048",
+          "2049",
+          "2050",
+          "2051",
+          "2052",
+          "2053"
+        ],
+        "rows": [
+          {
+            "year": "2020",
+            "lhs_gw": -4.4613531,
+            "headroom_gw": 4.4613531,
+            "dual": 0.0
+          },
+          {
+            "year": "2021",
+            "lhs_gw": -2.2938399,
+            "headroom_gw": 2.2938399,
+            "dual": 0.0
+          },
+          {
+            "year": "2022",
+            "lhs_gw": -3.0151685,
+            "headroom_gw": 3.0151685,
+            "dual": 0.0
+          },
+          {
+            "year": "2023",
+            "lhs_gw": -2.0308611,
+            "headroom_gw": 2.0308611,
+            "dual": 0.0
+          },
+          {
+            "year": "2024",
+            "lhs_gw": -0.61667203,
+            "headroom_gw": 0.61667203,
+            "dual": 0.0
+          },
+          {
+            "year": "2025",
+            "lhs_gw": -0.44591877,
+            "headroom_gw": 0.44591877,
+            "dual": 0.0
+          },
+          {
+            "year": "2026",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -72.634926
+          },
+          {
+            "year": "2027",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -68.950014
+          },
+          {
+            "year": "2028",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -65.484298
+          },
+          {
+            "year": "2029",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -62.347812
+          },
+          {
+            "year": "2030",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -7.0499549
+          },
+          {
+            "year": "2031",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -33.55667
+          },
+          {
+            "year": "2032",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -80.819793
+          },
+          {
+            "year": "2033",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -76.407079
+          },
+          {
+            "year": "2034",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -95.102855
+          },
+          {
+            "year": "2035",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -45.430582
+          },
+          {
+            "year": "2036",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -60.737432
+          },
+          {
+            "year": "2037",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -51.162067
+          },
+          {
+            "year": "2038",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -36.221998
+          },
+          {
+            "year": "2039",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -70.914171
+          },
+          {
+            "year": "2040",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -33.035435
+          },
+          {
+            "year": "2041",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -31.772314
+          },
+          {
+            "year": "2042",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -27.860739
+          },
+          {
+            "year": "2043",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -23.943311
+          },
+          {
+            "year": "2044",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -20.817293
+          },
+          {
+            "year": "2045",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -21.002814
+          },
+          {
+            "year": "2046",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -18.873033
+          },
+          {
+            "year": "2047",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -20.059609
+          },
+          {
+            "year": "2048",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -22.909259
+          },
+          {
+            "year": "2049",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -17.866868
+          },
+          {
+            "year": "2050",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -15.86209
+          },
+          {
+            "year": "2051",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -13.970307
+          },
+          {
+            "year": "2052",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -15.484164
+          },
+          {
+            "year": "2053",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -18.038466
+          }
+        ]
+      },
+      "hashes": {
+        "data.txt": "b9db98937093326e3aa984074bb16f67736223eac620b4f32453c33fa29d9f6a",
+        "lp.lp": "73a2b75602c3aa4d3b4ba12df8ed854fa12d4d4e6b609530ccb3d33ce0c64b4a",
+        "results.txt": "6bce58ccfe81d2977c52f8071f1f9a5104c334bfbd0d519ce7cc53bd43fbfb98"
+      },
+      "passed": true
+    },
+    "EV": {
+      "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v23-package1-candidate-20260824/res/PACKAGE1_V23_EV",
+      "status": "Optimal - objective value 369936176.66630203",
+      "objective": 369936176.666302,
+      "objective_change": 129614.06030201912,
+      "objective_change_percent": 0.03504915093681671,
+      "solve_seconds": 257.3222569999998,
+      "matrix_dimensions": {
+        "rows": 554873,
+        "columns": 586648,
+        "matrix_nonzeros": 8119062
+      },
+      "source_gate_hashes": {
+        "generic": "2b611f6fbb40efe84de20482c6ab319a72ced8657d8017f3a1641ada6f27390e",
+        "semantic": "3bdf06842a47a560ed7371345129abfdab0d0b9bd167ea8b69b3cab11d11aec9"
+      },
+      "closed_route_absolute_activity_sums": {
+        "PHL_PRO_PROC_BIOF": 0.0,
+        "PHL_POW_GH2_COAL": 0.0,
+        "PHL_AGR_HEAT_COAL": 0.0
+      },
+      "reserve": {
+        "row_count": 34,
+        "all_satisfied": true,
+        "minimum_headroom_gw": 0.0,
+        "binding_years": [
+          "2027",
+          "2028",
+          "2029",
+          "2031",
+          "2032",
+          "2033",
+          "2034",
+          "2035",
+          "2036",
+          "2037",
+          "2038",
+          "2039",
+          "2040",
+          "2041",
+          "2042",
+          "2043",
+          "2044",
+          "2045",
+          "2046",
+          "2047",
+          "2048",
+          "2049",
+          "2050",
+          "2051",
+          "2052",
+          "2053"
+        ],
+        "rows": [
+          {
+            "year": "2020",
+            "lhs_gw": -4.4613531,
+            "headroom_gw": 4.4613531,
+            "dual": 0.0
+          },
+          {
+            "year": "2021",
+            "lhs_gw": -2.1521499,
+            "headroom_gw": 2.1521499,
+            "dual": 0.0
+          },
+          {
+            "year": "2022",
+            "lhs_gw": -3.5288834,
+            "headroom_gw": 3.5288834,
+            "dual": 0.0
+          },
+          {
+            "year": "2023",
+            "lhs_gw": -2.1142042,
+            "headroom_gw": 2.1142042,
+            "dual": 0.0
+          },
+          {
+            "year": "2024",
+            "lhs_gw": -1.3209337,
+            "headroom_gw": 1.3209337,
+            "dual": 0.0
+          },
+          {
+            "year": "2025",
+            "lhs_gw": -0.93571717,
+            "headroom_gw": 0.93571717,
+            "dual": 0.0
+          },
+          {
+            "year": "2026",
+            "lhs_gw": -0.39125061,
+            "headroom_gw": 0.39125061,
+            "dual": 0.0
+          },
+          {
+            "year": "2027",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -38.308272
+          },
+          {
+            "year": "2028",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -39.025746
+          },
+          {
+            "year": "2029",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -76.784651
+          },
+          {
+            "year": "2030",
+            "lhs_gw": -0.23361979,
+            "headroom_gw": 0.23361979,
+            "dual": 0.0
+          },
+          {
+            "year": "2031",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -51.07276
+          },
+          {
+            "year": "2032",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -69.478578
+          },
+          {
+            "year": "2033",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -60.227772
+          },
+          {
+            "year": "2034",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -83.940838
+          },
+          {
+            "year": "2035",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -61.245071
+          },
+          {
+            "year": "2036",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -64.48587
+          },
+          {
+            "year": "2037",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -61.603384
+          },
+          {
+            "year": "2038",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -53.454925
+          },
+          {
+            "year": "2039",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -60.932752
+          },
+          {
+            "year": "2040",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -41.959785
+          },
+          {
+            "year": "2041",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -52.234221
+          },
+          {
+            "year": "2042",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -37.813887
+          },
+          {
+            "year": "2043",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -32.812552
+          },
+          {
+            "year": "2044",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -28.782982
+          },
+          {
+            "year": "2045",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -27.40082
+          },
+          {
+            "year": "2046",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -23.296817
+          },
+          {
+            "year": "2047",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -20.625154
+          },
+          {
+            "year": "2048",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -18.760211
+          },
+          {
+            "year": "2049",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -16.701681
+          },
+          {
+            "year": "2050",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -18.181251
+          },
+          {
+            "year": "2051",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -16.205776
+          },
+          {
+            "year": "2052",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -15.434072
+          },
+          {
+            "year": "2053",
+            "lhs_gw": -0.0,
+            "headroom_gw": 0.0,
+            "dual": -14.699116
+          }
+        ]
+      },
+      "hashes": {
+        "data.txt": "5b9286d1f9caee6a3f0f7fb96ac1e8b9245838347a2088a8a0a5968bcbea0591",
+        "lp.lp": "2afe2367ce24ede59caa1eab675902e108d375d827d1c1377594707fcd46ab2b",
+        "results.txt": "93fd5aa4a7a20fd3b9526b571e29b755f89071d16a5e145a5ecd099139953389"
+      },
+      "passed": true
+    }
+  },
+  "optimizer_runs": 4,
+  "optimizer_run_purposes": {
+    "BASE": "Required coupled candidate feasibility and optimality proof.",
+    "COAL_PHASEOUT": "User-required policy-overlay feasibility and optimality proof.",
+    "RE": "User-required policy-overlay feasibility and optimality proof after its source gate caught and prevented an impossible candidate.",
+    "EV": "User-required policy-overlay feasibility and optimality proof."
+  },
+  "execution": "BASE first; the other three CBC runs concurrently in isolated run directories; no shared viewer generation.",
+  "promotion_allowed": true
+}

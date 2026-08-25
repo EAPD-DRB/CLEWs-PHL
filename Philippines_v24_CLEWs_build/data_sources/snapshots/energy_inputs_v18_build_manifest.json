@@ -1,0 +1,100 @@
+{
+    "schema": "philippines-v18-energy-build-manifest-v1",
+    "source_case": "/Users/sato/GitHub/CLEWs-PHL/case/Philippines_v17",
+    "target_case": "/Users/sato/GitHub/CLEWs-PHL/case/Philippines_v18",
+    "source_case_sha256": {
+        "R.json": "8e352ff8017301cb6fb2857b399a2d66f534e5691b03fd2c0ffbfe1b51994e84",
+        "RE.json": "85e0ea73dfd7ce398e0638ed23b8c8cd7b7ec7e0f0b4119d2963ce94625aba15",
+        "RS.json": "a954bbe1c640eabaa9b247534bf7caaf6e924de043ca22563b2515f0413e255e",
+        "RT.json": "43ad5fd503960156f254aab4fe459b179f3dd130f95009f7e2a1550d2000147f",
+        "RTSM.json": "b5f05d6916f988e122fa368636e8f6841e2b89bb35f551bea3fd0f171c28609b",
+        "RYC.json": "67fb414c38f349b8f82adaf3df0f6b5366178481bb3801682b3365971f39c0f4",
+        "RYCTs.json": "ad759f6a874a8925a9c4986f54dde366d48bb7c4876dcf859ff136366123a6cc",
+        "RYCn.json": "617b78d924643196ccb9a9e21cb25cef2f25b67b53d46db5f441bab6dc59f120",
+        "RYDtb.json": "5441dd7e9ac61fc9498c85ec20a8935a2870280035fecbe89a89e72b611826af",
+        "RYE.json": "025be0c838019c347dda8310cd326f5e65c414f49f83086db5b0763b96ba4e78",
+        "RYS.json": "a224467bc0afb311731cf9b588b04599d71529289e9660ce88a99eb11592a5e2",
+        "RYSeDt.json": "3d5981408cb25f2030e55373cec90b7aac78ba99e6eae91fa94b818624b63458",
+        "RYT.json": "e5f92c1294955ab97fb3959fc878739208ad22d2353b142e3e013402f429d3ee",
+        "RYTC.json": "9d7fb98b0b06b40562f453e754b8d60aa8c81911d30f9ac9094bc96f05c61359",
+        "RYTCM.json": "7ee2534727a3832098026ad2d6b9639a5e0397e7cc97b7be07abc1b2d39b6a70",
+        "RYTCn.json": "17b0acd11c70636660b2232c917800fe36f2a74181f882d41abd9f3d49d5283b",
+        "RYTEM.json": "394dde16110e917a19ff99026794436bce0e024383f125500e299fc108a6027d",
+        "RYTM.json": "6b5aa4c5cc3436f0ec63a45b068b9e0ef04ba33bf472fce6eedee8b098b361e4",
+        "RYTTs.json": "ae37bfbc69eda5a73f9b3ff26314bdf995b97f892e5f0e00f2f998d62d284848",
+        "RYTs.json": "3facea3a09320ba6ab8c1ed11dd61ede33db2300c3c5a8090b67d504794ef5c2",
+        "genData.json": "994414787819d8a85b79f93c9ac715bc457e5263d4608ae02ac5fb1cc398385b",
+        "water_demand_validation_summary.json": "e08590df662725c882057ee39f43992b9d9bd6eefc8c1c2acf2c9a1730b3415c"
+    },
+    "target_case_sha256": {
+        "R.json": "8e352ff8017301cb6fb2857b399a2d66f534e5691b03fd2c0ffbfe1b51994e84",
+        "RE.json": "85e0ea73dfd7ce398e0638ed23b8c8cd7b7ec7e0f0b4119d2963ce94625aba15",
+        "RS.json": "a954bbe1c640eabaa9b247534bf7caaf6e924de043ca22563b2515f0413e255e",
+        "RT.json": "1240459e09f06270335241b5e3db6d023c19cacf524ff93bb214f00e9f90725d",
+        "RTSM.json": "b5f05d6916f988e122fa368636e8f6841e2b89bb35f551bea3fd0f171c28609b",
+        "RYC.json": "67fb414c38f349b8f82adaf3df0f6b5366178481bb3801682b3365971f39c0f4",
+        "RYCTs.json": "ad759f6a874a8925a9c4986f54dde366d48bb7c4876dcf859ff136366123a6cc",
+        "RYCn.json": "617b78d924643196ccb9a9e21cb25cef2f25b67b53d46db5f441bab6dc59f120",
+        "RYDtb.json": "5441dd7e9ac61fc9498c85ec20a8935a2870280035fecbe89a89e72b611826af",
+        "RYE.json": "025be0c838019c347dda8310cd326f5e65c414f49f83086db5b0763b96ba4e78",
+        "RYS.json": "a224467bc0afb311731cf9b588b04599d71529289e9660ce88a99eb11592a5e2",
+        "RYSeDt.json": "3d5981408cb25f2030e55373cec90b7aac78ba99e6eae91fa94b818624b63458",
+        "RYT.json": "51b281345d28aa8b40cf9e963c3d07c77cff98b9baa8fb4a8b7aef8351caf97d",
+        "RYTC.json": "9d7fb98b0b06b40562f453e754b8d60aa8c81911d30f9ac9094bc96f05c61359",
+        "RYTCM.json": "7ee2534727a3832098026ad2d6b9639a5e0397e7cc97b7be07abc1b2d39b6a70",
+        "RYTCn.json": "17b0acd11c70636660b2232c917800fe36f2a74181f882d41abd9f3d49d5283b",
+        "RYTEM.json": "394dde16110e917a19ff99026794436bce0e024383f125500e299fc108a6027d",
+        "RYTM.json": "bc7c0668d0f686930e1c14af169a8dae7bd284a96081591188891c51b8a38c87",
+        "RYTTs.json": "f154e4e6ff2d9850f08013072e500962723e3dc59043ce79c5d5bb3688cf047e",
+        "RYTs.json": "3facea3a09320ba6ab8c1ed11dd61ede33db2300c3c5a8090b67d504794ef5c2",
+        "genData.json": "8ff629771d77b66f07ed07108ff127e9f777f51c502910acc29374dd6ba38a8e",
+        "water_demand_validation_summary.json": "e08590df662725c882057ee39f43992b9d9bd6eefc8c1c2acf2c9a1730b3415c"
+    },
+    "changed_files": [
+        "RT.json",
+        "RYT.json",
+        "RYTM.json",
+        "RYTTs.json",
+        "genData.json"
+    ],
+    "unchanged_file_count": 17,
+    "technology_ids_unchanged": true,
+    "commodity_ids_unchanged": true,
+    "land_cover_source_files_unchanged": true,
+    "parameters": {
+        "geothermal_af": 0.7,
+        "onshore_wind_annual_cf_before": 0.17653492224416,
+        "onshore_wind_annual_cf_after": 0.21973098445200714,
+        "coal_capital_cost": 1604.789,
+        "smr_capital_cost": 8000.0,
+        "smr_life": 60,
+        "large_hydro_life": 60,
+        "gas_import_cap_pj": {
+            "2020": 0.0,
+            "2022": 0.0,
+            "2023": 23.29372990509147,
+            "2024": 395.2339200002194,
+            "2053": 395.2339200002194
+        },
+        "gas_domestic_cap_pj": {
+            "2020": 154.9184424432652,
+            "2021": 132.3548618308677,
+            "2022": 124.18112468900321,
+            "2023": 97.51537297558706,
+            "2024": 76.88193327412314,
+            "2053": 60.906380038825155
+        },
+        "gas_import_price_usd_per_gj": {
+            "2020": 9.983758479,
+            "2022": 10.06018917,
+            "2023": 13.184136143558241,
+            "2024": 14.122475092668427,
+            "2053": 14.974349186010715
+        },
+        "gas_domestic_price_usd_per_gj": {
+            "2020": 6.662111756970275,
+            "2024": 6.768189251820153,
+            "2053": 7.175437815964088
+        }
+    }
+}

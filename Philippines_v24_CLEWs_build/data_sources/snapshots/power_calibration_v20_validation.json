@@ -1,0 +1,119 @@
+{
+  "schema": "philippines-v20-power-history-validation-v1",
+  "status": "accepted",
+  "observation_classification": {
+    "E": [
+      "DOE dependable capacity as a physical availability driver",
+      "documented 2020-2021 power-plant take-or-pay contract economics"
+    ],
+    "J": [
+      "full domestic production envelope used as the disclosed maximum contract-payment proxy because plant GSPA quantities are unavailable"
+    ],
+    "H": [
+      "DOE 2020-2024 generation, installed capacity, and realized stock changes retained as benchmark-only history"
+    ],
+    "forcing": "none"
+  },
+  "annual_metrics": [
+    {
+      "year": 2020,
+      "observed_total_generation_pj": 366.3216,
+      "baseline_total_generation_pj": 374.383,
+      "candidate_total_generation_pj": 374.38309999999996,
+      "baseline_total_error_percent": 2.2006346336115565,
+      "candidate_total_error_percent": 2.200661932029115,
+      "baseline_generation_wape_percent": 49.45976431638211,
+      "candidate_generation_wape_percent": 13.603647723748743,
+      "baseline_share_total_variation_percentage_points": 23.786271954702812,
+      "candidate_share_total_variation_percentage_points": 5.8316634577382365
+    },
+    {
+      "year": 2021,
+      "observed_total_generation_pj": 382.014,
+      "baseline_total_generation_pj": 373.014,
+      "candidate_total_generation_pj": 371.76059999999995,
+      "baseline_total_error_percent": -2.3559345992555247,
+      "candidate_total_error_percent": -2.6840377577785253,
+      "baseline_generation_wape_percent": 46.705670472809906,
+      "candidate_generation_wape_percent": 16.594260943316197,
+      "baseline_share_total_variation_percentage_points": 24.38197179596066,
+      "candidate_share_total_variation_percentage_points": 9.058298265984668
+    },
+    {
+      "year": 2022,
+      "observed_total_generation_pj": 401.4576,
+      "baseline_total_generation_pj": 393.9807999999999,
+      "candidate_total_generation_pj": 389.63700000000006,
+      "baseline_total_error_percent": -1.8624133656954407,
+      "candidate_total_error_percent": -2.944420531582901,
+      "baseline_generation_wape_percent": 37.31362913543051,
+      "candidate_generation_wape_percent": 22.51221548676623,
+      "baseline_share_total_variation_percentage_points": 18.27040546904509,
+      "candidate_share_total_variation_percentage_points": 12.17151113441572
+    },
+    {
+      "year": 2023,
+      "observed_total_generation_pj": 424.8144,
+      "baseline_total_generation_pj": 414.58649999999994,
+      "candidate_total_generation_pj": 407.79230000000007,
+      "baseline_total_error_percent": -2.407616126007036,
+      "candidate_total_error_percent": -4.0069498585735115,
+      "baseline_generation_wape_percent": 33.550486989141596,
+      "candidate_generation_wape_percent": 31.36289636132864,
+      "baseline_share_total_variation_percentage_points": 17.775007286467122,
+      "candidate_share_total_variation_percentage_points": 16.857853587547485
+    },
+    {
+      "year": 2024,
+      "observed_total_generation_pj": 456.9876,
+      "baseline_total_generation_pj": 435.01639999999986,
+      "candidate_total_generation_pj": 426.15320000000014,
+      "baseline_total_error_percent": -4.807832860235185,
+      "candidate_total_error_percent": -6.747316557385768,
+      "baseline_generation_wape_percent": 37.46508658002971,
+      "candidate_generation_wape_percent": 39.42597129550127,
+      "baseline_share_total_variation_percentage_points": 20.891700519047696,
+      "candidate_share_total_variation_percentage_points": 22.044924021852907
+    }
+  ],
+  "technology_rows_csv": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v20-power-calibration-candidate-r2/documentation/power_calibration_v20_technology_comparison.csv",
+  "binding_findings": [
+    {
+      "constraint": "AAC2_TotalAnnualTechnologyActivityUpperLimit(RE1,PHL_PRO_EXTR_NG,2020)",
+      "activity_pj": 154.91844,
+      "dual": -3.8673493
+    },
+    {
+      "constraint": "AAC2_TotalAnnualTechnologyActivityUpperLimit(RE1,PHL_PRO_EXTR_NG,2021)",
+      "activity_pj": 132.35486,
+      "dual": -6.193906
+    },
+    {
+      "constraint": "CAb1_PlannedMaintenance(RE1,PHL_POW_PP_HY_LA,2020)",
+      "activity_pj": 19.075515,
+      "dual": -7.6428744
+    }
+  ],
+  "optimizer_run_ledger": [
+    {
+      "candidate": "r1",
+      "status": "rejected diagnostic",
+      "reason": "upstream marginal-cost reclassification subsidized every gas-using sector rather than the contracted power plants",
+      "sensitivity": false
+    },
+    {
+      "candidate": "r2",
+      "status": "accepted",
+      "reason": "plant-specific contract credit preserves other users' sourced gas price",
+      "sensitivity": false
+    }
+  ],
+  "known_limits": [
+    "Oil and biomass generation remain zero because a national copperplate lacks off-grid, embedded, cogeneration and must-run service drivers.",
+    "Hydro remains limited by its inherited annual availability profile; no observed hydro output was used to set it.",
+    "The 2020 benchmark includes off-grid and embedded generation, while the DOE summary is grid-only from 2021 onward.",
+    "Realized 2021-2024 installed-capacity changes are validation benchmarks and are not imposed as model investment equalities.",
+    "No three-grid topology was added because regional generation without regional final-demand and network balances would not be a physical representation and would materially expand runtime."
+  ],
+  "sensitivity_runs": 0
+}

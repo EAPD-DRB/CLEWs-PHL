@@ -1,0 +1,224 @@
+{
+  "schema": "philippines-v22-transition-scope-deterministic-gate-v1",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v22-transition-scope-only-candidate-r8",
+  "status": "passed",
+  "optimizer_runs": 0,
+  "checks": [
+    {
+      "check": "unchanged_RYC.json",
+      "passed": true,
+      "detail": "final demands, stocks, lifetimes, costs, all activity/capacity bounds, emissions, and UDC coefficients remain source-identical"
+    },
+    {
+      "check": "unchanged_RYT.json",
+      "passed": true,
+      "detail": "final demands, stocks, lifetimes, costs, all activity/capacity bounds, emissions, and UDC coefficients remain source-identical"
+    },
+    {
+      "check": "unchanged_RYCn.json",
+      "passed": true,
+      "detail": "final demands, stocks, lifetimes, costs, all activity/capacity bounds, emissions, and UDC coefficients remain source-identical"
+    },
+    {
+      "check": "unchanged_RYTCn.json",
+      "passed": true,
+      "detail": "final demands, stocks, lifetimes, costs, all activity/capacity bounds, emissions, and UDC coefficients remain source-identical"
+    },
+    {
+      "check": "unchanged_RYTM.json",
+      "passed": true,
+      "detail": "final demands, stocks, lifetimes, costs, all activity/capacity bounds, emissions, and UDC coefficients remain source-identical"
+    },
+    {
+      "check": "unchanged_RYTEM.json",
+      "passed": true,
+      "detail": "final demands, stocks, lifetimes, costs, all activity/capacity bounds, emissions, and UDC coefficients remain source-identical"
+    },
+    {
+      "check": "unchanged_RT.json",
+      "passed": true,
+      "detail": "final demands, stocks, lifetimes, costs, all activity/capacity bounds, emissions, and UDC coefficients remain source-identical"
+    },
+    {
+      "check": "no_new_udc",
+      "passed": true,
+      "detail": "constraint definitions are exactly unchanged"
+    },
+    {
+      "check": "same_physical_objects",
+      "passed": true,
+      "detail": "no technology or commodity added or removed"
+    },
+    {
+      "check": "agriculture_heat_membership_exact",
+      "passed": true,
+      "detail": {
+        "actual": {
+          "TEC_32u9e": {
+            "added": [
+              "COM_fbce3"
+            ],
+            "removed": []
+          },
+          "TEC_kv9in": {
+            "added": [
+              "COM_lej08"
+            ],
+            "removed": []
+          },
+          "TEC_vi4q0": {
+            "added": [
+              "COM_86j76"
+            ],
+            "removed": []
+          }
+        },
+        "expected": {
+          "TEC_32u9e": {
+            "added": [
+              "COM_fbce3"
+            ],
+            "removed": []
+          },
+          "TEC_kv9in": {
+            "added": [
+              "COM_lej08"
+            ],
+            "removed": []
+          },
+          "TEC_vi4q0": {
+            "added": [
+              "COM_86j76"
+            ],
+            "removed": []
+          }
+        }
+      }
+    },
+    {
+      "check": "technology_structure_otherwise_unchanged",
+      "passed": true,
+      "detail": "all non-IAR technology fields are identical; only charcoal description is allowed to improve"
+    },
+    {
+      "check": "iar_diff_allowlist",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "cooking_iar_exact",
+      "passed": true,
+      "detail": {
+        "PHL_HOU_COOK_OIL": 1.6666666666666667,
+        "PHL_HOU_COOK_ELE": 1.4285714285714286,
+        "PHL_HOU_COOK_NG": 1.6666666666666667,
+        "PHL_HOU_COOK_COAL": 5.0,
+        "PHL_HOU_COOK_BIOM": 6.666666666666667
+      }
+    },
+    {
+      "check": "agriculture_heat_iar_exact",
+      "passed": true,
+      "detail": {
+        "PHL_AGR_HEAT_OIL": [
+          "PHL_PRO_OIL",
+          1.123595506
+        ],
+        "PHL_AGR_HEAT_NG": [
+          "PHL_PRO_NG",
+          1.123595506
+        ],
+        "PHL_AGR_HEAT_ELE": [
+          "PHL_AGR_ELE",
+          1.0
+        ]
+      }
+    },
+    {
+      "check": "iar_policy_inheritance",
+      "passed": true,
+      "detail": "all affected policy rows inherit SC_0"
+    },
+    {
+      "check": "agriculture_input_paths_exist",
+      "passed": true,
+      "detail": {
+        "PHL_PRO_OIL": [
+          "PHL_PRO_PROC_OIL"
+        ],
+        "PHL_AGR_ELE": [
+          "PHL_POW_TD_AGR"
+        ],
+        "PHL_PRO_NG": [
+          "PHL_PRO_PROC_NG"
+        ]
+      }
+    },
+    {
+      "check": "no_new_demand_or_bound_contradiction",
+      "passed": true,
+      "detail": "requested demand and every activity/capacity/resource envelope are unchanged; only fuel required per useful service changes"
+    },
+    {
+      "check": "daytype_dimension",
+      "passed": true,
+      "detail": {
+        "daytypes": [
+          "DT_0"
+        ],
+        "timeslices": 18
+      }
+    },
+    {
+      "check": "lossless_temporal_aggregation",
+      "passed": true,
+      "detail": "all years, commodities, technologies and retained timeslices"
+    },
+    {
+      "check": "demand_profiles_normalized",
+      "passed": true,
+      "detail": "every active commodity-year SDP sums to one"
+    },
+    {
+      "check": "no_afolu_lp_membership",
+      "passed": true,
+      "detail": "all technology emissions memberships unchanged"
+    },
+    {
+      "check": "livestock_scope_disclosed",
+      "passed": true,
+      "detail": "national-agriculture completeness is not claimed"
+    },
+    {
+      "check": "schema_ledger_complete",
+      "passed": true,
+      "detail": [
+        "SOURCES.csv",
+        "ASSUMPTIONS.csv",
+        "CALCULATIONS.csv",
+        "MODEL_MAP.csv",
+        "GAPS.csv",
+        "CHANGES.csv"
+      ]
+    },
+    {
+      "check": "agriculture_heat_judgement_documented",
+      "passed": true,
+      "detail": "unity electric input and inherited 89% convention are explicit"
+    }
+  ],
+  "failures": [],
+  "classification": {
+    "initial_stocks": "unchanged",
+    "final_demands": "unchanged genuine exogenous demand",
+    "continuing_constraints": "unchanged",
+    "benchmark_only": [
+      "cooking fuel shares",
+      "DOE 2024 AFF energy/electricity share",
+      "AQUASTAT irrigation requirement",
+      "groundwater share",
+      "GHGI totals"
+    ]
+  },
+  "required_next_step": "Generate/preprocess/check the matrix; optimize only if this report passes."
+}

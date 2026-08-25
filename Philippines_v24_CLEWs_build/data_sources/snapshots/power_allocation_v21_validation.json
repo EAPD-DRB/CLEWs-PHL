@@ -1,0 +1,106 @@
+{
+  "schema": "philippines-v21-power-allocation-validation-v1",
+  "status": "accepted",
+  "annual_metrics": [
+    {
+      "year": 2020,
+      "observed_total_pj": 366.3216,
+      "v20_total_pj": 374.38309999999996,
+      "v21_total_pj": 374.71610000000004,
+      "v20_total_error_percent": 2.200661932029115,
+      "v21_total_error_percent": 2.291565662521689,
+      "v20_technology_wape_percent": 13.603647723748743,
+      "v21_technology_wape_percent": 6.480646618727279,
+      "v20_share_total_variation_points": 5.8316634577382365,
+      "v21_share_total_variation_points": 3.405458139880978
+    },
+    {
+      "year": 2021,
+      "observed_total_pj": 382.014,
+      "v20_total_pj": 371.76059999999995,
+      "v21_total_pj": 365.98310000000004,
+      "v20_total_error_percent": -2.6840377577785253,
+      "v21_total_error_percent": -4.1964168852450365,
+      "v20_technology_wape_percent": 16.594260943316197,
+      "v21_technology_wape_percent": 7.860575790416044,
+      "v20_share_total_variation_points": 9.058298265984668,
+      "v21_share_total_variation_points": 4.6307146200280185
+    },
+    {
+      "year": 2022,
+      "observed_total_pj": 401.4576,
+      "v20_total_pj": 389.63700000000006,
+      "v21_total_pj": 383.28819999999996,
+      "v20_total_error_percent": -2.944420531582901,
+      "v21_total_error_percent": -4.5258577742705715,
+      "v20_technology_wape_percent": 22.51221548676623,
+      "v21_technology_wape_percent": 14.89875892248645,
+      "v20_share_total_variation_points": 12.17151113441572,
+      "v21_share_total_variation_points": 8.755491541469171
+    },
+    {
+      "year": 2023,
+      "observed_total_pj": 424.8144,
+      "v20_total_pj": 407.79230000000007,
+      "v21_total_pj": 401.1135000000002,
+      "v20_total_error_percent": -4.0069498585735115,
+      "v21_total_error_percent": -5.579118786933721,
+      "v20_technology_wape_percent": 31.36289636132864,
+      "v21_technology_wape_percent": 23.955426181410086,
+      "v20_share_total_variation_points": 16.857853587547485,
+      "v21_share_total_variation_points": 13.484028583870389
+    },
+    {
+      "year": 2024,
+      "observed_total_pj": 456.9876,
+      "v20_total_pj": 426.15320000000014,
+      "v21_total_pj": 419.19020000000023,
+      "v20_total_error_percent": -6.747316557385768,
+      "v21_total_error_percent": -8.270990285075515,
+      "v20_technology_wape_percent": 39.42597129550127,
+      "v21_technology_wape_percent": 33.46143308921296,
+      "v20_share_total_variation_points": 22.044924021852907,
+      "v21_share_total_variation_points": 19.428578349793007
+    }
+  ],
+  "technology_rows_csv": "/Users/sato/Documents/GitHub/CLEWs-PHL/Philippines_v21_CLEWs_build/data_sources/snapshots/power_allocation_v21_technology_comparison.csv",
+  "offgrid_gross_generation": [
+    {
+      "year": 2020,
+      "observed_total_pj": 5.8248,
+      "model_total_pj": 5.8248,
+      "observed_oil_pj": 5.3238672000000005,
+      "model_oil_pj": 5.4209,
+      "observed_renewable_pj": 0.5009328,
+      "model_renewable_pj": 0.4039,
+      "unrepresented_observed_coal_pj": 0.0
+    },
+    {
+      "year": 2022,
+      "observed_total_pj": 6.3682776,
+      "model_total_pj": 6.368399999999999,
+      "observed_oil_pj": 5.4014256,
+      "model_oil_pj": 5.6644,
+      "observed_renewable_pj": 0.6446772,
+      "model_renewable_pj": 0.704,
+      "unrepresented_observed_coal_pj": 0.3221712
+    }
+  ],
+  "offgrid_renewable_2020_split": {
+    "hydro": 0.6262958174355001,
+    "solar": 0.10149371471063207,
+    "wind": 0.2722104678538678
+  },
+  "selected_2020_pj": {
+    "oil": 5.4209,
+    "biomass": 5.0296,
+    "hydro": 29.40956088066221
+  },
+  "selected_2020_observed_pj": {
+    "oil": 8.9064,
+    "biomass": 4.5396,
+    "hydro": 25.8912
+  },
+  "forcing": "none",
+  "sensitivity_runs": 0
+}

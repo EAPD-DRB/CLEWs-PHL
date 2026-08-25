@@ -1,0 +1,170 @@
+{
+  "schema": "philippines-v19-pm25-validation-v1",
+  "status": "pass",
+  "solve": {
+    "status": "pass",
+    "detail": "Optimal - objective value 369739249.45411736",
+    "results_sha256": "c8ebd15928d324d8cad09343e9b95835c880091499df1819a19ba2a7677dec83",
+    "hard_limit_seconds": 600,
+    "elapsed_seconds": 471.1121083749458,
+    "cbc_wallclock_seconds": 351.7,
+    "objective": 369739249.45411736,
+    "solve_report_sha256": "97f9e2ba97905ea5532a23b3b270b9d9ed3683f63d88c24ddb908faa9bd39584"
+  },
+  "result_comparison": {
+    "baseline_emissions_sha256": "0c16029d485d661bb41e4befc55e7a0d2e59782fc546aa06272541d4a2b7247d",
+    "candidate_emissions_sha256": "89dd0bb184488033a4f94850eb12e26cbf68b6843491b4d1df3d5e8c4feea107",
+    "co2e_max_absolute_delta_mt": 0.0,
+    "co2e_sum_absolute_delta_mt": 0.0,
+    "pm25_total_kt": {
+      "2020": {
+        "before": 97.99029999999999,
+        "after": 120.61569999999998,
+        "added_coverage": 22.625399999999985
+      },
+      "2030": {
+        "before": 123.16609999999999,
+        "after": 165.27399999999997,
+        "added_coverage": 42.10789999999999
+      },
+      "2053": {
+        "before": 168.071,
+        "after": 249.21089999999998,
+        "added_coverage": 81.13989999999998
+      }
+    },
+    "interpretation": "PM2.5 is an endogenous reporting coefficient; no PM2.5 cap or penalty enters the objective."
+  },
+  "validated_inputs": {
+    "v18": "case/Philippines_v18",
+    "v19": "case/Philippines_v19",
+    "generated": "retained external solve output; raw generated files are excluded from the result-free delivery",
+    "v18_git_commit": "2735feb",
+    "v18_pull_time_local": "2026-08-19T10:09:18-04:00",
+    "v18_archive_sha256": "c3f4ee25d2e8c3315ced1be4bf819673859be45079536abb2cfbc40a65d1dc55"
+  },
+  "checks": [
+    {
+      "name": "source_file_set",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "only_genData_and_RYTEM_changed",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "case_identity",
+      "status": "pass",
+      "detail": "Philippines_v19"
+    },
+    {
+      "name": "technology_ids_unchanged",
+      "status": "pass",
+      "detail": 178
+    },
+    {
+      "name": "commodity_ids_unchanged",
+      "status": "pass",
+      "detail": 99
+    },
+    {
+      "name": "emission_definitions_unchanged",
+      "status": "pass",
+      "detail": [
+        {
+          "EmisId": "EMI_0",
+          "Emis": "CO2e",
+          "Desc": "CO2 equivalent",
+          "UnitId": "MTon"
+        },
+        {
+          "EmisId": "EMI_xpvk3",
+          "Emis": "PM2_5",
+          "Desc": "Default emission",
+          "UnitId": "kt"
+        }
+      ]
+    },
+    {
+      "name": "only_expected_PM25_links_added",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "affected_counts",
+      "status": "pass",
+      "detail": {
+        "technology_count": 52,
+        "newly_linked_technology_count": 46,
+        "existing_factor_series_extended_count": 6
+      }
+    },
+    {
+      "name": "all_unaffected_emission_rows_unchanged",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "factor_rows_and_scenario_inheritance",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "retained_source_evidence_hashes",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "factor_selection_complete",
+      "status": "pass",
+      "detail": 23
+    },
+    {
+      "name": "full_chain_data_generation",
+      "status": "pass",
+      "detail": {
+        "artifact": "data.txt",
+        "missing_technology_rows": []
+      }
+    },
+    {
+      "name": "glpsol_matrix_check",
+      "status": "pass",
+      "detail": {
+        "artifact": "lp.lp",
+        "size_bytes": 803897092
+      }
+    },
+    {
+      "name": "co2e_results_unchanged",
+      "status": "pass",
+      "detail": {
+        "baseline_emissions_sha256": "0c16029d485d661bb41e4befc55e7a0d2e59782fc546aa06272541d4a2b7247d",
+        "candidate_emissions_sha256": "89dd0bb184488033a4f94850eb12e26cbf68b6843491b4d1df3d5e8c4feea107",
+        "co2e_max_absolute_delta_mt": 0.0,
+        "co2e_sum_absolute_delta_mt": 0.0,
+        "pm25_total_kt": {
+          "2020": {
+            "before": 97.99029999999999,
+            "after": 120.61569999999998,
+            "added_coverage": 22.625399999999985
+          },
+          "2030": {
+            "before": 123.16609999999999,
+            "after": 165.27399999999997,
+            "added_coverage": 42.10789999999999
+          },
+          "2053": {
+            "before": 168.071,
+            "after": 249.21089999999998,
+            "added_coverage": 81.13989999999998
+          }
+        },
+        "interpretation": "PM2.5 is an endogenous reporting coefficient; no PM2.5 cap or penalty enters the objective."
+      }
+    }
+  ],
+  "scope_statement": "Static/source, full-chain generation, bounded solve, and selected result validation for the PM2.5-only change."
+}

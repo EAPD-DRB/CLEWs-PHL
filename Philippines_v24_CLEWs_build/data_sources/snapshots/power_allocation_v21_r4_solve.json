@@ -1,0 +1,22 @@
+{
+  "optimizer_runs": 1,
+  "purpose": "Validate the one combined v21 off-grid, crop-residue biomass, and hydro-envelope candidate",
+  "why_deterministic_checks_were_insufficient": "The technology allocation and coupled perfect-foresight response require optimization",
+  "additional_optimizer_runs": 0,
+  "sensitivity_runs": 0,
+  "status": "Optimal - objective value 369746369.55929643",
+  "case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v21-power-allocation-candidate-r4",
+  "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v21-power-allocation-candidate-r4/res/POWER_ALLOCATION_V21_BASE",
+  "timings_seconds": {
+    "cbc_solve": 155.88579662499978,
+    "csv_export": 9.138437957997667,
+    "viewer_export": 3.0190808330007712,
+    "total": 168.21124966700154
+  },
+  "artifacts": {
+    "lp": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v21-power-allocation-candidate-r4/res/POWER_ALLOCATION_V21_BASE/lp.lp",
+    "results": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v21-power-allocation-candidate-r4/res/POWER_ALLOCATION_V21_BASE/results.txt",
+    "cbc_log": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v21-power-allocation-candidate-r4/res/POWER_ALLOCATION_V21_BASE/cbc.log",
+    "csv": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v21-power-allocation-candidate-r4/res/POWER_ALLOCATION_V21_BASE/csv"
+  }
+}

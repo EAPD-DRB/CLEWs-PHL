@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "baseline": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v20",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v21-power-allocation-candidate-r4",
+  "changed_source_files": [
+    "RT.json",
+    "RYC.json",
+    "RYCTs.json",
+    "RYT.json",
+    "RYTCM.json",
+    "RYTEM.json",
+    "RYTM.json",
+    "RYTTs.json",
+    "genData.json"
+  ],
+  "structure": {
+    "technologies_added": 3,
+    "commodities_added": 1,
+    "constraints_added": 0
+  },
+  "max_stock_identity_error_gw": {
+    "oil": 2.220446049250313e-16,
+    "biomass": 0.0,
+    "offgrid_renewables": 5.551115123125783e-16
+  },
+  "max_demand_identity_error_pj": 5.684341886080802e-14,
+  "max_profile_sum_error": 9.628304820097355e-09,
+  "hydro_raw_annual_cf": 0.26438421126116035,
+  "minimum_annual_offgrid_service_headroom_pj": 5.799511650059086,
+  "minimum_timeslice_offgrid_service_headroom_pj": 0.004366807328496501,
+  "biomass_2020": {
+    "residue_pj": 220.4396327503335,
+    "activity_ceiling_pj": 55.10072472887017,
+    "capacity_ceiling_pj": 5.029265981224855
+  },
+  "checks": {
+    "no_generation_bounds": "passed",
+    "offgrid_replacement_envelope": "passed",
+    "fit_stock_closed_to_new_build": "passed",
+    "physical_residue_ceiling": "passed",
+    "sensitivity_runs": 0
+  }
+}

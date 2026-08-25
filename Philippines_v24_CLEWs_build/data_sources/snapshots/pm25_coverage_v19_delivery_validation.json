@@ -1,0 +1,70 @@
+{
+  "schema": "philippines-v19-delivery-validation-v1",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "six_ledger_tables_unique_nonempty_keys",
+      "status": "pass",
+      "detail": {
+        "SOURCES.csv": 175,
+        "CALCULATIONS.csv": 726,
+        "ASSUMPTIONS.csv": 144,
+        "MODEL_MAP.csv": 92562,
+        "GAPS.csv": 57,
+        "CHANGES.csv": 27,
+        "errors": []
+      }
+    },
+    {
+      "name": "v19_ledger_record_counts",
+      "status": "pass",
+      "detail": {
+        "actual": {
+          "SOURCES.csv": 11,
+          "CALCULATIONS.csv": 7,
+          "ASSUMPTIONS.csv": 5,
+          "MODEL_MAP.csv": 54,
+          "CHANGES.csv": 2,
+          "GAPS.csv": 5
+        },
+        "expected": {
+          "SOURCES.csv": 11,
+          "CALCULATIONS.csv": 7,
+          "ASSUMPTIONS.csv": 5,
+          "MODEL_MAP.csv": 54,
+          "GAPS.csv": 5,
+          "CHANGES.csv": 2
+        }
+      }
+    },
+    {
+      "name": "v19_model_map_references_resolve",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "v19_ledger_local_evidence_hashes",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "portable_archive_integrity_identity_and_result_exclusion",
+      "status": "pass",
+      "detail": {
+        "crc_error": null,
+        "result_members": [],
+        "identity_errors": [],
+        "members": 97,
+        "sha256": "c7543695c6240ef37ee125306c70a8345b28d76100b0512b782c03a19f23f4c9"
+      }
+    },
+    {
+      "name": "review_workbook_integrity",
+      "status": "pass",
+      "detail": {
+        "path": "/Users/sato/GitHub/MUIOGO/tmp/phl-v19-promotion/CLEWs-PHL/Philippines_v19_CLEWs_build/data_sources/PHILIPPINES_V19_CANONICAL_SCHEMA_LEDGER.xlsx",
+        "error": null
+      }
+    }
+  ]
+}

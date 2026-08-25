@@ -1,0 +1,94 @@
+{
+  "schema": "philippines-v16-irrigated-rice-water-live-validation-v1",
+  "generated_at_utc": "2026-08-11T21:27:33.496459+00:00",
+  "status": "pass",
+  "case": "Philippines_v16",
+  "run": "IRRIGATION_WATER_BASE",
+  "solver": {
+    "status": "Optimal - objective value 369730088.36297578",
+    "objective": 369730088.3629758,
+    "full_chain_wall_seconds": 338.63,
+    "cbc_wall_seconds": 271.63,
+    "matrix_rows": 791109,
+    "matrix_columns": 884956,
+    "matrix_nonzeros": 12552173
+  },
+  "checks": [
+    {
+      "name": "promoted_source_identity",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "generated_data_identity",
+      "status": "pass",
+      "detail": {
+        "candidate": "7979454374c967edc07dd2fe3152c71c5e66ba4560e91ac74fcf56c671375c1c",
+        "live": "7979454374c967edc07dd2fe3152c71c5e66ba4560e91ac74fcf56c671375c1c"
+      }
+    },
+    {
+      "name": "live_cbc_optimal",
+      "status": "pass",
+      "detail": "Optimal - objective value 369730088.36297578"
+    },
+    {
+      "name": "live_objective_reproduces_candidate",
+      "status": "pass",
+      "detail": {
+        "candidate": 369730088.3625874,
+        "live": 369730088.3629758,
+        "difference": 0.0003883838653564453
+      }
+    },
+    {
+      "name": "unaffected_physical_outputs_reproduce",
+      "status": "pass",
+      "detail": {
+        "capacity": 0.0,
+        "annual_emissions": 0.0,
+        "demand": 0.0,
+        "udc_inequality": 0.0,
+        "udc_equality": 0.0
+      }
+    },
+    {
+      "name": "live_irrigated_rice_physics",
+      "status": "pass",
+      "detail": {
+        "activity_1000km2": 20.060000000000002,
+        "area_mha": 2.0060000000000002,
+        "water_km3": 41.628600000000006,
+        "activity_weighted_m3_per_ha_year": 20752.043868394816,
+        "validated_coefficient_range_m3_per_ha_year": [
+          19248.9363,
+          35424.8717
+        ]
+      }
+    },
+    {
+      "name": "endogenous_cluster_allocation_disclosed",
+      "status": "pass",
+      "detail": {
+        "candidate_2020_water_km3": 40.403000000000006,
+        "live_2020_water_km3": 41.628600000000006,
+        "interpretation": "Repeated optimal solves select different degenerate cluster allocations at the same national rice area. Water remains inside the validated engineering-coefficient envelope and is not forced to reproduce one candidate allocation."
+      }
+    },
+    {
+      "name": "result_identity_and_freshness",
+      "status": "pass",
+      "detail": {
+        "case": "Philippines_v16",
+        "run": "IRRIGATION_WATER_BASE",
+        "result_utc": "2026-08-11T21:25:51.227876+00:00"
+      }
+    }
+  ],
+  "known_limitations": [
+    "Efficiency and cropping intensity are national rather than cluster-specific.",
+    "Percolation uses the conservative heavy well-puddled clay engineering value pending cluster observations.",
+    "Recoverable irrigation return flows are not structurally partitioned.",
+    "Uniform national achieved rice yields leave cluster allocation degenerate and endogenous."
+  ]
+}

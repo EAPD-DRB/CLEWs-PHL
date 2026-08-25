@@ -1,0 +1,36 @@
+{
+    "schema": "philippines-v23-biomass-simple-source-extract-v1",
+    "classifications": {
+        "cooking service": "exogenous final demand",
+        "legacy cooking and CHP": "initial stocks",
+        "generic and residue caps": "continuing physical upper constraints",
+        "observed shares": "benchmark only",
+        "activity and dispatch": "endogenous"
+    },
+    "values": {
+        "generic_cap_pj": 274.8966504125725,
+        "residue_cap_pj": 110.34665891380581,
+        "wood_components_pj": {
+            "forest": 94.30811012894999,
+            "coconut": 60.474926498595,
+            "arable": 85.1119657850275
+        },
+        "residue_components_pj": {
+            "bagasse": 49.55461566286875,
+            "rice_husk": 50.93917251927944,
+            "cane_trash": 9.852870731657623
+        },
+        "generic_cost_musd_pj": 1.4821552352450897,
+        "residue_cost_musd_pj": 1.5381360164258313,
+        "charcoal_route_iar": 15.641367977816577,
+        "cooking_biomass_input_2020_pj": 244.58783184,
+        "cooking_proxy_useful_2020_pj": 105.4355277113494,
+        "cooking_proxy_weighted_efficiency": 0.431074297188755,
+        "cooking_scale": 0.4233253476455921,
+        "capacity_to_activity": 31.536,
+        "generic_capacity_stock": 18677.770734125406,
+        "residue_capacity_stock": 7497.470752646677
+    },
+    "deferred": "Crop/forest-responsive ceilings, separate generated/collected/uncollected material accounts, and a fuel-specific household cooking-energy calibration require later sourced sparse formulations.",
+    "cooking_proxy_limitation": "DOE household biomass energy and PSA primary-cooking-fuel household shares have different statistical bases. The 105.436 PJ useful-service value is a transparent proxy, not an exact fuel-energy balance, and it does not improve the 2020 cooking-PM2.5 benchmark."
+}

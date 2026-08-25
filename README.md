@@ -6,26 +6,48 @@ assumptions, calculations, diagnostics, and portable MUIO cases.
 
 ## Current model package
 
-The current working model is **Philippines v19.0.0**. Its portable case is:
+The current working model is **Philippines v24.0.0**. Its portable case is:
 
-- `Philippines_v19_CLEWs_build/muio/Philippines_v19_v19.0.0_MUIO.zip`.
+- `Philippines_v24_CLEWs_build/muio/Philippines_v24_v24.0.0_MUIO.zip`.
 
-Version 19 starts from the exact working v18.0.1 archive at Git commit
-`2735feb` and adds source-traceable endogenous PM2.5 factors for 52 existing
-technologies. Only `genData.json` and `RYTEM.json` change. CO2e, costs, demands,
-capacities, constraints, and `TAMaxCI` are unchanged. The later experiment
-extending additional deployment caps into 2020-2025 is not included.
+Version 24 is the agriculture repair successor to v23. It restores crop-mode
+and cluster yield differentiation around PSA achieved national yields,
+replaces the sentinel agriculture-water activity bounds with the
+already-enforced national water envelopes, and moves the inventory-calibrated
+crop GHG account into ordinary EAR coefficients. Only `genData.json`,
+`RYT.json`, `RYTCM.json` and `RYTEM.json` change. BASE, COAL_PHASEOUT, RE and
+EV each solved to proven optimality; the objective moves by -0.0137% in every
+scenario. It adds no activity target, share constraint, or user-defined
+constraint.
 
-Version 18 starts from the complete v17 model, retains its safeguarded national
-land account, and updates the documented geothermal, onshore-wind, coal, SMR,
-large-hydro, and domestic/imported-gas inputs. It adds no technology or
-commodity. Version 17 in turn carries forward the complete v16 calibration and
-adds the land-cover constraints.
+Versions 22 and 23 were never published as their own build packages in this
+repository. Their result-free archives are retained as chronology under
+`Philippines_v24_CLEWs_build/muio/`, and the cumulative v24 schema ledger and
+evidence are complete without installing them. Version 23 is the Package 1
+physical-possibility and adequacy model; version 22 is the transition-scope
+model.
 
-Version 15 retains the v14 stock-turnover model and adds an ERA5-rebased,
-SSP2-4.5 median national precipitation pathway, a missing irrigation
-groundwater input, and exact annual gross-withdrawal ceilings for national
-surface-water and groundwater potential. It remains a whole-country model.
+Version 21 remains available as its own package under
+`Philippines_v21_CLEWs_build/`. It is the endogenous power-allocation repair
+to v20, adding off-grid oil generation, aggregate off-grid hydro/solar/wind,
+the closed 250 MW FIT-eligible biomass tranche, and off-grid customer
+electricity sales reallocated from existing national final demand. Technology
+WAPE improves in every benchmark year from 2020 to 2024.
+
+Version 20 is the minimal endogenous power-history calibration successor to
+v19, replacing AF=1 on four closed legacy power fleets with DOE 2020
+dependable/nameplate ratios and representing the 2020-2021 Malampaya
+take-or-pay economics. Version 19 starts from the exact working v18.0.1
+archive at Git commit `2735feb` and adds source-traceable endogenous PM2.5
+factors for 52 existing technologies. Version 18 starts from the complete v17
+model, retains its safeguarded national land account, and updates the
+documented geothermal, onshore-wind, coal, SMR, large-hydro, and
+domestic/imported-gas inputs. Version 17 carries forward the complete v16
+calibration and adds the land-cover constraints. Version 15 retains the v14
+stock-turnover model and adds an ERA5-rebased, SSP2-4.5 median national
+precipitation pathway, a missing irrigation groundwater input, and exact
+annual gross-withdrawal ceilings for national surface-water and groundwater
+potential. Every version remains a whole-country model.
 
 The earlier **Philippines v12.0.0** package remains available on `main` with
 three portable lineage cases:
@@ -45,17 +67,17 @@ All three v12 portable archives are tracked under
 
 The historical Philippines v10 energy system, Fisheries v2.3, and the v12
 CLEWs Global-derived land, agriculture, and water block remain inherited in
-v19. Read `Philippines_v19_CLEWs_build/README.md` and its canonical schema
+v24. Read `Philippines_v24_CLEWs_build/README.md` and its canonical schema
 ledger before using the model.
 
 ## Use with MUIOGO
 
 1. Install or clone [MUIOGO](https://github.com/EAPD-DRB/MUIOGO).
 2. Extract the current archive into this repository as
-   `case/Philippines_v19`.
+   `case/Philippines_v24`.
 3. Create a relative symlink from
-   `MUIOGO/WebAPP/DataStorage/Philippines_v19` to
-   `CLEWs-PHL/case/Philippines_v19`.
+   `MUIOGO/WebAPP/DataStorage/Philippines_v24` to
+   `CLEWs-PHL/case/Philippines_v24`.
 4. Start MUIOGO and open the case.
 
 The ignored `case/` tree is the live local working copy; editing through
@@ -72,16 +94,16 @@ with the installed model path and a unique evidence label before interpreting
 
 ## Repository structure
 
-The current package is under `Philippines_v19_CLEWs_build/`:
+The current package is under `Philippines_v24_CLEWs_build/`:
 
 - `data_sources/`: six canonical source-trace ledgers, retained evidence and
   the review workbook;
 - `documentation/`: equation-first model-change audit;
 - `diagnostics/`: generation, solve, ledger and provenance validation;
-- `muio/`: portable v19 MUIO case, predecessor archives, and checksums; and
+- `muio/`: portable v24 MUIO case, predecessor archives, and checksums; and
 - `scripts/`: retained generator, validators and normalized research input.
 
-The ignored local `case/Philippines_v19/` directory is populated from the
+The ignored local `case/Philippines_v24/` directory is populated from the
 current portable archive and exposed to MUIOGO through a relative symlink. It
 is not part of Git history, which avoids the per-file Git size limit.
 

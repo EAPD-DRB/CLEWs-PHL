@@ -1,0 +1,170 @@
+{
+  "schema": "philippines-v22-ev-truck-turnover-validation-v1",
+  "date": "2026-08-24",
+  "status": "validated_candidate_four_scenario_optimal_pending_promotion",
+  "optimizer_run_count": 4,
+  "optimizer_sequence": [
+    "BASE completed proven optimal",
+    "COAL_PHASEOUT, RE and EV launched concurrently after BASE passed"
+  ],
+  "generic_gate": {
+    "unit_tests": "2 passed",
+    "rejected_r2": {
+      "status": "failed",
+      "failure_count": 6
+    },
+    "canonical_r9": {
+      "status": "passed_no_deterministic_contradiction",
+      "failure_count": 0
+    },
+    "candidate_scenarios": {
+      "BASE": {
+        "status": "passed_no_deterministic_contradiction",
+        "failure_count": 0,
+        "failures": []
+      },
+      "COAL_PHASEOUT": {
+        "status": "passed_no_deterministic_contradiction",
+        "failure_count": 0,
+        "failures": []
+      },
+      "RE": {
+        "status": "passed_no_deterministic_contradiction",
+        "failure_count": 0,
+        "failures": []
+      },
+      "EV": {
+        "status": "passed_no_deterministic_contradiction",
+        "failure_count": 0,
+        "failures": []
+      }
+    }
+  },
+  "source_validation": {
+    "status": "passed",
+    "changed_root_source_files": [
+      "RYT.json",
+      "RYTCn.json"
+    ],
+    "constraint_tag": "unchanged equality",
+    "constraint_rhs": "unchanged",
+    "residual_capacity": "zero for all 11 EV/PHEV technologies"
+  },
+  "scenario_records": {
+    "BASE": {
+      "run": "EV_TRUCK_TURNOVER_V22_BASE",
+      "active_scenarios": [
+        "BASE"
+      ],
+      "matrix_status": "passed",
+      "matrix_dimensions": {
+        "rows": 553001,
+        "columns": 584981,
+        "matrix_nonzeros": 8108315
+      },
+      "data_sha256": "770ba807d4bbf29b6229726b8af291e337c15bb8026e2085a372e9814cfc3ca4",
+      "processed_data_sha256": "577e7fb52351840f4345a33aa80c4abb9d77f3c6616d200594ab58c158737d91",
+      "lp_sha256": "5a25b657b29f658c8f189932e9a441c309f8740aa40af7f045a19b805344042f",
+      "solver_status": "Optimal - objective value 369798931.08574659",
+      "solve_seconds": 113.17637612500039,
+      "results_sha256": "72eea125b58a4a2a7667a962da7c5acea6695f2042306cad7fe922638c1aca9f",
+      "objective_comparison": {
+        "baseline": 369824357.7496879,
+        "candidate": 369798931.0857466,
+        "absolute_change": -25426.663941323757,
+        "percent_change": -0.006875335117470427
+      },
+      "ev_max_activity": 0.0,
+      "ev_max_capacity": 0.0,
+      "active_ev_target_max_abs_residual": null
+    },
+    "COAL_PHASEOUT": {
+      "run": "EV_TRUCK_TURNOVER_V22_COAL_PHASEOUT",
+      "active_scenarios": [
+        "BASE",
+        "COAL_PHASEOUT"
+      ],
+      "matrix_status": "passed",
+      "matrix_dimensions": {
+        "rows": 553016,
+        "columns": 584981,
+        "matrix_nonzeros": 8108585
+      },
+      "data_sha256": "f0d0e8837a5cfe06e1e8f85d0457fea75cb35d1df6a27e6eb386deec13780edf",
+      "processed_data_sha256": "548244a8b7ad51e1fbd9d9edc046721ef75cac186e7f0c6ebd5fb2240658306d",
+      "lp_sha256": "776968d0d76ac118bd0d439a08c5a132c9f0c1321e51af76c795440e8ea763ab",
+      "solver_status": "Optimal - objective value 369816316.15299964",
+      "solve_seconds": 159.61562645899994,
+      "results_sha256": "346f492f0d9d3b8afd352a85cb110d08659594e217b505ac21f6dafe56102117",
+      "objective_comparison": {
+        "baseline": 369841641.16675705,
+        "candidate": 369816316.15299964,
+        "absolute_change": -25325.013757407665,
+        "percent_change": -0.0068475290336463025
+      },
+      "ev_max_activity": 0.0,
+      "ev_max_capacity": 0.0,
+      "active_ev_target_max_abs_residual": null
+    },
+    "RE": {
+      "run": "EV_TRUCK_TURNOVER_V22_RE",
+      "active_scenarios": [
+        "BASE",
+        "RE"
+      ],
+      "matrix_status": "passed",
+      "matrix_dimensions": {
+        "rows": 553001,
+        "columns": 584981,
+        "matrix_nonzeros": 8108825
+      },
+      "data_sha256": "21585bc27204cca699804f05066b507488c0ecf92e686329e95877618c7215ff",
+      "processed_data_sha256": "100f76ad69ad20f50b39345cb7e03a5e121496d04370447f89e610ddd839f847",
+      "lp_sha256": "70609987016ee07827ff6d7f2bb287457f9bbe24fbac96667c534176c42b638c",
+      "solver_status": "Optimal - objective value 369809713.63260913",
+      "solve_seconds": 142.79499329100054,
+      "results_sha256": "206414e366506a751a5885f2aa84e4427f892761f8f72a26266c34e8328f45f3",
+      "objective_comparison": {
+        "baseline": 369835005.34908015,
+        "candidate": 369809713.6326091,
+        "absolute_change": -25291.716471016407,
+        "percent_change": -0.006838648614980089
+      },
+      "ev_max_activity": 0.0,
+      "ev_max_capacity": 0.0,
+      "active_ev_target_max_abs_residual": null
+    },
+    "EV": {
+      "run": "EV_TRUCK_TURNOVER_V22_EV",
+      "active_scenarios": [
+        "BASE",
+        "EV"
+      ],
+      "matrix_status": "passed",
+      "matrix_dimensions": {
+        "rows": 553001,
+        "columns": 584981,
+        "matrix_nonzeros": 8108623
+      },
+      "data_sha256": "e1e674e74395d87982065f8a3a7df3e0431c60e7c2753f6cc07d9e8c90deb7aa",
+      "processed_data_sha256": "0f6c86b04eee234485280cbe0a87330fef13a0781ecb1c4b6fde3238c54e7f33",
+      "lp_sha256": "b96f1b08d6d1fdddae00b81b61fadd13aab3dd8c49685fde4ec909f163ba7bde",
+      "solver_status": "Optimal - objective value 369806562.60647827",
+      "solve_seconds": 191.0788915410003,
+      "results_sha256": "d403f3fb8f04573e0a5f4d794584c3746f69b6e4da1615dc26317e67d2b63eee",
+      "objective_comparison": {
+        "baseline": 369822390.59662956,
+        "candidate": 369806562.6064783,
+        "absolute_change": -15827.990151286125,
+        "percent_change": -0.004279889631817867
+      },
+      "ev_max_activity": 325.5131,
+      "ev_max_capacity": 2467.4335,
+      "active_ev_target_max_abs_residual": 0.00010000000003174137
+    }
+  },
+  "comparison_report_sha256": "0c440903d43866fcaadbfd9e24904345edc6ed627e124ae0ff932c596f620d4f",
+  "deterministic_report_sha256": "2934b0108ec0023647eff6f97dc56fb686a8102a223ea125afd466f145798e9c",
+  "rejected_gate_report_sha256": "58b8be52d30a59eda6e739e5d43c0a52d9c289b963a342dd93a133251af83e2c",
+  "canonical_gate_report_sha256": "fd5b28e46d080d57aeb792a3d1cbcb5ef91d38d5301a0be779bbed0686b36779"
+}

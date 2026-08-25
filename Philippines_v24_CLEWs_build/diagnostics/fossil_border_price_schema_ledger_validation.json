@@ -1,0 +1,19 @@
+{
+  "schema": "philippines-v18-fossil-border-price-ledger-validation-v1",
+  "status": "pass",
+  "changed_source_cells": 20,
+  "cell_calculations_verified": 20,
+  "cell_model_maps_verified": 20,
+  "summary_model_maps_verified": 2,
+  "sources_verified": 6,
+  "retained_evidence_hashes_verified": {
+    "SRC_PHL_V18_FOSSIL_BORDER_INPUTS": "a47c627157c48fbf3c52c42b45d32a5ed502e60341f1285bf08de412f75d54b2",
+    "SRC_PHL_V18_FOSSIL_BORDER_VALIDATION": "2ac8d7c91835b327c34c98304e93c9001bb634778b1e520d5dfb620bff780f29"
+  },
+  "assumptions_verified": 4,
+  "gaps_verified": 3,
+  "prior_diagnostic_lineage_verified": true,
+  "change_row_exact_map_set": true,
+  "canonical_workbook_present": true,
+  "narrative_markers_verified": 5
+}

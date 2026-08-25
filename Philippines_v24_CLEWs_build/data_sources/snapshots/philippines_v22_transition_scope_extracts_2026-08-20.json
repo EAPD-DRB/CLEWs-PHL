@@ -1,0 +1,73 @@
+{
+    "schema": "philippines-v22-transition-scope-retained-extracts-v1",
+    "access_date": "2026-08-20",
+    "source_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v21",
+    "source_hashes": {
+        "RYSeDt.json": "3d5981408cb25f2030e55373cec90b7aac78ba99e6eae91fa94b818624b63458",
+        "RYTC.json": "9d7fb98b0b06b40562f453e754b8d60aa8c81911d30f9ac9094bc96f05c61359",
+        "RS.json": "a954bbe1c640eabaa9b247534bf7caaf6e924de043ca22563b2515f0413e255e",
+        "RYTCM.json": "bc9e2c2ce32af5f410e525cae50404ece2b0623a26e96a858cf1b297613faffd",
+        "RTSM.json": "b5f05d6916f988e122fa368636e8f6841e2b89bb35f551bea3fd0f171c28609b",
+        "genData.json": "e92b97cf7b441dc5ac6e6ed725f03810bae12befded581c9ee9babd7bd3d612d",
+        "water_demand_validation_summary.json": "e08590df662725c882057ee39f43992b9d9bd6eefc8c1c2acf2c9a1730b3415c",
+        "RYC.json": "722785d1b2103e2ead08f57e8fec070d63f8f119b274264378c176ca021e7985",
+        "RYCTs.json": "9813b70ea684db367692caaf954e43fad3f3e69a2d0adbf14a3d409f596e79e5",
+        "RYTEM.json": "f7d1d159bd0dd6d624e5c8f482c6caa9781f0a3a2a2bcbc90b0b0069b1ff2779",
+        "R.json": "8e352ff8017301cb6fb2857b399a2d66f534e5691b03fd2c0ffbfe1b51994e84",
+        "RYE.json": "025be0c838019c347dda8310cd326f5e65c414f49f83086db5b0763b96ba4e78",
+        "RYDtb.json": "5441dd7e9ac61fc9498c85ec20a8935a2870280035fecbe89a89e72b611826af",
+        "RT.json": "c58d81bb67c5ee7616d10a374bb9374b102cf4092ac6c4e7a2b0d6867f80e195",
+        "RYTTs.json": "87708ed16b9035805f219c9de003ee1a00c079d027a5325eef0073346fe60fba",
+        "RYS.json": "a224467bc0afb311731cf9b588b04599d71529289e9660ce88a99eb11592a5e2",
+        "RYTs.json": "3facea3a09320ba6ab8c1ed11dd61ede33db2300c3c5a8090b67d504794ef5c2",
+        "RYCn.json": "285c03373a81a757865a9c338eaf8bbcb2c81dc34f6693f7632811b12f93f541",
+        "RYTM.json": "714df105fa962c7d233df9e0d8108328132c264db069fafad9f424a0382675b9",
+        "RE.json": "85e0ea73dfd7ce398e0638ed23b8c8cd7b7ec7e0f0b4119d2963ce94625aba15",
+        "RYTCn.json": "8aa845fad27adcdf614f5274ccb874bcb63cf73d6f1bdee7b10cec01ca296c28",
+        "RYT.json": "32af7f6dd6be4ce6b4ba72795ebbf93f016678a075da56b010ac6119ed0428c5"
+    },
+    "facts": {
+        "cooking_efficiency": {
+            "PHL_HOU_COOK_OIL": 0.6,
+            "PHL_HOU_COOK_ELE": 0.7,
+            "PHL_HOU_COOK_NG": 0.6,
+            "PHL_HOU_COOK_COAL": 0.2,
+            "PHL_HOU_COOK_BIOM": 0.15
+        },
+        "agriculture_heat_iar": {
+            "PHL_AGR_HEAT_OIL": [
+                "PHL_PRO_OIL",
+                1.123595506
+            ],
+            "PHL_AGR_HEAT_NG": [
+                "PHL_PRO_NG",
+                1.123595506
+            ],
+            "PHL_AGR_HEAT_ELE": [
+                "PHL_AGR_ELE",
+                1.0
+            ]
+        },
+        "doe_2024_agriculture_forestry_fishery": {
+            "total_ktoe": 438.8,
+            "total_pj": 18.3716784,
+            "electricity_share": 0.656,
+            "classification": "validation benchmark only; no activity or share constraint"
+        },
+        "aquastat_irrigation_requirement_km3": 33.28,
+        "aquastat_boundary": "net crop requirement excluding conveyance, distribution and application losses",
+        "crop_ghgi_2020_mtco2e": {
+            "rice_ch4": 26.985,
+            "managed_soils_direct_n2o": 6.875,
+            "managed_soils_indirect_n2o": 2.277
+        }
+    },
+    "urls": {
+        "psa_cooking": "https://psa.gov.ph/content/household-characteristics-2020-census-population-and-housing?vcode=-3",
+        "world_bank_efficiency": "https://documents.worldbank.org/curated/en/380771468210887487/pdf/538770PUB0Bang101Official0Use0Only1.pdf",
+        "doe_2024": "https://legacy.doe.gov.ph/energy-statistics/philippine-energy-situationer",
+        "fao_iwr": "https://www.fao.org/aquastat/en/data-analysis/irrig-water-use/irrig-water-requirement/",
+        "ghgi": "https://niccdies.climate.gov.ph/files/documents/2015%20and%202020%20National%20GHGI%20Executive%20Brief.pdf",
+        "ipcc_afolu": "https://www.ipcc-nggip.iges.or.jp/public/2019rf/vol4.html"
+    }
+}

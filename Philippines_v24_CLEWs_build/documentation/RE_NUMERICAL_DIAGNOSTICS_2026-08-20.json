@@ -1,0 +1,39 @@
+{
+  "schema": "philippines-v22-r8-re-numerical-diagnostics-v1",
+  "date": "2026-08-20",
+  "source_candidate": ".Philippines_v22-transition-scope-only-candidate-r8",
+  "promotion_allowed": false,
+  "original_re_lp": {
+    "path": "res/TRANSITION_SCOPE_V22_RE/lp.lp",
+    "sha256": "0a99d5dfdc5ab384de97f0e397836d33290ef82ba2d5095103d38a98826d476d"
+  },
+  "optimizer_executions": [
+    {
+      "purpose": "Test whether equilibrium scaling alone could stabilize the unchanged RE LP within a 600-second budget.",
+      "kind": "required numerical diagnostic on unchanged LP",
+      "source_changed": false,
+      "result": "interrupted numerical failure; not infeasibility and not an optimal solution",
+      "log": "res/TRANSITION_SCOPE_V22_RE/cbc_equilibrium_600s.log",
+      "log_sha256": "f9970a5ff4f36392bb4bc85fb0dc5f534152087909c03ed46cbe279bc56f7b5d",
+      "terminal_signature": "objective 1.4834939e25; primal inf 6.8099553e25; dual inf 1.6596205e21",
+      "note": "CBC entered a pathological cleanup loop that did not honor the requested limit; it was stopped manually."
+    },
+    {
+      "purpose": "Isolate whether the negative FIT biomass objective coefficients were the dominant RE numerical trigger.",
+      "kind": "generated-LP A/B diagnostic exception; not promotable",
+      "source_changed": false,
+      "changes": "Exactly 612 FIT RateOfActivity objective coefficients changed; no row, column, bound or constraint-matrix coefficient changed.",
+      "ab_lp": "res/TRANSITION_SCOPE_V22_RE/lp_fit_vc_ab.lp",
+      "ab_lp_sha256": "6ef6bddfb933ddf758263628a6e502360bb681795ca928680b6c1ba9d3a7b87e",
+      "result": "Optimal - objective value 369835290.97118282",
+      "iterations": 175232,
+      "cpu_seconds": 122.21,
+      "wall_seconds": 124.08,
+      "log": "res/TRANSITION_SCOPE_V22_RE/cbc_fit_vc_ab.log",
+      "log_sha256": "ef9028641c2784d1f6a457a600b89907ba905af95261bbb7acf3ff0aeb07468d",
+      "results": "res/TRANSITION_SCOPE_V22_RE/results_fit_vc_ab.txt",
+      "results_sha256": "a300fdd06a4807fc69e414b40721e476180d1c7f985ec58647dca9651d1fa2ee"
+    }
+  ],
+  "conclusion": "The negative FIT objective treatment is the dominant demonstrated trigger of the RE numerical regression. A source-level candidate is still required and must pass BASE plus all three policy scenarios before promotion."
+}

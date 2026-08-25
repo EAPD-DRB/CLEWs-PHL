@@ -1,0 +1,32 @@
+{
+  "schema": "philippines-v18-land-water-promotion-identity-v1",
+  "status": "pass",
+  "live_case": "/Users/sato/Documents/GitHub/CLEWs-PHL/case/Philippines_v18",
+  "candidate_case": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-land-water-bounds-20260813/candidate/Philippines_v18",
+  "source_json_count": 22,
+  "source_json_byte_identical": true,
+  "data_txt_byte_identical": true,
+  "data_processed_txt_byte_identical": false,
+  "data_processed_set_order_equivalent": true,
+  "data_processed_normalized_sha256": "a3eacbb8a7a3b0577265f54c752d1422272e530cb7403cbe3baa022ace116611",
+  "preprocessing_difference": "unordered derived set declaration order only",
+  "matrix": {
+    "rows": 791517,
+    "columns": 886010,
+    "matrix_nonzeros": 12817475,
+    "objective_nonzeros": 423240
+  },
+  "glpsol_check": "pass",
+  "optimizer_runs_this_step": 0,
+  "post_promotion_cbc": "not run because root source JSON and data.txt are byte-identical; the only processed diff is canonicalized set order and the GLPK matrix dimensions match",
+  "hashes": {
+    "data_txt": "b9e5fa04a8dd125ccb6bf1377e5bea990a2ce21ef43cbee410958eadd1940191",
+    "data_processed_txt": "f78da71ceb7ec064e30d577ec3b6f613f23ab2e05a7eaf48335789b4be6ff845",
+    "lp": "d02346fa7cae77513fdbe2e5b58909053c53b30b44b69bc40646e24424e319c0"
+  },
+  "timings_seconds": {
+    "generate_datafile": 5.9036220839989255,
+    "preprocess_data": 0.019086790998699144,
+    "glpsol_check_and_lp": 82.98629041700042
+  }
+}

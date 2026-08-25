@@ -1,0 +1,1208 @@
+{
+  "schema": "generic-osemosys-physical-gate-v1",
+  "case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v22-ev-ban-location-candidate-r2-20260821",
+  "scenario": "SC_0",
+  "historical_stock_through": 2020,
+  "method": "optimistic recursive source-level capacity and commodity bounds",
+  "status": "failed",
+  "optimizer_runs": 0,
+  "model_generation_runs": 0,
+  "years_checked": 34,
+  "timeslices_checked": 612,
+  "annual_periods_checked": 34,
+  "failure_count": 6,
+  "failures": [
+    {
+      "kind": "commodity_annual_shortfall",
+      "year": "2021",
+      "commodity": "PHL_TRA_FKMTL",
+      "commodity_id": "COM_s319j",
+      "producers": [
+        {
+          "technology": "PHL_TRA_TRUL_LIQ",
+          "technology_id": "TEC_k3xjq",
+          "mode": 1,
+          "output_capacity_annual_activity": 21.731835937853276
+        },
+        {
+          "technology": "PHL_TRA_TRUL_NG",
+          "technology_id": "TEC_hig3m",
+          "mode": 1,
+          "output_capacity_annual_activity": 0.9111125429448119
+        },
+        {
+          "technology": "PHL_TRA_TRUL_H2",
+          "technology_id": "TEC_st101",
+          "mode": 1,
+          "output_capacity_annual_activity": 0.8483666821160688
+        }
+      ],
+      "required_annual_activity": 23.652,
+      "optimistic_production_upper_annual_activity": 23.491315162914155,
+      "headroom_annual_activity": -0.1606848370858458
+    },
+    {
+      "kind": "commodity_annual_shortfall",
+      "year": "2021",
+      "commodity": "PHL_TRA_FKMTH",
+      "commodity_id": "COM_8mw4w",
+      "producers": [
+        {
+          "technology": "PHL_TRA_TRUH_H2",
+          "technology_id": "TEC_2071z",
+          "mode": 1,
+          "output_capacity_annual_activity": 0.3029801288758913
+        },
+        {
+          "technology": "PHL_TRA_TRUH_NG",
+          "technology_id": "TEC_tp8ti",
+          "mode": 1,
+          "output_capacity_annual_activity": 0.2875900391174363
+        },
+        {
+          "technology": "PHL_TRA_TRUH_LIQ",
+          "technology_id": "TEC_cjwym",
+          "mode": 1,
+          "output_capacity_annual_activity": 7.366930448983795
+        }
+      ],
+      "required_annual_activity": 8.028,
+      "optimistic_production_upper_annual_activity": 7.957500616977122,
+      "headroom_annual_activity": -0.07049938302287817
+    },
+    {
+      "kind": "commodity_annual_shortfall",
+      "year": "2022",
+      "commodity": "PHL_TRA_FKMTL",
+      "commodity_id": "COM_s319j",
+      "producers": [
+        {
+          "technology": "PHL_TRA_TRUL_LIQ",
+          "technology_id": "TEC_k3xjq",
+          "mode": 1,
+          "output_capacity_annual_activity": 21.135341173281084
+        },
+        {
+          "technology": "PHL_TRA_TRUL_NG",
+          "technology_id": "TEC_hig3m",
+          "mode": 1,
+          "output_capacity_annual_activity": 1.8725024832160615
+        },
+        {
+          "technology": "PHL_TRA_TRUL_H2",
+          "technology_id": "TEC_st101",
+          "mode": 1,
+          "output_capacity_annual_activity": 1.743548292953676
+        }
+      ],
+      "required_annual_activity": 24.958,
+      "optimistic_production_upper_annual_activity": 24.75139194945082,
+      "headroom_annual_activity": -0.2066080505491783
+    },
+    {
+      "kind": "commodity_annual_shortfall",
+      "year": "2022",
+      "commodity": "PHL_TRA_FKMTH",
+      "commodity_id": "COM_8mw4w",
+      "producers": [
+        {
+          "technology": "PHL_TRA_TRUH_H2",
+          "technology_id": "TEC_2071z",
+          "mode": 1,
+          "output_capacity_annual_activity": 0.6226794351514933
+        },
+        {
+          "technology": "PHL_TRA_TRUH_NG",
+          "technology_id": "TEC_tp8ti",
+          "mode": 1,
+          "output_capacity_annual_activity": 0.591049993203335
+        },
+        {
+          "technology": "PHL_TRA_TRUH_LIQ",
+          "technology_id": "TEC_cjwym",
+          "mode": 1,
+          "output_capacity_annual_activity": 7.164723230936438
+        }
+      ],
+      "required_annual_activity": 8.471,
+      "optimistic_production_upper_annual_activity": 8.378452659291266,
+      "headroom_annual_activity": -0.09254734070873383
+    },
+    {
+      "kind": "commodity_annual_shortfall",
+      "year": "2023",
+      "commodity": "PHL_TRA_FKMTL",
+      "commodity_id": "COM_s319j",
+      "producers": [
+        {
+          "technology": "PHL_TRA_TRUL_LIQ",
+          "technology_id": "TEC_k3xjq",
+          "mode": 1,
+          "output_capacity_annual_activity": 20.585661337071755
+        },
+        {
+          "technology": "PHL_TRA_TRUL_NG",
+          "technology_id": "TEC_hig3m",
+          "mode": 1,
+          "output_capacity_annual_activity": 2.884169820428548
+        },
+        {
+          "technology": "PHL_TRA_TRUL_H2",
+          "technology_id": "TEC_st101",
+          "mode": 1,
+          "output_capacity_annual_activity": 2.6855448321541493
+        }
+      ],
+      "required_annual_activity": 26.263,
+      "optimistic_production_upper_annual_activity": 26.155375989654452,
+      "headroom_annual_activity": -0.10762401034554969
+    },
+    {
+      "kind": "commodity_annual_shortfall",
+      "year": "2023",
+      "commodity": "PHL_TRA_FKMTH",
+      "commodity_id": "COM_8mw4w",
+      "producers": [
+        {
+          "technology": "PHL_TRA_TRUH_H2",
+          "technology_id": "TEC_2071z",
+          "mode": 1,
+          "output_capacity_annual_activity": 0.9590979188646482
+        },
+        {
+          "technology": "PHL_TRA_TRUH_NG",
+          "technology_id": "TEC_tp8ti",
+          "mode": 1,
+          "output_capacity_annual_activity": 0.910379862293616
+        },
+        {
+          "technology": "PHL_TRA_TRUH_LIQ",
+          "technology_id": "TEC_cjwym",
+          "mode": 1,
+          "output_capacity_annual_activity": 6.978385927893385
+        }
+      ],
+      "required_annual_activity": 8.914,
+      "optimistic_production_upper_annual_activity": 8.84786370905165,
+      "headroom_annual_activity": -0.06613629094835005
+    }
+  ],
+  "worst_slices": [
+    {
+      "year": "2020",
+      "timeslice": "TS_xnk8a",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_AGR_HEAT",
+        "commodity_id": "COM_ir2os",
+        "required_rate": 11.637651210628437,
+        "optimistic_production_upper_rate": 11.637662824055809,
+        "headroom_rate": 1.1613427371770513e-05,
+        "producer_count": 3
+      },
+      "failures": [],
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_6ecgy",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_SER_HEAT",
+        "commodity_id": "COM_t330z",
+        "required_rate": 290.15905755327134,
+        "optimistic_production_upper_rate": 290.15934584145623,
+        "headroom_rate": 0.0002882881848904617,
+        "producer_count": 3
+      },
+      "failures": [],
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_fke98",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_AGR_HEAT",
+        "commodity_id": "COM_ir2os",
+        "required_rate": 11.209557868026575,
+        "optimistic_production_upper_rate": 11.637662824055809,
+        "headroom_rate": 0.4281049560292338,
+        "producer_count": 3
+      },
+      "failures": [],
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_0",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_bmens",
+      "year_split": 0.09634,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 25
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_mi8mf",
+      "year_split": 0.09634,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 25
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_taggv",
+      "year_split": 0.09634,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 25
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_g2mzr",
+      "year_split": 0.09634,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 25
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_a6gq1",
+      "year_split": 0.09634,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 25
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_udfi1",
+      "year_split": 0.09634,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 25
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_p366u",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_oqzs1",
+      "year_split": 0.0004667,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_ejp3u",
+      "year_split": 0.0004667,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_9hx99",
+      "year_split": 0.0004667,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_hrld6",
+      "year_split": 0.0004667,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_iwy3j",
+      "year_split": 0.0004667,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_xsi3u",
+      "year_split": 0.0004667,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_5r05k",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2021",
+      "timeslice": "TS_xnk8a",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_AGR_HEAT",
+        "commodity_id": "COM_ir2os",
+        "required_rate": 11.899636108882108,
+        "optimistic_production_upper_rate": 13.499688875889602,
+        "headroom_rate": 1.6000527670074938,
+        "producer_count": 5
+      },
+      "failures": [],
+      "propagation_iterations": 24
+    },
+    {
+      "year": "2021",
+      "timeslice": "TS_fke98",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_AGR_HEAT",
+        "commodity_id": "COM_ir2os",
+        "required_rate": 11.461905599056829,
+        "optimistic_production_upper_rate": 13.499688875889602,
+        "headroom_rate": 2.037783276832773,
+        "producer_count": 5
+      },
+      "failures": [],
+      "propagation_iterations": 24
+    }
+  ],
+  "annual_results": [
+    {
+      "year": "2020",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_FKMR",
+        "commodity_id": "COM_mcroh",
+        "producer_count": 1,
+        "required_annual_activity": 0.002,
+        "optimistic_production_upper_annual_activity": 0.00200000200000032,
+        "headroom_annual_activity": 2.0000003198711314e-09
+      },
+      "failures": [],
+      "propagation_iterations": 32,
+      "period": "annual"
+    },
+    {
+      "year": "2021",
+      "status": "failed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_FKMTL",
+        "commodity_id": "COM_s319j",
+        "producer_count": 3,
+        "required_annual_activity": 23.652,
+        "optimistic_production_upper_annual_activity": 23.491315162914155,
+        "headroom_annual_activity": -0.1606848370858458
+      },
+      "failures": [
+        {
+          "kind": "commodity_annual_shortfall",
+          "year": "2021",
+          "commodity": "PHL_TRA_FKMTL",
+          "commodity_id": "COM_s319j",
+          "producers": [
+            {
+              "technology": "PHL_TRA_TRUL_LIQ",
+              "technology_id": "TEC_k3xjq",
+              "mode": 1,
+              "output_capacity_annual_activity": 21.731835937853276
+            },
+            {
+              "technology": "PHL_TRA_TRUL_NG",
+              "technology_id": "TEC_hig3m",
+              "mode": 1,
+              "output_capacity_annual_activity": 0.9111125429448119
+            },
+            {
+              "technology": "PHL_TRA_TRUL_H2",
+              "technology_id": "TEC_st101",
+              "mode": 1,
+              "output_capacity_annual_activity": 0.8483666821160688
+            }
+          ],
+          "required_annual_activity": 23.652,
+          "optimistic_production_upper_annual_activity": 23.491315162914155,
+          "headroom_annual_activity": -0.1606848370858458
+        },
+        {
+          "kind": "commodity_annual_shortfall",
+          "year": "2021",
+          "commodity": "PHL_TRA_FKMTH",
+          "commodity_id": "COM_8mw4w",
+          "producers": [
+            {
+              "technology": "PHL_TRA_TRUH_H2",
+              "technology_id": "TEC_2071z",
+              "mode": 1,
+              "output_capacity_annual_activity": 0.3029801288758913
+            },
+            {
+              "technology": "PHL_TRA_TRUH_NG",
+              "technology_id": "TEC_tp8ti",
+              "mode": 1,
+              "output_capacity_annual_activity": 0.2875900391174363
+            },
+            {
+              "technology": "PHL_TRA_TRUH_LIQ",
+              "technology_id": "TEC_cjwym",
+              "mode": 1,
+              "output_capacity_annual_activity": 7.366930448983795
+            }
+          ],
+          "required_annual_activity": 8.028,
+          "optimistic_production_upper_annual_activity": 7.957500616977122,
+          "headroom_annual_activity": -0.07049938302287817
+        }
+      ],
+      "propagation_iterations": 28,
+      "period": "annual"
+    },
+    {
+      "year": "2022",
+      "status": "failed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_FKMTL",
+        "commodity_id": "COM_s319j",
+        "producer_count": 3,
+        "required_annual_activity": 24.958,
+        "optimistic_production_upper_annual_activity": 24.75139194945082,
+        "headroom_annual_activity": -0.2066080505491783
+      },
+      "failures": [
+        {
+          "kind": "commodity_annual_shortfall",
+          "year": "2022",
+          "commodity": "PHL_TRA_FKMTL",
+          "commodity_id": "COM_s319j",
+          "producers": [
+            {
+              "technology": "PHL_TRA_TRUL_LIQ",
+              "technology_id": "TEC_k3xjq",
+              "mode": 1,
+              "output_capacity_annual_activity": 21.135341173281084
+            },
+            {
+              "technology": "PHL_TRA_TRUL_NG",
+              "technology_id": "TEC_hig3m",
+              "mode": 1,
+              "output_capacity_annual_activity": 1.8725024832160615
+            },
+            {
+              "technology": "PHL_TRA_TRUL_H2",
+              "technology_id": "TEC_st101",
+              "mode": 1,
+              "output_capacity_annual_activity": 1.743548292953676
+            }
+          ],
+          "required_annual_activity": 24.958,
+          "optimistic_production_upper_annual_activity": 24.75139194945082,
+          "headroom_annual_activity": -0.2066080505491783
+        },
+        {
+          "kind": "commodity_annual_shortfall",
+          "year": "2022",
+          "commodity": "PHL_TRA_FKMTH",
+          "commodity_id": "COM_8mw4w",
+          "producers": [
+            {
+              "technology": "PHL_TRA_TRUH_H2",
+              "technology_id": "TEC_2071z",
+              "mode": 1,
+              "output_capacity_annual_activity": 0.6226794351514933
+            },
+            {
+              "technology": "PHL_TRA_TRUH_NG",
+              "technology_id": "TEC_tp8ti",
+              "mode": 1,
+              "output_capacity_annual_activity": 0.591049993203335
+            },
+            {
+              "technology": "PHL_TRA_TRUH_LIQ",
+              "technology_id": "TEC_cjwym",
+              "mode": 1,
+              "output_capacity_annual_activity": 7.164723230936438
+            }
+          ],
+          "required_annual_activity": 8.471,
+          "optimistic_production_upper_annual_activity": 8.378452659291266,
+          "headroom_annual_activity": -0.09254734070873383
+        }
+      ],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2023",
+      "status": "failed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_FKMTL",
+        "commodity_id": "COM_s319j",
+        "producer_count": 3,
+        "required_annual_activity": 26.263,
+        "optimistic_production_upper_annual_activity": 26.155375989654452,
+        "headroom_annual_activity": -0.10762401034554969
+      },
+      "failures": [
+        {
+          "kind": "commodity_annual_shortfall",
+          "year": "2023",
+          "commodity": "PHL_TRA_FKMTL",
+          "commodity_id": "COM_s319j",
+          "producers": [
+            {
+              "technology": "PHL_TRA_TRUL_LIQ",
+              "technology_id": "TEC_k3xjq",
+              "mode": 1,
+              "output_capacity_annual_activity": 20.585661337071755
+            },
+            {
+              "technology": "PHL_TRA_TRUL_NG",
+              "technology_id": "TEC_hig3m",
+              "mode": 1,
+              "output_capacity_annual_activity": 2.884169820428548
+            },
+            {
+              "technology": "PHL_TRA_TRUL_H2",
+              "technology_id": "TEC_st101",
+              "mode": 1,
+              "output_capacity_annual_activity": 2.6855448321541493
+            }
+          ],
+          "required_annual_activity": 26.263,
+          "optimistic_production_upper_annual_activity": 26.155375989654452,
+          "headroom_annual_activity": -0.10762401034554969
+        },
+        {
+          "kind": "commodity_annual_shortfall",
+          "year": "2023",
+          "commodity": "PHL_TRA_FKMTH",
+          "commodity_id": "COM_8mw4w",
+          "producers": [
+            {
+              "technology": "PHL_TRA_TRUH_H2",
+              "technology_id": "TEC_2071z",
+              "mode": 1,
+              "output_capacity_annual_activity": 0.9590979188646482
+            },
+            {
+              "technology": "PHL_TRA_TRUH_NG",
+              "technology_id": "TEC_tp8ti",
+              "mode": 1,
+              "output_capacity_annual_activity": 0.910379862293616
+            },
+            {
+              "technology": "PHL_TRA_TRUH_LIQ",
+              "technology_id": "TEC_cjwym",
+              "mode": 1,
+              "output_capacity_annual_activity": 6.978385927893385
+            }
+          ],
+          "required_annual_activity": 8.914,
+          "optimistic_production_upper_annual_activity": 8.84786370905165,
+          "headroom_annual_activity": -0.06613629094835005
+        }
+      ],
+      "propagation_iterations": 23,
+      "period": "annual"
+    },
+    {
+      "year": "2024",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 0.925,
+        "optimistic_production_upper_annual_activity": 0.9274267104853049,
+        "headroom_annual_activity": 0.0024267104853048505
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2025",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 0.959,
+        "optimistic_production_upper_annual_activity": 0.9617831503565915,
+        "headroom_annual_activity": 0.0027831503565914906
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2026",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.005,
+        "optimistic_production_upper_annual_activity": 1.0074121554823905,
+        "headroom_annual_activity": 0.002412155482390599
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2027",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.05,
+        "optimistic_production_upper_annual_activity": 1.05304115960819,
+        "headroom_annual_activity": 0.0030411596081898473
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2028",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.096,
+        "optimistic_production_upper_annual_activity": 1.0986701637339888,
+        "headroom_annual_activity": 0.002670163733988762
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2029",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.142,
+        "optimistic_production_upper_annual_activity": 1.1442991678597878,
+        "headroom_annual_activity": 0.0022991678597878984
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2030",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.187,
+        "optimistic_production_upper_annual_activity": 1.1899281729855868,
+        "headroom_annual_activity": 0.0029281729855867855
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2031",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.248,
+        "optimistic_production_upper_annual_activity": 1.2510759232151343,
+        "headroom_annual_activity": 0.0030759232151342797
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2032",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.31,
+        "optimistic_production_upper_annual_activity": 1.3122236724446816,
+        "headroom_annual_activity": 0.002223672444681579
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2033",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.371,
+        "optimistic_production_upper_annual_activity": 1.3733714226742293,
+        "headroom_annual_activity": 0.0023714226742292954
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2034",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.432,
+        "optimistic_production_upper_annual_activity": 1.434519172903777,
+        "headroom_annual_activity": 0.0025191729037770116
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2035",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.493,
+        "optimistic_production_upper_annual_activity": 1.4956669231333246,
+        "headroom_annual_activity": 0.002666923133324506
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2036",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.58,
+        "optimistic_production_upper_annual_activity": 1.5826084085216183,
+        "headroom_annual_activity": 0.002608408521618255
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2037",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.667,
+        "optimistic_production_upper_annual_activity": 1.6695498939099118,
+        "headroom_annual_activity": 0.0025498939099117823
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2038",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.754,
+        "optimistic_production_upper_annual_activity": 1.7564913782982052,
+        "headroom_annual_activity": 0.002491378298205227
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2039",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.841,
+        "optimistic_production_upper_annual_activity": 1.843432863686499,
+        "headroom_annual_activity": 0.002432863686498976
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2040",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 1.928,
+        "optimistic_production_upper_annual_activity": 1.9303743490747924,
+        "headroom_annual_activity": 0.0023743490747925033
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2041",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 2.051,
+        "optimistic_production_upper_annual_activity": 2.0532124466424073,
+        "headroom_annual_activity": 0.002212446642407162
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2042",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 2.173,
+        "optimistic_production_upper_annual_activity": 2.176050544210021,
+        "headroom_annual_activity": 0.0030505442100210445
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2043",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 2.296,
+        "optimistic_production_upper_annual_activity": 2.2988886417776357,
+        "headroom_annual_activity": 0.0028886417776359252
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2044",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 2.419,
+        "optimistic_production_upper_annual_activity": 2.4217267383452503,
+        "headroom_annual_activity": 0.002726738345250279
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2045",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 2.542,
+        "optimistic_production_upper_annual_activity": 2.5445648359128654,
+        "headroom_annual_activity": 0.002564835912865604
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2046",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 2.71,
+        "optimistic_production_upper_annual_activity": 2.712661469532185,
+        "headroom_annual_activity": 0.0026614695321849346
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2047",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 2.878,
+        "optimistic_production_upper_annual_activity": 2.8807581021515047,
+        "headroom_annual_activity": 0.0027581021515046267
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2048",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 3.046,
+        "optimistic_production_upper_annual_activity": 3.0488547357708247,
+        "headroom_annual_activity": 0.0028547357708248455
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2049",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 3.214,
+        "optimistic_production_upper_annual_activity": 3.216951368390145,
+        "headroom_annual_activity": 0.0029513683901449816
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2050",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 3.382,
+        "optimistic_production_upper_annual_activity": 3.385048001009465,
+        "headroom_annual_activity": 0.0030480010094646737
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2051",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 3.601,
+        "optimistic_production_upper_annual_activity": 3.6037304717459504,
+        "headroom_annual_activity": 0.0027304717459504246
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2052",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 3.82,
+        "optimistic_production_upper_annual_activity": 3.8224129424824347,
+        "headroom_annual_activity": 0.0024129424824348433
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    },
+    {
+      "year": "2053",
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_TRA_PKMA",
+        "commodity_id": "COM_nfpcj",
+        "producer_count": 1,
+        "required_annual_activity": 4.039,
+        "optimistic_production_upper_annual_activity": 4.041095413218921,
+        "headroom_annual_activity": 0.0020954132189210384
+      },
+      "failures": [],
+      "propagation_iterations": 26,
+      "period": "annual"
+    }
+  ],
+  "limitations": [
+    "A pass is not a proof of full-model feasibility.",
+    "Shared producer capacity and route-mix coupling are relaxed optimistically.",
+    "Storage, trade and user-defined constraints are not yet included.",
+    "InputToNewCapacity and InputToTotalCapacity demands are relaxed optimistically.",
+    "Historical-stock treatment requires an explicit --historical-through classification."
+  ]
+}

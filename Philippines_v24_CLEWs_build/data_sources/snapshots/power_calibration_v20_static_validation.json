@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "baseline": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v20-power-calibration-20260820/source/Philippines_v20",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v20-power-calibration-candidate-r2",
+  "unchanged_source_files": [
+    "R.json",
+    "RE.json",
+    "RS.json",
+    "RT.json",
+    "RTSM.json",
+    "RYC.json",
+    "RYCTs.json",
+    "RYCn.json",
+    "RYDtb.json",
+    "RYE.json",
+    "RYS.json",
+    "RYSeDt.json",
+    "RYTC.json",
+    "RYTCM.json",
+    "RYTCn.json",
+    "RYTEM.json",
+    "RYTTs.json",
+    "RYTs.json"
+  ],
+  "identity_before": {
+    "osy-casename": "Philippines_v19",
+    "osy-desc": "Philippines v19 PM2.5 coverage extension. Adds source-traceable endogenous PM2.5 activity-emission ratios for existing combustion, road non-exhaust, and coal mining/handling technologies. CO2e, model structure, constraints, costs, demands, and capacities are unchanged.\n\nPhilippines v18 fossil-resource accounting update. Domestic coal and crude extraction are source-tagged and may serve the domestic market or optional exports; imports cannot be re-exported. Annual extraction follows physical mine/field capability and cumulative activity follows opening recoverable reserves. Observed production and trade remain validation benchmarks.\n\nPhilippines v18 energy-input successor of Philippines v17. The complete v17 national land account and safeguards are retained. V18 sets a 0.70 geothermal resource ceiling, aligns onshore-wind capacity factor with the national restricted resource screen, updates coal and SMR capital costs, uses a 60-year large-hydro life, and separates the existing domestic-gas and LNG import routes by observed chronology, prices and annual limits. No technology or commodity is added.\n\nPhilippines v17 land-accounting successor of Philippines v16. The complete v16 model is retained; v17 initializes the 2020 national PSA/NAMRIA land-cover partition, closes the annual national land balance, reuses LNDOTHTOT mode 2 as endogenous idle/fallow cropland, preserves true grassland and 2020 cropland, grows built-up land with the central population-urbanization pathway, and limits forest expansion to a Philippine policy-rate envelope over the documented forest-suitable share of brush/shrub. Forest mode-27 variable cost remains -10.\n\nPhilippines v16 identity-only canonical successor of Philippines v15. Model parameters are unchanged; the version change establishes the simplified ZIP/push and pull/unzip workflow.\n\nPhilippines full scale CLEWs model\n* updated cap act units in the transport technologies\n* adding EF for railways liquid tech\n\nv7\n* capital costs PP and TD\n* RE target (PEP)\n\nv8\n* lower limit PPs generation 2021-2024 official stats\n* updated EV PEP starting on 2025; removed EV targets from base\n\nv9\n* updated IAR for housing elc demand\n\nv10 scaffold\n* added Fisheries Phase 1 (FSH): fleet motive power, aquaculture operations, post-harvest demands + TD link\n* Fisheries was subsequently updated to v2.3; dated v2.2 and earlier records are retained under documentation/history/fisheries\n* removed orphan tech PHL_PWR_GAS (consumed cooling water, produced nothing, zero activity in all runs)\n* PM2.5 EAR corrections: HOU_COOK oil/biomass values swapped back; transport LIQ factors rescaled x1e-3 (were g/vkm entered as Mt/1e9km). See documentation/history/v10/MODEL_FIXES_2026-07-17.md\n* transport PM2.5 occupancy refinement (car/1.7, 2-3wheel/1.6, light truck/1.85) + activity-basis labels on transport demands (bus/van/heavy-truck/rail are VEHICLE- or TRAIN-km based). See documentation/history/v10/MODEL_FIXES_2026-07-17.md Fix 3\n* the v10 placeholder land formulation is retired; its record is preserved at documentation/history/v10/LAND_CALIBRATION_v10_RETIRED.md\n\nv12\n* preserves the v10 energy system and current Fisheries v2.3\n* Fisheries v2.3 uses ordinary residual stock with lifetime retirement, AF = 1, open activity and investment bounds, and a direct useful-service Industry carve-out. See documentation/data_sources/fisheries/FSH_CALIBRATION_v2.3.md\n* replaces the placeholder land block with an uncalibrated, eight-cluster CLEWs Global land-agriculture-water system\n* connects irrigation pumping to PHL_AGR_ELE and connects raw surface/groundwater flows to the inherited water system\n* retains raw crop demands, land availability, precipitation, technology options, and costs without historical tuning Derived case with exact in-model ENV_LAND accounting; water accounting remains reporting-only. Diagnostic extension with an unforced ENV_WATER sink; its activity must be reconciled against the reporting-only reference.\n\nPhilippines v13 calibration: coherent PM2.5 kt accounting, 2020 sector anchoring, navigation PM2.5 coverage, and corrected blue-hydrogen CO2 capture accounting.\n\nPhilippines v14 stock-and-turnover recalibration. Observed activity is used only to initialize effective stocks or retained as final demand; historical activity is not pinned. Official 2020 power, road and household-cooking evidence replaces inherited stock totals where a defensible mapping is available. The stranded PHL_POW_HEAT and PHL_POW_HEAT1 commodities and the geothermal-old heat output link are removed; geothermal electricity production is unchanged.\n\nNational water envelope: groundwater irrigation is connected to the raw groundwater commodity; the inherited land hydrology is rebased to the ERA5 1991-2020 normal and follows one SSP2-4.5 ensemble-median path; annual national surface-water and groundwater withdrawal ceilings are solver enforced. See documentation/national_water_manifest.json.",
+    "osy-date": "2026-08-19"
+  },
+  "identity_after": {
+    "osy-casename": "Philippines_v20",
+    "osy-desc": "Philippines v20 minimal endogenous power-history calibration. Existing coal, gas, oil, and biomass availability is limited by DOE 2020 dependable capacity. The 2020-2021 Malampaya take-or-pay payment is represented as a sunk fixed cost on the closed legacy gas fleet and a matching plant-specific contract credit, while other gas users retain the sourced fuel price. No generation, fuel-share, or capacity-addition target is imposed.\n\nPhilippines v19 PM2.5 coverage extension. Adds source-traceable endogenous PM2.5 activity-emission ratios for existing combustion, road non-exhaust, and coal mining/handling technologies. CO2e, model structure, constraints, costs, demands, and capacities are unchanged.\n\nPhilippines v18 fossil-resource accounting update. Domestic coal and crude extraction are source-tagged and may serve the domestic market or optional exports; imports cannot be re-exported. Annual extraction follows physical mine/field capability and cumulative activity follows opening recoverable reserves. Observed production and trade remain validation benchmarks.\n\nPhilippines v18 energy-input successor of Philippines v17. The complete v17 national land account and safeguards are retained. V18 sets a 0.70 geothermal resource ceiling, aligns onshore-wind capacity factor with the national restricted resource screen, updates coal and SMR capital costs, uses a 60-year large-hydro life, and separates the existing domestic-gas and LNG import routes by observed chronology, prices and annual limits. No technology or commodity is added.\n\nPhilippines v17 land-accounting successor of Philippines v16. The complete v16 model is retained; v17 initializes the 2020 national PSA/NAMRIA land-cover partition, closes the annual national land balance, reuses LNDOTHTOT mode 2 as endogenous idle/fallow cropland, preserves true grassland and 2020 cropland, grows built-up land with the central population-urbanization pathway, and limits forest expansion to a Philippine policy-rate envelope over the documented forest-suitable share of brush/shrub. Forest mode-27 variable cost remains -10.\n\nPhilippines v16 identity-only canonical successor of Philippines v15. Model parameters are unchanged; the version change establishes the simplified ZIP/push and pull/unzip workflow.\n\nPhilippines full scale CLEWs model\n* updated cap act units in the transport technologies\n* adding EF for railways liquid tech\n\nv7\n* capital costs PP and TD\n* RE target (PEP)\n\nv8\n* lower limit PPs generation 2021-2024 official stats\n* updated EV PEP starting on 2025; removed EV targets from base\n\nv9\n* updated IAR for housing elc demand\n\nv10 scaffold\n* added Fisheries Phase 1 (FSH): fleet motive power, aquaculture operations, post-harvest demands + TD link\n* Fisheries was subsequently updated to v2.3; dated v2.2 and earlier records are retained under documentation/history/fisheries\n* removed orphan tech PHL_PWR_GAS (consumed cooling water, produced nothing, zero activity in all runs)\n* PM2.5 EAR corrections: HOU_COOK oil/biomass values swapped back; transport LIQ factors rescaled x1e-3 (were g/vkm entered as Mt/1e9km). See documentation/history/v10/MODEL_FIXES_2026-07-17.md\n* transport PM2.5 occupancy refinement (car/1.7, 2-3wheel/1.6, light truck/1.85) + activity-basis labels on transport demands (bus/van/heavy-truck/rail are VEHICLE- or TRAIN-km based). See documentation/history/v10/MODEL_FIXES_2026-07-17.md Fix 3\n* the v10 placeholder land formulation is retired; its record is preserved at documentation/history/v10/LAND_CALIBRATION_v10_RETIRED.md\n\nv12\n* preserves the v10 energy system and current Fisheries v2.3\n* Fisheries v2.3 uses ordinary residual stock with lifetime retirement, AF = 1, open activity and investment bounds, and a direct useful-service Industry carve-out. See documentation/data_sources/fisheries/FSH_CALIBRATION_v2.3.md\n* replaces the placeholder land block with an uncalibrated, eight-cluster CLEWs Global land-agriculture-water system\n* connects irrigation pumping to PHL_AGR_ELE and connects raw surface/groundwater flows to the inherited water system\n* retains raw crop demands, land availability, precipitation, technology options, and costs without historical tuning Derived case with exact in-model ENV_LAND accounting; water accounting remains reporting-only. Diagnostic extension with an unforced ENV_WATER sink; its activity must be reconciled against the reporting-only reference.\n\nPhilippines v13 calibration: coherent PM2.5 kt accounting, 2020 sector anchoring, navigation PM2.5 coverage, and corrected blue-hydrogen CO2 capture accounting.\n\nPhilippines v14 stock-and-turnover recalibration. Observed activity is used only to initialize effective stocks or retained as final demand; historical activity is not pinned. Official 2020 power, road and household-cooking evidence replaces inherited stock totals where a defensible mapping is available. The stranded PHL_POW_HEAT and PHL_POW_HEAT1 commodities and the geothermal-old heat output link are removed; geothermal electricity production is unchanged.\n\nNational water envelope: groundwater irrigation is connected to the raw groundwater commodity; the inherited land hydrology is rebased to the ERA5 1991-2020 normal and follows one SSP2-4.5 ensemble-median path; annual national surface-water and groundwater withdrawal ceilings are solver enforced. See documentation/national_water_manifest.json.",
+    "osy-date": "2026-08-20"
+  },
+  "source_delta": {
+    "RYT_cells": 138,
+    "RYTM_cells": 2,
+    "RYT_parameters": [
+      "AF",
+      "FC"
+    ],
+    "RYTM_parameters": [
+      "VC"
+    ]
+  },
+  "full_envelope_cost_identity": [
+    {
+      "year": 2020,
+      "full_envelope_cost_before_musd": 1108.0468159472537,
+      "full_envelope_cost_after_musd": 1108.0468159472537,
+      "difference_musd": 0.0
+    },
+    {
+      "year": 2021,
+      "full_envelope_cost_before_musd": 961.1609108593294,
+      "full_envelope_cost_after_musd": 961.1609108593293,
+      "difference_musd": -1.1368683772161603e-13
+    }
+  ],
+  "gas_envelopes_are_upper_bounds_not_targets": [
+    {
+      "year": 2020,
+      "max_generation_from_gas_envelope_pj": 78.39174453632612,
+      "max_generation_from_dependable_capacity_pj": 103.63044960000002,
+      "generation_minimum_pj": 0
+    },
+    {
+      "year": 2021,
+      "max_generation_from_gas_envelope_pj": 66.97413395816888,
+      "max_generation_from_dependable_capacity_pj": 103.63044960000002,
+      "generation_minimum_pj": 0
+    }
+  ],
+  "generation_benchmark_rows": 45,
+  "generation_benchmark_boundaries": [
+    "Grid generation only; DOE separates off-grid starting in 2021",
+    "Grid-connected, embedded, off-grid, and test/commissioning generation"
+  ],
+  "checks": {
+    "source_allowlist": "passed",
+    "scenario_inheritance": "passed by apply script",
+    "no_activity_or_investment_bound_change": "passed",
+    "dependable_capacity_ratios": "passed",
+    "take_or_pay_cost_reclassification": "passed",
+    "generation_observations_benchmark_only": "passed"
+  }
+}

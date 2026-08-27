@@ -1,0 +1,38 @@
+SOURCE  SRC_VC_EIA_AEO2023_T1
+FILE    https://www.eia.gov/aeo/assumptions/pdf/elec_cost_perf.pdf
+SHA256  f63837b3dfb1c44b5b95a42ac081e0ea01964a93ff415e0b0f35f6ed6efabc8e   (of the PDF)
+WHAT    Table 1, page 2, 'Cost and performance characteristics of new electricity
+        generating technologies'. Extracted from the PDF content streams and reflowed, so
+        each technology row runs on one line: name, first available year, size, lead time,
+        base overnight cost, optimism factor, total overnight cost, VARIABLE O&M,
+        fixed O&M, heat rate.
+USED    The 'Variable O&M (2022$/MWh)' figure of every row, i.e. the fourth dollar value.
+RETRIEVED 2026-08-25
+----------------------------------------------------------------------
+======================================================================
+ricity generating technologies Technology First available year a Size (MW) Lead time (years) Base overnight co
+st b (2022$/ kW) Techno - logical optimism factor c Total overnight cost d,e (202 2 $/kW) Variable O&M f (2022
+$/ MWh) Fixed O&M (2022$/ kWy) Heat rate g (Btu/kWh) Ultra - supercritical c oal (USC) 2026 650 4 $4,507 1.00 
+$4,507 $5.06 $45.68 8,638 USC with 30% carbon capture and sequestration (CCS) 2026 650 4 $5,577 1.01 $5,633 $7
+.97 $61.11 9,751 USC with 90% CCS 2026 650 4 $7,176 1.02 $7,319 $12.35 $67.02 12,507 Combined - cycle  single
+ - shaft 2025 418 3 $1,330 1.00 $1,330 $2.87 $15.87 6,431 Combined - cycle  multi - shaft 2025 1,083 3 $1,176
+ 1.00 $1,176 $2.10 $13.73 6,370 C ombined - cycle with 90% CCS 2025 377 3 $3,019 1.04 $3,140 $6.57 $31.06 7,12
+4 Internal combustion engine 2024 21 2 $2,240 1.00 $2,240 $6.40 $39.57 8,295 Combustion turbine  aeroderivati
+ve h 2024 105 2 $1,428 1.00 $1,428 $5.29 $18.35 9,124 Combustion t urbine  industrial frame 2024 237 2 $867 1
+.00 $867 $5.06 $7.88 9,905 Fuel cells 2025 10 3 $6,771 1.08 $7,291 $0.66 $34.65 6,469 N uclear  light water r
+eactor 2028 2,156 6 $7,406 1.05 $7,777 $2.67 $136.91 10,447 Nuclear  small modular reactor 2028 600 6 $7,590 
+1.10 $8,349 $3.38 $106.92 10,447 Distributed generation  base 2025 2 3 $1,915 1.00 $1,915 $9.69 $21.79 8,912 
+Distributed generation  peak 2024 1 2 $2,300 1.00 $2,300 $9.69 $21.79 9,894 Battery storage 2023 50 1 $1,270 
+1.00 $1,270 $0.00 $45.76 NA Biomass 2026 50 4 $4,996 1.00 $4,998 $5.44 $141.50 13,500 Geothermal i , j 2026 50
+ 4 $3,403 1.00 $3,403 $1.31 $153.98 8,881 Conventional hydropower j 2026 100 4 $3,421 1.00 $3,421 $1.57 $47.06
+ NA Wind e 2025 200 3 $2,098 1.00 $2,098 $0.00 $29.64 NA Wind offshore i 2026 400 4 $5,338 1.25 $6,672 $0.00 $
+123.81 NA Solar thermal i 2025 115 3 $8,732 1.00 $8,732 $0.00 $96.10 NA Solar photovoltaic (PV) with tracking 
+e , i, k 2024 150 2 $1,448 1.00 $1,448 $0.00 $17.16 NA Solar PV with storage i , k 2024 150 2 $1,808 1.00 $1,8
+08 $0.00 $32.42 NA Data s ource: Sargent & Lundy, Cost and Performance Estimates for New Utility - Scale Elect
+ric Power Generating Technologies , December 2019 ; Hydroelectric: Oak Ridge National Lab, An Assessment of En
+ergy Potential at Non-Powered Dams in the United States , 2012, and Idaho National Engineering and Environment
+al Laboratory, Estimation of Economic Parameters of U.S. Hydropower Resou rces, 2003; Geothermal: National Ren
+ewable Energy Laboratory, Updated U.S. Geothermal Supply Curve, 2010. Note: MW=megawatt, kW=kilowatt, MWh=mega
+watthour, kWy=kilowattyear, kWh=kilowatthour; Btu=British thermal unit a The first year that a new unit could 
+become operational. b Base cost includes project contingency costs. U.S. Energy Information Administration | C
+ost and Performance Characteristics of New Generat

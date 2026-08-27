@@ -1,0 +1,9 @@
+technology,mode,account,unit,interpretation
+ENV_LAND,1,forest,10<sup>3</sup>km<sup>2</sup>,Model-defined forest land state
+ENV_LAND,2,grassland,10<sup>3</sup>km<sup>2</sup>,Model-defined grassland state
+ENV_LAND,3,other_land,10<sup>3</sup>km<sup>2</sup>,Model-defined other land; no forest suitability implied
+ENV_LAND,4,barren_or_savannah,10<sup>3</sup>km<sup>2</sup>,Model-defined barren or savannah land state
+ENV_LAND,5,built_up_land,10<sup>3</sup>km<sup>2</sup>,Model-defined built-up land state
+ENV_LAND,6,inland_water_bodies,10<sup>3</sup>km<sup>2</sup>,Land-cover area classified as inland water bodies
+ENV_LAND,7,cropland,10<sup>3</sup>km<sup>2</sup>,Sum of the 24 modeled crop-land options
+ENV_LAND,8,unallocated_modeled_land,10<sup>3</sup>km<sup>2</sup>,Modeled PHL_LND supply not allocated to modes 1-7

@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "case": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-deployment-envelope-20260813/candidate",
+  "archive": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-deployment-envelope-20260813/package/muio/Philippines_v18_v18.0.0_MUIO.zip",
+  "archive_sha256": "4f0b80058171e353e34fbf31c13f101921f2ce57bec1d513bbe2d65eba293dcb",
+  "archive_size_bytes": 9934979,
+  "archive_member_count": 79,
+  "result_files_included": false
+}

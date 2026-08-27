@@ -1,0 +1,145 @@
+{
+  "case": "Philippines_v29",
+  "run": "BASE_V29_REVIEW",
+  "status": "pass",
+  "optimizer_runs": 0,
+  "cbc_invoked": false,
+  "review_gate": "awaiting_user",
+  "checks": {
+    "structure": {
+      "technologies": 160,
+      "commodities": 72,
+      "constraints": 6,
+      "deleted_crop_totalizers": 24,
+      "deleted_dedicated_crop_land_commodities": 24,
+      "deleted_fallow_service": true,
+      "replacement_technologies": 2,
+      "replacement_commodities": 2,
+      "global_modes": 30,
+      "references_valid": true
+    },
+    "scenarios": {
+      "scenario_ids": [
+        "SC_0",
+        "SC_3hgjb",
+        "SC_huc7i",
+        "SC_w03qj"
+      ],
+      "new_object_policy_rows_inherit_base": 2994
+    },
+    "land": {
+      "physical_land_classes": 7,
+      "cluster_mode_land_links": 240,
+      "national_endowment": 295.8131,
+      "base_year_components_1000km2": {
+        "cropland": 125.2805,
+        "forest": 72.3194,
+        "grass_brush": 77.7456,
+        "other_fishpond": 2.2879,
+        "barren": 1.595,
+        "built": 10.2649,
+        "water": 6.3198
+      },
+      "base_year_total": 295.8131,
+      "crop_modes_free": 192,
+      "idle_fallow_free": true,
+      "post_2020_cropland_free": true,
+      "obsolete_4_percent_fallow_rule_absent": true,
+      "new_land_udcs": 0
+    },
+    "irrigation": {
+      "shared_service_links": 96,
+      "expected_links": 96,
+      "rainfed_service_links": 0,
+      "residual_stock_1000km2": 20.06,
+      "capital_cost_musd_per_1000km2": 604.5949214026602,
+      "variable_cost_musd_per_1000km2_service": 0.6091370558375635,
+      "operational_life_years": 30,
+      "activity_minimum": 0,
+      "new_capacity_2020_maximum": 0,
+      "new_capacity_after_2020": "optional"
+    },
+    "crop_costs": {
+      "crop_cost_classes": 14,
+      "validated_cells": 6528,
+      "price_basis": {
+        "year": 2021,
+        "fx_php_per_usd": 49.25,
+        "model_conversion": "MUSD/1000 km2 = PHP/ha / (FX * 10)"
+      },
+      "boundary": "All paid, in-kind and imputed real inputs and labour; excludes land rent/tax, financing and irrigation charges represented elsewhere. Low input removes observed fertilizer, pesticide and named chemical-treatment components.",
+      "high_low_differentiated": true,
+      "placeholder_crop_costs": 0,
+      "vegetable_components": [
+        "Ampalaya",
+        "Cabbage",
+        "Eggplant",
+        "Tomato"
+      ],
+      "other_crop_components": [
+        "cassava",
+        "mango",
+        "papaya_proxy",
+        "rubber"
+      ]
+    },
+    "inheritance": {
+      "preserved_cluster_ratio_rows": 16320,
+      "preserved_cluster_mode_parameter_rows": 4032,
+      "crop_yields_preserved": true,
+      "crop_water_coefficients_preserved": true,
+      "crop_emission_coefficients_preserved": true,
+      "noncrop_cluster_modes_preserved": true
+    },
+    "provenance": {
+      "ledger_rows": {
+        "SOURCES.csv": 204,
+        "ASSUMPTIONS.csv": 174,
+        "CALCULATIONS.csv": 720,
+        "MODEL_MAP.csv": 72822,
+        "CHANGES.csv": 31,
+        "GAPS.csv": 85
+      },
+      "standalone_parent_ledger_inherited": true,
+      "new_evidence_files_verified": 2
+    },
+    "application_chain": {
+      "generation": "passed",
+      "preprocessing": "passed",
+      "glpk_matrix_generation": "passed",
+      "matrix": {
+        "rows": 465035,
+        "columns": 516518,
+        "nonzeros": 8174093
+      },
+      "v28_matrix": {
+        "rows": 549263,
+        "columns": 581344,
+        "nonzeros": 8526618
+      },
+      "delta_from_v28": {
+        "rows": -84228,
+        "columns": -64826,
+        "nonzeros": -352525
+      },
+      "reused_generated_artifacts": false,
+      "optimizer_runs": 0,
+      "cbc_invoked": false,
+      "review_gate": "awaiting_user",
+      "glpk_log": "/Users/sato/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v29/res/BASE_V29_REVIEW/glpsol_check.log",
+      "sha256": {
+        "data.txt": "cb220ce01038d1b11fd21cc85e1737d4ce45bdf6b1553fd4ee8ac411a290ac30",
+        "data_processed.txt": "673fab529acb8809ea663de2a4102ca2b4cd6e3e7867a4b158be74002e6330fe",
+        "lp.lp": "e3e1764af3c9507a9476acf39739dc75581cf1fdcd093270cf22a7133cea93de",
+        "glpsol_check.log": "cf8ccf909110806edd0dea8fcabae7b42eff37dc69e72e15f7debcdddd1616b9"
+      },
+      "bytes": {
+        "data.txt": 1713783,
+        "data_processed.txt": 1777672,
+        "lp.lp": 512747328,
+        "glpsol_check.log": 4211
+      }
+    }
+  },
+  "interpretation": "All v29 source, generation, preprocessing and GLPK matrix gates passed. CBC was not invoked; user review is required before optimization."
+}

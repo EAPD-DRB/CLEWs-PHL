@@ -1,0 +1,932 @@
+diff --git a/config/clews_config/clewsy.yaml b/config/clews_config/clewsy.yaml
+index db58d7e..42a517e 100644
+--- a/config/clews_config/clewsy.yaml
++++ b/config/clews_config/clewsy.yaml
+@@ -1,238 +1,229 @@
+-# ASR- Note: Standardized version of CLEWS-<RGN>.yaml
+-#   Objective:
+-#       1- build.py is inependent of yaml file name specifics
+-#       2- yaml files drives the build.py exection flow
+-# clewsy build parameterization yaml file
+-#   Variable definitions to update MoManI | Append/Update otoole models
+-
+-# YAML TAG Naming rule: String lenght <= 32 chars
+-
+-Acronym_dict: {
+-
+-# Country codes:
+-  GUY: 'Guyana',
+-  BIOGUYXX: 'Biomass',
+-  COA: 'Coal',
+-  COAGUY: 'Coal',
+-  COAINT: 'Coal',
+-  COG: 'Cogeneration',
+-  COGGUY: 'Cogeneration',
+-  COGINT: 'Cogeneration',
+-  CSPGUYXX: 'Concentrated Solar Power',
+-  ELCGUYXX01: 'Electricity from power plants in the General Region',
+-  ELCGUYXX02: 'Electricity from transmission in the General Region',
+-  GAS: 'Natural Gas',
+-  GASGUY: 'Natural Gas',
+-  GASINT: 'Natural Gas',
+-  GEOGUYXX: 'Geothermal',
+-  HYDGUYXX: 'Hydropower',
+-  OIL: 'Oil',
+-  OILGUY: 'Oil',
+-  OILINT: 'Oil',
+-  OTH: 'Other',
+-  OTHGUY: 'Other',
+-  OTHINT: 'Other',
+-  PET: 'Petroleum',
+-  PETGUY: 'Petroleum',
+-  PETINT: 'Petroleum',
+-  SPVGUYXX: 'Solar',
+-  URN: 'Nuclear',
+-  URNGUY: 'Nuclear',
+-  URNINT: 'Nuclear',
+-  WASGUYXX: 'Waste',
+-  WAVGUYXX: 'Wave',
+-  WOFGUYXX: 'Offshore wind',
+-  WONGUYXX: 'Onshore wind',
+-  RENGUY: 'Rest Renewables',
+-
+-# Model Land, Water parameters: Irrigation type, Rainfed,...
+-  OTHLNDUSE: 'OtherLandUse',
+-  EVAPPRC_OTHLNDUSE: ' EvapotranspirationPercentPRCOtherLandUse',
+-  GNDWTREX_OTHLNDUSE: 'GroundwaterPercentofExcessOtherLandUse:',
+-  GNDWTREX: 'GroundwaterPercentofExcess',
+-  XFRMTECH: 'TransformationTechnologies',
+-
+-# Naming Convention for AgriculturalResidualCapacity
+-  RAP: 'Rapeseed (canola)',
+-  MZE: 'Maize',
+-  WHT:  'Wheat',
+-  SWI: 'Switchgrass',
+-  HI:  'High intensity Irrigated',
+-  IR:  'Intermediate intensity Rainfed',
+-  II:  'Intermediate intensity Irrigated',
+-  AGRI_RESCAP: 'AgriculturalResidualCapacityRetirementYears',
+-  CRPYLD: 'CropYieldFactors',
+-  AGRI_RESCAP_HZN: 'AgriculturalResidualCapacityRetirementYears'
+-}
+-
+-# Model external dependencies: Directories & Files
+-################################################################
+-Model: CLEWS-GUY
+-Debug: 0
+-OutputFormat: append_otoole
+-OperationModes: 'workflow/submodules/clewsy/optn_mds.txt'
+-otooleOutputDirectory: "./results/Guyana/clewsy"
+-DataDirectoryName: './results/Guyana/geoclews/summary_stats'
+-OsemosysGlobalPath: './results/Guyana/osemosys_global'
++Acronym_dict:
++  AGRI_RESCAP: AgriculturalResidualCapacityRetirementYears
++  AGRI_RESCAP_HZN: AgriculturalResidualCapacityRetirementYears
++  BIOPHLXX: Biomass
++  COA: Coal
++  COAINT: Coal
++  COAPHL: Coal
++  COG: Cogeneration
++  COGINT: Cogeneration
++  COGPHL: Cogeneration
++  CRPYLD: CropYieldFactors
++  CSPPHLXX: Concentrated Solar Power
++  ELCPHLXX01: Electricity from power plants in PhilippinesV12Raw
++  ELCPHLXX02: Electricity from transmission in PhilippinesV12Raw
++  EVAPPRC_OTHLNDUSE: ' EvapotranspirationPercentPRCOtherLandUse'
++  GAS: Natural Gas
++  GASINT: Natural Gas
++  GASPHL: Natural Gas
++  GEOPHLXX: Geothermal
++  GNDWTREX: GroundwaterPercentofExcess
++  GNDWTREX_OTHLNDUSE: 'GroundwaterPercentofExcessOtherLandUse:'
++  HI: High intensity Irrigated
++  HYDPHLXX: Hydropower
++  II: Intermediate intensity Irrigated
++  IR: Intermediate intensity Rainfed
++  MZE: Maize
++  OIL: Oil
++  OILINT: Oil
++  OILPHL: Oil
++  OTH: Other
++  OTHINT: Other
++  OTHLNDUSE: OtherLandUse
++  OTHPHL: Other
++  PET: Petroleum
++  PETINT: Petroleum
++  PETPHL: Petroleum
++  PHL: PhilippinesV12Raw
++  RAP: Rapeseed (canola)
++  RENPHL: Rest Renewables
++  SPVPHLXX: Solar
++  SWI: Switchgrass
++  URN: Nuclear
++  URNINT: Nuclear
++  URNPHL: Nuclear
++  WASPHLXX: Waste
++  WAVPHLXX: Wave
++  WHT: Wheat
++  WOFPHLXX: Offshore wind
++  WONPHLXX: Onshore wind
++  XFRMTECH: TransformationTechnologies
++AgriculturalCapitalCost: []
++AgriculturalResidualCapacity: {}
++AgriculturalResidualCapacityRetirementYears: 15
+ ClusterBaseFileName: clustering_results_
+-PrecipitationClusterBaseFileName: clustering_results_prc_
++CropYieldFactors:
++  CON: 1
++  MZE: 1
++  OTH: 1
++  RCP: 1
++  SGC: 1
++  TOM: 1
++DataDirectoryName: /private/tmp/clews-global-philippines-source/results/PhilippinesV12Raw/geoclews/summary_stats
++Debug: 0
++DomesticMining:
++- COA
++- NGS
++- CRU
++DomesticRenewables:
++- WND
++- HYD
++- BIO
++- SOL
++- GEO
++Emissions:
++  CO2PHL:
++  - Carbon dioxide emissions.
++  - '#000000'
++EndUseFuels:
++  AGR:
++  - DSL
++  - ELCPHLXX02
++  COM:
++  - KER
++  - DSL
++  - LPG
++  - BIO
++  - NGS
++  - ELCPHLXX02
++  IND:
++  - COA
++  - LPG
++  - KER
++  - DSL
++  - HFO
++  - OHC
++  - BIO
++  - NGS
++  - ELCPHLXX02
++  RES:
++  - LPG
++  - KER
++  - BIO
++  - NGS
++  - ELCPHLXX02
++  TRA:
++  - GSL
++  - KER
++  - DSL
++  - HFO
++  - NGS
++  - ELCPHLXX02
+ EvapotranspirationClusterBaseFileName: clustering_results_evt_
++EvapotranspirationPercentPRCOtherLandUse:
++  BAR: 0.773
++  BLT: 0.631
++  FOR: 0.691
++  GRS: 0.694
++  OTH: 0.694
++  WAT: 0.571
++ExportFuels:
++- COA
++- NGS
++- CRU
++- GSL
++- KER
++- HFO
++- BIO
++GroundwaterPercentofExcess: 0.051
++GroundwaterPercentofExcessOtherLandUse:
++  BAR: 0.009
++  BLT: 0.072
++  FOR: 0.077
++  GRS: 0.051
++  OTH: 0.051
++  WAT: 0.017
++ImportFuels:
++- COA
++- CRU
++- LPG
++- GSL
++- KER
++- DSL
++- HFO
++IntensityList:
++  H: High
++  I: Intermediate
++  L: Low
++IrrigationTypeList:
++  I: Irrigation
++  R: Rain-fed
+ IrrigationWaterDeficitClusterBaseFileName: clustering_results_cwd_
+-
+-# Model Time Space parameters: Years, Land, Regions,... TimeSlices
+-################################################################
+-Years:
+-  - 2021
+-  - 2022
+-  - 2023
+-  - 2024
+-  - 2025
+-  - 2026
+-  - 2027
+-  - 2028
+-  - 2029
+-  - 2030
+-  - 2031
+-  - 2032
+-  - 2033
+-  - 2034
+-  - 2035
+-  - 2036
+-  - 2037
+-  - 2038
+-  - 2039
+-  - 2040
+-  - 2041
+-  - 2042
+-  - 2043
+-  - 2044
+-  - 2045
+-  - 2046
+-  - 2047
+-  - 2048
+-  - 2049
+-  - 2050
+-
+ LandRegions:
+-  - GUY
+-
+-LandToGridMap: {
+-  GUY: GUYXX,
+-}
+-
+-LandUseCodes: {
+-  BAR: Barren and sparsely vegetated land,
+-  FOR: Forest land,
+-  GRS: Grassland & woodland,
+-  BLT: Built-up land,
+-  WAT: Water bodies,
+-  OTH: Other agricultural land  # Do we need this at all???
+-}
+-
+-Regions: {GLOBAL: ['Global', '#000000']}
+-
+-Timeslices: {
+-  S1D4: ['Season 1 baseload', ''],
+-  S1D1: ['Season 1 intermediate', ''],
+-  S1D2: ['Season 1 peak', ''],
+-  S1D3: ['Season 1 peak', ''],
+-  S2D4: ['Season 2 baseload', ''],
+-  S2D1: ['Season 2 intermediate', ''],
+-  S2D2: ['Season 2 peak', ''],
+-  S2D3: ['Season 2 peak', '']
+-}
+-
+-# Model Land, Water parameters: Irrigation type, Rainfed,...
+-################################################################
+-IntensityList: {
+-  L: Low,
+-  I: Intermediate,
+-  H: High  # DEFAULT
+-}
+-
+-IrrigationTypeList: {
+-  R: Rain-fed,
+-  I: Irrigation # DEFAULT
+-}
+-
+-EvapotranspirationPercentPRCOtherLandUse: {
+-  # Percentages taken from Bolivia model by Abhi.
+-  BAR: 0.773,
+-  FOR: 0.691,
+-  GRS: 0.694,  # Numbers from Bolivia.  SET is settled, or BLT.
+-  BLT: 0.631,
+-  WAT: 0.571,
+-  OTH: 0.694   # Used GRS for OTH
+-  # DEFAULT
+-}
+-
+-GroundwaterPercentofExcessOtherLandUse: {
+-  # Since other land types are more likely to have a different ratio.
+-  BAR: 0.009,
+-  FOR: 0.077,
+-  GRS: 0.051,
+-  BLT: 0.072,  # Numbers from water ratios from Bolivia.  SET is BLT.
+-  WAT: 0.017,
+-  OTH: 0.051   # Used GRS for OTH
+-  # DEFAULT
+-}
+-
+-# Precent of excess water (Irrigation + Precipitation - Evapotranspiration) that returns as groundwater.  Rest returns as Runoff.
+-# GroundwaterPercentofExcess: Value for grassland. Need a better number...
+-GroundwaterPercentofExcess: 0.051 # Default
+-
+-# Model Energy parameters: Fuels, Transformation Tech,...
+-################################################################
+-EndUseFuels: {
+-  IND: ['COA', 'LPG', 'KER', 'DSL', 'HFO', 'OHC', 'BIO', 'NGS'],
+-  RES: ['LPG', 'KER', 'BIO', 'NGS'],
+-  COM: ['KER', 'DSL', 'LPG', 'BIO', 'NGS'],
+-  AGR: ['DSL'],
+-  TRA: ['GSL', 'KER', 'DSL', 'HFO', 'NGS'] # ELC만 바꿈
+-}
+-
+-ImportFuels: ['COA', 'CRU', 'LPG', 'GSL', 'KER', 'DSL', 'HFO'] # DEFAULT
+-
+-ExportFuels: ['COA', 'NGS', 'CRU', 'GSL', 'KER', 'HFO', 'BIO'] # DEFAULT
+-
+-DomesticMining: ['COA', 'NGS', 'CRU'] #DEFAULT
+-
+-DomesticRenewables: ['WND', 'HYD', 'BIO', 'SOL', 'GEO'] # DEFAULT
+-
+-# Note:  Transformation technologies assume that their fuels are created elsewhere (either in the DomesticMining, DomesticRenewables or ImportFuels.
+-TransformationTechnologies: [
+-    ['PWRTRNA01', 'ELCGUYXX01', '1.11', 'ELCGUYXX02', '1', 'Power transmission Guyana', '1'],  # 90% efficient transmission system (losses)
+-
+-    # Structure of data is:  [Tech, InFuel, IAR, OutFuel, OAR, Name, Mode]
+-    # If the FUEL is '' that piece will not be created.
+-    # Name is used only the first time this technology shows up.  Fuels are created only if needed.
+-    # If multiple lines for the same technology, this technology will have multiple input and output activity ratios.
+-    # Note:  This section can also be used to add input or output fuels to various technologies (cooling water, for example)
+-    ## Removed all of the switch grass
+-]
+-# Power Plants: #Data from osemosys_global
+-PowerPlants: {
+-}
+-
+-Emissions: {
+-  CO2: ['Carbon dioxide emissions.', '#000000']}
+-
+-# Model Agriculture & Crop yield  parameters:
+-################################################################
+-# AgriculturalResidualCapacityRetirementYears
+-AgriculturalResidualCapacityRetirementYears: 15
+-
+-CropYieldFactors: { #keep, change names to match clustering
+-    CON: 1,
+-    SGC: 1,
+-    MZE: 1,
+-    RCP: 1,
+-    OTH: 1,
+-
+-}
+-
+-AgriculturalResidualCapacity: {
+-
+-}
+-AgriculturalCapitalCost: [
+-]
+\ No newline at end of file
++- PHL
++LandToGridMap:
++  PHL: PHLXX
++LandUseCodes:
++  BAR: Barren and sparsely vegetated land
++  BLT: Built-up land
++  FOR: Forest land
++  GRS: Grassland & woodland
++  OTH: Other agricultural land
++  WAT: Water bodies
++Model: PhilippinesV12Raw
++OperationModes: /private/tmp/clews-global-philippines-source/workflow/submodules/clewsy/optn_mds.txt
++OsemosysGlobalPath: /private/tmp/clews-global-philippines-source/results/PhilippinesV12Raw/osemosys_global
++OutputFormat: append_otoole
++PowerPlants: {}
++PrecipitationClusterBaseFileName: clustering_results_prc_
++Regions:
++  GLOBAL:
++  - Global
++  - '#000000'
++Timeslices:
++  S1D1:
++  - Wet season daytime
++  - ''
++  S1D2:
++  - Wet season nighttime
++  - ''
++  S2D1:
++  - Dry season daytime
++  - ''
++  S2D2:
++  - Dry season nighttime
++  - ''
++TransformationTechnologies:
++- - PWRTRNA01
++  - ELCPHL01
++  - '1.11'
++  - ELCPHL02
++  - '1'
++  - Power transmission
++  - '1'
++Years:
++- 2020
++- 2021
++- 2022
++- 2023
++- 2024
++- 2025
++- 2026
++- 2027
++- 2028
++- 2029
++- 2030
++- 2031
++- 2032
++- 2033
++- 2034
++- 2035
++- 2036
++- 2037
++- 2038
++- 2039
++- 2040
++- 2041
++- 2042
++- 2043
++- 2044
++- 2045
++- 2046
++- 2047
++- 2048
++- 2049
++- 2050
++- 2051
++- 2052
++- 2053
++otooleOutputDirectory: /private/tmp/clews-global-philippines-source/results/PhilippinesV12Raw/clewsy
+diff --git a/config/config.yaml b/config/config.yaml
+index 5ea148b..5005b20 100644
+--- a/config/config.yaml
++++ b/config/config.yaml
+@@ -1,9 +1,9 @@
+ # Scenario Name
+-scenario: "Guyana"
+-country_full_name: "Guyana"
++scenario: "PhilippinesV12Raw"
++country_full_name: "Philippines"
+ # Temporal Parameters
+-startYear: 2021
+-endYear: 2050
++startYear: 2020
++endYear: 2053
+ daytype: False
+ dayparts:
+ # daypart : [start_hour (inclusive), end_hour (exclusive)]
+@@ -11,32 +11,32 @@ dayparts:
+   D2: [13, 25]
+ seasons:
+ # season : [month 1, month 2, ...] (all inclusive)
+-  S1: [1, 2, 3, 4, 5, 6]
+-  S2: [7, 8, 9, 10, 11, 12]
++  S1: [6, 7, 8, 9, 10, 11]
++  S2: [12, 1, 2, 3, 4, 5]
+ 
+ timeslice: {
+-  S1D1: ['Season 1 intermediate', ''],
+-  S1D2: ['Season 1 peak', ''],
+-  S2D1: ['Season 2 intermediate', ''],
+-  S2D2: ['Season 2 peak', '']
++  S1D1: ['Wet season daytime', ''],
++  S1D2: ['Wet season nighttime', ''],
++  S2D1: ['Dry season daytime', ''],
++  S2D2: ['Dry season nighttime', '']
+ }
+ 
+-timeshift: 0 # value between -11 and 12
++timeshift: 8 # Philippine Standard Time is UTC+8
+ 
+ # Spatial Parameters
+ geographic_scope:
+-  - "GUY"
++  - "PHL"
+ 
+ # Set to True if transmission should be included
+-crossborderTrade: True
++crossborderTrade: False
+ 
+ # Set to True if existing transmission capacities should be included
+ # from the Global Transmission Database (Brinkerink et al., 2024).
+-transmission_existing: True
++transmission_existing: False
+ 
+ # Set to True if planned transmission capacities should be included
+ # from the Global Transmission Database (Brinkerink et al., 2024).
+-transmission_planned: True
++transmission_planned: False
+ 
+ # Set to True if existing storage capacities should be included
+ # from the Global Energy Storage Database (DOE/Sandia).
+@@ -53,23 +53,13 @@ storage_existing: True
+ storage_planned: True
+ 
+ # Emission Parameters
+-emission_penalty:
++emission_penalty: []
+ # - [EMISSION, COUNTRY, START_YEAR, END_YEAR, VALUE]
+ # EXAMPLE:  - ["CO2", "IND", 2020, 2050, 2.1]
+ # where VALUE is in M$/MT CO2
+- - ["CO2", "GUY", 2021, 2050, 2.1]
+ 
+ # Investment Parameters
+-no_invest_technologies:
+-  - "CSP"
+-  - "WAV"
+-  - "URN"
+-  - "OTH"
+-  - "WAS"
+-  - "COG"
+-  - "GEO"
+-  - "BIO"
+-  - "PET"
++no_invest_technologies: []
+ 
+ # Result Parameters
+ results_by_country: True
+@@ -186,9 +176,8 @@ reserve_margin_technologies:
+   WOF : 10
+   WON : 10
+ 
+-emission_limit:
++emission_limit: []
+ # - [EMISSION, COUNTRY, TYPE, YEAR, VALUE]
+- - ["CO2", "GUY", "LINEAR", 2050, 0]
+ # where VALUE is emissions in million tonnes of CO2-equivalent and YEAR is
+ # when that constraint must be adhered to. All years between multiple emission
+ # constraints will be interpolated if TYPE is set to "LINEAR". If "POINT" is used
+@@ -267,16 +256,16 @@ region_per_group: 10
+ # Coordinate and projection systems
+ # More info: http://epsg.io/
+ crs_WGS84: "EPSG:4326"
+-crs_proj: "EPSG:24821"
++crs_proj: "EPSG:8857"
+ 
+ number_of_clusters: {
+ 
+-    'GUY': 4,
++    'PHL': 8,
+ }
+ 
+ region_codes: {
+-    GUY: GUYXX,
++    PHL: PHLXX,
+   }
+ 
+ emissions:
+-  - CO2GUY
+\ No newline at end of file
++  - CO2PHL
+diff --git a/workflow/envs/clews_global.yaml b/workflow/envs/clews_global.yaml
+index f7c0dfa..fe27e3e 100644
+--- a/workflow/envs/clews_global.yaml
++++ b/workflow/envs/clews_global.yaml
+@@ -8,6 +8,7 @@ channels:
+ dependencies:
+  - python<=3.11 # see PR 213
+  - pip>=24.0
++ - setuptools<81
+  - snakemake>=8
+  - glpk>=5.0
+  - colorama
+diff --git a/workflow/scripts/clewsy.py b/workflow/scripts/clewsy.py
+index 1e2d6c2..e9ebff1 100644
+--- a/workflow/scripts/clewsy.py
++++ b/workflow/scripts/clewsy.py
+@@ -6,10 +6,15 @@ import subprocess
+ import shutil
+ from constants import ROOT_DIR
+ import collections
+-import math
++import ast
+ 
+ 
+-def modify_yaml(scenario, region_codes, timeslice, emissions):
++def modify_yaml(
++    scenario,
++    region_codes,
++    timeslice,
++    emissions,
++):
+     yaml_file =f"{ROOT_DIR}/config/clews_config/clewsy_template.yaml"
+     with open(yaml_file, "r") as f:
+         data = yaml.load(f, Loader=yaml.SafeLoader)
+@@ -21,7 +26,47 @@ def modify_yaml(scenario, region_codes, timeslice, emissions):
+     data["Years"] = pd.read_csv(f"{ROOT_DIR}/results/{scenario}/osemosys_global/YEAR.csv").VALUE.to_list()
+     data["LandRegions"] = list(region_codes.keys())
+     data["LandToGridMap"] = region_codes
+-    data["TimeSlice"] = timeslice
++    data["Timeslices"] = timeslice
++    data.pop("TimeSlice", None)
++    acronyms = data.setdefault("Acronym_dict", {})
++    for key in [key for key in acronyms if "GUY" in key]:
++        del acronyms[key]
++    technology_labels = {
++        "BIO": "Biomass",
++        "CSP": "Concentrated Solar Power",
++        "ELC": "Electricity",
++        "GEO": "Geothermal",
++        "HYD": "Hydropower",
++        "SPV": "Solar",
++        "WAS": "Waste",
++        "WAV": "Wave",
++        "WOF": "Offshore wind",
++        "WON": "Onshore wind",
++    }
++    fuel_labels = {
++        "COA": "Coal",
++        "COG": "Cogeneration",
++        "GAS": "Natural Gas",
++        "OIL": "Oil",
++        "OTH": "Other",
++        "PET": "Petroleum",
++        "URN": "Nuclear",
++        "REN": "Rest Renewables",
++    }
++    for land_region, grid_region in region_codes.items():
++        acronyms[land_region] = scenario
++        for code, label in technology_labels.items():
++            if code == "ELC":
++                acronyms[f"ELC{grid_region}01"] = (
++                    f"Electricity from power plants in {scenario}"
++                )
++                acronyms[f"ELC{grid_region}02"] = (
++                    f"Electricity from transmission in {scenario}"
++                )
++            else:
++                acronyms[f"{code}{grid_region}"] = label
++        for code, label in fuel_labels.items():
++            acronyms[f"{code}{land_region}"] = label
+     for i in data["EndUseFuels"]:
+         fuel_list = data["EndUseFuels"][i]
+         for j in region_codes:
+@@ -35,11 +80,7 @@ def modify_yaml(scenario, region_codes, timeslice, emissions):
+ 
+     crop_list = pd.read_csv(f"{ROOT_DIR}/results/{scenario}/CROP.csv").to_dict()['FUEL'].values()
+     
+-    if "CropYieldFactors" not in data or not data["CropYieldFactors"]:
+-    # If 'CropYieldFactors' is missing or empty, assign 1 to each crop in crop_list
+-        data["CropYieldFactors"] = {i: 1 for i in crop_list}
+-    else:
+-        data["CropYieldFactors"] = data["CropYieldFactors"]
++    data["CropYieldFactors"] = {crop: 1 for crop in crop_list}
+     print(data["CropYieldFactors"])
+     with open(f"{ROOT_DIR}/config/clews_config/clewsy.yaml", "w") as f:
+         yaml.dump(data, f)
+@@ -51,7 +92,9 @@ def crop_demand(scenario, country_full_name):
+     def set_crop_code(row):
+         if row["Item"] in other_crops:
+             return "OTH"
+-        elif row["Item"] == np.nan:
++        elif pd.isna(row["Code"]):
++            return "OTH"
++        elif row["Code"] not in modelled_crop_codes:
+             return "OTH"
+         else:
+             return row["Code"]
+@@ -65,6 +108,21 @@ def crop_demand(scenario, country_full_name):
+ 
+     other_crops = all_crops[5:]
+ 
++    country_codes = pd.read_csv(
++        f"{ROOT_DIR}/workflow/submodules/CLEWs_GAEZ/GAEZ_Processing/Data/Country_code.csv"
++    ).set_index("Full_name")
++    country_code = country_codes.loc[country_full_name, "country_code"]
++    cluster_columns = pd.read_csv(
++        f"{ROOT_DIR}/results/{scenario}/geoclews/summary_stats/"
++        f"clustering_results_{country_code}.csv",
++        nrows=0,
++    ).columns
++    modelled_crop_codes = {
++        column.split()[0]
++        for column in cluster_columns
++        if "Irrigation" in column or "Rain-fed" in column
++    }
++
+     data = pd.read_csv(f"{ROOT_DIR}/data/FAOSTAT_production_2020.csv")
+     filtered_data = data[data['Area'] == country_full_name]
+     filtered_data = filtered_data[filtered_data['Item'].isin(all_crops)].set_index('Item')
+@@ -145,6 +203,9 @@ def demand_projection(demand, country_full_name, scenario, start_year, end_year)
+     accumulated_a_demand = pd.read_csv(
+         f"{ROOT_DIR}/results/{scenario}/clewsy/AccumulatedAnnualDemand.csv"
+     )
++    accumulated_a_demand = accumulated_a_demand.loc[
++        ~accumulated_a_demand["FUEL"].astype(str).str.startswith("CRP")
++    ]
+ 
+     final_df = pd.concat([final_df, accumulated_a_demand], ignore_index=True)
+ 
+@@ -153,11 +214,11 @@ def demand_projection(demand, country_full_name, scenario, start_year, end_year)
+         index=False
+     )
+ 
+-def cost_land_tech(scenario, start_year, end_year):
++def cost_land_tech(scenario, country_full_name, start_year, end_year):
+     code = pd.read_csv(
+     f'{ROOT_DIR}/workflow/submodules/CLEWs_GAEZ/GAEZ_Processing/Data/Country_code.csv').set_index(
+     "Full_name").to_dict()  # More info: https://www.nationsonline.org/oneworld/country_code_list.htm
+-    country_code = code['country_code'][scenario]
++    country_code = code['country_code'][country_full_name]
+     tech_list = list(pd.read_csv(f"{ROOT_DIR}/results/{scenario}/clewsy/TECHNOLOGY.csv")["VALUE"])
+     high_irrigation_tech = [i for i in tech_list if i.startswith("LND") and i.endswith("HITOT")]
+     high_rainfed_tech = [i for i in tech_list if i.startswith("LND") and i.endswith("HRTOT")]
+@@ -208,8 +269,46 @@ def cost_land_tech(scenario, start_year, end_year):
+                                 #  index=False)
+ 
+ 
++def deduplicate_otoole_csvs(data_directory):
++    """Keep the final value for each parameter index before conversion.
++
++    Both the upstream append writer and country-specific overrides can emit a
++    parameter index more than once. MathProg rejects those duplicate records,
++    while the intended semantics here are that the later country-specific
++    value replaces the earlier default.
++    """
++    for csv_path in sorted(os.scandir(data_directory), key=lambda item: item.name):
++        if not csv_path.name.endswith(".csv"):
++            continue
++        dataframe = pd.read_csv(csv_path.path)
++        if dataframe.empty:
++            continue
++        index_columns = [
++            column for column in dataframe.columns if column != "VALUE"
++        ]
++        if not index_columns:
++            index_columns = list(dataframe.columns)
++        duplicate_rows = dataframe.duplicated(
++            subset=index_columns, keep="last"
++        )
++        if duplicate_rows.any():
++            print(
++                f"Removing {int(duplicate_rows.sum())} duplicate record(s) "
++                f"from {csv_path.name}; keeping the final value."
++            )
++            dataframe.loc[~duplicate_rows].to_csv(csv_path.path, index=False)
++
++
+ ## TODO Make it snakemake processes
+-def main(scenario, region_codes, timeslice, country_full_name, emissions, start_year, end_year):
++def main(
++    scenario,
++    region_codes,
++    timeslice,
++    country_full_name,
++    emissions,
++    start_year,
++    end_year,
++):
+     try:
+         shutil.copy(f"{ROOT_DIR}/results/{scenario}/osemosys_global/FUEL.csv",
+                     f"{ROOT_DIR}/results/{scenario}/osemosys_global/COMMODITY.csv")
+@@ -218,8 +317,22 @@ def main(scenario, region_codes, timeslice, country_full_name, emissions, start_
+         shutil.copy(f"{ROOT_DIR}/results/{scenario}/osemosys_global/FUEL.csv",
+                     f"{ROOT_DIR}/results/{scenario}/osemosys_global/COMMODITY.csv")
+     demand = crop_demand(scenario, country_full_name)
+-    yaml_data = modify_yaml(scenario, region_codes, timeslice, emissions)
+-    subprocess.run(['python', 'workflow/submodules/clewsy/src/build/clewsy.py', 'config/clews_config/clewsy.yaml'], input='Y', text=True)
++    yaml_data = modify_yaml(
++        scenario,
++        region_codes,
++        timeslice,
++        emissions,
++    )
++    subprocess.run(
++        [
++            "python",
++            "workflow/submodules/clewsy/src/build/clewsy.py",
++            "config/clews_config/clewsy.yaml",
++        ],
++        input="Y",
++        text=True,
++        check=True,
++    )
+     try:
+         os.remove(f"{ROOT_DIR}/results/{scenario}/clewsy/COMMODITY.csv")
+     except FileNotFoundError:
+@@ -282,7 +395,7 @@ def main(scenario, region_codes, timeslice, country_full_name, emissions, start_
+     TechModeLowerLim = []
+     
+     with open(yaml_data['OperationModes'], 'r') as f:
+-        ModeList = [m.strip().strip("'") for m in f.read().split(",") if m.strip()]
++        ModeList = ast.literal_eval(f.read())
+     category_columns = [
+         col for col in cluster_category_totals.columns
+         if col in ModeList
+@@ -352,6 +465,9 @@ def main(scenario, region_codes, timeslice, country_full_name, emissions, start_
+     variable_cost_df.to_csv(f"{ROOT_DIR}/results/{scenario}/clewsy/VariableCost.csv", index=False)
+     # OperationalLife for agricultural land
+     operational_life_df = pd.read_csv(f"{ROOT_DIR}/results/{scenario}/clewsy/OperationalLife.csv")
++    operational_life_df = operational_life_df.loc[
++        ~operational_life_df["TECHNOLOGY"].astype(str).str.startswith("LND")
++    ]
+     cropcombo = [mode for mode in ModeList if mode not in land_mapping.values()]
+     OL = []
+     for crop in cropcombo:
+@@ -368,18 +484,54 @@ def main(scenario, region_codes, timeslice, country_full_name, emissions, start_
+     operational_life_df = pd.concat([operational_life_df, OL], ignore_index=True)
+     operational_life_df.to_csv(f"{ROOT_DIR}/results/{scenario}/clewsy/OperationalLife.csv", index=False)
+     demand_projection(demand, country_full_name, scenario, start_year, end_year)
+-    cost_land_tech(scenario, start_year, end_year)
++    cost_land_tech(scenario, country_full_name, start_year, end_year)
+ 
+     data_out_path = f"{ROOT_DIR}/results/{scenario}/clewsy"
+     data_text = f"{ROOT_DIR}/results/{scenario}/data"
+     clewsy_otoole_config = f"{ROOT_DIR}/config/clews_config/clewsy_otoole_config.yaml"
+-    os.system(f'otoole convert csv datafile {data_out_path} {data_text}.txt {clewsy_otoole_config}')
+-    os.system(f"python {ROOT_DIR}/config/clews_config/preprocess_data.py otoole {data_text}.txt {data_text}_pp.txt")
+-
+-    os.system(
+-        f"glpsol -m {ROOT_DIR}/config/clews_config/osemosys_fast_preprocessed.txt -d {data_text}_pp.txt --wlp {data_text}.lp --check")
+-    os.system(f"cbc {data_text}.lp solve -solu {data_text}.sol")
+-    os.system(f"otoole -v results cbc csv {data_text}.sol {ROOT_DIR}/results/{scenario}/results datafile {data_text}.txt {clewsy_otoole_config}")
++    deduplicate_otoole_csvs(data_out_path)
++    subprocess.run(
++        [
++            "otoole", "convert", "csv", "datafile", data_out_path,
++            f"{data_text}.txt", clewsy_otoole_config,
++        ],
++        check=True,
++    )
++    subprocess.run(
++        [
++            "python",
++            f"{ROOT_DIR}/config/clews_config/preprocess_data.py",
++            "otoole",
++            f"{data_text}.txt",
++            f"{data_text}_pp.txt",
++        ],
++        check=True,
++    )
++    subprocess.run(
++        [
++            "glpsol",
++            "-m",
++            f"{ROOT_DIR}/config/clews_config/osemosys_fast_preprocessed.txt",
++            "-d",
++            f"{data_text}_pp.txt",
++            "--wlp",
++            f"{data_text}.lp",
++            "--check",
++        ],
++        check=True,
++    )
++    subprocess.run(
++        ["cbc", f"{data_text}.lp", "solve", "-solu", f"{data_text}.sol"],
++        check=True,
++    )
++    subprocess.run(
++        [
++            "otoole", "-v", "results", "cbc", "csv", f"{data_text}.sol",
++            f"{ROOT_DIR}/results/{scenario}/results", "datafile",
++            f"{data_text}.txt", clewsy_otoole_config,
++        ],
++        check=True,
++    )
+     print("clewsy finished successfully")
+ 
+ 
+@@ -392,7 +544,6 @@ if __name__ == "__main__":
+         project_emissions = snakemake.config['emissions']
+         project_start_year = snakemake.config['startYear']
+         project_end_year = snakemake.config['endYear']
+-
+     else:
+         project_scenario = "Guyana'"
+         project_region_codes = {
+@@ -408,4 +559,12 @@ if __name__ == "__main__":
+         project_emissions = ['CO2GUY']
+         project_start_year = 2020
+         project_end_year = 2035
+-    main(project_scenario, project_region_codes, project_timeslice, project_country, project_emissions, project_start_year, project_end_year)
++    main(
++        project_scenario,
++        project_region_codes,
++        project_timeslice,
++        project_country,
++        project_emissions,
++        project_start_year,
++        project_end_year,
++    )
+diff --git a/workflow/submodules/CLEWs_GAEZ b/workflow/submodules/CLEWs_GAEZ
+--- a/workflow/submodules/CLEWs_GAEZ
++++ b/workflow/submodules/CLEWs_GAEZ
+@@ -1 +1 @@
+-Subproject commit 30ec12e6524dc9c8ce474ffe1a467508f992007f
++Subproject commit 30ec12e6524dc9c8ce474ffe1a467508f992007f-dirty
+diff --git a/workflow/submodules/clewsy b/workflow/submodules/clewsy
+--- a/workflow/submodules/clewsy
++++ b/workflow/submodules/clewsy
+@@ -1 +1 @@
+-Subproject commit 6eefaf2abc6d91917c0fddfeea373db37443a8dd
++Subproject commit 6eefaf2abc6d91917c0fddfeea373db37443a8dd-dirty

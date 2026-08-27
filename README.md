@@ -6,9 +6,19 @@ assumptions, calculations, diagnostics, and portable MUIO cases.
 
 ## Current model package
 
-The current working model is **Philippines v24.0.0**. Its portable case is:
+The current working model is **Philippines v30.0.0**. Its portable case is:
 
-- `Philippines_v24_CLEWs_build/muio/Philippines_v24_v24.0.0_MUIO.zip`.
+- `Philippines_v30_CLEWs_build/muio/Philippines_v30_v30.0.0_MUIO.zip`.
+
+Version 30 carries the complete standalone provenance inherited through v29.
+It replaces unsupported crop-management plumbing with direct use of shared
+physical cropland and irrigation service, retains one evidenced management
+system per crop and water regime, and uses the 2020 Philippine yield
+initialization followed by the FAO FOFA2050 Business As Usual trajectory.
+Population, solar PV, and onshore wind now consume the existing built-up-land
+class endogenously. The obsolete policy-only idle-cropland cap is removed.
+All four scenarios solved optimally under a 300-second CBC deadline and passed
+result-level land-account validation.
 
 Version 24 is the agriculture repair successor to v23. It restores crop-mode
 and cluster yield differentiation around PSA achieved national yields,
@@ -67,17 +77,17 @@ All three v12 portable archives are tracked under
 
 The historical Philippines v10 energy system, Fisheries v2.3, and the v12
 CLEWs Global-derived land, agriculture, and water block remain inherited in
-v24. Read `Philippines_v24_CLEWs_build/README.md` and its canonical schema
+v30. Read `Philippines_v30_CLEWs_build/README.md` and its canonical schema
 ledger before using the model.
 
 ## Use with MUIOGO
 
 1. Install or clone [MUIOGO](https://github.com/EAPD-DRB/MUIOGO).
 2. Extract the current archive into this repository as
-   `case/Philippines_v24`.
+   `case/Philippines_v30`.
 3. Create a relative symlink from
-   `MUIOGO/WebAPP/DataStorage/Philippines_v24` to
-   `CLEWs-PHL/case/Philippines_v24`.
+   `MUIOGO/WebAPP/DataStorage/Philippines_v30` to
+   `CLEWs-PHL/case/Philippines_v30`.
 4. Start MUIOGO and open the case.
 
 The ignored `case/` tree is the live local working copy; editing through
@@ -94,16 +104,16 @@ with the installed model path and a unique evidence label before interpreting
 
 ## Repository structure
 
-The current package is under `Philippines_v24_CLEWs_build/`:
+The current package is under `Philippines_v30_CLEWs_build/`:
 
 - `data_sources/`: six canonical source-trace ledgers, retained evidence and
   the review workbook;
 - `documentation/`: equation-first model-change audit;
 - `diagnostics/`: generation, solve, ledger and provenance validation;
-- `muio/`: portable v24 MUIO case, predecessor archives, and checksums; and
+- `muio/`: portable v30 MUIO case and checksum; and
 - `scripts/`: retained generator, validators and normalized research input.
 
-The ignored local `case/Philippines_v24/` directory is populated from the
+The ignored local `case/Philippines_v30/` directory is populated from the
 current portable archive and exposed to MUIOGO through a relative symlink. It
 is not part of Git history, which avoids the per-file Git size limit.
 

@@ -1,0 +1,4 @@
+DOE Vehicle Technologies Office, Comprehensive Vehicle Total Cost of Ownership Framework, 2021 Annual Merit Review, slide 11.
+Official PDF: https://www.energy.gov/sites/default/files/2021-07/van038_Gohlke_2021_o_5-27_455pm_LR_ML.pdf
+Repair powertrain multipliers: ICEV 1.00; HEV 0.91; PHEV 0.86; BEV 0.67; FCEV 0.67.
+Scheduled LDV maintenance cross-check (USD/mile): ICEV 0.101; HEV 0.094; PHEV 0.090; BEV 0.061.

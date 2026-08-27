@@ -1,0 +1,30 @@
+{
+  "schema": "philippines-v23-package1-promotion-identity-v1",
+  "date": "2026-08-24",
+  "status": "pass",
+  "candidate_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v23-package1-candidate-20260824",
+  "live_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v23",
+  "four_scenario_candidate_gate": "pass",
+  "source_json_count": 22,
+  "source_json_byte_identical": true,
+  "schema_ledger_csv_count": 6,
+  "schema_ledger_csv_byte_identical_before_promotion_record": true,
+  "data_txt_byte_identical": true,
+  "data_processed_txt_byte_identical": false,
+  "data_processed_set_order_equivalent": true,
+  "data_processed_normalized_sha256": "4520f194eb9db5d171a38405b6ac569247b5e037fcfaa4b0448820f969d40135",
+  "matrix": {
+    "rows": 554873,
+    "columns": 586648,
+    "matrix_nonzeros": 8118754
+  },
+  "glpsol_check": "pass",
+  "candidate_optimizer_runs": 4,
+  "post_promotion_optimizer_runs": 0,
+  "post_promotion_cbc": "not run because source JSON and generated data.txt are byte-identical; processed data differ only in unordered derived-set order and matrix dimensions match",
+  "hashes": {
+    "data_txt": "916129dc549d8dbb3777f3b2d4a610f73dfe4e25c978dea491acce8af01eb27c",
+    "data_processed_txt": "6e51202bef9747ff9354fca3677be828336506e61ec2e09a76e1adcdd9f2e452",
+    "lp": "0b4ee70bd59c4d1f374745bad9f7ad5b4489a6898b3793340734c03035f0f8f3"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "philippines-land-rejected-incident-v1",
+  "date": "2026-08-26",
+  "case": "Philippines_v27",
+  "status": "rejected_structurally_infeasible",
+  "canonical_parent": "Philippines_v25",
+  "cause": "PV and onshore-wind ITCR consumed PHL_LND outside eight cluster technologies whose fixed annual lower bounds already summed to the complete 295.8131 endowment.",
+  "proof_2020_10e3_km2": {
+    "national_supply": 295.8131,
+    "cluster_lower_bound_sum": 295.8131,
+    "pv_residual_footprint": 0.01214484,
+    "wind_residual_footprint": 0.004269,
+    "infeasibility_gap": 0.01641384
+  },
+  "preflight_defect": "The v27 reduced check omitted the eight fixed cluster lower bounds.",
+  "resolution_in_v28": "Remove solver-active renewable land. Treat its calculated footprint as a reporting-only subset of unchanged built-up land; explicitly validate the full cluster closure before GLPK generation.",
+  "cbc": "not launched for v28 by the preflight"
+}

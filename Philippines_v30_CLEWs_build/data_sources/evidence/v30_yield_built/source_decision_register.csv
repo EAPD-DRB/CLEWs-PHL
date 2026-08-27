@@ -1,0 +1,7 @@
+topic,candidate,decision,reason,locator
+paired crop systems,PSA Palay 2022 microdata,not used,requires access agreement and redistribution is restricted,https://psada.psa.gov.ph/catalog/250
+paired crop systems,PSA Tomato 2017 microdata,not used,"restricted, six-province tomato-only sample cannot represent every modeled crop",https://psada.psa.gov.ph/catalog/31
+crop yield initialization,inherited PSA 2020 anchor plus normalized GAEZ spatial pattern,used,source-traceable base-year initialization; no later observation is imposed,snapshots/crop_yields_2020.json; snapshots/agriculture_v24_2026-08-25.json
+crop yield projection,FAO FOFA 2050 Philippines Business As Usual crop yields,used,independent published projection by crop and water regime through 2050,https://www.fao.org/fileadmin/user_upload/global-perspective/csv/FOFA2050CountryData_Crop-production.csv.zip
+post-2020 yield,observed 2021-2024 anchors plus generic 1 percent growth,rejected,would use post-base outcomes and an unsourced generic trend,ASM_PHL_V24_PRODUCTIVITY
+renewable footprint,v28 BOI PV and NREL direct wind factors,used,retained source evidence and agreed direct-footprint boundary,SRC_PHL_V28_BOI_SOLAR_LAND;SRC_PHL_V28_NREL_WIND_LAND

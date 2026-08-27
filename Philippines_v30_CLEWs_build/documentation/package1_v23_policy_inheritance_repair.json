@@ -1,0 +1,257 @@
+{
+  "schema": "philippines-v23-policy-inheritance-repair-v1",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v23-package1-candidate-20260824",
+  "reason": "The initial builder cleared policy overrides outside the edited 2020-2025 BASE envelope.",
+  "scope": "TAMaxCI policy cells for Package 1 pre-2026 envelope technologies, years 2026-2053",
+  "restored_cell_count": 35,
+  "restored_cells": [
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2031",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2032",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2033",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2034",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2035",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2036",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2037",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2038",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2039",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2040",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2041",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2042",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2043",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2044",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2045",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2046",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2047",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2048",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2049",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2050",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2051",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2052",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_3hgjb",
+      "technology": "PHL_POW_PP_COAL",
+      "year": "2053",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_w03qj",
+      "technology": "PHL_POW_PP_NUSMR",
+      "year": "2032",
+      "before": null,
+      "after": 0.3
+    },
+    {
+      "scenario": "SC_w03qj",
+      "technology": "PHL_POW_PP_NUSMR",
+      "year": "2033",
+      "before": null,
+      "after": 0.3
+    },
+    {
+      "scenario": "SC_w03qj",
+      "technology": "PHL_POW_PP_NUSMR",
+      "year": "2034",
+      "before": null,
+      "after": 0.3
+    },
+    {
+      "scenario": "SC_w03qj",
+      "technology": "PHL_POW_PP_NU",
+      "year": "2026",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_w03qj",
+      "technology": "PHL_POW_PP_NU",
+      "year": "2027",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_w03qj",
+      "technology": "PHL_POW_PP_NU",
+      "year": "2028",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_w03qj",
+      "technology": "PHL_POW_PP_NU",
+      "year": "2029",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_w03qj",
+      "technology": "PHL_POW_PP_NU",
+      "year": "2030",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_w03qj",
+      "technology": "PHL_POW_PP_NU",
+      "year": "2031",
+      "before": null,
+      "after": 0
+    },
+    {
+      "scenario": "SC_w03qj",
+      "technology": "PHL_POW_PP_NU",
+      "year": "2032",
+      "before": null,
+      "after": 1.2
+    },
+    {
+      "scenario": "SC_w03qj",
+      "technology": "PHL_POW_PP_NU",
+      "year": "2033",
+      "before": null,
+      "after": 1.2
+    },
+    {
+      "scenario": "SC_w03qj",
+      "technology": "PHL_POW_PP_NU",
+      "year": "2034",
+      "before": null,
+      "after": 1.2
+    }
+  ],
+  "policy_optimizer_runs_before_detection": 0,
+  "total_optimizer_runs_before_detection": 1,
+  "model_generation_runs_before_detection": 0
+}

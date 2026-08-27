@@ -1,0 +1,3 @@
+regime,cash_costs_php_per_ha,fuel_oil_php_per_ha,irrigation_fee_php_per_ha,land_tax_php_per_ha,rentals_php_per_ha,interest_crop_loan_php_per_ha,net_cash_resource_cost_php_per_ha,total_costs_php_per_ha,total_cost_php_per_kg_2022,net_cash_share_of_total,total_cost_php_per_kg_2021_model_basis,net_cost_php_per_kg_2021_model_basis
+irrigated,33462.39,1729.6,150.51,177.81,857.1,220.4,30326.97,58489.28,14.72,0.5185047584788187,12.49,6.476124433400446
+rainfed,24753.39,885.18,0.0,209.51,698.65,116.54,22843.51,46064.2,15.81,0.4959059312872035,13.95,6.9178877414564885

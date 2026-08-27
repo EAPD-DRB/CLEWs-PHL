@@ -1,0 +1,211 @@
+{
+  "schema": "philippines-v16-irrigated-rice-water-validation-v1",
+  "generated_at_utc": "2026-08-11T21:15:50.840538+00:00",
+  "status": "pass",
+  "baseline_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v16-irrigation-control-20260811",
+  "baseline_run": "IRRIGATION_CONTROL",
+  "candidate_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v16-irrigation-water-20260811b",
+  "candidate_run": "IRRIGATION_WATER_TEST",
+  "solver": {
+    "status": "Optimal - objective value 369730088.36258739",
+    "cbc_wall_seconds": 343.34,
+    "matrix_rows": 791109,
+    "matrix_columns": 884956,
+    "matrix_nonzeros": 12552173
+  },
+  "checks": [
+    {
+      "name": "source_diff_scope",
+      "status": "pass",
+      "detail": [
+        "RYTCM.json"
+      ]
+    },
+    {
+      "name": "structural_and_non_forcing_identity",
+      "status": "pass",
+      "detail": {
+        "technologies": true,
+        "commodities": true,
+        "modes": true,
+        "constraints": true,
+        "demands": true,
+        "bounds": true
+      }
+    },
+    {
+      "name": "exact_cell_count",
+      "status": "pass",
+      "detail": {
+        "changed": 544,
+        "expected": 544
+      }
+    },
+    {
+      "name": "nia_design_duty_range",
+      "status": "pass",
+      "detail": {
+        "candidate_min": 1.3736598440545809,
+        "candidate_max": 2.5280214424951266,
+        "nia_range": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "name": "cbc_optimal",
+      "status": "pass",
+      "detail": "Optimal - objective value 369730088.36258739"
+    },
+    {
+      "name": "objective_continuity",
+      "status": "pass",
+      "detail": {
+        "baseline": 369730088.2957077,
+        "candidate": 369730088.3625874,
+        "absolute_change": 0.06687968969345093,
+        "percent_change": 1.8088787418339887e-08
+      }
+    },
+    {
+      "name": "capacity_unchanged",
+      "status": "pass",
+      "detail": {
+        "maximum_absolute_row_difference": 0.0,
+        "rows_changed_above_1e-8": 0,
+        "base_sum": 1564675272.9294,
+        "candidate_sum": 1564675272.9294
+      }
+    },
+    {
+      "name": "annual_emissions_unchanged",
+      "status": "pass",
+      "detail": {
+        "maximum_absolute_row_difference": 0.0,
+        "rows_changed_above_1e-8": 0,
+        "base_sum": 10983.8036,
+        "candidate_sum": 10983.8036
+      }
+    },
+    {
+      "name": "user_constraints_unchanged",
+      "status": "pass",
+      "detail": {
+        "UDC1_UserDefinedConstraintInequality.csv": {
+          "maximum_absolute_row_difference": 0.0,
+          "rows_changed_above_1e-8": 0,
+          "base_sum": 0.0,
+          "candidate_sum": 0.0
+        },
+        "UDC2_UserDefinedConstraintEquality.csv": {
+          "maximum_absolute_row_difference": 0.0,
+          "rows_changed_above_1e-8": 0,
+          "base_sum": -6371.234489367531,
+          "candidate_sum": -6371.234489367531
+        }
+      }
+    },
+    {
+      "name": "annual_irrigated_rice_area_unchanged",
+      "status": "pass",
+      "detail": {
+        "maximum_annual_activity_difference_1000km2": 9.999999999976694e-05,
+        "candidate_2020_activity_1000km2": 20.0599,
+        "candidate_2020_area_mha": 2.0059899999999997
+      }
+    },
+    {
+      "name": "physical_water_effect_disclosed",
+      "status": "pass",
+      "detail": {
+        "2020": {
+          "baseline_km3": 0.4332,
+          "candidate_km3": 40.403
+        },
+        "2053": {
+          "baseline_km3": 0.4332,
+          "candidate_km3": 41.094
+        },
+        "candidate_min_km3": 40.0676,
+        "candidate_max_km3": 41.6362,
+        "maximum_adjacent_year_change_km3": 1.0264000000000024,
+        "maximum_adjacent_year_change_year": 2053,
+        "candidate_2020_m3_per_ha": 20141.076769690928
+      }
+    },
+    {
+      "name": "water_balance_duals_recorded",
+      "status": "pass",
+      "detail": {
+        "maximum_absolute_row_difference": 0.0001932215392326,
+        "rows_changed_above_1e-8": 11,
+        "base_sum": 0.0023123271714902997,
+        "candidate_sum": 0.0035856400616755997
+      }
+    },
+    {
+      "name": "result_identity_and_freshness",
+      "status": "pass",
+      "detail": {
+        "candidate_case": ".Philippines_v16-irrigation-water-20260811b",
+        "candidate_run": "IRRIGATION_WATER_TEST",
+        "candidate_result_utc": "2026-08-11T21:15:03.554507+00:00",
+        "baseline_result_utc": "2026-08-11T21:08:18.705799+00:00"
+      }
+    }
+  ],
+  "output_comparisons": {
+    "TotalAnnualTechnologyActivityByMode.csv": {
+      "maximum_absolute_row_difference": 81.8763,
+      "rows_changed_above_1e-8": 1878,
+      "base_sum": 438624.2513,
+      "candidate_sum": 439930.2067999999
+    },
+    "TotalCapacityAnnual.csv": {
+      "maximum_absolute_row_difference": 0.0,
+      "rows_changed_above_1e-8": 0,
+      "base_sum": 1564675272.9294,
+      "candidate_sum": 1564675272.9294
+    },
+    "AnnualTechnologyEmission.csv": {
+      "maximum_absolute_row_difference": 0.0,
+      "rows_changed_above_1e-8": 0,
+      "base_sum": 10983.8036,
+      "candidate_sum": 10983.8036
+    },
+    "UDC1_UserDefinedConstraintInequality.csv": {
+      "maximum_absolute_row_difference": 0.0,
+      "rows_changed_above_1e-8": 0,
+      "base_sum": 0.0,
+      "candidate_sum": 0.0
+    },
+    "UDC2_UserDefinedConstraintEquality.csv": {
+      "maximum_absolute_row_difference": 0.0,
+      "rows_changed_above_1e-8": 0,
+      "base_sum": -6371.234489367531,
+      "candidate_sum": -6371.234489367531
+    }
+  },
+  "water_impact": {
+    "2020": {
+      "baseline_km3": 0.4332,
+      "candidate_km3": 40.403
+    },
+    "2053": {
+      "baseline_km3": 0.4332,
+      "candidate_km3": 41.094
+    },
+    "candidate_min_km3": 40.0676,
+    "candidate_max_km3": 41.6362,
+    "maximum_adjacent_year_change_km3": 1.0264000000000024,
+    "maximum_adjacent_year_change_year": 2053,
+    "candidate_2020_m3_per_ha": 20141.076769690928
+  },
+  "limitations": [
+    "The 38 percent efficiency is national rather than cluster- and scheme-specific.",
+    "The 2 mm/day percolation value represents a conservative heavy, well-puddled clay design case; cluster soil observations should replace it when available.",
+    "The annualization holds 2020 national cropping intensity constant through 2053.",
+    "The existing model does not separately route recoverable paddy seepage, drainage, or conveyance return flows; this repair corrects gross withdrawal coefficients without adding structural water-return commodities."
+  ]
+}

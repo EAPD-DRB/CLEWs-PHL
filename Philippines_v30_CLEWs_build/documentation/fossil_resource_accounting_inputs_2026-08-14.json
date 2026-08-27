@@ -1,0 +1,111 @@
+{
+  "schema": "philippines-v18-fossil-resource-accounting-inputs-v1",
+  "date": "2026-08-14",
+  "master_rule_classification": {
+    "continuing_physical_or_resource_constraints": [
+      "Semirara mine legal/design capability",
+      "DOE mineable coal reserve",
+      "Galoc existing-well work-program deliverability, decline and cessation",
+      "Galoc opening 2P reserve"
+    ],
+    "exogenous_economic_drivers": [
+      "coal extraction cash cost",
+      "Galoc approved operating budget",
+      "realized/forecast coal price",
+      "Brent history/forecast"
+    ],
+    "benchmark_only": [
+      "annual coal production",
+      "annual oil production",
+      "domestic sales",
+      "exports",
+      "domestic/import shares"
+    ]
+  },
+  "coal": {
+    "energy_content_gj_per_tonne": 22.1,
+    "annual_capability": {
+      "2020-2024_mt_per_year": 16.0,
+      "2025-2027_mt_per_year": 20.0,
+      "2028-2053_mt_per_year": 16.0,
+      "interpretation": "Semirara legal/design mine envelope; the 2025 ECC amendment establishes 20 Mt/y only through 2027, so the prior 16 Mt/y envelope resumes afterward."
+    },
+    "opening_2020_mineable_reserve_mt": 418.323415,
+    "opening_reserve_calculation": "DOE mineable reserve at 2023-12-31 (362.067415 Mt) plus national 2020-2023 depletion (12.951 + 14.048 + 14.457 + 14.800 Mt).",
+    "model_period_activity_cap_pj": 9244.9474715,
+    "extraction_cost_anchor_2025_usd_per_gj": 1.126548367831417,
+    "extraction_cost_calculation": "PHP 22.048 billion coal cash cost / 15.4 Mt shipments / 57.5051 PHP per USD / 22.1 GJ per tonne; inherited temporal shape retained around the anchor."
+  },
+  "oil": {
+    "energy_content_gj_per_barrel": 6.119,
+    "annual_deliverability": {
+      "2026_barrels": 360000.0,
+      "2020-2025_method": "Backcast the operator's 2026 three-cargo work-program envelope at the stated 10% annual field decline.",
+      "2027_barrels": 74958.90410958904,
+      "2027_method": "Prorate 360,000 bbl over 76 days through planned 17 March cessation.",
+      "2028-2053_barrels": 0.0
+    },
+    "opening_2020_2p_reserve_million_barrels": 3.680736,
+    "opening_reserve_calculation": "End-2025 gross 2P reserve (0.434 MMbbl) plus 2020-2025 depletion (0.695247 + 0.630250 + 0.565084 + 0.475183 + 0.478999 + 0.401973 MMbbl).",
+    "model_period_activity_cap_pj": 22.522423584,
+    "extraction_cost_anchor_2026_usd_per_gj": 9.097347061066623,
+    "extraction_cost_calculation": "Approved 2026 firm budget of USD 20.04 million / 360,000 bbl / 6.119 GJ per barrel; inherited temporal shape retained around the anchor."
+  },
+  "trade_representation": {
+    "method": "Domestic extraction produces source-tagged coal/oil. A unit bridge can feed the existing domestic raw-fuel pool, or an optional consume-only export technology can receive export revenue. Imports continue to feed only the existing domestic pool and cannot reach either export sink.",
+    "export_activity_constraints": "None beyond gross domestic extraction deliverability and reserve constraints.",
+    "post_2027_price_assumption": "The 2027 World Bank forecast is held constant because no cited longer-horizon series was introduced; this is disclosed rather than treated as observed activity."
+  },
+  "sources": [
+    {
+      "title": "DOE Coal Resources/Reserves as of 31 December 2023",
+      "url": "https://doe.gov.ph/sites/default/files/pdf/energy_resources/2023-12-31%20Coal%20Resources-Reserves.pdf",
+      "use": "362.067415 Mt mineable coal reserve"
+    },
+    {
+      "title": "DOE 2022 Philippine Energy Situationer and Key Energy Statistics",
+      "url": "https://www.doe.gov.ph/sites/default/files/pdf/energy_statistics/DOE-Situationer-%26-Key-Energy-Stat-2022.pdf",
+      "use": "2020-2022 coal depletion and energy statistics"
+    },
+    {
+      "title": "DOE 2023 Philippine Energy Situationer",
+      "url": "https://legacy.doe.gov.ph/sites/default/files/pdf/energy_statistics/2023%20Philippine%20Energy%20Situationer.pdf",
+      "use": "2023 coal depletion"
+    },
+    {
+      "title": "DOE 2024 Philippine Energy Situationer and Key Energy Statistics",
+      "url": "https://prod-cms.doe.gov.ph/documents/d/guest/2024-philippine-energy-situationer-and-key-energy-statistics-pdf",
+      "use": "coal energy-content cross-check and production/export benchmarks"
+    },
+    {
+      "title": "Semirara Mining and Power Corporation 2025 Annual and Sustainability Report",
+      "url": "https://semiraramining.com/storage/app/media/SMPC_ASR_2025_compressed_f.pdf",
+      "use": "16-to-20 Mt/y ECC capability amendment, shipments and realized prices"
+    },
+    {
+      "title": "SMPC Q4 2025 Analysts' Briefing",
+      "url": "https://semiraramining.com/storage/app/media/SCC%20Q4%202025%20AB%20Deck%20vF%20260325.pdf",
+      "use": "coal cash cost and shipment anchor"
+    },
+    {
+      "title": "Philodrill 2026 Information Statement",
+      "url": "https://philodrill.com/wp-content/uploads/2026/05/PSE-Disclosure-Form-17-5-Information-Statement-for-Annual-Stockholders-Meeting_04MAY2026.pdf",
+      "use": "Galoc 2P reserve, 2026 work program, decline, budget and 2027 cessation"
+    },
+    {
+      "title": "PXP/FEC Resources SEC filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/849997/000147793223002076/fecof_ex1.htm",
+      "use": "Galoc 2020-2022 depletion accounting"
+    },
+    {
+      "title": "World Bank Commodity Markets Outlook forecasts, April 2026",
+      "url": "https://thedocs.worldbank.org/en/doc/f3138644a1e8e2bb631399ae11d6c408-0050012026/related/CMO-April-2026-Forecasts.pdf",
+      "use": "coal and Brent forecast price drivers"
+    },
+    {
+      "title": "Bangko Sentral ng Pilipinas exchange-rate statistics",
+      "url": "https://www.bsp.gov.ph/statistics/external/tab12_pus.aspx",
+      "use": "PHP/USD conversion of Philippine price and cost anchors"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "philippines-v18-fossil-resource-accounting-validation-v1",
+  "status": "pass_with_disclosed_benchmark_gap",
+  "date": "2026-08-14",
+  "baseline": {
+    "case": "tmp/phl-v18-re-nuclear-20260813/candidate",
+    "run": "TOMORROWLAND",
+    "source_byte_identical_to_prechange_live": true,
+    "status": "optimal",
+    "objective": 369766929.90727115,
+    "cbc_wall_seconds": 426.77,
+    "matrix": {
+      "rows": 791532,
+      "columns": 886010,
+      "matrix_nonzeros": 12818407
+    },
+    "results_sha256": "233a47e0549414521ea5ec8ba839ffd076d373223afcea15cc9521371a29961f"
+  },
+  "candidate": {
+    "case": ".Philippines_v18-fossil-resource-candidate",
+    "run": "TOMORROWLAND",
+    "status": "optimal",
+    "objective": 369760466.35339457,
+    "objective_change": -6463.553876578808,
+    "objective_change_percent": -0.0017480075566012054,
+    "cbc_wall_seconds": 432.01,
+    "cbc_wall_change_percent": 1.2278276354945383,
+    "matrix": {
+      "rows": 808404,
+      "columns": 900022,
+      "matrix_nonzeros": 12892667,
+      "objective_nonzeros": 427456
+    },
+    "matrix_delta": {
+      "rows": 16872,
+      "columns": 14012,
+      "matrix_nonzeros": 74260
+    },
+    "hashes": {
+      "data_txt": "6187825af1e1b6b7f7cd82dfc8ee0e8e8fc6c1717a1ff2ebfaa3e4769c9e58a0",
+      "data_processed_txt": "d66d3c70919433e0f4c1401f0c2cf40c56d112f705792b3b49b8d587d78bf081",
+      "lp": "956d02194954ab3e301091eeabdbf52ee48397f3763bdb4402f5db63979dd553",
+      "results": "27683f53a9942d9b7e3c8713f9e6d73a197f3c9d9665be605229c2c7a451065d"
+    }
+  },
+  "optimizer_runs": [
+    {
+      "sequence": 1,
+      "status": "rejected_after_optimal_solve",
+      "objective": 369745962.64572704,
+      "cbc_wall_seconds": 353.58,
+      "reason": "The active COAL_PHASEOUT TAU override retained 999999, so the generated model bypassed the intended annual coal capability and exported the full reserve in 2022. The failed equation/source indices were AAC2[RE1,PHL_PRO_EXTR_COAL,2022] and RYT.json/TAU/SC_3hgjb."
+    },
+    {
+      "sequence": 2,
+      "status": "accepted_optimal_corrective_candidate",
+      "objective": 369760466.35339457,
+      "cbc_wall_seconds": 432.01,
+      "reason": "Required corrective exception because run 1 did not represent the intended physical constraint."
+    }
+  ],
+  "deterministic_and_matrix_checks": {
+    "source_file_allowlist": "pass",
+    "source_tagged_domestic_export_topology": "pass",
+    "imports_cannot_feed_exports": "pass",
+    "annual_and_cumulative_resource_envelopes": "pass",
+    "all_nonbase_fossil_TAU_cells_inherit_base": "pass",
+    "generated_mode_sets_and_IAR_OAR": "pass",
+    "glpsol_model_generation_and_lp_export": "pass",
+    "independent_glpsol_lp_check": "pass"
+  },
+  "outcome_ledger_pj": {
+    "coal": {
+      "total_extraction_2020_2053": 9244.94747,
+      "total_domestic_bridge": 8537.74750,
+      "total_exports": 707.2,
+      "total_imports": 43702.49870,
+      "maximum_annual_branch_balance_error": 0.0,
+      "reserve_cap_binding": true,
+      "reserve_exhaustion_year": 2045,
+      "exports_by_year": {
+        "2022": 353.6
+      }
+    },
+    "oil": {
+      "total_extraction_2020_2027": 22.08343449,
+      "total_domestic_bridge": 18.72595850,
+      "total_exports": 3.35747599,
+      "total_imports_2020_2053": 2356.6758,
+      "maximum_annual_branch_balance_error": 0.0,
+      "activity_2028_2053": 0.0,
+      "opening_reserve_slack_pj": 0.43898909,
+      "exports_by_year": {
+        "2022": 3.35747599
+      }
+    }
+  },
+  "benchmark_assessment": {
+    "observed_activity_used_as_constraint": false,
+    "coal": "The endogenous solution sends the full 2022 domestic extraction envelope to export and uses imports domestically. This overstates observed coal exports and demonstrates unresolved coal-grade/plant-compatibility and import/export price-basis aggregation; no export target or share was added to conceal the gap.",
+    "oil": "The solution exports 2022 Galoc output but uses extraction domestically in other producing years. Observed regional Galoc sales indicate unresolved crude-grade/refinery-routing aggregation; no activity target was added.",
+    "interpretation": "The promoted formulation fixes unlimited extraction and represents physically valid trade routes. It is not a historical trade-share calibration."
+  },
+  "unexpected_changes_review": {
+    "source_changes_outside_allowlist": 0,
+    "annual_activity_cells_changed_outside_direct_fossil_supply": 830,
+    "interpretation": "Differences are dominated by alternative zero/near-zero-cost land, accounting, capacity-vintage and dispatch bases plus logically adjacent fuel-processing and generation substitutions. They are disclosed rather than treated as new source calibration."
+  },
+  "promotion": {
+    "source_files_byte_identical_to_solved_candidate": true,
+    "live_data_txt_byte_identical_to_solved_candidate": true,
+    "live_data_txt_sha256": "6187825af1e1b6b7f7cd82dfc8ee0e8e8fc6c1717a1ff2ebfaa3e4769c9e58a0",
+    "live_data_processed_txt_sha256": "5f9579f2c474a9772ab3611f67b02d575820c6552d4d2f5158b81ca01ba9c592",
+    "candidate_data_processed_txt_sha256": "d66d3c70919433e0f4c1401f0c2cf40c56d112f705792b3b49b8d587d78bf081",
+    "processed_set_order_normalized_equivalent": true,
+    "processed_set_order_normalized_sha256": "20f592e8ebfc99c37eddaf35e3715ca52056d6ca6601a6532e9de7f5edd9d267",
+    "live_glpsol_check": "pass",
+    "live_matrix": {
+      "rows": 808404,
+      "columns": 900022,
+      "matrix_nonzeros": 12892667,
+      "objective_nonzeros": 427456
+    },
+    "post_promotion_optimizer_run": "not run because source and generated model identity were established"
+  }
+}

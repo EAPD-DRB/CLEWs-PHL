@@ -1,0 +1,153 @@
+{
+  "schema": "philippines-v16-irrigated-rice-water-inputs-v1",
+  "frozen_on": "2026-08-11",
+  "model_scope": {
+    "case": "Philippines_v16",
+    "parameter": "InputActivityRatio",
+    "commodity_id": "COM_sp9qb",
+    "commodity": "AGRWATPHL",
+    "modes": {
+      "17": "low-input irrigated rice",
+      "19": "high-input irrigated rice"
+    },
+    "years": "2020-2053",
+    "model_activity_unit": "1000 km2 of physical service area",
+    "coefficient_unit": "km3 gross irrigation diversion per 1000 km2 per year"
+  },
+  "classification": {
+    "engineering_inputs": "continuing physical input coefficients",
+    "irrigation_service_area": "initial physical stock",
+    "crop_output_demand": "existing exogenous final demand; unchanged",
+    "national_irrigation_withdrawal": "benchmark only; not used to scale coefficients",
+    "irrigated_rice_activity": "endogenous; no target, share, minimum, or equality is added"
+  },
+  "sources": {
+    "gaez_v4": {
+      "title": "Global Agro-Ecological Zones version 4 Model Documentation",
+      "provider": "FAO and IIASA",
+      "url": "https://gaez-v4-data.fao.org/data/documentation/GAEZ%20v4%20Model%20Documentation.pdf",
+      "use": "The inherited CWD/WDe raster is ETm minus ETa, retained as the crop-climate deficit component rather than treated as total paddy duty."
+    },
+    "fao_paddy_scheduling": {
+      "title": "Irrigation water management: Irrigation scheduling, Chapter 4",
+      "provider": "FAO",
+      "url": "https://www.fao.org/4/T7202E/t7202e07.htm",
+      "exact_inputs": {
+        "saturation_mm_per_season": 200,
+        "percolation_mm_per_day_heavy_well_puddled_clay": 2,
+        "water_layer_range_mm": "20-100"
+      },
+      "use": "Rice net irrigation is ETcrop plus saturation plus percolation plus water layer minus effective precipitation."
+    },
+    "fao_scheme_water_need": {
+      "title": "Scheme Irrigation Water Need and Supply",
+      "provider": "FAO",
+      "url": "https://www.fao.org/4/u5835e/u5835e04.htm",
+      "exact_inputs": {
+        "saturation_mm_per_season": 200,
+        "water_layer_mm_per_season": 50,
+        "gross_relation": "gross irrigation requirement = net irrigation requirement / scheme efficiency"
+      }
+    },
+    "fao_rice_water_productivity": {
+      "title": "Rice and water: a long and diversified story",
+      "provider": "FAO",
+      "url": "https://www.fao.org/4/y5682e/y5682e09.htm",
+      "exact_inputs": {
+        "reference_season_days": 100,
+        "land_preparation_range_mm": "150-250",
+        "percolation_range_mm": "200-700",
+        "drainage_range_mm": "50-100",
+        "total_field_requirement_range_mm_per_season": "900-2250"
+      },
+      "use": "Independent engineering-range check, not a national-total calibration target."
+    },
+    "nia_design_duty": {
+      "title": "NIA Memorandum Circular No. 125 s. 2025: Updated Design Criteria for Irrigation Canal Structures",
+      "provider": "National Irrigation Administration",
+      "url": "https://omcrs.nia.gov.ph/?q=system/files/mc/2025_125.pdf",
+      "exact_inputs": {
+        "soil_design_duty_l_per_s_per_ha": {
+          "clay": 1.0,
+          "silty_clay": 1.5,
+          "clay_loam": 2.0,
+          "silty_clay_loam": 2.5,
+          "loam": 3.0,
+          "silty_loam": 3.5,
+          "sandy_clay": 4.0,
+          "sandy_clay_loam": 4.5,
+          "sandy_loam": 5.0
+        }
+      },
+      "use": "Independent seasonal flow-duty plausibility check."
+    },
+    "philrice_efficiency": {
+      "title": "Rice farming and irrigation FAQ",
+      "provider": "Philippine Rice Research Institute",
+      "url": "https://dbmp.philrice.gov.ph/FAQs/src/search.php",
+      "exact_inputs": {
+        "national_irrigation_delivery_efficiency_fraction": 0.38
+      }
+    },
+    "psa_openstat": {
+      "title": "2020 national palay area by ecosystem",
+      "provider": "Philippine Statistics Authority OpenSTAT",
+      "local_snapshot": "snapshots/psa_openstat_agriculture_2020.json",
+      "exact_inputs": {
+        "irrigated_palay_harvested_area_ha": 3253454.36
+      }
+    },
+    "psa_ssaf_2022": {
+      "title": "Selected Statistics on Agriculture and Fisheries 2022",
+      "provider": "Philippine Statistics Authority",
+      "url": "https://psa.gov.ph/system/files/main-publication/%2528ons-cleared%2529_SSAF%25202022%2520as%2520of%252030082022_ONS-signed.pdf",
+      "exact_inputs": {
+        "national_irrigation_service_area_ha_2020": 2006000
+      }
+    }
+  },
+  "engineering_assumptions": {
+    "saturation_mm_per_crop": 200,
+    "percolation_mm_per_day": 2,
+    "season_days": 100,
+    "standing_water_layer_mm_per_crop": 50,
+    "paddy_addition_mm_per_crop": 450,
+    "irrigation_efficiency_fraction": 0.38,
+    "cropping_intensity_crops_per_year": "3253454.36 / 2006000",
+    "rationale": "A conservative clay, well-puddled paddy lower engineering case is used uniformly because cluster soil and scheme-loss observations are not available."
+  },
+  "gaez_water_deficit_m_per_crop": {
+    "17": {
+      "TEC_ibnh8": "0.0081",
+      "TEC_9lvqs": "0.0010",
+      "TEC_3mwof": "0.0026",
+      "TEC_ckkki": "0.0018",
+      "TEC_1ky0a": "0.0260",
+      "TEC_oeqz2": "0.0042",
+      "TEC_72dqm": "0.0820",
+      "TEC_xaiae": "0.0010"
+    },
+    "19": {
+      "TEC_ibnh8": "0.0960",
+      "TEC_9lvqs": "0.0380",
+      "TEC_3mwof": "0.0740",
+      "TEC_ckkki": "0.0360",
+      "TEC_1ky0a": "0.2300",
+      "TEC_oeqz2": "0.1000",
+      "TEC_72dqm": "0.3800",
+      "TEC_xaiae": "0.0082"
+    }
+  },
+  "calculations": {
+    "cropping_intensity": "irrigated palay harvested area / irrigation service area",
+    "annual_gross_iar": "(GAEZ WDe metres per crop + 0.450 metres paddy additions per crop) * crops per year / 0.38",
+    "volume_conversion": "1 metre over 1000 km2 = 1 km3; equivalently coefficient * 10000 = m3/ha/year",
+    "seasonal_design_duty": "((GAEZ WDe + 0.450) / 0.38) / 0.864 = L/s/ha over 100 days"
+  },
+  "limitations": [
+    "The 38 percent efficiency is national rather than cluster- and scheme-specific.",
+    "The 2 mm/day percolation value represents a conservative heavy, well-puddled clay design case; cluster soil observations should replace it when available.",
+    "The annualization holds 2020 national cropping intensity constant through 2053.",
+    "The existing model does not separately route recoverable paddy seepage, drainage, or conveyance return flows; this repair corrects gross withdrawal coefficients without adding structural water-return commodities."
+  ]
+}

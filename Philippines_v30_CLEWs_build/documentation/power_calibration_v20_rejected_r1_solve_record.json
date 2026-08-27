@@ -1,0 +1,26 @@
+{
+  "optimizer_runs": 1,
+  "purpose": "Validate the one combined dependable-capacity and Malampaya take-or-pay candidate",
+  "why_deterministic_checks_were_insufficient": "Dispatch and coupled perfect-foresight effects require optimization",
+  "sensitivity_runs": 0,
+  "status": "Optimal - objective value 369737801.89517444",
+  "case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v20-power-calibration-candidate",
+  "run": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v20-power-calibration-candidate/res/POWER_CALIBRATION_V20_BASE",
+  "timings_seconds": {
+    "generate_datafile": 2.3427845840014925,
+    "preprocess_data": 0.009368541999720037,
+    "glpsol_check_and_lp": 41.07662366599834,
+    "cbc_solve": 184.3029682910019,
+    "csv_export": 9.299275125005806,
+    "viewer_export": 11.220229875005316,
+    "total": 252.78935433399965
+  },
+  "artifacts": {
+    "data": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v20-power-calibration-candidate/res/POWER_CALIBRATION_V20_BASE/data.txt",
+    "processed_data": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v20-power-calibration-candidate/res/POWER_CALIBRATION_V20_BASE/data_processed.txt",
+    "lp": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v20-power-calibration-candidate/res/POWER_CALIBRATION_V20_BASE/lp.lp",
+    "results": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v20-power-calibration-candidate/res/POWER_CALIBRATION_V20_BASE/results.txt",
+    "cbc_log": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v20-power-calibration-candidate/res/POWER_CALIBRATION_V20_BASE/cbc.log",
+    "csv": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v20-power-calibration-candidate/res/POWER_CALIBRATION_V20_BASE/csv"
+  }
+}

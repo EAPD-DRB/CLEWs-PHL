@@ -1,0 +1,14 @@
+{
+  "schema": "philippines-v20-power-promotion-identity-v1",
+  "status": "passed",
+  "source_files_byte_identical": 21,
+  "candidate_data_sha256": "13b8231a4f6fae9d9c69b1551d8ea6f56bf12780664ec81c865f8465694d70af",
+  "live_data_sha256": "13b8231a4f6fae9d9c69b1551d8ea6f56bf12780664ec81c865f8465694d70af",
+  "matrix": {
+    "rows": 809933,
+    "columns": 901586,
+    "nonzeros": 13080959
+  },
+  "optimizer_runs": 0,
+  "reason_no_live_solve": "promoted source and generated data.txt are byte-identical to the solved accepted candidate"
+}

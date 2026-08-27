@@ -1,0 +1,68 @@
+{
+  "schema": "philippines-v18-land-water-bounds-build-v1",
+  "status": "pass",
+  "source_case": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-deployment-envelope-20260813/candidate",
+  "target_case": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-land-water-bounds-20260813/candidate/Philippines_v18",
+  "formulation": "parameter-only exact geographic cluster activity bounds",
+  "rejected_formulation": "aggregate Tag-1 UDC; CBC timeout after 430 seconds",
+  "changed_source_files": [
+    "RYT.json",
+    "RYTCM.json"
+  ],
+  "source_hashes": {
+    "RYT.json": "77087d53693e888bb4e86bdc8e5b2a8ee3a8dffb82ec5a15295d3ba14e46e94d",
+    "RYTCM.json": "7ee2534727a3832098026ad2d6b9639a5e0397e7cc97b7be07abc1b2d39b6a70",
+    "genData.json": "8ff629771d77b66f07ed07108ff127e9f777f51c502910acc29374dd6ba38a8e"
+  },
+  "target_hashes": {
+    "RYT.json": "f7e846bb1214d5279218f40734973081f22d4bdc395d51f4163c4ee7bbfaa959",
+    "RYTCM.json": "053214503a9b9bc3a134253d40b7f06e992b26f7e87c7b7dd137c10d3f7d5e24",
+    "genData.json": "8ff629771d77b66f07ed07108ff127e9f777f51c502910acc29374dd6ba38a8e"
+  },
+  "national_land_area_1000km2": "295.8131",
+  "cluster_areas_1000km2": {
+    "LNDAGRPHLC01": "9.1115",
+    "LNDAGRPHLC02": "23.6817",
+    "LNDAGRPHLC03": "103.2149",
+    "LNDAGRPHLC04": "27.3872",
+    "LNDAGRPHLC05": "27.1799",
+    "LNDAGRPHLC06": "18.7069",
+    "LNDAGRPHLC07": "18.385",
+    "LNDAGRPHLC08": "68.146"
+  },
+  "land_bound_cells_changed": 272,
+  "water_cells_changed": 19618,
+  "water_checks": {
+    "maximum_absolute_serialized_water_balance_residual": "4.7E-16",
+    "minimum_nonnegative_excess_water": "0.4338451246122988"
+  },
+  "ledger_rows_added": {
+    "CALCULATIONS.csv": 4,
+    "ASSUMPTIONS.csv": 4,
+    "MODEL_MAP.csv": 19892,
+    "GAPS.csv": 1,
+    "CHANGES.csv": 1
+  },
+  "non_forcing_assertions": {
+    "final_demand_changed": false,
+    "crop_or_land_cover_mode_fixed": false,
+    "irrigated_area_fixed": false,
+    "withdrawal_total_or_source_share_fixed": false,
+    "source_derived_geographic_cluster_totals_fixed": true,
+    "cluster_mode_water_conservation_restored": true
+  },
+  "validation_status": {
+    "source_generation": "passed",
+    "deterministic_design_checks": "passed",
+    "generate_datafile": "passed",
+    "preprocess_data": "passed",
+    "glpsol_check": "passed",
+    "cbc": "passed_optimal",
+    "baseline_comparison": "passed",
+    "promotion_identity": "passed"
+  },
+  "validation_report_sha256": "da08b2044d9d654e79f06b9fcfea09e288e0c7bc6604926119d23b78a1408598",
+  "runtime_incident_sha256": "6ac5d339568b71d88bfc7c5a20a36c68324fe09eecb650100dd6365db934ee18",
+  "optimizer_runs_total": 2,
+  "promotion_identity_sha256": "a331f681642731a3b9d687fed765e30d5781e79116579782f01f8fa31e8b2f05"
+}

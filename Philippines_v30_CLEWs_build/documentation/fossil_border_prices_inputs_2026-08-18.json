@@ -1,0 +1,125 @@
+{
+  "schema": "philippines-v18-fossil-border-prices-input-ledger-v1",
+  "date": "2026-08-18",
+  "case": "Philippines_v18",
+  "scope": "Historical 2020-2024 landed import costs and domestic-resource export revenues for coal and crude oil",
+  "intended_behavior": "Domestic extraction may serve the domestic raw-fuel pool or an optional export sink. Imports remain open and can serve only the domestic pool. Consistent external border prices determine the routing endogenously; no production, trade volume, share or dispatch outcome is imposed.",
+  "master_rule_classification": {
+    "exogenous_economic_drivers": [
+      "Philippine landed coal import unit value",
+      "Philippine coal export unit value",
+      "Philippine landed crude import unit value",
+      "Galoc realized crude export price"
+    ],
+    "benchmark_only": [
+      "annual coal and crude production",
+      "annual coal and crude imports",
+      "annual coal and crude exports",
+      "domestic/import source shares"
+    ],
+    "constraints_added_or_changed": [],
+    "assessment": "Changing external prices calibrates an underlying economic driver and does not force an endogenous trade outcome. Observed trade quantities are not used in TAL, TAU, shares or equalities."
+  },
+  "technology_classification": {
+    "PHL_PRO_IMP_COAL": "open import backstop producing the existing raw-coal pool; only mode 1 has nonzero output",
+    "PHL_PRO_EXP_COAL": "optional consume-only accounting sink for source-tagged domestic coal",
+    "PHL_PRO_IMP_OIL": "open import backstop producing the existing raw-crude pool; only mode 1 has nonzero output",
+    "PHL_PRO_EXP_OIL": "optional consume-only accounting sink for source-tagged Galoc crude"
+  },
+  "equation_mapping": {
+    "source": "RYTM.json / VC / SC_0 / mode 1",
+    "generated_parameter": "VariableCost[RE1,technology,1,year] in res/TOMORROWLAND/data.txt and data_processed.txt",
+    "active_formulation": "WebAPP/SOLVERs/model.v.5.4.txt",
+    "objective_effect": "RateOfActivity * YearSplit * VariableCost enters the discounted objective directly",
+    "accounting_equation": "OC1_OperatingCostsVariable equates the timeslice activity-cost sum to AnnualVariableOperatingCost",
+    "scenario_behavior": "SC_3hgjb, SC_huc7i and SC_w03qj retain null VC cells and inherit SC_0",
+    "sign_convention": "landed import cost is positive; external export revenue is stored as negative variable cost"
+  },
+  "units_and_conversions": {
+    "model_cost": "MUSD/PJ; numerically equal to USD/GJ",
+    "coal_energy_content_gj_per_tonne": 22.1,
+    "oil_energy_content_gj_per_barrel": 6.119,
+    "litres_per_barrel": 158.987294928,
+    "oil_energy_gj_per_million_litres": 38487.35210427405,
+    "coal_formula": "USD / tonnes / 22.1 GJ per tonne",
+    "oil_import_formula": "million USD * 1,000,000 / (million litres * 1,000,000 / 158.987294928 * 6.119)",
+    "oil_export_formula": "USD per barrel / 6.119 GJ per barrel"
+  },
+  "inputs": {
+    "coal_import": {
+      "technology": "PHL_PRO_IMP_COAL",
+      "basis": "Philippine customs CIF value divided by reported coal mass",
+      "records": {
+        "2020": {"cif_usd": 1576779596.0, "tonnes": 28714486.293, "weight_field": "net", "before": 3.033342887, "after": 2.484721206698629},
+        "2021": {"cif_usd": 2889379944.0, "tonnes": 31288972.598, "weight_field": "net", "before": 3.045285182, "after": 4.178506453900265},
+        "2022": {"cif_usd": 6041729748.0, "tonnes": 31533021.23731, "weight_field": "net", "before": 3.057227477, "after": 8.669687389092292},
+        "2023": {"cif_usd": 4079385358.0, "tonnes": 36426394.037367, "weight_field": "net", "before": 3.069169772, "after": 5.067412727453258},
+        "2024": {"cif_usd": 3303503964.0, "tonnes": 39395101.47224, "weight_field": "gross; net unavailable", "before": 3.081112066, "after": 3.794375741890079}
+      }
+    },
+    "coal_export": {
+      "technology": "PHL_PRO_EXP_COAL",
+      "basis": "Philippine customs FOB value divided by reported coal mass",
+      "records": {
+        "2020": {"fob_usd": 231105111.0, "tonnes": 7358240.05151, "before": -1.4598438846050035, "after": -1.4211611429397448},
+        "2021": {"fob_usd": 596372203.0, "tonnes": 10587430.0, "before": -2.475823605459511, "after": -2.548793007987877},
+        "2022": {"fob_usd": 883113332.0, "tonnes": 7918716.873447, "before": -4.265924652707136, "after": -5.046256851285005},
+        "2023": {"fob_usd": 614448559.0, "tonnes": 8151075.621, "before": -3.087627285320024, "after": -3.4109734113574075},
+        "2024": {"fob_usd": 515548611.0, "tonnes": 9074750.0, "before": -2.2529672360285233, "after": -2.570648386783526}
+      }
+    },
+    "oil_import": {
+      "technology": "PHL_PRO_IMP_OIL",
+      "basis": "DOE crude import bill divided by DOE crude import volume; one internally consistent landed-cost series",
+      "records": {
+        "2020": {"bill_musd": 1470.36, "volume_million_litres": 5237.8, "before": 13.95098882, "after": 7.293848446627664, "source_report": "DOE FY2020"},
+        "2021": {"bill_musd": 2271.842, "volume_million_litres": 4721.0, "before": 14.18481896, "after": 12.503341430886355, "source_report": "DOE FY2022 revised 2021 comparator"},
+        "2022": {"bill_musd": 4429.924, "volume_million_litres": 6892.0, "before": 14.41864909, "after": 16.7006345869939, "source_report": "DOE FY2022"},
+        "2023": {"bill_musd": 4174.52, "volume_million_litres": 7550.0, "before": 14.65247922, "after": 14.366188528464367, "source_report": "DOE FY2023"},
+        "2024": {"bill_musd": 4198.6, "volume_million_litres": 7213.24, "before": 14.88630935, "after": 15.123631471459731, "source_report": "DOE FY2024; crude bill = 16884.9 total - 12686.3 products"}
+      }
+    },
+    "oil_export": {
+      "technology": "PHL_PRO_EXP_OIL",
+      "basis": "Galoc realized crude selling price; aggregate customs HS 2709 was rejected because it combines crude and condensate",
+      "records": {
+        "2020": {"usd_per_barrel": 38.18, "before": -6.91289426376859, "after": -6.239581630985455},
+        "2021": {"usd_per_barrel": 70.46, "before": -11.505147899983658, "after": -11.514953423762051},
+        "2022": {"usd_per_barrel": 94.5, "before": -16.309854551397287, "after": -15.443699950972382},
+        "2023": {"usd_per_barrel": 80.5, "before": -13.498937734924008, "after": -13.155744402680178},
+        "2024": {"usd_per_barrel": 80.0, "before": -13.188429481941494, "after": -13.074031704526885}
+      }
+    }
+  },
+  "rejected_calculation": {
+    "method": "PSA/customs aggregate HS 2709 value divided by DOE crude volume",
+    "reason": "The numerator and denominator came from different statistical scopes. HS 2709 also includes condensate, while DOE reports crude supply and its bill directly. The mixed series understated 2021-2022 landed crude cost and incorrectly implied that Galoc export revenue exceeded landed import cost in 2022.",
+    "action": "No mixed-source value was written to model source. DOE bill/volume replaced it before candidate creation."
+  },
+  "future_path": {
+    "2025_onward": "unchanged from the accepted live case",
+    "coal": "2025 SMPC realized value; World Bank 2026-2027 quality-adjusted forecast; 2027 held thereafter",
+    "oil": "World Bank Brent 2025-2027; 2027 held thereafter; immaterial after physical Galoc cessation"
+  },
+  "deterministic_price_spreads": {
+    "definition": "landed import cost minus export revenue magnitude; positive means export-and-replace is uneconomic before domestic bridge/handling costs",
+    "coal_usd_per_gj": {"2020": 1.063560063758884, "2021": 1.6297134459123885, "2022": 3.6234305378072875, "2023": 1.6564393160958502, "2024": 1.2237273551065533},
+    "oil_usd_per_gj": {"2020": 1.0542668156422073, "2021": 0.9883880071243034, "2022": 1.256934636021514, "2023": 1.2104441257841891, "2024": 2.049599766932845}
+  },
+  "known_structural_limitations": [
+    "A single interchangeable coal pool cannot reproduce simultaneous exports of lower-grade/local coal and imports of plant-compatible grades.",
+    "A single interchangeable crude pool cannot reproduce Galoc exports alongside imports of different refinery-compatible crude when landed imports cost more than Galoc export revenue.",
+    "Any resulting zero export is a disclosed validation gap, not a target imposed by this change."
+  ],
+  "sources": [
+    {"title": "PSA Trade Data Downloads", "url": "https://openstat.psa.gov.ph/Database/Economic-and-Financial-Statistics/Trade-International-Merchandise-and-Domestic/Trade-Data-Downloads", "use": "official Philippine customs trade data definition and download route"},
+    {"title": "UN Comtrade public API, Philippines reporter 608, HS 2701", "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2022&reporterCode=608&cmdCode=2701&flowCode=M&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500", "use": "customs CIF/FOB value and mass records used for coal"},
+    {"title": "DOE Oil Industry Management Bureau FY2020 report", "url": "https://legacy.doe.gov.ph/sites/default/files/pdf/downstream_oil/year-end-comprehensive-report-fy2020.pdf", "use": "2020 crude bill and volume"},
+    {"title": "DOE Oil Industry Management Bureau FY2022 report", "url": "https://prod-cms.doe.gov.ph/documents/42673/843144/year-end-comprehensive-report-fy2022-v3.pdf/dd04a5e9-30ed-c5f5-cc97-5b82f8bcdf8a", "use": "2021 revised comparator and 2022 crude bills and volumes"},
+    {"title": "DOE Oil Industry Management Bureau FY2023 report", "url": "https://prod-cms.doe.gov.ph/documents/d/oimb/year-end-comprehensive-report-fy2023-pdf", "use": "2023 crude bill and volume"},
+    {"title": "DOE Oil Industry Management Bureau FY2024 report", "url": "https://prod-cms.doe.gov.ph/documents/d/guest/-annex-a-oimb-year-end-comprehensive-report_fy-2024", "use": "2024 crude bill and 7,213.24 ML volume"},
+    {"title": "PXP Energy annual reports", "url": "https://www.pxpenergy.com.ph/investor-relations/annual-reports/", "use": "Galoc liftings and realized crude prices"},
+    {"title": "PXP Energy 2020 Annual Report", "url": "https://pragtech-apps.s3.ap-southeast-1.amazonaws.com/pxp/Annual+Reports/PXP+Energy+2020AR++FA+2021-06-17+HighQuality.pdf", "use": "2020 Galoc realized price of 38.18 USD/bbl and 750,506 bbl liftings"},
+    {"title": "PSA PSCC heading 27.09", "url": "https://psa.gov.ph/classification/pscc/heading/27.09", "use": "classification distinction between crude petroleum oil and condensate"}
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "schema": "philippines-v22-fit-accounting-r9-validation-v1",
+  "status": "promoted_live_identity_pass",
+  "promotion_allowed_by_solve_gate": true,
+  "promoted": true,
+  "promotion_rule": "BASE solved first; only then COAL_PHASEOUT, RE and EV ran concurrently; all four are optimal from the same source candidate.",
+  "candidate_source_hashes_match_build_manifest": true,
+  "optimizer_executions": [
+    {
+      "scenario": "BASE",
+      "algorithm": "default",
+      "status": "Optimal - objective value 369824357.74968791",
+      "solve_seconds": 97.03176304200315,
+      "timeout_seconds": 360,
+      "lp_sha256": "36b193b90d9efb08c295f9fb6bb19a23904b50b3319713485a352c4514e1526e"
+    },
+    {
+      "scenario": "COAL_PHASEOUT",
+      "algorithm": "default",
+      "status": "Optimal - objective value 369841641.16675705",
+      "solve_seconds": 136.0274849999987,
+      "timeout_seconds": 360,
+      "lp_sha256": "7262c976614b07a0dbb6026053757412a2a7b44dcb887cfbd15e5203cf9e8083"
+    },
+    {
+      "scenario": "RE",
+      "algorithm": "default",
+      "status": "Optimal - objective value 369835005.34908015",
+      "solve_seconds": 121.76087750000443,
+      "timeout_seconds": 900,
+      "lp_sha256": "3abe5ffdb9f70005882fb245fe36763466583a813cec55815400599541598ffa"
+    },
+    {
+      "scenario": "EV",
+      "algorithm": "default",
+      "status": "Optimal - objective value 369822390.59662956",
+      "solve_seconds": 150.78500925000117,
+      "timeout_seconds": 360,
+      "lp_sha256": "c2c36d3d48ee1717717d914b21be2b0444c01a84bbcfa05cb7e71a4fa221524a"
+    }
+  ],
+  "objectives": {
+    "BASE": 369824357.7496879,
+    "COAL_PHASEOUT": 369841641.16675705,
+    "RE": 369835005.34908015,
+    "EV": 369822390.59662956
+  },
+  "objective_comparison_to_r8": {
+    "BASE": {
+      "r8": 369822476.0617129,
+      "r9": 369824357.7496879,
+      "change": 1881.6879749894142,
+      "change_percent": 0.0005088084410242999
+    },
+    "COAL_PHASEOUT": {
+      "r8": 369839833.340658,
+      "r9": 369841641.16675705,
+      "change": 1807.826099038124,
+      "change_percent": 0.000488813247256914
+    },
+    "EV": {
+      "r8": 369820509.5192052,
+      "r9": 369822390.59662956,
+      "change": 1881.0774243474007,
+      "change_percent": 0.0005086460528547221
+    }
+  },
+  "matrix_dimensions": {
+    "BASE": {
+      "rows": 553001,
+      "columns": 584981,
+      "matrix_nonzeros": 8108623
+    },
+    "COAL_PHASEOUT": {
+      "rows": 553016,
+      "columns": 584981,
+      "matrix_nonzeros": 8108893
+    },
+    "RE": {
+      "rows": 553001,
+      "columns": 584981,
+      "matrix_nonzeros": 8109133
+    },
+    "EV": {
+      "rows": 553001,
+      "columns": 584981,
+      "matrix_nonzeros": 8108623
+    }
+  },
+  "fit_activity_and_postsolve_receipts": {
+    "BASE": {
+      "2020": {
+        "fit_activity_pj": 0.0,
+        "fit_receipt_musd": 0.0
+      },
+      "2022": {
+        "fit_activity_pj": 5.0293,
+        "fit_receipt_musd": 178.5052477608597
+      },
+      "2024": {
+        "fit_activity_pj": 0.2261,
+        "fit_receipt_musd": 8.700262371703877
+      },
+      "2030": {
+        "fit_activity_pj": 1.1016,
+        "fit_receipt_musd": 43.40193696446686
+      },
+      "2040": {
+        "fit_activity_pj": 1.1016,
+        "fit_receipt_musd": 0.0
+      },
+      "2050": {
+        "fit_activity_pj": 0.9109,
+        "fit_receipt_musd": 0.0
+      }
+    },
+    "COAL_PHASEOUT": {
+      "2020": {
+        "fit_activity_pj": 0.0,
+        "fit_receipt_musd": 0.0
+      },
+      "2022": {
+        "fit_activity_pj": 5.0293,
+        "fit_receipt_musd": 178.5052477608597
+      },
+      "2024": {
+        "fit_activity_pj": 0.0,
+        "fit_receipt_musd": 0.0
+      },
+      "2030": {
+        "fit_activity_pj": 0.0,
+        "fit_receipt_musd": 0.0
+      },
+      "2040": {
+        "fit_activity_pj": 3.7443,
+        "fit_receipt_musd": 0.0
+      },
+      "2050": {
+        "fit_activity_pj": 3.7121,
+        "fit_receipt_musd": 0.0
+      }
+    },
+    "RE": {
+      "2020": {
+        "fit_activity_pj": 0.0,
+        "fit_receipt_musd": 0.0
+      },
+      "2022": {
+        "fit_activity_pj": 5.0293,
+        "fit_receipt_musd": 178.5052477608597
+      },
+      "2024": {
+        "fit_activity_pj": 0.0,
+        "fit_receipt_musd": 0.0
+      },
+      "2030": {
+        "fit_activity_pj": 1.1016,
+        "fit_receipt_musd": 43.40193696446686
+      },
+      "2040": {
+        "fit_activity_pj": 1.1126,
+        "fit_receipt_musd": 0.0
+      },
+      "2050": {
+        "fit_activity_pj": 4.1452,
+        "fit_receipt_musd": 0.0
+      }
+    },
+    "EV": {
+      "2020": {
+        "fit_activity_pj": 0.0,
+        "fit_receipt_musd": 0.0
+      },
+      "2022": {
+        "fit_activity_pj": 5.0293,
+        "fit_receipt_musd": 178.5052477608597
+      },
+      "2024": {
+        "fit_activity_pj": 0.4539,
+        "fit_receipt_musd": 17.46594024996192
+      },
+      "2030": {
+        "fit_activity_pj": 1.1016,
+        "fit_receipt_musd": 43.40193696446686
+      },
+      "2040": {
+        "fit_activity_pj": 1.1016,
+        "fit_receipt_musd": 0.0
+      },
+      "2050": {
+        "fit_activity_pj": 0.9109,
+        "fit_receipt_musd": 0.0
+      }
+    }
+  },
+  "re_policy_constraint_checks": {
+    "renewable_inequality_max_lhs_minus_rhs_from_rounded_csv": 9.099999998429809e-05,
+    "renewable_inequality_within_1e-3_csv_reconstruction_tolerance": true,
+    "nuclear_equality_max_absolute_residual_gw": 0.0,
+    "renewable_exported_dual_min_max": [
+      -18.34935484301987,
+      0.0
+    ],
+    "nuclear_exported_dual_min_max": [
+      -3242.2281055053136,
+      -861.6350181461025
+    ]
+  },
+  "deterministic_gate": "documentation/fit_accounting_r9_deterministic_gate.json",
+  "numerical_diagnostics": "documentation/RE_NUMERICAL_DIAGNOSTICS_2026-08-20.json",
+  "model_fix": "documentation/MODEL_FIXES_FIT_ACCOUNTING_V22_2026-08-20.md",
+  "known_limitations": [
+    "FIT receipts are gross post-solve transfers; payer incidence and financing are outside the model.",
+    "The 15.8 MUSD/PJ physical collection cost is an inherited ERC-anchored judgement.",
+    "Removing dispatch-valued tariff revenue materially lowers FIT biomass utilization; generation remains endogenous and must be assessed as a benchmark, not forced.",
+    "UDC residuals are reconstructed from four-decimal activity/capacity CSVs; the exact CBC solution is optimal and the 9.1e-5 apparent RE-share excess is within the documented 1e-3 reconstruction tolerance.",
+    "Wider biofuel, reliability, solar timing, cooling-water, T&D loss, availability and pre-2026 build issues remain deferred."
+  ],
+  "live_case": "Philippines_v22",
+  "promotion_identity": "documentation/FIT_ACCOUNTING_R9_PROMOTION_IDENTITY.json",
+  "promotion_identity_sha256": "4dfcc89ff1a37eac0897530aba73995a49d0dd6826a3016d2753c7841b5dff5c",
+  "post_promotion_optimizer_runs": 0
+}

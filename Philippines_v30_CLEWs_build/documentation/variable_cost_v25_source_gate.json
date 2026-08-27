@@ -1,0 +1,351 @@
+{
+  "schema": "philippines-v25-variable-cost-source-gate-v1",
+  "status": "passed",
+  "generated": "2026-08-25",
+  "case": "WebAPP/DataStorage/Philippines_v25",
+  "parent_case": "WebAPP/DataStorage/Philippines_v24",
+  "scope": "source-only clean combined candidate",
+  "optimizer_runs": 0,
+  "model_generation_runs": 0,
+  "preprocess_runs": 0,
+  "glpk_checks": 0,
+  "scenario_runs": 0,
+  "explicit_stop_point": "Candidate built and source/equation checks complete. Stop before model generation, preprocessing, LP creation and scenario execution.",
+  "pending_validation": [
+    "application generation and preprocessing",
+    "generated data and MODEperTECHNOLOGY inspection",
+    "repeat generated-data and LP hashes",
+    "GLPK matrix check and dimensions",
+    "CBC optimization for BASE, COAL_PHASEOUT, RE and EV",
+    "historical reproduction, irrigation/water and unexpected-change result checks"
+  ],
+  "source_package": "data_sources/variable_cost_v25_2026-08-25",
+  "source_package_sha256": {
+    "EQUATION_FIRST_DESIGN.json": "157ac91c1cf746ad091a8051d4700e8acd8ce94296b69b03cad494c365ecafc3",
+    "README.md": "aeb1adc3b3c05939282cf5cd4858e174034e5186ab33ae3778cfa3439e14175c",
+    "V25_APPLIED.csv": "0bfe654611c4b4edbd7f08be7aadb765ff5d1341683ace218514817fc6a0bff4",
+    "V25_LAND_MODE_CLASSIFICATION.csv": "eb23438e8e4fb3fa2fac67867e280c7ff136bdd2237728fd68a6f89f3bd997db",
+    "claude_source_package/ASSUMPTIONS.csv": "f43cae626dfd034116272b1f544a53a649195bda5e6ef3086d5252eea6a7e463",
+    "claude_source_package/CALCULATIONS.csv": "068bb7a59cc3c286008a2819a04e8ca9d8c0ffe7b6e77e24ef832577d5e0fb27",
+    "claude_source_package/GAPS.csv": "3bd6827dcc44c4bc47838f4b8640281f93612dac8549f94829080a5611465afe",
+    "claude_source_package/README.md": "201530fbef5dd4fb12c9b79c10d41557c8dae4b27149a7cf28c5c1c658ab1f2e",
+    "claude_source_package/SOURCES.csv": "16cddfe427e9d58156cbed2b603d0bf2803e584ad54fcc5f8817849111a1902c",
+    "claude_source_package/VC_INVENTORY.csv": "558ac2ee2bc3ee9c56921537604a19d8b43b3e0f3b95d0acff935738f9ba65b7",
+    "claude_source_package/VC_PROPOSALS.csv": "9766455a07f6907b02dfedccee65d9c4d241993ad84e59c4d060be9033efadab",
+    "claude_source_package/snapshots/MANIFEST.sha256": "032934742a965a9a68fca8b5a0dd2094d498f12390fc991f41172a8a199535c1",
+    "claude_source_package/snapshots/eia_aeo2023_elec_cost_perf_extract.txt": "e5c17b1478fb9cbea9d1a55c8538fdf8fea5e6b8c657442bf60c04d4c8440c64",
+    "claude_source_package/snapshots/jica_mmutis_tr9_extract.txt": "a31684736c74e9f9950ede28962574b0136566acb1c5689ba0dc8a05b91ac2fd",
+    "claude_source_package/snapshots/pids_dps1502_extract.txt": "cc64616d53e8449b2715f2d525b0ca20e5f85545ede17d2467e9e0f54c77563b",
+    "claude_source_package/snapshots/psa_cpi_0723_maintenance_repair.csv": "1ea7a901535760182b93acfd9418c5b9f83759de603e2c5295d242aedbcd2d6b",
+    "claude_source_package/snapshots/psa_t51_crop_value_volume_2021_2024.csv": "16e8336a203e9d66a871287713b86db4c84cb7e39b9e10570aeb514c56c2cb03",
+    "claude_source_package/snapshots/psa_t56_palay_irrigated_costs.csv": "9f00fb6124797f50bd926a05cbc9b20d07ec2838805270f4c0ec2d2d2d3fc91f",
+    "claude_source_package/snapshots/psa_t57_palay_nonirrigated_costs.csv": "d7d1bc62eb862847267303ab4ab44b0e9109850b8b206a553c2f64b34df56210",
+    "claude_source_package/snapshots/tssp2025_extract.txt": "731396b288749fad5aed3ca757ce5e51eefc60b8426d3b3fde5ea60aad09685f",
+    "snapshots/doe_argonne_tco_2021_extract.txt": "66c27f9d9a28463400bc40824c0b9e051169fc11790d005a1e7ea27c12533686",
+    "snapshots/psa_palay_cost_structure_2022_net_cost_extract.csv": "8693c3c4f2e29e2d24df4c38acc7e260ad8677f1623c2059077aa71aa7bfc96b"
+  },
+  "schema_ledger": {
+    "authoritative_tables": [
+      "SOURCES.csv",
+      "ASSUMPTIONS.csv",
+      "CALCULATIONS.csv",
+      "MODEL_MAP.csv",
+      "GAPS.csv",
+      "CHANGES.csv"
+    ],
+    "table_sha256": {
+      "SOURCES.csv": "353c13bb010461a7666562425c1f48420162b34bb67d1c6b9c8abaf1d982028d",
+      "ASSUMPTIONS.csv": "d1b99a9c49108131e7d9422983b39c638186c124e3c3133cfa96fcb2fbe0a361",
+      "CALCULATIONS.csv": "922c9dfecca3c4feacc2fcd382722555cdc4fa38639df30e7d4729f36387338f",
+      "MODEL_MAP.csv": "ad0cfb4553137454c66847107aa7d20216ea00c2f34649aec65faff587a87807",
+      "GAPS.csv": "05c8a42f39a5d57815676e7ab650aac6e6a2351ab8240457e0a6b982143cfba1",
+      "CHANGES.csv": "2426d980e94d7d3213c1c9416f8d025b85cac3f43c4977f028c496fea97f1bd5"
+    },
+    "table_rows": {
+      "SOURCES.csv": 195,
+      "ASSUMPTIONS.csv": 165,
+      "CALCULATIONS.csv": 714,
+      "MODEL_MAP.csv": 72815,
+      "GAPS.csv": 83,
+      "CHANGES.csv": 29
+    },
+    "v25_additions": {
+      "imported_claude_sources": 11,
+      "imported_claude_assumptions": 10,
+      "imported_claude_calculations": 81,
+      "imported_claude_gaps": 12,
+      "new_sources": 4,
+      "new_assumptions": 6,
+      "new_calculations": 4,
+      "new_v25_gaps": 3,
+      "new_model_maps": 280,
+      "new_changes": 1
+    },
+    "headers": {
+      "SOURCES.csv": [
+        "source_id",
+        "provider",
+        "product",
+        "edition",
+        "reference_period",
+        "geography",
+        "variable",
+        "source_unit",
+        "exact_locator",
+        "url",
+        "access_date",
+        "license",
+        "sha256",
+        "local_file",
+        "notes"
+      ],
+      "ASSUMPTIONS.csv": [
+        "assumption_id",
+        "statement",
+        "central_value",
+        "unit",
+        "evidence_source_ids",
+        "lower_bound",
+        "upper_bound",
+        "rationale",
+        "notes"
+      ],
+      "CALCULATIONS.csv": [
+        "calculation_id",
+        "formula",
+        "source_ids",
+        "assumption_ids",
+        "input_calculation_ids",
+        "input_values",
+        "input_units",
+        "output_value",
+        "output_unit",
+        "script_path",
+        "script_version",
+        "notes"
+      ],
+      "MODEL_MAP.csv": [
+        "map_id",
+        "model_file",
+        "parameter",
+        "entity",
+        "mode",
+        "scenario",
+        "years",
+        "value_or_expression",
+        "model_unit",
+        "evidence_ids",
+        "superseded_by",
+        "evidence_type",
+        "notes"
+      ],
+      "CHANGES.csv": [
+        "change_id",
+        "date",
+        "class",
+        "description",
+        "model_objects",
+        "evidence_path",
+        "map_rows_affected",
+        "resolve_status",
+        "author",
+        "commit",
+        "notes"
+      ]
+    }
+  },
+  "parent_root_json_hashes": {
+    "R.json": "8e352ff8017301cb6fb2857b399a2d66f534e5691b03fd2c0ffbfe1b51994e84",
+    "RE.json": "85e0ea73dfd7ce398e0638ed23b8c8cd7b7ec7e0f0b4119d2963ce94625aba15",
+    "RS.json": "a954bbe1c640eabaa9b247534bf7caaf6e924de043ca22563b2515f0413e255e",
+    "RT.json": "43c5c9427bd7bc13604633a07381c4be9a4a963c7310694597ad280c1b971230",
+    "RTSM.json": "b5f05d6916f988e122fa368636e8f6841e2b89bb35f551bea3fd0f171c28609b",
+    "RYC.json": "c3af6e11ead52e633516cfb5ec44d1ced8cc71cd537ea39b3774dd5ff081c165",
+    "RYCTs.json": "342f5a7bbcb5dd83ae40e797c38d19ee9e01d1d9b199b5aa6781d3a3b98d120e",
+    "RYCn.json": "e36fa88ac0147f594058bd710b17ebb189fd4292f52b9ade97aedba52b93aef5",
+    "RYDtb.json": "5441dd7e9ac61fc9498c85ec20a8935a2870280035fecbe89a89e72b611826af",
+    "RYE.json": "025be0c838019c347dda8310cd326f5e65c414f49f83086db5b0763b96ba4e78",
+    "RYS.json": "a224467bc0afb311731cf9b588b04599d71529289e9660ce88a99eb11592a5e2",
+    "RYSeDt.json": "02be62970eeacca14942e16c534323bc4f5c0b4ac14b74255a21fb36c8f3c484",
+    "RYT.json": "306db51e0a87e8c56b251f0378bc5af7dbd3edde0c5d62c7132fb58a2722c6db",
+    "RYTC.json": "9d7fb98b0b06b40562f453e754b8d60aa8c81911d30f9ac9094bc96f05c61359",
+    "RYTCM.json": "667aeea5846b8439c205d0ee1be61863125eadfb1c04a1814b30ed7748f0700d",
+    "RYTCn.json": "3b69aad2aaddac8bb850c7db6620c4551cf34d5650f466518e87a8cc1f091e15",
+    "RYTEM.json": "f1ebf581d286f5e59ddc5ad7c4479c6510fb75961fd9de93432a209368c96ba6",
+    "RYTTs.json": "03e4920a8902920018f8b3c77445949db9ee346cd7b7a20afc7b373ea26cc210",
+    "RYTs.json": "e2c7ab12d3e298f4558e3782af9a6855f2fdd74d2358fbe743cc28bb2146a271",
+    "water_demand_validation_summary.json": "e08590df662725c882057ee39f43992b9d9bd6eefc8c1c2acf2c9a1730b3415c"
+  },
+  "applied_technology_count": 56,
+  "applied_tech_mode_count": 240,
+  "applied_tech_mode_year_count": 8160,
+  "block_counts": {
+    "crop": 192,
+    "road": 28,
+    "power": 20
+  },
+  "land_mode_classification_count": 40,
+  "checks": [
+    {
+      "name": "case_identity",
+      "status": "passed",
+      "detail": "Philippines_v25"
+    },
+    {
+      "name": "genData_scope",
+      "status": "passed",
+      "detail": [
+        "osy-casename",
+        "osy-desc"
+      ]
+    },
+    {
+      "name": "only_genData_and_RYTM_changed",
+      "status": "passed",
+      "detail": []
+    },
+    {
+      "name": "RYTM_non_VC_blocks_unchanged",
+      "status": "passed",
+      "detail": []
+    },
+    {
+      "name": "expected_VC_values_landed",
+      "status": "passed",
+      "detail": []
+    },
+    {
+      "name": "no_unintended_VC_changes",
+      "status": "passed",
+      "detail": []
+    },
+    {
+      "name": "applied_cell_counts",
+      "status": "passed",
+      "detail": {
+        "crop": 192,
+        "road": 28,
+        "power": 20
+      }
+    },
+    {
+      "name": "land_40_explicitly_classified",
+      "status": "passed",
+      "detail": 40
+    },
+    {
+      "name": "land_40_values_preserved",
+      "status": "passed",
+      "detail": [
+        0.0001
+      ]
+    },
+    {
+      "name": "power_order_of_magnitude",
+      "status": "passed",
+      "detail": [
+        0.0,
+        3.127181502889377,
+        "MUSD/PJ"
+      ]
+    },
+    {
+      "name": "road_order_of_magnitude",
+      "status": "passed",
+      "detail": [
+        0.001082355684664129,
+        0.13759039345079113,
+        "USD/vehicle-km"
+      ]
+    },
+    {
+      "name": "crop_order_of_magnitude",
+      "status": "passed",
+      "detail": [
+        26.304081960563153,
+        197.64309261379358,
+        "MUSD/1000 km2"
+      ]
+    },
+    {
+      "name": "irrigated_rice_cost_below_rainfed",
+      "status": "passed",
+      "detail": {
+        "irrigated": 6.476124433400446,
+        "rainfed": 6.9178877414564885
+      }
+    },
+    {
+      "name": "net_cash_shares_plausible",
+      "status": "passed",
+      "detail": {
+        "irrigated": 0.5185047584788187,
+        "rainfed": 0.4959059312872035
+      }
+    },
+    {
+      "name": "deterministic_ordering_tweak_present",
+      "status": "passed",
+      "detail": {
+        "dict_fromkeys": 9,
+        "list_set": 0
+      }
+    },
+    {
+      "name": "no_solver_or_view_results",
+      "status": "passed",
+      "detail": {
+        "res": [],
+        "view": [],
+        "root_generated": []
+      }
+    },
+    {
+      "name": "canonical_six_table_schema_ledger_present",
+      "status": "passed",
+      "detail": [
+        "SOURCES.csv",
+        "ASSUMPTIONS.csv",
+        "CALCULATIONS.csv",
+        "MODEL_MAP.csv",
+        "GAPS.csv",
+        "CHANGES.csv"
+      ]
+    },
+    {
+      "name": "schema_ledger_identifiers_unique",
+      "status": "passed",
+      "detail": {}
+    },
+    {
+      "name": "schema_ledger_v25_cross_references",
+      "status": "passed",
+      "detail": []
+    },
+    {
+      "name": "schema_ledger_v25_map_count",
+      "status": "passed",
+      "detail": 280
+    },
+    {
+      "name": "schema_ledger_maps_every_changed_and_classified_cell",
+      "status": "passed",
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "schema_ledger_v25_sources",
+      "status": "passed",
+      "detail": []
+    },
+    {
+      "name": "schema_ledger_change_record",
+      "status": "passed",
+      "detail": "CHG_PHL_V25_VARIABLE_COST_20260825"
+    }
+  ],
+  "failure_count": 0,
+  "failures": []
+}

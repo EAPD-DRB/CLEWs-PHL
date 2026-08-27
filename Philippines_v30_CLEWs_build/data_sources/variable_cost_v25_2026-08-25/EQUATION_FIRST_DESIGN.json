@@ -1,0 +1,33 @@
+{
+  "intended_physical_behavior": "VariableCost changes only the marginal resource cost of endogenous activity. It must not prescribe activity, shares, dispatch, land allocation or irrigation.",
+  "observation_classification": {
+    "PSA_crop_cost_items": "economic driver",
+    "Philippine_vehicle_maintenance": "economic driver",
+    "DOE_Argonne_drivetrain_multipliers": "economic-driver proxy",
+    "EIA_power_variable_OM": "economic-driver proxy",
+    "DOE_historical_generation": "benchmark only",
+    "historical_irrigated_area_and_water_use": "benchmark only",
+    "historical_vehicle_drivetrain_shares": "benchmark only"
+  },
+  "technology_classification": {
+    "power": "physical conversion stocks",
+    "crop_modes_1_to_24": "land-to-crop conversion activities",
+    "land_modes_25_26_28_29_30": "physical land-cover/hydrology pass-throughs",
+    "land_mode_27": "forest land-cover/hydrology pass-through with inherited policy incentive",
+    "road": "physical vehicle stocks delivering vehicle-kilometres"
+  },
+  "source_file": "RYTM.json / VC / SC_0",
+  "application_mapping": "API/Classes/Case/OsemosysClass.py RYTM() indexes scenario/year/technology/mode; API/Classes/Case/DataFileClass.py gen_RYTM() writes param VariableCost.",
+  "solver_mapping": "WebAPP/SOLVERs/model.v.5.4.txt lines 167 and 194 multiply RateOfActivity by YearSplit and VariableCost in the objective and AnnualVariableOperatingCost equation.",
+  "expected_effect": "marginal objective coefficients only",
+  "explicitly_unchanged": [
+    "demands",
+    "stocks and lifetimes",
+    "input/output activity ratios",
+    "activity/capacity/share bounds",
+    "resource constraints",
+    "emission ratios",
+    "scenario activation",
+    "model equations"
+  ]
+}

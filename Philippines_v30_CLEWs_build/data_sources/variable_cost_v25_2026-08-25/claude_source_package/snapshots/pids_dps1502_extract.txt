@@ -1,0 +1,27 @@
+SOURCE  SRC_VC_PIDS_DPS1502_T5
+FILE    https://pidswebs.pids.gov.ph/CDN/PUBLICATIONS/pidsdps1502.pdf
+WHAT    Table 5, 'Revenue runs and operational costs for different bus fleet sizes,
+        compounded to present value'. Text extracted from the PDF content streams and
+        reflowed; column order is >=100, 51 to 99, 26 to 50, 11 to 25, <=10, Aggregate.
+USED    Aggregate column: revenue run 184.7 bus-km/day; repair & maintenance 1,160 PHP/day.
+RETRIEVED 2026-08-25
+----------------------------------------------------------------------
+======================================================================
+ity. Estimated average revenue runs over the past two decades were 184 bus - km in 1996, 172 bus - km in 2002 
+and 162 bus - km in 2006 (Transportas Consulting 2006, Montalbo 1997, Kobune 2002). Table 5 presents estimates
+ on revenue runs and operational costs per bus per day as broken down into driver and conductor commissions, f
+uel and lubricants, and repair and maintenance. en-US en-GB Ta ble 5. Revenue runs and operational costs for d
+ifferent bus fleet sizes, compounded to present value en-US Fleet Size en-US Operational detail en-US >= 100 e
+n-US 51 to 99 en-US 26 to 50 en-US 11 to 25 en-US <=10 en-US Aggreg ate revenue run bus - km per month 5,238 5
+,003 5,359 5,878 3,175 5,172 revenue run bus - km per year 62,856 60,034 64,308 70,533 38,098 62,061 revenue r
+un bus - km per day 187.07 178.67 191.39 209.92 113.39 184.7 Cost breakdown per bus per day 5,911 3,625 2,253 
+6,044 2,383 4,547 en-US Driver& conductor daily commission 1 ,734 1,056 595 1,430 522 1,293 en-US Fuel, oil, &
+ lubricants per day 2,477 1,799 1,274 3,143 1,083 2,095 en-US Repair & maintenance per day 1,700 770 383 1,469
+ 779 1,160 Source: Montalbo and Ishida (1997) en-US A graphical presentation of the excessive bus supply situ 
+ation within the 12km stretch of ^[µ }]}] À] v~&]Pµ  8 ). T
+his is seen in the difference between the authorized seat capacity of buses and the estimated passenger demand
+ over the length of EDSA (Figure 11). 13 13 en-US Transportas Consulting (2006) reported that the highest time
+ - specific bus flow of 1,722 buses was recorded between Guadalupe and Bony Avenue from 06:00 to 09:00. The lo
+ad factors during that period were 45.6% SB and 44.4%NB. To raise the peak - hour load factor to 100%, it woul
+d be nece ssary to reduce the frequency from 1,722 to 859. In terms of headways, the required reduction is fro
+m 1 bus per 11.2 seconds to 1 

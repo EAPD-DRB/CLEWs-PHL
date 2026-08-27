@@ -1,0 +1,85 @@
+{
+  "schema": "philippines-v17-land-cover-inputs-v1",
+  "prepared_date": "2026-08-12",
+  "reference_year": 2020,
+  "geography": "Philippines national territory represented by the inherited model",
+  "units": "km2",
+  "official_source": {
+    "provider": "Philippine Statistics Authority; underlying land-cover map by NAMRIA",
+    "product": "Land Asset Accounts of the Philippines",
+    "release": "Special Release 2024-203",
+    "release_date": "2024-12-20",
+    "release_page": "https://psa.gov.ph/statistics/environmental-accounts/node/1684065498",
+    "special_release_pdf": "https://psa.gov.ph/system/files/enrad/%5Bsigned%5D%20Special%20Release_Land%20Asset%20Accounts_0.pdf",
+    "technical_notes_page": "https://psa.gov.ph/content/land-asset-accounts-philippines",
+    "technical_notes_pdf": "https://psa.gov.ph/system/files/enrad/3%20Technical%20Notes_Land%20Asset%20Accounts.pdf",
+    "statistical_tables_xlsx": "https://psa.gov.ph/system/files/enrad/Statistical%20Table_Land%20Accounts_Final.xlsx",
+    "table_locator": "Table 1, 2020 closing stock",
+    "underlying_product": "NAMRIA Land Cover Map 2020"
+  },
+  "corroboration": {
+    "provider": "Food and Agriculture Organization of the United Nations",
+    "product": "Global Forest Resources Assessment 2025 country report: Philippines",
+    "handle": "https://openknowledge.fao.org/handle/20.500.14283/A03488EN",
+    "forest_2020_kha": 7226.39,
+    "role": "Corroboration only; it does not replace the PSA/NAMRIA base-year source."
+  },
+  "diagnostic_provenance": {
+    "pull_request": "https://github.com/EAPD-DRB/CLEWs-PHL/pull/1",
+    "head_commit": "721f5470e3ccd9e7237622c3270e68eae60a2faa",
+    "role": "Retained diagnostic reasoning and failed-pass evidence; not merged as model source."
+  },
+  "published_2020_classes_km2": [
+    {"class": "Annual crop", "km2": 59438.0, "model_class": "cropland"},
+    {"class": "Perennial crop", "km2": 65737.9, "model_class": "cropland"},
+    {"class": "Closed forest", "km2": 22210.2, "model_class": "forest"},
+    {"class": "Open forest", "km2": 46936.7, "model_class": "forest"},
+    {"class": "Mangrove forest", "km2": 3112.2, "model_class": "forest"},
+    {"class": "Grassland", "km2": 19610.0, "model_class": "grassland_and_woodland"},
+    {"class": "Brush and shrubs", "km2": 58070.8, "model_class": "grassland_and_woodland"},
+    {"class": "Open or barren land", "km2": 1593.7, "model_class": "barren"},
+    {"class": "Built-up land", "km2": 10256.3, "model_class": "built_up"},
+    {"class": "Inland water", "km2": 4893.6, "model_class": "water_bodies"},
+    {"class": "Marshland and swamp", "km2": 1421.0, "model_class": "water_bodies"},
+    {"class": "Fishpond", "km2": 2286.0, "model_class": "other_agricultural"},
+    {"class": "Sea and ocean", "km2": 317.3, "model_class": null}
+  ],
+  "reconciliation": {
+    "published_total_including_sea_km2": 295883.7,
+    "excluded_sea_and_ocean_km2": 317.3,
+    "published_land_total_after_exclusion_km2": 295566.4,
+    "inherited_model_control_total_km2": 295813.1,
+    "relative_difference_before_reconciliation_percent": 0.08346,
+    "pro_rata_scale_factor": 1.0008346686226852,
+    "rounding_rule": "Model classes are recorded to 0.1 km2. The final 0.1 km2 closure adjustment is assigned between cropland and water bodies so the seven classes equal the inherited control exactly."
+  },
+  "model_classes_km2": {
+    "cropland": 125280.5,
+    "forest": 72319.4,
+    "grassland_and_woodland": 77745.6,
+    "barren": 1595.0,
+    "built_up": 10264.9,
+    "water_bodies": 6319.8,
+    "other_agricultural": 2287.9,
+    "unallocated": 0.0,
+    "total": 295813.1
+  },
+  "model_units_1000_km2": {
+    "cropland": 125.2805,
+    "forest": 72.3194,
+    "grassland_and_woodland": 77.7456,
+    "barren": 1.595,
+    "built_up": 10.2649,
+    "water_bodies": 6.3198,
+    "other_agricultural": 2.2879,
+    "unallocated": 0.0,
+    "total": 295.8131
+  },
+  "mapping_decisions": [
+    "Brush and shrubs maps to grassland and woodland, not forest.",
+    "Marshland and swamp maps to water bodies because the model has no wetland stock.",
+    "Fishpond maps to other agricultural land because it is managed production land.",
+    "Sea and ocean is excluded from the terrestrial control total following the technical-note boundary warning.",
+    "The national totals are not apportioned across the eight crop-yield clusters."
+  ]
+}

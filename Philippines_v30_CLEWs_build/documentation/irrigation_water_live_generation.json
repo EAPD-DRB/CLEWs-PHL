@@ -1,0 +1,12 @@
+{
+  "phase": "generate",
+  "generation": null,
+  "wall_seconds": 2.1803369522094727,
+  "hashes": {
+    "data.txt": "7979454374c967edc07dd2fe3152c71c5e66ba4560e91ac74fcf56c671375c1c",
+    "data_processed.txt": "08e980e34174a09fcbae23d4ba580e79d3d3e9d961a6334e2f84e058197f6f66"
+  },
+  "case": "Philippines_v16",
+  "run": "IRRIGATION_WATER_BASE",
+  "total_wall_seconds": 2.183379888534546
+}

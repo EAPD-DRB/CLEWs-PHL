@@ -1,0 +1,15 @@
+{
+  "schema": "philippines-v18-land-water-runtime-incident-v1",
+  "status": "rejected_timeout",
+  "formulation": "aggregate Tag-1 UDC: sum cluster activity - MINLNDTOT activity = 0",
+  "optimizer_run_count": 1,
+  "timeout_seconds": 430,
+  "result_file_written": false,
+  "matrix": {
+    "rows": 791279,
+    "columns": 886010,
+    "matrix_nonzeros": 12572981
+  },
+  "baseline_cbc_seconds": 207.19558720799978,
+  "decision": "Do not promote; use dedicated parameter-only exact geographic bounds A/B."
+}

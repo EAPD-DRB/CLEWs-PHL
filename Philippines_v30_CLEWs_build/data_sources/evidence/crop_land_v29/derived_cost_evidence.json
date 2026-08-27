@@ -1,0 +1,105 @@
+{
+  "schema": "philippines-v29-crop-cost-inputs-v1",
+  "price_basis": {
+    "year": 2021,
+    "fx_php_per_usd": 49.25,
+    "model_conversion": "MUSD/1000 km2 = PHP/ha / (FX * 10)"
+  },
+  "boundary": "All paid, in-kind and imputed real inputs and labour; excludes land rent/tax, financing and irrigation charges represented elsewhere. Low input removes observed fertilizer, pesticide and named chemical-treatment components.",
+  "source_values_php_per_ha": {
+    "rice_irrig_high": 45112,
+    "rice_irrig_low": 37089,
+    "rice_rain_high": 38682,
+    "rice_rain_low": 33976,
+    "maize_high": 23245,
+    "maize_low": 17857,
+    "vegetables_high": 184162.926467698,
+    "vegetables_low": 145666.81220167482,
+    "sugarcane_high": 40813.19949008498,
+    "sugarcane_low": 26083.331048158638,
+    "coconut_low": 5353.86241795435,
+    "coconut_high": 15962.742048300466,
+    "other_high": 109573.36209417184,
+    "other_low": 84121.06584691643
+  },
+  "model_values_musd_per_1000km2": {
+    "rice_irrig_high": 91.59796954314722,
+    "rice_irrig_low": 75.30761421319797,
+    "rice_rain_high": 78.54213197969543,
+    "rice_rain_low": 68.98680203045686,
+    "maize_high": 47.19796954314721,
+    "maize_low": 36.25786802030457,
+    "vegetables_high": 373.9348760765442,
+    "vegetables_low": 295.7701770592382,
+    "sugarcane_high": 82.86944058900504,
+    "sugarcane_low": 52.961078270372866,
+    "coconut_low": 10.870786635440306,
+    "coconut_high": 32.41165898132074,
+    "other_high": 222.48398394755702,
+    "other_low": 170.8041946130283
+  },
+  "vegetable_basket": {
+    "Ampalaya": {
+      "area": 10687.78,
+      "resource": 204598,
+      "agrochemical": 34057
+    },
+    "Cabbage": {
+      "area": 8020.31,
+      "resource": 138808,
+      "agrochemical": 34453
+    },
+    "Eggplant": {
+      "area": 21780.33,
+      "resource": 149651,
+      "agrochemical": 38802
+    },
+    "Tomato": {
+      "area": 16448.19,
+      "resource": 238700,
+      "agrochemical": 42947
+    }
+  },
+  "sugarcane_weights": {
+    "plant_cane": 0.1954674220963173,
+    "ratoon_cane": 0.8045325779036827,
+    "source_ratio": "SRA national plant:ratoon area 17.94:73.84, normalized"
+  },
+  "coconut": {
+    "source_price_year": 2010,
+    "cpi_2010": 100.0,
+    "cpi_2021": 137.936373936063,
+    "low_control": 3881.4,
+    "high_mnf_five_year_costs": [
+      15667.4,
+      12801.5,
+      9611.8,
+      9794.9,
+      9987.1
+    ]
+  },
+  "other_crop_basket": {
+    "weights_ha": {
+      "papaya_proxy": 638681,
+      "rubber": 230723,
+      "cassava": 219348,
+      "mango": 195135
+    },
+    "components_php_per_ha": {
+      "papaya_high": 176549,
+      "papaya_low": 135328,
+      "rubber_annualized": 10000.0,
+      "cassava_high": 36600,
+      "cassava_low": 30123,
+      "mango_high": 90122,
+      "mango_low": 64857
+    }
+  },
+  "irrigation": {
+    "stock_1000km2": 20.06,
+    "capital_cost_musd_per_1000km2": 604.5949214026602,
+    "life_years": 30,
+    "om_php_per_ha_year": 300.0,
+    "om_model_value": 0.6091370558375635
+  }
+}

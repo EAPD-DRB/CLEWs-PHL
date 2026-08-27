@@ -1,0 +1,20 @@
+# PSA OpenSTAT, Consumer Price Index for All Income Households by Commodity Group (2018=100),
+# commodity group "07.2.3 - Maintenance and repair of personal transport equipment (S)",
+# geography PHILIPPINES, annual average ("Ave") only. Retrieved 2026-08-25 by HTTP POST to
+#   https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018NEW/0012M4ACP28.px   (1994-2017,
+#     backcasted values)
+#   https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/PI/CPI/2018NEW/0012M4ACP22.px   (2018-2026)
+# body {"query":[{"code":"Geolocation","selection":{"filter":"item","values":["0"]}},
+#                {"code":"Commodity Description","selection":{"filter":"item","values":["221"]}},
+#                {"code":"Year","selection":{"filter":"all","values":["*"]}},
+#                {"code":"Period","selection":{"filter":"item","values":["12"]}}],
+#       "response":{"format":"csv"}}
+# Value code 221 is the label above; 222 is its identical child "07.2.3.0". Period code 12 is
+# "Ave". ".." means not published.
+# USED: 2015 Ave = 96.1655973113352 and 2020 Ave = 103.7583333333330, ratio 1.0789535...
+##FILE 0012M4ACP28.px
+"Geolocation","Commodity Description","1994 Ave","1995 Ave","1996 Ave","1997 Ave","1998 Ave","1999 Ave","2000 Ave","2001 Ave","2002 Ave","2003 Ave","2004 Ave","2005 Ave","2006 Ave","2007 Ave","2008 Ave","2009 Ave","2010 Ave","2011 Ave","2012 Ave","2013 Ave","2014 Ave","2015 Ave","2016 Ave","2017 Ave"
+"PHILIPPINES","07.2.3 - Maintenance and repair of personal transport equipment (S)",..,..,..,..,..,..,51.7278028366057,54.5858660170132,55.6034621383891,60.2831480052101,63.1914628459324,69.9000594979658,75.3900533873639,77.4189641725763,81.7531698747327,83.6752958817760,86.9730610899384,88.8574983517456,91.6666666666667,92.8124045218454,95.2108157653529,96.1655973113352,96.2572563397495,98.2508402077605
+##FILE 0012M4ACP22.px
+"Geolocation","Commodity Description","2018 Ave","2019 Ave","2020 Ave","2021 Ave","2022 Ave","2023 Ave","2024 Ave","2025 Ave","2026 Ave"
+"PHILIPPINES","07.2.3 - Maintenance and repair of personal transport equipment (S)",100.0000000000000,101.6583333333330,103.7583333333330,105.1500000000000,107.9833333333330,112.2500000000000,114.1166666666670,117.9083333333330,..

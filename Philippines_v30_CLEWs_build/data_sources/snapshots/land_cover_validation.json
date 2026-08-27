@@ -1,0 +1,376 @@
+{
+  "schema": "philippines-v17-land-cover-validation-v1",
+  "generated_at_utc": "2026-08-12T16:54:51.110048+00:00",
+  "status": "pass",
+  "control": {
+    "case": "/Users/sato/GitHub/CLEWs-PHL/case/Philippines_v16",
+    "run": "IRRIGATION_WATER_BASE",
+    "objective": 369730088.3629758,
+    "validation_record": "/Users/sato/GitHub/CLEWs-PHL/Philippines_v17_CLEWs_build/data_sources/snapshots/irrigation_water_live_validation.json"
+  },
+  "candidate": {
+    "case": "/Users/sato/GitHub/CLEWs-PHL/case/Philippines_v17",
+    "run": "LAND_SAFEGUARDS_CENTRAL_COMPLETE",
+    "objective": 369740345.77061987,
+    "cbc_wall_seconds": 304.57775554200634
+  },
+  "objective_change": {
+    "absolute": 10257.407644093037,
+    "percent": 0.0027742961600742146
+  },
+  "checks": [
+    {
+      "name": "candidate_optimal",
+      "status": "pass",
+      "detail": "Optimal - objective value 369740345.77061987"
+    },
+    {
+      "name": "retained_v16_control_valid",
+      "status": "pass",
+      "detail": {
+        "case": "Philippines_v16",
+        "run": "IRRIGATION_WATER_BASE",
+        "objective": 369730088.3629758
+      }
+    },
+    {
+      "name": "case_identity",
+      "status": "pass",
+      "detail": "Philippines_v17"
+    },
+    {
+      "name": "no_new_model_objects",
+      "status": "pass",
+      "detail": {
+        "technology_ids": true,
+        "commodity_ids": true,
+        "global_mode_count": true,
+        "constraints": true
+      }
+    },
+    {
+      "name": "source_diff_scope",
+      "status": "pass",
+      "detail": [
+        "RYT.json",
+        "RYTCM.json",
+        "RYTM.json",
+        "genData.json"
+      ]
+    },
+    {
+      "name": "forest_vc_retained",
+      "status": "pass",
+      "detail": "complete VC parameter identical"
+    },
+    {
+      "name": "transition_safeguard_source_bounds",
+      "status": "pass",
+      "detail": {
+        "maximum_absolute_source_error": 0.0,
+        "scenarios_checked": 4,
+        "years_checked": [
+          2020,
+          2053
+        ]
+      }
+    },
+    {
+      "name": "idle_fallow_source_ceiling",
+      "status": "pass",
+      "detail": {
+        "maximum_absolute_source_error": 0.0,
+        "ceiling_1000_km2": 5.2877
+      }
+    },
+    {
+      "name": "base_year_class_equalities",
+      "status": "pass",
+      "detail": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0
+      }
+    },
+    {
+      "name": "zero_unallocated_2020",
+      "status": "pass",
+      "detail": 0.0
+    },
+    {
+      "name": "annual_national_land_equality",
+      "status": "pass",
+      "detail": {
+        "minimum": 295.8131,
+        "maximum": 295.8131
+      }
+    },
+    {
+      "name": "annual_land_account_closure",
+      "status": "pass",
+      "detail": {
+        "maximum_absolute_residual_1000_km2": 0.00010000000003174137
+      }
+    },
+    {
+      "name": "forest_protection_floor",
+      "status": "pass",
+      "detail": {
+        "minimum_solved_1000_km2": 72.3194,
+        "floor_1000_km2": 72.3194
+      }
+    },
+    {
+      "name": "forest_policy_rate_envelope",
+      "status": "pass",
+      "detail": {
+        "maximum_upper_violation_1000_km2": 0.0,
+        "rate_1000_km2_per_year": 2.5,
+        "forest_eligible_pool_1000_km2": 46.49536
+      }
+    },
+    {
+      "name": "true_grassland_reserve",
+      "status": "pass",
+      "detail": {
+        "maximum_lower_violation_1000_km2": 0.0,
+        "reserve_1000_km2": 19.6264,
+        "note": "Brush above the reserve remains available to cropland and built-up land without a destination-independent release rate."
+      }
+    },
+    {
+      "name": "grass_brush_does_not_exceed_2020_stock",
+      "status": "pass",
+      "detail": {
+        "maximum_upper_violation_1000_km2": 0.0
+      }
+    },
+    {
+      "name": "central_built_up_path",
+      "status": "pass",
+      "detail": {
+        "maximum_absolute_error_1000_km2": 4.8963939738300155e-05,
+        "built_up_2050_1000_km2": 15.421728582490642,
+        "built_up_2053_1000_km2": 15.582887571647078
+      }
+    },
+    {
+      "name": "nonconvertible_classes_preserved",
+      "status": "pass",
+      "detail": {
+        "other_agricultural": 0.0,
+        "barren": 0.0,
+        "water_bodies": 0.0
+      }
+    },
+    {
+      "name": "cropland_2020_stock_floor",
+      "status": "pass",
+      "detail": {
+        "minimum_solved_1000_km2": 125.2805,
+        "floor_1000_km2": 125.2805
+      }
+    },
+    {
+      "name": "zero_unallocated_all_years",
+      "status": "pass",
+      "detail": {
+        "maximum_absolute_1000_km2": 0.0
+      }
+    },
+    {
+      "name": "solved_annual_forest_increase_within_policy_rate",
+      "status": "pass",
+      "detail": {
+        "maximum_solved_increase_1000_km2": 2.5,
+        "policy_rate_1000_km2_per_year": 2.5,
+        "note": "Solved-path check; the source formulation is a cumulative envelope relative to 2020, not a gross parcel transition equation."
+      }
+    },
+    {
+      "name": "productive_cropland_preserved",
+      "status": "pass",
+      "detail": {
+        "retained_v16_2020_1000_km2": 119.9928,
+        "candidate_2020_1000_km2": 119.9928
+      }
+    },
+    {
+      "name": "idle_fallow_closes_cropland",
+      "status": "pass",
+      "detail": {
+        "idle_fallow_1000_km2": 5.2877,
+        "productive_cropland_1000_km2": 119.9928,
+        "total_cropland_1000_km2": 125.2805
+      }
+    },
+    {
+      "name": "idle_fallow_never_expands_above_base_stock",
+      "status": "pass",
+      "detail": {
+        "maximum_solved_1000_km2": 5.2877,
+        "ceiling_1000_km2": 5.2877
+      }
+    },
+    {
+      "name": "irrigation_water_within_validated_engineering_range",
+      "status": "pass",
+      "detail": {
+        "candidate_2020_km3": 40.754900000000006,
+        "retained_v16_live_2020_km3": 41.628600000000006,
+        "interpretation": "Cluster allocation is degenerate; national productive area remains fixed and water stays in the retained engineering envelope."
+      }
+    },
+    {
+      "name": "energy_demand_emission_and_policy_sources_unchanged",
+      "status": "pass",
+      "detail": {
+        "demand_RYC": true,
+        "emissions_RYE": true,
+        "emission_factors_RYTEM": true,
+        "capacity_and_cost_RT": true,
+        "time_sliced_capacity_RYTs": true,
+        "time_sliced_activity_RYTTs": true,
+        "user_constraints_RYTCn": true
+      }
+    }
+  ],
+  "land_2020": {
+    "environmental_terminal_by_mode_1000_km2": {
+      "3": 2.2879,
+      "7": 125.2805,
+      "8": 0.0,
+      "2": 77.7456,
+      "4": 1.595,
+      "1": 72.3194,
+      "6": 6.3198,
+      "5": 10.2649
+    },
+    "productive_cropland_1000_km2": 119.9928,
+    "idle_fallow_1000_km2": 5.2877,
+    "national_total_1000_km2": 295.8131
+  },
+  "land_trajectory_selected_years_1000_km2": {
+    "2020": {
+      "1": 72.3194,
+      "2": 77.7456,
+      "3": 2.2879,
+      "4": 1.595,
+      "5": 10.2649,
+      "6": 6.3198,
+      "7": 125.2805,
+      "8": 0.0
+    },
+    "2021": {
+      "1": 74.8194,
+      "2": 72.9395,
+      "3": 2.2879,
+      "4": 1.595,
+      "5": 10.4228,
+      "6": 6.3198,
+      "7": 127.4286,
+      "8": 0.0
+    },
+    "2025": {
+      "1": 84.8194,
+      "2": 58.9913,
+      "3": 2.2879,
+      "4": 1.595,
+      "5": 11.0663,
+      "6": 6.3198,
+      "7": 130.7334,
+      "8": 0.0
+    },
+    "2030": {
+      "1": 97.3194,
+      "2": 30.3715,
+      "3": 2.2879,
+      "4": 1.595,
+      "5": 11.9327,
+      "6": 6.3198,
+      "7": 145.9868,
+      "8": 0.0
+    },
+    "2040": {
+      "1": 93.9848,
+      "2": 19.6264,
+      "3": 2.2879,
+      "4": 1.595,
+      "5": 13.754,
+      "6": 6.3198,
+      "7": 158.2452,
+      "8": 0.0
+    },
+    "2050": {
+      "1": 78.5275,
+      "2": 19.6264,
+      "3": 2.2879,
+      "4": 1.595,
+      "5": 15.4217,
+      "6": 6.3198,
+      "7": 172.0348,
+      "8": 0.0
+    },
+    "2053": {
+      "1": 78.3663,
+      "2": 19.6264,
+      "3": 2.2879,
+      "4": 1.595,
+      "5": 15.5829,
+      "6": 6.3198,
+      "7": 172.0348,
+      "8": 0.0
+    }
+  },
+  "productive_cropland_selected_years_1000_km2": {
+    "2020": 119.9928,
+    "2021": 122.1432,
+    "2025": 130.7328,
+    "2030": 140.6988,
+    "2040": 158.2464,
+    "2050": 172.0374,
+    "2053": 172.0374
+  },
+  "idle_fallow_selected_years_1000_km2": {
+    "2020": 5.2877,
+    "2021": 5.2877,
+    "2025": 0.0,
+    "2030": 5.2877,
+    "2040": 0.0,
+    "2050": 0.0,
+    "2053": 0.0
+  },
+  "transition_safeguards": {
+    "source": "/Users/sato/GitHub/CLEWs-PHL/Philippines_v17_CLEWs_build/data_sources/snapshots/land_transition_safeguards.json",
+    "annual_policy_rate_1000_km2": 2.5,
+    "mapped_brush_shrub_pool_1000_km2": 58.1192,
+    "forest_eligible_brush_shrub_pool_1000_km2": 46.49536,
+    "forest_suitability_fraction": 0.8,
+    "true_grassland_reserve_1000_km2": 19.6264,
+    "maximum_forest_1000_km2": 118.81476
+  },
+  "regressions": {
+    "exact_unchanged_source_parameters": {
+      "demand_RYC": true,
+      "emissions_RYE": true,
+      "emission_factors_RYTEM": true,
+      "capacity_and_cost_RT": true,
+      "time_sliced_capacity_RYTs": true,
+      "time_sliced_activity_RYTTs": true,
+      "user_constraints_RYTCn": true
+    },
+    "candidate_2020_irrigation_water_km3": 40.754900000000006
+  },
+  "interpretation": {
+    "forest_vc": "Retained at -10; a sourced expansion envelope and class safeguards are installed, while restoration costs/lags and benefit sensitivities remain deferred.",
+    "idle_fallow": "Endogenous nonnegative mode-2 activity on existing LNDOTHTOT; no new global mode or technology.",
+    "hydrology": "Both LNDOTHTOT modes produce LOTHTOT, retaining the inherited cluster-mode-29 hydrology proxy.",
+    "base_year_status": "The 2020 class observations are initialization equalities, not an independent calibration test.",
+    "control_status": "The retained validated current-v16 live run is used. A redundant fresh control was stopped after exceeding twice its established runtime without returning a result; exact source identity protects unaffected sectors."
+  }
+}

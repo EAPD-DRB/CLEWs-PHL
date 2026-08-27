@@ -1,0 +1,134 @@
+{
+  "case": "Philippines_v28",
+  "run": "BASE_V28",
+  "status": "pass",
+  "checks": {
+    "structure": {
+      "technologies": 182,
+      "commodities": 95,
+      "constraints": 6,
+      "crop_land_technologies": 24,
+      "land_clusters": 8,
+      "deleted_identifiers_absent": true,
+      "references_valid": true
+    },
+    "scenarios": {
+      "scenario_ids": [
+        "SC_0",
+        "SC_3hgjb",
+        "SC_w03qj",
+        "SC_huc7i"
+      ],
+      "base_inheritance_rows": [
+        {
+          "parameter": "IAR",
+          "base_rows": 720
+        },
+        {
+          "parameter": "OAR",
+          "base_rows": 30
+        }
+      ]
+    },
+    "land": {
+      "base_year_components_10e3_km2": {
+        "forest": 72.3194,
+        "grass_brush": 77.7456,
+        "other_fishpond": 2.2879,
+        "idle_fallow": 5.2877,
+        "barren": 1.595,
+        "built_up": 10.2649,
+        "water": 6.3198,
+        "productive_crop": 119.9928
+      },
+      "base_year_total": 295.8131,
+      "national_endowment": 295.8131,
+      "cluster_total": 295.8131,
+      "cluster_mode_land_links": 240,
+      "land_class_commodities": 30,
+      "minimum_envelope_max": 287.0330107903164,
+      "minimum_envelope_by_year": {
+        "2020": 287.0330107903164,
+        "2021": 229.32796361196313,
+        "2022": 230.52637874884277,
+        "2023": 233.0087973639176,
+        "2024": 237.92688967085817,
+        "2025": 238.58071977355132,
+        "2026": 239.09723989392995,
+        "2027": 239.59590202242475,
+        "2028": 240.0770512150648,
+        "2029": 240.54102757110348,
+        "2030": 240.98816629734682,
+        "2031": 241.3067799820962,
+        "2032": 241.61148198902617,
+        "2033": 241.90255981304256,
+        "2034": 242.1802967472217,
+        "2035": 242.4449719378323,
+        "2036": 242.5644325382596,
+        "2037": 242.67384802430342,
+        "2038": 242.77344787224746,
+        "2039": 242.86345812070573,
+        "2040": 242.94410141619966,
+        "2041": 242.875030111527,
+        "2042": 242.79935864846917,
+        "2043": 242.71726262097488,
+        "2044": 242.62891489797255,
+        "2045": 242.53448566011753,
+        "2046": 242.27936692429796,
+        "2047": 242.02092328553834,
+        "2048": 241.75927756910215,
+        "2049": 241.49455057595634,
+        "2050": 241.22686111081651,
+        "2051": 240.0562576795288,
+        "2052": 238.8977762590761,
+        "2053": 237.75129682954923
+      },
+      "residual_land_class": "LOTHTOT through cluster mode 29",
+      "renewable_land": "reporting-only subset of built-up"
+    },
+    "fallow": {
+      "producer": "LNDOTHTOT mode 2",
+      "consumers": 24,
+      "consumer_ratio": 0.041666666666666664,
+      "implied_idle_share_of_total_crop": 0.04
+    },
+    "biomass": {
+      "TEC_telf6": {
+        "cap_2020": 274.8966504125725,
+        "cap_2053": 278.8785169180783,
+        "maximum_cap": 288.1469400050685,
+        "minimum_slice_delivery": 288.1469400050685
+      },
+      "TEC_v23biors": {
+        "cap_2020": 110.34665891380581,
+        "cap_2053": 149.9116357874277,
+        "maximum_cap": 149.9116357874277,
+        "minimum_slice_delivery": 149.9116357874277
+      }
+    },
+    "application_chain": {
+      "glpk_matrix_generation": "passed",
+      "reused_generated_artifacts": true,
+      "matrix": {
+        "rows": 549263,
+        "columns": 581344,
+        "nonzeros": 8526618
+      },
+      "cbc_invoked": false,
+      "glpk_log": "/Users/sato/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v28/res/BASE_V28/glpsol_check.log",
+      "sha256": {
+        "data.txt": "79495fcaf635584f57589825f792c43c112f4f787b1e7ce191f2495e64ec9ebf",
+        "data_processed.txt": "8360818ebec501fffa4ef2885b7168ac5f6da610fab1c8d411809d6d960179cd",
+        "lp.lp": "2e852eeeb2bcef760423ee3a2ade2b510d20b0c045bb86cd30c183b047a2abee",
+        "glpsol_check.log": "62470287917e7b7c865250182662d31a600334a183dbd0fd7f7206a79adf548d"
+      },
+      "bytes": {
+        "data.txt": 1756451,
+        "data_processed.txt": 1823460,
+        "lp.lp": 533337885,
+        "glpsol_check.log": 4176
+      }
+    }
+  },
+  "interpretation": "All structural, closure, generation and actual GLPK matrix gates passed. CBC was not invoked."
+}

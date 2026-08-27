@@ -1,0 +1,34 @@
+{
+  "case": "Philippines_v16",
+  "date": "2026-08-07",
+  "run": "BASE_V15",
+  "status": "optimal",
+  "objective": 369630979.58388072,
+  "stored_baseline_objective": 369630979.6246426,
+  "objective_difference": -0.04076188,
+  "cbc_cpu_seconds": 172.88,
+  "cbc_wall_seconds": 178.28,
+  "full_chain_wall_seconds": 226.12678813934326,
+  "generation": "DataFile.generateDatafile",
+  "preprocessing": "DataFile.preprocessData",
+  "matrix": "GLPK --check completed successfully",
+  "solver": "CBC",
+  "source_hashes": {
+    "genData.json": "a1f1c683f564605e8285f150ee3c0244cf0a53ca7ef9f62fb6703e9bd1920e2b",
+    "RYTCM.json": "83923df0f47169aa8a0e4044acb6c2bf58732a636211d814df31cbd7ea62b788",
+    "RYC.json": "67fb414c38f349b8f82adaf3df0f6b5366178481bb3801682b3365971f39c0f4"
+  },
+  "non_forcing": {
+    "irrigated_area_is_endogenous": true,
+    "irrigated_area_benchmark_mha": 1.7,
+    "irrigated_area_commodity_added": false,
+    "irrigated_area_constraint_added": false,
+    "technology_activity_bounds_added": false,
+    "source_share_constraint_added": false
+  },
+  "not_run": [
+    "policy scenarios",
+    "sensitivity analysis",
+    "behavioral irrigated-area target comparison"
+  ]
+}

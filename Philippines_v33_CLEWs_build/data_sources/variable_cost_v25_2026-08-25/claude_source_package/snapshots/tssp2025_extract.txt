@@ -1,0 +1,21 @@
+SOURCE  SRC_VC_TSSP2025_SERVICE_CONTRACTING
+FILE    TSSP 2025 conference paper, Move As One Coalition, on PUV modernization financing
+WHAT    The passage quoting the government service contracting rates. Extracted from the
+        PDF content streams and reflowed; some quoted strings in the original are in a
+        custom-encoded font and appear as mojibake, which does not affect the numbers.
+USED    Php 26 per kilometre for a modern jeepney, Php 20 per kilometre for a traditional
+        one. Envelope cross-check only: these are all-in payments, not maintenance.
+RETRIEVED 2026-08-25
+----------------------------------------------------------------------
+======================================================================
+s subtracted from the initial principal cost paid to the bank. IV - A also received funding from grants from t
+he Provincial Cooperative, Livelihood & Entrepreneurial Development Office (PCLEDO) in 2022 and 2024. The gove
+rnment service contracting program also provides a subsidy equivalent to Php 26 per kilometer traveled per day
+ for a modern jeepney, and Php 20 per kilometer traveled per day for a traditional jeepney. +RZHYHUWKLV³VHU
+YLFH FRQWUDFWLQJ´VFKHPHLVQRWLPSOHPHQWHGFRQVLVWHQWO\\HDU - round but is instead implemented for short pe
+riods of time, ranging from 10 days to 2 months at a time, according to a key informant. As such, existing sub
+sidies from governme nt service contracting cannot be considered as regular sources of revenue aimed at recove
+ring both operational and amor
+======================================================================
+V - A also received funding from grants from the Provincial Cooperative, Livelihood & Entrepreneurial Developm
+ent Office (PCLEDO) in 2022 and 2024. The government service contracting program also provides a subsidy equiv

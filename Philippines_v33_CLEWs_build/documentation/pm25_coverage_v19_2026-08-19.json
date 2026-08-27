@@ -1,0 +1,559 @@
+{
+    "schema": "philippines-v19-pm25-coverage-v1",
+    "date": "2026-08-19",
+    "base_case": "case/Philippines_v18",
+    "base_release": {
+        "git_commit": "2735feb",
+        "pull_time_local": "2026-08-19T10:09:18-04:00",
+        "archive": "Philippines_v18_v18.0.1_MUIO.zip",
+        "archive_sha256": "c3f4ee25d2e8c3315ced1be4bf819673859be45079536abb2cfbc40a65d1dc55",
+        "note": "Exact working v18 baseline before the later 2020-2025 deployment-cap experiment."
+    },
+    "case": "Philippines_v19",
+    "emission": {
+        "id": "EMI_xpvk3",
+        "name": "PM2_5",
+        "unit": "kt"
+    },
+    "scope": "Additional endogenous PM2.5 factors for existing technologies only",
+    "changed_source_files": [
+        "RYTEM.json",
+        "genData.json"
+    ],
+    "technology_count": 52,
+    "newly_linked_technology_count": 46,
+    "existing_factor_series_extended_count": 6,
+    "technologies": {
+        "PHL_AGR_HEAT_BIOM": {
+            "tech_id": "TEC_ttzr5",
+            "method": "EEA small-combustion Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_SMALL_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.17977528096,
+            "new_2030": 0.17977528096,
+            "new_2053": 0.17777777776
+        },
+        "PHL_AGR_HEAT_COAL": {
+            "tech_id": "TEC_0xuth",
+            "method": "EEA small-combustion Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_SMALL_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.121348314648,
+            "new_2030": 0.121348314648,
+            "new_2053": 0.118681318692
+        },
+        "PHL_AGR_MOT_LIQ": {
+            "tech_id": "TEC_r4bfq",
+            "method": "EEA agriculture NRMM Tier 1 1913 g/t diesel ÷ 43.1 GJ/t × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_NONROAD_MACHINERY;SRC_PHL_FISHERIES_DIESEL_BASIS",
+            "old_2020": 0.0,
+            "new_2020": 0.11096287703016242,
+            "new_2030": 0.11096287703016242,
+            "new_2053": 0.11096287703016242
+        },
+        "PHL_HOU_COOK_NG": {
+            "tech_id": "TEC_qg08k",
+            "method": "EEA residential gaseous-fuel Tier 1 factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_SMALL_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.0012,
+            "new_2030": 0.0012,
+            "new_2053": 0.0012
+        },
+        "PHL_INDU_OTHHPH_BIOM": {
+            "tech_id": "TEC_wua47",
+            "method": "EEA industry Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_INDUSTRY_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.15730337084,
+            "new_2030": 0.15730337084,
+            "new_2053": 0.15555555554
+        },
+        "PHL_INDU_OTHHPH_BIOM_CCS": {
+            "tech_id": "TEC_mlan5",
+            "method": "EEA industry Tier 1 fuel-input factor × endogenous CCS-route IAR × 0.001; no PM capture credit assumed",
+            "source": "SRC_EEA_2023_INDUSTRY_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.15730337084,
+            "new_2030": 0.15730337084,
+            "new_2053": 0.15555555554
+        },
+        "PHL_INDU_OTHHPH_COAL": {
+            "tech_id": "TEC_mnq2d",
+            "method": "EEA industry Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_INDUSTRY_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.121348314648,
+            "new_2030": 0.121348314648,
+            "new_2053": 0.118681318692
+        },
+        "PHL_INDU_OTHHPH_COAL_CCS": {
+            "tech_id": "TEC_l0wef",
+            "method": "EEA industry Tier 1 fuel-input factor × endogenous CCS-route IAR × 0.001; no PM capture credit assumed",
+            "source": "SRC_EEA_2023_INDUSTRY_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.15233070319199998,
+            "new_2030": 0.148127810184,
+            "new_2053": 0.145090511712
+        },
+        "PHL_INDU_OTHHPH_NG": {
+            "tech_id": "TEC_5tf4l",
+            "method": "EEA industry Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_INDUSTRY_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.00084782608716,
+            "new_2030": 0.00083870967726,
+            "new_2053": 0.00082978723386
+        },
+        "PHL_INDU_OTHHPH_NG_CCS": {
+            "tech_id": "TEC_vvk62",
+            "method": "EEA industry Tier 1 fuel-input factor × endogenous CCS-route IAR × 0.001; no PM capture credit assumed",
+            "source": "SRC_EEA_2023_INDUSTRY_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.0009761949366000001,
+            "new_2030": 0.0009484716797400001,
+            "new_2053": 0.0009392865081600001
+        },
+        "PHL_INDU_OTHHPH_OIL": {
+            "tech_id": "TEC_n9nde",
+            "method": "EEA industry Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_INDUSTRY_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.021276595739999998,
+            "new_2030": 0.02105263158,
+            "new_2053": 0.020833333340000003
+        },
+        "PHL_INDU_OTHLPH_BIOM": {
+            "tech_id": "TEC_0kumq",
+            "method": "EEA industry Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_INDUSTRY_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.15730337084,
+            "new_2030": 0.15730337084,
+            "new_2053": 0.15555555554
+        },
+        "PHL_INDU_OTHLPH_COAL": {
+            "tech_id": "TEC_nbc72",
+            "method": "EEA industry Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_INDUSTRY_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.121348314648,
+            "new_2030": 0.121348314648,
+            "new_2053": 0.118681318692
+        },
+        "PHL_INDU_OTHLPH_NG": {
+            "tech_id": "TEC_yt6ao",
+            "method": "EEA industry Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_INDUSTRY_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.00084782608716,
+            "new_2030": 0.00083870967726,
+            "new_2053": 0.00082978723386
+        },
+        "PHL_INDU_OTHLPH_OIL": {
+            "tech_id": "TEC_d6i5g",
+            "method": "EEA industry Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_INDUSTRY_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.021276595739999998,
+            "new_2030": 0.02105263158,
+            "new_2053": 0.020833333340000003
+        },
+        "PHL_POW_PP_BIOM_CCS": {
+            "tech_id": "TEC_ojxym",
+            "method": "EEA energy-industries Tier 1 fuel-input factor × endogenous CCS-route IAR × 0.001; no PM capture credit assumed",
+            "source": "SRC_EEA_2023_ENERGY_INDUSTRIES",
+            "old_2020": 0.0,
+            "new_2020": 0.457831325336,
+            "new_2030": 0.457831325336,
+            "new_2053": 0.457831325336
+        },
+        "PHL_POW_PP_COAL_CCS": {
+            "tech_id": "TEC_mco0b",
+            "method": "EEA energy-industries Tier 1 fuel-input factor × endogenous CCS-route IAR × 0.001; no PM capture credit assumed",
+            "source": "SRC_EEA_2023_ENERGY_INDUSTRIES",
+            "old_2020": 0.0,
+            "new_2020": 0.0101040118868,
+            "new_2030": 0.0101040118868,
+            "new_2053": 0.0101040118868
+        },
+        "PHL_POW_PP_NGCC_CCS": {
+            "tech_id": "TEC_ayzlr",
+            "method": "EEA energy-industries Tier 1 fuel-input factor × endogenous CCS-route IAR × 0.001; no PM capture credit assumed",
+            "source": "SRC_EEA_2023_ENERGY_INDUSTRIES",
+            "old_2020": 0.0,
+            "new_2020": 0.00026180458164000003,
+            "new_2030": 0.00026180458164000003,
+            "new_2053": 0.00026180458164000003
+        },
+        "PHL_PRO_EXTR_COAL": {
+            "tech_id": "TEC_4qu6p",
+            "method": "EEA Tier 1 mining+handling 0.005 kg/t ÷ retained 22.1 GJ/t",
+            "source": "SRC_EEA_2023_COAL_MINING_HANDLING;SRC_PHL_V18_FOSSIL_BORDER_INPUTS",
+            "old_2020": 0.0,
+            "new_2020": 0.0002262443438914027,
+            "new_2030": 0.0002262443438914027,
+            "new_2053": 0.0002262443438914027
+        },
+        "PHL_PRO_IMP_COAL": {
+            "tech_id": "TEC_khtrp",
+            "method": "EEA imported-coal handling 0.3 g/t (=0.0003 kg/t) ÷ retained 22.1 GJ/t",
+            "source": "SRC_EEA_2023_COAL_MINING_HANDLING;SRC_PHL_V18_FOSSIL_BORDER_INPUTS",
+            "old_2020": 0.0,
+            "new_2020": 1.357466063348416e-05,
+            "new_2030": 1.357466063348416e-05,
+            "new_2053": 1.357466063348416e-05
+        },
+        "PHL_SER_HEAT_BIOM": {
+            "tech_id": "TEC_lvd0n",
+            "method": "EEA small-combustion Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_SMALL_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.22222222224000002,
+            "new_2030": 0.20779220784000002,
+            "new_2053": 0.2025316456
+        },
+        "PHL_SER_HEAT_COAL": {
+            "tech_id": "TEC_t8vg5",
+            "method": "EEA small-combustion Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_SMALL_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.15000000001199998,
+            "new_2030": 0.140259740292,
+            "new_2053": 0.13670886078
+        },
+        "PHL_SER_HEAT_NG": {
+            "tech_id": "TEC_7gx2l",
+            "method": "EEA small-combustion Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_SMALL_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.0009873417723,
+            "new_2030": 0.0009176470586399999,
+            "new_2053": 0.0008764044946800001
+        },
+        "PHL_SER_HEAT_OIL": {
+            "tech_id": "TEC_g4zvf",
+            "method": "EEA small-combustion Tier 1 fuel-input factor × endogenous IAR × 0.001",
+            "source": "SRC_EEA_2023_SMALL_COMBUSTION",
+            "old_2020": 0.0,
+            "new_2020": 0.022784810129999996,
+            "new_2030": 0.021176470584,
+            "new_2053": 0.020224719108000003
+        },
+        "PHL_TRA_23WHEEL_ELE": {
+            "tech_id": "TEC_86iqi",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.005,
+            "new_2030": 0.005,
+            "new_2053": 0.005
+        },
+        "PHL_TRA_23WHEEL_LIQ": {
+            "tech_id": "TEC_ojmg5",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.006213,
+            "new_2020": 0.011213,
+            "new_2030": 0.011213,
+            "new_2053": 0.011213
+        },
+        "PHL_TRA_23WHEEL_NG": {
+            "tech_id": "TEC_32tdz",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.005,
+            "new_2030": 0.005,
+            "new_2053": 0.005
+        },
+        "PHL_TRA_BUS_ELE": {
+            "tech_id": "TEC_bt8n5",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.05210000000000001,
+            "new_2030": 0.05210000000000001,
+            "new_2053": 0.05210000000000001
+        },
+        "PHL_TRA_BUS_H2": {
+            "tech_id": "TEC_8fk3w",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.05210000000000001,
+            "new_2030": 0.05210000000000001,
+            "new_2053": 0.05210000000000001
+        },
+        "PHL_TRA_BUS_LIQ": {
+            "tech_id": "TEC_mhaln",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.095375,
+            "new_2020": 0.14747500000000002,
+            "new_2030": 0.14747500000000002,
+            "new_2053": 0.14747500000000002
+        },
+        "PHL_TRA_BUS_NG": {
+            "tech_id": "TEC_ru9ab",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.05210000000000001,
+            "new_2030": 0.05210000000000001,
+            "new_2053": 0.05210000000000001
+        },
+        "PHL_TRA_BUS_PHEV": {
+            "tech_id": "TEC_085ph",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.05210000000000001,
+            "new_2030": 0.05210000000000001,
+            "new_2053": 0.05210000000000001
+        },
+        "PHL_TRA_CAR_ELE": {
+            "tech_id": "TEC_lv1dz",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.013399999999999999,
+            "new_2030": 0.013399999999999999,
+            "new_2053": 0.013399999999999999
+        },
+        "PHL_TRA_CAR_H2": {
+            "tech_id": "TEC_dpe8t",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.013399999999999999,
+            "new_2030": 0.013399999999999999,
+            "new_2053": 0.013399999999999999
+        },
+        "PHL_TRA_CAR_LIQ": {
+            "tech_id": "TEC_g3wdp",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.006867,
+            "new_2020": 0.020267,
+            "new_2030": 0.020267,
+            "new_2053": 0.020267
+        },
+        "PHL_TRA_CAR_NG": {
+            "tech_id": "TEC_c6q1n",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.013399999999999999,
+            "new_2030": 0.013399999999999999,
+            "new_2053": 0.013399999999999999
+        },
+        "PHL_TRA_CAR_PHEV": {
+            "tech_id": "TEC_gl5ju",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.013399999999999999,
+            "new_2030": 0.013399999999999999,
+            "new_2053": 0.013399999999999999
+        },
+        "PHL_TRA_TRUH_ELE": {
+            "tech_id": "TEC_6m7n3",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.05210000000000001,
+            "new_2030": 0.05210000000000001,
+            "new_2053": 0.05210000000000001
+        },
+        "PHL_TRA_TRUH_H2": {
+            "tech_id": "TEC_2071z",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.05210000000000001,
+            "new_2030": 0.05210000000000001,
+            "new_2053": 0.05210000000000001
+        },
+        "PHL_TRA_TRUH_LIQ": {
+            "tech_id": "TEC_cjwym",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.08175,
+            "new_2020": 0.13385000000000002,
+            "new_2030": 0.13385000000000002,
+            "new_2053": 0.13385000000000002
+        },
+        "PHL_TRA_TRUH_NG": {
+            "tech_id": "TEC_tp8ti",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.05210000000000001,
+            "new_2030": 0.05210000000000001,
+            "new_2053": 0.05210000000000001
+        },
+        "PHL_TRA_TRUH_PHEV": {
+            "tech_id": "TEC_ya11y",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.05210000000000001,
+            "new_2030": 0.05210000000000001,
+            "new_2053": 0.05210000000000001
+        },
+        "PHL_TRA_TRUL_ELE": {
+            "tech_id": "TEC_9v7fy",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.0196,
+            "new_2030": 0.0196,
+            "new_2053": 0.0196
+        },
+        "PHL_TRA_TRUL_H2": {
+            "tech_id": "TEC_st101",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.0196,
+            "new_2030": 0.0196,
+            "new_2053": 0.0196
+        },
+        "PHL_TRA_TRUL_LIQ": {
+            "tech_id": "TEC_k3xjq",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0327,
+            "new_2020": 0.0523,
+            "new_2030": 0.0523,
+            "new_2053": 0.0523
+        },
+        "PHL_TRA_TRUL_NG": {
+            "tech_id": "TEC_hig3m",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.0196,
+            "new_2030": 0.0196,
+            "new_2053": 0.0196
+        },
+        "PHL_TRA_TRUL_PHEV": {
+            "tech_id": "TEC_rkxff",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.0196,
+            "new_2030": 0.0196,
+            "new_2053": 0.0196
+        },
+        "PHL_TRA_VAN_ELE": {
+            "tech_id": "TEC_2pm04",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.0196,
+            "new_2030": 0.0196,
+            "new_2053": 0.0196
+        },
+        "PHL_TRA_VAN_H2": {
+            "tech_id": "TEC_qppbf",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.0196,
+            "new_2030": 0.0196,
+            "new_2053": 0.0196
+        },
+        "PHL_TRA_VAN_LIQ": {
+            "tech_id": "TEC_7tjb0",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.02725,
+            "new_2020": 0.04685,
+            "new_2030": 0.04685,
+            "new_2053": 0.04685
+        },
+        "PHL_TRA_VAN_NG": {
+            "tech_id": "TEC_87ogj",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.0196,
+            "new_2030": 0.0196,
+            "new_2053": 0.0196
+        },
+        "PHL_TRA_VAN_PHEV": {
+            "tech_id": "TEC_427lp",
+            "method": "EEA 2025 Tier 1 tyre+brake plus road-surface wear; added to inherited exhaust where present",
+            "source": "SRC_EEA_2025_ROAD_NONEXHAUST",
+            "old_2020": 0.0,
+            "new_2020": 0.0196,
+            "new_2030": 0.0196,
+            "new_2053": 0.0196
+        }
+    },
+    "explicit_exclusions": {
+        "PHL_AGR_HEAT_OIL;PHL_AGR_HEAT_NG": "no input-fuel link exists in RYTCM/genData, so a fuel-input factor cannot be mapped safely",
+        "PHL_TRA_AVI_LIQ": "EEA states PM2.5 is aircraft- and payload-dependent; the model has no aircraft/LTO/CCD split",
+        "PHL_TRA_RAIL*_ELE;PHL_TRA_RAIL*_H2": "the retained rail guidebook provides exhaust factors for diesel/gas oil, not drivetrain-neutral rail wear",
+        "PHL_TRA_*_NG;PHL_TRA_*_PHEV": "road non-exhaust is included, but alternative-powertrain exhaust is not inferred without a fleet/standard split",
+        "hydrogen;ammonia;fuel-processing technologies": "no defensible PM2.5 factor matching the aggregate model activity boundary was found",
+        "crop-residue/waste burning;cement/process dust;road resuspension": "the model has no corresponding explicit activity technology; no residual inventory is introduced"
+    },
+    "non_changes": [
+        "no CO2e factor changes",
+        "no emission caps or penalties",
+        "no exogenous emissions",
+        "no technology or commodity additions",
+        "no cost, demand, capacity, activity-bound, or solver changes"
+    ],
+    "before_sha256": {
+        "RYSeDt.json": "3d5981408cb25f2030e55373cec90b7aac78ba99e6eae91fa94b818624b63458",
+        "RYTC.json": "9d7fb98b0b06b40562f453e754b8d60aa8c81911d30f9ac9094bc96f05c61359",
+        "RS.json": "a954bbe1c640eabaa9b247534bf7caaf6e924de043ca22563b2515f0413e255e",
+        "RYTCM.json": "a3e909b64aa0f413848c5b3b11c532defb5410c220c11d736015c3adc4edf5cb",
+        "RTSM.json": "b5f05d6916f988e122fa368636e8f6841e2b89bb35f551bea3fd0f171c28609b",
+        "genData.json": "d0164bbc98ba3f1f379dc1e26c749d89daadf5a0696cd99cf9306f0ac9fcd3f1",
+        "water_demand_validation_summary.json": "e08590df662725c882057ee39f43992b9d9bd6eefc8c1c2acf2c9a1730b3415c",
+        "RYC.json": "281e7c3feab09ab5f3293a34ce6aea41274d33aea28b81575923c22c5f68e9f2",
+        "RYCTs.json": "f92f20d369af9b83127328874d3a645e88467b6d7dec571b639ca93b45308c29",
+        "RYTEM.json": "394dde16110e917a19ff99026794436bce0e024383f125500e299fc108a6027d",
+        "R.json": "8e352ff8017301cb6fb2857b399a2d66f534e5691b03fd2c0ffbfe1b51994e84",
+        "RYE.json": "025be0c838019c347dda8310cd326f5e65c414f49f83086db5b0763b96ba4e78",
+        "RYDtb.json": "5441dd7e9ac61fc9498c85ec20a8935a2870280035fecbe89a89e72b611826af",
+        "RT.json": "b34a02a879ffafbd8ed177c79937424bff5424433799a7cc5af2dc38c5e26904",
+        "RYTTs.json": "290cb4d1949bdad13f26598c096cea1dc37196d492bc4687841110762fca6cc7",
+        "RYS.json": "a224467bc0afb311731cf9b588b04599d71529289e9660ce88a99eb11592a5e2",
+        "RYTs.json": "3facea3a09320ba6ab8c1ed11dd61ede33db2300c3c5a8090b67d504794ef5c2",
+        "RYCn.json": "285c03373a81a757865a9c338eaf8bbcb2c81dc34f6693f7632811b12f93f541",
+        "RYTM.json": "7d66727dddf71e631b03f3843b529e74b840dbb4d40dcf55ad052dd8f4a4da02",
+        "RE.json": "85e0ea73dfd7ce398e0638ed23b8c8cd7b7ec7e0f0b4119d2963ce94625aba15",
+        "RYTCn.json": "8aa845fad27adcdf614f5274ccb874bcb63cf73d6f1bdee7b10cec01ca296c28",
+        "RYT.json": "333f37a5ac526530af7ea797b119ac7c09ba69be99accd5318b829f68b188792"
+    },
+    "after_sha256": {
+        "RYSeDt.json": "3d5981408cb25f2030e55373cec90b7aac78ba99e6eae91fa94b818624b63458",
+        "RYTC.json": "9d7fb98b0b06b40562f453e754b8d60aa8c81911d30f9ac9094bc96f05c61359",
+        "RS.json": "a954bbe1c640eabaa9b247534bf7caaf6e924de043ca22563b2515f0413e255e",
+        "RYTCM.json": "a3e909b64aa0f413848c5b3b11c532defb5410c220c11d736015c3adc4edf5cb",
+        "RTSM.json": "b5f05d6916f988e122fa368636e8f6841e2b89bb35f551bea3fd0f171c28609b",
+        "genData.json": "4c63e167c3988d582722f1b0e1a3722504684ce9bcfed215adf6e23d75a66bc1",
+        "water_demand_validation_summary.json": "e08590df662725c882057ee39f43992b9d9bd6eefc8c1c2acf2c9a1730b3415c",
+        "RYC.json": "281e7c3feab09ab5f3293a34ce6aea41274d33aea28b81575923c22c5f68e9f2",
+        "RYCTs.json": "f92f20d369af9b83127328874d3a645e88467b6d7dec571b639ca93b45308c29",
+        "RYTEM.json": "f9064528797560c97e444a652b3d88e7a45475f663ebe0c50355a8a8e2eea096",
+        "R.json": "8e352ff8017301cb6fb2857b399a2d66f534e5691b03fd2c0ffbfe1b51994e84",
+        "RYE.json": "025be0c838019c347dda8310cd326f5e65c414f49f83086db5b0763b96ba4e78",
+        "RYDtb.json": "5441dd7e9ac61fc9498c85ec20a8935a2870280035fecbe89a89e72b611826af",
+        "RT.json": "b34a02a879ffafbd8ed177c79937424bff5424433799a7cc5af2dc38c5e26904",
+        "RYTTs.json": "290cb4d1949bdad13f26598c096cea1dc37196d492bc4687841110762fca6cc7",
+        "RYS.json": "a224467bc0afb311731cf9b588b04599d71529289e9660ce88a99eb11592a5e2",
+        "RYTs.json": "3facea3a09320ba6ab8c1ed11dd61ede33db2300c3c5a8090b67d504794ef5c2",
+        "RYCn.json": "285c03373a81a757865a9c338eaf8bbcb2c81dc34f6693f7632811b12f93f541",
+        "RYTM.json": "7d66727dddf71e631b03f3843b529e74b840dbb4d40dcf55ad052dd8f4a4da02",
+        "RE.json": "85e0ea73dfd7ce398e0638ed23b8c8cd7b7ec7e0f0b4119d2963ce94625aba15",
+        "RYTCn.json": "8aa845fad27adcdf614f5274ccb874bcb63cf73d6f1bdee7b10cec01ca296c28",
+        "RYT.json": "333f37a5ac526530af7ea797b119ac7c09ba69be99accd5318b829f68b188792"
+    }
+}

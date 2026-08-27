@@ -1,0 +1,278 @@
+{
+    "generated_at_utc": "2026-07-27T20:06:53.057437+00:00",
+    "source_case": "Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC",
+    "target_case": "Philippines_v13_CALIBRATION",
+    "variant": "calibrated",
+    "workbook": {
+        "path": "/Users/sato/Documents/GitHub/MUIOGO/docs/260726_PHL_CLEWS_EAR_PM25_kt_CO2e_v5_EDGAR.xlsx",
+        "sha256": "c8601bf26acce39d6e661a9f5bcb4801c4de401a5b73ce212f9115cca5ba63f8"
+    },
+    "source_fingerprints_before": {
+        "R.json": "741adb0ce8eae3075e46c3c18120deab5d674928ed85494dbd5478106cacb86a",
+        "RE.json": "6d0dbb61b0fe99a0973acaac1e45351aa318143406c977254911c33ca65fb903",
+        "RS.json": "de28a99a4585298174c810bab9bad0e0bda2a5ea37dd58875ed2f91539c34b87",
+        "RT.json": "493cb52858a7853b9939efb4066b4d5ff1ceba25bf0fb0628a41fe586b851a0f",
+        "RTSM.json": "bc90a6ec7e9517188e2891fe35a4b6d168587a7ab9d4d04e813e3a956e15ffe0",
+        "RYC.json": "4b74b8d82db8c0dd96b5c780a8a07e94fee2f1304a44575103f1bec40ccb8f3d",
+        "RYCTs.json": "82f96dbfef03f0b93a50e0c888893d57517e6b6b292a2f8a7c51b219682b84f3",
+        "RYCn.json": "e372a8c85639f035c9b6095e9c34ea3bc1ea31364be83f71843675bf8898979d",
+        "RYDtb.json": "9dda8758603e2cb9da1d99eb835cbb07e68bbaa44165965ad542aeb0303bb097",
+        "RYE.json": "d7b4bd797f76c294927724e6637e7c891f5ab51c059be1867b0616660e911e51",
+        "RYS.json": "a9a7708f39a9894e306883e6d03a12e4806723cd45151e76204ba81956351dd9",
+        "RYSeDt.json": "adfe9b796252dab541ca3727890da9b81b2277654db153298aeb00f7b3c49851",
+        "RYT.json": "cd08dbe67a157d0c7522b432ce1d442940c8dcd459d9c75428bae06e7866a615",
+        "RYTC.json": "557e5c8ab583cafdce04d3061e70e5ce6d9d8091ff4138af51ff603002056f55",
+        "RYTCM.json": "01aa65dae9b6d44e0e3743f1f9b12dd9576c9240c40d2fb2213237984c08bb7f",
+        "RYTCn.json": "c6b16ec4a244c93c5d41acca2627924d6348c344c363b22dd03c258929fd816e",
+        "RYTEM.json": "b93afc51a0f13dd7ac85be3f901f1bb6d01cacdf308a436226b66b79e6494f7d",
+        "RYTM.json": "d09bcebec3d572ed31b585ccb311f27e3a72b5079a72b2008271774d131634e6",
+        "RYTTs.json": "f500cdcae804971314bc6637d78ad46655bb6604e4f5cc184675de1904acc258",
+        "RYTs.json": "0cf13bcef933357b648085baf12ec0c80fa1e0cca18d48ad3b9920bc40c37d00",
+        "genData.json": "5773504c0f66abe54483f8997cc09efbc8fdbd58513c0b908b5078250be49567",
+        "view/resData.json": "4f089aed0137521ad25d06e843787644253e7e7be7923d8f7fc7d4893c5736bd",
+        "view/viewDefinitions.json": "5d68d8b507fca7ce60af57f2c4972c9841f734886e0f6b9e440cca52496c6249"
+    },
+    "source_fingerprints_after": {
+        "R.json": "741adb0ce8eae3075e46c3c18120deab5d674928ed85494dbd5478106cacb86a",
+        "RE.json": "6d0dbb61b0fe99a0973acaac1e45351aa318143406c977254911c33ca65fb903",
+        "RS.json": "de28a99a4585298174c810bab9bad0e0bda2a5ea37dd58875ed2f91539c34b87",
+        "RT.json": "493cb52858a7853b9939efb4066b4d5ff1ceba25bf0fb0628a41fe586b851a0f",
+        "RTSM.json": "bc90a6ec7e9517188e2891fe35a4b6d168587a7ab9d4d04e813e3a956e15ffe0",
+        "RYC.json": "4b74b8d82db8c0dd96b5c780a8a07e94fee2f1304a44575103f1bec40ccb8f3d",
+        "RYCTs.json": "82f96dbfef03f0b93a50e0c888893d57517e6b6b292a2f8a7c51b219682b84f3",
+        "RYCn.json": "e372a8c85639f035c9b6095e9c34ea3bc1ea31364be83f71843675bf8898979d",
+        "RYDtb.json": "9dda8758603e2cb9da1d99eb835cbb07e68bbaa44165965ad542aeb0303bb097",
+        "RYE.json": "d7b4bd797f76c294927724e6637e7c891f5ab51c059be1867b0616660e911e51",
+        "RYS.json": "a9a7708f39a9894e306883e6d03a12e4806723cd45151e76204ba81956351dd9",
+        "RYSeDt.json": "adfe9b796252dab541ca3727890da9b81b2277654db153298aeb00f7b3c49851",
+        "RYT.json": "cd08dbe67a157d0c7522b432ce1d442940c8dcd459d9c75428bae06e7866a615",
+        "RYTC.json": "557e5c8ab583cafdce04d3061e70e5ce6d9d8091ff4138af51ff603002056f55",
+        "RYTCM.json": "01aa65dae9b6d44e0e3743f1f9b12dd9576c9240c40d2fb2213237984c08bb7f",
+        "RYTCn.json": "c6b16ec4a244c93c5d41acca2627924d6348c344c363b22dd03c258929fd816e",
+        "RYTEM.json": "b93afc51a0f13dd7ac85be3f901f1bb6d01cacdf308a436226b66b79e6494f7d",
+        "RYTM.json": "d09bcebec3d572ed31b585ccb311f27e3a72b5079a72b2008271774d131634e6",
+        "RYTTs.json": "f500cdcae804971314bc6637d78ad46655bb6604e4f5cc184675de1904acc258",
+        "RYTs.json": "0cf13bcef933357b648085baf12ec0c80fa1e0cca18d48ad3b9920bc40c37d00",
+        "genData.json": "5773504c0f66abe54483f8997cc09efbc8fdbd58513c0b908b5078250be49567",
+        "view/resData.json": "4f089aed0137521ad25d06e843787644253e7e7be7923d8f7fc7d4893c5736bd",
+        "view/viewDefinitions.json": "5d68d8b507fca7ce60af57f2c4972c9841f734886e0f6b9e440cca52496c6249"
+    },
+    "calibration": {
+        "pm25": {
+            "updated_rows": [
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_POW_CHP_NG_OLD",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.0028050641025
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_POW_CHP_OIL_OLD",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.15653846154
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_POW_PP_NGCC",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.001655629139
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_POW_PP_COAL",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.04568817818
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_POW_CHP_COAL_OLD",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.12557388948
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_POW_CHP_BIOM_OLD",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.4000666667
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_TRA_SHIP_LIQ",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.0288324873096447
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_TRA_RAILF_LIQ",
+                    "mode": 1,
+                    "factor_kt_per_activity": 4.50232558139535
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_TRA_RAILP_LIQ",
+                    "mode": 1,
+                    "factor_kt_per_activity": 4.09302325581395
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_TRA_TRUL_LIQ",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.0327
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_TRA_TRUH_LIQ",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.08175
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_TRA_VAN_LIQ",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.02725
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_TRA_BUS_LIQ",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.095375
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_TRA_CAR_LIQ",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.006867
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_TRA_23WHEEL_LIQ",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.006213
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_HOU_COOK_OIL",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.005
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_HOU_COOK_COAL",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.2
+                },
+                {
+                    "scenario": "SC_0",
+                    "technology": "PHL_HOU_COOK_BIOM",
+                    "mode": 1,
+                    "factor_kt_per_activity": 0.5
+                }
+            ]
+        },
+        "cooking_oil_co2e_correction": -0.0102,
+        "blue_hydrogen_co2e": {
+            "2020": -0.055797101436999993,
+            "2021": -0.055797101436999993,
+            "2022": -0.0557775919855,
+            "2023": -0.055742474903500004,
+            "2024": -0.055695066888999986,
+            "2025": -0.05563817724849999,
+            "2026": -0.055574176426999994,
+            "2027": -0.055505055528999994,
+            "2028": -0.055432478562999994,
+            "2029": -0.055357827987,
+            "2030": -0.055797101436999993,
+            "2031": -0.055602006690999996,
+            "2032": -0.055426421396499996,
+            "2033": -0.055268394643,
+            "2034": -0.055126170561,
+            "2035": -0.054998168879499994,
+            "2036": -0.054882967408499995,
+            "2037": -0.054779286022999994,
+            "2038": -0.054685972803,
+            "2039": -0.054601990904999995,
+            "2040": -0.05384615386149999,
+            "2041": -0.05384615386149999,
+            "2042": -0.05384615386149999,
+            "2043": -0.05384615386149999,
+            "2044": -0.05384615386149999,
+            "2045": -0.05384615386149999,
+            "2046": -0.05384615386149999,
+            "2047": -0.05384615386149999,
+            "2048": -0.05384615386149999,
+            "2049": -0.05384615386149999,
+            "2050": -0.05384615386149999,
+            "2051": -0.05384615386149999,
+            "2052": -0.05384615386149999,
+            "2053": -0.05384615386149999
+        },
+        "specification": {
+            "calibration_date": "2026-07-27",
+            "source_case": "Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC",
+            "control_case": "Philippines_v12_CAL_CONTROL",
+            "control_run": "BASE_CONTROL",
+            "base_year": "2020",
+            "pm25": {
+                "unit": "kt",
+                "workbook_sheet": "PM2.5 EAR (kt)",
+                "workbook_version": "v5",
+                "edgar_2020_kt": {
+                    "residential_and_other": 96.8,
+                    "power_generation": 20.09,
+                    "road_exhaust": 3.88,
+                    "water_borne_navigation": 11.36
+                },
+                "control_2020_mton": {
+                    "cooking": 0.17422592,
+                    "power": 0.003357436,
+                    "road": 0.0445058968,
+                    "domestic_navigation": 0
+                },
+                "technology_factor_kt_per_activity": {
+                    "PHL_POW_PP_NGCC": 0.001655629139,
+                    "PHL_POW_PP_COAL": 0.04568817818,
+                    "PHL_POW_CHP_NG_OLD": 0.0028050641025,
+                    "PHL_POW_CHP_OIL_OLD": 0.15653846154,
+                    "PHL_POW_CHP_COAL_OLD": 0.12557388948,
+                    "PHL_POW_CHP_BIOM_OLD": 0.4000666667,
+                    "PHL_HOU_COOK_BIOM": 0.5,
+                    "PHL_HOU_COOK_COAL": 0.2,
+                    "PHL_HOU_COOK_OIL": 0.005,
+                    "PHL_TRA_CAR_LIQ": 0.006867,
+                    "PHL_TRA_VAN_LIQ": 0.02725,
+                    "PHL_TRA_TRUL_LIQ": 0.0327,
+                    "PHL_TRA_TRUH_LIQ": 0.08175,
+                    "PHL_TRA_BUS_LIQ": 0.095375,
+                    "PHL_TRA_23WHEEL_LIQ": 0.006213,
+                    "PHL_TRA_SHIP_LIQ": 0.0288324873096447,
+                    "PHL_TRA_RAILF_LIQ": 4.50232558139535,
+                    "PHL_TRA_RAILP_LIQ": 4.09302325581395
+                },
+                "control_ship_activity_billion_vehicle_km": 393.988,
+                "method": "The workbook v5 recommended technology rows are installed directly after coherent conversion of the emission species from MTon to kt. Domestic navigation is top-down to EDGAR; road ratios retain the workbook's top-down calibration; power rows remain provisional physical estimates.",
+                "scope_note": "The represented sectors are not a complete national PM2.5 inventory. Existing fisheries factors are retained with unit conversion. Missing crop-residue burning, manufacturing, fugitive solid fuels, waste burning, cement, rice cultivation, and non-exhaust road emissions are not fabricated."
+            },
+            "co2e": {
+                "blue_hydrogen_capture_rate": 0.7,
+                "upstream_ng_factor_mton_per_pj": 0.055,
+                "cooking_oil_correction_mton_per_pj": -0.0102,
+                "method": "Annual negative direct CO2e ratio equals minus capture rate times the model's annual natural-gas input activity ratio times the inherited upstream processed-gas CO2e factor.",
+                "cooking_oil_note": "The negative correction nets the upstream processed-oil charge of 0.0733 Mt/PJ to the IPCC LPG default of 0.0631 Mt/PJ; it is not a second full combustion charge."
+            },
+            "source_hierarchy": [
+                "Philippine national activity and inventory data: DOE, UNFCCC BTR/NIR, EMB, PSA, LTO, PPA, MARINA",
+                "EDGAR v8.1 for consistent sector coverage and gap checks",
+                "EMEP/EEA and IPCC factors only where Philippine measured factors are unavailable"
+            ],
+            "attachment_status": "Workbook restored and inspected with the spreadsheet artifact runtime before calibrated case generation."
+        }
+    },
+    "checks": {
+        "source_unchanged": true,
+        "technology_set_preserved": true,
+        "commodity_set_preserved": true,
+        "unexpected_parameter_files_changed": false,
+        "saved_results_copied": false
+    }
+}

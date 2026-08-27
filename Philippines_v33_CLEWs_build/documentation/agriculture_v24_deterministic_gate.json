@@ -1,0 +1,306 @@
+{
+  "schema": "philippines-v24-agriculture-deterministic-gate-v1",
+  "status": "passed",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v24-agriculture-candidate-20260825",
+  "parent": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v23",
+  "checks": [
+    {
+      "check": "v24_identity",
+      "passed": true,
+      "detail": "Philippines_v24"
+    },
+    {
+      "check": "structure_preserved_except_crop_ear_membership",
+      "passed": true,
+      "detail": {
+        "technologies": 183,
+        "commodities": 101,
+        "constraints": 7
+      }
+    },
+    {
+      "check": "crop_co2e_membership_only",
+      "passed": true,
+      "detail": [
+        "TEC_1ky0a",
+        "TEC_3mwof",
+        "TEC_72dqm",
+        "TEC_9lvqs",
+        "TEC_ckkki",
+        "TEC_ibnh8",
+        "TEC_oeqz2",
+        "TEC_xaiae"
+      ]
+    },
+    {
+      "check": "exact_source_diff_allowlist",
+      "passed": true,
+      "detail": [
+        "RYT.json",
+        "RYTCM.json",
+        "RYTEM.json",
+        "genData.json"
+      ]
+    },
+    {
+      "check": "192_crop_rows_changed",
+      "passed": true,
+      "detail": {
+        "expected": 192,
+        "changed": 192
+      }
+    },
+    {
+      "check": "psa_anchor_normalization",
+      "passed": true,
+      "detail": {
+        "vegetables:(1, 5, 12, 13):2020": {
+          "mean": 0.8593725523601126,
+          "anchor": 0.8593725523601126
+        },
+        "vegetables:(1, 5, 12, 13):2024": {
+          "mean": 0.8593725523601126,
+          "anchor": 0.8593725523601126
+        },
+        "vegetables:(1, 5, 12, 13):2053": {
+          "mean": 1.1468360025400481,
+          "anchor": 1.1468360025400481
+        },
+        "coconut:(8, 16, 20, 2):2020": {
+          "mean": 0.3968714512187746,
+          "anchor": 0.39687145121877465
+        },
+        "coconut:(8, 16, 20, 2):2024": {
+          "mean": 0.38839685152478787,
+          "anchor": 0.3883968515247879
+        },
+        "coconut:(8, 16, 20, 2):2053": {
+          "mean": 0.5183171040063377,
+          "anchor": 0.5183171040063378
+        },
+        "sugarcane:(3, 6, 18, 9):2020": {
+          "mean": 6.113704362755852,
+          "anchor": 6.113704362755852
+        },
+        "sugarcane:(3, 6, 18, 9):2024": {
+          "mean": 4.616940569475058,
+          "anchor": 4.616940569475058
+        },
+        "sugarcane:(3, 6, 18, 9):2053": {
+          "mean": 6.161325087844997,
+          "anchor": 6.161325087844996
+        },
+        "maize:(4, 7, 10, 15):2020": {
+          "mean": 0.31790303595193403,
+          "anchor": 0.31790303595193414
+        },
+        "maize:(4, 7, 10, 15):2024": {
+          "mean": 0.3312923070067779,
+          "anchor": 0.33129230700677803
+        },
+        "maize:(4, 7, 10, 15):2053": {
+          "mean": 0.4421108679774473,
+          "anchor": 0.4421108679774474
+        },
+        "rice:(11, 14):2020": {
+          "mean": 0.32229806503462943,
+          "anchor": 0.32229806503462954
+        },
+        "rice:(11, 14):2024": {
+          "mean": 0.33272523826081085,
+          "anchor": 0.3327252382608109
+        },
+        "rice:(11, 14):2053": {
+          "mean": 0.4440231202908084,
+          "anchor": 0.4440231202908086
+        },
+        "rice:(17, 19):2020": {
+          "mean": 0.7264090319042871,
+          "anchor": 0.7264090319042872
+        },
+        "rice:(17, 19):2024": {
+          "mean": 0.7188087264962417,
+          "anchor": 0.7188087264962418
+        },
+        "rice:(17, 19):2053": {
+          "mean": 0.959253032019591,
+          "anchor": 0.9592530320195911
+        },
+        "other:(24, 22, 23, 21):2020": {
+          "mean": 0.7866334903305353,
+          "anchor": 0.7866334903305353
+        },
+        "other:(24, 22, 23, 21):2024": {
+          "mean": 0.7866334903305353,
+          "anchor": 0.7866334903305353
+        },
+        "other:(24, 22, 23, 21):2053": {
+          "mean": 1.0497654422837128,
+          "anchor": 1.0497654422837128
+        }
+      }
+    },
+    {
+      "check": "eight_cluster_signal_restored",
+      "passed": true,
+      "detail": "all crop management groups vary spatially"
+    },
+    {
+      "check": "post_2024_productivity_is_one_percent",
+      "passed": true,
+      "detail": {
+        "growth": 0.01
+      }
+    },
+    {
+      "check": "high_input_yield_advantage_restored",
+      "passed": true,
+      "detail": "area-weighted high-input means exceed low-input means"
+    },
+    {
+      "check": "maize_vegetable_irrigation_response_restored",
+      "passed": true,
+      "detail": {
+        "vegetables": [
+          {
+            "rainfed": 1.3456428726529912,
+            "irrigated": 1.4186546714298067
+          },
+          {
+            "rainfed": 0.328109411149217,
+            "irrigated": 0.34508325420843544
+          }
+        ],
+        "maize": [
+          {
+            "rainfed": 0.4607493846002356,
+            "irrigated": 0.47085082663352174
+          },
+          {
+            "rainfed": 0.16557804251907227,
+            "irrigated": 0.1744338900549065
+          }
+        ]
+      }
+    },
+    {
+      "check": "unsupported_crop_irrigation_parity_retained",
+      "passed": true,
+      "detail": "coconut, sugarcane and other irrigated modes equal rainfed counterparts"
+    },
+    {
+      "check": "noncrop_oar_unchanged",
+      "passed": true,
+      "detail": 8058
+    },
+    {
+      "check": "all_input_ratios_unchanged",
+      "passed": true,
+      "detail": "water and land mappings exact"
+    },
+    {
+      "check": "finite_redundant_agriculture_water_tau",
+      "passed": true,
+      "detail": {
+        "DEMAGRSURPHL": {
+          "2020": 125.79,
+          "2024": 126.29933168658505,
+          "2053": 131.8329066983908
+        },
+        "DEMAGRGWTPHL": {
+          "2020": 20.2,
+          "2024": 20.281791080920726,
+          "2053": 21.1704007894705
+        }
+      }
+    },
+    {
+      "check": "other_activity_bounds_unchanged",
+      "passed": true,
+      "detail": "only two TAU rows changed"
+    },
+    {
+      "check": "no_activity_or_capacity_forcing",
+      "passed": true,
+      "detail": "rice irrigation RC and all minima/maxima unchanged"
+    },
+    {
+      "check": "crop_ear_exact",
+      "passed": true,
+      "detail": {
+        "rows": 240,
+        "rice_2020_mtco2e": 26.985,
+        "soil_factor": 0.07627117937811322
+      }
+    },
+    {
+      "check": "rice_inventory_factor_reproduction",
+      "passed": true,
+      "detail": 26.985
+    },
+    {
+      "check": "noncrop_ear_unchanged",
+      "passed": true,
+      "detail": 2520
+    },
+    {
+      "check": "crop_ear_has_no_hidden_price_or_cap",
+      "passed": true,
+      "detail": {
+        "penalty": 0,
+        "period_limit": 999999
+      }
+    },
+    {
+      "check": "source_ledger_complete",
+      "passed": true,
+      "detail": {
+        "SOURCES.csv": {
+          "key": "source_id",
+          "rows": 180,
+          "missing": []
+        },
+        "ASSUMPTIONS.csv": {
+          "key": "assumption_id",
+          "rows": 149,
+          "missing": []
+        },
+        "CALCULATIONS.csv": {
+          "key": "calculation_id",
+          "rows": 629,
+          "missing": []
+        },
+        "MODEL_MAP.csv": {
+          "key": "map_id",
+          "rows": 72535,
+          "missing": []
+        },
+        "CHANGES.csv": {
+          "key": "change_id",
+          "rows": 28,
+          "missing": []
+        }
+      }
+    },
+    {
+      "check": "build_manifest_zero_solve",
+      "passed": true,
+      "detail": [
+        "RYT.json",
+        "RYTCM.json",
+        "RYTEM.json",
+        "genData.json"
+      ]
+    }
+  ],
+  "failure_count": 0,
+  "optimizer_runs": 0,
+  "model_generation_runs": 0,
+  "classification": {
+    "initial_stock": "retained 2.006 Mha rice irrigation service residual capacity",
+    "final_demand": "unchanged crop output demands",
+    "continuing_constraint": "existing national water envelopes and cluster land availability",
+    "benchmark_only": "crop areas and shares, 2024 AFF withdrawals, NIA total developed area and inventory totals after factor calibration"
+  },
+  "next_step": "generic physical gates for all scenarios, then application generation"
+}

@@ -1,0 +1,226 @@
+{
+  "schema": "philippines-v22-transition-scope-r8-validation-v1",
+  "promotion_allowed": false,
+  "promotion_rule": "BASE must solve first; only then COAL_PHASEOUT, RE and EV run in parallel; all four must be proven optimal from the same candidate source.",
+  "candidate_scenarios": {
+    "BASE": "Optimal - objective value 369822476.06171292",
+    "COAL_PHASEOUT": "Optimal - objective value 369839833.34065801",
+    "RE": "timed_out_without_optimal_solution",
+    "EV": "Optimal - objective value 369820509.51920521"
+  },
+  "optimal_candidate_scenarios": [
+    "BASE",
+    "COAL_PHASEOUT",
+    "EV"
+  ],
+  "failed_candidate_scenarios": [
+    "RE"
+  ],
+  "optimizer_executions": [
+    {
+      "case": "r8",
+      "scenario": "BASE",
+      "algorithm": "default",
+      "status": "Optimal - objective value 369822476.06171292",
+      "seconds": 91.27147537499695
+    },
+    {
+      "case": "r8",
+      "scenario": "COAL_PHASEOUT",
+      "algorithm": "default concurrent",
+      "status": "Optimal - objective value 369839833.34065801",
+      "seconds": 123.33870333300001
+    },
+    {
+      "case": "r8",
+      "scenario": "RE",
+      "algorithm": "default concurrent",
+      "status": "timed_out_without_optimal_solution",
+      "seconds": 360.0373543750029
+    },
+    {
+      "case": "r8",
+      "scenario": "EV",
+      "algorithm": "default concurrent",
+      "status": "Optimal - objective value 369820509.51920521",
+      "seconds": 147.40239279199886
+    },
+    {
+      "case": "r8",
+      "scenario": "RE",
+      "algorithm": "primal diagnostic",
+      "status": "timed_out_without_optimal_solution",
+      "seconds": 360.032739125003
+    },
+    {
+      "case": "v21 r4 control",
+      "scenario": "RE",
+      "algorithm": "default",
+      "status": "timed_out_without_optimal_solution",
+      "seconds": 360.05318866699963
+    }
+  ],
+  "base_objective": 369822476.0617129,
+  "accepted_v21_base_objective": 369746369.5592964,
+  "base_objective_change": 76106.50241649151,
+  "base_objective_change_percent": 0.02058343466826429,
+  "candidate_source_hashes_match_build_manifest": true,
+  "matrix": {
+    "rows": 550995,
+    "columns": 583111,
+    "matrix_nonzeros": 8099341
+  },
+  "generated_mode_sets": {
+    "v21_technologies": 181,
+    "r8_technologies": 181,
+    "membership_identical": true
+  },
+  "agriculture_heat": {
+    "BASE": {
+      "2020": {
+        "useful_heat_pj": 8.8668,
+        "input_energy_pj": 9.962696632600801,
+        "useful_heat_by_technology_pj": {
+          "PHL_AGR_HEAT_OIL": 1.231,
+          "PHL_AGR_HEAT_NG": 7.6269,
+          "PHL_AGR_HEAT_ELE": 0.0,
+          "PHL_AGR_HEAT_COAL": 0.0,
+          "PHL_AGR_HEAT_BIOM": 0.0089
+        }
+      },
+      "2024": {
+        "useful_heat_pj": 9.6652,
+        "input_energy_pj": 10.815725846252802,
+        "useful_heat_by_technology_pj": {
+          "PHL_AGR_HEAT_OIL": 1.0258,
+          "PHL_AGR_HEAT_NG": 6.421,
+          "PHL_AGR_HEAT_ELE": 0.3564,
+          "PHL_AGR_HEAT_COAL": 1.862,
+          "PHL_AGR_HEAT_BIOM": 0.0
+        }
+      },
+      "2030": {
+        "useful_heat_pj": 10.9469,
+        "input_energy_pj": 12.0250483179392,
+        "useful_heat_by_technology_pj": {
+          "PHL_AGR_HEAT_OIL": 0.0654,
+          "PHL_AGR_HEAT_NG": 3.9921,
+          "PHL_AGR_HEAT_ELE": 2.2237,
+          "PHL_AGR_HEAT_COAL": 4.6551,
+          "PHL_AGR_HEAT_BIOM": 0.0106
+        }
+      },
+      "2050": {
+        "useful_heat_pj": 17.2822,
+        "input_energy_pj": 19.2886988826064,
+        "useful_heat_by_technology_pj": {
+          "PHL_AGR_HEAT_OIL": 0.0718,
+          "PHL_AGR_HEAT_NG": 4.218,
+          "PHL_AGR_HEAT_ELE": 1.0478,
+          "PHL_AGR_HEAT_COAL": 11.576,
+          "PHL_AGR_HEAT_BIOM": 0.3686
+        }
+      }
+    },
+    "COAL_PHASEOUT": {
+      "2020": {
+        "useful_heat_pj": 8.8668,
+        "input_energy_pj": 9.962696632600801,
+        "useful_heat_by_technology_pj": {
+          "PHL_AGR_HEAT_OIL": 1.231,
+          "PHL_AGR_HEAT_NG": 7.6269,
+          "PHL_AGR_HEAT_ELE": 0.0,
+          "PHL_AGR_HEAT_COAL": 0.0,
+          "PHL_AGR_HEAT_BIOM": 0.0089
+        }
+      },
+      "2024": {
+        "useful_heat_pj": 9.6653,
+        "input_energy_pj": 10.7769674191664,
+        "useful_heat_by_technology_pj": {
+          "PHL_AGR_HEAT_OIL": 1.0258,
+          "PHL_AGR_HEAT_NG": 6.1066,
+          "PHL_AGR_HEAT_ELE": 0.6709,
+          "PHL_AGR_HEAT_COAL": 1.862,
+          "PHL_AGR_HEAT_BIOM": 0.0
+        }
+      },
+      "2030": {
+        "useful_heat_pj": 10.9469,
+        "input_energy_pj": 11.9215494412148,
+        "useful_heat_by_technology_pj": {
+          "PHL_AGR_HEAT_OIL": 0.0512,
+          "PHL_AGR_HEAT_NG": 3.1742,
+          "PHL_AGR_HEAT_ELE": 3.0611,
+          "PHL_AGR_HEAT_COAL": 4.6551,
+          "PHL_AGR_HEAT_BIOM": 0.0053
+        }
+      },
+      "2050": {
+        "useful_heat_pj": 17.2823,
+        "input_energy_pj": 19.3443179839016,
+        "useful_heat_by_technology_pj": {
+          "PHL_AGR_HEAT_OIL": 0.0729,
+          "PHL_AGR_HEAT_NG": 4.7247,
+          "PHL_AGR_HEAT_ELE": 0.5987,
+          "PHL_AGR_HEAT_COAL": 11.5817,
+          "PHL_AGR_HEAT_BIOM": 0.3043
+        }
+      }
+    },
+    "EV": {
+      "2020": {
+        "useful_heat_pj": 8.8668,
+        "input_energy_pj": 9.962696632600801,
+        "useful_heat_by_technology_pj": {
+          "PHL_AGR_HEAT_OIL": 1.231,
+          "PHL_AGR_HEAT_NG": 7.6269,
+          "PHL_AGR_HEAT_ELE": 0.0,
+          "PHL_AGR_HEAT_COAL": 0.0,
+          "PHL_AGR_HEAT_BIOM": 0.0089
+        }
+      },
+      "2024": {
+        "useful_heat_pj": 9.6652,
+        "input_energy_pj": 10.8183955091824,
+        "useful_heat_by_technology_pj": {
+          "PHL_AGR_HEAT_OIL": 1.0258,
+          "PHL_AGR_HEAT_NG": 6.4426,
+          "PHL_AGR_HEAT_ELE": 0.3348,
+          "PHL_AGR_HEAT_COAL": 1.862,
+          "PHL_AGR_HEAT_BIOM": 0.0
+        }
+      },
+      "2030": {
+        "useful_heat_pj": 10.9469,
+        "input_energy_pj": 12.060211239396201,
+        "useful_heat_by_technology_pj": {
+          "PHL_AGR_HEAT_OIL": 0.0654,
+          "PHL_AGR_HEAT_NG": 4.2766,
+          "PHL_AGR_HEAT_ELE": 1.9392,
+          "PHL_AGR_HEAT_COAL": 4.6551,
+          "PHL_AGR_HEAT_BIOM": 0.0106
+        }
+      },
+      "2050": {
+        "useful_heat_pj": 17.2824,
+        "input_energy_pj": 19.276267421893202,
+        "useful_heat_by_technology_pj": {
+          "PHL_AGR_HEAT_OIL": 0.085,
+          "PHL_AGR_HEAT_NG": 4.1986,
+          "PHL_AGR_HEAT_ELE": 1.1502,
+          "PHL_AGR_HEAT_COAL": 11.563,
+          "PHL_AGR_HEAT_BIOM": 0.2856
+        }
+      }
+    }
+  },
+  "known_limitations": [
+    "RE did not prove optimal; r8 is not promotable.",
+    "v21 RE also timed out, so the RE numerical/UDC issue predates r8 but remains unresolved.",
+    "DOE 2024 AFF energy is a broader sector boundary than agriculture heat and is benchmark-only.",
+    "Groundwater remains zero and unqualified pending physical infrastructure and aquifer data.",
+    "Livestock is outside the physical model; national-agriculture climate completeness is not claimed.",
+    "The wider biofuel, power reliability/timing, cooling, T&D and availability repairs remain deferred."
+  ]
+}

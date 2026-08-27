@@ -1,0 +1,4222 @@
+{
+  "schema": "generic-osemosys-physical-gate-v1",
+  "case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v23-package1-candidate-20260824",
+  "scenario": "SC_w03qj",
+  "historical_stock_through": null,
+  "method": "optimistic recursive source-level capacity and commodity bounds",
+  "status": "passed_no_deterministic_contradiction",
+  "optimizer_runs": 0,
+  "model_generation_runs": 0,
+  "years_checked": 34,
+  "timeslices_checked": 612,
+  "user_defined_constraint_years_checked": 238,
+  "failure_count": 0,
+  "failures": [],
+  "user_defined_constraints": [
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2020",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2020",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2020",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2020",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2020",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 125.79,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2020",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.2,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2020",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -6.616948563484526,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2021",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2021",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2021",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2021",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2021",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 125.91733292164626,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2021",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.22044777023018,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2021",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -10.517695936776985,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2022",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2022",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2022",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2022",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2022",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 126.04466584329253,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2022",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.240895540460365,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2022",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -14.159387597777906,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2023",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2023",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2023",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2023",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2023",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 126.17199876493879,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2023",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.261343310690545,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2023",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -17.451395562585358,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2024",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2024",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2024",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2024",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2024",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 126.29933168658505,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2024",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.281791080920726,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2024",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -20.51722931504412,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2025",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2025",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2025",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2025",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2025",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 126.42666460823132,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2025",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.302238851150907,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2025",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -24.149333470422096,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2026",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -254.5301605505678,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2026",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2026",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2026",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2026",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 126.55399752987758,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2026",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.322686621381088,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2026",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -46.3362725121312,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2027",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -278.699745432383,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2027",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2027",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2027",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2027",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 126.68133045152385,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2027",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.34313439161127,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2027",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -50.741272512131204,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2028",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -307.1495421246868,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2028",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2028",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2028",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2028",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 126.8086633731701,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2028",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.363582161841453,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2028",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -55.146272512131205,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2029",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -332.0625400515738,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2029",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2029",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2029",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2029",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 126.93599629481638,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2029",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.384029932071634,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2029",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -59.33824137384358,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2030",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -375.0680173367469,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2030",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2030",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2030",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2030",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 127.06332921646263,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2030",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.404477702301815,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2030",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -69.30324137384359,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2031",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -424.7424076008251,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2031",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2031",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2031",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2031",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 127.27070215045951,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2031",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.43777870609176,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2031",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -78.26971291688189,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2032",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -471.6610589964576,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2032",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2032",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -1.5,
+        NaN
+      ],
+      "constant": -1.2,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2032",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2032",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 127.47807508445639,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2032",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.4710797098817,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2032",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -87.80323036248096,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2033",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -515.823971523644,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2033",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2033",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2033",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2033",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 127.68544801845327,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2033",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.504380713671644,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2033",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -99.09602593719644,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2034",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -556.663073342827,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2034",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2034",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2034",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2034",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 127.89282095245014,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2034",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.537681717461584,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2034",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -109.03378993769115,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2035",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -592.1556400028552,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2035",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2035",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -6.0,
+        NaN
+      ],
+      "constant": -2.4,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2035",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2035",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 128.10019388644702,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2035",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.57098272125153,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2035",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -120.13645065750417,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2036",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -625.0580318275503,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2036",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2036",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2036",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2036",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 128.3075668204439,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2036",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.604283725041473,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2036",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -130.5336325774716,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2037",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -655.370248816912,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2037",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2037",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2037",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2037",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 128.51493975444077,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2037",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.637584728831413,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2037",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -141.45835918076722,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2038",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -683.0922909709406,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2038",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2038",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2038",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2038",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 128.72231268843765,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2038",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.670885732621358,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2038",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -151.80553915493138,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2039",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -708.2648053989424,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2039",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2039",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2039",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2039",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 128.92968562243453,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2039",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.704186736411298,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2039",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -161.730588669681,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2040",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -756.5637789680924,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2040",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2040",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2040",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2040",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 129.1370585564314,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2040",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.737487740201242,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2040",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -175.34507913238767,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2041",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -800.7157333814985,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2041",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2041",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2041",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2041",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 129.34443149042826,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2041",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.770788743991186,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2041",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -189.46507913238767,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2042",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -840.7327062825883,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2042",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2042",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2042",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2042",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 129.55180442442514,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2042",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.804089747781127,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2042",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -203.58419851817376,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2043",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -876.6146976713618,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2043",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2043",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2043",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2043",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 129.75917735842202,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2043",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.83739075157107,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2043",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -217.70419851817377,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2044",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -908.3621286742969,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2044",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2044",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2044",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2044",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 129.9665502924189,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2044",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.870691755361012,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2044",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -231.82419851817377,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2045",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -935.9754757777321,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2045",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2045",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2045",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2045",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 130.17392322641578,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2045",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.903992759150956,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2045",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -245.85428553148353,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2046",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -955.2023324041389,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2046",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2046",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2046",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2046",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 130.38129616041266,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2046",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.9372937629409,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2046",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -255.68998008287247,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2047",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -970.5956294370242,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2047",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2047",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2047",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2047",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 130.58866909440954,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2047",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 20.97059476673084,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2047",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -266.30998008287247,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2048",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -982.1642213433734,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2048",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2048",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2048",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2048",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 130.79604202840642,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2048",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 21.003895770520785,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2048",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -276.8952296594449,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2049",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -989.6692546131713,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2049",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2049",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2049",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2049",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 131.0034149624033,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2049",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 21.037196774310726,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2049",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -287.4833252753637,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2050",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -993.2800938759298,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2050",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2050",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -31.79999999999999,
+        NaN
+      ],
+      "constant": -4.8,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2050",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2050",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 131.21078789640015,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2050",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 21.07049777810067,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2050",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -297.73459781813193,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2051",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -989.4212473977781,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2051",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2051",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2051",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2051",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 131.41816083039703,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2051",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 21.103798781890614,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2051",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -315.1736745261298,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2052",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -972.3195927495381,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2052",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2052",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2052",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2052",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 131.6255337643939,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2052",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 21.137099785680554,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2052",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -332.83184018677184,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "RENEWABLES",
+      "constraint_id": "CO_xr1eb",
+      "year": "2053",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -952.7689011144556,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "EV",
+      "constraint_id": "CO_sdx29",
+      "year": "2053",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "NUCLEAR_CAPACITY_TARGET",
+      "constraint_id": "CO_nucap",
+      "year": "2053",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "BAL_ENV_LAND",
+      "constraint_id": "CO_envland_v12",
+      "year": "2053",
+      "tag": 1,
+      "optimistic_lhs_interval": [
+        -999703.3868997999,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_SUR_AVAIL",
+      "constraint_id": "CO_wsur_v14",
+      "year": "2053",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 131.8329066983908,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "WATER_GWT_POTENTIAL",
+      "constraint_id": "CO_wgwt_v14",
+      "year": "2053",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        0.0,
+        NaN
+      ],
+      "constant": 21.1704007894705,
+      "status": "passed_no_deterministic_contradiction"
+    },
+    {
+      "constraint": "PHL_POW_RESERVE_MARGIN",
+      "constraint_id": "CO_v23reserve",
+      "year": "2053",
+      "tag": 0,
+      "optimistic_lhs_interval": [
+        -349.52040142066755,
+        NaN
+      ],
+      "constant": 0.0,
+      "status": "passed_no_deterministic_contradiction"
+    }
+  ],
+  "worst_slices": [
+    {
+      "year": "2020",
+      "timeslice": "TS_xnk8a",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_AGR_HEAT",
+        "commodity_id": "COM_ir2os",
+        "required_rate": 11.637651210628437,
+        "optimistic_production_upper_rate": 11.637662824055809,
+        "headroom_rate": 1.1613427371770513e-05,
+        "producer_count": 3
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 11.259985703670424,
+        "TEC_g4zvf": 206.24708532257506,
+        "TEC_lvd0n": 3.7795812736740118,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 7.022208530386242,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 1.2211460259171556,
+        "TEC_kv9in": 10.289605437610245,
+        "TEC_ttzr5": 0.1268765202462916,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 333.11337829990634,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 12.217714612849946,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_1k064": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 19.093995898930586,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 29
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_6ecgy",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_SER_HEAT",
+        "commodity_id": "COM_t330z",
+        "required_rate": 290.15905755327134,
+        "optimistic_production_upper_rate": 290.15934584145623,
+        "headroom_rate": 0.0002882881848904617,
+        "producer_count": 3
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 34.2172619293311,
+        "TEC_g4zvf": 229.20436154823574,
+        "TEC_lvd0n": 26.73685749933469,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 6.7102323555390635,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.7517991368941424,
+        "TEC_kv9in": 9.820258548587232,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 346.76984952114674,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 11.660419546554,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_1k064": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 19.125069866542276,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 29
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_fke98",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_AGR_HEAT",
+        "commodity_id": "COM_ir2os",
+        "required_rate": 11.209557868026575,
+        "optimistic_production_upper_rate": 11.637662824055809,
+        "headroom_rate": 0.4281049560292338,
+        "producer_count": 3
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 0.0,
+        "TEC_g4zvf": 184.38188645237264,
+        "TEC_lvd0n": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 6.756369265021995,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.7930526833152935,
+        "TEC_kv9in": 9.861512095008383,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 313.3700878245382,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 11.709403354533585,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_1k064": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 27
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_0",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 0.0,
+        "TEC_g4zvf": 189.20124928475454,
+        "TEC_lvd0n": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 5.077376029143977,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 7.274175330755206,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 263.78745496667386,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 8.637240638027938,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 27
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_bmens",
+      "year_split": 0.09634,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 3.9258767560182672,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 5.041157305924107,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 217.8476054262409,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 5.985790383870033,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_mi8mf",
+      "year_split": 0.09634,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 4.205574457009272,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 5.508451312418389,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 227.10772951736814,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 6.540647889948358,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_1k064": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_taggv",
+      "year_split": 0.09634,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 5.234154702370733,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 7.004855853483244,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 256.7612058046923,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 8.31745495402459,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_1k064": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_g2mzr",
+      "year_split": 0.09634,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 5.321111291947403,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 7.093588363037419,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 258.5195721393113,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 8.422814531239505,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_1k064": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_a6gq1",
+      "year_split": 0.09634,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 5.43755632321475,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 7.279450970405875,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 262.2027154799341,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 8.64350484903612,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_1k064": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_udfi1",
+      "year_split": 0.09634,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 4.8972799560664635,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 6.441794440608222,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 245.60330846022475,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 7.648884745601437,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_p366u",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 12.755652683606826,
+        "TEC_g4zvf": 207.74275230251146,
+        "TEC_lvd0n": 5.275248253610414,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 5.424042984871604,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 7.916131008001418,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 287.57512778926156,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 9.399488647074495,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_1k064": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 27
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_oqzs1",
+      "year_split": 0.0004667,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 0.0,
+        "TEC_g4zvf": 147.076755122841,
+        "TEC_lvd0n": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 4.66255997473798,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 5.893140726634019,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 228.3469315082839,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 6.997422010780204,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 27
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_ejp3u",
+      "year_split": 0.0004667,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 0.0,
+        "TEC_g4zvf": 162.4959637746944,
+        "TEC_lvd0n": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 4.950610998346049,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 6.356106097677832,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 237.11311679523212,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 7.547139763646651,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 27
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_9hx99",
+      "year_split": 0.0004667,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 0.0,
+        "TEC_g4zvf": 180.3436606050137,
+        "TEC_lvd0n": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 5.935833446377809,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 7.939589018517353,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 267.0961469547031,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 9.427342317422372,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 27
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_hrld6",
+      "year_split": 0.0004667,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 0.0,
+        "TEC_g4zvf": 143.0690179392541,
+        "TEC_lvd0n": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 5.957181942300174,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 7.97390104494977,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 267.7458404309108,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 9.468083874451134,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 27
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_iwy3j",
+      "year_split": 0.0004667,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 0.0,
+        "TEC_g4zvf": 161.25233217169463,
+        "TEC_lvd0n": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 6.178681453149154,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 8.329902568366503,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 320.31556153713717,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 9.890794447875768,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 39.877849358229014,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 29
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_xsi3u",
+      "year_split": 0.0004667,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 0.0,
+        "TEC_g4zvf": 165.43783382631213,
+        "TEC_lvd0n": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 5.600818095915062,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.0,
+        "TEC_kv9in": 7.40114098910367,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 256.90070796843423,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 8.787997650892994,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 27
+    },
+    {
+      "year": "2020",
+      "timeslice": "TS_5r05k",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_INDU_OTHHPH",
+        "commodity_id": "COM_6374i",
+        "required_rate": 102.840646,
+        "optimistic_production_upper_rate": 103.74408199786767,
+        "headroom_rate": 0.9034359978676605,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 16.293018910648897,
+        "TEC_g4zvf": 211.28011852955353,
+        "TEC_lvd0n": 8.812614480652485,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 6.313384078934589,
+        "TEC_v21ore": 0.0,
+        "TEC_hywb2": 0.0,
+        "TEC_76sjx": 0.0,
+        "TEC_aa0ch": 0.0,
+        "TEC_32u9e": 0.10431582221670332,
+        "TEC_kv9in": 9.172775233909793,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 50.25160541471944,
+        "TEC_5tf4l": 0.0,
+        "TEC_mnq2d": 35.91059192012345,
+        "TEC_wua47": 14.12557607543772,
+        "TEC_d6i5g": 50.25160541471944,
+        "TEC_yt6ao": 0.0,
+        "TEC_nbc72": 35.91059192012345,
+        "TEC_0kumq": 14.12557607543772,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_qzdk4": 316.01476391188913,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 10.891608108323737,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 1.2315753869805803,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 29
+    },
+    {
+      "year": "2021",
+      "timeslice": "TS_xnk8a",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_AGR_HEAT",
+        "commodity_id": "COM_ir2os",
+        "required_rate": 11.899636108882108,
+        "optimistic_production_upper_rate": 13.034182362931153,
+        "headroom_rate": 1.1345462540490452,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_ri2sv": 0.0,
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 0.0,
+        "TEC_g4zvf": 0.0,
+        "TEC_ck2to": 0.0,
+        "TEC_7gx2l": 0.0,
+        "TEC_t8vg5": 0.0,
+        "TEC_lvd0n": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 6.9967919571590915,
+        "TEC_v21ore": 0.0,
+        "TEC_32u9e": 0.5032715926776259,
+        "TEC_kv9in": 9.208992627913084,
+        "TEC_vi4q0": 0.0,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 38.04609911034264,
+        "TEC_5tf4l": 0.0,
+        "TEC_zj7zw": 0.0,
+        "TEC_mnq2d": 24.27872615549893,
+        "TEC_wua47": 3.3651109446346936,
+        "TEC_d6i5g": 31.33858375969325,
+        "TEC_yt6ao": 0.0,
+        "TEC_838bf": 0.0,
+        "TEC_g1pg3": 0.0,
+        "TEC_nbc72": 18.08276121900255,
+        "TEC_0kumq": 0.0,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_qzdk4": 340.7435818967892,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 10.93461206864431,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_1k064": 0.0,
+        "TEC_2x8eb": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_46nha": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 26
+    },
+    {
+      "year": "2021",
+      "timeslice": "TS_fke98",
+      "year_split": 0.06986,
+      "status": "passed",
+      "worst_commodity": {
+        "commodity": "PHL_AGR_HEAT",
+        "commodity_id": "COM_ir2os",
+        "required_rate": 11.461905599056829,
+        "optimistic_production_upper_rate": 13.034182362931153,
+        "headroom_rate": 1.5722767638743242,
+        "producer_count": 4
+      },
+      "failures": [],
+      "forced_activity_lower_rate": {
+        "TEC_ri2sv": 0.0,
+        "TEC_r4bfq": 0.0,
+        "TEC_4u6xf": 0.0,
+        "TEC_s1taz": 0.0,
+        "TEC_d83h5": 0.0,
+        "TEC_d6cwk": 0.0,
+        "TEC_g4zvf": 0.0,
+        "TEC_ck2to": 0.0,
+        "TEC_7gx2l": 0.0,
+        "TEC_t8vg5": 0.0,
+        "TEC_lvd0n": 0.0,
+        "TEC_4ygbm": 0.0,
+        "TEC_v21oil": 6.725136867331475,
+        "TEC_v21ore": 0.0,
+        "TEC_32u9e": 0.06554108285234683,
+        "TEC_kv9in": 8.771262118087805,
+        "TEC_vi4q0": 0.0,
+        "TEC_ttzr5": 0.0,
+        "TEC_l0cr4": 0.0,
+        "TEC_n9nde": 38.04609911034264,
+        "TEC_5tf4l": 0.0,
+        "TEC_zj7zw": 0.0,
+        "TEC_mnq2d": 24.27872615549893,
+        "TEC_wua47": 3.3651109446346936,
+        "TEC_d6i5g": 31.33858375969325,
+        "TEC_yt6ao": 0.0,
+        "TEC_838bf": 0.0,
+        "TEC_g1pg3": 0.0,
+        "TEC_nbc72": 18.08276121900255,
+        "TEC_0kumq": 0.0,
+        "TEC_wv6pj": 0.0,
+        "TEC_e8zor": 0.0,
+        "TEC_xfmi2": 0.0,
+        "TEC_goiza": 0.0,
+        "TEC_8e254": 0.0,
+        "TEC_8tp94": 0.0,
+        "TEC_6m11x": 0.0,
+        "TEC_7oiz4": 0.0,
+        "TEC_8t8tj": 0.0,
+        "TEC_telf6": 0.0,
+        "TEC_qzdk4": 331.6401298744261,
+        "TEC_d3fyp": 0.0,
+        "TEC_odom0": 0.0,
+        "TEC_6rwx6": 10.414857790522577,
+        "TEC_khtrp": 0.0,
+        "TEC_cdom0": 0.0,
+        "TEC_ze7d4": 0.0,
+        "TEC_2hnym": 0.0,
+        "TEC_1wdli": 0.0,
+        "TEC_1k064": 0.0,
+        "TEC_2x8eb": 0.0,
+        "TEC_p3vu5": 0.0,
+        "TEC_46nha": 0.0,
+        "TEC_0qr3z": 0.0,
+        "TEC_pyjfk": 0.0,
+        "TEC_gthhk": 0.0,
+        "TEC_v21bio": 0.0
+      },
+      "propagation_iterations": 26
+    }
+  ],
+  "limitations": [
+    "A pass is not a proof of full-model feasibility.",
+    "Shared producer capacity and route-mix coupling are relaxed optimistically.",
+    "Storage chronology and trade coupling are not yet included.",
+    "AccumulatedAnnualDemand and user-defined constraints use optimistic independent-route intervals.",
+    "Historical-stock treatment requires an explicit --historical-through classification."
+  ]
+}

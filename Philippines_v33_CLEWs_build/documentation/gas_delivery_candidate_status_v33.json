@@ -1,0 +1,32 @@
+{
+  "case": "Philippines_v33",
+  "status": "pass",
+  "promotion_allowed": true,
+  "required_runs": [
+    "BASE_V33_GAS_DELIVERY",
+    "COAL_PHASEOUT_V33_GAS_DELIVERY",
+    "EV_V33_GAS_DELIVERY",
+    "RE_V33_GAS_DELIVERY"
+  ],
+  "actual_run_inventory": [
+    "BASE_V33_GAS_DELIVERY",
+    "COAL_PHASEOUT_V33_GAS_DELIVERY",
+    "EV_V33_GAS_DELIVERY",
+    "RE_V33_GAS_DELIVERY"
+  ],
+  "clean_run_inventory": true,
+  "all_scenarios_optimal": true,
+  "source_gate": "documentation/preflight_gas_delivery_v33.json",
+  "validation": "documentation/gas_delivery_four_scenario_validation_v33.json",
+  "known_limitations": [
+    "The 8.2 MUSD/PJ_input adder is a conservative proxy, not a Philippines route-specific tariff.",
+    "Embedding delivery cost in conversion VC cannot represent endogenous gas-network investment.",
+    "Non-power gas remains endogenous and is reduced, not prohibited.",
+    "Electricity demand and power-plant own-use are unchanged; DOE gross generation remains validation-only.",
+    "The 2024 gas/coal split remains structurally unresolved in an annual least-cost model."
+  ],
+  "diagnostic_runs_excluded_from_candidate": [
+    ".Philippines_v33-gas-delivery-diagnostic-20260827",
+    ".Philippines_v33-gas-delivery-diagnostic2-20260827"
+  ]
+}

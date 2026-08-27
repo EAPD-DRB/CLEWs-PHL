@@ -1,0 +1,162 @@
+{
+  "schema": "philippines-v23-biomass-simple-deterministic-gate-v1",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v23-biomass-supply-scaled-candidate-20260824",
+  "parent": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v23",
+  "status": "passed",
+  "optimizer_runs": 0,
+  "model_generation_runs": 0,
+  "checks": [
+    {
+      "check": "identity",
+      "passed": true,
+      "detail": "Philippines_v23"
+    },
+    {
+      "check": "minimal_structural_delta",
+      "passed": true,
+      "detail": {
+        "technology_delta": 1,
+        "commodity_delta": 0,
+        "constraint_delta": 0
+      }
+    },
+    {
+      "check": "detailed_formulation_absent",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "founding_processor_reclassified",
+      "passed": true,
+      "detail": "TEC_telf6"
+    },
+    {
+      "check": "finite_nonforcing_supply_boundaries",
+      "passed": true,
+      "detail": {
+        "PHL_PRO_SUP_GENERIC_BIOMASS": {
+          "annual_cap": 274.8966504125725,
+          "capacity_stock": 18677.770734125406,
+          "cau": 31.536
+        },
+        "PHL_PRO_SUP_CROP_RESIDUE": {
+          "annual_cap": 110.34665891380581,
+          "capacity_stock": 7497.470752646677,
+          "cau": 31.536
+        }
+      }
+    },
+    {
+      "check": "minimal_supply_output_modes",
+      "passed": true,
+      "detail": "generic m1; shared residue-to-CHP m1; residue-to-generic m2"
+    },
+    {
+      "check": "sourced_supply_costs",
+      "passed": true,
+      "detail": {
+        "generic": 1.4821552352450897,
+        "residue": 1.5381360164258313
+      }
+    },
+    {
+      "check": "common_legacy_chp_residue_pool",
+      "passed": true,
+      "detail": "both slices consume PHL_PRO_BIOM_FIT_RESIDUE at IAR 4.000666667"
+    },
+    {
+      "check": "integrated_closed_charcoal_route",
+      "passed": true,
+      "detail": {
+        "iar": 15.641367977816577,
+        "emissions": {
+          "EMI_0": 0.20661394680086267,
+          "EMI_xpvk3": 39.43179624114204
+        }
+      }
+    },
+    {
+      "check": "cooking_final_to_useful_repair",
+      "passed": true,
+      "detail": {
+        "useful_2020_pj": 105.4355277113494,
+        "scale": 0.4233253476455921
+      }
+    },
+    {
+      "check": "crop_and_land_coefficients_untouched",
+      "passed": true,
+      "detail": "39 land technologies compared exactly"
+    },
+    {
+      "check": "no_new_user_defined_constraint",
+      "passed": true,
+      "detail": 7
+    },
+    {
+      "check": "generic_gate_all_scenarios",
+      "passed": true,
+      "detail": {
+        "base": "passed_no_deterministic_contradiction",
+        "coal_phaseout": "passed_no_deterministic_contradiction",
+        "re": "passed_no_deterministic_contradiction",
+        "ev": "passed_no_deterministic_contradiction"
+      }
+    },
+    {
+      "check": "source_diff_allowlist",
+      "passed": true,
+      "detail": [
+        "RT.json",
+        "RYC.json",
+        "RYT.json",
+        "RYTCM.json",
+        "RYTEM.json",
+        "RYTM.json",
+        "RYTTs.json",
+        "genData.json"
+      ]
+    },
+    {
+      "check": "six_table_schema_ledger_and_references",
+      "passed": true,
+      "detail": {
+        "SOURCES.csv": {
+          "rows": 175,
+          "missing": []
+        },
+        "ASSUMPTIONS.csv": {
+          "rows": 144,
+          "missing": []
+        },
+        "CALCULATIONS.csv": {
+          "rows": 626,
+          "missing": []
+        },
+        "MODEL_MAP.csv": {
+          "rows": 72532,
+          "missing": []
+        },
+        "GAPS.csv": {
+          "rows": 64,
+          "missing": []
+        },
+        "CHANGES.csv": {
+          "rows": 27,
+          "missing": []
+        }
+      }
+    },
+    {
+      "check": "founding_biomass_prices_absent",
+      "passed": true,
+      "detail": {
+        "generic": 1.4821552352450897,
+        "residue": 1.5381360164258313
+      }
+    }
+  ],
+  "failure_count": 0,
+  "failures": [],
+  "next_step": "application generation and preprocessing"
+}

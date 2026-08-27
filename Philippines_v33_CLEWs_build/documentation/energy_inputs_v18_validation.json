@@ -1,0 +1,153 @@
+{
+  "schema": "philippines-v18-energy-input-validation-v1",
+  "generated_at_utc": "2026-08-12T18:04:28.651813+00:00",
+  "status": "pass",
+  "control": {
+    "case": "/Users/sato/GitHub/CLEWs-PHL/case/Philippines_v17",
+    "objective": 369740345.77061987
+  },
+  "candidate": {
+    "case": "/Users/sato/GitHub/CLEWs-PHL/case/Philippines_v18",
+    "run": "ENERGY_INPUTS_V18_BASE",
+    "objective": 369743557.6807698
+  },
+  "objective_change": {
+    "absolute": 3211.9101499319077,
+    "percent": 0.0008686934457308366
+  },
+  "checks": [
+    {
+      "name": "optimal",
+      "status": "pass",
+      "detail": "Optimal - objective value 369743557.68076980"
+    },
+    {
+      "name": "case_identity",
+      "status": "pass",
+      "detail": "Philippines_v18"
+    },
+    {
+      "name": "no_new_model_objects",
+      "status": "pass",
+      "detail": {
+        "technology_ids": true,
+        "commodity_ids": true,
+        "constraints": true,
+        "global_mode_count": true
+      }
+    },
+    {
+      "name": "source_diff_scope",
+      "status": "pass",
+      "detail": [
+        "RT.json",
+        "RYT.json",
+        "RYTM.json",
+        "RYTTs.json",
+        "genData.json"
+      ]
+    },
+    {
+      "name": "v17_land_constraints_retained",
+      "status": "pass",
+      "detail": {
+        "RYTCM.json": true,
+        "RYC.json": true,
+        "RYCn.json": true,
+        "RYDtb.json": true,
+        "RYTs.json": true,
+        "RYTM_TAMLL": true,
+        "RYTM_TAMUL": true
+      }
+    },
+    {
+      "name": "energy_parameter_values",
+      "status": "pass",
+      "detail": {
+        "values": {
+          "geothermal_af_2020": 0.7,
+          "onshore_wind_annual_cf_2020": 0.21973098445200714,
+          "coal_capital_cost_2020": 1604.789,
+          "smr_capital_cost_2020": 8000.0,
+          "smr_life": 60,
+          "large_hydro_life": 60,
+          "lng_cap_2020": 0.0,
+          "lng_cap_2022": 0.0,
+          "lng_cap_2023": 23.29372990509147,
+          "lng_cap_2024": 395.2339200002194,
+          "domestic_cap_2020": 154.9184424432652,
+          "domestic_cap_2024": 76.88193327412314
+        },
+        "errors": {
+          "geothermal_af_2020": 0.0,
+          "onshore_wind_annual_cf_2020": 0.0,
+          "coal_capital_cost_2020": 0.0,
+          "smr_capital_cost_2020": 0.0,
+          "smr_life": 0,
+          "large_hydro_life": 0,
+          "lng_cap_2020": 0.0,
+          "lng_cap_2022": 0.0,
+          "lng_cap_2023": 0.0,
+          "lng_cap_2024": 0.0,
+          "domestic_cap_2020": 0.0,
+          "domestic_cap_2024": -1.4210854715202004e-14
+        }
+      }
+    },
+    {
+      "name": "lng_chronology_and_limits",
+      "status": "pass",
+      "detail": {
+        "2020_2022_max_activity_pj": 0.0,
+        "maximum_upper_violation_pj": 0.0,
+        "selected_activity_pj": {
+          "2020": 0.0,
+          "2022": 0.0,
+          "2023": 0.0,
+          "2024": 0.0,
+          "2053": 144.7658
+        }
+      }
+    },
+    {
+      "name": "domestic_gas_limits",
+      "status": "pass",
+      "detail": {
+        "maximum_upper_violation_pj": 4.565812091072985e-05,
+        "selected_activity_pj": {
+          "2020": 13.688,
+          "2021": 18.3552,
+          "2022": 33.8453,
+          "2023": 55.3152,
+          "2024": 76.8819,
+          "2053": 60.9064
+        }
+      }
+    },
+    {
+      "name": "v17_land_2020_reproduced",
+      "status": "pass",
+      "detail": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0
+      }
+    },
+    {
+      "name": "v17_land_closure_reproduced",
+      "status": "pass",
+      "detail": {
+        "maximum_closure_residual_1000_km2": 0.00010000000003174137,
+        "minimum_supply_1000_km2": 295.8131,
+        "maximum_supply_1000_km2": 295.8131
+      }
+    }
+  ],
+  "build_manifest": "/Users/sato/GitHub/CLEWs-PHL/Philippines_v18_CLEWs_build/data_sources/snapshots/energy_inputs_v18_build_manifest.json",
+  "input_snapshot": "/Users/sato/GitHub/CLEWs-PHL/Philippines_v18_CLEWs_build/data_sources/snapshots/energy_inputs_v18_2026-08-12.json"
+}

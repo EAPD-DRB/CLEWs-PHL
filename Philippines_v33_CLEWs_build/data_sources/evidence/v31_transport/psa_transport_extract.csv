@@ -1,0 +1,5 @@
+table,year,measure,value,unit
+13.8,2020,cargo,3379,vessels
+13.8,2020,tanker,230,vessels
+13.8,2020,tugs_and_dredger,628,vessels
+13.8,2020,total,29974,vessels

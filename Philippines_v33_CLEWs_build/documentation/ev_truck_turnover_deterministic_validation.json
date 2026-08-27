@@ -1,0 +1,146 @@
+{
+  "schema": "philippines-v22-ev-truck-turnover-deterministic-validation-v1",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v22-ev-truck-turnover-candidate-20260824",
+  "baseline": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v22",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "eleven_constraint_members",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constraint_tag_unchanged_equality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_ev_residual_capacity_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "base_ev_investment_zero_full_horizon",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ev_scenario_truck_envelopes_explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ev_scenario_other_ev_envelopes_restored",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "base_non_ev_truck_envelopes_repaired",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SC_3hgjb_inherits_base_ev_ban",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "SC_w03qj_inherits_base_ev_ban",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "base_udc_cam_deactivated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ev_udc_cam_explicitly_restored",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constraint_rhs_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "CNCM_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "CCM_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "only_intended_source_files_changed",
+      "passed": true,
+      "detail": [
+        "RYT.json",
+        "RYTCn.json"
+      ]
+    },
+    {
+      "name": "generic_physical_gate_BASE",
+      "passed": true,
+      "detail": {
+        "status": "passed_no_deterministic_contradiction",
+        "failure_count": 0,
+        "failures": []
+      }
+    },
+    {
+      "name": "generic_physical_gate_COAL_PHASEOUT",
+      "passed": true,
+      "detail": {
+        "status": "passed_no_deterministic_contradiction",
+        "failure_count": 0,
+        "failures": []
+      }
+    },
+    {
+      "name": "generic_physical_gate_RE",
+      "passed": true,
+      "detail": {
+        "status": "passed_no_deterministic_contradiction",
+        "failure_count": 0,
+        "failures": []
+      }
+    },
+    {
+      "name": "generic_physical_gate_EV",
+      "passed": true,
+      "detail": {
+        "status": "passed_no_deterministic_contradiction",
+        "failure_count": 0,
+        "failures": []
+      }
+    }
+  ],
+  "failed_checks": [],
+  "generic_physical_gates": {
+    "BASE": {
+      "status": "passed_no_deterministic_contradiction",
+      "failure_count": 0,
+      "failures": []
+    },
+    "COAL_PHASEOUT": {
+      "status": "passed_no_deterministic_contradiction",
+      "failure_count": 0,
+      "failures": []
+    },
+    "RE": {
+      "status": "passed_no_deterministic_contradiction",
+      "failure_count": 0,
+      "failures": []
+    },
+    "EV": {
+      "status": "passed_no_deterministic_contradiction",
+      "failure_count": 0,
+      "failures": []
+    }
+  },
+  "optimizer_runs": 0
+}

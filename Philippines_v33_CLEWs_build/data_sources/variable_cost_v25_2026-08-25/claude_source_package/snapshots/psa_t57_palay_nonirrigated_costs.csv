@@ -1,0 +1,12 @@
+# PSA OpenSTAT 3S/C5/0072E2BARN0.px, retrieved 2026-08-25 by HTTP POST to
+# https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/3S/C5/0072E2BARN0.px
+# body {"query":[{"code":"<var>","selection":{"filter":"all","values":["*"]}} for every variable],"response":{"format":"csv"}}
+"Item","2022 January to June","2022 July to December","2022 Average","2023 January to June","2023 July to December","2023 Average","2024 January to June","2024 July to December","2024 Average"
+"Gross Returns",48192.3,56123.6,52158.0,58187.8,73484.5,65615.8,76184.2,76344.5,76548.8
+"Cash Costs",23227.5,26279.2,24753.4,23974.9,24527.2,24251.1,24159.3,24748.3,24453.8
+"Non-Cash Costs",7865.2,7760.1,7812.7,8735.4,9576.3,9155.8,11171.3,9953.9,10562.6
+"Imputed Costs",12501.8,14494.5,13498.2,13371.3,16094.2,14732.8,15412.2,16813.1,16112.7
+"Total Costs",43594.5,48533.9,46064.2,46081.6,50197.7,48139.6,50742.9,51515.3,51129.1
+"Net Returns",4597.8,7589.8,6093.8,12106.3,23286.8,17476.2,25441.3,24829.2,25419.7
+"Net Profit-Cost Ratio",0.1,0.2,0.1,0.3,0.5,0.4,0.5,0.5,0.5
+"Cost Per Kilogram (PhP)",16.3,15.3,15.8,14.7,14.5,14.6,16.5,14.8,15.6

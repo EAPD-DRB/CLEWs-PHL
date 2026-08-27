@@ -1,0 +1,1026 @@
+{
+  "case": "Philippines_v33",
+  "parent_case": "Philippines_v32",
+  "status": "pass",
+  "candidate_optimizer_runs": 4,
+  "diagnostic_optimizer_runs_outside_candidate": 2,
+  "diagnostic_directories": [
+    ".Philippines_v33-gas-delivery-diagnostic-20260827",
+    ".Philippines_v33-gas-delivery-diagnostic2-20260827"
+  ],
+  "scenarios": {
+    "BASE": {
+      "candidate_run": "BASE_V33_GAS_DELIVERY",
+      "baseline_run": "BASE_V32_RICE_YIELD",
+      "optimization": {
+        "status": "Optimal - objective value 852438.33485986",
+        "objective": 852438.33485986,
+        "baseline_objective": 838560.95562083,
+        "objective_change": 13877.379239030066,
+        "objective_change_percent": 1.6549040527120473,
+        "solve_seconds": 78.1788367909976,
+        "baseline_runtime_seconds": 66.15766029099905,
+        "runtime_ratio_to_baseline": 1.181704982418099,
+        "runtime_acceptance_passed": true
+      },
+      "matrix": {
+        "rows": 467075,
+        "columns": 517844,
+        "matrix_nonzeros": 8194641
+      },
+      "matrix_deltas": {
+        "rows": 0,
+        "columns": 0,
+        "matrix_nonzeros": 0
+      },
+      "candidate_metrics": {
+        "2020": {
+          "legacy_gas_generation_pj": 73.2472,
+          "nonpower_processed_gas_use_pj": 9.620500000000002,
+          "gas_extraction_activity_pj": 154.9184,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 331.98040000000003
+        },
+        "2021": {
+          "legacy_gas_generation_pj": 62.8636,
+          "nonpower_processed_gas_use_pj": 7.6867,
+          "gas_extraction_activity_pj": 132.3549,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 336.0149000000002
+        },
+        "2022": {
+          "legacy_gas_generation_pj": 55.4642,
+          "nonpower_processed_gas_use_pj": 13.789599999999997,
+          "gas_extraction_activity_pj": 124.1811,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 351.69329999999985
+        },
+        "2023": {
+          "legacy_gas_generation_pj": 38.3862,
+          "nonpower_processed_gas_use_pj": 20.4928,
+          "gas_extraction_activity_pj": 97.5154,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 372.77700000000004
+        },
+        "2024": {
+          "legacy_gas_generation_pj": 1.6374,
+          "nonpower_processed_gas_use_pj": 29.368199999999995,
+          "gas_extraction_activity_pj": 34.2719,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 395.7969
+        }
+      },
+      "baseline_metrics": {
+        "2020": {
+          "legacy_gas_generation_pj": 73.2472,
+          "nonpower_processed_gas_use_pj": 9.6203,
+          "gas_extraction_activity_pj": 154.9184,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 331.9803
+        },
+        "2021": {
+          "legacy_gas_generation_pj": 48.7106,
+          "nonpower_processed_gas_use_pj": 34.1529,
+          "gas_extraction_activity_pj": 132.3549,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 336.01470000000023
+        },
+        "2022": {
+          "legacy_gas_generation_pj": 21.4414,
+          "nonpower_processed_gas_use_pj": 77.4131,
+          "gas_extraction_activity_pj": 124.1811,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 347.81959999999987
+        },
+        "2023": {
+          "legacy_gas_generation_pj": 0.0022,
+          "nonpower_processed_gas_use_pj": 114.31429999999999,
+          "gas_extraction_activity_pj": 97.5154,
+          "gas_import_activity_pj": 23.2937,
+          "gross_grid_generation_pj": 372.7722999999999
+        },
+        "2024": {
+          "legacy_gas_generation_pj": 0.5738,
+          "nonpower_processed_gas_use_pj": 144.21070000000003,
+          "gas_extraction_activity_pj": 76.8819,
+          "gas_import_activity_pj": 76.65,
+          "gross_grid_generation_pj": 393.1176000000001
+        }
+      },
+      "extraction_cap_residual_pj": {
+        "2020": 4.244326521529729e-05,
+        "2021": -3.816913229570673e-05,
+        "2022": 2.468900321161982e-05,
+        "2023": -2.702441294388791e-05,
+        "2024": 42.61003327412314
+      },
+      "extraction_cap_dual": {
+        "2020": -4.1330189,
+        "2021": -6.4469246,
+        "2022": -6.5365165,
+        "2023": -1.3594842,
+        "2024": 0.0,
+        "2025": 0.0,
+        "2026": -0.0062653879,
+        "2027": 0.0,
+        "2028": 0.0,
+        "2029": -0.077725721,
+        "2030": -1.62845,
+        "2031": -0.44087302,
+        "2032": -0.58667882,
+        "2033": -1.1043783,
+        "2034": -0.8347196,
+        "2035": -2.6625185,
+        "2036": -3.4316118,
+        "2037": -1.1283781,
+        "2038": -1.1017841,
+        "2039": -0.7846938,
+        "2040": -0.58938696,
+        "2041": -0.60934007,
+        "2042": -0.62630388,
+        "2043": -0.64003468,
+        "2044": -0.65126206,
+        "2045": -0.65996884,
+        "2046": -1.1802064,
+        "2047": -1.1600326,
+        "2048": -1.0592979,
+        "2049": -1.1468581,
+        "2050": -1.1087879,
+        "2051": -1.0559885,
+        "2052": -1.0057033,
+        "2053": -0.9578127
+      },
+      "checks": {
+        "optimal": true,
+        "promotion_allowed": true,
+        "runtime_gate": true,
+        "matrix_exact": true,
+        "generated_hashes_current": true,
+        "results_hash_current": true
+      },
+      "artifact_timestamps_ns": {
+        "data.txt": 1787848053530702316,
+        "data_processed.txt": 1787848053542607605,
+        "lp.lp": 1787848103488847212,
+        "cbc.log": 1787848191406757151,
+        "results.txt": 1787848191368682753,
+        "optimization_record.json": 1787848200246350265
+      }
+    },
+    "COAL_PHASEOUT": {
+      "candidate_run": "COAL_PHASEOUT_V33_GAS_DELIVERY",
+      "baseline_run": "COAL_PHASEOUT_V32_RICE_YIELD",
+      "optimization": {
+        "status": "Optimal - objective value 873334.54788478",
+        "objective": 873334.54788478,
+        "baseline_objective": 854467.84939736,
+        "objective_change": 18866.698487419984,
+        "objective_change_percent": 2.2080056611522902,
+        "solve_seconds": 124.49181858299562,
+        "baseline_runtime_seconds": 130.409787083001,
+        "runtime_ratio_to_baseline": 0.9546202119305753,
+        "runtime_acceptance_passed": true
+      },
+      "matrix": {
+        "rows": 467090,
+        "columns": 517844,
+        "matrix_nonzeros": 8194911
+      },
+      "matrix_deltas": {
+        "rows": 0,
+        "columns": 0,
+        "matrix_nonzeros": 0
+      },
+      "candidate_metrics": {
+        "2020": {
+          "legacy_gas_generation_pj": 73.2472,
+          "nonpower_processed_gas_use_pj": 9.6203,
+          "gas_extraction_activity_pj": 154.9184,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 331.9803000000001
+        },
+        "2021": {
+          "legacy_gas_generation_pj": 61.2347,
+          "nonpower_processed_gas_use_pj": 10.7334,
+          "gas_extraction_activity_pj": 132.3549,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 336.5344000000001
+        },
+        "2022": {
+          "legacy_gas_generation_pj": 53.5871,
+          "nonpower_processed_gas_use_pj": 17.299000000000003,
+          "gas_extraction_activity_pj": 124.1811,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 351.6934000000001
+        },
+        "2023": {
+          "legacy_gas_generation_pj": 36.3613,
+          "nonpower_processed_gas_use_pj": 24.2797,
+          "gas_extraction_activity_pj": 97.5154,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 385.4636
+        },
+        "2024": {
+          "legacy_gas_generation_pj": 0.0,
+          "nonpower_processed_gas_use_pj": 33.76969999999999,
+          "gas_extraction_activity_pj": 35.6874,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 425.185
+        }
+      },
+      "baseline_metrics": {
+        "2020": {
+          "legacy_gas_generation_pj": 73.2472,
+          "nonpower_processed_gas_use_pj": 9.6203,
+          "gas_extraction_activity_pj": 154.9184,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 331.9804000000001
+        },
+        "2021": {
+          "legacy_gas_generation_pj": 44.608,
+          "nonpower_processed_gas_use_pj": 41.8257,
+          "gas_extraction_activity_pj": 132.3549,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 336.01480000000015
+        },
+        "2022": {
+          "legacy_gas_generation_pj": 17.7688,
+          "nonpower_processed_gas_use_pj": 84.2813,
+          "gas_extraction_activity_pj": 124.1811,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 351.69369999999986
+        },
+        "2023": {
+          "legacy_gas_generation_pj": 0.0,
+          "nonpower_processed_gas_use_pj": 111.33229999999999,
+          "gas_extraction_activity_pj": 97.5154,
+          "gas_import_activity_pj": 20.1376,
+          "gross_grid_generation_pj": 381.5729999999999
+        },
+        "2024": {
+          "legacy_gas_generation_pj": 0.0,
+          "nonpower_processed_gas_use_pj": 135.013,
+          "gas_extraction_activity_pj": 76.8819,
+          "gas_import_activity_pj": 65.7967,
+          "gross_grid_generation_pj": 419.6678
+        }
+      },
+      "extraction_cap_residual_pj": {
+        "2020": 4.244326521529729e-05,
+        "2021": -3.816913229570673e-05,
+        "2022": 2.468900321161982e-05,
+        "2023": -2.702441294388791e-05,
+        "2024": 41.194533274123145
+      },
+      "extraction_cap_dual": {
+        "2020": -4.1330189,
+        "2021": -6.4469246,
+        "2022": -6.5365165,
+        "2023": -1.3594842,
+        "2024": 0.0,
+        "2025": 0.0,
+        "2026": 0.0,
+        "2027": 0.0,
+        "2028": 0.0,
+        "2029": -0.15019588,
+        "2030": -0.27901992,
+        "2031": -0.44087302,
+        "2032": -0.58667882,
+        "2033": -0.71759866,
+        "2034": -1.142044,
+        "2035": -1.1996312,
+        "2036": -0.93551812,
+        "2037": -1.1131784,
+        "2038": -3.1344045,
+        "2039": -2.995543,
+        "2040": -2.862799,
+        "2041": -2.7268613,
+        "2042": -2.597626,
+        "2043": -2.4742797,
+        "2044": -2.3570149,
+        "2045": -2.2453075,
+        "2046": -2.1386906,
+        "2047": -2.0373302,
+        "2048": -1.9407735,
+        "2049": -1.8486171,
+        "2050": -1.7610041,
+        "2051": -1.6771467,
+        "2052": -1.5972826,
+        "2053": -1.5479812
+      },
+      "checks": {
+        "optimal": true,
+        "promotion_allowed": true,
+        "runtime_gate": true,
+        "matrix_exact": true,
+        "generated_hashes_current": true,
+        "results_hash_current": true
+      },
+      "artifact_timestamps_ns": {
+        "data.txt": 1787848272913901129,
+        "data_processed.txt": 1787848272925856458,
+        "lp.lp": 1787848323563356756,
+        "cbc.log": 1787848584462139564,
+        "results.txt": 1787848584367407962,
+        "optimization_record.json": 1787848597415451074
+      }
+    },
+    "RE": {
+      "candidate_run": "RE_V33_GAS_DELIVERY",
+      "baseline_run": "RE_V32_RICE_YIELD",
+      "optimization": {
+        "status": "Optimal - objective value 862660.13060768",
+        "objective": 862660.13060768,
+        "baseline_objective": 847837.26946077,
+        "objective_change": 14822.86114691,
+        "objective_change_percent": 1.7483144090065128,
+        "solve_seconds": 132.50547754199943,
+        "baseline_runtime_seconds": 140.4315942079993,
+        "runtime_ratio_to_baseline": 0.9435588785365482,
+        "runtime_acceptance_passed": true
+      },
+      "matrix": {
+        "rows": 467075,
+        "columns": 517844,
+        "matrix_nonzeros": 8195151
+      },
+      "matrix_deltas": {
+        "rows": 0,
+        "columns": 0,
+        "matrix_nonzeros": 0
+      },
+      "candidate_metrics": {
+        "2020": {
+          "legacy_gas_generation_pj": 73.2472,
+          "nonpower_processed_gas_use_pj": 9.620400000000002,
+          "gas_extraction_activity_pj": 154.9184,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 331.9802
+        },
+        "2021": {
+          "legacy_gas_generation_pj": 62.8636,
+          "nonpower_processed_gas_use_pj": 7.6867,
+          "gas_extraction_activity_pj": 132.3549,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 336.0147000000002
+        },
+        "2022": {
+          "legacy_gas_generation_pj": 55.4642,
+          "nonpower_processed_gas_use_pj": 13.789599999999997,
+          "gas_extraction_activity_pj": 124.1811,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 347.81960000000015
+        },
+        "2023": {
+          "legacy_gas_generation_pj": 38.6078,
+          "nonpower_processed_gas_use_pj": 20.0782,
+          "gas_extraction_activity_pj": 97.5154,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 372.7772
+        },
+        "2024": {
+          "legacy_gas_generation_pj": 1.1276,
+          "nonpower_processed_gas_use_pj": 28.231199999999994,
+          "gas_extraction_activity_pj": 32.0622,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 395.88479999999976
+        }
+      },
+      "baseline_metrics": {
+        "2020": {
+          "legacy_gas_generation_pj": 73.2472,
+          "nonpower_processed_gas_use_pj": 9.6203,
+          "gas_extraction_activity_pj": 154.9184,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 331.9803
+        },
+        "2021": {
+          "legacy_gas_generation_pj": 48.084,
+          "nonpower_processed_gas_use_pj": 35.325300000000006,
+          "gas_extraction_activity_pj": 132.3549,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 336.0145000000001
+        },
+        "2022": {
+          "legacy_gas_generation_pj": 20.7264,
+          "nonpower_processed_gas_use_pj": 78.7505,
+          "gas_extraction_activity_pj": 124.1811,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 342.5040000000002
+        },
+        "2023": {
+          "legacy_gas_generation_pj": 0.0,
+          "nonpower_processed_gas_use_pj": 110.24989999999998,
+          "gas_extraction_activity_pj": 97.5154,
+          "gas_import_activity_pj": 18.9947,
+          "gross_grid_generation_pj": 372.7749000000001
+        },
+        "2024": {
+          "legacy_gas_generation_pj": 0.0164,
+          "nonpower_processed_gas_use_pj": 139.3399,
+          "gas_extraction_activity_pj": 76.8819,
+          "gas_import_activity_pj": 70.4013,
+          "gross_grid_generation_pj": 393.3749999999997
+        }
+      },
+      "extraction_cap_residual_pj": {
+        "2020": 4.244326521529729e-05,
+        "2021": -3.816913229570673e-05,
+        "2022": 2.468900321161982e-05,
+        "2023": -2.702441294388791e-05,
+        "2024": 44.819733274123145
+      },
+      "extraction_cap_dual": {
+        "2020": -4.1330189,
+        "2021": -6.4469246,
+        "2022": -6.5365165,
+        "2023": -1.3594842,
+        "2024": 0.0,
+        "2025": 0.0,
+        "2026": 0.0,
+        "2027": 0.0,
+        "2028": 0.0,
+        "2029": -0.60702405,
+        "2030": -3.915844,
+        "2031": -0.44087302,
+        "2032": -0.44338277,
+        "2033": -0.71759866,
+        "2034": -0.8347196,
+        "2035": -2.6385952,
+        "2036": -3.4316118,
+        "2037": -1.1523013,
+        "2038": -1.1017841,
+        "2039": -0.7846938,
+        "2040": -0.58938696,
+        "2041": -0.60934007,
+        "2042": -0.62630388,
+        "2043": -0.64003468,
+        "2044": -0.65126206,
+        "2045": -0.65996884,
+        "2046": -1.1802064,
+        "2047": -1.1600326,
+        "2048": -1.0594533,
+        "2049": -1.1467026,
+        "2050": -1.1087879,
+        "2051": -1.0559885,
+        "2052": -1.0057033,
+        "2053": -0.9578127
+      },
+      "checks": {
+        "optimal": true,
+        "promotion_allowed": true,
+        "runtime_gate": true,
+        "matrix_exact": true,
+        "generated_hashes_current": true,
+        "results_hash_current": true
+      },
+      "artifact_timestamps_ns": {
+        "data.txt": 1787848334457438181,
+        "data_processed.txt": 1787848334469686468,
+        "lp.lp": 1787848383126382553,
+        "cbc.log": 1787848589109660785,
+        "results.txt": 1787848589007397503,
+        "optimization_record.json": 1787848600655933506
+      }
+    },
+    "EV": {
+      "candidate_run": "EV_V33_GAS_DELIVERY",
+      "baseline_run": "EV_V32_RICE_YIELD",
+      "optimization": {
+        "status": "Optimal - objective value 828191.95783998",
+        "objective": 828191.95783998,
+        "baseline_objective": 815538.14726765,
+        "objective_change": 12653.810572330025,
+        "objective_change_percent": 1.5515902738240772,
+        "solve_seconds": 148.53312570899288,
+        "baseline_runtime_seconds": 140.42719862500235,
+        "runtime_ratio_to_baseline": 1.0577233410860574,
+        "runtime_acceptance_passed": true
+      },
+      "matrix": {
+        "rows": 467075,
+        "columns": 517844,
+        "matrix_nonzeros": 8194949
+      },
+      "matrix_deltas": {
+        "rows": 0,
+        "columns": 0,
+        "matrix_nonzeros": 0
+      },
+      "candidate_metrics": {
+        "2020": {
+          "legacy_gas_generation_pj": 73.2472,
+          "nonpower_processed_gas_use_pj": 9.620500000000002,
+          "gas_extraction_activity_pj": 154.9184,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 331.9802000000001
+        },
+        "2021": {
+          "legacy_gas_generation_pj": 62.8636,
+          "nonpower_processed_gas_use_pj": 7.6867,
+          "gas_extraction_activity_pj": 132.3549,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 337.3477000000001
+        },
+        "2022": {
+          "legacy_gas_generation_pj": 55.4642,
+          "nonpower_processed_gas_use_pj": 13.789599999999997,
+          "gas_extraction_activity_pj": 124.1811,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 351.9231
+        },
+        "2023": {
+          "legacy_gas_generation_pj": 38.8208,
+          "nonpower_processed_gas_use_pj": 19.6798,
+          "gas_extraction_activity_pj": 97.5154,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 381.8405999999998
+        },
+        "2024": {
+          "legacy_gas_generation_pj": 25.047,
+          "nonpower_processed_gas_use_pj": 25.912799999999997,
+          "gas_extraction_activity_pj": 76.8819,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 404.21880000000004
+        }
+      },
+      "baseline_metrics": {
+        "2020": {
+          "legacy_gas_generation_pj": 73.2472,
+          "nonpower_processed_gas_use_pj": 9.620400000000002,
+          "gas_extraction_activity_pj": 154.9184,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 331.98010000000005
+        },
+        "2021": {
+          "legacy_gas_generation_pj": 44.3661,
+          "nonpower_processed_gas_use_pj": 42.2781,
+          "gas_extraction_activity_pj": 132.3549,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 337.38200000000006
+        },
+        "2022": {
+          "legacy_gas_generation_pj": 19.0831,
+          "nonpower_processed_gas_use_pj": 81.8225,
+          "gas_extraction_activity_pj": 124.1811,
+          "gas_import_activity_pj": 0.0,
+          "gross_grid_generation_pj": 351.95680000000004
+        },
+        "2023": {
+          "legacy_gas_generation_pj": 0.0,
+          "nonpower_processed_gas_use_pj": 113.53309999999998,
+          "gas_extraction_activity_pj": 97.5154,
+          "gas_import_activity_pj": 22.4633,
+          "gross_grid_generation_pj": 381.1748
+        },
+        "2024": {
+          "legacy_gas_generation_pj": 0.4387,
+          "nonpower_processed_gas_use_pj": 141.4297,
+          "gas_extraction_activity_pj": 76.8819,
+          "gas_import_activity_pj": 73.4438,
+          "gross_grid_generation_pj": 403.4464000000004
+        }
+      },
+      "extraction_cap_residual_pj": {
+        "2020": 4.244326521529729e-05,
+        "2021": -3.816913229570673e-05,
+        "2022": 2.468900321161982e-05,
+        "2023": -2.702441294388791e-05,
+        "2024": 3.3274123140358824e-05
+      },
+      "extraction_cap_dual": {
+        "2020": -4.1330189,
+        "2021": -6.4469246,
+        "2022": -6.5365165,
+        "2023": -1.3594842,
+        "2024": -0.48884216,
+        "2025": -0.016400797,
+        "2026": -0.0062653879,
+        "2027": 0.0,
+        "2028": 0.0,
+        "2029": 0.0,
+        "2030": 0.0,
+        "2031": -0.24057277,
+        "2032": -0.5773858,
+        "2033": -0.71759866,
+        "2034": -0.86394576,
+        "2035": -3.5905561,
+        "2036": -2.1944336,
+        "2037": -1.1131784,
+        "2038": -1.1324752,
+        "2039": -0.7846938,
+        "2040": -0.58938696,
+        "2041": -0.036727245,
+        "2042": 0.0,
+        "2043": -1.254114,
+        "2044": -1.2360995,
+        "2045": -0.95654376,
+        "2046": -1.1802064,
+        "2047": -1.1373534,
+        "2048": -1.049825,
+        "2049": -1.1760842,
+        "2050": -1.0010127,
+        "2051": -1.0559885,
+        "2052": -1.0057033,
+        "2053": -1.0685138
+      },
+      "checks": {
+        "optimal": true,
+        "promotion_allowed": true,
+        "runtime_gate": true,
+        "matrix_exact": true,
+        "generated_hashes_current": true,
+        "results_hash_current": true
+      },
+      "artifact_timestamps_ns": {
+        "data.txt": 1787848394401630794,
+        "data_processed.txt": 1787848394414044831,
+        "lp.lp": 1787848442435669888,
+        "cbc.log": 1787848609820424445,
+        "results.txt": 1787848609752682630,
+        "optimization_record.json": 1787849592373044692
+      }
+    }
+  },
+  "base_benchmark": {
+    "2020": {
+      "doe_gas_generation_pj": 70.1892,
+      "v32_gas_generation_pj": 73.2472,
+      "v33_gas_generation_pj": 73.2472,
+      "v33_percent_of_observed": 104.35679563237649
+    },
+    "2021": {
+      "doe_gas_generation_pj": 68.616,
+      "v32_gas_generation_pj": 48.7106,
+      "v33_gas_generation_pj": 62.8636,
+      "v33_percent_of_observed": 91.61653258715168
+    },
+    "2022": {
+      "doe_gas_generation_pj": 64.3824,
+      "v32_gas_generation_pj": 21.4414,
+      "v33_gas_generation_pj": 55.4642,
+      "v33_percent_of_observed": 86.14807773553021
+    },
+    "2023": {
+      "doe_gas_generation_pj": 60.0048,
+      "v32_gas_generation_pj": 0.0022,
+      "v33_gas_generation_pj": 38.3862,
+      "v33_percent_of_observed": 63.97188224942005
+    },
+    "2024": {
+      "doe_gas_generation_pj": 64.9692,
+      "v32_gas_generation_pj": 0.5738,
+      "v33_gas_generation_pj": 1.6374,
+      "v33_percent_of_observed": 2.5202711438650933
+    }
+  },
+  "base_effect": {
+    "nonpower_gas_reduction_percent_2023": 82.07328391985953,
+    "nonpower_gas_reduction_percent_2024": 79.63521430795358,
+    "gas_import_reduction_pj_2023": 23.2937,
+    "gas_import_reduction_pj_2024": 76.65,
+    "gross_generation_2024_pj": 395.7969,
+    "doe_gross_generation_2024_pj": 456.988,
+    "gross_generation_gap_2024_pj": 61.191100000000006,
+    "gross_generation_gap_2024_percent": 13.390089017654727
+  },
+  "top_base_activity_changes": [
+    {
+      "technology": "PHL_PRO_IMP_COAL",
+      "absolute_change_sum_2020_2024": 386.36229999999995,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": -60.61709999999999,
+        "2022": -133.41220000000004,
+        "2023": -159.35239999999993,
+        "2024": -32.98059999999998
+      }
+    },
+    {
+      "technology": "PHL_PRO_PROC_COAL",
+      "absolute_change_sum_2020_2024": 384.8381999999997,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": -60.37799999999993,
+        "2022": -132.88599999999997,
+        "2023": -158.7237,
+        "2024": -32.85049999999978
+      }
+    },
+    {
+      "technology": "PHL_PRO_PROC_OIL",
+      "absolute_change_sum_2020_2024": 291.77329999999995,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 26.46679999999992,
+        "2022": 59.54640000000006,
+        "2023": 93.81679999999994,
+        "2024": 111.94330000000002
+      }
+    },
+    {
+      "technology": "PHL_PRO_IMP_OIL",
+      "absolute_change_sum_2020_2024": 286.8266,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 26.017999999999915,
+        "2022": 58.536899999999946,
+        "2023": 92.22620000000006,
+        "2024": 110.04550000000006
+      }
+    },
+    {
+      "technology": "PHL_PRO_BLEND_OIL",
+      "absolute_change_sum_2020_2024": 171.5389,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 18.015100000000018,
+        "2022": 30.542699999999968,
+        "2023": 51.91250000000002,
+        "2024": 71.0686
+      }
+    },
+    {
+      "technology": "PHL_PRO_PROC_NG",
+      "absolute_change_sum_2020_2024": 134.89549999999997,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 0.0,
+        "2023": -22.042299999999997,
+        "2024": -112.85319999999999
+      }
+    },
+    {
+      "technology": "PHL_POW_CHP_COAL_OLD",
+      "absolute_change_sum_2020_2024": 122.58559999999997,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": -19.232699999999994,
+        "2022": -42.329199999999986,
+        "2023": -50.559499999999986,
+        "2024": -10.464200000000005
+      }
+    },
+    {
+      "technology": "PHL_PRO_IMP_NG",
+      "absolute_change_sum_2020_2024": 99.9437,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 0.0,
+        "2023": -23.2937,
+        "2024": -76.65
+      }
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "absolute_change_sum_2020_2024": 87.62339999999999,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 14.152999999999999,
+        "2022": 34.0228,
+        "2023": 38.384,
+        "2024": 1.0636
+      }
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "absolute_change_sum_2020_2024": 71.3505,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": -4.7572,
+        "2022": -17.685,
+        "2023": -23.5857,
+        "2024": -25.3226
+      }
+    },
+    {
+      "technology": "PHL_HOU_COOK_OIL",
+      "absolute_change_sum_2020_2024": 67.1813,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 4.757199999999997,
+        "2022": 15.257400000000004,
+        "2023": 23.583399999999997,
+        "2024": 23.5833
+      }
+    },
+    {
+      "technology": "PHL_PRO_EXTR_NG",
+      "absolute_change_sum_2020_2024": 42.61,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 0.0,
+        "2023": 0.0,
+        "2024": -42.61
+      }
+    },
+    {
+      "technology": "PHL_POW_PP_SPV",
+      "absolute_change_sum_2020_2024": 41.62020000000001,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 5.079599999999999,
+        "2022": 12.180200000000003,
+        "2023": 12.180200000000003,
+        "2024": 12.180200000000003
+      }
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "absolute_change_sum_2020_2024": 13.9193,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 0.0,
+        "2023": -4.8392,
+        "2024": -9.0801
+      }
+    },
+    {
+      "technology": "PHL_TRA_CAR_LIQ",
+      "absolute_change_sum_2020_2024": 13.919299999999993,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 0.0,
+        "2023": 4.839199999999998,
+        "2024": 9.080099999999995
+      }
+    },
+    {
+      "technology": "PHL_TRA_TRUL_LIQ",
+      "absolute_change_sum_2020_2024": 11.074100000000001,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 2.7684999999999995,
+        "2022": 2.7684999999999995,
+        "2023": 2.768500000000003,
+        "2024": 2.7685999999999993
+      }
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "absolute_change_sum_2020_2024": 11.0741,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": -2.7685,
+        "2022": -2.7685000000000004,
+        "2023": -2.7684999999999995,
+        "2024": -2.7685999999999993
+      }
+    },
+    {
+      "technology": "PHL_TRA_VAN_LIQ",
+      "absolute_change_sum_2020_2024": 9.315600000000002,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 0.9315000000000007,
+        "2022": 1.863100000000001,
+        "2023": 2.7946999999999997,
+        "2024": 3.7263
+      }
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "absolute_change_sum_2020_2024": 9.3156,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": -0.9315,
+        "2022": -1.8631,
+        "2023": -2.7947,
+        "2024": -3.7263
+      }
+    },
+    {
+      "technology": "PHL_TRA_TRUH_LIQ",
+      "absolute_change_sum_2020_2024": 9.2856,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 0.8984000000000005,
+        "2022": 1.8471000000000002,
+        "2023": 2.7957,
+        "2024": 3.7443999999999997
+      }
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "absolute_change_sum_2020_2024": 9.2856,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": -0.8984,
+        "2022": -1.8471,
+        "2023": -2.7957,
+        "2024": -3.7444
+      }
+    },
+    {
+      "technology": "LNDOTHTOT",
+      "absolute_change_sum_2020_2024": 8.666000000000004,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": -0.010699999999999932,
+        "2022": -8.604300000000002,
+        "2023": -0.025500000000000966,
+        "2024": -0.025500000000000966
+      }
+    },
+    {
+      "technology": "LNDCROPTOT",
+      "absolute_change_sum_2020_2024": 8.665999999999983,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": -0.010599999999996612,
+        "2022": -8.604299999999995,
+        "2023": -0.02559999999999718,
+        "2024": -0.02549999999999386
+      }
+    },
+    {
+      "technology": "LNDGRSTOT",
+      "absolute_change_sum_2020_2024": 8.57869999999999,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 8.57869999999999,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "technology": "PHL_AGR_HEAT_OIL",
+      "absolute_change_sum_2020_2024": 6.0594,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 0.4655,
+        "2022": 1.8846,
+        "2023": 2.3127999999999997,
+        "2024": 1.3964999999999999
+      }
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "absolute_change_sum_2020_2024": 6.059299999999999,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": -0.4654999999999996,
+        "2022": -1.8844999999999992,
+        "2023": -2.3128,
+        "2024": -1.3964999999999996
+      }
+    },
+    {
+      "technology": "PHL_POW_TD",
+      "absolute_change_sum_2020_2024": 5.871100000000013,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 3.4680000000000177,
+        "2023": 0.004200000000025739,
+        "2024": 2.398899999999969
+      }
+    },
+    {
+      "technology": "PHL_POW_TD_HOU",
+      "absolute_change_sum_2020_2024": 5.8703000000000145,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 3.468100000000021,
+        "2023": 0.003299999999995862,
+        "2024": 2.3988999999999976
+      }
+    },
+    {
+      "technology": "PHL_HOU_COOK_ELE",
+      "absolute_change_sum_2020_2024": 4.1091999999999995,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 2.4276,
+        "2023": 0.0023999999999997357,
+        "2024": 1.6791999999999998
+      }
+    },
+    {
+      "technology": "PHL_DEM_PWR_SUR_WAT",
+      "absolute_change_sum_2020_2024": 3.640600000000001,
+      "annual_change": {
+        "2020": 0.0,
+        "2021": -0.5656999999999996,
+        "2022": -1.2108000000000008,
+        "2023": -1.4732000000000003,
+        "2024": -0.39090000000000025
+      }
+    }
+  ],
+  "limitations": [
+    "The 8.2 MUSD/PJ_input adder is a conservative proxy, not a Philippines route-specific tariff.",
+    "Embedding delivery cost in conversion VC cannot represent endogenous gas-network investment.",
+    "Non-power gas remains endogenous and is reduced, not prohibited.",
+    "Electricity demand and power-plant own-use are unchanged; DOE gross generation remains validation-only.",
+    "The 2024 gas/coal split remains structurally unresolved in an annual least-cost model."
+  ]
+}

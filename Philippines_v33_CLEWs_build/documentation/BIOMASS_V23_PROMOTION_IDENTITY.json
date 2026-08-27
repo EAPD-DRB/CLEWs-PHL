@@ -1,0 +1,44 @@
+{
+  "schema": "philippines-v23-biomass-simple-promotion-identity-v1",
+  "date": "2026-08-25",
+  "live_case": "Philippines_v23",
+  "solved_candidate": ".Philippines_v23-biomass-supply-scaled-candidate-20260824",
+  "source_files_byte_identical": true,
+  "source_hashes": {
+    "RT.json": "43c5c9427bd7bc13604633a07381c4be9a4a963c7310694597ad280c1b971230",
+    "RYC.json": "c3af6e11ead52e633516cfb5ec44d1ced8cc71cd537ea39b3774dd5ff081c165",
+    "RYT.json": "f8bef13c11b0ad7c5ad79c75949ddf627794236718225cb088a673458e79a960",
+    "RYTCM.json": "75fab07825c6ac33c0193420be5926cfdce6cc3fa4c9d226278fd9b314dbb92f",
+    "RYTEM.json": "4bb3309f3a2dfb5a80eda3b11026a75dee4c3ffe18cdb29fb4d06202a63efe85",
+    "RYTM.json": "55d98aa9121801e1501e8b9fd9d0456a1428e2693da19317843e0fffcb19d843",
+    "RYTTs.json": "03e4920a8902920018f8b3c77445949db9ee346cd7b7a20afc7b373ea26cc210",
+    "genData.json": "2926003c763aba64b6c1671a4a183acc6d3be2ccf95d525e71b7760076e38eca"
+  },
+  "live_generation_run": "BIOMASS_V23_PROMOTION_CHECK",
+  "live_data_txt_sha256": "a864a2a5295880f90160998ec694aecd84a2f8fc1bc1de8e37b23fe1e306db54",
+  "candidate_data_txt_sha256": "a864a2a5295880f90160998ec694aecd84a2f8fc1bc1de8e37b23fe1e306db54",
+  "generated_data_byte_identical": true,
+  "live_glpsol_check": "passed",
+  "live_matrix_dimensions": {
+    "rows": 556745,
+    "columns": 588349,
+    "matrix_nonzeros": 8131131
+  },
+  "candidate_matrix_dimensions": {
+    "rows": 556745,
+    "columns": 588349,
+    "matrix_nonzeros": 8131131
+  },
+  "processed_and_lp_byte_identical": false,
+  "processed_and_lp_qualification": "Application preprocessing emitted unordered sets in a different order. The authoritative generated data.txt is byte-identical and GLPK produced identical matrix dimensions; no result-relevant difference was found.",
+  "candidate_optimizer_status": {
+    "BASE": "Optimal",
+    "COAL_PHASEOUT": "Optimal",
+    "RE": "Optimal",
+    "EV": "Optimal"
+  },
+  "post_promotion_optimizer_runs": 0,
+  "post_promotion_cbc": "not run because the promoted source and application-generated data.txt are byte-identical to the solved candidate and the GLPK matrix dimensions match",
+  "runtime_artifacts_copied_to_live": false,
+  "promotion_status": "passed"
+}

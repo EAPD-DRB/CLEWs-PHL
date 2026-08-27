@@ -1,0 +1,81 @@
+{
+  "schema": "philippines-v23-biomass-simple-four-scenario-validation-v1",
+  "candidate": ".Philippines_v23-biomass-supply-scaled-candidate-20260824",
+  "canonical_baseline": ".Philippines_v23-package1-candidate-20260824",
+  "source_candidate_reproduced_by_current_builder": true,
+  "source_candidate_reproduction_note": "All eight changed source JSON files from a fresh zero-solve build were byte-identical to the solved candidate.",
+  "deterministic_gates": {
+    "biomass_specific": "passed",
+    "generic_BASE": "passed_no_deterministic_contradiction",
+    "generic_COAL_PHASEOUT": "passed_no_deterministic_contradiction",
+    "generic_RE": "passed_no_deterministic_contradiction",
+    "generic_EV": "passed_no_deterministic_contradiction",
+    "optimizer_runs": 0
+  },
+  "matrix_change": {
+    "BASE_rows": 556745,
+    "BASE_columns": 588349,
+    "BASE_nonzeros": 8131131,
+    "nonzero_ratio_to_baseline": 1.0015244950148754,
+    "glpsol_check": "passed"
+  },
+  "optimizer_runs": [
+    {
+      "scenario": "BASE",
+      "status": "Optimal",
+      "objective": 369814896.6269361,
+      "objective_change_percent": -0.036948724560637025,
+      "solve_seconds": 160.3226094999991,
+      "runtime_ratio_to_retained_baseline": 0.9670725704852714
+    },
+    {
+      "scenario": "COAL_PHASEOUT",
+      "status": "Optimal",
+      "objective": 369833191.27203745,
+      "objective_change_percent": -0.038169568673718235,
+      "solve_seconds": 280.5446129999982,
+      "runtime_ratio_to_retained_baseline": 1.597989473995665,
+      "qualification": "The initial concurrent 264-second run timed out without an infeasibility marker. The required 420-second follow-up answered the unresolved optimality question and solved. The user explicitly accepted the scenario-specific runtime increase on 2026-08-25; the earlier fixed 1.5x gate is not used for promotion."
+    },
+    {
+      "scenario": "RE",
+      "status": "Optimal",
+      "objective": 369826585.74586725,
+      "objective_change_percent": -0.037643846127999314,
+      "solve_seconds": 280.5729726660029,
+      "runtime_ratio_to_retained_baseline": 1.0207459507974213
+    },
+    {
+      "scenario": "EV",
+      "status": "Optimal",
+      "objective": 369800019.80982316,
+      "objective_change_percent": -0.036805499182546164,
+      "solve_seconds": 306.5874035829984,
+      "runtime_ratio_to_retained_baseline": 1.1914531108088275
+    }
+  ],
+  "result_assessment": {
+    "structural": "improved: sourced finite biomass prices and ceilings; common residue pool for both legacy CHP slices; charcoal conversion losses and kiln emissions represented; no forced dispatch or shares",
+    "2020_useful_cooking_pj": 105.4355,
+    "2020_biomass_supply_pj": {
+      "generic": 274.8966,
+      "crop_residue": 110.3467
+    },
+    "2020_total_CO2e_Mt": {
+      "baseline": 141.219,
+      "candidate": 129.4471
+    },
+    "2020_total_PM2_5_kt": {
+      "baseline": 108.5644,
+      "candidate": 379.7707
+    },
+    "2020_cooking_PM2_5_kt": {
+      "baseline_direct_routes": 44.9004,
+      "candidate_direct_and_integrated_charcoal_routes": 318.0255,
+      "validation_benchmark": 174.22592
+    },
+    "historical_fit": "mixed: the physical representation and fossil-energy accounting improve, but the useful-cooking proxy does not improve the cooking PM2.5 benchmark; this limitation is disclosed in GAPS.csv and is not hidden by a forced outcome"
+  },
+  "promotion_allowed": true,
+  "post_promotion_rule": "Promote only the eight changed source JSON files and compact documentation/ledger artifacts. Regenerate and preprocess the live case, require byte-identical data.txt and passing GLPK matrix check, and do not rerun CBC when identity passes."
+}

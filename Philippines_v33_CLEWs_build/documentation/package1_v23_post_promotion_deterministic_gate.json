@@ -1,0 +1,211 @@
+{
+  "schema": "philippines-v23-package1-deterministic-gate-v1",
+  "candidate": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v23",
+  "parent": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v22",
+  "status": "passed",
+  "optimizer_runs": 0,
+  "model_generation_runs": 0,
+  "checks": [
+    {
+      "check": "identity",
+      "passed": true,
+      "detail": "Philippines_v23"
+    },
+    {
+      "check": "structural_delta",
+      "passed": true,
+      "detail": {
+        "technology_delta": 1,
+        "constraint_delta": 1,
+        "commodity_delta": 0
+      }
+    },
+    {
+      "check": "undefined_biofuel_processor_disabled",
+      "passed": true,
+      "detail": "TAU=TAMaxCI=0, 2020-2053"
+    },
+    {
+      "check": "biofuel_import_boundary",
+      "passed": true,
+      "detail": {
+        "technology": "PHL_PRO_IMP_BIOF",
+        "cost": 24.5
+      }
+    },
+    {
+      "check": "closed_charcoal_proxy",
+      "passed": true,
+      "detail": "biomass-energy input; existing RC preserved; no new capacity"
+    },
+    {
+      "check": "ccs_entry_date",
+      "passed": true,
+      "detail": {
+        "first_eligible_year": 2030,
+        "technologies": [
+          "PHL_INDU_OTHHPH_BIOM_CCS",
+          "PHL_INDU_OTHHPH_COAL_CCS",
+          "PHL_INDU_OTHHPH_NG_CCS",
+          "PHL_POW_PP_BIOM_CCS",
+          "PHL_POW_PP_COAL_CCS",
+          "PHL_POW_PP_NGCC_CCS"
+        ]
+      }
+    },
+    {
+      "check": "unsupported_coal_routes_closed",
+      "passed": true,
+      "detail": [
+        "PHL_POW_GH2_COAL",
+        "PHL_AGR_HEAT_COAL"
+      ]
+    },
+    {
+      "check": "pre2026_build_envelopes",
+      "passed": true,
+      "detail": {
+        "PHL_POW_PP_WON": 1.5,
+        "PHL_POW_PP_WOF": 0.0,
+        "PHL_POW_PP_SPV": 4.0,
+        "PHL_POW_PP_COAL": 2.0,
+        "PHL_POW_PP_COAL_CCS": 0.0,
+        "PHL_POW_PP_NGCC": 2.0,
+        "PHL_POW_PP_NGCC_CCS": 0.0,
+        "PHL_POW_GEO_OLD": 0.15,
+        "PHL_POW_PP_HY_LA": 1.0,
+        "PHL_POW_PP_H2": 0.0,
+        "PHL_POW_PP_BIOM_CCS": 0.0,
+        "PHL_POW_PP_NUSMR": 0.0,
+        "PHL_POW_PP_NU": 0.0,
+        "PHL_POW_TD": 4.0
+      }
+    },
+    {
+      "check": "pass_throughs_not_misclassified_as_stocks",
+      "passed": true,
+      "detail": "sector adapters retain parent capacity-free semantics"
+    },
+    {
+      "check": "new_thermal_availability",
+      "passed": true,
+      "detail": {
+        "PHL_POW_PP_COAL": 0.85,
+        "PHL_POW_PP_COAL_CCS": 0.83,
+        "PHL_POW_PP_NGCC": 0.9,
+        "PHL_POW_PP_NGCC_CCS": 0.88,
+        "PHL_POW_PP_NU": 0.9,
+        "PHL_POW_PP_NUSMR": 0.9,
+        "PHL_POW_PP_H2": 0.9,
+        "PHL_POW_PP_BIOM_CCS": 0.8
+      }
+    },
+    {
+      "check": "td_losses",
+      "passed": true,
+      "detail": 1.117030861453816
+    },
+    {
+      "check": "cooling_water_factors",
+      "passed": true,
+      "detail": {
+        "PHL_POW_CHP_COAL_OLD": 36350,
+        "PHL_POW_CHP_NG_OLD": 11380,
+        "PHL_POW_CHP_OIL_OLD": 35000,
+        "PHL_POW_CHP_BIOM_OLD": 35000,
+        "PHL_POW_CHP_BIOM_FIT_OLD": 35000,
+        "PHL_POW_PP_COAL": 1005,
+        "PHL_POW_PP_COAL_CCS": 1277,
+        "PHL_POW_PP_NGCC": 253,
+        "PHL_POW_PP_NGCC_CCS": 496,
+        "PHL_POW_PP_NU": 44350,
+        "PHL_POW_PP_NUSMR": 1101,
+        "PHL_POW_PP_BIOM_CCS": 1200
+      }
+    },
+    {
+      "check": "no_nighttime_solar",
+      "passed": true,
+      "detail": {
+        "night_brackets": [
+          1,
+          6
+        ],
+        "worst_day": "all zero"
+      }
+    },
+    {
+      "check": "solar_annual_energy_preserved",
+      "passed": true,
+      "detail": "rotation only"
+    },
+    {
+      "check": "no_peak_cf_reserve_hack",
+      "passed": true,
+      "detail": "all existing non-solar CF rows unchanged"
+    },
+    {
+      "check": "electricity_worst_day_profile",
+      "passed": true,
+      "detail": {
+        "commodities": [
+          "PHL_HOU_ELEF",
+          "PHL_SER_ELEF"
+        ],
+        "ratio": 1.3156012421871928
+      }
+    },
+    {
+      "check": "agriculture_services_not_electric_peak",
+      "passed": true,
+      "detail": [
+        "PHL_AGR_MOT",
+        "PHL_AGR_PRO"
+      ]
+    },
+    {
+      "check": "reserve_margin_algebra",
+      "passed": true,
+      "detail": "-credited capacity + 0.05214680215417272*TD activity <= 0"
+    },
+    {
+      "check": "generic_physical_gate",
+      "passed": true,
+      "detail": {
+        "status": "passed_no_deterministic_contradiction",
+        "failure_count": 0,
+        "user_defined_constraint_years_checked": 238
+      }
+    },
+    {
+      "check": "source_diff_allowlist",
+      "passed": true,
+      "detail": [
+        "RT.json",
+        "RYCTs.json",
+        "RYCn.json",
+        "RYT.json",
+        "RYTCM.json",
+        "RYTCn.json",
+        "RYTM.json",
+        "RYTTs.json",
+        "genData.json"
+      ]
+    },
+    {
+      "check": "six_table_schema_ledger",
+      "passed": true,
+      "detail": [
+        "ASSUMPTIONS.csv",
+        "CALCULATIONS.csv",
+        "CHANGES.csv",
+        "GAPS.csv",
+        "MODEL_MAP.csv",
+        "SOURCES.csv"
+      ]
+    }
+  ],
+  "failure_count": 0,
+  "failures": [],
+  "next_step": "application generation and preprocessing"
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "philippines-v22-fit-accounting-r9-build-v1",
+  "case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v22-transition-scope-fit-repair-candidate-r9",
+  "date": "2026-08-20",
+  "changed_source_files": [
+    "RYC.json",
+    "RYCTs.json",
+    "RYTCM.json",
+    "RYTCn.json",
+    "RYTM.json",
+    "RYTTs.json",
+    "RYTs.json",
+    "genData.json"
+  ],
+  "before_sha256": {
+    "R.json": "8e352ff8017301cb6fb2857b399a2d66f534e5691b03fd2c0ffbfe1b51994e84",
+    "RE.json": "85e0ea73dfd7ce398e0638ed23b8c8cd7b7ec7e0f0b4119d2963ce94625aba15",
+    "RS.json": "a954bbe1c640eabaa9b247534bf7caaf6e924de043ca22563b2515f0413e255e",
+    "RT.json": "88bc4ca78caf2a9a5473448240e7a9c02306ab904dbaa1d5f03c574f6a313aa0",
+    "RTSM.json": "b5f05d6916f988e122fa368636e8f6841e2b89bb35f551bea3fd0f171c28609b",
+    "RYC.json": "190559b631de053611104cb0f2e697e1cc5bd80e4e40360924283983fa0209b7",
+    "RYCTs.json": "2e4f208e84d94495a7f1f0d3219d0fa32c7900ebfaa8b87dc4ed505a5e21abef",
+    "RYCn.json": "285c03373a81a757865a9c338eaf8bbcb2c81dc34f6693f7632811b12f93f541",
+    "RYDtb.json": "5441dd7e9ac61fc9498c85ec20a8935a2870280035fecbe89a89e72b611826af",
+    "RYE.json": "025be0c838019c347dda8310cd326f5e65c414f49f83086db5b0763b96ba4e78",
+    "RYS.json": "a224467bc0afb311731cf9b588b04599d71529289e9660ce88a99eb11592a5e2",
+    "RYSeDt.json": "02be62970eeacca14942e16c534323bc4f5c0b4ac14b74255a21fb36c8f3c484",
+    "RYT.json": "39446ebc23b9ea555e4c0fb5ba9ed995b3c3750eeff7828ac63bff74884a1c37",
+    "RYTC.json": "9d7fb98b0b06b40562f453e754b8d60aa8c81911d30f9ac9094bc96f05c61359",
+    "RYTCM.json": "abfc2cd8750a0e88d45c184bf8f51aa9f943254654b669b0850ada9382ffb5e3",
+    "RYTCn.json": "8aa845fad27adcdf614f5274ccb874bcb63cf73d6f1bdee7b10cec01ca296c28",
+    "RYTEM.json": "f386647893552c51b9a103b6970dd05fd297f7ad190f5ca2e24819a39b112603",
+    "RYTM.json": "4914c48a0e215e945b252baae47c788116c6b6d737d8192dc7323695ac799e6c",
+    "RYTTs.json": "da3338c558076616d20a88572b182e2ef236dd0a82c2443c73769d46b8a4b12b",
+    "RYTs.json": "511f9d888b85a20fe0b551c90edb8865379eeec3172d7a23f858fa47099c7ccb",
+    "genData.json": "508a43e9bf25bda835d344288b067f12bd9738f25cd04a5bf90b47885d6c3cd0",
+    "water_demand_validation_summary.json": "e08590df662725c882057ee39f43992b9d9bd6eefc8c1c2acf2c9a1730b3415c"
+  },
+  "after_sha256": {
+    "R.json": "8e352ff8017301cb6fb2857b399a2d66f534e5691b03fd2c0ffbfe1b51994e84",
+    "RE.json": "85e0ea73dfd7ce398e0638ed23b8c8cd7b7ec7e0f0b4119d2963ce94625aba15",
+    "RS.json": "a954bbe1c640eabaa9b247534bf7caaf6e924de043ca22563b2515f0413e255e",
+    "RT.json": "88bc4ca78caf2a9a5473448240e7a9c02306ab904dbaa1d5f03c574f6a313aa0",
+    "RTSM.json": "b5f05d6916f988e122fa368636e8f6841e2b89bb35f551bea3fd0f171c28609b",
+    "RYC.json": "ef6e01c59a0e15519b8a2fcd0ddaae43515097ffd26088d49b9088a37b5319ef",
+    "RYCTs.json": "01a6e3dc502d5fda4298226c2bda2baaa8e238aa9aae5cd2664b0aa4b9132094",
+    "RYCn.json": "285c03373a81a757865a9c338eaf8bbcb2c81dc34f6693f7632811b12f93f541",
+    "RYDtb.json": "5441dd7e9ac61fc9498c85ec20a8935a2870280035fecbe89a89e72b611826af",
+    "RYE.json": "025be0c838019c347dda8310cd326f5e65c414f49f83086db5b0763b96ba4e78",
+    "RYS.json": "a224467bc0afb311731cf9b588b04599d71529289e9660ce88a99eb11592a5e2",
+    "RYSeDt.json": "02be62970eeacca14942e16c534323bc4f5c0b4ac14b74255a21fb36c8f3c484",
+    "RYT.json": "39446ebc23b9ea555e4c0fb5ba9ed995b3c3750eeff7828ac63bff74884a1c37",
+    "RYTC.json": "9d7fb98b0b06b40562f453e754b8d60aa8c81911d30f9ac9094bc96f05c61359",
+    "RYTCM.json": "2c4c45792694b4ec2cff2fcd4141f8e5abbfffc0e825ea058ad91d39e5455195",
+    "RYTCn.json": "d9b7de1ed10e3eef9e9a30d42abfa1b8eefeb1bb13238429dc961b77830c3800",
+    "RYTEM.json": "f386647893552c51b9a103b6970dd05fd297f7ad190f5ca2e24819a39b112603",
+    "RYTM.json": "580fbd3ef2f0d88e9d3d971c8a343798e5d0db9588300d0789f6fe7d2988d3f7",
+    "RYTTs.json": "93f00ac06318e752ba39c6f12b7b99c0134b58f4427f5b55901cabc94b685994",
+    "RYTs.json": "e2c7ab12d3e298f4558e3782af9a6855f2fdd74d2358fbe743cc28bb2146a271",
+    "genData.json": "0cc69b7c6dd98a7abaa2b3bea4db47ee8f045da852e4e5f4970d98311479d08b",
+    "water_demand_validation_summary.json": "e08590df662725c882057ee39f43992b9d9bd6eefc8c1c2acf2c9a1730b3415c"
+  },
+  "objects_added": {
+    "technologies": 0,
+    "commodities": 1,
+    "constraints": 0,
+    "active_existing_technology_modes": 1
+  },
+  "classification": {
+    "FIT_250_MW": "continuing contractual eligibility applied to an inherited closed physical stock",
+    "residue_collection_cost": "physical economic driver",
+    "tariff_payment": "domestic transfer published post-solve",
+    "generation_and_dispatch": "endogenous benchmark-only outcomes"
+  },
+  "physical_cost_identity": {
+    "fit_iar": 4.000666667,
+    "collection_cost_musd_per_pj_electricity": 15.8,
+    "supply_vc_musd_per_pj_biomass": 3.9493417760415483,
+    "reconstructed_cost": 15.8
+  },
+  "no_forcing": [
+    "no activity bound added",
+    "no generation target added",
+    "no dispatch share added",
+    "no build requirement added",
+    "no new user-defined constraint added"
+  ],
+  "promotion_rule": "BASE must solve first; only then COAL_PHASEOUT, RE and EV run concurrently; all four must be optimal from these exact source hashes."
+}

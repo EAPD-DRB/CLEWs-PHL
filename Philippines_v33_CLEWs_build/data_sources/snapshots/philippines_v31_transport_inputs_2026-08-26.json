@@ -1,0 +1,29 @@
+{
+  "schema": "philippines-v31-transport-inputs-v1",
+  "date": "2026-08-26",
+  "parent": "Philippines_v30",
+  "shipping": {
+    "activity_2020_billion_tkm": 393.988,
+    "cau": 100,
+    "residual_capacity_thousand_vessels": 3.94000394,
+    "marina_vessels": 406,
+    "marina_cost_musd": 2219.0500000000006,
+    "cc_musd_per_thousand": 5465.640394088671,
+    "fixed_om_share": 0.015
+  },
+  "ammonia": {
+    "total_heat_rate": 0.084,
+    "ammonia_share": 0.95,
+    "pilot_share": 0.05,
+    "capex_premium": 0.175
+  },
+  "aviation": {
+    "activity_scale": 0.1,
+    "cau": 0.5,
+    "iar_scale": 10
+  },
+  "rail": {
+    "cau": 0.1,
+    "capacity_scale": 10
+  }
+}

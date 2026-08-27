@@ -1,0 +1,136 @@
+{
+    "status": "PASS",
+    "generated_at": "2026-07-26T12:37:36-04:00",
+    "model": "Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC",
+    "terminal": "ENV_WATER",
+    "role": "authoritative reporting publication in Pivot; raw solver terminal results remain preserved separately",
+    "formula": "production minus use by every technology except ENV_WATER",
+    "variables_published": {
+        "RT.json": [
+            "TTMPA"
+        ],
+        "RYTM.json": [
+            "TATABM"
+        ],
+        "RYTMTs.json": [
+            "ROA"
+        ],
+        "RYTCMTs.json": [
+            "ROUBT",
+            "UBT"
+        ]
+    },
+    "variables_intentionally_unchanged": {
+        "RYTCMTs.json": [
+            "PBT",
+            "ROPBT"
+        ],
+        "reason": "ENV_WATER has no output"
+    },
+    "dynamic_graph": {
+        "source": "genData.json",
+        "sha256": "5773504c0f66abe54483f8997cc09efbc8fdbd58513c0b908b5078250be49567",
+        "terminal_inputs": [
+            {
+                "mode": 1,
+                "commodity": "PHL_WTR_EVT",
+                "iar": 1
+            },
+            {
+                "mode": 2,
+                "commodity": "PHL_WTR_GWT",
+                "iar": 1
+            },
+            {
+                "mode": 3,
+                "commodity": "PHL_WTR_SUR",
+                "iar": 1
+            }
+        ],
+        "unchanged": true
+    },
+    "raw_result_manifest": {
+        "res/Base_v12/csv/ProductionByTechnologyByMode.csv": "a29d277093b9f2ebd38f47d6cf52f6fcebb7eb2c6b3eb65e257c1485f5ab0965",
+        "res/Base_v12/csv/RateOfActivity.csv": "74197c4b30012f33bc732739c6e1531ef62330e4852ad52feba4a79a661079f4",
+        "res/Base_v12/csv/RateOfUseByTechnologyByMode.csv": "8bb31c23a43a474467cfdb1d8603d4ce9e2ecd2e094f5af18a1ad874b71a87d2",
+        "res/Base_v12/csv/TotalAnnualTechnologyActivityByMode.csv": "e94375f1626686977971287e85de181f336516d1b306612f4d0506b2bb139de6",
+        "res/Base_v12/csv/TotalTechnologyModelPeriodActivity.csv": "a79d7ffdc360f319e65deb398e279a2d57175f290ba905a4f6542c5db5ce5e15",
+        "res/Base_v12/csv/UseByTechnologyByMode.csv": "70eccecdcbd4ba561efa8dbf43939fb91e5e6d2d1adbb8744dd1786ec3fc2107",
+        "res/Base_v12/results.txt": "ce72e42d746a5549f2718aa3e4576aa9b3af9014db09be3b6ef0e365e1b11845",
+        "res/PEP_v12/csv/ProductionByTechnologyByMode.csv": "2eeed2add5dfdd33f146962c6a1542055fdb232d714a53543815f6044a71a8be",
+        "res/PEP_v12/csv/RateOfActivity.csv": "2f1855cf8fed56b88bcc790e4ce96356ecc747c23ccfd1dedcf1e2ba0d431db7",
+        "res/PEP_v12/csv/RateOfUseByTechnologyByMode.csv": "1af324ddef1ff460a2aadb28bddeaa143e69fe970f9a06013e194f1824e808a6",
+        "res/PEP_v12/csv/TotalAnnualTechnologyActivityByMode.csv": "7b7052c300ad55196850be3f42179164583983996958838edb158c1a9fb3fd0a",
+        "res/PEP_v12/csv/TotalTechnologyModelPeriodActivity.csv": "d964bb3126f96fbd04a24ed61b484b0ae88aa8c5821f30371813701a5d084422",
+        "res/PEP_v12/csv/UseByTechnologyByMode.csv": "f0cb982450c3d8c7ccc028683c5c899c880530606bf9d919785cfee18e25cea8",
+        "res/PEP_v12/results.txt": "47dca133fea995e8247269b04af954f8ebc61fb7a64eaa2a0ab4e1d508ce17df"
+    },
+    "solver_generated_view_manifest": {
+        "view/RT.json": "76c1b4d71bfeb3e64a181a50c8687981aea1a65e6920b8cf72c1d44a04c4553c",
+        "view/RYTCMTs.json": "9273cd5afb97b586a533f8626a458bb74781b0e854519209ed958cf352bbaafd",
+        "view/RYTM.json": "fb42b0ca1fcf5a14a2b71e65dcffd46be82b1d30e3ec0987bf05760a13b1259f",
+        "view/RYTMTs.json": "9929bd5447af19ebe6d58e9c49822589fe68cea1fc1ace6d4dfce3820cacc21e"
+    },
+    "published_view_manifest": {
+        "view/RT.json": "e4a586670fd8909168f2d84a8dbd51986f894cf7184362454e00511317d87872",
+        "view/RYTCMTs.json": "049a8e21d3257e2815f3f615363f8522c70b1aff0a3669f029455c5b215761be",
+        "view/RYTM.json": "ad201cb1f37dfa848468bf45d25b89225f1cb6027d66fa9f32962a2a81041844",
+        "view/RYTMTs.json": "67fcd58086baaa3290dc9249f6876cc9d8c1fa356eb52ce303429d29cfc639a1"
+    },
+    "raw_solver_view_comparison": {
+        "Base_v12": {
+            "maximum_difference": 0.0,
+            "by_variable": {
+                "TTMPA": 0.0,
+                "TATABM": 0.0,
+                "ROA": 0.0,
+                "ROUBT": 0.0,
+                "UBT": 0.0
+            }
+        },
+        "PEP_v12": {
+            "maximum_difference": 0.0,
+            "by_variable": {
+                "TTMPA": 0.0,
+                "TATABM": 0.0,
+                "ROA": 0.0,
+                "ROUBT": 0.0,
+                "UBT": 0.0
+            }
+        }
+    },
+    "run_validation": {
+        "Base_v12": {
+            "solver": {
+                "status": "Optimal",
+                "objective": 375930821.34054404
+            },
+            "region": "RE1",
+            "model_period_activity": 22439.5632,
+            "maximum_pivot_expected_difference": 0.0,
+            "maximum_annual_activity_use_difference": 0.0,
+            "maximum_rate_activity_difference": 1.935234e-05,
+            "maximum_negative_timeslice_residual": -0.0003,
+            "maximum_timeslice_rounding_adjustment": 0.0009,
+            "total_timeslice_rounding_correction": 0.0117,
+            "maximum_authoritative_reporter_difference": 1.04e-12
+        },
+        "PEP_v12": {
+            "solver": {
+                "status": "Optimal",
+                "objective": 375953763.4595294
+            },
+            "region": "RE1",
+            "model_period_activity": 21168.5896,
+            "maximum_pivot_expected_difference": 0.0,
+            "maximum_annual_activity_use_difference": 0.0,
+            "maximum_rate_activity_difference": 1.878041e-05,
+            "maximum_negative_timeslice_residual": -0.0003,
+            "maximum_timeslice_rounding_adjustment": 0.0022,
+            "total_timeslice_rounding_correction": 0.0186,
+            "maximum_authoritative_reporter_difference": 9e-13
+        }
+    },
+    "evidence": "/Users/sato/GitHub/MUIOGO/Philippines_v12_CLEWs_build/diagnostics/environmental_accounting/2026-07-26_env_water_pivot_published",
+    "backup": "/Users/sato/GitHub/MUIOGO/Philippines_v12_CLEWs_build/diagnostics/environmental_accounting/2026-07-26_env_water_pivot_published/solver_generated_view_backup"
+}

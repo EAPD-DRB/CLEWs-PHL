@@ -1,0 +1,5 @@
+# Philippines v31 canonical provenance ledger
+
+This is the complete standalone provenance record for `Philippines_v31`. The six CSV ledgers are authoritative and carry every inherited v30 record plus the v31 transport sources, assumptions, calculations, model mappings, changes, resolved gaps, retained evidence, fast-gate design, and solved validation. `PHILIPPINES_V31_CANONICAL_SCHEMA_LEDGER.xlsx` is a generated review view. V31 evidence is under `evidence/v31_transport/` and `snapshots/philippines_v31_transport_inputs_2026-08-26.json`; validation records are under `documentation/`. No earlier case is required to interpret this ledger.
+
+Versioned assumptions and changes are retained to preserve chronology. Where an inherited statement no longer describes the active case, its notes identify the superseding v29-v31 assumption and the active mapping is recorded in `MODEL_MAP.csv`. The 2026-08-27 irrigation, crop-cost and yield narrative reconciliation is documented in `calculation_notes/PHILIPPINES_V31_PROVENANCE_CLEANUP_2026-08-27.md`.

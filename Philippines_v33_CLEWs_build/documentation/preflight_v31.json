@@ -1,0 +1,562 @@
+{
+  "case": "Philippines_v31",
+  "gate": "fast_structural",
+  "status": "pass",
+  "solver_launch_approved": true,
+  "lp_matrices_generated": 0,
+  "optimizer_runs": 0,
+  "cbc_invoked": false,
+  "checks": {
+    "inherited_structure": {
+      "technologies": 160,
+      "commodities": 73,
+      "constraints": 7,
+      "references_valid": true
+    },
+    "inherited_dynamic_built_land": {
+      "population_2020": 10.24848616,
+      "pv_2020_gw": 1.01207,
+      "wind_2020_gw": 0.4269,
+      "reconstructed_built_2020": 10.2649,
+      "pv_factor_1000km2_per_gw": 0.012,
+      "wind_factor_1000km2_per_gw": 0.01,
+      "built_bounds_open": true,
+      "policy_idle_cropland_bounds_inherit_base": true,
+      "exact_equality": true,
+      "spatial_service_links": 8
+    },
+    "inherited_crop_yields": {
+      "active_modes": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10,
+        11,
+        16,
+        19,
+        22,
+        24
+      ],
+      "inactive_modes": [
+        2,
+        7,
+        9,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        20,
+        21,
+        23
+      ],
+      "active_systems": 12,
+      "inactive_unsupported_pairs": 12,
+      "cluster_mode_rows_checked": 192,
+      "only_2020_inherited_anchor": true,
+      "projection": "FAO FOFA2050 Philippines Business As Usual; linear interpolation; 2040-2050 slope extended through 2053",
+      "full_source_zip_sha256": "8b1f1868155b4446dc30193faafa876962544ebd2f44cff50ade987018942084"
+    },
+    "inherited_land_feasibility": {
+      "necessary_condition": "pass",
+      "national_endowment": 295.8131,
+      "minimum_headroom": 0.0,
+      "annual": [
+        {
+          "year": "2020",
+          "nonbuilt_floor": 285.5482,
+          "mandatory_built_from_residual_capacity": 10.2649,
+          "required_floor": 295.8131,
+          "headroom": 0.0
+        },
+        {
+          "year": "2021",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 10.42255578415301,
+          "required_floor": 112.571055784153,
+          "headroom": 183.24204421584702
+        },
+        {
+          "year": "2022",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 10.581399477903439,
+          "required_floor": 112.72989947790344,
+          "headroom": 183.08320052209658
+        },
+        {
+          "year": "2023",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 10.741431081251289,
+          "required_floor": 112.88993108125129,
+          "headroom": 182.92316891874873
+        },
+        {
+          "year": "2024",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 10.902650594196558,
+          "required_floor": 113.05115059419656,
+          "headroom": 182.76194940580348
+        },
+        {
+          "year": "2025",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 11.065058016739242,
+          "required_floor": 113.21355801673924,
+          "headroom": 182.5995419832608
+        },
+        {
+          "year": "2026",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 11.23549720603446,
+          "required_floor": 113.38399720603445,
+          "headroom": 182.42910279396557
+        },
+        {
+          "year": "2027",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 11.407213607926748,
+          "required_floor": 113.55571360792675,
+          "headroom": 182.25738639207327
+        },
+        {
+          "year": "2028",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 11.580207222416105,
+          "required_floor": 113.7287072224161,
+          "headroom": 182.0843927775839
+        },
+        {
+          "year": "2029",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 11.754478049502538,
+          "required_floor": 113.90297804950254,
+          "headroom": 181.91012195049748
+        },
+        {
+          "year": "2030",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 11.929696089186033,
+          "required_floor": 114.07819608918604,
+          "headroom": 181.73490391081398
+        },
+        {
+          "year": "2031",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 12.108115300079358,
+          "required_floor": 114.25661530007936,
+          "headroom": 181.55648469992065
+        },
+        {
+          "year": "2032",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 12.28783186549364,
+          "required_floor": 114.43633186549364,
+          "headroom": 181.3767681345064
+        },
+        {
+          "year": "2033",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 12.468845785428869,
+          "required_floor": 114.61734578542887,
+          "headroom": 181.19575421457114
+        },
+        {
+          "year": "2034",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 12.651144278533764,
+          "required_floor": 114.79964427853376,
+          "headroom": 181.01345572146624
+        },
+        {
+          "year": "2035",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 12.834752907510904,
+          "required_floor": 114.9832529075109,
+          "headroom": 180.8298470924891
+        },
+        {
+          "year": "2036",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 13.014931125764967,
+          "required_floor": 115.16343112576496,
+          "headroom": 180.64966887423506
+        },
+        {
+          "year": "2037",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 13.196348786048137,
+          "required_floor": 115.34484878604813,
+          "headroom": 180.46825121395187
+        },
+        {
+          "year": "2038",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 13.379005888360401,
+          "required_floor": 115.5275058883604,
+          "headroom": 180.28559411163963
+        },
+        {
+          "year": "2039",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 13.559863432701771,
+          "required_floor": 115.70836343270177,
+          "headroom": 180.10473656729823
+        },
+        {
+          "year": "2040",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 13.744099419072239,
+          "required_floor": 115.89259941907224,
+          "headroom": 179.92050058092778
+        },
+        {
+          "year": "2041",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 13.91623315760929,
+          "required_floor": 116.06473315760928,
+          "headroom": 179.74836684239074
+        },
+        {
+          "year": "2042",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 14.089437069036071,
+          "required_floor": 116.23793706903606,
+          "headroom": 179.57516293096396
+        },
+        {
+          "year": "2043",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 14.263711153352581,
+          "required_floor": 116.41221115335259,
+          "headroom": 179.40088884664743
+        },
+        {
+          "year": "2044",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 14.438774220830343,
+          "required_floor": 116.58727422083034,
+          "headroom": 179.22582577916967
+        },
+        {
+          "year": "2045",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 14.614267115497974,
+          "required_floor": 116.76276711549798,
+          "headroom": 179.05033288450204
+        },
+        {
+          "year": "2046",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 14.76312184809573,
+          "required_floor": 116.91162184809573,
+          "headroom": 178.90147815190429
+        },
+        {
+          "year": "2047",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 14.919924020596323,
+          "required_floor": 117.06842402059632,
+          "headroom": 178.7446759794037
+        },
+        {
+          "year": "2048",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 15.078670232296734,
+          "required_floor": 117.22717023229673,
+          "headroom": 178.5859297677033
+        },
+        {
+          "year": "2049",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 15.237636278907335,
+          "required_floor": 117.38613627890733,
+          "headroom": 178.4269637210927
+        },
+        {
+          "year": "2050",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 15.397068840508116,
+          "required_floor": 117.54556884050811,
+          "headroom": 178.2675311594919
+        },
+        {
+          "year": "2051",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 15.45070260443273,
+          "required_floor": 117.59920260443273,
+          "headroom": 178.2138973955673
+        },
+        {
+          "year": "2052",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 15.504336368357341,
+          "required_floor": 117.65283636835734,
+          "headroom": 178.1602636316427
+        },
+        {
+          "year": "2053",
+          "nonbuilt_floor": 102.1485,
+          "mandatory_built_from_residual_capacity": 15.557970132281959,
+          "required_floor": 117.70647013228196,
+          "headroom": 178.10662986771806
+        }
+      ]
+    },
+    "transport_structure": {
+      "case_identity": "Philippines_v31",
+      "technology_count": 160,
+      "commodity_count": 73,
+      "capacity_to_activity": {
+        "TEC_6kppi": 100.0,
+        "TEC_9mb24": 100.0,
+        "TEC_ahdzt": 0.5,
+        "TEC_k9grm": 0.1,
+        "TEC_it1h9": 0.1,
+        "TEC_c8zhc": 0.1,
+        "TEC_n65kb": 0.1,
+        "TEC_z5aov": 0.1,
+        "TEC_sfoj6": 0.1
+      },
+      "terminal_capital_costs_positive": true,
+      "all_affected_annual_values_finite_nonnegative": true,
+      "ammonia_emission_tensors_complete": true
+    },
+    "scenario_inheritance": {
+      "policy_null_cells_checked": 74079,
+      "all_affected_policy_rows_inherit_base": true
+    },
+    "reciprocal_rescaling": {
+      "reciprocal_cells_checked": 1190,
+      "capacity_activity_and_energy_invariants": true
+    },
+    "energy_and_fleet": {
+      "shipping": {
+        "activity_billion_tkm": 393.988,
+        "fleet_thousand": 3.94000394,
+        "energy_pj": 33.094992000000005,
+        "doe_pj": 31.928536800000003
+      },
+      "aviation": {
+        "activity_billion_aircraft_km": 0.0787,
+        "fleet_thousand": 0.158000158,
+        "energy_pj": 9.7588,
+        "doe_pj": 9.1565316
+      },
+      "rail": {
+        "activity_billion_train_km": 0.004,
+        "energy_pj": 0.352,
+        "doe_pj": 0.3391308
+      },
+      "ammonia_total_heat_rate": 0.084,
+      "observational_energy_gates": "pass"
+    },
+    "capacity_headroom": {
+      "necessary_condition": "pass",
+      "services": [
+        {
+          "commodity": "COM_qit0o",
+          "minimum_maximum_capacity_to_demand_ratio": 1.0000314578108978
+        },
+        {
+          "commodity": "COM_nfpcj",
+          "minimum_maximum_capacity_to_demand_ratio": 1.000518594949245
+        },
+        {
+          "commodity": "COM_mcroh",
+          "minimum_maximum_capacity_to_demand_ratio": 1.0000008
+        },
+        {
+          "commodity": "COM_w02je",
+          "minimum_maximum_capacity_to_demand_ratio": 1.0000008
+        }
+      ]
+    },
+    "provenance": {
+      "ledger_rows": {
+        "SOURCES.csv": 216,
+        "ASSUMPTIONS.csv": 183,
+        "CALCULATIONS.csv": 729,
+        "MODEL_MAP.csv": 72831,
+        "CHANGES.csv": 37,
+        "GAPS.csv": 83
+      },
+      "workbook_sheets": [
+        "SOURCES",
+        "ASSUMPTIONS",
+        "CALCULATIONS",
+        "MODEL_MAP",
+        "CHANGES",
+        "GAPS"
+      ],
+      "v31_evidence_files_verified": 7,
+      "standalone": true
+    }
+  },
+  "input_fingerprint": {
+    "sha256": "7c81fb4101a321b8ac65f961cec5326e50fe4eea4b1adcf5ffbef39ce9fdcf70",
+    "file_count": 31,
+    "files": [
+      {
+        "path": "R.json",
+        "sha256": "8e352ff8017301cb6fb2857b399a2d66f534e5691b03fd2c0ffbfe1b51994e84",
+        "size_bytes": 380
+      },
+      {
+        "path": "RE.json",
+        "sha256": "85e0ea73dfd7ce398e0638ed23b8c8cd7b7ec7e0f0b4119d2963ce94625aba15",
+        "size_bytes": 531
+      },
+      {
+        "path": "RS.json",
+        "sha256": "a954bbe1c640eabaa9b247534bf7caaf6e924de043ca22563b2515f0413e255e",
+        "size_bytes": 416
+      },
+      {
+        "path": "RT.json",
+        "sha256": "16d6471f541240f0389156592467753bcf8cb91f1f423c269bbb0e819b3571c6",
+        "size_bytes": 87424
+      },
+      {
+        "path": "RTSM.json",
+        "sha256": "b5f05d6916f988e122fa368636e8f6841e2b89bb35f551bea3fd0f171c28609b",
+        "size_bytes": 224
+      },
+      {
+        "path": "RYC.json",
+        "sha256": "4dcd819cf0dacd2451068d6261fdaa3b899ff44827a18f5c5d581e69893242d9",
+        "size_bytes": 464599
+      },
+      {
+        "path": "RYCTs.json",
+        "sha256": "559909ec7e84187416fc2a0c26aa83837d7af77621f8595d7f67402536fac094",
+        "size_bytes": 4291414
+      },
+      {
+        "path": "RYCn.json",
+        "sha256": "b974d38dc59d9b3d5583373ce501601288ddc3b1f8ef578b4050ab7b9a708a91",
+        "size_bytes": 23472
+      },
+      {
+        "path": "RYDtb.json",
+        "sha256": "5441dd7e9ac61fc9498c85ec20a8935a2870280035fecbe89a89e72b611826af",
+        "size_bytes": 25580
+      },
+      {
+        "path": "RYE.json",
+        "sha256": "025be0c838019c347dda8310cd326f5e65c414f49f83086db5b0763b96ba4e78",
+        "size_bytes": 17817
+      },
+      {
+        "path": "RYS.json",
+        "sha256": "a224467bc0afb311731cf9b588b04599d71529289e9660ce88a99eb11592a5e2",
+        "size_bytes": 335
+      },
+      {
+        "path": "RYSeDt.json",
+        "sha256": "02be62970eeacca14942e16c534323bc4f5c0b4ac14b74255a21fb36c8f3c484",
+        "size_bytes": 13216
+      },
+      {
+        "path": "RYT.json",
+        "sha256": "9157afec2d91a099371d823f213c222dd83d305a58c5b71c0934d8b596ec1d21",
+        "size_bytes": 5595939
+      },
+      {
+        "path": "RYTC.json",
+        "sha256": "632145fa503927aeee025e27c4364ed4bfe011228708198d250bd7c3ce4acece",
+        "size_bytes": 6949
+      },
+      {
+        "path": "RYTCM.json",
+        "sha256": "4186458d2de664078f9d2c7fc949f21e4e54a5063121d5d1983dc44216d62b1d",
+        "size_bytes": 47446194
+      },
+      {
+        "path": "RYTCn.json",
+        "sha256": "68fe4f274506cbe8b04851e4335ca4599ecb028e36e4fa7503b4b13a0848ef9b",
+        "size_bytes": 545227
+      },
+      {
+        "path": "RYTEM.json",
+        "sha256": "8ca0853004f43e40c132323cd33a2c4c5bc5d5fd4f0c209f810519d43f5a73a1",
+        "size_bytes": 18715867
+      },
+      {
+        "path": "RYTM.json",
+        "sha256": "5de3d3cb2face8462276258157da5b31ee97b78438bac107c3e2a61f51fd71b5",
+        "size_bytes": 77328714
+      },
+      {
+        "path": "RYTTs.json",
+        "sha256": "91483a1af2b32531e14a8fcd878079b6db6f3b480010ce12d1b1197029cc89b9",
+        "size_bytes": 9354555
+      },
+      {
+        "path": "RYTs.json",
+        "sha256": "e2c7ab12d3e298f4558e3782af9a6855f2fdd74d2358fbe743cc28bb2146a271",
+        "size_bytes": 80420
+      },
+      {
+        "path": "genData.json",
+        "sha256": "1dac6bcace8a57fe92ee1717528a4bb28305231f43d0f6d25dd4c2cd00ac77b3",
+        "size_bytes": 95595
+      },
+      {
+        "path": "water_demand_validation_summary.json",
+        "sha256": "e08590df662725c882057ee39f43992b9d9bd6eefc8c1c2acf2c9a1730b3415c",
+        "size_bytes": 970
+      },
+      {
+        "path": "data_sources/ASSUMPTIONS.csv",
+        "sha256": "859651c43c9e14dd9dd986b057a03896acefe73a2880e812c564db8bb460d0c1",
+        "size_bytes": 92076
+      },
+      {
+        "path": "data_sources/CALCULATIONS.csv",
+        "sha256": "42f9eef26b4c3079f409baddb6b82aff71b7cf15455ed2315b6b1644e5845493",
+        "size_bytes": 470249
+      },
+      {
+        "path": "data_sources/CHANGES.csv",
+        "sha256": "5de659cce9c188cf05421c07725c7d31d5dad15ebf580451fd93f55bd89604e9",
+        "size_bytes": 42164
+      },
+      {
+        "path": "data_sources/GAPS.csv",
+        "sha256": "70ddabd6ac3d5900dc140d272c35831136bc2fa8554b57d88d2a7b559ee4274b",
+        "size_bytes": 38673
+      },
+      {
+        "path": "data_sources/MODEL_MAP.csv",
+        "sha256": "8f107cfb29f018e1e591add5ac74aaab0cda62f84105f704c1e4cdf41dbda984",
+        "size_bytes": 37214165
+      },
+      {
+        "path": "data_sources/SOURCES.csv",
+        "sha256": "06f15cc3cc50cf2a3f96846c1fce62a6264fae09ae8951cb6ca2f1309813e6b6",
+        "size_bytes": 128201
+      },
+      {
+        "path": "data_sources/V16_MODEL_ARCHIVE_MANIFEST.csv",
+        "sha256": "698e9a55b811a784ac48160905428e1fd94cb8fcc3d301f899fea60806cd1ab2",
+        "size_bytes": 202
+      },
+      {
+        "path": "data_sources/V17_MODEL_ARCHIVE_MANIFEST.csv",
+        "sha256": "1750d046bb0921ad21fb4bf2c3f4edc59fe73549e1bf39f2e0495122b76ee192",
+        "size_bytes": 440
+      },
+      {
+        "path": "data_sources/V18_MODEL_ARCHIVE_MANIFEST.csv",
+        "sha256": "a6c2af0090f20d33c1de608ba7c98561a3ce6470e941e51010bc33fc58d3a255",
+        "size_bytes": 454
+      }
+    ]
+  },
+  "elapsed_seconds": 5.987248374993214,
+  "interpretation": "Fast blocking gate passed. Structural, inheritance, unit, energy, annual capacity-headroom and provenance checks found no necessary infeasibility. No LP was generated and no optimizer was invoked; prepare and hash-check only the selected scenario before CBC."
+}

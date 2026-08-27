@@ -1,0 +1,8 @@
+topic,candidate,decision,basis
+ship CAU,100 million tonne-km/vessel-year,used,393.988 billion tonne-km / 3.940 thousand vessels; inside PSA 3.609-4.237 thousand freight-service bracket
+ship price,$15 million/vessel midpoint,rejected,not supported by MARINA acquisition table
+ship price,$5.465640 million/vessel,used,"all MARINA 2020-2024 cargo, tanker, tug and dredger acquisition cohorts, count weighted"
+ammonia heat rate,95% ammonia/5% pilot at liquid-ship total heat rate,used,MAN dual-fuel concept and heat-rate parity
+ammonia capex,17.5% premium,used,midpoint of DNV 15-20% newbuild range
+aviation,reciprocal factor-10 normalization,used,"makes aircraft-km basis coherent while preserving fleet, DOE fuel and economic totals"
+rail,0.1 CAU with capacity x10,used,"100,000 train-km/trainset-year; preserves rail activity and energy"

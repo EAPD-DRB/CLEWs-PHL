@@ -1,0 +1,39 @@
+{
+  "schema": "philippines-v18-re-nuclear-caps-promotion-v1",
+  "status": "pass",
+  "live_case": "/Users/sato/Documents/GitHub/CLEWs-PHL/case/Philippines_v18",
+  "candidate_case": "/Users/sato/Documents/GitHub/MUIOGO/tmp/phl-v18-re-nuclear-20260813/candidate",
+  "run": "TOMORROWLAND",
+  "source_json_count": 22,
+  "source_json_byte_identical": true,
+  "schema_ledger_byte_identical": true,
+  "data_txt_byte_identical": true,
+  "data_processed_txt_byte_identical": false,
+  "data_processed_set_order_equivalent": true,
+  "data_processed_normalized_sha256": "a1ccf0167ad1652cb6ec5ff97f400cea05f3601f18a80c22019e5f1b18f164a4",
+  "preprocessing_difference": "unordered derived set declaration order only",
+  "live_matrix": {
+    "rows": 791532,
+    "columns": 886010,
+    "matrix_nonzeros": 12818407,
+    "objective_nonzeros": 423240
+  },
+  "candidate_matrix_identical": true,
+  "glpsol_check": "pass",
+  "candidate_cbc": "Optimal - objective value 369766929.90727115",
+  "candidate_cbc_wall_seconds": 426.77,
+  "optimizer_runs_for_source_candidate": 1,
+  "post_promotion_optimizer_runs": 0,
+  "post_promotion_cbc": "not run because promoted source JSON and data.txt are byte-identical to the solved candidate; preprocessed inputs differ only by unordered set declaration order and GLPK matrix dimensions/nonzeros match exactly",
+  "hashes": {
+    "live_data_txt": "65a1322744c2153821c7aff8f26a4e35080a20ed88c21a589508289e7746a2a1",
+    "live_data_processed_txt": "bca53f784984ecb1f0552eb260a02514ba144e09de13a88b4a149b9e9f579155",
+    "live_lp": "b3b60a6b6432dfdbfa9bfa6554bed10623c4123c72129590c84fc775cc19d649",
+    "candidate_lp": "9786f1cbef6e8ea9896bc06a2ab19e6defb0eee94ec72e7dc6ad77cc1e70e0da",
+    "live_ryt": "a7f009a2566f6790689602cc4eafdd15d6c6b66236a330416b74344b3a7f0864"
+  },
+  "live_generation_timings_seconds": {
+    "generate_datafile": 2.2631432920024963,
+    "preprocess_data": 0.007664749995456077
+  }
+}

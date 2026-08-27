@@ -1,0 +1,4097 @@
+{
+  "case": "Philippines_v33",
+  "parent_case": "Philippines_v32",
+  "status": "source_candidate_built",
+  "parameter": "RYTM.json VC SC_0",
+  "years": [
+    2020,
+    2053
+  ],
+  "changed_rows": 15,
+  "changed_cells": 510,
+  "delivery_adder_musd_per_pj_input": 8.2,
+  "reference_vom_musd_per_pj_activity": 0.7050283513976835,
+  "take_or_pay_retained": true,
+  "delivery_technologies": [
+    "PHL_AGR_HEAT_NG",
+    "PHL_INDU_OTHHPH_NG",
+    "PHL_INDU_OTHHPH_NG_CCS",
+    "PHL_INDU_OTHLPH_NG",
+    "PHL_POW_BH2_NG",
+    "PHL_POW_GH2_NG",
+    "PHL_SER_HEAT_NG",
+    "PHL_TRA_23WHEEL_NG",
+    "PHL_TRA_BUS_NG",
+    "PHL_TRA_CAR_NG",
+    "PHL_TRA_TRUH_NG",
+    "PHL_TRA_TRUL_NG",
+    "PHL_TRA_VAN_NG",
+    "PHL_HOU_COOK_NG"
+  ],
+  "non_forcing": true,
+  "evidence_sha256": "5a9de93aa4ae8c3768de6decf8a4b9e274c207d12c9a925e96bf63712cb6bc4e",
+  "parent_source_hashes": {
+    "genData.json": "f2e81d94abf45282a0ba894ca701ee2efb02aec436f179c45763c1f06d875123",
+    "RYTM.json": "5de3d3cb2face8462276258157da5b31ee97b78438bac107c3e2a61f51fd71b5",
+    "RYTCM.json": "1793d8b2fa009a989f903cd68c137b641f6a7442988ba8ffbe1b5fea91bb427e",
+    "RYC.json": "4dcd819cf0dacd2451068d6261fdaa3b899ff44827a18f5c5d581e69893242d9",
+    "RYT.json": "9157afec2d91a099371d823f213c222dd83d305a58c5b71c0934d8b596ec1d21",
+    "RYTs.json": "e2c7ab12d3e298f4558e3782af9a6855f2fdd74d2358fbe743cc28bb2146a271"
+  },
+  "candidate_source_hashes": {
+    "genData.json": "c2635ccab951a3af017c9519b9da22de8d39d6d19106cbe307442569c60535fd",
+    "RYTM.json": "9c38a2df0197f0ae27611a38905c643e566e486ac598edcbe534724612e44948",
+    "RYTCM.json": "1793d8b2fa009a989f903cd68c137b641f6a7442988ba8ffbe1b5fea91bb427e",
+    "RYC.json": "4dcd819cf0dacd2451068d6261fdaa3b899ff44827a18f5c5d581e69893242d9",
+    "RYT.json": "9157afec2d91a099371d823f213c222dd83d305a58c5b71c0934d8b596ec1d21",
+    "RYTs.json": "e2c7ab12d3e298f4558e3782af9a6855f2fdd74d2358fbe743cc28bb2146a271"
+  },
+  "changes": [
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2020,
+      "before": -13.16562277957841,
+      "after": -12.460694428180727,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2021,
+      "before": -13.216931130239278,
+      "after": -12.512002778841595,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2022,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2023,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2024,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2025,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2026,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2027,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2028,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2029,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2030,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2031,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2032,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2033,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2034,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2035,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2036,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2037,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2038,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2039,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2040,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2041,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2042,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2043,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2044,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2045,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2046,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2047,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2048,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2049,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2050,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2051,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2052,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_POW_CHP_NG_OLD",
+      "year": 2053,
+      "before": 0.0001,
+      "after": 0.7050283513976835,
+      "formula": "retain take-or-pay credit; replace epsilon VOM with sourced NGCC VOM"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2020,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2021,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2022,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2023,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2024,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2025,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2026,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2027,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2028,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2029,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2030,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2031,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2032,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2033,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2034,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2035,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2036,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2037,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2038,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2039,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2040,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2041,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2042,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2043,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2044,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2045,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2046,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2047,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2048,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2049,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2050,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2051,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2052,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_AGR_HEAT_NG",
+      "year": 2053,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2020,
+      "before": 0.0001,
+      "after": 8.913143480399999,
+      "input_activity_ratio": 1.086956522,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2021,
+      "before": 0.0001,
+      "after": 8.9035595582,
+      "input_activity_ratio": 1.085787751,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2022,
+      "before": 0.0001,
+      "after": 8.894934035599999,
+      "input_activity_ratio": 1.084735858,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2023,
+      "before": 0.0001,
+      "after": 8.887077263,
+      "input_activity_ratio": 1.083777715,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2024,
+      "before": 0.0001,
+      "after": 8.879837327199999,
+      "input_activity_ratio": 1.082894796,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2025,
+      "before": 0.0001,
+      "after": 8.873093450399999,
+      "input_activity_ratio": 1.082072372,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2026,
+      "before": 0.0001,
+      "after": 8.866750438799999,
+      "input_activity_ratio": 1.081298834,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2027,
+      "before": 0.0001,
+      "after": 8.860734016799999,
+      "input_activity_ratio": 1.080565124,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2028,
+      "before": 0.0001,
+      "after": 8.854986915599998,
+      "input_activity_ratio": 1.079864258,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2029,
+      "before": 0.0001,
+      "after": 8.849465576799998,
+      "input_activity_ratio": 1.079190924,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2030,
+      "before": 0.0001,
+      "after": 8.817304299399998,
+      "input_activity_ratio": 1.075268817,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2031,
+      "before": 0.0001,
+      "after": 8.817304299399998,
+      "input_activity_ratio": 1.075268817,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2032,
+      "before": 0.0001,
+      "after": 8.816366301399999,
+      "input_activity_ratio": 1.075154427,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2033,
+      "before": 0.0001,
+      "after": 8.8146778968,
+      "input_activity_ratio": 1.074948524,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2034,
+      "before": 0.0001,
+      "after": 8.8123985592,
+      "input_activity_ratio": 1.074670556,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2035,
+      "before": 0.0001,
+      "after": 8.8096633508,
+      "input_activity_ratio": 1.074336994,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2036,
+      "before": 0.0001,
+      "after": 8.8065862352,
+      "input_activity_ratio": 1.073961736,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2037,
+      "before": 0.0001,
+      "after": 8.8032629556,
+      "input_activity_ratio": 1.073556458,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2038,
+      "before": 0.0001,
+      "after": 8.7997735194,
+      "input_activity_ratio": 1.073130917,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2039,
+      "before": 0.0001,
+      "after": 8.796184371199999,
+      "input_activity_ratio": 1.072693216,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2040,
+      "before": 0.0001,
+      "after": 8.817304299399998,
+      "input_activity_ratio": 1.075268817,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2041,
+      "before": 0.0001,
+      "after": 8.8079242948,
+      "input_activity_ratio": 1.074124914,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2042,
+      "before": 0.0001,
+      "after": 8.799482296399999,
+      "input_activity_ratio": 1.073095402,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2043,
+      "before": 0.0001,
+      "after": 8.791884487999999,
+      "input_activity_ratio": 1.07216884,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2044,
+      "before": 0.0001,
+      "after": 8.785046466999999,
+      "input_activity_ratio": 1.071334935,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2045,
+      "before": 0.0001,
+      "after": 8.778892244,
+      "input_activity_ratio": 1.07058442,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2046,
+      "before": 0.0001,
+      "after": 8.773353447399998,
+      "input_activity_ratio": 1.069908957,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2047,
+      "before": 0.0001,
+      "after": 8.768368528,
+      "input_activity_ratio": 1.06930104,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2048,
+      "before": 0.0001,
+      "after": 8.763882103,
+      "input_activity_ratio": 1.068753915,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2049,
+      "before": 0.0001,
+      "after": 8.759844316399999,
+      "input_activity_ratio": 1.068261502,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2050,
+      "before": 0.0001,
+      "after": 8.723504253399998,
+      "input_activity_ratio": 1.063829787,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2051,
+      "before": 0.0001,
+      "after": 8.723504253399998,
+      "input_activity_ratio": 1.063829787,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2052,
+      "before": 0.0001,
+      "after": 8.723504253399998,
+      "input_activity_ratio": 1.063829787,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG",
+      "year": 2053,
+      "before": 0.0001,
+      "after": 8.723504253399998,
+      "input_activity_ratio": 1.063829787,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2020,
+      "before": 0.0001,
+      "after": 10.262662154,
+      "input_activity_ratio": 1.25153197,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2021,
+      "before": 0.0001,
+      "after": 10.233517189199999,
+      "input_activity_ratio": 1.247977706,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2022,
+      "before": 0.0001,
+      "after": 10.206912772999999,
+      "input_activity_ratio": 1.244733265,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2023,
+      "before": 0.0001,
+      "after": 10.1825730738,
+      "input_activity_ratio": 1.241765009,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2024,
+      "before": 0.0001,
+      "after": 10.1602579382,
+      "input_activity_ratio": 1.239043651,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2025,
+      "before": 0.0001,
+      "after": 10.139757938199999,
+      "input_activity_ratio": 1.236543651,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2026,
+      "before": 0.0001,
+      "after": 10.120890057999999,
+      "input_activity_ratio": 1.23424269,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2027,
+      "before": 0.0001,
+      "after": 10.103494044999998,
+      "input_activity_ratio": 1.232121225,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2028,
+      "before": 0.0001,
+      "after": 10.087429285599999,
+      "input_activity_ratio": 1.230162108,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2029,
+      "before": 0.0001,
+      "after": 10.0725720254,
+      "input_activity_ratio": 1.228350247,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2030,
+      "before": 0.0001,
+      "after": 9.971212530599999,
+      "input_activity_ratio": 1.215989333,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2031,
+      "before": 0.0001,
+      "after": 9.967473018999998,
+      "input_activity_ratio": 1.215533295,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2032,
+      "before": 0.0001,
+      "after": 9.963515780999998,
+      "input_activity_ratio": 1.215050705,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2033,
+      "before": 0.0001,
+      "after": 9.959421766999998,
+      "input_activity_ratio": 1.214551435,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2034,
+      "before": 0.0001,
+      "after": 9.955257905399998,
+      "input_activity_ratio": 1.214043647,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2035,
+      "before": 0.0001,
+      "after": 9.9510791034,
+      "input_activity_ratio": 1.213534037,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2036,
+      "before": 0.0001,
+      "after": 9.9469299854,
+      "input_activity_ratio": 1.213028047,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2037,
+      "before": 0.0001,
+      "after": 9.942846401799999,
+      "input_activity_ratio": 1.212530049,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2038,
+      "before": 0.0001,
+      "after": 9.938856740999999,
+      "input_activity_ratio": 1.212043505,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2039,
+      "before": 0.0001,
+      "after": 9.934983060999999,
+      "input_activity_ratio": 1.211571105,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2040,
+      "before": 0.0001,
+      "after": 9.933817357199999,
+      "input_activity_ratio": 1.211428946,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2041,
+      "before": 0.0001,
+      "after": 9.927900671799998,
+      "input_activity_ratio": 1.210707399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2042,
+      "before": 0.0001,
+      "after": 9.922575649199999,
+      "input_activity_ratio": 1.210058006,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2043,
+      "before": 0.0001,
+      "after": 9.917783134599999,
+      "input_activity_ratio": 1.209473553,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2044,
+      "before": 0.0001,
+      "after": 9.913469868999998,
+      "input_activity_ratio": 1.208947545,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2045,
+      "before": 0.0001,
+      "after": 9.909587931599999,
+      "input_activity_ratio": 1.208474138,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2046,
+      "before": 0.0001,
+      "after": 9.906094182199999,
+      "input_activity_ratio": 1.208048071,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2047,
+      "before": 0.0001,
+      "after": 9.902949810199999,
+      "input_activity_ratio": 1.207664611,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2048,
+      "before": 0.0001,
+      "after": 9.9001198754,
+      "input_activity_ratio": 1.207319497,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2049,
+      "before": 0.0001,
+      "after": 9.897572938999998,
+      "input_activity_ratio": 1.207008895,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2050,
+      "before": 0.0001,
+      "after": 9.874650470399999,
+      "input_activity_ratio": 1.204213472,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2051,
+      "before": 0.0001,
+      "after": 9.874650470399999,
+      "input_activity_ratio": 1.204213472,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2052,
+      "before": 0.0001,
+      "after": 9.874650470399999,
+      "input_activity_ratio": 1.204213472,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHHPH_NG_CCS",
+      "year": 2053,
+      "before": 0.0001,
+      "after": 9.874650470399999,
+      "input_activity_ratio": 1.204213472,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2020,
+      "before": 0.0001,
+      "after": 8.913143480399999,
+      "input_activity_ratio": 1.086956522,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2021,
+      "before": 0.0001,
+      "after": 8.9035595582,
+      "input_activity_ratio": 1.085787751,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2022,
+      "before": 0.0001,
+      "after": 8.894934035599999,
+      "input_activity_ratio": 1.084735858,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2023,
+      "before": 0.0001,
+      "after": 8.887077263,
+      "input_activity_ratio": 1.083777715,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2024,
+      "before": 0.0001,
+      "after": 8.879837327199999,
+      "input_activity_ratio": 1.082894796,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2025,
+      "before": 0.0001,
+      "after": 8.873093450399999,
+      "input_activity_ratio": 1.082072372,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2026,
+      "before": 0.0001,
+      "after": 8.866750438799999,
+      "input_activity_ratio": 1.081298834,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2027,
+      "before": 0.0001,
+      "after": 8.860734016799999,
+      "input_activity_ratio": 1.080565124,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2028,
+      "before": 0.0001,
+      "after": 8.854986915599998,
+      "input_activity_ratio": 1.079864258,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2029,
+      "before": 0.0001,
+      "after": 8.849465576799998,
+      "input_activity_ratio": 1.079190924,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2030,
+      "before": 0.0001,
+      "after": 8.817304299399998,
+      "input_activity_ratio": 1.075268817,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2031,
+      "before": 0.0001,
+      "after": 8.817304299399998,
+      "input_activity_ratio": 1.075268817,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2032,
+      "before": 0.0001,
+      "after": 8.816366301399999,
+      "input_activity_ratio": 1.075154427,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2033,
+      "before": 0.0001,
+      "after": 8.8146778968,
+      "input_activity_ratio": 1.074948524,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2034,
+      "before": 0.0001,
+      "after": 8.8123985592,
+      "input_activity_ratio": 1.074670556,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2035,
+      "before": 0.0001,
+      "after": 8.8096633508,
+      "input_activity_ratio": 1.074336994,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2036,
+      "before": 0.0001,
+      "after": 8.8065862352,
+      "input_activity_ratio": 1.073961736,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2037,
+      "before": 0.0001,
+      "after": 8.8032629556,
+      "input_activity_ratio": 1.073556458,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2038,
+      "before": 0.0001,
+      "after": 8.7997735194,
+      "input_activity_ratio": 1.073130917,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2039,
+      "before": 0.0001,
+      "after": 8.796184371199999,
+      "input_activity_ratio": 1.072693216,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2040,
+      "before": 0.0001,
+      "after": 8.817304299399998,
+      "input_activity_ratio": 1.075268817,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2041,
+      "before": 0.0001,
+      "after": 8.8079242948,
+      "input_activity_ratio": 1.074124914,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2042,
+      "before": 0.0001,
+      "after": 8.799482296399999,
+      "input_activity_ratio": 1.073095402,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2043,
+      "before": 0.0001,
+      "after": 8.791884487999999,
+      "input_activity_ratio": 1.07216884,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2044,
+      "before": 0.0001,
+      "after": 8.785046466999999,
+      "input_activity_ratio": 1.071334935,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2045,
+      "before": 0.0001,
+      "after": 8.778892244,
+      "input_activity_ratio": 1.07058442,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2046,
+      "before": 0.0001,
+      "after": 8.773353447399998,
+      "input_activity_ratio": 1.069908957,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2047,
+      "before": 0.0001,
+      "after": 8.768368528,
+      "input_activity_ratio": 1.06930104,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2048,
+      "before": 0.0001,
+      "after": 8.763882103,
+      "input_activity_ratio": 1.068753915,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2049,
+      "before": 0.0001,
+      "after": 8.759844316399999,
+      "input_activity_ratio": 1.068261502,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2050,
+      "before": 0.0001,
+      "after": 8.723504253399998,
+      "input_activity_ratio": 1.063829787,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2051,
+      "before": 0.0001,
+      "after": 8.723504253399998,
+      "input_activity_ratio": 1.063829787,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2052,
+      "before": 0.0001,
+      "after": 8.723504253399998,
+      "input_activity_ratio": 1.063829787,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_INDU_OTHLPH_NG",
+      "year": 2053,
+      "before": 0.0001,
+      "after": 8.723504253399998,
+      "input_activity_ratio": 1.063829787,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2020,
+      "before": 0.0001,
+      "after": 11.884157968399998,
+      "input_activity_ratio": 1.449275362,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2021,
+      "before": 0.0001,
+      "after": 11.884157968399998,
+      "input_activity_ratio": 1.449275362,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2022,
+      "before": 0.0001,
+      "after": 11.8800027086,
+      "input_activity_ratio": 1.448768623,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2023,
+      "before": 0.0001,
+      "after": 11.872523226199998,
+      "input_activity_ratio": 1.447856491,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2024,
+      "before": 0.0001,
+      "after": 11.862425934799997,
+      "input_activity_ratio": 1.446625114,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2025,
+      "before": 0.0001,
+      "after": 11.850309180199998,
+      "input_activity_ratio": 1.445147461,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2026,
+      "before": 0.0001,
+      "after": 11.836677836399998,
+      "input_activity_ratio": 1.443485102,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2027,
+      "before": 0.0001,
+      "after": 11.821955982799999,
+      "input_activity_ratio": 1.441689754,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2028,
+      "before": 0.0001,
+      "after": 11.806498031599999,
+      "input_activity_ratio": 1.439804638,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2029,
+      "before": 0.0001,
+      "after": 11.7905984284,
+      "input_activity_ratio": 1.437865662,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2030,
+      "before": 0.0001,
+      "after": 11.884157968399998,
+      "input_activity_ratio": 1.449275362,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2031,
+      "before": 0.0001,
+      "after": 11.842605321199999,
+      "input_activity_ratio": 1.444207966,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2032,
+      "before": 0.0001,
+      "after": 11.805207933799998,
+      "input_activity_ratio": 1.439647309,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2033,
+      "before": 0.0001,
+      "after": 11.771550287599998,
+      "input_activity_ratio": 1.435542718,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2034,
+      "before": 0.0001,
+      "after": 11.7412584052,
+      "input_activity_ratio": 1.431848586,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2035,
+      "before": 0.0001,
+      "after": 11.713995709399999,
+      "input_activity_ratio": 1.428523867,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2036,
+      "before": 0.0001,
+      "after": 11.689459292199999,
+      "input_activity_ratio": 1.425531621,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2037,
+      "before": 0.0001,
+      "after": 11.667376503599998,
+      "input_activity_ratio": 1.422838598,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2038,
+      "before": 0.0001,
+      "after": 11.6475019996,
+      "input_activity_ratio": 1.420414878,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2039,
+      "before": 0.0001,
+      "after": 11.629614945999998,
+      "input_activity_ratio": 1.41823353,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2040,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2041,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2042,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2043,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2044,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2045,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2046,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2047,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2048,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2049,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2050,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2051,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2052,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_BH2_NG",
+      "year": 2053,
+      "before": 0.0001,
+      "after": 11.468631471799998,
+      "input_activity_ratio": 1.398601399,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2020,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2021,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2022,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2023,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2024,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2025,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2026,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2027,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2028,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2029,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2030,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2031,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2032,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2033,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2034,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2035,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2036,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2037,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2038,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2039,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2040,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2041,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2042,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2043,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2044,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2045,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2046,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2047,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2048,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2049,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2050,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2051,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2052,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_POW_GH2_NG",
+      "year": 2053,
+      "before": 0.0001,
+      "after": 10.789573686799999,
+      "input_activity_ratio": 1.315789474,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2020,
+      "before": 0.0001,
+      "after": 10.379846836999999,
+      "input_activity_ratio": 1.265822785,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2021,
+      "before": 0.0001,
+      "after": 10.306578033,
+      "input_activity_ratio": 1.256887565,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2022,
+      "before": 0.0001,
+      "after": 10.2384183948,
+      "input_activity_ratio": 1.248575414,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2023,
+      "before": 0.0001,
+      "after": 10.174866976199999,
+      "input_activity_ratio": 1.240825241,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2024,
+      "before": 0.0001,
+      "after": 10.115493104999999,
+      "input_activity_ratio": 1.233584525,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2025,
+      "before": 0.0001,
+      "after": 10.0599252228,
+      "input_activity_ratio": 1.226807954,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2026,
+      "before": 0.0001,
+      "after": 10.007841463199998,
+      "input_activity_ratio": 1.220456276,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2027,
+      "before": 0.0001,
+      "after": 9.958961714199999,
+      "input_activity_ratio": 1.214495331,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2028,
+      "before": 0.0001,
+      "after": 9.9130409516,
+      "input_activity_ratio": 1.208895238,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2029,
+      "before": 0.0001,
+      "after": 9.869863605599999,
+      "input_activity_ratio": 1.203629708,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2030,
+      "before": 0.0001,
+      "after": 9.647158821599998,
+      "input_activity_ratio": 1.176470588,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2031,
+      "before": 0.0001,
+      "after": 9.624981675599999,
+      "input_activity_ratio": 1.173766058,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2032,
+      "before": 0.0001,
+      "after": 9.602904200599998,
+      "input_activity_ratio": 1.171073683,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2033,
+      "before": 0.0001,
+      "after": 9.581128239599998,
+      "input_activity_ratio": 1.168418078,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2034,
+      "before": 0.0001,
+      "after": 9.559814258399998,
+      "input_activity_ratio": 1.165818812,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2035,
+      "before": 0.0001,
+      "after": 9.539087618599998,
+      "input_activity_ratio": 1.163291173,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2036,
+      "before": 0.0001,
+      "after": 9.519043997799999,
+      "input_activity_ratio": 1.160846829,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2037,
+      "before": 0.0001,
+      "after": 9.499754055399999,
+      "input_activity_ratio": 1.158494397,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2038,
+      "before": 0.0001,
+      "after": 9.4812674998,
+      "input_activity_ratio": 1.156239939,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2039,
+      "before": 0.0001,
+      "after": 9.463616540599999,
+      "input_activity_ratio": 1.154087383,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2040,
+      "before": 0.0001,
+      "after": 9.425387353399998,
+      "input_activity_ratio": 1.149425287,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2041,
+      "before": 0.0001,
+      "after": 9.4042069338,
+      "input_activity_ratio": 1.146842309,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2042,
+      "before": 0.0001,
+      "after": 9.3851445578,
+      "input_activity_ratio": 1.144517629,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2043,
+      "before": 0.0001,
+      "after": 9.3679884194,
+      "input_activity_ratio": 1.142425417,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2044,
+      "before": 0.0001,
+      "after": 9.352547885,
+      "input_activity_ratio": 1.140542425,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2045,
+      "before": 0.0001,
+      "after": 9.338651410599999,
+      "input_activity_ratio": 1.138847733,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2046,
+      "before": 0.0001,
+      "after": 9.326144590199998,
+      "input_activity_ratio": 1.137322511,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2047,
+      "before": 0.0001,
+      "after": 9.314888441999999,
+      "input_activity_ratio": 1.13594981,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2048,
+      "before": 0.0001,
+      "after": 9.304757915999998,
+      "input_activity_ratio": 1.13471438,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2049,
+      "before": 0.0001,
+      "after": 9.2956404344,
+      "input_activity_ratio": 1.133602492,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2050,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2051,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2052,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_SER_HEAT_NG",
+      "year": 2053,
+      "before": 0.0001,
+      "after": 9.2135831492,
+      "input_activity_ratio": 1.123595506,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2020,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2021,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2022,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2023,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2024,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2025,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2026,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2027,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2028,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2029,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2030,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2031,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2032,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2033,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2034,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2035,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2036,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2037,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2038,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2039,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2040,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2041,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2042,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2043,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2044,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2045,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2046,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2047,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2048,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2049,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2050,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2051,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2052,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_23WHEEL_NG",
+      "year": 2053,
+      "before": 1.6154562457673565,
+      "after": 5.223456245767356,
+      "input_activity_ratio": 0.44,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2020,
+      "before": 137.59039345079114,
+      "after": 218.90777785799114,
+      "input_activity_ratio": 9.916754196,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2021,
+      "before": 137.59039345079114,
+      "after": 216.31647539899114,
+      "input_activity_ratio": 9.600741701,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2022,
+      "before": 137.59039345079114,
+      "after": 213.94178156519115,
+      "input_activity_ratio": 9.311144892,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2023,
+      "before": 137.59039345079114,
+      "after": 211.76203547439113,
+      "input_activity_ratio": 9.045322198,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2024,
+      "before": 137.59039345079114,
+      "after": 209.75816758379113,
+      "input_activity_ratio": 8.800948065,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2025,
+      "before": 137.59039345079114,
+      "after": 207.91335544579113,
+      "input_activity_ratio": 8.575970975,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2026,
+      "before": 137.59039345079114,
+      "after": 206.21272677779115,
+      "input_activity_ratio": 8.368577235,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2027,
+      "before": 137.59039345079114,
+      "after": 204.64310315479113,
+      "input_activity_ratio": 8.17715972,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2028,
+      "before": 137.59039345079114,
+      "after": 203.19277899479113,
+      "input_activity_ratio": 8.00029092,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2029,
+      "before": 137.59039345079114,
+      "after": 201.85133086779115,
+      "input_activity_ratio": 7.836699685,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2030,
+      "before": 137.59039345079114,
+      "after": 192.99475334179112,
+      "input_activity_ratio": 6.756629255,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2031,
+      "before": 137.59039345079114,
+      "after": 192.56953701999112,
+      "input_activity_ratio": 6.704773606,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2032,
+      "before": 137.59039345079114,
+      "after": 192.14432068999113,
+      "input_activity_ratio": 6.652917956,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2033,
+      "before": 137.59039345079114,
+      "after": 191.72335652739113,
+      "input_activity_ratio": 6.601580863,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2034,
+      "before": 137.59039345079114,
+      "after": 191.31004625299113,
+      "input_activity_ratio": 6.551177171,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2035,
+      "before": 137.59039345079114,
+      "after": 190.90706874119115,
+      "input_activity_ratio": 6.502033572,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2036,
+      "before": 137.59039345079114,
+      "after": 190.51649053139113,
+      "input_activity_ratio": 6.454402083,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2037,
+      "before": 137.59039345079114,
+      "after": 190.13986154659113,
+      "input_activity_ratio": 6.408471719,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2038,
+      "before": 137.59039345079114,
+      "after": 189.77829772479114,
+      "input_activity_ratio": 6.36437857,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2039,
+      "before": 137.59039345079114,
+      "after": 189.43255231799114,
+      "input_activity_ratio": 6.322214496,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2040,
+      "before": 137.59039345079114,
+      "after": 188.74259006639113,
+      "input_activity_ratio": 6.238072758,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2041,
+      "before": 137.59039345079114,
+      "after": 188.31737373639115,
+      "input_activity_ratio": 6.186217108,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2042,
+      "before": 137.59039345079114,
+      "after": 187.93467903939114,
+      "input_activity_ratio": 6.139547023,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2043,
+      "before": 137.59039345079114,
+      "after": 187.59025381619114,
+      "input_activity_ratio": 6.097543947,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2044,
+      "before": 137.59039345079114,
+      "after": 187.28027111039114,
+      "input_activity_ratio": 6.059741178,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2045,
+      "before": 137.59039345079114,
+      "after": 187.00128667599114,
+      "input_activity_ratio": 6.025718686,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2046,
+      "before": 137.59039345079114,
+      "after": 186.75020069159115,
+      "input_activity_ratio": 5.995098444,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2047,
+      "before": 137.59039345079114,
+      "after": 186.52422329579113,
+      "input_activity_ratio": 5.967540225,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2048,
+      "before": 137.59039345079114,
+      "after": 186.32084364859114,
+      "input_activity_ratio": 5.942737829,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2049,
+      "before": 137.59039345079114,
+      "after": 186.13780196119114,
+      "input_activity_ratio": 5.920415672,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2050,
+      "before": 137.59039345079114,
+      "after": 184.49042678279113,
+      "input_activity_ratio": 5.71951626,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2051,
+      "before": 137.59039345079114,
+      "after": 184.49042678279113,
+      "input_activity_ratio": 5.71951626,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2052,
+      "before": 137.59039345079114,
+      "after": 184.49042678279113,
+      "input_activity_ratio": 5.71951626,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_BUS_NG",
+      "year": 2053,
+      "before": 137.59039345079114,
+      "after": 184.49042678279113,
+      "input_activity_ratio": 5.71951626,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2020,
+      "before": 24.99717734498046,
+      "after": 36.87917557178046,
+      "input_activity_ratio": 1.449024174,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2021,
+      "before": 24.99717734498046,
+      "after": 36.66750412558046,
+      "input_activity_ratio": 1.423210583,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2022,
+      "before": 24.99717734498046,
+      "after": 36.47472355238046,
+      "input_activity_ratio": 1.399700757,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2023,
+      "before": 24.99717734498046,
+      "after": 36.29894476078046,
+      "input_activity_ratio": 1.378264319,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2024,
+      "before": 24.99717734498046,
+      "after": 36.13849033418046,
+      "input_activity_ratio": 1.358696706,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2025,
+      "before": 24.99717734498046,
+      "after": 35.99186882378046,
+      "input_activity_ratio": 1.340816034,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2026,
+      "before": 24.99717734498046,
+      "after": 35.85775223138046,
+      "input_activity_ratio": 1.324460352,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2027,
+      "before": 24.99717734498046,
+      "after": 35.73495645238046,
+      "input_activity_ratio": 1.309485257,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2028,
+      "before": 24.99717734498046,
+      "after": 35.62242408038046,
+      "input_activity_ratio": 1.295761797,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2029,
+      "before": 24.99717734498046,
+      "after": 35.519209417580456,
+      "input_activity_ratio": 1.283174643,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2030,
+      "before": 24.99717734498046,
+      "after": 34.76246110978046,
+      "input_activity_ratio": 1.190888264,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2031,
+      "before": 24.99717734498046,
+      "after": 34.73969837718046,
+      "input_activity_ratio": 1.188112321,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2032,
+      "before": 24.99717734498046,
+      "after": 34.716935652780464,
+      "input_activity_ratio": 1.185336379,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2033,
+      "before": 24.99717734498046,
+      "after": 34.69440054398046,
+      "input_activity_ratio": 1.182588195,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2034,
+      "before": 24.99717734498046,
+      "after": 34.67227517278046,
+      "input_activity_ratio": 1.179889979,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2035,
+      "before": 24.99717734498046,
+      "after": 34.65070294078046,
+      "input_activity_ratio": 1.177259219,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2036,
+      "before": 24.99717734498046,
+      "after": 34.62979445778046,
+      "input_activity_ratio": 1.174709404,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2037,
+      "before": 24.99717734498046,
+      "after": 34.60963271598046,
+      "input_activity_ratio": 1.172250655,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2038,
+      "before": 24.99717734498046,
+      "after": 34.59027743598046,
+      "input_activity_ratio": 1.169890255,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2039,
+      "before": 24.99717734498046,
+      "after": 34.571768961780464,
+      "input_activity_ratio": 1.167633124,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2040,
+      "before": 24.99717734498046,
+      "after": 34.53483381658046,
+      "input_activity_ratio": 1.163128838,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2041,
+      "before": 24.99717734498046,
+      "after": 34.51207109218046,
+      "input_activity_ratio": 1.160352896,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2042,
+      "before": 24.99717734498046,
+      "after": 34.49158463858046,
+      "input_activity_ratio": 1.157854548,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2043,
+      "before": 24.99717734498046,
+      "after": 34.47314682378046,
+      "input_activity_ratio": 1.155606034,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2044,
+      "before": 24.99717734498046,
+      "after": 34.45655279538046,
+      "input_activity_ratio": 1.153582372,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2045,
+      "before": 24.99717734498046,
+      "after": 34.44161816818046,
+      "input_activity_ratio": 1.151761076,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2046,
+      "before": 24.99717734498046,
+      "after": 34.42817700698046,
+      "input_activity_ratio": 1.15012191,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2047,
+      "before": 24.99717734498046,
+      "after": 34.41607995698046,
+      "input_activity_ratio": 1.14864666,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2048,
+      "before": 24.99717734498046,
+      "after": 34.40519262018046,
+      "input_activity_ratio": 1.147318936,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2049,
+      "before": 24.99717734498046,
+      "after": 34.39539400558046,
+      "input_activity_ratio": 1.146123983,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2050,
+      "before": 24.99717734498046,
+      "after": 34.30720653158046,
+      "input_activity_ratio": 1.135369413,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2051,
+      "before": 24.99717734498046,
+      "after": 34.30720653158046,
+      "input_activity_ratio": 1.135369413,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2052,
+      "before": 24.99717734498046,
+      "after": 34.30720653158046,
+      "input_activity_ratio": 1.135369413,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_CAR_NG",
+      "year": 2053,
+      "before": 24.99717734498046,
+      "after": 34.30720653158046,
+      "input_activity_ratio": 1.135369413,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2020,
+      "before": 104.36970174674774,
+      "after": 186.1828477563477,
+      "input_activity_ratio": 9.977212928,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2021,
+      "before": 104.36970174674774,
+      "after": 184.55181256214772,
+      "input_activity_ratio": 9.778306197,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2022,
+      "before": 104.36970174674774,
+      "after": 183.04328786894774,
+      "input_activity_ratio": 9.594339771,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2023,
+      "before": 104.36970174674774,
+      "after": 181.64663961334773,
+      "input_activity_ratio": 9.424016813,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2024,
+      "before": 104.36970174674774,
+      "after": 180.35237965734774,
+      "input_activity_ratio": 9.266180233,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2025,
+      "before": 104.36970174674774,
+      "after": 179.15201854094772,
+      "input_activity_ratio": 9.119794731,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2026,
+      "before": 104.36970174674774,
+      "after": 178.03793863634775,
+      "input_activity_ratio": 8.983931328,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2027,
+      "before": 104.36970174674774,
+      "after": 177.00328490754774,
+      "input_activity_ratio": 8.857754044,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2028,
+      "before": 104.36970174674774,
+      "after": 176.04187074974772,
+      "input_activity_ratio": 8.740508415,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2029,
+      "before": 104.36970174674774,
+      "after": 175.14809682574773,
+      "input_activity_ratio": 8.631511595,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2030,
+      "before": 104.36970174674774,
+      "after": 169.87249581434773,
+      "input_activity_ratio": 7.988145618,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2031,
+      "before": 104.36970174674774,
+      "after": 169.46656567114775,
+      "input_activity_ratio": 7.938641942,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2032,
+      "before": 104.36970174674774,
+      "after": 169.07680529654772,
+      "input_activity_ratio": 7.891110189,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2033,
+      "before": 104.36970174674774,
+      "after": 168.70404002874773,
+      "input_activity_ratio": 7.84565101,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2034,
+      "before": 104.36970174674774,
+      "after": 168.34876846054772,
+      "input_activity_ratio": 7.802325209,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2035,
+      "before": 104.36970174674774,
+      "after": 168.01121950314774,
+      "input_activity_ratio": 7.761160702,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2036,
+      "before": 104.36970174674774,
+      "after": 167.69140134834774,
+      "input_activity_ratio": 7.722158488,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2037,
+      "before": 104.36970174674774,
+      "after": 167.38914332134772,
+      "input_activity_ratio": 7.685297753,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2038,
+      "before": 104.36970174674774,
+      "after": 167.10413157534774,
+      "input_activity_ratio": 7.650540223,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2039,
+      "before": 104.36970174674774,
+      "after": 166.83593944794774,
+      "input_activity_ratio": 7.617833866,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2040,
+      "before": 104.36970174674774,
+      "after": 165.81319439874773,
+      "input_activity_ratio": 7.49310886,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2041,
+      "before": 104.36970174674774,
+      "after": 165.56896190874772,
+      "input_activity_ratio": 7.46332441,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2042,
+      "before": 104.36970174674774,
+      "after": 165.34915266774772,
+      "input_activity_ratio": 7.436518405,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2043,
+      "before": 104.36970174674774,
+      "after": 165.15132434674774,
+      "input_activity_ratio": 7.412393,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2044,
+      "before": 104.36970174674774,
+      "after": 164.97327885374773,
+      "input_activity_ratio": 7.390680135,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2045,
+      "before": 104.36970174674774,
+      "after": 164.81303792234775,
+      "input_activity_ratio": 7.371138558,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2046,
+      "before": 104.36970174674774,
+      "after": 164.66882107014774,
+      "input_activity_ratio": 7.353551137,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2047,
+      "before": 104.36970174674774,
+      "after": 164.53902591054774,
+      "input_activity_ratio": 7.337722459,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2048,
+      "before": 104.36970174674774,
+      "after": 164.42221026854773,
+      "input_activity_ratio": 7.323476649,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2049,
+      "before": 104.36970174674774,
+      "after": 164.31707619074774,
+      "input_activity_ratio": 7.31065542,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2050,
+      "before": 104.36970174674774,
+      "after": 163.37086946594775,
+      "input_activity_ratio": 7.195264356,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2051,
+      "before": 104.36970174674774,
+      "after": 163.37086946594775,
+      "input_activity_ratio": 7.195264356,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2052,
+      "before": 104.36970174674774,
+      "after": 163.37086946594775,
+      "input_activity_ratio": 7.195264356,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUH_NG",
+      "year": 2053,
+      "before": 104.36970174674774,
+      "after": 163.37086946594775,
+      "input_activity_ratio": 7.195264356,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2020,
+      "before": 32.36934172078414,
+      "after": 53.19670749178414,
+      "input_activity_ratio": 2.539922655,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2021,
+      "before": 32.36934172078414,
+      "after": 52.824913194184134,
+      "input_activity_ratio": 2.494581887,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2022,
+      "before": 32.36934172078414,
+      "after": 52.48720899438414,
+      "input_activity_ratio": 2.453398448,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2023,
+      "before": 32.36934172078414,
+      "after": 52.180185889984145,
+      "input_activity_ratio": 2.415956606,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2024,
+      "before": 32.36934172078414,
+      "after": 51.90080666658414,
+      "input_activity_ratio": 2.381885969,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2025,
+      "before": 32.36934172078414,
+      "after": 51.64636253618414,
+      "input_activity_ratio": 2.350856197,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2026,
+      "before": 32.36934172078414,
+      "after": 51.414435056384136,
+      "input_activity_ratio": 2.322572358,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2027,
+      "before": 32.36934172078414,
+      "after": 51.20286266618414,
+      "input_activity_ratio": 2.296770847,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2028,
+      "before": 32.36934172078414,
+      "after": 51.00971118238414,
+      "input_activity_ratio": 2.273215788,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2029,
+      "before": 32.36934172078414,
+      "after": 50.83324796958414,
+      "input_activity_ratio": 2.251695884,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2030,
+      "before": 32.36934172078414,
+      "after": 49.478764507584145,
+      "input_activity_ratio": 2.086514974,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2031,
+      "before": 32.36934172078414,
+      "after": 49.447871237184145,
+      "input_activity_ratio": 2.082747502,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2032,
+      "before": 32.36934172078414,
+      "after": 49.41697795858414,
+      "input_activity_ratio": 2.078980029,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2033,
+      "before": 32.36934172078414,
+      "after": 49.386393614984144,
+      "input_activity_ratio": 2.075250231,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2034,
+      "before": 32.36934172078414,
+      "after": 49.35636535438414,
+      "input_activity_ratio": 2.071588248,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2035,
+      "before": 32.36934172078414,
+      "after": 49.32708779558414,
+      "input_activity_ratio": 2.068017814,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2036,
+      "before": 32.36934172078414,
+      "after": 49.298711088784145,
+      "input_activity_ratio": 2.06455724,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2037,
+      "before": 32.36934172078414,
+      "after": 49.27134782818414,
+      "input_activity_ratio": 2.061220257,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2038,
+      "before": 32.36934172078414,
+      "after": 49.245079103584146,
+      "input_activity_ratio": 2.058016754,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2039,
+      "before": 32.36934172078414,
+      "after": 49.21995963358414,
+      "input_activity_ratio": 2.054953404,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2040,
+      "before": 32.36934172078414,
+      "after": 49.16983175438414,
+      "input_activity_ratio": 2.048840248,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2041,
+      "before": 32.36934172078414,
+      "after": 49.13893848398414,
+      "input_activity_ratio": 2.045072776,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2042,
+      "before": 32.36934172078414,
+      "after": 49.11113453078414,
+      "input_activity_ratio": 2.04168205,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2043,
+      "before": 32.36934172078414,
+      "after": 49.086110976184145,
+      "input_activity_ratio": 2.038630397,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2044,
+      "before": 32.36934172078414,
+      "after": 49.063589782784135,
+      "input_activity_ratio": 2.03588391,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2045,
+      "before": 32.36934172078414,
+      "after": 49.04332070298414,
+      "input_activity_ratio": 2.033412071,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2046,
+      "before": 32.36934172078414,
+      "after": 49.025078531984136,
+      "input_activity_ratio": 2.031187416,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2047,
+      "before": 32.36934172078414,
+      "after": 49.00866058218414,
+      "input_activity_ratio": 2.029185227,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2048,
+      "before": 32.36934172078414,
+      "after": 48.99388441998414,
+      "input_activity_ratio": 2.027383256,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2049,
+      "before": 32.36934172078414,
+      "after": 48.980585881384144,
+      "input_activity_ratio": 2.025761483,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2050,
+      "before": 32.36934172078414,
+      "after": 48.86089900118414,
+      "input_activity_ratio": 2.011165522,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2051,
+      "before": 32.36934172078414,
+      "after": 48.86089900118414,
+      "input_activity_ratio": 2.011165522,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2052,
+      "before": 32.36934172078414,
+      "after": 48.86089900118414,
+      "input_activity_ratio": 2.011165522,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_TRUL_NG",
+      "year": 2053,
+      "before": 32.36934172078414,
+      "after": 48.86089900118414,
+      "input_activity_ratio": 2.011165522,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2020,
+      "before": 32.36934172078414,
+      "after": 53.19670749178414,
+      "input_activity_ratio": 2.539922655,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2021,
+      "before": 32.36934172078414,
+      "after": 52.824913194184134,
+      "input_activity_ratio": 2.494581887,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2022,
+      "before": 32.36934172078414,
+      "after": 52.48720899438414,
+      "input_activity_ratio": 2.453398448,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2023,
+      "before": 32.36934172078414,
+      "after": 52.180185889984145,
+      "input_activity_ratio": 2.415956606,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2024,
+      "before": 32.36934172078414,
+      "after": 51.90080666658414,
+      "input_activity_ratio": 2.381885969,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2025,
+      "before": 32.36934172078414,
+      "after": 51.64636253618414,
+      "input_activity_ratio": 2.350856197,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2026,
+      "before": 32.36934172078414,
+      "after": 51.414435056384136,
+      "input_activity_ratio": 2.322572358,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2027,
+      "before": 32.36934172078414,
+      "after": 51.20286266618414,
+      "input_activity_ratio": 2.296770847,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2028,
+      "before": 32.36934172078414,
+      "after": 51.00971118238414,
+      "input_activity_ratio": 2.273215788,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2029,
+      "before": 32.36934172078414,
+      "after": 50.83324796958414,
+      "input_activity_ratio": 2.251695884,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2030,
+      "before": 32.36934172078414,
+      "after": 49.478764507584145,
+      "input_activity_ratio": 2.086514974,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2031,
+      "before": 32.36934172078414,
+      "after": 49.447871237184145,
+      "input_activity_ratio": 2.082747502,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2032,
+      "before": 32.36934172078414,
+      "after": 49.41697795858414,
+      "input_activity_ratio": 2.078980029,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2033,
+      "before": 32.36934172078414,
+      "after": 49.386393614984144,
+      "input_activity_ratio": 2.075250231,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2034,
+      "before": 32.36934172078414,
+      "after": 49.35636535438414,
+      "input_activity_ratio": 2.071588248,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2035,
+      "before": 32.36934172078414,
+      "after": 49.32708779558414,
+      "input_activity_ratio": 2.068017814,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2036,
+      "before": 32.36934172078414,
+      "after": 49.298711088784145,
+      "input_activity_ratio": 2.06455724,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2037,
+      "before": 32.36934172078414,
+      "after": 49.27134782818414,
+      "input_activity_ratio": 2.061220257,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2038,
+      "before": 32.36934172078414,
+      "after": 49.245079103584146,
+      "input_activity_ratio": 2.058016754,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2039,
+      "before": 32.36934172078414,
+      "after": 49.21995963358414,
+      "input_activity_ratio": 2.054953404,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2040,
+      "before": 32.36934172078414,
+      "after": 49.16983175438414,
+      "input_activity_ratio": 2.048840248,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2041,
+      "before": 32.36934172078414,
+      "after": 49.13893848398414,
+      "input_activity_ratio": 2.045072776,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2042,
+      "before": 32.36934172078414,
+      "after": 49.11113453078414,
+      "input_activity_ratio": 2.04168205,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2043,
+      "before": 32.36934172078414,
+      "after": 49.086110976184145,
+      "input_activity_ratio": 2.038630397,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2044,
+      "before": 32.36934172078414,
+      "after": 49.063589782784135,
+      "input_activity_ratio": 2.03588391,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2045,
+      "before": 32.36934172078414,
+      "after": 49.04332070298414,
+      "input_activity_ratio": 2.033412071,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2046,
+      "before": 32.36934172078414,
+      "after": 49.025078531984136,
+      "input_activity_ratio": 2.031187416,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2047,
+      "before": 32.36934172078414,
+      "after": 49.00866058218414,
+      "input_activity_ratio": 2.029185227,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2048,
+      "before": 32.36934172078414,
+      "after": 48.99388441998414,
+      "input_activity_ratio": 2.027383256,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2049,
+      "before": 32.36934172078414,
+      "after": 48.980585881384144,
+      "input_activity_ratio": 2.025761483,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2050,
+      "before": 32.36934172078414,
+      "after": 48.86089900118414,
+      "input_activity_ratio": 2.011165522,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2051,
+      "before": 32.36934172078414,
+      "after": 48.86089900118414,
+      "input_activity_ratio": 2.011165522,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2052,
+      "before": 32.36934172078414,
+      "after": 48.86089900118414,
+      "input_activity_ratio": 2.011165522,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_TRA_VAN_NG",
+      "year": 2053,
+      "before": 32.36934172078414,
+      "after": 48.86089900118414,
+      "input_activity_ratio": 2.011165522,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2020,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2021,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2022,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2023,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2024,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2025,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2026,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2027,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2028,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2029,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2030,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2031,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2032,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2033,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2034,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2035,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2036,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2037,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2038,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2039,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2040,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2041,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2042,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2043,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2044,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2045,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2046,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2047,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2048,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2049,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2050,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2051,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2052,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    },
+    {
+      "technology": "PHL_HOU_COOK_NG",
+      "year": 2053,
+      "before": 0.0001,
+      "after": 13.666766666666666,
+      "input_activity_ratio": 1.6666666666666667,
+      "formula": "VC_after = VC_before + gas IAR * 8.2 MUSD/PJ_input"
+    }
+  ]
+}

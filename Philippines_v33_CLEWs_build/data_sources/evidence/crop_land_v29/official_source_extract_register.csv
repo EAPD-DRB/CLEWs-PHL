@@ -1,0 +1,7 @@
+source,locator,url
+PSA OpenSTAT vegetables 2021,"DB/2B/AA/CR/0052B5ECOP3.px; Ampalaya, Cabbage, Eggplant, Tomato; all cost items; 2021",https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2B/AA/CR/0052B5ECOP3.px
+SRA 2020 Annual Report Table 12,page 99; plant/ratoon direct cost and farm-operation components,https://www.sra.gov.ph/storage/2020-Official-SRA-Annual-Report.pdf
+PCA coconut fertilization technology note,Table 5; unfertilized control and five-year multinutrient costs,https://www.pca.gov.ph/pdf/techno/econ_nacl.pdf
+World Bank WDI Philippines CPI,FP.CPI.TOTL; 2010=100; 2021=137.936373936063,https://api.worldbank.org/v2/country/PHL/indicator/FP.CPI.TOTL?date=2010:2021&format=json&per_page=50
+DA Philippine Rubber Industry Roadmap 2017-2022,page 61; PHP 250000/ha financial requirement,https://www.da.gov.ph/wp-content/uploads/2019/06/Philippine-Rubber-Industry-Roadmap-2017-2022.pdf
+NIA Digest 2019 FISA,O&M subsidy: PHP150/ha/season; two-season annualization used,https://www.nia.gov.ph/sites/default/files/newsletter/2019-niadigest_vol42.pdf

@@ -1,0 +1,96 @@
+{
+  "case": "Philippines_v33",
+  "parent_case": "Philippines_v32",
+  "gate": "gas_delivery_deterministic_pre_solve",
+  "status": "pass",
+  "optimizer_runs": 0,
+  "model_generation_runs": 0,
+  "canonical_baseline": {
+    "case": "Philippines_v32",
+    "run": "BASE_V32_RICE_YIELD",
+    "objective": 838560.95562083,
+    "runtime_seconds": 66.15766029099905,
+    "matrix": {
+      "rows": 467075,
+      "columns": 517844,
+      "matrix_nonzeros": 8194641
+    }
+  },
+  "classification": {
+    "observed_gas_generation": "benchmark-only validation value",
+    "doe_gross_generation": "benchmark-only validation value",
+    "electricity_sector_demands": "inherited exogenous final demands; unchanged in this candidate",
+    "take_or_pay": "inherited economic contract term; retained by explicit direction",
+    "legacy_gas_power": "physical conversion stock",
+    "road_cng_and_gas_cooking": "physical end-use conversions"
+  },
+  "equation_mapping": {
+    "source": "RYTM.json / VC / SC_0",
+    "generated": "VariableCost",
+    "formulation": "OC1_OperatingCostsVariable and total discounted cost in SOLVERs/model.v.5.4.txt",
+    "effect": "Changes endogenous order of merit only; no activity equation or envelope is altered."
+  },
+  "deterministic_envelope_proof": {
+    "method": "Byte identity of every RY*.json physical/demand parameter file except RYTM.json",
+    "unchanged_files": {
+      "RYC.json": true,
+      "RYCTs.json": true,
+      "RYCn.json": true,
+      "RYDtb.json": true,
+      "RYE.json": true,
+      "RYS.json": true,
+      "RYSeDt.json": true,
+      "RYT.json": true,
+      "RYTC.json": true,
+      "RYTCM.json": true,
+      "RYTCn.json": true,
+      "RYTEM.json": true,
+      "RYTTs.json": true,
+      "RYTs.json": true
+    },
+    "conclusion": "Initial capacity, survival, replacement, demand and commodity-conversion envelopes are exactly v32."
+  },
+  "checks": {
+    "genData_only_identity_changed": true,
+    "candidate_identity_is_v33": true,
+    "vc_row_count_unchanged": true,
+    "exactly_510_allowed_vc_cells_changed": true,
+    "no_forbidden_rytm_changes": true,
+    "old_gas_vom_exact_and_take_or_pay_retained": true,
+    "all_476_nonpower_delivery_cells_follow_exact_formula": true,
+    "processed_gas_consumer_partition_complete": true,
+    "no_policy_scenario_vc_overrides": true,
+    "all_other_parameter_json_unchanged": true,
+    "demand_stock_efficiency_and_bounds_unchanged": true,
+    "no_activity_or_share_bound_change": true,
+    "archived_evidence_hash_exact": true,
+    "provenance_rows_present_once": true,
+    "clean_zero_run_inventory": true,
+    "source_audit_matches_candidate": true
+  },
+  "identity_differences": {
+    "osy-casename": [
+      "Philippines_v32",
+      "Philippines_v33"
+    ],
+    "osy-desc": [
+      "Philippines v32 candidate: v31 plus achieved province-to-GAEZ-cluster rice yields; observed regime outcomes remain validation benchmarks.",
+      "Philippines v33 candidate: v32 plus sourced legacy-gas VOM and a conservative delivered-gas cost proxy for every processed-gas route not producing electricity; take-or-pay retained and all outcomes endogenous."
+    ]
+  },
+  "changed_cells": 510,
+  "forbidden_changes": [],
+  "ledger_id_counts": {
+    "source": 1,
+    "source_doe": 1,
+    "assumption_midpoint": 1,
+    "assumption_proxy": 1,
+    "assumption_contract": 1,
+    "calculation_delivery": 1,
+    "calculation_vom": 1,
+    "change": 1,
+    "maps": 15,
+    "gap": 1
+  },
+  "run_directories": []
+}

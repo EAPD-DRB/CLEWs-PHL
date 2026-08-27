@@ -1,0 +1,30 @@
+{
+  "schema": "philippines-v22-ev-truck-turnover-promotion-identity-v1",
+  "date": "2026-08-24",
+  "status": "pass",
+  "candidate_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/.Philippines_v22-ev-truck-turnover-candidate-20260824",
+  "live_case": "/Users/sato/Documents/GitHub/MUIOGO/WebAPP/DataStorage/Philippines_v22",
+  "four_scenario_candidate_gate": "pass",
+  "candidate_optimizer_runs": 4,
+  "source_json_count": 22,
+  "source_json_byte_identical": true,
+  "schema_ledger_csv_count": 6,
+  "schema_ledger_csv_byte_identical_before_promotion_record": true,
+  "data_txt_byte_identical": true,
+  "data_processed_txt_byte_identical": false,
+  "data_processed_set_order_equivalent": true,
+  "data_processed_normalized_sha256": "83d9fb444d779e6179f9e199fd266d6b18c4c51b926b6e5175ef2702e1413942",
+  "matrix": {
+    "rows": 553001,
+    "columns": 584981,
+    "matrix_nonzeros": 8108315
+  },
+  "glpsol_check": "pass",
+  "post_promotion_optimizer_runs": 0,
+  "post_promotion_cbc": "not run because source JSON and generated data.txt are byte-identical; processed data differ only in unordered set declaration order and matrix dimensions match",
+  "hashes": {
+    "data_txt": "770ba807d4bbf29b6229726b8af291e337c15bb8026e2085a372e9814cfc3ca4",
+    "data_processed_txt": "74612aee14aaa06f3b27878121b73f461ff5ea1fe7b415393f0a6bdfe535dd64",
+    "lp": "b907dc3f179e8996eb26c8b7a01486201bc0437b52fd75631ea45f0985fce441"
+  }
+}

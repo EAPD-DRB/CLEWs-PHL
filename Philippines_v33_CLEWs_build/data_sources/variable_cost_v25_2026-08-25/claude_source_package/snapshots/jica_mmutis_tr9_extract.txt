@@ -1,0 +1,33 @@
+SOURCE  SRC_VC_JICA_MMUTIS_TR9_T41
+FILE    https://openjicareport.jica.go.jp/pdf/11580552_03.pdf
+WHAT    MMUTIS Technical Report No. 9 (Public Transportation), Chapter 4, Table 4.1
+        'Operating Cost Model Inputs for New and Reconditioned Bus', with the surrounding
+        text of section 4.2. Extracted from the PDF content streams and reflowed, so the
+        three data columns run together: Main VOCM Runs 'Bus' / New Bus / Reconditioned Bus.
+USED    Maintenance Parts per 1,000 km as % of cost of new bus, Main VOCM Runs = 0.182%,
+        i.e. 1.82e-06 of the new-vehicle price per km.
+RETRIEVED 2026-08-25
+----------------------------------------------------------------------
+======================================================================
+00 km. run (averaged out over the vehicle's useful life in the Philippines) than new vehicles, for both parts 
+and labor. The VOCM computes maintenance parts as a percentage of the cost of a new vehicle per 1,000 km. As s
+imilar parts will be consumed by both new and reconditioned vehicles, the share of parts consumed by reconditi
+oned vehicles was calculated by reference to the purchase cost of a new vehicle, rather than a reconditioned o
+ne. The different assumptions adopted regarding buses in the main VOCM runs and in the additional runs for the
+ estimation of financial viability are summarized in Table 4.1. 4.2.2 Vehicle Utilization The VOCM incorporate
+s formula relating vehicle utilization to average speed - the lower the speed the fewer km. performed each yea
+r but the longer the vehicle lifetime. DPWH estimates of operating cost per vehicle km., under free-flow condi
+tions on an inter-urban road, incorporate assumptions on average speed and vehicle utilization. These have bee
+n used to calibrate VOCM to Philippine vehicle use patterns, with the latter model then generating estimates o
+f utilization at other average speeds. . 9: P UBLIC T RANSPORTATION 4-3 T ABLE 4.1 O PERATING C OST M ODEL I N
+PUTS FOR N EW AND R ECONDITIONED B US Cost Head/Item Main VOCM Runs "Bus" New Bus Reconditioned Bus Capital Co
+st1,453,0002,522,624691,130 Tire Cost14,20014,20014,200 Useful Lifetime8 years10 years6 years Annual Utilizati
+on (km.)*80,00080,00080,000 Annual Utilization (hours)3,0003,0003,000 Maintenance Parts per 1,000 km. (as % of
+ cost of new bus)0.182%0.165%0.200% Maintenance Hours per 1,000 km.4.614.195.07 % of Depreciation that is Dist
+ance- Related85%85%85% * At an average of 60 km./hr. The output from the main VOCM runs is shown in Figures 4.
+1 (Jeepney) and 4.2 (Bus). Standing and running hours are indicated by the stacked bars, referenced to the sca
+le on the left. Distance run is indicated by the line, referenced to the scale on the right. Running hours are
+ calculated as a function of distance run and average speed. Standing hours adjust in proportion to distance r
+un (equivalent to assuming that average trip length remains the same; number of trips changes in proportion to
+ distance run; and layover time between trips remains the same per trip). Summing running and standing hours g
+ives the hours of usethe number of hours over which overhead, interest, etc. are apportio

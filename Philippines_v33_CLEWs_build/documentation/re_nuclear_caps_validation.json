@@ -1,0 +1,97 @@
+{
+  "status": "pass",
+  "changed_source_files": [
+    "RYT.json"
+  ],
+  "approved_cell_count": 25,
+  "unchanged_top_level_json_count": 21,
+  "tomorrowland_active_scenarios": [
+    "SC_0",
+    "SC_3hgjb",
+    "SC_w03qj",
+    "SC_huc7i"
+  ],
+  "resolved_caps_gw_per_year": {
+    "2026-2031": {
+      "PHL_POW_PP_NU": 0,
+      "PHL_POW_PP_NUSMR": 0
+    },
+    "2032-2034": {
+      "PHL_POW_PP_NU": 1.2,
+      "PHL_POW_PP_NUSMR": 0.3
+    },
+    "2035-2039": {
+      "PHL_POW_PP_NU": 1.2,
+      "PHL_POW_PP_NUSMR": 0.3
+    },
+    "2040-2053": {
+      "PHL_POW_PP_NU": 1.2,
+      "PHL_POW_PP_NUSMR": 0.6
+    }
+  },
+  "cumulative_commissioning_room_gw": {
+    "2032": 1.5,
+    "2035": 6.0,
+    "2050": 31.799999999999997
+  },
+  "milestones_unchanged_by_source_diff": true,
+  "candidate_ryt_sha256": "a7f009a2566f6790689602cc4eafdd15d6c6b66236a330416b74344b3a7f0864",
+  "optimizer_run_count": 1,
+  "candidate_solve": {
+    "status": "Optimal - objective value 369766929.90727115",
+    "objective": 369766929.9,
+    "iterations": 310312,
+    "cbc_cpu_seconds": 419.2,
+    "cbc_wall_seconds": 426.77,
+    "matrix": {
+      "rows": 791532,
+      "columns": 886010,
+      "matrix_nonzeros": 12818407,
+      "objective_nonzeros": 423240
+    },
+    "new_capacity_gw": {
+      "2032": {
+        "PHL_POW_PP_NU": 0.9,
+        "PHL_POW_PP_NUSMR": 0.3
+      },
+      "2035": {
+        "PHL_POW_PP_NU": 0.9,
+        "PHL_POW_PP_NUSMR": 0.3
+      },
+      "2049": {
+        "PHL_POW_PP_NU": 0.6,
+        "PHL_POW_PP_NUSMR": 0.0
+      },
+      "2050": {
+        "PHL_POW_PP_NU": 1.2,
+        "PHL_POW_PP_NUSMR": 0.6
+      }
+    },
+    "milestone_capacity_gw": {
+      "2032": {
+        "PHL_POW_PP_NU": 0.9,
+        "PHL_POW_PP_NUSMR": 0.3,
+        "combined": 1.2
+      },
+      "2035": {
+        "PHL_POW_PP_NU": 1.8,
+        "PHL_POW_PP_NUSMR": 0.6,
+        "combined": 2.4
+      },
+      "2050": {
+        "PHL_POW_PP_NU": 3.6,
+        "PHL_POW_PP_NUSMR": 1.2,
+        "combined": 4.8
+      }
+    },
+    "target_row_activity": {
+      "2032": -1.2,
+      "2035": -2.4,
+      "2050": -4.8
+    },
+    "pre_2032_new_capacity_zero": true,
+    "all_new_capacity_within_resolved_caps": true,
+    "results_sha256": "233a47e0549414521ea5ec8ba839ffd076d373223afcea15cc9521371a29961f",
+    "lp_sha256": "9786f1cbef6e8ea9896bc06a2ab19e6defb0eee94ec72e7dc6ad77cc1e70e0da"
+  }
+}

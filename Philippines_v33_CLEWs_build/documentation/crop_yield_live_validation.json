@@ -1,0 +1,124 @@
+{
+  "schema": "philippines-v16-crop-yield-live-validation-v1",
+  "generated_at_utc": "2026-08-11T20:38:23.029148+00:00",
+  "status": "pass",
+  "case": "Philippines_v16",
+  "run": "BASE",
+  "solver": {
+    "status": "Optimal - objective value 369729000.20044112",
+    "cbc_wall_seconds": 227.3,
+    "full_chain_seconds": 286.42,
+    "matrix_rows": 791109,
+    "matrix_columns": 884956,
+    "matrix_nonzeros": 12552173,
+    "matrix_objective_nonzeros": 422220
+  },
+  "checks": [
+    {
+      "name": "promoted_source_identity",
+      "status": "pass",
+      "detail": {
+        "live": {
+          "genData.json": "8552b5a84594a420055b05880363b69c9da0a3f5095cbaf3b639c487bfb5b5c6",
+          "RYT.json": "857199752aa709f1d1d30398d68db38b0cb689777d274d701ee8fa898042528a",
+          "RYTCM.json": "846a1c1cf4cd96efb2103ec44c35631be080609489c5563a134f983526397b4b",
+          "RYTM.json": "2cb8ef4c3fb44a0f05646c6e6ea93174968013f19f3fb1d0913e70d74d260f94"
+        },
+        "validated_candidate": {
+          "genData.json": "8552b5a84594a420055b05880363b69c9da0a3f5095cbaf3b639c487bfb5b5c6",
+          "RYT.json": "857199752aa709f1d1d30398d68db38b0cb689777d274d701ee8fa898042528a",
+          "RYTCM.json": "846a1c1cf4cd96efb2103ec44c35631be080609489c5563a134f983526397b4b",
+          "RYTM.json": "2cb8ef4c3fb44a0f05646c6e6ea93174968013f19f3fb1d0913e70d74d260f94"
+        }
+      }
+    },
+    {
+      "name": "live_cbc_optimal",
+      "status": "pass",
+      "detail": "Optimal - objective value 369729000.20044112"
+    },
+    {
+      "name": "live_objective_reproduces_candidate",
+      "status": "pass",
+      "detail": {
+        "live": 369729000.2004411,
+        "validated_candidate": 369729000.2004411,
+        "difference": 0.0
+      }
+    },
+    {
+      "name": "live_2020_crop_areas",
+      "status": "pass",
+      "detail": {
+        "live_mha": {
+          "other_vegetables_fresh_nec": 0.63981,
+          "coconut": 3.6512800000000007,
+          "sugarcane": 0.39909,
+          "corn": 2.55378,
+          "rice_rainfed": 1.4654399999999999,
+          "rice_irrigated": 2.006,
+          "other_crops_aggregate": 1.2838800000000001
+        },
+        "observed_basis_mha": {
+          "rice_irrigated": 2.006,
+          "rice_rainfed": 1.46544173,
+          "corn": 2.55378055,
+          "coconut": 3.65128876,
+          "sugarcane": 0.39908605,
+          "other_vegetables_fresh_nec": 0.6398,
+          "other_crops_aggregate": 1.283887
+        },
+        "live_minus_observed_mha": {
+          "rice_irrigated": 0.0,
+          "rice_rainfed": -1.7300000001441163e-06,
+          "corn": -5.499999997660154e-07,
+          "coconut": -8.759999999163881e-06,
+          "sugarcane": 3.949999999974807e-06,
+          "other_vegetables_fresh_nec": 9.99999999995449e-06,
+          "other_crops_aggregate": -6.999999999868223e-06
+        }
+      }
+    },
+    {
+      "name": "live_annual_emissions_reproduce_candidate",
+      "status": "pass",
+      "detail": {
+        "maximum_row_difference": 0.0
+      }
+    },
+    {
+      "name": "live_generation_and_freshness",
+      "status": "pass",
+      "detail": {
+        "generated_data_processed": true,
+        "generated_lp": true,
+        "result_mtime_utc": "2026-08-11T20:36:44.068364+00:00"
+      }
+    }
+  ],
+  "crop_water_2020": {
+    "AGRWATPHL": {
+      "other_vegetables_fresh_nec": 0.0,
+      "coconut": 0.0,
+      "sugarcane": 0.0,
+      "corn": 0.0,
+      "rice_rainfed": 0.0,
+      "rice_irrigated": 0.4332,
+      "other_crops_aggregate": 0.0
+    },
+    "PHL_WTR_PRC": {
+      "other_vegetables_fresh_nec": 19.978400000000004,
+      "coconut": 101.7722,
+      "sugarcane": 11.746599999999999,
+      "corn": 87.90390000000002,
+      "rice_rainfed": 45.95650000000002,
+      "rice_irrigated": 69.62339999999999,
+      "other_crops_aggregate": 38.689600000000006
+    }
+  },
+  "limitations": [
+    "National achieved yields are uniform across clusters; spatial crop and water allocation remains endogenous and uncalibrated.",
+    "Harvested area is a disclosed physical-area proxy for annual rainfed crops.",
+    "CRPTOM and CRPOTH retain their existing aggregate resolution."
+  ]
+}

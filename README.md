@@ -6,9 +6,14 @@ assumptions, calculations, diagnostics, and portable MUIO cases.
 
 ## Current model package
 
-The current working model is **Philippines v33.0.0**. Its portable case is:
+The current working model is **Philippines v36.0.0**. Its portable case is:
 
-- `Philippines_v33_CLEWs_build/muio/Philippines_v33_v33.0.0_MUIO.zip`.
+- `Philippines_v36_CLEWs_build/muio/Philippines_v36_v36.0.0_MUIO.zip`.
+
+Version 36 is the user-accepted electricity and gas-generation history
+successor to v33. It preserves endogenous generation and fuel choice: observed
+generation, dispatch, and market shares remain validation benchmarks rather
+than forced model outcomes.
 
 Version 33 carries the complete standalone provenance inherited through v30,
 the v31 non-road transport unit and cost repair, and the v32 spatial rice-yield
@@ -92,10 +97,10 @@ ledger before using the model.
 
 1. Install or clone [MUIOGO](https://github.com/EAPD-DRB/MUIOGO).
 2. Extract the current archive into this repository as
-   `case/Philippines_v33`.
+   `case/Philippines_v36`.
 3. Create a relative symlink from
-   `MUIOGO/WebAPP/DataStorage/Philippines_v33` to
-   `CLEWs-PHL/case/Philippines_v33`.
+   `MUIOGO/WebAPP/DataStorage/Philippines_v36` to
+   `CLEWs-PHL/case/Philippines_v36`.
 4. Start MUIOGO and open the case.
 
 The ignored `case/` tree is the live local working copy; editing through
@@ -112,16 +117,11 @@ with the installed model path and a unique evidence label before interpreting
 
 ## Repository structure
 
-The current package is under `Philippines_v33_CLEWs_build/`:
+The current portable archive and checksum are under
+`Philippines_v36_CLEWs_build/muio/`. The archive contains the editable model,
+its source-trace ledgers, retained evidence, and model-change documentation.
 
-- `data_sources/`: six canonical source-trace ledgers, retained evidence and
-  the review workbook;
-- `documentation/`: equation-first model-change audit;
-- `diagnostics/`: generation, solve, ledger and provenance validation;
-- `muio/`: portable v33 MUIO case and checksum; and
-- `scripts/`: retained generator, validators and normalized research input.
-
-The ignored local `case/Philippines_v33/` directory is populated from the
+The ignored local `case/Philippines_v36/` directory is populated from the
 current portable archive and exposed to MUIOGO through a relative symlink. It
 is not part of Git history, which avoids the per-file Git size limit.
 

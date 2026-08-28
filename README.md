@@ -6,9 +6,13 @@ assumptions, calculations, diagnostics, and portable MUIO cases.
 
 ## Current model package
 
-The current working model is **Philippines v36.0.0**. Its portable case is:
+The current working model is **Philippines vIS1.2**. Its portable case is:
 
-- `Philippines_v36_CLEWs_build/muio/Philippines_v36_v36.0.0_MUIO.zip`.
+- `Philippines_vIS1.2_CLEWs_build/muio/Philippines_vIS1.2_vIS1.2_MUIO.zip`.
+
+Version IS1.2 is the promoted island-power differentiated successor to v36.
+Its BASE, COAL_PHASEOUT, RE, and EV scenarios passed the recorded generation,
+formulation, and solver gates and reached optimal solutions.
 
 Version 36 is the user-accepted electricity and gas-generation history
 successor to v33. It preserves endogenous generation and fuel choice: observed
@@ -97,10 +101,10 @@ ledger before using the model.
 
 1. Install or clone [MUIOGO](https://github.com/EAPD-DRB/MUIOGO).
 2. Extract the current archive into this repository as
-   `case/Philippines_v36`.
+   `case/Philippines_vIS1.2`.
 3. Create a relative symlink from
-   `MUIOGO/WebAPP/DataStorage/Philippines_v36` to
-   `CLEWs-PHL/case/Philippines_v36`.
+   `MUIOGO/WebAPP/DataStorage/Philippines_vIS1.2` to
+   `CLEWs-PHL/case/Philippines_vIS1.2`.
 4. Start MUIOGO and open the case.
 
 The ignored `case/` tree is the live local working copy; editing through
@@ -118,10 +122,10 @@ with the installed model path and a unique evidence label before interpreting
 ## Repository structure
 
 The current portable archive and checksum are under
-`Philippines_v36_CLEWs_build/muio/`. The archive contains the editable model,
+`Philippines_vIS1.2_CLEWs_build/muio/`. The archive contains the editable model,
 its source-trace ledgers, retained evidence, and model-change documentation.
 
-The ignored local `case/Philippines_v36/` directory is populated from the
+The ignored local `case/Philippines_vIS1.2/` directory is populated from the
 current portable archive and exposed to MUIOGO through a relative symlink. It
 is not part of Git history, which avoids the per-file Git size limit.
 

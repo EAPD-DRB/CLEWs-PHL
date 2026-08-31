@@ -10,7 +10,7 @@ The current working model is **Philippines vIS1.2**. Its portable case is:
 
 - `Philippines_vIS1.2_CLEWs_build/muio/Philippines_vIS1.2_vIS1.2_MUIO.zip`.
 
-Version IS1.2 is the promoted island-power differentiated successor to v36.
+Version IS1.2 is the promoted island-power differentiated successor to v36. It divides the energy sector within the Philippines in 3+1 zones: Luzon, Visayas, Mindanao, and a 4th generic OFF-grid node with all other islands. All other sectors (land, water, etc.) remained grouped at national scale, not differentiated by island.
 Its BASE, COAL_PHASEOUT, RE, and EV scenarios passed the recorded generation,
 formulation, and solver gates and reached optimal solutions.
 

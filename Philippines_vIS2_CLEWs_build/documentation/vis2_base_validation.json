@@ -1,0 +1,78 @@
+{
+  "schema": "philippines-vis2-base-validation-v1",
+  "status": "Optimal - objective value 912347.42687709",
+  "optimizer_runs": 1,
+  "timeout_seconds": 500,
+  "solve_seconds": 237.01830104200053,
+  "objective": 912347.42687709,
+  "vIS15_objective": 913907.87325413,
+  "objective_change": -1560.4463770400034,
+  "objective_change_percent": -0.170744384932775,
+  "vIS15_solve_seconds": 213.7597649170002,
+  "runtime_ratio": 1.108806894197471,
+  "promotion_attempted": false,
+  "stop_point": "BASE finished; no policy scenario, seal, or promotion run",
+  "early_primal_infeasibility_declared": false,
+  "primal_infeasibility_declaration_lines": [],
+  "cbc_continued_after_infeasibility_declaration": false,
+  "cbc_total_iterations": 222665,
+  "cbc_reported_wallclock_seconds": 236.85,
+  "matrix_dimensions": {
+    "rows": 634831,
+    "columns": 825920,
+    "matrix_nonzeros": 15024202,
+    "objective_nonzeros": 450370
+  },
+  "land_formulation_checks": {
+    "source_preflight_checks_passed": 194,
+    "TAMLL_reconciliation_relative_tolerance": 1e-09,
+    "generated_land_technology_count": 29,
+    "generated_active_modes_per_land_technology": 18,
+    "redundant_land_LU1_rows": 0,
+    "land_NewCapacity_zero_bounds_in_LP": 986,
+    "land_NewCapacity_max_abs_in_result": 0.0,
+    "annual_land_activity_1000km2": 295.81310015
+  },
+  "historical_benchmarks_2020": {
+    "irrigated_rice_area_observed_1000km2": 20.06,
+    "irrigated_rice_area_model_1000km2": 20.06,
+    "rainfed_rice_area_observed_1000km2": 14.6544173,
+    "rainfed_rice_area_vIS15_1000km2": 10.881,
+    "rainfed_rice_area_vIS2_1000km2": 9.4308,
+    "rainfed_rice_vIS2_error_percent": -35.64534292332456,
+    "interpretation": "Irrigated stock is reproduced by node. Rainfed rice is farther below the observed benchmark than vIS1.5 because national trade and endogenous land allocation concentrate rainfed production in Luzon; no node activity share was forced."
+  },
+  "water_resource_constraint_activity": {
+    "surface_2020": 59.241483,
+    "surface_2030": 61.876212,
+    "surface_2050": 62.305963,
+    "surface_2053": 64.741103,
+    "groundwater_max_abs_selected_years": 1.8502398e-12,
+    "surface_cap_2020": 125.79,
+    "groundwater_cap_2020": 20.2,
+    "binding": false
+  },
+  "material_result_comparison": {
+    "crop_market_production_max_abs_change_at_csv_precision": 0.0001,
+    "irrigation_activity_vIS15_2050_1000km2": 22.2733,
+    "irrigation_activity_vIS2_2050_1000km2": 20.06,
+    "model_period_service_heat_shift_oil_to_gas": 11.0334,
+    "model_period_old_coal_activity_changes": {
+      "LUZ": 7.5118,
+      "VIS": -5.4441,
+      "MIN": -2.0675
+    },
+    "CO2e_change": {
+      "2020": -1.0558,
+      "2030": -1.0744,
+      "2050": 0.2347,
+      "2053": 0.2339
+    }
+  },
+  "last_iteration_record": {
+    "iteration": 13239,
+    "objective": 912347.43,
+    "primal_infeasibility": null,
+    "violated_rows": null
+  }
+}

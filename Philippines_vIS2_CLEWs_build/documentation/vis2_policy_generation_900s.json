@@ -1,0 +1,74 @@
+{
+  "COAL_PHASEOUT": {
+    "scenario": "COAL_PHASEOUT",
+    "scenario_id": "SC_3hgjb",
+    "active_scenarios": [
+      "BASE",
+      "COAL_PHASEOUT"
+    ],
+    "status": "passed",
+    "optimizer_runs": 0,
+    "generation_check_seconds": 87.14821608299826,
+    "matrix_dimensions": {
+      "rows": 634846,
+      "columns": 825920,
+      "matrix_nonzeros": 15024472,
+      "objective_nonzeros": 450370
+    },
+    "generated_land_mode_sets_exact": true,
+    "land_new_capacity_fixed_zero_in_lp": {
+      "passed": true,
+      "zero_row_count": 986,
+      "expected_row_count": 986,
+      "nonzero_rows": []
+    }
+  },
+  "RE": {
+    "scenario": "RE",
+    "scenario_id": "SC_w03qj",
+    "active_scenarios": [
+      "BASE",
+      "RE"
+    ],
+    "status": "passed",
+    "optimizer_runs": 0,
+    "generation_check_seconds": 86.34496862499509,
+    "matrix_dimensions": {
+      "rows": 634831,
+      "columns": 825920,
+      "matrix_nonzeros": 15025564,
+      "objective_nonzeros": 450370
+    },
+    "generated_land_mode_sets_exact": true,
+    "land_new_capacity_fixed_zero_in_lp": {
+      "passed": true,
+      "zero_row_count": 986,
+      "expected_row_count": 986,
+      "nonzero_rows": []
+    }
+  },
+  "EV": {
+    "scenario": "EV",
+    "scenario_id": "SC_huc7i",
+    "active_scenarios": [
+      "BASE",
+      "EV"
+    ],
+    "status": "passed",
+    "optimizer_runs": 0,
+    "generation_check_seconds": 85.13443395899958,
+    "matrix_dimensions": {
+      "rows": 634831,
+      "columns": 825920,
+      "matrix_nonzeros": 15024510,
+      "objective_nonzeros": 450370
+    },
+    "generated_land_mode_sets_exact": true,
+    "land_new_capacity_fixed_zero_in_lp": {
+      "passed": true,
+      "zero_row_count": 986,
+      "expected_row_count": 986,
+      "nonzero_rows": []
+    }
+  }
+}

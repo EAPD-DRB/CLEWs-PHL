@@ -1,0 +1,74 @@
+{
+  "COAL_PHASEOUT": {
+    "scenario": "COAL_PHASEOUT",
+    "run": "COAL_PHASEOUT_VIS2_AGRICULTURE_SPATIAL_R3_900S",
+    "status": "Optimal - objective value 929308.22767132",
+    "optimizer_runs": 1,
+    "timeout_seconds": 900,
+    "solve_seconds": 572.85,
+    "objective": 929308.22767132,
+    "returncode": 0,
+    "vIS15_objective": 930888.33838039,
+    "vIS15_solve_seconds": 365.22039320800104,
+    "objective_change": -1580.1107090699952,
+    "objective_change_percent": -0.16974223909810293,
+    "early_primal_infeasibility_declared": false,
+    "primal_infeasibility_declaration_lines": [],
+    "cbc_continued_after_infeasibility_declaration": false,
+    "last_iteration_record": {
+      "iteration": 16600,
+      "objective": 929308.23,
+      "primal_infeasibility": null,
+      "violated_rows": null
+    },
+    "finalized_from_existing_artifacts_without_optimizer": true
+  },
+  "RE": {
+    "scenario": "RE",
+    "run": "RE_VIS2_AGRICULTURE_SPATIAL_R3_900S",
+    "status": "Optimal - objective value 928003.71197998",
+    "optimizer_runs": 1,
+    "timeout_seconds": 900,
+    "solve_seconds": 781.26,
+    "objective": 928003.71197998,
+    "returncode": 0,
+    "vIS15_objective": null,
+    "vIS15_solve_seconds": 421.0284964170023,
+    "objective_change": null,
+    "objective_change_percent": null,
+    "early_primal_infeasibility_declared": false,
+    "primal_infeasibility_declaration_lines": [],
+    "cbc_continued_after_infeasibility_declaration": false,
+    "last_iteration_record": {
+      "iteration": 31587,
+      "objective": 928003.71,
+      "primal_infeasibility": null,
+      "violated_rows": null
+    },
+    "finalized_from_existing_artifacts_without_optimizer": true
+  },
+  "EV": {
+    "scenario": "EV",
+    "run": "EV_VIS2_AGRICULTURE_SPATIAL_R3_900S",
+    "status": "Optimal - objective value 893760.65227254",
+    "optimizer_runs": 1,
+    "timeout_seconds": 900,
+    "solve_seconds": 725.6,
+    "objective": 893760.65227254,
+    "returncode": 0,
+    "vIS15_objective": 895327.00417196,
+    "vIS15_solve_seconds": 316.91548633300044,
+    "objective_change": -1566.3518994200276,
+    "objective_change_percent": -0.17494746524133742,
+    "early_primal_infeasibility_declared": false,
+    "primal_infeasibility_declaration_lines": [],
+    "cbc_continued_after_infeasibility_declaration": false,
+    "last_iteration_record": {
+      "iteration": 38187,
+      "objective": 893760.65,
+      "primal_infeasibility": null,
+      "violated_rows": null
+    },
+    "finalized_from_existing_artifacts_without_optimizer": true
+  }
+}

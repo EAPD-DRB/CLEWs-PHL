@@ -6,9 +6,18 @@ assumptions, calculations, diagnostics, and portable MUIO cases.
 
 ## Current model package
 
-The current working model is **Philippines vIS1.2**. Its portable case is:
+The current working model is **Philippines vIS2**. Its portable case is:
 
-- `Philippines_vIS1.2_CLEWs_build/muio/Philippines_vIS1.2_vIS1.2_MUIO.zip`.
+- `Philippines_vIS2_CLEWs_build/muio/Philippines_vIS2_vIS2.0.0_MUIO.zip`.
+
+Version vIS2 is the land, agriculture and irrigation-stock spatial successor
+to vIS1.5. It distributes the eight national land/yield clusters and retained
+irrigation stock across LUZ, VIS, MIN and the residual OFF geography without
+forcing crop production, activity or node shares. BASE, COAL_PHASEOUT, RE and
+EV reached optimal solutions; the complete schema ledger and compact
+validation records are included in the build package. The legacy EV scenario
+still imposes a technology-activity trajectory and should not be interpreted
+as a calibrated welfare result without further review.
 
 Version IS1.2 is the promoted island-power differentiated successor to v36. It divides the energy sector within the Philippines in 3+1 zones: Luzon, Visayas, Mindanao, and a 4th generic OFF-grid node with all other islands. All other sectors (land, water, etc.) remained grouped at national scale, not differentiated by island.
 Its BASE, COAL_PHASEOUT, RE, and EV scenarios passed the recorded generation,
@@ -101,10 +110,10 @@ ledger before using the model.
 
 1. Install or clone [MUIOGO](https://github.com/EAPD-DRB/MUIOGO).
 2. Extract the current archive into this repository as
-   `case/Philippines_vIS1.2`.
+   `case/Philippines_vIS2`.
 3. Create a relative symlink from
-   `MUIOGO/WebAPP/DataStorage/Philippines_vIS1.2` to
-   `CLEWs-PHL/case/Philippines_vIS1.2`.
+   `MUIOGO/WebAPP/DataStorage/Philippines_vIS2` to
+   `CLEWs-PHL/case/Philippines_vIS2`.
 4. Start MUIOGO and open the case.
 
 The ignored `case/` tree is the live local working copy; editing through
@@ -122,10 +131,10 @@ with the installed model path and a unique evidence label before interpreting
 ## Repository structure
 
 The current portable archive and checksum are under
-`Philippines_vIS1.2_CLEWs_build/muio/`. The archive contains the editable model,
+`Philippines_vIS2_CLEWs_build/muio/`. The archive contains the editable model,
 its source-trace ledgers, retained evidence, and model-change documentation.
 
-The ignored local `case/Philippines_vIS1.2/` directory is populated from the
+The ignored local `case/Philippines_vIS2/` directory is populated from the
 current portable archive and exposed to MUIOGO through a relative symlink. It
 is not part of Git history, which avoids the per-file Git size limit.
 

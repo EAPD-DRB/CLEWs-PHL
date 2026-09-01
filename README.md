@@ -13,15 +13,9 @@ The current working model is **Philippines vIS2**. Its portable case is:
 Version vIS2 is the land, agriculture and irrigation-stock spatial successor
 to vIS1.5. It distributes the eight national land/yield clusters and retained
 irrigation stock across LUZ, VIS, MIN and the residual OFF geography without
-forcing crop production, activity or node shares. BASE, COAL_PHASEOUT, RE and
-EV reached optimal solutions; the complete schema ledger and compact
-validation records are included in the build package. The legacy EV scenario
-still imposes a technology-activity trajectory and should not be interpreted
-as a calibrated welfare result without further review.
+forcing crop production, activity or node shares.
 
 Version IS1.2 is the promoted island-power differentiated successor to v36. It divides the energy sector within the Philippines in 3+1 zones: Luzon, Visayas, Mindanao, and a 4th generic OFF-grid node with all other islands. All other sectors (land, water, etc.) remained grouped at national scale, not differentiated by island.
-Its BASE, COAL_PHASEOUT, RE, and EV scenarios passed the recorded generation,
-formulation, and solver gates and reached optimal solutions.
 
 Version 36 is the user-accepted electricity and gas-generation history
 successor to v33. It preserves endogenous generation and fuel choice: observed

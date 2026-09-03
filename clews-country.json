@@ -1,0 +1,219 @@
+{
+    "_readme": [
+        "Machine-readable declaration of the portable MUIO cases this repository ships,",
+        "read by MUIOGO's /clews install layer (EAPD-DRB/MUIOGO PR #519+): MUIOGO fetches",
+        "the archive, verifies it against the vintage's SHA256SUMS, and imports it.",
+        "Ordering rule: vintages are listed NEWEST FIRST, and none carries a vintage-level",
+        "'recommended' flag. MUIOGO installs the first listed vintage when none is asked",
+        "for, so the newest published model is always the default and every older",
+        "vintage stays installable by name. Do not add a vintage-level 'recommended':",
+        "it would override this rule.",
+        "Publishing a new vintage: add its entry at the TOP of the list in the same",
+        "commit that publishes its build directory. Every archive listed must exist under",
+        "the vintage's dir and appear in that dir's SHA256SUMS. Older build directories",
+        "also carry their predecessors' archives as provenance; list only the vintage's own.",
+        "Within a vintage, 'recommended' marks the case to install when none is asked for;",
+        "the other cases (environmental accounting layers etc.) are installable by name."
+    ],
+    "schema_version": 1,
+    "iso3": "PHL",
+    "un_code": "608",
+    "name": "Philippines",
+    "og": {
+        "key": "og-phl"
+    },
+    "vintages": [
+        {
+            "id": "vIS2",
+            "dir": "Philippines_vIS2_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_vIS2",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_vIS2_vIS2.0.0_MUIO.zip"
+                }
+            ]
+        },
+        {
+            "id": "vIS1.2",
+            "dir": "Philippines_vIS1.2_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_vIS1.2",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_vIS1.2_vIS1.2_MUIO.zip"
+                }
+            ]
+        },
+        {
+            "id": "v36",
+            "dir": "Philippines_v36_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_v36",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_v36_v36.0.0_MUIO.zip"
+                }
+            ]
+        },
+        {
+            "id": "v33",
+            "dir": "Philippines_v33_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_v33",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_v33_v33.0.0_MUIO.zip"
+                }
+            ]
+        },
+        {
+            "id": "v30",
+            "dir": "Philippines_v30_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_v30",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_v30_v30.0.0_MUIO.zip"
+                }
+            ]
+        },
+        {
+            "id": "v24",
+            "dir": "Philippines_v24_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_v24",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_v24_v24.0.0_MUIO.zip"
+                }
+            ]
+        },
+        {
+            "id": "v21",
+            "dir": "Philippines_v21_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_v21",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_v21_v21.0.0_MUIO.zip"
+                }
+            ]
+        },
+        {
+            "id": "v19",
+            "dir": "Philippines_v19_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_v19",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_v19_v19.0.0_MUIO.zip"
+                }
+            ]
+        },
+        {
+            "id": "v18",
+            "dir": "Philippines_v18_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_v18",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_v18_v18.0.1_MUIO.zip"
+                }
+            ]
+        },
+        {
+            "id": "v17",
+            "dir": "Philippines_v17_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_v17",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_v17_v17.0.0_MUIO.zip"
+                }
+            ]
+        },
+        {
+            "id": "v16",
+            "dir": "Philippines_v16_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_v16",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_v16_v16.0.0_MUIO.zip"
+                }
+            ]
+        },
+        {
+            "id": "v15",
+            "dir": "Philippines_v15_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_v15",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_v15_v15.0.0_MUIO.zip"
+                }
+            ]
+        },
+        {
+            "id": "v12",
+            "dir": "Philippines_v12_CLEWs_build/muio",
+            "sha256sums": "SHA256SUMS",
+            "muio_min_version": "5.6",
+            "cases": [
+                {
+                    "case": "Philippines_v12",
+                    "role": "source",
+                    "archive": "Philippines_v12_v12.0.0_MUIO.zip"
+                },
+                {
+                    "case": "Philippines_v12_ENV_LAND",
+                    "role": "env-land",
+                    "archive": "Philippines_v12_ENV_LAND_v12.0.0_MUIO.zip"
+                },
+                {
+                    "case": "Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC",
+                    "role": "analysis",
+                    "recommended": true,
+                    "archive": "Philippines_v12_ENV_LAND_WATER_DIAGNOSTIC_v12.0.0_MUIO.zip"
+                }
+            ]
+        }
+    ]
+}
